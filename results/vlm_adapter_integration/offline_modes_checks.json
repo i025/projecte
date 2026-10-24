@@ -1,0 +1,34 @@
+{
+  "replay": {
+    "processes_and_network_forbidden": true,
+    "new_model_calls": 0,
+    "actual_backends": [
+      "replay",
+      "replay"
+    ],
+    "statuses": [
+      "candidate_violated",
+      "satisfied"
+    ],
+    "source_kinds": [
+      "historical_real",
+      "historical_real"
+    ]
+  },
+  "subagent_import": {
+    "processes_and_network_forbidden": true,
+    "new_model_calls": 0,
+    "actual_backends": [
+      "subagent_import",
+      "subagent_import"
+    ],
+    "statuses": [
+      "candidate_violated",
+      "satisfied"
+    ],
+    "source_kinds": [
+      "historical_real",
+      "historical_real"
+    ]
+  }
+}

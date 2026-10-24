@@ -1,0 +1,29 @@
+{
+  "publication_review": true,
+  "reference_base": "a4009a495da2cf2f4a71aab6f5fc8955022f4494",
+  "target_branch": "feat/offline-integration-mvp",
+  "publication_cpu_tests": {
+    "tests_run": 338,
+    "successful": true,
+    "failures": [],
+    "errors": [],
+    "skipped": [],
+    "elapsed_seconds": 5.051417984068394,
+    "adapter_tests": 19,
+    "offline_integration_tests": 19,
+    "network_connections_forbidden": true,
+    "subprocesses_forbidden": true,
+    "models_or_blender_executed": false
+  },
+  "new_model_calls": 0,
+  "new_blender_executions": 0,
+  "source_algorithms_changed_for_publication": false,
+  "original_scientific_fields_preserved": true,
+  "public_metadata_paths_redacted": true,
+  "third_party_visual_assets_included": false,
+  "full_cli_sessions_included": false,
+  "credentials_included": false,
+  "formal_scores_created": false,
+  "png_exif_and_text_removed": true,
+  "png_decoded_pixels_unchanged": true
+}

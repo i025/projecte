@@ -4,6 +4,8 @@
 
 最近的重要实验见 [LATEST.md](LATEST.md)，缺失图像、历史链接和精简说明见 [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md)。
 
+审核分支新增：[真实 VLM Verification Adapter 集成](vlm_adapter_integration/report.md)（2026-10-25），[comparison.png](vlm_adapter_integration/comparison.png)、[原始回答与确定性比较](vlm_adapter_integration/verification_results.json)、[检查结果](vlm_adapter_integration/integration_checks.json)。两次Codex CLI视觉调用成功；新增19项、完整338项CPU测试通过。只用已有自制清晰书籍图；远端模型快照与强隔离未核实，结果仅诊断，不改变Energy；公开元数据已脱敏，提交记录为发布依据，不合并main。
+
 审核分支 `feat/offline-integration-mvp`：[Offline Integration MVP](offline_integration_mvp/summary.md) 与[发布审查](offline_integration_mvp/release_review/report.md)（2026-10-25）。一个 Synthetic 与一个 bw_0073 历史配对完成统一 Manifest 回放；本轮完整 CPU 单元测试 319 项通过，其中集成专用 19 项，原实验 89 项记录保留。[最终 JSON](offline_integration_mvp/bw0073_checked/report.json)、[协议检查](offline_integration_mvp/bw0073_checked/integration_checks.json)、[自制 Synthetic PNG](offline_integration_mvp/synthetic_control/comparison.png) 纳入审核；真实图/衍生 Mask 等[继续排除](offline_integration_mvp/PUBLICATION.md)。未审核 Group/结构只作诊断，历史相机无正式成绩资格；不合并 main，原始结果中的未发布声明是创建时快照。
 
 这是已有实验的公开阅读入口，不是新实验或正式排行榜。原始 `reviewed`、`provisional/debug`、Unknown/N/A、真实失败和未解决问题保持原样。目录名不改，历史结果不回写。

@@ -1,0 +1,204 @@
+{
+  "camera": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "unknown",
+    "pose_matches_T0": false,
+    "actual_poses": {},
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": null,
+    "reason": "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient",
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "metadata_resolution_matches_native_rgb": null,
+  "camera_comparability": "Synthetic same-camera controls, not a reconstruction evaluation",
+  "optional_inputs": {
+    "render_evidence": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null
+    },
+    "geometry": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null
+    },
+    "triage": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null
+    },
+    "rules": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null
+    },
+    "render_metadata": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null
+    }
+  },
+  "shared_grid": [
+    896,
+    704
+  ],
+  "reference_roi_fixed": true,
+  "alignment_search": false,
+  "valid_pixels": 630784,
+  "measurement_pixels": 630784,
+  "overlapping_named_regions_withheld": [],
+  "diagnostic_inputs_excluded_from_energy": true,
+  "evidence_review_flags_not_promoted": true,
+  "numerical_records": [
+    {
+      "id": "global",
+      "energy": "appearance",
+      "level": "global",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_0_0",
+      "energy": "appearance",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_0_0",
+      "energy": "spatial",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_0_0:texture",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_0_0:distribution",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_0_1",
+      "energy": "appearance",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_0_1",
+      "energy": "spatial",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_0_1:texture",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_0_1:distribution",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_1_0",
+      "energy": "appearance",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_1_0",
+      "energy": "spatial",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_1_0:texture",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_1_0:distribution",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_1_1",
+      "energy": "appearance",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_1_1",
+      "energy": "spatial",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 1.0
+    },
+    {
+      "id": "patch_1_1:texture",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    },
+    {
+      "id": "patch_1_1:distribution",
+      "energy": "statistical",
+      "level": "region",
+      "q": 1.0,
+      "aggregation_weight": 0.5
+    }
+  ],
+  "no_model_api_agent_or_blender_execution": true,
+  "formal_eligible": false
+}

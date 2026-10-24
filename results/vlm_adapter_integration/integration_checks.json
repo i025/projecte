@@ -1,0 +1,82 @@
+{
+  "backend": "codex_cli",
+  "real_request_budget": 2,
+  "historical_import_complete": true,
+  "reviewed": false,
+  "runtime_changed": false,
+  "energy_formulas_changed": false,
+  "no_ofox": true,
+  "no_new_desktop_subagents": true,
+  "strict_blind_test": false,
+  "cli_probe": {
+    "model_calls": 0,
+    "strict_blind_test": false,
+    "filesystem_read_confined": false,
+    "cli_version": "codex-cli 0.163.0",
+    "logged_in": true,
+    "auth_method": "ChatGPT",
+    "image_attachments": 1,
+    "decoded_pixels_equal": true,
+    "frozen_prompt_present": true,
+    "forbidden_context_terms": [],
+    "message_roles": [
+      "developer",
+      "developer",
+      "developer",
+      "user",
+      "user"
+    ],
+    "global_cli_context_present": true,
+    "input_text_characters": 6991,
+    "model_input_saved_without_base64": true,
+    "status": "available"
+  },
+  "cli_attempts": [
+    {
+      "image": "images/195f77cebbe14451b866aadbc4bb4828.png",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 16.32253806083463
+    },
+    {
+      "image": "images/f64ad1572e4f4f42919ede7123683e43.png",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 13.677912370068952
+    }
+  ],
+  "real_model_attempts": 2,
+  "all_results_diagnostic_only": true,
+  "offline_appearance_available": true,
+  "semantic_energy": null,
+  "perceptual_energy": null,
+  "imported_diagnostics_in_report": "available",
+  "formal_eligible": false,
+  "offline_replay": {
+    "new_model_calls": 0,
+    "energy_values_equal": true,
+    "statuses_equal": true
+  },
+  "tests": {
+    "tests_run": 338,
+    "successful": true,
+    "failures": [],
+    "errors": [],
+    "skipped": [],
+    "elapsed_seconds": 5.164005184080452,
+    "adapter_tests": 19,
+    "offline_integration_tests": 19,
+    "network_connections_forbidden": true,
+    "subprocesses_forbidden": true,
+    "reviewed": false
+  },
+  "protected_files_changed": false,
+  "local_preflight_notes": [
+    "Initial tests.* import was invalid because tests is not a package; unittest discover is the valid entry.",
+    "CLI 0.163.0 forbids overriding reserved openai provider; per-process custom provider with zero retries was locally checked before inference.",
+    "Variadic --image requires -- before the trailing prompt. A local-only input inspection verified exact pixels and prompt.",
+    "No failed model requests or additional verification requests were made."
+  ],
+  "currency_cost_usd": null,
+  "remote_model_snapshot_verified": false
+}

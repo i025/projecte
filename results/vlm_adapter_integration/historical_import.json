@@ -1,0 +1,202 @@
+{
+  "reference": {
+    "backend": "subagent_import",
+    "source_kind": "historical_real",
+    "model_requested": "gpt-6-sol",
+    "model_observed": [
+      "gpt-6-sol"
+    ],
+    "actual_input": {
+      "system": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。\n严格使用以下操作定义：\nyes：有充分可见证据确认该排列存在。\nno：相关书架区域足够清晰，能够确认该排列不存在。\nunknown：由于模糊、遮挡或类别歧义，无法可靠判断。\n不要把“没有清楚看到”直接等同于“不存在”。只输出 JSON。",
+      "user": "请根据当前图像回答：\n\nQ1：图中是否存在至少两本水平叠放的书籍？\nQ2：图中是否存在竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n两个字段均只能为单个 yes、no 或 unknown。\n以上 JSON 只是格式示例，不是预期答案。不要输出额外字段、解释或推理过程。",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "horizontal_stack",
+          "upright_books"
+        ],
+        "properties": {
+          "horizontal_stack": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "upright_books": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "raw_answer": "{\"horizontal_stack\":\"yes\",\"upright_books\":\"yes\"}",
+    "parsed": {
+      "status": "valid",
+      "fields": {
+        "horizontal_stack": {
+          "value": "yes",
+          "raw_value": "yes",
+          "validation_status": "valid",
+          "error": null
+        },
+        "upright_books": {
+          "value": "yes",
+          "raw_value": "yes",
+          "validation_status": "valid",
+          "error": null
+        }
+      },
+      "schema_errors": []
+    },
+    "metadata": {
+      "new_model_calls": 0,
+      "recorded_input": {
+        "task_name": "v_1fcd1d75564e",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/3196285e64c94916ab7ba17d52b1bac6/ce32a43d95464808953468ad0c474a60.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。\n严格使用以下操作定义：\nyes：有充分可见证据确认该排列存在。\nno：相关书架区域足够清晰，能够确认该排列不存在。\nunknown：由于模糊、遮挡或类别歧义，无法可靠判断。\n不要把“没有清楚看到”直接等同于“不存在”。只输出 JSON。\n\nUser：\n请根据当前图像回答：\n\nQ1：图中是否存在至少两本水平叠放的书籍？\nQ2：图中是否存在竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n两个字段均只能为单个 yes、no 或 unknown。\n以上 JSON 只是格式示例，不是预期答案。不要输出额外字段、解释或推理过程。"
+      },
+      "original_usage": {
+        "input_tokens": 44120,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 141,
+        "reasoning_output_tokens": 53,
+        "total_tokens": 44261
+      },
+      "input_isolation": "Historical supplied record only; strict filesystem isolation not established"
+    },
+    "reviewed": false,
+    "energy_contribution": false,
+    "usage": "provisional/debug",
+    "status": "valid"
+  },
+  "render": {
+    "backend": "subagent_import",
+    "source_kind": "historical_real",
+    "model_requested": "gpt-6-sol",
+    "model_observed": [
+      "gpt-6-sol"
+    ],
+    "actual_input": {
+      "system": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。\n严格使用以下操作定义：\nyes：有充分可见证据确认该排列存在。\nno：相关书架区域足够清晰，能够确认该排列不存在。\nunknown：由于模糊、遮挡或类别歧义，无法可靠判断。\n不要把“没有清楚看到”直接等同于“不存在”。只输出 JSON。",
+      "user": "请根据当前图像回答：\n\nQ1：图中是否存在至少两本水平叠放的书籍？\nQ2：图中是否存在竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n两个字段均只能为单个 yes、no 或 unknown。\n以上 JSON 只是格式示例，不是预期答案。不要输出额外字段、解释或推理过程。",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "horizontal_stack",
+          "upright_books"
+        ],
+        "properties": {
+          "horizontal_stack": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "upright_books": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "raw_answer": "{\"horizontal_stack\":\"no\",\"upright_books\":\"yes\"}",
+    "parsed": {
+      "status": "valid",
+      "fields": {
+        "horizontal_stack": {
+          "value": "no",
+          "raw_value": "no",
+          "validation_status": "valid",
+          "error": null
+        },
+        "upright_books": {
+          "value": "yes",
+          "raw_value": "yes",
+          "validation_status": "valid",
+          "error": null
+        }
+      },
+      "schema_errors": []
+    },
+    "metadata": {
+      "new_model_calls": 0,
+      "recorded_input": {
+        "task_name": "v_7df9775ca22c",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/174b9439bdcb4f94b40edf17010b7bae/7e7461197c734ec29d5dd7381a7472b6.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。\n严格使用以下操作定义：\nyes：有充分可见证据确认该排列存在。\nno：相关书架区域足够清晰，能够确认该排列不存在。\nunknown：由于模糊、遮挡或类别歧义，无法可靠判断。\n不要把“没有清楚看到”直接等同于“不存在”。只输出 JSON。\n\nUser：\n请根据当前图像回答：\n\nQ1：图中是否存在至少两本水平叠放的书籍？\nQ2：图中是否存在竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n两个字段均只能为单个 yes、no 或 unknown。\n以上 JSON 只是格式示例，不是预期答案。不要输出额外字段、解释或推理过程。"
+      },
+      "original_usage": {
+        "input_tokens": 44085,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 104,
+        "reasoning_output_tokens": 12,
+        "total_tokens": 44189
+      },
+      "input_isolation": "Historical supplied record only; strict filesystem isolation not established"
+    },
+    "reviewed": false,
+    "energy_contribution": false,
+    "usage": "provisional/debug",
+    "status": "valid"
+  },
+  "results": [
+    {
+      "evidence_id": "books_horizontal_stack",
+      "field": "horizontal_stack",
+      "region_id": "R_shelf",
+      "group_id": "G_books",
+      "energy": "statistical",
+      "claim": null,
+      "question": "图中是否存在至少两本水平叠放的书籍？",
+      "provenance": "Reference-side book arrangement protocol, reused unchanged from group_abstention_calibration",
+      "reference_answer": "yes",
+      "render_answer": "no",
+      "status": "candidate_violated",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "VLM answer is not GT; mismatches require independent review"
+    },
+    {
+      "evidence_id": "books_upright_books",
+      "field": "upright_books",
+      "region_id": "R_shelf",
+      "group_id": "G_books",
+      "energy": "statistical",
+      "claim": null,
+      "question": "图中是否存在竖直站立摆放的书籍？",
+      "provenance": "Reference-side book arrangement protocol, reused unchanged from group_abstention_calibration",
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "VLM answer is not GT; mismatches require independent review"
+    }
+  ],
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "energy_contribution": false,
+  "formal_eligible": false
+}

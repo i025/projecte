@@ -1,0 +1,72 @@
+{
+  "protocol": {
+    "system": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。\n严格使用以下操作定义：\nyes：有充分可见证据确认该排列存在。\nno：相关书架区域足够清晰，能够确认该排列不存在。\nunknown：由于模糊、遮挡或类别歧义，无法可靠判断。\n不要把“没有清楚看到”直接等同于“不存在”。只输出 JSON。",
+    "user": "请根据当前图像回答：\n\nQ1：图中是否存在至少两本水平叠放的书籍？\nQ2：图中是否存在竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n两个字段均只能为单个 yes、no 或 unknown。\n以上 JSON 只是格式示例，不是预期答案。不要输出额外字段、解释或推理过程。",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "horizontal_stack",
+        "upright_books"
+      ],
+      "properties": {
+        "horizontal_stack": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "upright_books": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        }
+      }
+    }
+  },
+  "questions": [
+    {
+      "evidence_id": "books_horizontal_stack",
+      "field": "horizontal_stack",
+      "region_id": "R_shelf",
+      "group_id": "G_books",
+      "energy": "statistical",
+      "question": "图中是否存在至少两本水平叠放的书籍？",
+      "reviewed": false,
+      "provenance": "Reference-side book arrangement protocol, reused unchanged from group_abstention_calibration"
+    },
+    {
+      "evidence_id": "books_upright_books",
+      "field": "upright_books",
+      "region_id": "R_shelf",
+      "group_id": "G_books",
+      "energy": "statistical",
+      "question": "图中是否存在竖直站立摆放的书籍？",
+      "reviewed": false,
+      "provenance": "Reference-side book arrangement protocol, reused unchanged from group_abstention_calibration"
+    }
+  ],
+  "images": [
+    "images/195f77cebbe14451b866aadbc4bb4828.png",
+    "images/f64ad1572e4f4f42919ede7123683e43.png"
+  ],
+  "expected": [
+    {
+      "horizontal_stack": "yes",
+      "upright_books": "yes"
+    },
+    {
+      "horizontal_stack": "no",
+      "upright_books": "yes"
+    }
+  ],
+  "expected_kind": "construction_expected, not independently reviewed",
+  "pair_kind": "synthetic_controls_not_real_Agent_Render",
+  "source": "../group_abstention_calibration/verification_results.json",
+  "reviewed": false
+}

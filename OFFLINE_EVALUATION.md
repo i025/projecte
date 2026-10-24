@@ -38,6 +38,7 @@ run; missing/malformed optional evidence is recorded as unavailable.
   "triage": null,
   "rules": null,
   "render_metadata": "camera.json",
+  "vlm_verification": "verification_results.json",
   "diagnostics": {
     "groups": "group_verification.json",
     "structural_layout": "structural_evidence.json"
@@ -118,6 +119,66 @@ Unavailable geometry/triage/rules do not discard available image measurements.
 Unknown/N/A is serialized as JSON null, never zero. Spatial and Statistical
 image-edge/texture proxies keep their existing meanings; they do not certify
 object layout, density or geometry.
+
+## Optional visual Verification Adapter
+
+`vlm_verification` is an optional **already-produced** adapter result JSON. The
+offline command imports it into `report.diagnostics.vlm_verification`, validates
+raw answers again and recomputes the deterministic comparisons. It never starts
+Codex, Ofox or another model. Missing/malformed results stay unavailable without
+discarding RGB metrics. Failed requests cannot reuse an apparent answer; a
+missing field preserves other valid fields. `unknown` and `unavailable` remain
+non-numeric. Every imported result stays unreviewed, debug-only and excluded
+from Energy, even if its supplied verdict or review flag claims otherwise.
+
+The small Python adapter in `e_harness.verification_adapter` supports:
+
+- `codex_answer(image, contract, ledger=..., model='gpt-6-sol')`: one independent
+  `codex exec --image` invocation with JSON Schema, a temporary input directory,
+  read-only sandbox, disabled execution/image-reader/MCP/plugin/memory tools,
+  timeout and no HTTP/stream retries. Share one ledger across a pair; at most
+  two attempts, no repeated image. It uses existing ChatGPT CLI login, not API keys.
+- `import_subagent(record, contract)`: imports an existing Desktop subagent's
+  exact raw answer and recorded prompt/model/usage. This launches no subagent.
+- `replay(raw, contract, source_kind='historical_real' or 'mock')`: no model or
+  network. Mock provenance remains explicit.
+
+The present pilot intentionally supports the existing two-field book answer
+schema only; this is not a general object verifier. The transport can later be
+reused with an explicitly validated schema for another frozen question set.
+The contract allowlist is `system`, `user`, `schema`; expectations and other-side
+answers belong to the coordinator and must never be added to that contract.
+No `ModelClient` provider API route is changed. Existing book parsing/comparison
+and `model_client.token_counts()` are reused.
+
+**Isolation limit:** read-only does not restrict reading to the temporary cwd.
+The CLI retains its global system context and login state; disabling its tools
+reduces exposure but is not a filesystem access guarantee or strict blind test.
+The local preflight checks one decoded image and the exact prompt without
+persisting Base64. A CLI-selected model name does not prove the remote model
+snapshot; if no observed identifier is returned, it stays null. CLI token usage
+includes platform context and is not equivalent to Ofox billing.
+
+The audited server uses CLI 0.163.0. It rejects overrides to its built-in
+`openai` provider, so the adapter uses a per-process provider definition pointing
+to the official ChatGPT Codex endpoint with zero request/stream retries. No
+shared config or credentials are written. An installation with different CLI
+capabilities should fail preflight, not silently enable execution or retry.
+
+The existing two-image fixture can be replayed without any inference:
+
+```bash
+python3 -B scripts/vlm_adapter_pilot.py prepare --output /tmp/projecte-adapter-new
+python3 -B scripts/vlm_adapter_pilot.py finish --backend replay --output /tmp/projecte-adapter-new
+python3 -B -m unittest discover -s tests -p 'test_verification_adapter.py'
+```
+
+It requires the authorized existing synthetic images and the saved calibration
+records on the server. `--backend subagent_import` imports those same original
+sessions. `--backend codex_cli` is a separate, explicitly selected live operation
+and requires request authorization; never run it as an installation test. The
+pilot reserves its run before inference and refuses to resume/retry a started
+run. See [this integration experiment](results/vlm_adapter_integration/report.md).
 
 ## Outputs and tests
 

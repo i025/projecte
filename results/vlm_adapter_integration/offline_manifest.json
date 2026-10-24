@@ -1,0 +1,16 @@
+{
+  "reference_rgb": "images/195f77cebbe14451b866aadbc4bb4828.png",
+  "render_rgb": "images/f64ad1572e4f4f42919ede7123683e43.png",
+  "vlm_verification": "verification_results.json",
+  "evidence_category": "synthetic_oracle",
+  "camera_comparability": "Synthetic same-camera controls, not a reconstruction evaluation",
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Existing self-authored clear T1/T2 use the same canvas and camera"
+  },
+  "provenance": {
+    "pair_kind": "synthetic_controls_not_real_Agent_Render",
+    "no_new_images_generated": true
+  }
+}

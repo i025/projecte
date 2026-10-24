@@ -194,6 +194,17 @@ def run_manifest(manifest_path, output):
         payload, state = optional_document(source(manifest.get('diagnostics', {}).get(key)))
         diagnostics[key] = dict(**state, evidence=payload, energy_contribution=False,
             interpretation='Attached verbatim for audit; review, applicability and calibrated comparison are not inferred')
+    # Result import only. Running the offline entry never launches a verifier.
+    verification, state = optional_document(source(manifest.get('vlm_verification')))
+    if verification is not None:
+        from .verification_adapter import validate_diagnostics
+        try:
+            verification = validate_diagnostics(verification)
+        except (ValueError, KeyError, TypeError, AttributeError) as exc:
+            verification = None
+            state.update(status='unavailable', reason=f'{type(exc).__name__}: {exc}')
+    diagnostics['vlm_verification'] = dict(**state, evidence=verification,
+        energy_contribution=False, interpretation='Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping')
     regions, masks, overlaps = region_diagnostics(a, b, evidence, valid)
     camera = report['scene_validity']
     metadata = inputs['render_metadata'] or {}
@@ -267,5 +278,15 @@ def run_manifest(manifest_path, output):
         '', '## Reproduce offline', '', 'From the project root, with the documented sibling scene-benchmark dependency and the manifest inputs present:', '',
         '```bash', f'python3 -B -m e_harness.benchmark offline --manifest {manifest_path} --output /tmp/projecte-offline-new-output', '```', '',
         'The output directory must not already exist. Real-image visual derivatives are not cleared for public redistribution.']
+    if verification is not None:
+        lines += ['', '## Imported VLM Verification (unreviewed, no Energy contribution)', '',
+            '| Evidence / Region / Group | Question | Reference | Render / counterpart | Comparison |',
+            '| --- | --- | --- | --- | --- |']
+        for row in verification['results']:
+            fields = [str(row.get(k) if row.get(k) is not None else 'N/A').replace('|', '\\|').replace('\n', ' ')
+                      for k in ('evidence_id', 'region_id', 'group_id', 'question', 'reference_answer', 'render_answer', 'status')]
+            lines.append('| '+' / '.join(fields[:3])+' | '+' | '.join(fields[3:])+' |')
+        lines += ['', 'Backends: '+verification['reference']['backend']+' / '+verification['render']['backend']+
+            '. Raw answers, frozen prompt, model provenance and request failures remain in report.json.']
     (output/'summary.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
     return report

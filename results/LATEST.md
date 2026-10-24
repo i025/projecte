@@ -4,6 +4,12 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+## VLM Verification Adapter 集成（2026-10-25；审核分支，未合并 main）
+
+| 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
+| --- | --- | --- | --- | --- |
+| Codex CLI · 书籍清晰正负对照 | Python通过codex exec图片输入获得两次合法JSON；横放yes→no、竖放yes→yes；统一Manifest只附加诊断。新增19项Adapter测试，完整CPU回归338项通过。 | [自制 comparison.png](vlm_adapter_integration/comparison.png) | [报告](vlm_adapter_integration/report.md) · [真实回答](vlm_adapter_integration/verification_results.json) · [集成检查](vlm_adapter_integration/integration_checks.json) | reviewed=false、provisional/debug；仅两张清晰合成图。请求gpt-6-sol，远端快照未知；临时cwd/只读并非强文件隔离。不将VQA回答转成Energy，不与Desktop Subagent或Ofox混同；公开副本仅路径脱敏，源码Diff以审核分支提交为准。 |
+
 ## Offline Evaluation Integration MVP（2026-10-25；审核分支，未合并 main）
 
 | 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |

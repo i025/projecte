@@ -1,0 +1,14 @@
+{
+  "tests_run": 338,
+  "successful": true,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "elapsed_seconds": 5.164005184080452,
+  "adapter_tests": 19,
+  "offline_integration_tests": 19,
+  "network_connections_forbidden": true,
+  "subprocesses_forbidden": true,
+  "output": "...............................................................................{\n  \"report\": \"<CPU_TEST_TEMP>/out/report.json\",\n  \"camera_protocol\": \"pose_consistent_unverified\",\n  \"formal_eligible\": false,\n  \"usage\": \"provisional/debug\"\n}\n.................Comparison and original-grid diagnostics saved; no inference\n........bw_9064: failure review saved; no direct masks, repairs or API calls\n..........................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 338 tests in 4.623s\n\nOK\n",
+  "reviewed": false
+}
