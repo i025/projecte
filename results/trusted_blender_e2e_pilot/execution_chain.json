@@ -1,0 +1,433 @@
+{
+  "executions": [
+    {
+      "status": "observed_in_current_controller",
+      "source_kind": "source_controlled_fixture",
+      "fixture": "baseline",
+      "fixture_source": "e_harness/runtime/benchmark_blender.py::fixture",
+      "blender_version": "4.2.0",
+      "new_output_directory": true,
+      "actual_camera": {
+        "name": "BenchmarkCamera",
+        "type": "PERSP",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.0,
+          -6.0,
+          2.0
+        ],
+        "rotation_euler_world": [
+          1.570796251296997,
+          -0.0,
+          0.0
+        ],
+        "rotation_units": "radians",
+        "lens_mm": 42.0,
+        "sensor_fit": "HORIZONTAL",
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "shift_x": 0.05000000074505806,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0,
+        "dof_enabled": false
+      },
+      "actual_render": {
+        "engine": "CYCLES",
+        "resolution_x": 256,
+        "resolution_y": 256,
+        "percentage": 100,
+        "pixel_aspect_x": 1.0,
+        "pixel_aspect_y": 1.0,
+        "use_border": false,
+        "use_crop_to_border": false,
+        "border": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "motion_blur": false,
+        "cycles_device": "CPU",
+        "samples": 8,
+        "denoising": false
+      },
+      "pose_matches_T0": true,
+      "intrinsics_pixels": [
+        [
+          298.6666564941406,
+          0.0,
+          115.19999694824219
+        ],
+        [
+          0.0,
+          298.6666564941406,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        256,
+        256
+      ],
+      "artifact_grid_checks_passed": true,
+      "geometry_available": true,
+      "depth": {
+        "convention": "camera_z",
+        "valid_pixels": 18813,
+        "minimum": 4.684986114501953,
+        "maximum": 8.472875595092773,
+        "position_reprojection_max_error_pixels": 0.0008403768042448752
+      },
+      "masks": [
+        {
+          "unit_id": "floor",
+          "mask": "render_masks/floor.png",
+          "pixels": 9839
+        },
+        {
+          "unit_id": "other",
+          "mask": "render_masks/other.png",
+          "pixels": 3621
+        },
+        {
+          "unit_id": "repeat_0",
+          "mask": "render_masks/repeat_0.png",
+          "pixels": 81
+        },
+        {
+          "unit_id": "repeat_1",
+          "mask": "render_masks/repeat_1.png",
+          "pixels": 0
+        },
+        {
+          "unit_id": "repeat_2",
+          "mask": "render_masks/repeat_2.png",
+          "pixels": 130
+        },
+        {
+          "unit_id": "repeat_3",
+          "mask": "render_masks/repeat_3.png",
+          "pixels": 131
+        },
+        {
+          "unit_id": "repeat_4",
+          "mask": "render_masks/repeat_4.png",
+          "pixels": 0
+        },
+        {
+          "unit_id": "repeat_5",
+          "mask": "render_masks/repeat_5.png",
+          "pixels": 81
+        },
+        {
+          "unit_id": "anchor",
+          "mask": "render_masks/anchor.png",
+          "pixels": 4930
+        }
+      ],
+      "normal_available": true,
+      "artifacts": {
+        "rgb": "render.png",
+        "metadata": "export_metadata.json",
+        "geometry": "geometry.json",
+        "depth": "depth_camera_z.npy",
+        "object_id": "object_id.npy",
+        "normals": "normal_world.npy",
+        "runtime": "execution.json",
+        "job": "job.json",
+        "launch": "launch.json"
+      },
+      "launch": {
+        "success": true,
+        "error": null,
+        "returncode": 0,
+        "seconds": 0.737,
+        "peak_rss_bytes": 304709632,
+        "log": "results/trusted_blender_e2e_pilot/baseline/benchmark.log",
+        "command": [
+          "/usr/bin/unshare",
+          "--user",
+          "--map-root-user",
+          "--net",
+          "--mount",
+          "--propagation",
+          "private",
+          "--pid",
+          "--fork",
+          "--kill-child=SIGKILL",
+          "--mount-proc",
+          "--",
+          "<LOCAL_BLENDER_4.2.0>",
+          "--background",
+          "--factory-startup",
+          "--disable-autoexec",
+          "--threads",
+          "2",
+          "--python-exit-code",
+          "1",
+          "--python",
+          "e_harness/runtime/benchmark_blender.py",
+          "--",
+          "results/trusted_blender_e2e_pilot/baseline/job.json"
+        ],
+        "task_quota": false,
+        "cleanup_complete": true,
+        "tracked_pids": [
+          956515,
+          956516
+        ],
+        "process_limit": 4,
+        "scene_validity": "valid"
+      },
+      "geometry_from_same_scene": true,
+      "trusted_scope": "Controller observed bounded fixture execution and artifact associations; no cryptographic attestation or later file-integrity guarantee",
+      "formal_eligible": false,
+      "reviewed": false
+    },
+    {
+      "status": "observed_in_current_controller",
+      "source_kind": "source_controlled_fixture",
+      "fixture": "moved",
+      "fixture_source": "e_harness/runtime/benchmark_blender.py::fixture",
+      "blender_version": "4.2.0",
+      "new_output_directory": true,
+      "actual_camera": {
+        "name": "BenchmarkCamera",
+        "type": "PERSP",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.0,
+          -6.0,
+          2.0
+        ],
+        "rotation_euler_world": [
+          1.570796251296997,
+          -0.0,
+          0.0
+        ],
+        "rotation_units": "radians",
+        "lens_mm": 42.0,
+        "sensor_fit": "HORIZONTAL",
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "shift_x": 0.05000000074505806,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0,
+        "dof_enabled": false
+      },
+      "actual_render": {
+        "engine": "CYCLES",
+        "resolution_x": 256,
+        "resolution_y": 256,
+        "percentage": 100,
+        "pixel_aspect_x": 1.0,
+        "pixel_aspect_y": 1.0,
+        "use_border": false,
+        "use_crop_to_border": false,
+        "border": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "motion_blur": false,
+        "cycles_device": "CPU",
+        "samples": 8,
+        "denoising": false
+      },
+      "pose_matches_T0": true,
+      "intrinsics_pixels": [
+        [
+          298.6666564941406,
+          0.0,
+          115.19999694824219
+        ],
+        [
+          0.0,
+          298.6666564941406,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        256,
+        256
+      ],
+      "artifact_grid_checks_passed": true,
+      "geometry_available": true,
+      "depth": {
+        "convention": "camera_z",
+        "valid_pixels": 18635,
+        "minimum": 4.684986114501953,
+        "maximum": 8.472875595092773,
+        "position_reprojection_max_error_pixels": 0.0008403768042448752
+      },
+      "masks": [
+        {
+          "unit_id": "floor",
+          "mask": "render_masks/floor.png",
+          "pixels": 10015
+        },
+        {
+          "unit_id": "other",
+          "mask": "render_masks/other.png",
+          "pixels": 3621
+        },
+        {
+          "unit_id": "repeat_0",
+          "mask": "render_masks/repeat_0.png",
+          "pixels": 150
+        },
+        {
+          "unit_id": "repeat_1",
+          "mask": "render_masks/repeat_1.png",
+          "pixels": 140
+        },
+        {
+          "unit_id": "repeat_2",
+          "mask": "render_masks/repeat_2.png",
+          "pixels": 0
+        },
+        {
+          "unit_id": "repeat_3",
+          "mask": "render_masks/repeat_3.png",
+          "pixels": 0
+        },
+        {
+          "unit_id": "repeat_4",
+          "mask": "render_masks/repeat_4.png",
+          "pixels": 0
+        },
+        {
+          "unit_id": "repeat_5",
+          "mask": "render_masks/repeat_5.png",
+          "pixels": 81
+        },
+        {
+          "unit_id": "anchor",
+          "mask": "render_masks/anchor.png",
+          "pixels": 4628
+        }
+      ],
+      "normal_available": true,
+      "artifacts": {
+        "rgb": "render.png",
+        "metadata": "export_metadata.json",
+        "geometry": "geometry.json",
+        "depth": "depth_camera_z.npy",
+        "object_id": "object_id.npy",
+        "normals": "normal_world.npy",
+        "runtime": "execution.json",
+        "job": "job.json",
+        "launch": "launch.json"
+      },
+      "launch": {
+        "success": true,
+        "error": null,
+        "returncode": 0,
+        "seconds": 0.733,
+        "peak_rss_bytes": 303976448,
+        "log": "results/trusted_blender_e2e_pilot/changed/benchmark.log",
+        "command": [
+          "/usr/bin/unshare",
+          "--user",
+          "--map-root-user",
+          "--net",
+          "--mount",
+          "--propagation",
+          "private",
+          "--pid",
+          "--fork",
+          "--kill-child=SIGKILL",
+          "--mount-proc",
+          "--",
+          "<LOCAL_BLENDER_4.2.0>",
+          "--background",
+          "--factory-startup",
+          "--disable-autoexec",
+          "--threads",
+          "2",
+          "--python-exit-code",
+          "1",
+          "--python",
+          "e_harness/runtime/benchmark_blender.py",
+          "--",
+          "results/trusted_blender_e2e_pilot/changed/job.json"
+        ],
+        "task_quota": false,
+        "cleanup_complete": true,
+        "tracked_pids": [
+          956536,
+          956537
+        ],
+        "process_limit": 4,
+        "scene_validity": "valid"
+      },
+      "geometry_from_same_scene": true,
+      "trusted_scope": "Controller observed bounded fixture execution and artifact associations; no cryptographic attestation or later file-integrity guarantee",
+      "formal_eligible": false,
+      "reviewed": false
+    }
+  ],
+  "formal_eligible": false
+}

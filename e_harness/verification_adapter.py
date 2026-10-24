@@ -82,7 +82,7 @@ def import_subagent(document, protocol):
     return packet
 
 
-def compare_answers(reference, rendered, questions):
+def compare_answers(reference, rendered, questions, *, image_pair=None):
     from scripts.group_statistical_controls import answer_value, compare_values
     rows, ids, fields = [], set(), set()
     for question in questions:
@@ -100,7 +100,10 @@ def compare_answers(reference, rendered, questions):
             render_answer=values[1], status=compare_values(*values), reviewed=False,
             value=None, scorable=False, energy_contribution=False,
             uncertainty='VLM answer is not GT; mismatches require independent review'))
-    return dict(reference=reference, render=rendered, results=rows, reviewed=False,
+    if image_pair is None and all(p.get('image_binding') for p in (reference, rendered)):
+        image_pair = dict(reference_rgb=reference['image_binding']['source_rgb'],
+                          render_rgb=rendered['image_binding']['source_rgb'])
+    return dict(reference=reference, render=rendered, results=rows, image_pair=deepcopy(image_pair), reviewed=False,
         usage='provisional/debug', energy_contribution=False, formal_eligible=False)
 
 
@@ -124,7 +127,7 @@ def validate_diagnostics(document):
     if packets[0]['actual_input'] != packets[1]['actual_input']:
         raise ValueError('Both sides must use exactly the same frozen contract')
     contract(packets[0]['actual_input'])
-    return compare_answers(*packets, document['results'])
+    return compare_answers(*packets, document['results'], image_pair=document.get('image_pair'))
 
 
 def cli_options(runtime):
@@ -236,6 +239,7 @@ def codex_answer(image, protocol, *, ledger, model='gpt-6-sol', timeout=180,
             raise ValueError('Timeout must be in (0, 300] seconds')
         with Image.open(image) as im:
             im.verify()
+            packet['image_binding'] = dict(source_rgb=str(image), image_size=list(im.size))
         if shutil.which(executable) is None:
             raise FileNotFoundError('Codex executable unavailable')
     except (OSError, ValueError) as exc:

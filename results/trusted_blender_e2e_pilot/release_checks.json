@@ -1,0 +1,26 @@
+{
+  "review_date_utc": "2026-10-24T20:12:33.921243+00:00",
+  "base_commit": "7fce6e9b17aa0ffe0b509abfeaff8e0d264144dc",
+  "target_branch": "feat/offline-integration-mvp",
+  "cpu_tests": {
+    "tests_run": 353,
+    "successful": true,
+    "failures": [],
+    "errors": [],
+    "skipped": [],
+    "elapsed_seconds": 5.46741322404705,
+    "trusted_and_pairing_tests": 15,
+    "adapter_tests": 19,
+    "offline_tests": 19,
+    "network_connections_forbidden": true,
+    "subprocesses_forbidden": true
+  },
+  "real_cpu_blender_runs": 2,
+  "new_model_calls": 0,
+  "gpu_used": false,
+  "numeric_results_and_review_flags_preserved": true,
+  "png_pixels_preserved": true,
+  "formulas_and_weights_changed": false,
+  "runtime_unattended": "blocked",
+  "formal_eligible": false
+}

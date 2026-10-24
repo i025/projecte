@@ -1,0 +1,118 @@
+{
+  "output": "results/trusted_blender_e2e_pilot/changed",
+  "render": {
+    "resolution": [
+      256,
+      256
+    ],
+    "samples": 8,
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "color": "Standard / None / exposure 0 / gamma 1",
+    "device": "CPU",
+    "threads": 2,
+    "timeout": 120
+  },
+  "fixture": "moved",
+  "blend": null,
+  "intrinsics": null,
+  "groups": [
+    {
+      "unit_id": "floor",
+      "scene_ids": [
+        "floor"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "other",
+      "scene_ids": [
+        "other"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "repeat_0",
+      "scene_ids": [
+        "repeat_0"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "repeat_1",
+      "scene_ids": [
+        "repeat_1"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "repeat_2",
+      "scene_ids": [
+        "repeat_2"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "repeat_3",
+      "scene_ids": [
+        "repeat_3"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "repeat_4",
+      "scene_ids": [
+        "repeat_4"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "repeat_5",
+      "scene_ids": [
+        "repeat_5"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    },
+    {
+      "unit_id": "anchor",
+      "scene_ids": [
+        "anchor"
+      ],
+      "reviewed": false,
+      "source": "Known primitive identity, not semantic GT"
+    }
+  ],
+  "rules": {}
+}

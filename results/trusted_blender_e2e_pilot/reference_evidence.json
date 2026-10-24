@@ -1,0 +1,49 @@
+{
+  "image_size": [
+    256,
+    256
+  ],
+  "regions": [
+    {
+      "id": "R_anchor_neighbourhood",
+      "bbox": [
+        21,
+        138,
+        105,
+        250
+      ],
+      "description": "R anchor neighbourhood",
+      "metrics": [
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "reliability": 0.0,
+      "reviewed": false,
+      "source": "Baseline-only same-render visible ID bounds with fixed 15% margin; coarse scope, not object Mask or semantic GT"
+    },
+    {
+      "id": "R_large_primitives",
+      "bbox": [
+        10,
+        127,
+        221,
+        256
+      ],
+      "description": "R large primitives",
+      "metrics": [
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "reliability": 0.0,
+      "reviewed": false,
+      "source": "Baseline-only same-render visible ID bounds with fixed 15% margin; coarse scope, not object Mask or semantic GT"
+    }
+  ],
+  "anchors": [],
+  "reviewed": false,
+  "source": "Reference-only deterministic synthetic fixture candidates"
+}

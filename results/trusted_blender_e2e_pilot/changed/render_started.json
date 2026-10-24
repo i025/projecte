@@ -1,0 +1,8 @@
+{
+  "image_size": [
+    256,
+    256
+  ],
+  "samples": 8,
+  "device": "CPU"
+}

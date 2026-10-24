@@ -1,0 +1,1276 @@
+{
+  "collisions": [
+    {
+      "unit_ids": [
+        "floor",
+        "other"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 0.0,
+          "components": [
+            "floor",
+            "other"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "repeat_0"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 0.0,
+          "components": [
+            "floor",
+            "repeat_0"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "repeat_1"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 1.6858739115832577e-07,
+          "components": [
+            "floor",
+            "repeat_1"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "repeat_2"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 5.960464477539063e-08,
+          "components": [
+            "floor",
+            "repeat_2"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "repeat_3"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 1.4901161193847656e-07,
+          "components": [
+            "floor",
+            "repeat_3"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "repeat_4"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 1.1920928955078125e-07,
+          "components": [
+            "floor",
+            "repeat_4"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "repeat_5"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 0.0,
+          "components": [
+            "floor",
+            "repeat_5"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "floor",
+        "anchor"
+      ],
+      "status": "contact",
+      "value": 1.0,
+      "narrow_phase": [
+        {
+          "status": "contact",
+          "value": 1.0,
+          "nearest_probe_distance": 0.0,
+          "components": [
+            "floor",
+            "anchor"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_ids": [
+        "other",
+        "repeat_0"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "other",
+        "repeat_1"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "other",
+        "repeat_2"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "other",
+        "repeat_3"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "other",
+        "repeat_4"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "other",
+        "repeat_5"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "other",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_0",
+        "repeat_1"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_0",
+        "repeat_2"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_0",
+        "repeat_3"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_0",
+        "repeat_4"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_0",
+        "repeat_5"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_0",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_1",
+        "repeat_2"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_1",
+        "repeat_3"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_1",
+        "repeat_4"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_1",
+        "repeat_5"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_1",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_2",
+        "repeat_3"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_2",
+        "repeat_4"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_2",
+        "repeat_5"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_2",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_3",
+        "repeat_4"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_3",
+        "repeat_5"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_3",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_4",
+        "repeat_5"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_4",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    },
+    {
+      "unit_ids": [
+        "repeat_5",
+        "anchor"
+      ],
+      "status": "separate",
+      "value": 1.0,
+      "broad_phase": "disjoint"
+    }
+  ],
+  "objects": [
+    {
+      "unit_id": "floor",
+      "bounds": [
+        [
+          -3.5,
+          -2.5,
+          -0.30000001192092896
+        ],
+        [
+          3.5,
+          2.5,
+          0.0
+        ]
+      ],
+      "support": {
+        "status": "not_evaluable",
+        "value": null,
+        "supports": [],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": null,
+        "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": null,
+        "status": "not_evaluable",
+        "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+      },
+      "component_names": [
+        "floor"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "other",
+      "bounds": [
+        [
+          0.5,
+          -0.5,
+          0.0
+        ],
+        [
+          1.5,
+          0.5,
+          1.0
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  0.5,
+                  -0.5,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  0.5,
+                  0.5,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  1.5,
+                  -0.5,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  1.5,
+                  0.5,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -2.2351741811588166e-10,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "other"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "repeat_0",
+      "bounds": [
+        [
+          -2.125,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          -1.875,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  -2.125,
+                  1.1749999523162842,
+                  -9.313225746154785e-10
+                ],
+                "gap": 7.078051564995969e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -2.125,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.875,
+                  1.1749999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.875,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -2.2351741811588166e-10,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "repeat_0"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "repeat_1",
+      "bounds": [
+        [
+          -1.3250000476837158,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          -1.0750000476837158,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.3250000476837158,
+                  1.1749999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.3250000476837158,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.0750000476837158,
+                  1.1749999523162842,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.0750000476837158,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -1.1548399927313602e-09,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "repeat_1"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "repeat_2",
+      "bounds": [
+        [
+          -0.5249999761581421,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          -0.2750000059604645,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  -0.5249999761581421,
+                  1.1749999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -0.5249999761581421,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -0.2750000059604645,
+                  1.1749999523162842,
+                  -9.313225746154785e-10
+                ],
+                "gap": 7.078051564995969e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -0.2750000059604645,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -2.2351741811588166e-10,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "repeat_2"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "repeat_3",
+      "bounds": [
+        [
+          0.2750000059604645,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          0.5249999761581421,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  0.2750000059604645,
+                  1.1749999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  0.2750000059604645,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  0.5249999761581421,
+                  1.1749999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  0.5249999761581421,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -2.2351741811588166e-10,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "repeat_3"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "repeat_4",
+      "bounds": [
+        [
+          1.0750000476837158,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          1.3250000476837158,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  1.0750000476837158,
+                  1.1749999523162842,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  1.0750000476837158,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  1.3250000476837158,
+                  1.1749999523162842,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  1.3250000476837158,
+                  1.4249999523162842,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -1.1548399927313602e-09,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "repeat_4"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "repeat_5",
+      "bounds": [
+        [
+          1.875,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          2.125,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  1.875,
+                  1.1749999523162842,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  1.875,
+                  1.4249999523162842,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  2.125,
+                  1.1749999523162842,
+                  -9.313225746154785e-10
+                ],
+                "gap": 7.078051564995969e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  2.125,
+                  1.4249999523162842,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -1.1548399927313602e-09,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "repeat_5"
+      ],
+      "affine_rank": 3
+    },
+    {
+      "unit_id": "anchor",
+      "bounds": [
+        [
+          -1.5,
+          -0.5,
+          0.0
+        ],
+        [
+          -0.5,
+          0.5,
+          1.5
+        ]
+      ],
+      "support": {
+        "status": "supported",
+        "value": 1.0,
+        "supports": [
+          {
+            "receiver": "floor",
+            "value": 1.0,
+            "contact_count": 4,
+            "base_sample_count": 4,
+            "contact_fraction": 1.0,
+            "contact_xy_rank": 2,
+            "points": [
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.5,
+                  -0.5,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -1.5,
+                  0.5,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -0.5,
+                  -0.5,
+                  9.313225746154785e-10
+                ],
+                "gap": -1.1548399927313602e-09
+              },
+              {
+                "receiver": "floor",
+                "point": [
+                  -0.5,
+                  0.5,
+                  0.0
+                ],
+                "gap": -2.2351741811588166e-10
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "base_sample_count": 4,
+        "minimum_observed_downward_gap": -1.1548399927313602e-09,
+        "reason": null,
+        "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+      },
+      "floating": {
+        "value": 1.0,
+        "status": "no_floating_detected",
+        "reason": null
+      },
+      "component_names": [
+        "anchor"
+      ],
+      "affine_rank": 3
+    }
+  ],
+  "semantic_grouping_reviewed": false,
+  "support_receivers_complete": false,
+  "components": [
+    {
+      "name": "floor",
+      "closed": true,
+      "bounds": [
+        [
+          -3.5,
+          -2.5,
+          -0.30000001192092896
+        ],
+        [
+          3.5,
+          2.5,
+          0.0
+        ]
+      ],
+      "volume_estimate": 10.500000417232513,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "anchor",
+      "closed": true,
+      "bounds": [
+        [
+          -1.5,
+          -0.5,
+          0.0
+        ],
+        [
+          -0.5,
+          0.5,
+          1.5
+        ]
+      ],
+      "volume_estimate": 1.5,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "other",
+      "closed": true,
+      "bounds": [
+        [
+          0.5,
+          -0.5,
+          0.0
+        ],
+        [
+          1.5,
+          0.5,
+          1.0
+        ]
+      ],
+      "volume_estimate": 1.0,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "repeat_0",
+      "closed": true,
+      "bounds": [
+        [
+          -2.125,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          -1.875,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "volume_estimate": 0.014999999664723873,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "repeat_1",
+      "closed": true,
+      "bounds": [
+        [
+          -1.3250000476837158,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          -1.0750000476837158,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "volume_estimate": 0.014999999664723873,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "repeat_2",
+      "closed": true,
+      "bounds": [
+        [
+          -0.5249999761581421,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          -0.2750000059604645,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "volume_estimate": 0.01499999787658457,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "repeat_3",
+      "closed": true,
+      "bounds": [
+        [
+          0.2750000059604645,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          0.5249999761581421,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "volume_estimate": 0.01499999787658457,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "repeat_4",
+      "closed": true,
+      "bounds": [
+        [
+          1.0750000476837158,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          1.3250000476837158,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "volume_estimate": 0.014999999664723873,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "name": "repeat_5",
+      "closed": true,
+      "bounds": [
+        [
+          1.875,
+          1.1749999523162842,
+          0.0
+        ],
+        [
+          2.125,
+          1.4249999523162842,
+          0.23999999463558197
+        ]
+      ],
+      "volume_estimate": 0.014999999664723873,
+      "affine_rank": 3,
+      "vertex_count": 8,
+      "triangle_count": 12
+    }
+  ],
+  "scope": "Evaluated scene coordinates; +Z up; geometry-only candidates, semantic triage required"
+}

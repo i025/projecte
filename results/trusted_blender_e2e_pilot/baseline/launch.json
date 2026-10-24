@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "error": null,
+  "returncode": 0,
+  "seconds": 0.737,
+  "peak_rss_bytes": 304709632,
+  "log": "results/trusted_blender_e2e_pilot/baseline/benchmark.log",
+  "command": [
+    "/usr/bin/unshare",
+    "--user",
+    "--map-root-user",
+    "--net",
+    "--mount",
+    "--propagation",
+    "private",
+    "--pid",
+    "--fork",
+    "--kill-child=SIGKILL",
+    "--mount-proc",
+    "--",
+    "<LOCAL_BLENDER_4.2.0>",
+    "--background",
+    "--factory-startup",
+    "--disable-autoexec",
+    "--threads",
+    "2",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "e_harness/runtime/benchmark_blender.py",
+    "--",
+    "results/trusted_blender_e2e_pilot/baseline/job.json"
+  ],
+  "task_quota": false,
+  "cleanup_complete": true,
+  "tracked_pids": [
+    956515,
+    956516
+  ],
+  "process_limit": 4,
+  "scene_validity": "valid"
+}

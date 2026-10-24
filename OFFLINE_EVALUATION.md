@@ -131,6 +131,16 @@ missing field preserves other valid fields. `unknown` and `unavailable` remain
 non-numeric. Every imported result stays unreviewed, debug-only and excluded
 from Energy, even if its supplied verdict or review flag claims otherwise.
 
+New result bundles must include `image_pair` with `reference_rgb` and
+`render_rgb`, relative to the verification JSON or absolute. They must resolve
+to the current Manifest images; recorded per-side `image_binding.source_rgb`
+must also agree when supplied. CLI packets now record their source image path.
+Old unbound answers and wrong/swapped pairs are retained as `unmatched_evidence`
+with `status=unavailable`, never attributed to the current pair. Explicitly
+bound Mock/replay packets remain labelled as such. This is association checking,
+not authentication against replacing image contents at the same path. Original
+historical JSON is not retroactively given a binding.
+
 The small Python adapter in `e_harness.verification_adapter` supports:
 
 - `codex_answer(image, contract, ledger=..., model='gpt-6-sol')`: one independent
@@ -179,6 +189,42 @@ sessions. `--backend codex_cli` is a separate, explicitly selected live operatio
 and requires request authorization; never run it as an installation test. The
 pilot reserves its run before inference and refuses to resume/retry a started
 run. See [this integration experiment](results/vlm_adapter_integration/report.md).
+
+## Trusted Blender fixture closure
+
+The separate bounded controller accepts only a new output directory and uses
+the existing source-controlled `baseline` and `moved` fixtures. It never accepts
+Agent Python, arbitrary scene paths or a saved execution receipt as trusted:
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -B -m e_harness.benchmark_trusted \
+  --output /tmp/projecte-trusted-fixture-new
+```
+
+This command **actually launches two serial CPU Blender jobs** with the existing
+namespace launcher, two render threads/two-CPU affinity, 8 samples, 256×256 and
+existing time/memory/cleanup limits. Check server resources first. It validates
+actual same-run source/config, camera before/after export, T0, K, RGB/Depth/ID
+grid correspondence, binary ID masks and evaluated Geometry components before
+calling the unchanged offline metrics. Reference candidate ROI is frozen from
+Baseline before Changed exists. The actual renderer is still the whitelisted
+`e_harness/runtime/benchmark_blender.py`; it now additionally exports execution
+metadata without changing scene generation or metric definitions.
+
+`execution_chain.json` is an audit trail produced by this controller. It is not
+a certificate that can be imported to upgrade a static replay. The controller
+can report observed trusted synthetic execution while the standalone evaluator
+remains `pose_consistent_unverified` and `formal_eligible=false`. The launcher's
+legacy `scene_validity=valid` means successful render execution only. No matching
+camera matrix, boolean or arbitrary receipt confers formal Benchmark status.
+Unreviewed Group/semantic/structural evidence remains excluded from Energy.
+
+Outputs include `comparison.png`, `report.json`, `integration_checks.json`,
+`summary.md`, both per-scene exports and fixed-coordinate Manifest evaluations.
+No HTML, VLM, GPU, SAM/SLIC/DINO or Agent execution is involved. See the
+[actual synthetic pilot](results/trusted_blender_e2e_pilot/summary.md). Formal
+Runtime stays blocked. The sibling evaluator/Blender dependencies and real
+Reference evidence/verification limitations still apply.
 
 ## Outputs and tests
 

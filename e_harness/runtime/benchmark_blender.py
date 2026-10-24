@@ -157,6 +157,7 @@ def main():
         scene=bpy.context.scene
     benchmark_camera(scene,config,job.get('intrinsics'))
     configure(scene,config)
+    before_camera = metadata(scene)['camera']
     rows=job.get('groups',[])
     # Component IDs are observations; they are not semantic Anchor identities.
     mappings=rows or [dict(unit_id=f'component_{i:04}',scene_ids=[o.name],reviewed=False)
@@ -177,6 +178,13 @@ def main():
         geometry=dict(status='unavailable',reason=f'{type(exc).__name__}: {exc}',
                       scope='RGB export succeeded; structural evidence is unavailable, not a zero error')
     write_json(out/'geometry.json',geometry)
+    write_json(out/'execution.json',dict(source_kind='source_controlled_fixture' if job.get('fixture') else 'reviewed_static_blend',
+        fixture=job.get('fixture'),renderer='e_harness/runtime/benchmark_blender.py',
+        blender_version=bpy.app.version_string,camera_before_export=before_camera,
+        camera_after_export=metadata(scene)['camera'],
+        render_after_export=metadata(scene)['render'],
+        autoexec_enabled=bpy.context.preferences.filepaths.use_scripts_auto_execute,
+        geometry_from_same_scene=True,render_calls=1,agent_python_executed=False))
     write_json(out/'result.json',dict(success=True,scene_validity='valid',source_saved=False,
                                     structural_status=geometry.get('status','candidates_available')))
 

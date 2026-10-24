@@ -196,14 +196,30 @@ def run_manifest(manifest_path, output):
             interpretation='Attached verbatim for audit; review, applicability and calibrated comparison are not inferred')
     # Result import only. Running the offline entry never launches a verifier.
     verification, state = optional_document(source(manifest.get('vlm_verification')))
+    unmatched_verification = verification
     if verification is not None:
         from .verification_adapter import validate_diagnostics
         try:
             verification = validate_diagnostics(verification)
+            pair = verification.get('image_pair')
+            if not isinstance(pair, dict) or set(pair) != {'reference_rgb', 'render_rgb'}:
+                raise ValueError('Verification has no explicit image_pair binding; historical answers are not assigned to current images')
+            verification_path = source(manifest['vlm_verification'])
+            for key, expected in (('reference_rgb', ref_path), ('render_rgb', render_path)):
+                value = pair[key]
+                if not isinstance(value, str) or (verification_path.parent/value).resolve() != expected:
+                    raise ValueError('Verification image_pair differs from manifest: '+key)
+            for side, key in (('reference', 'reference_rgb'), ('render', 'render_rgb')):
+                binding = verification[side].get('image_binding')
+                if binding and (verification_path.parent/binding['source_rgb']).resolve() != (ref_path if side=='reference' else render_path):
+                    raise ValueError('Recorded model image source conflicts with image_pair: '+side)
+            state['pair_binding'] = 'matched_paths_unverified_content'
+            unmatched_verification = None
         except (ValueError, KeyError, TypeError, AttributeError) as exc:
             verification = None
             state.update(status='unavailable', reason=f'{type(exc).__name__}: {exc}')
     diagnostics['vlm_verification'] = dict(**state, evidence=verification,
+        unmatched_evidence=unmatched_verification, applicable_to_current_pair=verification is not None,
         energy_contribution=False, interpretation='Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping')
     regions, masks, overlaps = region_diagnostics(a, b, evidence, valid)
     camera = report['scene_validity']

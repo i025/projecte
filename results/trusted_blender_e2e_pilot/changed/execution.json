@@ -1,0 +1,130 @@
+{
+  "source_kind": "source_controlled_fixture",
+  "fixture": "moved",
+  "renderer": "e_harness/runtime/benchmark_blender.py",
+  "blender_version": "4.2.0",
+  "camera_before_export": {
+    "name": "BenchmarkCamera",
+    "type": "PERSP",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        7.549790126404332e-08,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        7.549790126404332e-08,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location": [
+      0.0,
+      -6.0,
+      2.0
+    ],
+    "rotation_euler_world": [
+      1.570796251296997,
+      -0.0,
+      0.0
+    ],
+    "rotation_units": "radians",
+    "lens_mm": 42.0,
+    "sensor_fit": "HORIZONTAL",
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "shift_x": 0.05000000074505806,
+    "shift_y": 0.0,
+    "clip_start": 0.10000000149011612,
+    "clip_end": 1000.0,
+    "dof_enabled": false
+  },
+  "camera_after_export": {
+    "name": "BenchmarkCamera",
+    "type": "PERSP",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        7.549790126404332e-08,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        7.549790126404332e-08,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location": [
+      0.0,
+      -6.0,
+      2.0
+    ],
+    "rotation_euler_world": [
+      1.570796251296997,
+      -0.0,
+      0.0
+    ],
+    "rotation_units": "radians",
+    "lens_mm": 42.0,
+    "sensor_fit": "HORIZONTAL",
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "shift_x": 0.05000000074505806,
+    "shift_y": 0.0,
+    "clip_start": 0.10000000149011612,
+    "clip_end": 1000.0,
+    "dof_enabled": false
+  },
+  "render_after_export": {
+    "engine": "CYCLES",
+    "resolution_x": 256,
+    "resolution_y": 256,
+    "percentage": 100,
+    "pixel_aspect_x": 1.0,
+    "pixel_aspect_y": 1.0,
+    "use_border": false,
+    "use_crop_to_border": false,
+    "border": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "motion_blur": false,
+    "cycles_device": "CPU",
+    "samples": 8,
+    "denoising": false
+  },
+  "autoexec_enabled": false,
+  "geometry_from_same_scene": true,
+  "render_calls": 1,
+  "agent_python_executed": false
+}

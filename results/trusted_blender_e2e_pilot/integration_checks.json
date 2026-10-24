@@ -1,0 +1,198 @@
+{
+  "trusted_fixture_execution": true,
+  "same_actual_camera_and_settings": true,
+  "source_snapshots_unchanged": true,
+  "reference_evidence_frozen_before_changed": true,
+  "actual_blender_executions": 2,
+  "serial": true,
+  "gpu_used": false,
+  "vlm_calls": 0,
+  "agent_python_executed": false,
+  "render_artifacts_verified": true,
+  "formal_eligible": false,
+  "reviewed": false,
+  "baseline_valid_errors_zero": true,
+  "changed_appearance_response": true,
+  "region_measurements": [
+    [
+      {
+        "id": "R_anchor_neighbourhood",
+        "description": "R anchor neighbourhood",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 9408.0,
+        "valid_pixel_weight": 9408.0,
+        "measurement_pixel_weight": 9408.0,
+        "appearance": 0.0,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.0,
+          "statistical": 0.0
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "R_large_primitives",
+        "description": "R large primitives",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 27219.0,
+        "valid_pixel_weight": 27219.0,
+        "measurement_pixel_weight": 27219.0,
+        "appearance": 0.0,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.0,
+          "statistical": 0.0
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    [
+      {
+        "id": "R_anchor_neighbourhood",
+        "description": "R anchor neighbourhood",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 9408.0,
+        "valid_pixel_weight": 9408.0,
+        "measurement_pixel_weight": 9408.0,
+        "appearance": 0.17462874038504292,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.008643066595947456,
+          "statistical": 0.015345659929993911
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "R_large_primitives",
+        "description": "R large primitives",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 27219.0,
+        "valid_pixel_weight": 27219.0,
+        "measurement_pixel_weight": 27219.0,
+        "appearance": 0.09427483253119756,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.009314988474113441,
+          "statistical": 0.005667936679688786
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ]
+  ],
+  "region_overlap": [
+    {
+      "named_region_count": 2,
+      "overlap_pixels": 9408,
+      "overlap_fraction_of_valid": 0.1435546875,
+      "max_multiplicity": 2,
+      "unassigned_valid_pixels": 38317,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    },
+    {
+      "named_region_count": 2,
+      "overlap_pixels": 9408,
+      "overlap_fraction_of_valid": 0.1435546875,
+      "max_multiplicity": 2,
+      "unassigned_valid_pixels": 38317,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  ],
+  "geometry_available": [
+    true,
+    true
+  ],
+  "vlm_unavailable": [
+    "unavailable",
+    "unavailable"
+  ],
+  "elapsed_seconds": 1.8275619510095567,
+  "runtime_unattended": "blocked",
+  "execution_binding_scope": "Observed directly by this controller; static Manifest remains unverified",
+  "sampled_resources": {
+    "baseline": {
+      "sampled_peak_processes": 2,
+      "sampled_peak_threads": 11,
+      "sampled_max_cpu_seconds": 0.9,
+      "all_sampled_threads_within_affinity": true
+    },
+    "changed": {
+      "sampled_peak_processes": 2,
+      "sampled_peak_threads": 11,
+      "sampled_max_cpu_seconds": 0.88,
+      "all_sampled_threads_within_affinity": true
+    }
+  },
+  "negative_controls": {
+    "missing_geometry": {
+      "core_energies_unchanged": true,
+      "formal_eligible": false,
+      "camera_protocol": "pose_consistent_unverified",
+      "vlm_status": "unavailable",
+      "vlm_applied": false,
+      "structural_energy": null,
+      "new_model_calls": 0,
+      "new_blender_executions": 0,
+      "passed": true
+    },
+    "unbound_old_vlm": {
+      "core_energies_unchanged": true,
+      "formal_eligible": false,
+      "camera_protocol": "pose_consistent_unverified",
+      "vlm_status": "unavailable",
+      "vlm_applied": false,
+      "structural_energy": null,
+      "new_model_calls": 0,
+      "new_blender_executions": 0,
+      "passed": true
+    },
+    "forged_declarations": {
+      "core_energies_unchanged": true,
+      "formal_eligible": false,
+      "camera_protocol": "pose_consistent_unverified",
+      "vlm_status": "unavailable",
+      "vlm_applied": false,
+      "structural_energy": null,
+      "new_model_calls": 0,
+      "new_blender_executions": 0,
+      "passed": true
+    },
+    "historical_metadata": {
+      "core_energies_unchanged": true,
+      "formal_eligible": false,
+      "camera_protocol": "historical_camera",
+      "vlm_status": "unavailable",
+      "vlm_applied": false,
+      "structural_energy": null,
+      "new_model_calls": 0,
+      "new_blender_executions": 0,
+      "passed": true,
+      "scope": "Synthetic metadata fault injection at 1.5 m; not an actual historical-camera render"
+    }
+  }
+}

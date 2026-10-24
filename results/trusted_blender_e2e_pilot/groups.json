@@ -1,0 +1,13 @@
+{
+  "reviewed": false,
+  "groups": [
+    {
+      "group_id": "G_large_primitives",
+      "region_id": "R_large_primitives",
+      "scope": "Two source-controlled large primitive components",
+      "source": "Fixture construction declaration, no automatic semantic verification",
+      "reviewed": false
+    }
+  ],
+  "energy_contribution": false
+}

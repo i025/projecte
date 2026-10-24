@@ -1,0 +1,22 @@
+{
+  "reference_rgb": "baseline/render.png",
+  "render_rgb": "baseline/render.png",
+  "reference_evidence": "reference_evidence.json",
+  "geometry": "baseline/geometry.json",
+  "render_metadata": "baseline/export_metadata.json",
+  "diagnostics": {
+    "groups": "groups.json"
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Same controller, same actual exported T0/K/resolution; fixed Baseline-only ROI"
+  },
+  "camera_comparability": "same_controlled_fixture_camera",
+  "evidence_category": "synthetic_oracle",
+  "provenance": {
+    "execution_chain": "execution_chain.json",
+    "execution": "baseline",
+    "trust_note": "File provenance is a saved audit trail, not authorization to certify a static replay"
+  }
+}

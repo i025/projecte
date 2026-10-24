@@ -1,0 +1,268 @@
+{
+  "render_seconds": 0.2135385158471763,
+  "image_size": [
+    256,
+    256
+  ],
+  "samples": 8,
+  "threads": 2,
+  "device": "CPU",
+  "camera_unchanged": true,
+  "camera": {
+    "name": "BenchmarkCamera",
+    "type": "PERSP",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        7.549790126404332e-08,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        7.549790126404332e-08,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location": [
+      0.0,
+      -6.0,
+      2.0
+    ],
+    "rotation_euler_world": [
+      1.570796251296997,
+      -0.0,
+      0.0
+    ],
+    "rotation_units": "radians",
+    "lens_mm": 42.0,
+    "sensor_fit": "HORIZONTAL",
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "shift_x": 0.05000000074505806,
+    "shift_y": 0.0,
+    "clip_start": 0.10000000149011612,
+    "clip_end": 1000.0,
+    "dof_enabled": false
+  },
+  "intrinsics_pixels": [
+    [
+      298.6666564941406,
+      0.0,
+      115.19999694824219
+    ],
+    [
+      0.0,
+      298.6666564941406,
+      128.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "projection_matrix_blender": [
+    [
+      2.3333332538604736,
+      0.0,
+      0.10000002384185791,
+      0.0
+    ],
+    [
+      0.0,
+      2.3333332538604736,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0001999139785767,
+      -0.20002000033855438
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+  "depth_convention": "camera_z",
+  "depth_computation": "negative Blender-camera z of same-render world Position pass",
+  "depth_units": "scene coordinate units; no metric ground truth asserted",
+  "valid_depth_pixel_count": 18813,
+  "raw_z_vs_world_distance_max_error": 1.018374415369431,
+  "raw_z_vs_world_distance_mean_error": 0.41327896840850714,
+  "position_reprojection_mean_error_pixels": 0.0007525565740688244,
+  "position_reprojection_max_error_pixels": 0.0008403768042448752,
+  "semantic_ids": {
+    "1": "floor",
+    "2": "other",
+    "3": "repeat_0",
+    "4": "repeat_1",
+    "5": "repeat_2",
+    "6": "repeat_3",
+    "7": "repeat_4",
+    "8": "repeat_5",
+    "9": "anchor"
+  },
+  "visible_pixel_counts_by_type": {
+    "floor": {
+      "CURVE": 0,
+      "MESH": 9839
+    },
+    "other": {
+      "CURVE": 0,
+      "MESH": 3621
+    },
+    "repeat_0": {
+      "CURVE": 0,
+      "MESH": 81
+    },
+    "repeat_1": {
+      "CURVE": 0,
+      "MESH": 0
+    },
+    "repeat_2": {
+      "CURVE": 0,
+      "MESH": 130
+    },
+    "repeat_3": {
+      "CURVE": 0,
+      "MESH": 131
+    },
+    "repeat_4": {
+      "CURVE": 0,
+      "MESH": 0
+    },
+    "repeat_5": {
+      "CURVE": 0,
+      "MESH": 81
+    },
+    "anchor": {
+      "CURVE": 0,
+      "MESH": 4930
+    }
+  },
+  "components": [
+    {
+      "component_id": 1,
+      "name": "anchor",
+      "type": "MESH",
+      "semantic_id": 9,
+      "visible_pixel_count": 4930
+    },
+    {
+      "component_id": 2,
+      "name": "floor",
+      "type": "MESH",
+      "semantic_id": 1,
+      "visible_pixel_count": 9839
+    },
+    {
+      "component_id": 3,
+      "name": "other",
+      "type": "MESH",
+      "semantic_id": 2,
+      "visible_pixel_count": 3621
+    },
+    {
+      "component_id": 4,
+      "name": "repeat_0",
+      "type": "MESH",
+      "semantic_id": 3,
+      "visible_pixel_count": 81
+    },
+    {
+      "component_id": 5,
+      "name": "repeat_1",
+      "type": "MESH",
+      "semantic_id": 4,
+      "visible_pixel_count": 0
+    },
+    {
+      "component_id": 6,
+      "name": "repeat_2",
+      "type": "MESH",
+      "semantic_id": 5,
+      "visible_pixel_count": 130
+    },
+    {
+      "component_id": 7,
+      "name": "repeat_3",
+      "type": "MESH",
+      "semantic_id": 6,
+      "visible_pixel_count": 131
+    },
+    {
+      "component_id": 8,
+      "name": "repeat_4",
+      "type": "MESH",
+      "semantic_id": 7,
+      "visible_pixel_count": 0
+    },
+    {
+      "component_id": 9,
+      "name": "repeat_5",
+      "type": "MESH",
+      "semantic_id": 8,
+      "visible_pixel_count": 81
+    }
+  ],
+  "background_objects": [],
+  "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+  "input_alignment_accuracy_verified": false,
+  "input_masks_reviewed": false,
+  "source_saved": false,
+  "fixed_T0": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      -6.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ortho_scale": 6.0,
+  "fixed_extrinsics_enforced": true,
+  "color_management": {
+    "display_device": "sRGB",
+    "view_transform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "component_identity_is_semantics": false
+}

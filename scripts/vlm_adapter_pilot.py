@@ -105,6 +105,7 @@ def finish(output, backend):
             model=historical[k]['model_requested']) for k in ('reference','render')]
         bundle = compare_answers(*packets, questions)
     bundle.update(pair_kind=inputs['pair_kind'], expected_labels=inputs['expected'],
+        image_pair=dict(reference_rgb=inputs['images'][0],render_rgb=inputs['images'][1]),
         expected_labels_source='Frozen before current inference; construction_expected, unreviewed')
     checks.update(cli_attempts=ledger, real_model_attempts=len(ledger),
         all_results_diagnostic_only=all(not r['scorable'] and r['value'] is None for r in bundle['results']))

@@ -4,6 +4,12 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+## Trusted Blender End-to-End Pilot（2026-10-25；审核分支，未合并 main）
+
+| 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
+| --- | --- | --- | --- | --- |
+| 实际受控 CPU Blender → Offline | 两次真实串行渲染，实际T0/K/设置相同；RGB、Depth、Object-ID和9组件Geometry同次导出，进入完整离线报告。Baseline有效图像误差0，移动红色主体后Appearance为0.03928318，固定局部0.17462874。 | [自制 comparison.png](trusted_blender_e2e_pilot/comparison.png) | [总结与复现](trusted_blender_e2e_pilot/summary.md) · [完整报告](trusted_blender_e2e_pilot/report.json) · [执行检查](trusted_blender_e2e_pilot/integration_checks.json) · [CPU测试](trusted_blender_e2e_pilot/cpu_tests.json) | 353项CPU回归通过，新增15项；0次VLM调用。已实际观察可信Fixture执行，不是正式Agent成绩。Semantic/Perceptual/Structural N/A，Spatial/Statistical仍是图像代理。旧VLM回答缺配对信息时拒配；静态布尔/匹配相机不授予正式资格；reviewed=false、provisional/debug，Runtime仍blocked。 |
+
 ## VLM Verification Adapter 集成（2026-10-25；审核分支，未合并 main）
 
 | 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
