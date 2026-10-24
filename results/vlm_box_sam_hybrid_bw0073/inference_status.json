@@ -1,0 +1,56 @@
+{
+  "status": "available",
+  "inference_calls": 1,
+  "box_prompts": 4,
+  "wall_seconds_including_model_load_and_postprocessing": 4.18286218191497,
+  "gpu_peak_allocated_mib": 434.26513671875,
+  "gpu_peak_reserved_mib": 668.0,
+  "gpu_observations": [
+    {
+      "uuid": "GPU-f099fdbd-adf2-6157-3462-4145bc2a8359",
+      "total_mib": 40960,
+      "used_mib": 0,
+      "utilization_percent": 0,
+      "pids": [],
+      "recorded_at": 1792600857.9353535
+    },
+    {
+      "uuid": "GPU-f099fdbd-adf2-6157-3462-4145bc2a8359",
+      "total_mib": 40960,
+      "used_mib": 0,
+      "utilization_percent": 0,
+      "pids": [],
+      "recorded_at": 1792600861.2120628
+    }
+  ],
+  "gpu_after": {
+    "uuid": "GPU-f099fdbd-adf2-6157-3462-4145bc2a8359",
+    "total_mib": 40960,
+    "used_mib": 1181,
+    "utilization_percent": 0,
+    "pids": [
+      3778051
+    ],
+    "recorded_at": 1792600866.4909499
+  },
+  "info": {
+    "inference_seconds": 0.4928039910737425,
+    "effective_tensor_shape": [
+      1,
+      3,
+      1024,
+      1024
+    ],
+    "loading_info": {
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "mismatched_keys": [],
+      "error_msgs": []
+    },
+    "multimask_output": false,
+    "postprocessing": "official resize to original grid and zero-logit threshold; no mask corrections",
+    "loading_note": "Official sam2_video checkpoint; static Sam2Model loads image branch and ignores video-only parameters",
+    "reviewed": false
+  },
+  "reviewed": false
+}

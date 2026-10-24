@@ -1,0 +1,1128 @@
+{
+  "success": true,
+  "checks": {
+    "self_zero": true,
+    "deletion_semantic": true,
+    "color_semantic_zero": true,
+    "distribution_responds": true,
+    "coverage_preserved": true,
+    "q_zero_invariant": true,
+    "q_zero_coverage_visible": true,
+    "importance_spatial": true,
+    "importance_appearance": true,
+    "importance_semantic": true,
+    "missing_evidence_na": true,
+    "spatial_strength_nondecreasing": true
+  },
+  "cases": {
+    "self": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.0,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.0,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "delete_anchor": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.0009765625,
+          "appearance": 0.0005514705882352941,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "observation_energy": 0.08377034148144878,
+        "coverage": 0.5714285714285714,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 8
+        },
+        "delta_energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.0009765625,
+          "appearance": 0.0005514705882352941,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "delta_observation": 0.08377034148144878,
+        "delta_coverage": -0.1428571428571429
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.16764322916666666,
+          "appearance": 0.049571078431372546,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "observation_energy": 0.13769191010889975,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.16764322916666666,
+          "appearance": 0.049571078431372546,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "delta_observation": 0.13769191010889975,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "move_05": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.00740948359322123,
+          "appearance": 0.03415869297571535,
+          "statistical": 0.0003012082414086602,
+          "perceptual": null
+        },
+        "observation_energy": 0.010467346202586311,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.00740948359322123,
+          "appearance": 0.03415869297571535,
+          "statistical": 0.0003012082414086602,
+          "perceptual": null
+        },
+        "delta_observation": 0.010467346202586311,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.00740948359322123,
+          "appearance": 0.03415869297571535,
+          "statistical": 0.0003012082414086602,
+          "perceptual": null
+        },
+        "observation_energy": 0.010467346202586311,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.00740948359322123,
+          "appearance": 0.03415869297571535,
+          "statistical": 0.0003012082414086602,
+          "perceptual": null
+        },
+        "delta_observation": 0.010467346202586311,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "shift_fraction": 0.05
+      }
+    },
+    "move_10": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.013985633853109124,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.016447517188478276,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.013985633853109124,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "delta_observation": 0.016447517188478276,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.013985633853109124,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.016447517188478276,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.013985633853109124,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "delta_observation": 0.016447517188478276,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "shift_fraction": 0.1
+      }
+    },
+    "move_20": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.025770746872884918,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.019393795443422224,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.025770746872884918,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "delta_observation": 0.019393795443422224,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.025770746872884918,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.019393795443422224,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.025770746872884918,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "delta_observation": 0.019393795443422224,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "shift_fraction": 0.2
+      }
+    },
+    "move_40": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0493409729124365,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.025286351953310117,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0493409729124365,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "delta_observation": 0.025286351953310117,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0493409729124365,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.025286351953310117,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0493409729124365,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "delta_observation": 0.025286351953310117,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "shift_fraction": 0.4
+      }
+    },
+    "same_count_arrangement": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.010937500000000001,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.01625,
+          "perceptual": null
+        },
+        "observation_energy": 0.010130797064400981,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.010937500000000001,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.01625,
+          "perceptual": null
+        },
+        "delta_observation": 0.010130797064400981,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.010937500000000001,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.01625,
+          "perceptual": null
+        },
+        "observation_energy": 0.010130797064400981,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.010937500000000001,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.01625,
+          "perceptual": null
+        },
+        "delta_observation": 0.010130797064400981,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "elements": 9,
+        "element_pixels": 576,
+        "baseline_occupancy_pixels": 576.0,
+        "render_occupancy_pixels": 576.0
+      }
+    },
+    "clustering": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.012291666666666666,
+          "appearance": 0.011853945117870156,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "observation_energy": 0.011036402946134206,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.012291666666666666,
+          "appearance": 0.011853945117870156,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "delta_observation": 0.011036402946134206,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.012291666666666666,
+          "appearance": 0.011853945117870156,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "observation_energy": 0.011036402946134206,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.012291666666666666,
+          "appearance": 0.011853945117870156,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "delta_observation": 0.011036402946134206,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "elements": 9,
+        "element_pixels": 576,
+        "baseline_occupancy_pixels": 576.0,
+        "render_occupancy_pixels": 576.0
+      }
+    },
+    "color_equal_gray": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.05623892256017453,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.014059730640043632,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.05623892256017453,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.014059730640043632,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.05623892256017453,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.014059730640043632,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.05623892256017453,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.014059730640043632,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "color_luminance": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "observation_energy": 0.008790238993827621,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "delta_observation": 0.008790238993827621,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "observation_energy": 0.008790238993827621,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "delta_observation": 0.008790238993827621,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "coverage_preserved_rearrangement": {
+      "baseline": "band",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.01453125,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "observation_energy": 0.011966734564400982,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.01453125,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "delta_observation": 0.011966734564400982,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.01453125,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "observation_energy": 0.011966734564400982,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.01453125,
+          "appearance": 0.013335688257603926,
+          "statistical": 0.02,
+          "perceptual": null
+        },
+        "delta_observation": 0.011966734564400982,
+        "delta_coverage": 0.0
+      },
+      "control": {
+        "elements": 9,
+        "element_pixels": 576,
+        "baseline_occupancy_pixels": 576.0,
+        "render_occupancy_pixels": 576.0
+      }
+    },
+    "add_q_zero": {
+      "baseline": "color_error",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "observation_energy": 0.008790238993827621,
+        "coverage": 0.5555555555555556,
+        "counts": {
+          "expected": 18,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.0,
+        "delta_coverage": -0.15873015873015872
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "observation_energy": 0.008790238993827621,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 18,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.0,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "increase_importance": {
+      "baseline": "moved_error",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.04410314490364726,
+          "appearance": 0.08936440111934646,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.03350848536505616,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.01833239803076234,
+          "appearance": 0.03812636165577342,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.014114689921633939,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.04410314490364726,
+          "appearance": 0.08936440111934646,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.03350848536505616,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.01833239803076234,
+          "appearance": 0.03812636165577342,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.014114689921633939,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "increase_missing_importance": {
+      "baseline": "deleted_error",
+      "after": {
+        "energies": {
+          "semantic": 0.8,
+          "spatial": 0.0009765625,
+          "appearance": 0.0005514705882352941,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "observation_energy": 0.20043700814811546,
+        "coverage": 0.5714285714285714,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 8
+        },
+        "delta_energies": {
+          "semantic": 0.4666666666666667,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.11666666666666668,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.8,
+          "spatial": 0.2972728587962963,
+          "appearance": 0.08769744008714597,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "observation_energy": 0.2962975745969172,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.4666666666666667,
+          "spatial": 0.12962962962962962,
+          "appearance": 0.038126361655773426,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.15860566448801744,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "dino_without_semantics": {
+      "baseline": "no_semantics",
+      "after": {
+        "energies": {
+          "semantic": null,
+          "spatial": 0.0,
+          "appearance": 0.011029411764705883,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.003676470588235294,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 7,
+          "eligible": 7,
+          "valid": 5
+        },
+        "delta_energies": {
+          "semantic": null,
+          "spatial": 0.0,
+          "appearance": 0.011029411764705883,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.003676470588235294,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": null,
+          "spatial": 0.0,
+          "appearance": 0.011029411764705883,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.003676470588235294,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 7,
+          "eligible": 7,
+          "valid": 5
+        },
+        "delta_energies": {
+          "semantic": null,
+          "spatial": 0.0,
+          "appearance": 0.011029411764705883,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.003676470588235294,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    },
+    "missing_perceptual": {
+      "baseline": "standard",
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.0,
+        "delta_coverage": 0.0
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        },
+        "delta_energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "delta_observation": 0.0,
+        "delta_coverage": 0.0
+      },
+      "control": {}
+    }
+  },
+  "baselines": {
+    "standard": {
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      }
+    },
+    "band": {
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      }
+    },
+    "color_error": {
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "observation_energy": 0.008790238993827621,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.03374335353610471,
+          "statistical": 0.001417602439205771,
+          "perceptual": null
+        },
+        "observation_energy": 0.008790238993827621,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      }
+    },
+    "moved_error": {
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.025770746872884918,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.019393795443422224,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.025770746872884918,
+          "appearance": 0.05123803946357304,
+          "statistical": 0.0005663954372309362,
+          "perceptual": null
+        },
+        "observation_energy": 0.019393795443422224,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      }
+    },
+    "deleted_error": {
+      "after": {
+        "energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.0009765625,
+          "appearance": 0.0005514705882352941,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "observation_energy": 0.08377034148144878,
+        "coverage": 0.5714285714285714,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 8
+        }
+      },
+      "before": {
+        "energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.16764322916666666,
+          "appearance": 0.049571078431372546,
+          "statistical": 0.00021999950422646933,
+          "perceptual": null
+        },
+        "observation_energy": 0.13769191010889975,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 14,
+          "eligible": 14,
+          "valid": 10
+        }
+      }
+    },
+    "no_semantics": {
+      "after": {
+        "energies": {
+          "semantic": null,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 7,
+          "eligible": 7,
+          "valid": 5
+        }
+      },
+      "before": {
+        "energies": {
+          "semantic": null,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": null
+        },
+        "observation_energy": 0.0,
+        "coverage": 0.7142857142857143,
+        "counts": {
+          "expected": 7,
+          "eligible": 7,
+          "valid": 5
+        }
+      }
+    }
+  },
+  "actual_dino_cpu": false,
+  "api_calls": 0,
+  "gpu_used": false,
+  "blender_used": false,
+  "before_source": "results/region_segmentation_experiment/before/benchmark_metrics.py",
+  "coverage_definition": {
+    "before": "valid / q-positive planned records",
+    "after": "valid / all expected records; q-zero retained"
+  },
+  "skipped": [
+    "GPU: not used",
+    "Real VLM/API: not authorized or invoked",
+    "Real Agent replay: not executed",
+    "DINO not requested; feature-dependent checks skipped, Perceptual N/A"
+  ],
+  "seconds": 2.314
+}

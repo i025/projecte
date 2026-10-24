@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "task_id": "bw_0073",
+      "target_region": "p08",
+      "patch_xyxy": [
+        242,
+        172,
+        260,
+        190
+      ],
+      "image": "exclusion_probe/bw_0073.png",
+      "interpretation": "A-only support probe; semantic relevance unknown",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "target_region": "R1",
+      "patch_xyxy": [
+        7,
+        219,
+        45,
+        257
+      ],
+      "image": "exclusion_probe/bw_0074.png",
+      "interpretation": "A-only support probe; semantic relevance unknown",
+      "reviewed": false
+    }
+  ],
+  "skips": [
+    {
+      "task_id": "bw_9064",
+      "reason": "No sufficiently large A-only area outside every B2 ROI"
+    }
+  ],
+  "semantic_relevance": "unknown, no GT"
+}

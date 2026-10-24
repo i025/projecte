@@ -1,0 +1,24 @@
+{
+  "packages": {
+    "torch": "2.13.0+cu126",
+    "torchvision": "0.28.0+cu126",
+    "numpy": "2.5.2",
+    "ftfy": "6.3.1",
+    "timm": "1.0.30",
+    "iopath": "0.1.10",
+    "einops": "0.8.2",
+    "modelscope": "1.40.2",
+    "modelscope-hub": "0.4.6"
+  },
+  "python_executable": "/tmp/project_e_sam3_env_yhqvf4jo/bin/python",
+  "official_code": "/tmp/project_e_sam3_env_yhqvf4jo/source/sam3",
+  "tokenizer": "/tmp/project_e_sam3_env_yhqvf4jo/source/sam3/sam3/assets/bpe_simple_vocab_16e6.txt.gz",
+  "tokenizer_readable": true,
+  "model_directory": "/home/xymo/models/sam3",
+  "checkpoint_size_bytes": 3450062241,
+  "config_model_type": "sam3_video",
+  "weight_loading": "Official builder reported no missing checkpoint keys; five-image text and interactive inference completed",
+  "metadata_constraint_caveat": "Official pyproject declares NumPy<2 and ftfy==6.1.1. Existing packages are reused without downgrading; actual inference tested, full packaging/training dependency compatibility not asserted.",
+  "load_from_HF": false,
+  "shared_environments_modified": false
+}

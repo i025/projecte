@@ -1,0 +1,183 @@
+{
+  "controls": [
+    {
+      "id": "box_R1",
+      "ordinary_rectangle_identical": true,
+      "duplicate_inference": false,
+      "source_bbox": [
+        0,
+        42,
+        538,
+        837
+      ],
+      "control_bbox": [
+        0,
+        42,
+        538,
+        837
+      ],
+      "source_pixels": 427710,
+      "control_pixels": 427710,
+      "area_ratio": 1.0,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "box_R2",
+      "ordinary_rectangle_identical": true,
+      "duplicate_inference": false,
+      "source_bbox": [
+        515,
+        90,
+        1055,
+        717
+      ],
+      "control_bbox": [
+        515,
+        90,
+        1055,
+        717
+      ],
+      "source_pixels": 338580,
+      "control_pixels": 338580,
+      "area_ratio": 1.0,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "box_R3",
+      "ordinary_rectangle_identical": true,
+      "duplicate_inference": false,
+      "source_bbox": [
+        545,
+        234,
+        945,
+        441
+      ],
+      "control_bbox": [
+        545,
+        234,
+        945,
+        441
+      ],
+      "source_pixels": 82800,
+      "control_pixels": 82800,
+      "area_ratio": 1.0,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "box_R4",
+      "ordinary_rectangle_identical": true,
+      "duplicate_inference": false,
+      "source_bbox": [
+        1094,
+        0,
+        1536,
+        762
+      ],
+      "control_bbox": [
+        1094,
+        0,
+        1536,
+        762
+      ],
+      "source_pixels": 336804,
+      "control_pixels": 336804,
+      "area_ratio": 1.0,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "area_R1",
+      "matched_to": "polygon_R1",
+      "source_bbox": [
+        0,
+        46,
+        531,
+        837
+      ],
+      "control_bbox": [
+        51,
+        122,
+        479,
+        760
+      ],
+      "source_pixels": 272830,
+      "control_pixels": 273064,
+      "area_ratio": 1.0008576769416853,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "area_R2",
+      "matched_to": "polygon_R2",
+      "source_bbox": [
+        512,
+        94,
+        1044,
+        716
+      ],
+      "control_bbox": [
+        580,
+        174,
+        975,
+        635
+      ],
+      "source_pixels": 182080,
+      "control_pixels": 182095,
+      "area_ratio": 1.000082381370826,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "area_R3",
+      "matched_to": "polygon_R3",
+      "source_bbox": [
+        553,
+        239,
+        937,
+        427
+      ],
+      "control_bbox": [
+        558,
+        241,
+        932,
+        424
+      ],
+      "source_pixels": 68301,
+      "control_pixels": 68442,
+      "area_ratio": 1.0020643914437564,
+      "semantics_used": false,
+      "reviewed": false
+    },
+    {
+      "id": "area_R4",
+      "matched_to": "polygon_R4",
+      "source_bbox": [
+        1107,
+        0,
+        1536,
+        746
+      ],
+      "control_bbox": [
+        1126,
+        33,
+        1516,
+        712
+      ],
+      "source_pixels": 265005,
+      "control_pixels": 264810,
+      "area_ratio": 0.9992641648270787,
+      "semantics_used": false,
+      "reviewed": false
+    }
+  ],
+  "grid_controls": [
+    2,
+    4
+  ],
+  "rectangles_inherit_only_polygon_bbox_position": true,
+  "independent_semantic_control": false,
+  "reviewed": false
+}

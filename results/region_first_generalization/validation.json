@@ -1,0 +1,16 @@
+{
+  "frozen_source_text_unchanged": true,
+  "parameters_unchanged": true,
+  "automatic_evidence_reviewed": false,
+  "formal_scoring_executed": false,
+  "geometry_controls": 2,
+  "valid_new_scene_vlm_plans": 0,
+  "paid_calls": 0,
+  "model_inferences": 0,
+  "gpu_used": false,
+  "synthetic_cases": 40,
+  "measurement_rows": 576,
+  "skipped_patches": [],
+  "cpu_thread_limit": 2,
+  "seconds": 55.89376477408223
+}

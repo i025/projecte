@@ -1,0 +1,499 @@
+{
+  "created_at": "2026-10-22T11:32:29.053627+00:00",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "phase": "Reference-only candidates frozen before this turn reads Render or its evaluation results",
+  "source_type": "human_seeded_provisional",
+  "not_automatic_extraction": true,
+  "strict_blind_test": false,
+  "root_prior_render_knowledge_disclosed": true,
+  "freeze_rule": "Do not edit reference statements using later Render observations.",
+  "cases": [
+    {
+      "scene_id": "bw_0073",
+      "image_size": [
+        1536,
+        837
+      ],
+      "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+      "region_plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+      "region_id": "R2",
+      "region_name": "中央岛台区",
+      "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+      "regions": [
+        {
+          "id": "R2",
+          "name": "中央岛台区",
+          "location": "画面中央及前景",
+          "content": "大理石岛台、四把高脚椅和上方的金色吊灯",
+          "reviewed": false,
+          "reliability": 0.0,
+          "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+          "metrics": []
+        }
+      ],
+      "anchors": [],
+      "semantic_groups": [
+        {
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "name": "岛台近侧高脚椅集合",
+          "scope": "Reference中岛台近侧可见的有靠背高脚椅，作为整体集合；不推测被遮挡或画外成员。",
+          "evidence": [
+            "bw_0073_R2_chairs_frame",
+            "bw_0073_R2_chairs_below_counter",
+            "bw_0073_R2_chairs_one_row"
+          ],
+          "provenance": {
+            "source_type": "human_seeded_provisional",
+            "method": "assistant_reference_only_visual_draft",
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+            "render_used": false
+          },
+          "reviewed": false,
+          "reliability": 0.0,
+          "member_instance_ids": null,
+          "mask": null,
+          "localization_status": "candidate_unreviewed",
+          "uncertainty": "框内包含背景、空隙和椅间岛台；没有经审核Group Mask。",
+          "candidate_bbox": [
+            513,
+            476,
+            1044,
+            716
+          ],
+          "candidate_bbox_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/atomic_evidence_discriminability_bw0073/reference_evidence_frozen.json#/atomic_evidence/R2_STA_01",
+          "candidate_bbox_role": "Frozen Reference support only, not reliable group localization or density support"
+        }
+      ],
+      "optional_anchors": [
+        {
+          "id": "bw_0073_R2_island",
+          "region_id": "R2",
+          "name": "岛台主体",
+          "category": "island",
+          "bbox": [
+            520,
+            410,
+            1040,
+            650
+          ],
+          "importance": 1.0,
+          "reviewed": false,
+          "reliability": 0.0,
+          "mask": null,
+          "role": "on-demand relation endpoint only; no independent presence or image-loss score",
+          "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/spatial_minimal_validation_bw0073_checked/reference_object_candidates.json#/conditional_debug_objects/island",
+          "uncertainty": "Assistant draft; occluded cabinet, bbox includes chairs/background; not visible-object area."
+        }
+      ],
+      "atomic_evidence": [
+        {
+          "id": "bw_0073_R2_chairs_frame",
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "type": "semantic",
+          "claim": "集合中座椅可见支撑框架主要由细长杆件构成。",
+          "question": "这些座椅的可见支撑框架是否主要由细长杆件构成？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0073_R2_chairs_frame",
+          "owner_id": "bw_0073_R2_chairs",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "frozen_reference_evidence_ids": [
+              "R2_STA_01"
+            ],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0073_R2_chairs_below_counter",
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "type": "spatial",
+          "claim": "可见椅背位于岛台台面下方。",
+          "question": "从当前图像上下方向看，这组座椅的椅背是否位于岛台台面下方？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+          "owner_id": "bw_0073_R2_chairs",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "frozen_reference_evidence_ids": [
+              "R2_SPA_02"
+            ],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [
+            "bw_0073_R2_island"
+          ],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Discrete projected relation only; no world-coordinate depth or continuous offset is inferred.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0073_R2_chairs_one_row",
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "type": "statistical",
+          "claim": "可见座椅沿岛台近侧形成从左至右的一排。",
+          "question": "可见座椅是否沿岛台近侧形成从左至右的一排？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+          "owner_id": "bw_0073_R2_chairs",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "frozen_reference_evidence_ids": [
+              "R2_SPA_02"
+            ],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Qualitative arrangement proposition, not density, exact spacing, count or calibrated numeric error.",
+          "verification_mode": "qualitative_vqa"
+        }
+      ],
+      "reviewed": false,
+      "inventory_complete": false,
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "source": "assistant_reference_only_visual_draft",
+        "render_used": false,
+        "independent_inspector_reference_only": true,
+        "model_extraction": false,
+        "human_ground_truth": false,
+        "root_prior_render_knowledge_disclosed": true,
+        "strict_blind_test": false,
+        "reference_plan_validated_region_id": "R2",
+        "continuous_spatial_and_group_area_available": false
+      }
+    },
+    {
+      "scene_id": "bw_0074",
+      "image_size": [
+        1258,
+        855
+      ],
+      "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+      "region_plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/region_plan.json",
+      "region_id": "R2",
+      "region_name": "展示书架",
+      "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+      "regions": [
+        {
+          "id": "R2",
+          "name": "展示书架",
+          "location": "左侧及中部上方",
+          "content": "书籍、地球仪、装饰摆件、飞机图片和小型水族箱",
+          "reviewed": false,
+          "reliability": 0.0,
+          "source": "VLM reference-only planning",
+          "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+          "metrics": []
+        }
+      ],
+      "anchors": [],
+      "semantic_groups": [
+        {
+          "group_id": "bw_0074_R2_books",
+          "region_id": "R2",
+          "name": "书籍陈列集合",
+          "scope": "R2中可识别的装订书籍，包括竖立、水平叠放和正面陈列；排除R3唱片、独立框画和柜体隔板。",
+          "evidence": [
+            "bw_0074_R2_books_presence",
+            "bw_0074_R2_books_orientations",
+            "bw_0074_R2_books_front_cover",
+            "bw_0074_R2_books_below_frame"
+          ],
+          "provenance": {
+            "source_type": "human_seeded_provisional",
+            "method": "assistant_reference_only_visual_draft",
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/region_plan.json",
+            "render_used": false
+          },
+          "reviewed": false,
+          "reliability": 0.0,
+          "member_instance_ids": null,
+          "mask": null,
+          "localization_status": "unknown",
+          "uncertainty": "密集遮挡，书籍总数unknown；不识别逐本身份，不新增Group坐标或Mask。"
+        },
+        {
+          "group_id": "bw_0074_R2_framed_images",
+          "region_id": "R2",
+          "name": "独立装框图像陈列集合",
+          "scope": "R2内独立立放且有可辨边框的图像陈列；包括中央大幅飞机图像及左下的小幅纵向图像；排除书籍封面。",
+          "evidence": [
+            "bw_0074_R2_framed_images_airplane",
+            "bw_0074_R2_framed_images_relative_position",
+            "bw_0074_R2_framed_images_exact_count"
+          ],
+          "provenance": {
+            "source_type": "human_seeded_provisional",
+            "method": "assistant_reference_only_visual_draft",
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/region_plan.json",
+            "render_used": false
+          },
+          "reviewed": false,
+          "reliability": 0.0,
+          "member_instance_ids": null,
+          "mask": null,
+          "localization_status": "unknown",
+          "uncertainty": "左侧有遮挡较强的疑似框画，精确总数unknown；不判断原作/印刷品或作者。"
+        }
+      ],
+      "optional_anchors": [],
+      "atomic_evidence": [
+        {
+          "id": "bw_0074_R2_books_presence",
+          "group_id": "bw_0074_R2_books",
+          "region_id": "R2",
+          "type": "semantic",
+          "claim": "R2中可见可识别为装订书籍的内容。",
+          "question": "该区域是否可见装订书籍？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_books_presence",
+          "owner_id": "bw_0074_R2_books",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0074_R2_books_orientations",
+          "group_id": "bw_0074_R2_books",
+          "region_id": "R2",
+          "type": "statistical",
+          "claim": "该集合同时包含竖立和水平叠放的书籍。",
+          "question": "该区域书籍的摆放方向是否同时包含竖立与水平叠放？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_books_orientations",
+          "owner_id": "bw_0074_R2_books",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Qualitative orientation-category presence; not exact density, area or element counting.",
+          "verification_mode": "qualitative_vqa"
+        },
+        {
+          "id": "bw_0074_R2_books_front_cover",
+          "group_id": "bw_0074_R2_books",
+          "region_id": "R2",
+          "type": "spatial",
+          "claim": "区域左半部中层有封面朝向观察者的大开本书籍。",
+          "question": "该区域左半部中层是否存在封面朝向观察者的大开本书籍？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_books_front_cover",
+          "owner_id": "bw_0074_R2_books",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0074_R2_books_below_frame",
+          "group_id": "bw_0074_R2_books",
+          "region_id": "R2",
+          "type": "spatial",
+          "claim": "大幅飞机框画下方可见水平叠放书籍。",
+          "question": "大幅飞机框画下方是否存在水平叠放的书籍？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_books_below_frame",
+          "owner_id": "bw_0074_R2_books",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0074_R2_framed_images_airplane",
+          "group_id": "bw_0074_R2_framed_images",
+          "region_id": "R2",
+          "type": "semantic",
+          "claim": "中央大幅装框图像包含飞机形象。",
+          "question": "中央大幅装框图像是否包含飞机形象？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_framed_images_airplane",
+          "owner_id": "bw_0074_R2_framed_images",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0074_R2_framed_images_relative_position",
+          "group_id": "bw_0074_R2_framed_images",
+          "region_id": "R2",
+          "type": "spatial",
+          "claim": "小幅纵向框画位于大幅飞机框画左下方。",
+          "question": "是否有小幅纵向框画位于大幅飞机框画的左下方？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_framed_images_relative_position",
+          "owner_id": "bw_0074_R2_framed_images",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0074_R2_framed_images_exact_count",
+          "group_id": "bw_0074_R2_framed_images",
+          "region_id": "R2",
+          "type": "statistical",
+          "claim": "可明确辨认的独立装框图像精确总数未确定。",
+          "question": "排除书籍封面后，该区域有多少幅能够明确辨认为独立装框图像的陈列？",
+          "expected": null,
+          "answer_type": "count",
+          "status": "unknown",
+          "requires": [],
+          "canonical_fact_id": "bw_0074_R2_framed_images_exact_count",
+          "owner_id": "bw_0074_R2_framed_images",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+            "frozen_reference_evidence_ids": [],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "At least two visible candidates but exact total unknown due occlusion; do not coerce a lower bound into exact expected count.",
+          "verification_mode": "atomic_vqa"
+        }
+      ],
+      "reviewed": false,
+      "inventory_complete": false,
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "source": "assistant_reference_only_visual_draft",
+        "render_used": false,
+        "independent_inspector_reference_only": true,
+        "model_extraction": false,
+        "human_ground_truth": false,
+        "root_prior_render_knowledge_disclosed": true,
+        "strict_blind_test": false,
+        "reference_plan_validated_region_id": "R2",
+        "continuous_spatial_and_group_area_available": false
+      },
+      "exclusions": [
+        {
+          "content": "唱片集合",
+          "region_id": "R3",
+          "reason": "Historical Reference Plan assigns records/audio to R3; outside selected R2 pilot."
+        }
+      ]
+    }
+  ]
+}

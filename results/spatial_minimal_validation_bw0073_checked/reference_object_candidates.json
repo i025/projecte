@@ -1,0 +1,120 @@
+{
+  "image_size": [
+    1536,
+    837
+  ],
+  "region_id": "R2",
+  "source_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+  "reviewed": false,
+  "reference_only": true,
+  "render_used": false,
+  "source_type": "assistant_reference_only_visual_draft",
+  "original_frozen_evidence": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/atomic_evidence_discriminability_bw0073/reference_evidence_frozen.json",
+  "original_frozen_evidence_modified": false,
+  "root_prior_render_knowledge_disclosed": true,
+  "strict_blind_test": false,
+  "independent_inspector": "reference_spatial_candidates; permitted Reference-only files",
+  "frozen_at_utc": "2026-10-22T11:08:00.150851+00:00",
+  "freeze_rule": "This new Reference candidate file is fixed before primary-agent Render image inspection; never update from Render.",
+  "conditional_debug_objects": {
+    "island": {
+      "id": "island",
+      "category": "island",
+      "bbox": [
+        520,
+        410,
+        1040,
+        650
+      ],
+      "boundary_ranges_xyxy": [
+        [
+          515,
+          535
+        ],
+        [
+          400,
+          425
+        ],
+        [
+          1025,
+          1045
+        ],
+        [
+          630,
+          650
+        ]
+      ],
+      "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "status": "matched",
+      "visibility": "visible_occluded",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "assistant/manual_seeded_provisional",
+      "mask_available": false,
+      "automatic_localization": "unavailable",
+      "uncertainty": "Draft edge ranges are uncalibrated visual bounds, not confidence intervals. Bbox includes occluders/background; not visible-object area."
+    },
+    "pendant": {
+      "id": "pendant",
+      "category": "pendant light",
+      "bbox": [
+        680,
+        90,
+        870,
+        300
+      ],
+      "boundary_ranges_xyxy": [
+        [
+          675,
+          690
+        ],
+        [
+          90,
+          100
+        ],
+        [
+          855,
+          875
+        ],
+        [
+          285,
+          300
+        ]
+      ],
+      "extent_definition": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background",
+      "status": "matched",
+      "visibility": "visible",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "assistant/manual_seeded_provisional",
+      "mask_available": false,
+      "automatic_localization": "unavailable",
+      "uncertainty": "Draft edge ranges are uncalibrated visual bounds, not confidence intervals. Bbox includes occluders/background; not visible-object area."
+    }
+  },
+  "automatic_objects": {
+    "island": {
+      "category": "island",
+      "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "status": "unavailable",
+      "reviewed": false,
+      "reliability": 0.0,
+      "reason": "Existing SAM caches locate countertop only, not the visible whole island body."
+    },
+    "pendant": {
+      "category": "pendant light",
+      "extent_definition": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background",
+      "status": "matched",
+      "reviewed": false,
+      "reliability": 0.0,
+      "bbox": [
+        683.010060362173,
+        94.07315947380567,
+        862.0684104627767,
+        292.07108239095317
+      ],
+      "mask_reviewed": false,
+      "source": "Reference SAM2 prompted historical candidate; unreviewed, fragmented suspension"
+    }
+  }
+}

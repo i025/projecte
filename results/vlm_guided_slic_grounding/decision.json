@@ -1,0 +1,11 @@
+{
+  "automatic_replacement_recommended": false,
+  "formal_defaults_modified": false,
+  "fallback_evidence": [
+    "A_box_native/evidence.json",
+    "B_polygon_native/evidence.json"
+  ],
+  "choice_between_box_and_polygon": "Human review of original completeness/context remains necessary",
+  "all_slic_candidates_pending_review": true,
+  "reviewed": false
+}

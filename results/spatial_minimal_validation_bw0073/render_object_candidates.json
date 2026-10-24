@@ -1,0 +1,107 @@
+{
+  "image_size": [
+    1536,
+    837
+  ],
+  "region_id": "R2",
+  "source_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/render.png",
+  "reviewed": false,
+  "source_type": "assistant_render_only_visual_draft",
+  "reference_image_or_coordinates_read": false,
+  "independent_inspector": "render_spatial_candidates; permitted only Render RGB",
+  "conditional_debug_objects": {
+    "island": {
+      "id": "island",
+      "category": "island",
+      "bbox": [
+        542,
+        460,
+        993,
+        604
+      ],
+      "boundary_ranges_xyxy": [
+        [
+          538,
+          550
+        ],
+        [
+          454,
+          468
+        ],
+        [
+          985,
+          1000
+        ],
+        [
+          596,
+          610
+        ]
+      ],
+      "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "status": "matched",
+      "visibility": "visible_occluded",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask_available": false,
+      "source": "assistant/manual_seeded_provisional",
+      "automatic_localization": "unavailable",
+      "uncertainty": "Independent Render-only draft; uncalibrated edge bounds, not confidence intervals. Cabinet partly hidden by chairs; bbox is not a visible mask."
+    },
+    "pendant": {
+      "id": "pendant",
+      "category": "pendant light",
+      "bbox": [
+        703,
+        237,
+        833,
+        346
+      ],
+      "boundary_ranges_xyxy": [
+        [
+          700,
+          709
+        ],
+        [
+          234,
+          241
+        ],
+        [
+          829,
+          838
+        ],
+        [
+          342,
+          351
+        ]
+      ],
+      "extent_definition": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background",
+      "status": "matched",
+      "visibility": "visible",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask_available": false,
+      "source": "assistant/manual_seeded_provisional",
+      "automatic_localization": "unavailable",
+      "uncertainty": "Independent Render-only draft; uncalibrated edge bounds, not confidence intervals. Cabinet partly hidden by chairs; bbox is not a visible mask."
+    }
+  },
+  "automatic_objects": {
+    "island": {
+      "category": "island",
+      "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "status": "unavailable",
+      "reviewed": false,
+      "reliability": 0.0,
+      "reason": "No existing independent object detector/mask result for this Render; no model run authorized."
+    },
+    "pendant": {
+      "category": "pendant light",
+      "extent_definition": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background",
+      "status": "unavailable",
+      "reviewed": false,
+      "reliability": 0.0,
+      "reason": "No existing independent object detector/mask result for this Render; no model run authorized."
+    }
+  },
+  "scope": "Full Render, not limited to R2; object outside the fixed ROI is not Missing."
+}

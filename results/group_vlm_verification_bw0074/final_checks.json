@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "actual_http_attempts": 2,
+  "successful_responses": 2,
+  "retries": 0,
+  "new_requests_during_replay": 0,
+  "offline_tests_passed": 16,
+  "final_replay_identical_answers": true,
+  "final_replay_identical_comparison": true,
+  "frozen_reference_group_unchanged": true,
+  "fixed_roi_membership_unchanged": true,
+  "formal_sources_unchanged": {
+    "benchmark_evidence.py": true,
+    "benchmark_metrics.py": true,
+    "benchmark_config.py": true
+  },
+  "all_candidates_unreviewed": true,
+  "all_formal_energy_na": true,
+  "json_output_no_bearer_or_image_data_urls": true,
+  "local_html_links_resolved": 15
+}

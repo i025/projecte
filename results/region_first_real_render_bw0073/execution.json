@@ -1,0 +1,26 @@
+{
+  "cpu_wall_seconds": 32.922326317988336,
+  "dino_loaded": true,
+  "dino_unavailable_reason": null,
+  "dino_load_seconds": 2.6944516168441623,
+  "model_directory": "/home/xymo/models/dinov2",
+  "device": "cpu",
+  "policy_multiscale": [
+    1.0,
+    0.5
+  ],
+  "dino_size": 224,
+  "preserve_frame": true,
+  "metric_scopes": 37,
+  "paid_vlm_calls": 0,
+  "sam_calls": 0,
+  "slic_runs": 0,
+  "blender_runs": 0,
+  "agent_runs": 0,
+  "formal_scoring": false,
+  "reviewed": false,
+  "initial_measurement_scopes": 33,
+  "additional_scopes": 4,
+  "additional_control_cpu_wall_seconds": 12.783047343138605,
+  "dino_model_loads": 2
+}

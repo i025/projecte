@@ -1,0 +1,52 @@
+[
+  {
+    "task_id": "bw_9064",
+    "valid_region_first_plan_files": [],
+    "grounding_status": "blocked_no_valid_vlm_region_plan",
+    "cached_candidates": {
+      "sam3_text": {
+        "mask_count": 10,
+        "coverage": 0.9533706476658951,
+        "statistics_grid": [
+          1536,
+          864
+        ]
+      },
+      "sam3_visual": {
+        "mask_count": 10,
+        "coverage": 0.9602887188946759,
+        "statistics_grid": [
+          1536,
+          864
+        ]
+      }
+    },
+    "paid_vlm_calls": 0,
+    "reason": "Do not invent a Region plan or reuse a failed/Anchor-style plan as Region-first output"
+  },
+  {
+    "task_id": "bw_0073",
+    "valid_region_first_plan_files": [],
+    "grounding_status": "blocked_no_valid_vlm_region_plan",
+    "cached_candidates": {
+      "sam3_text": {
+        "mask_count": 45,
+        "coverage": 0.6021357589107925,
+        "statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "sam3_visual": {
+        "mask_count": 12,
+        "coverage": 0.42990918085424135,
+        "statistics_grid": [
+          1536,
+          837
+        ]
+      }
+    },
+    "paid_vlm_calls": 0,
+    "reason": "Do not invent a Region plan or reuse a failed/Anchor-style plan as Region-first output"
+  }
+]

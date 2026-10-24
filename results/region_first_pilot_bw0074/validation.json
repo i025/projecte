@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "region_count": 4,
+  "paid_api_attempts": 1,
+  "automatic_retries": 0,
+  "json_syntax_and_schema_valid": true,
+  "model_descriptions_unchanged": true,
+  "original_grid_masks_valid": true,
+  "all_unreviewed": true,
+  "coverage_union_checked": true,
+  "html_links": 5,
+  "credential_value_scan_passed": true,
+  "additional_model_inference": false,
+  "benchmark_scoring_run": false,
+  "anchors_or_relations_created": false,
+  "bbox_definition": "Algorithm proposal ROI; SLIC support may extend outside; not a model bbox or exact mask bbox"
+}

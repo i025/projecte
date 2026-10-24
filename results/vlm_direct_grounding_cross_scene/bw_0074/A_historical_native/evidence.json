@@ -1,0 +1,72 @@
+{
+  "image_size": [
+    1258,
+    855
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "name": "工作区",
+      "location": "左侧中下部",
+      "content": "书桌、显示器、台灯和透明椅子",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "VLM reference-only planning",
+      "mask": "R1.png",
+      "mask_reviewed": false,
+      "native_pixel_count": 172032,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/evidence.json",
+      "representation": "coarse_evaluation_roi",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    },
+    {
+      "id": "R2",
+      "name": "展示书架",
+      "location": "左侧及中部上方",
+      "content": "书籍、地球仪、装饰摆件、飞机图片和小型水族箱",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "VLM reference-only planning",
+      "mask": "R2.png",
+      "mask_reviewed": false,
+      "native_pixel_count": 300162,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/evidence.json",
+      "representation": "coarse_evaluation_roi",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    },
+    {
+      "id": "R3",
+      "name": "唱片与音响区",
+      "location": "右侧",
+      "content": "书架上的大量唱片、收录机和下方的唱盘设备",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "VLM reference-only planning",
+      "mask": "R3.png",
+      "mask_reviewed": false,
+      "native_pixel_count": 158250,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/evidence.json",
+      "representation": "coarse_evaluation_roi",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    },
+    {
+      "id": "R4",
+      "name": "沙发区",
+      "location": "前景下方",
+      "content": "蓝色沙发、靠垫和彩色抱枕",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "VLM reference-only planning",
+      "mask": "R4.png",
+      "mask_reviewed": false,
+      "native_pixel_count": 258704,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/evidence.json",
+      "representation": "coarse_evaluation_roi",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "formal_score": false
+}

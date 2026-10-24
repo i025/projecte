@@ -1,0 +1,179 @@
+{
+  "image_size": [
+    1536,
+    864
+  ],
+  "regions": [
+    {
+      "id": "wall_back",
+      "name": "wall",
+      "content": "wall",
+      "location": "Existing cached reference bbox; not a VLM location description",
+      "reviewed": false,
+      "reliability": 0.0,
+      "representation": "coarse_evaluation_roi",
+      "semantic_mask_available": false,
+      "plan_origin": "historical_assistant_reference_bbox",
+      "mask": "wall_back.png",
+      "bbox": [
+        228,
+        96,
+        1313,
+        682
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization/bw_9064/source.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "ceiling",
+      "name": "ceiling",
+      "content": "ceiling",
+      "location": "Existing cached reference bbox; not a VLM location description",
+      "reviewed": false,
+      "reliability": 0.0,
+      "representation": "coarse_evaluation_roi",
+      "semantic_mask_available": false,
+      "plan_origin": "historical_assistant_reference_bbox",
+      "mask": "ceiling.png",
+      "bbox": [
+        87,
+        0,
+        1455,
+        98
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization/bw_9064/source.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "floor",
+      "name": "wood floor",
+      "content": "wood floor",
+      "location": "Existing cached reference bbox; not a VLM location description",
+      "reviewed": false,
+      "reliability": 0.0,
+      "representation": "coarse_evaluation_roi",
+      "semantic_mask_available": false,
+      "plan_origin": "historical_assistant_reference_bbox",
+      "mask": "floor.png",
+      "bbox": [
+        0,
+        680,
+        1536,
+        864
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization/bw_9064/source.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "wall_left",
+      "name": "wall",
+      "content": "wall",
+      "location": "Existing cached reference bbox; not a VLM location description",
+      "reviewed": false,
+      "reliability": 0.0,
+      "representation": "coarse_evaluation_roi",
+      "semantic_mask_available": false,
+      "plan_origin": "historical_assistant_reference_bbox",
+      "mask": "wall_left.png",
+      "bbox": [
+        0,
+        0,
+        229,
+        771
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization/bw_9064/source.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "wall_right",
+      "name": "wall",
+      "content": "wall",
+      "location": "Existing cached reference bbox; not a VLM location description",
+      "reviewed": false,
+      "reliability": 0.0,
+      "representation": "coarse_evaluation_roi",
+      "semantic_mask_available": false,
+      "plan_origin": "historical_assistant_reference_bbox",
+      "mask": "wall_right.png",
+      "bbox": [
+        1312,
+        0,
+        1536,
+        771
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization/bw_9064/source.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "inventory_complete": false,
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization/bw_9064/source.json",
+  "formal_score": false,
+  "statistics": {
+    "region_union_fraction": 1.0,
+    "overlap_fraction": 0.01686228057484568,
+    "unassigned_fraction": 0.0,
+    "per_region_pixels": [
+      635810,
+      134064,
+      253179,
+      165191,
+      161238
+    ],
+    "pixel_count": 1327104,
+    "dense_global_coverage": 1.0,
+    "reviewed_region_coverage": 0.0
+  }
+}

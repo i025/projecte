@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "scene_id": "bw_0073",
+      "group_id": "bw_0073_R2_chairs",
+      "observation": "两图保留横排椅子；Reference侧架、脚踏及连接更复杂，Render靠背/坐垫和杆架更简化。",
+      "candidate_question_ids": [
+        "bw_0073_R2_chairs_frame",
+        "bw_0073_R2_chairs_one_row"
+      ],
+      "uncertainty": "是否满足“主要为细长杆件”仍需验证；宽泛布尔问题即使两侧yes也可能漏掉结构差异。"
+    },
+    {
+      "scene_id": "bw_0074",
+      "group_id": "bw_0074_R2_books",
+      "observation": "Render能辨认多组书籍，主要为竖立书脊状块列；Reference中的水平书堆和正面大开本封面未见同等清晰对应。",
+      "candidate_question_ids": [
+        "bw_0074_R2_books_orientations",
+        "bw_0074_R2_books_front_cover",
+        "bw_0074_R2_books_below_frame"
+      ],
+      "uncertainty": "可见性、类别和框画端点仍不确定；不能把当前未辨认直接判为Confirmed Missing。"
+    },
+    {
+      "scene_id": "bw_0074",
+      "group_id": "bw_0074_R2_framed_images",
+      "observation": "Render可见左侧较小框画和中央较大框体；中央内容简化且有遮挡，飞机题材和小幅纵向框画对应不清楚。",
+      "candidate_question_ids": [
+        "bw_0074_R2_framed_images_airplane",
+        "bw_0074_R2_framed_images_relative_position"
+      ],
+      "uncertainty": "不能以任意两幅框画替换冻结命题的端点；精确总数两侧不可确认。"
+    }
+  ],
+  "source": "Assistant static paired-image review after Reference freeze",
+  "actual_vlm_verification": false,
+  "reviewed": false,
+  "reliability": 0.0,
+  "reference_claims_modified": false,
+  "usage": "provisional/debug"
+}

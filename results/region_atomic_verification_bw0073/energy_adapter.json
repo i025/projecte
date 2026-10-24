@@ -1,0 +1,273 @@
+{
+  "records": [
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R2_island",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R2_stools",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R2_lamp",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "R2_above",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R2_count",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R3_cabinets",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R3_counter",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "R3_above",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R3_hob_count",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed question",
+      "method": "VLM metric verification"
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "R2",
+      "energies": {
+        "semantic": {
+          "value": null,
+          "status": "unavailable",
+          "m": 1,
+          "q": null,
+          "evidence_reliability": null,
+          "base_weight": 1.0,
+          "aggregation_weight": 0.0,
+          "valid_count": 0,
+          "applicable_count": 3,
+          "eligible_count": 0,
+          "coverage": 0.0,
+          "eligible_coverage": null,
+          "reason": "No usable evidence or required extractor unavailable",
+          "expected_metrics": [
+            "region:R2_island",
+            "region:R2_stools",
+            "region:R2_lamp"
+          ],
+          "unavailable_metrics": [
+            "region:R2_island",
+            "region:R2_stools",
+            "region:R2_lamp"
+          ],
+          "participating_metrics": [],
+          "participating_records": [],
+          "normalized_aggregation_weight": 0.0
+        },
+        "spatial": {
+          "value": null,
+          "status": "unavailable",
+          "m": 1,
+          "q": null,
+          "evidence_reliability": null,
+          "base_weight": 1.0,
+          "aggregation_weight": 0.0,
+          "valid_count": 0,
+          "applicable_count": 1,
+          "eligible_count": 0,
+          "coverage": 0.0,
+          "eligible_coverage": null,
+          "reason": "No usable evidence or required extractor unavailable",
+          "expected_metrics": [
+            "region:R2_above"
+          ],
+          "unavailable_metrics": [
+            "region:R2_above"
+          ],
+          "participating_metrics": [],
+          "participating_records": [],
+          "normalized_aggregation_weight": 0.0
+        },
+        "statistical": {
+          "value": null,
+          "status": "unavailable",
+          "m": 1,
+          "q": null,
+          "evidence_reliability": null,
+          "base_weight": 1.0,
+          "aggregation_weight": 0.0,
+          "valid_count": 0,
+          "applicable_count": 1,
+          "eligible_count": 0,
+          "coverage": 0.0,
+          "eligible_coverage": null,
+          "reason": "No usable evidence or required extractor unavailable",
+          "expected_metrics": [
+            "region:R2_count"
+          ],
+          "unavailable_metrics": [
+            "region:R2_count"
+          ],
+          "participating_metrics": [],
+          "participating_records": [],
+          "normalized_aggregation_weight": 0.0
+        }
+      },
+      "formal_score": null,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "energies": {
+        "semantic": {
+          "value": null,
+          "status": "unavailable",
+          "m": 1,
+          "q": null,
+          "evidence_reliability": null,
+          "base_weight": 1.0,
+          "aggregation_weight": 0.0,
+          "valid_count": 0,
+          "applicable_count": 2,
+          "eligible_count": 0,
+          "coverage": 0.0,
+          "eligible_coverage": null,
+          "reason": "No usable evidence or required extractor unavailable",
+          "expected_metrics": [
+            "region:R3_cabinets",
+            "region:R3_counter"
+          ],
+          "unavailable_metrics": [
+            "region:R3_cabinets",
+            "region:R3_counter"
+          ],
+          "participating_metrics": [],
+          "participating_records": [],
+          "normalized_aggregation_weight": 0.0
+        },
+        "spatial": {
+          "value": null,
+          "status": "unavailable",
+          "m": 1,
+          "q": null,
+          "evidence_reliability": null,
+          "base_weight": 1.0,
+          "aggregation_weight": 0.0,
+          "valid_count": 0,
+          "applicable_count": 1,
+          "eligible_count": 0,
+          "coverage": 0.0,
+          "eligible_coverage": null,
+          "reason": "No usable evidence or required extractor unavailable",
+          "expected_metrics": [
+            "region:R3_above"
+          ],
+          "unavailable_metrics": [
+            "region:R3_above"
+          ],
+          "participating_metrics": [],
+          "participating_records": [],
+          "normalized_aggregation_weight": 0.0
+        },
+        "statistical": {
+          "value": null,
+          "status": "unavailable",
+          "m": 1,
+          "q": null,
+          "evidence_reliability": null,
+          "base_weight": 1.0,
+          "aggregation_weight": 0.0,
+          "valid_count": 0,
+          "applicable_count": 1,
+          "eligible_count": 0,
+          "coverage": 0.0,
+          "eligible_coverage": null,
+          "reason": "No usable evidence or required extractor unavailable",
+          "expected_metrics": [
+            "region:R3_hob_count"
+          ],
+          "unavailable_metrics": [
+            "region:R3_hob_count"
+          ],
+          "participating_metrics": [],
+          "participating_records": [],
+          "normalized_aggregation_weight": 0.0
+        }
+      },
+      "formal_score": null,
+      "reviewed": false
+    }
+  ],
+  "observation_energy": null,
+  "mapping": "Existing verification_questions.energy + compare + aggregate; no changes to formulas/weights",
+  "mock_answers_used": false,
+  "reviewed": false
+}

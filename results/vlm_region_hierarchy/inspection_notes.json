@@ -1,0 +1,19 @@
+{
+  "source": "Assistant static visual inspection of reference and algorithm overlays",
+  "human_review_performed": false,
+  "reviewed": false,
+  "notes": {
+    "bw_9064": {
+      "continuous": "墙面与地板上的碎片明显减少；视觉覆盖保持完整。",
+      "overmerge": "Feature Coarse 把相近颜色的顶棚及墙面连到一个大区域，建筑表面边界丢失；Light 也有跨表面合并。",
+      "undermerge": "椅子投影、冰箱阴影与冰箱明暗两面仍形成多个视觉块。",
+      "anchor": "5 个原有 SAM3 Anchor 候选均保留。其轮廓依赖历史分割，仍需审核；SLIC 不是实例分割。"
+    },
+    "bw_0074": {
+      "continuous": "相近书脊与沙发布面得到部分合并，但书架与沙发仍有许多小块。",
+      "overmerge": "Light Coarse 在已保存 Anchor 边缘增加混合像素；编号图有书脊、背景与装饰物同块的混合内容。",
+      "undermerge": "沙发褶皱、深色书架和书籍/唱片集合仍碎裂；DINO Coarse 85 块，多于 Light 的 70 块。",
+      "anchor": "5 个原有 SAM3 Anchor 候选均保留；透明椅、植物/鱼缸边缘等仍需人工核查。"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/scripts/build_vlm_region_hierarchy.py",
+    "symbol": "vlm",
+    "start_line": 220,
+    "end_line": 267,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/scripts/build_vlm_region_hierarchy.py",
+    "symbol": "final_vlm",
+    "start_line": 270,
+    "end_line": 352,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/scripts/build_vlm_region_hierarchy.py",
+    "symbol": "api_evidence",
+    "start_line": 355,
+    "end_line": 360,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/scripts/build_vlm_region_hierarchy.py",
+    "symbol": "report",
+    "start_line": 536,
+    "end_line": 685,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/e_harness/benchmark_evidence.py",
+    "symbol": "validate_region_hierarchy",
+    "start_line": 253,
+    "end_line": 280,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/e_harness/benchmark_evidence.py",
+    "symbol": "validate_vlm_region_response",
+    "start_line": 283,
+    "end_line": 357,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/benchmark/vlm.py",
+    "symbol": "RELATIONS",
+    "start_line": 16,
+    "end_line": 17,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/benchmark/vlm.py",
+    "symbol": "parse_json",
+    "start_line": 25,
+    "end_line": 33,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/benchmark/vlm.py",
+    "symbol": "VLMClient",
+    "start_line": 36,
+    "end_line": 141,
+    "current_source_snapshot": true
+  },
+  {
+    "file": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/scripts/ofox_tunnel.py",
+    "symbol": "complete tunnel implementation",
+    "start_line": 1,
+    "end_line": 69,
+    "current_source_snapshot": true
+  }
+]

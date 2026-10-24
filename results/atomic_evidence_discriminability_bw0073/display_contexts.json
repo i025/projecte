@@ -1,0 +1,39 @@
+{
+  "zooms": [
+    {
+      "id": "R3_shelf_context",
+      "bbox": [
+        520,
+        230,
+        630,
+        475
+      ],
+      "source": "post_freeze_static_display_only",
+      "new_evaluation_roi": false
+    },
+    {
+      "id": "R3_plant_context",
+      "bbox": [
+        780,
+        305,
+        920,
+        485
+      ],
+      "source": "post_freeze_static_display_only",
+      "new_evaluation_roi": false
+    },
+    {
+      "id": "R2_tabletop_context",
+      "bbox": [
+        680,
+        370,
+        860,
+        485
+      ],
+      "source": "post_freeze_static_display_only",
+      "new_evaluation_roi": false
+    }
+  ],
+  "reference_evidence_changed": false,
+  "reviewed": false
+}

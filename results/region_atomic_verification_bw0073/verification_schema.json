@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "status",
+    "observed",
+    "finding",
+    "reason"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "satisfied",
+        "violated",
+        "unknown",
+        "unavailable"
+      ]
+    },
+    "observed": {
+      "type": [
+        "boolean",
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "finding": {
+      "enum": [
+        "none",
+        "matched",
+        "misplaced",
+        "semantic_mismatch",
+        "confirmed_missing",
+        "not_detected",
+        "count_mismatch"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additional_checks": "validate_atomic_answer enforces per-question type, outcome consistency and presence-vs-position distinction"
+}

@@ -1,0 +1,134 @@
+{
+  "status": "automatic_initial_visual_diagnosis_pending_human_review",
+  "reviewed": false,
+  "basis": "Static paired RGB views and frozen ROI overlays; no pixel GT, no Agent execution, no new VLM",
+  "regions": [
+    {
+      "id": "R1",
+      "name": "窗边水槽区",
+      "diagnosis": "局部差异清晰；归因 uncertain",
+      "observations": [
+        "Reference 拱窗与 Render 矩形窗、搁板及台面颜色/纹理的可见差异集中在此范围。",
+        "Polygon 更集中于左侧可见表面；较高 Appearance 并不表示评价方法更准确。"
+      ],
+      "limits": [
+        "相机、光照、几何和材质影响混合；边缘部分缺少 Render 有效像素。"
+      ],
+      "figures": [
+        "details/box_R1.png",
+        "details/polygon_R1.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "name": "中央岛台区",
+      "diagnosis": "固定坐标遗漏移位后的组成部分",
+      "observations": [
+        "岛台、椅子和吊灯的大小/位置、表面细节存在可见差异。",
+        "Reference Polygon 的上方独立部分不会随 Render 中下移的吊灯移动，实际吊灯部分落在该 ROI 外。",
+        "Polygon Perceptual 低于 Box，不能解释为其完整性更好。"
+      ],
+      "limits": [
+        "可诊断原位置不一致，无法凭该固定 Polygon 完整评价移出范围的吊灯。",
+        "非矩形裁剪黑色填充、上下文和尺度会影响 DINO；本轮未做填充消融。"
+      ],
+      "figures": [
+        "details/box_R2.png",
+        "details/polygon_R2.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "name": "后方料理区",
+      "diagnosis": "局部 Appearance 差异高；Box 与 R2 完全共享",
+      "observations": [
+        "后方墙面/台面纹理、柜体、器皿与绿植相关图像差异明显。",
+        "Polygon Appearance 0.31898，Global 为 0.21227；局部均值揭示全局均值未充分表达的差异。",
+        "R3 Box 全部包含在 R2 Box 内；Polygon 减少重复覆盖，但没有消除共享部分。"
+      ],
+      "limits": [
+        "只表明图像距离，不作正式物体遗漏判定。",
+        "有效面积匹配的普通矩形 Appearance 为 0.32180，尚无语义分区的数值优势证据。"
+      ],
+      "figures": [
+        "details/box_R3.png",
+        "details/polygon_R3.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "name": "右侧高柜区",
+      "diagnosis": "局部差异清晰；固定范围存在背景混入",
+      "observations": [
+        "右侧柜体高度/比例、颜色及位置的可见差异集中于该范围。",
+        "Render 柜体偏低，Reference ROI 上部在 Render 中包含更多天花板，未调整边界来改善数值。"
+      ],
+      "limits": [
+        "受视角/布局差异影响，不能将误差完全解释为外观或材质错误。",
+        "Polygon 数值没有一致优于面积相近矩形。"
+      ],
+      "figures": [
+        "details/box_R4.png",
+        "details/polygon_R4.png"
+      ],
+      "reviewed": false
+    }
+  ],
+  "failures": [
+    {
+      "id": "F1",
+      "title": "历史相机与当前 T0 不一致",
+      "kind": "comparability_failure",
+      "detail": "保存的相机 z=1.5 m，当前 Project e T0 z=2.0 m；Reference 相机未知。禁止正式评分。",
+      "figures": [
+        "comparison.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "F2",
+      "title": "移出 Reference ROI 的吊灯无法完整评价",
+      "kind": "fixed_roi_limitation",
+      "detail": "保留同坐标规则，不追踪 Render 中吊灯。原位置差异可测，移位后物体全貌不能由该 Polygon 覆盖。",
+      "figures": [
+        "details/polygon_R2.png",
+        "details/box_R2.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "F3",
+      "title": "Box 的功能区重复覆盖",
+      "kind": "overlap_diagnostic",
+      "detail": "R3 Box 全部包含在 R2 Box 内，未经去重不能直接相加。Polygon 仍有共享像素，本轮均不聚合。",
+      "figures": [
+        "box_overlap.png",
+        "polygon_overlap.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "F4",
+      "title": "非矩形裁剪影响 Perceptual 的解释",
+      "kind": "metric_context_confound",
+      "detail": "R2 Polygon 在其裁剪框内占约55%，其余为现有 DINO 路径的黑色填充；低距离不等于更好的语义完整性。未修改公式，也未证明填充是差异的唯一原因。",
+      "figures": [
+        "details/polygon_R2.png"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "F5",
+      "title": "普通网格也能定位明显差异",
+      "kind": "unproven_semantic_advantage",
+      "detail": "4×4 普通网格左下角 Appearance 0.36515；四个功能区外的背景也不能忽略。相近有效面积矩形的响应与 Polygon 接近，单样本无法证实语义 ROI 的数值增益。",
+      "figures": [
+        "ordinary_grid4_appearance.png"
+      ],
+      "reviewed": false
+    }
+  ]
+}

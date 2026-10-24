@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "tests_run": 173,
+  "tests_passed": 173,
+  "failures": 0,
+  "errors": 0,
+  "png_paths_and_dimensions_verified": true,
+  "original_pair_and_frozen_masks_verified": true,
+  "neutral_identical_prompts_verified": true,
+  "strict_answers_and_comparison_tests": true,
+  "requests_before_checks": 0,
+  "credentials_read_for_checks": false,
+  "reviewed": false
+}

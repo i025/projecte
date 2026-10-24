@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-10-21T00:48:45.181251+08:00",
+  "new_api_requests": 0,
+  "network_requests": 0,
+  "project_code_executed": false,
+  "source_code_modified": false,
+  "original_results_modified": false,
+  "source_directory_file_count": 96,
+  "original_metadata_unchanged": true,
+  "copied_text_directly_matches_original_except_credential_redaction": true,
+  "raw_answer_exactly_preserved": true,
+  "json_syntax_valid": true,
+  "parsed_equals_saved": true,
+  "source_credential_header_lines_omitted": 1,
+  "source_credential_header_arguments_omitted": 2,
+  "credential_value_redactions": 0,
+  "credential_value_scan_passed": true,
+  "authorization_header_scan_passed": true,
+  "input_images": {
+    "bw_9064/vlm_reference.png": {
+      "bundle_file": "inputs/bw_9064/vlm_reference.png",
+      "size": [
+        1280,
+        720
+      ],
+      "mode": "RGB"
+    },
+    "bw_9064/vlm_final_input.png": {
+      "bundle_file": "inputs/bw_9064/vlm_final_input.png",
+      "size": [
+        2048,
+        618
+      ],
+      "mode": "RGB"
+    },
+    "bw_0074/vlm_final_input.png": {
+      "bundle_file": "inputs/bw_0074/vlm_final_input.png",
+      "size": [
+        2048,
+        738
+      ],
+      "mode": "RGB"
+    }
+  }
+}

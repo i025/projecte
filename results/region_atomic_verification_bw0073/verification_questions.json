@@ -1,0 +1,338 @@
+{
+  "questions": [
+    {
+      "id": "R2_island",
+      "region_id": "R2",
+      "energy": "semantic",
+      "level": "region",
+      "question": "画面中央是否可见岛台？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R2_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R2_reference.png",
+        "roi_mask": "rois/polygon_R2.png",
+        "crop_box": [
+          512,
+          94,
+          1044,
+          716
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R2_stools",
+      "region_id": "R2",
+      "energy": "semantic",
+      "level": "region",
+      "question": "岛台前侧是否可见高脚椅？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R2_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R2_reference.png",
+        "roi_mask": "rois/polygon_R2.png",
+        "crop_box": [
+          512,
+          94,
+          1044,
+          716
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R2_lamp",
+      "region_id": "R2",
+      "energy": "semantic",
+      "level": "region",
+      "question": "中央区域是否可见悬挂式吊灯？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R2_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R2_reference.png",
+        "roi_mask": "rois/polygon_R2.png",
+        "crop_box": [
+          512,
+          94,
+          1044,
+          716
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R2_above",
+      "region_id": "R2",
+      "energy": "spatial",
+      "level": "region",
+      "question": "按图像上下方向，吊灯是否在岛台上方？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [
+        "R2_island",
+        "R2_lamp"
+      ],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R2_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R2_reference.png",
+        "roi_mask": "rois/polygon_R2.png",
+        "crop_box": [
+          512,
+          94,
+          1044,
+          716
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R2_count",
+      "region_id": "R2",
+      "energy": "statistical",
+      "level": "region",
+      "question": "岛台前侧可见几把高脚椅？看不清请答 unknown。",
+      "expected": 4,
+      "answer_type": "count",
+      "requires": [
+        "R2_stools"
+      ],
+      "criteria": {
+        "expected": 4,
+        "answer_type": "count",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R2_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R2_reference.png",
+        "roi_mask": "rois/polygon_R2.png",
+        "crop_box": [
+          512,
+          94,
+          1044,
+          716
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R3_cabinets",
+      "region_id": "R3",
+      "energy": "semantic",
+      "level": "region",
+      "question": "后方区域是否可见壁挂橱柜？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R3_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R3_reference.png",
+        "roi_mask": "rois/polygon_R3.png",
+        "crop_box": [
+          553,
+          239,
+          937,
+          427
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R3_counter",
+      "region_id": "R3",
+      "energy": "semantic",
+      "level": "region",
+      "question": "后方区域是否可见台面？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R3_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R3_reference.png",
+        "roi_mask": "rois/polygon_R3.png",
+        "crop_box": [
+          553,
+          239,
+          937,
+          427
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R3_above",
+      "region_id": "R3",
+      "energy": "spatial",
+      "level": "region",
+      "question": "按图像上下方向，后方壁挂橱柜是否在后方台面上方？",
+      "expected": true,
+      "answer_type": "boolean",
+      "requires": [
+        "R3_cabinets",
+        "R3_counter"
+      ],
+      "criteria": {
+        "expected": true,
+        "answer_type": "boolean",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "candidate",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R3_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R3_reference.png",
+        "roi_mask": "rois/polygon_R3.png",
+        "crop_box": [
+          553,
+          239,
+          937,
+          427
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    },
+    {
+      "id": "R3_hob_count",
+      "region_id": "R3",
+      "energy": "statistical",
+      "level": "region",
+      "question": "后方台面可清楚辨认几组炉灶？看不清请答 unknown。",
+      "expected": null,
+      "answer_type": "count",
+      "requires": [],
+      "criteria": {
+        "expected": null,
+        "answer_type": "count",
+        "coordinate_frame": "input image: x right, y down; not world coordinates",
+        "binary_proposition_only": true,
+        "not_element_density_or_distribution": true
+      },
+      "status": "unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "Assistant manual inspection of Reference RGB; human-seeded workflow draft, not actual human review or VLM extraction",
+      "source_type": "human_seeded_provisional",
+      "inputs": {
+        "render_full": "render.png",
+        "render_context_crop": "inputs/polygon_R3_render.png",
+        "reference_full": "reference.png",
+        "reference_context_crop": "inputs/polygon_R3_reference.png",
+        "roi_mask": "rois/polygon_R3.png",
+        "crop_box": [
+          553,
+          239,
+          937,
+          427
+        ],
+        "rendered_crop_is_bbox_context_not_new_semantic_mask": true
+      }
+    }
+  ],
+  "expected_answers_not_model_predictions": true,
+  "reviewed": false
+}

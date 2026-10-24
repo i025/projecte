@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "region_id": "R2",
+      "candidate_id": "consensus_aquarium",
+      "category": "aquarium",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "consensus_books_collection",
+      "category": "books collection",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "consensus_bookshelf",
+      "category": "bookshelf",
+      "name_match": true,
+      "content_match": false,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "candidate_id": "consensus_bookshelf",
+      "category": "bookshelf",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": true,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R1",
+      "candidate_id": "consensus_chair",
+      "category": "chair",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "consensus_globe",
+      "category": "globe",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R1",
+      "candidate_id": "consensus_monitor",
+      "category": "monitor",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R4",
+      "candidate_id": "consensus_sofa",
+      "category": "sofa",
+      "name_match": true,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "candidate_id": "consensus_vinyl_records",
+      "category": "vinyl records",
+      "name_match": true,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    }
+  ],
+  "reviewed": false
+}

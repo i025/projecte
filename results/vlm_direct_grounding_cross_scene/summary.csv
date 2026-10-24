@@ -1,0 +1,7 @@
+task_id,method,status,planned_regions,nonempty_rois,native_union_fraction,native_overlap_fraction,native_unassigned_fraction,reviewed
+bw_0074,A_historical,available_unreviewed,4,4,0.8133489526678381,0.01331176377616006,0.1866510473321619,False
+bw_0074,B_direct_box,N/A_schema_rejected,4,,,,,False
+bw_0074,C_direct_polygon,N/A_schema_rejected,4,,,,,False
+bw_9064,A_historical,available_unreviewed,2,2,0.16726454092917542,0.0,0.8327354590708246,False
+bw_9064,B_direct_box,available_unreviewed,2,2,0.20347004357575418,0.0,0.7965299564242458,False
+bw_9064,C_direct_polygon,available_unreviewed,2,2,0.1589167586147283,0.0,0.8410832413852717,False

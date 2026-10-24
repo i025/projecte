@@ -1,0 +1,9 @@
+case,delta_x_change,delta_y_change,bbox_area_ratio_proxy_change,visible_mask_area_ratio_change,passed
+positive_unchanged,0.0,0.0,0.0,0.0,True
+negative_horizontal_20px,0.09999999999999998,0.0,0.0,0.0,True
+negative_vertical_12px,0.0,0.10000000000000003,0.0,0.0,True
+negative_visible_area_x4,0.0,0.0,0.4,0.30000000000000004,True
+invariance_common_translation,0.0,1.1102230246251565e-16,0.0,0.0,True
+unlocatable_unknown,,,,,True
+unlocatable_confirmed_missing,,,,,True
+unlocatable_semantic_mismatch,,,,,True

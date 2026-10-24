@@ -1,0 +1,15 @@
+{
+  "task_id": "bw_0073",
+  "reference_only": true,
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073",
+  "checkpoint": "/home/xymo/models/sam2",
+  "adapter": "existing benchmark.evidence.sam2_box_masks",
+  "multimask_output": false,
+  "candidates_per_box": 1,
+  "prompt_count": 4,
+  "new_vlm_calls": 0,
+  "hybrid_rule": "Retain Box, uncertain, unless independent completeness evidence exists; none supplied in this experiment",
+  "candidate_union": false,
+  "mask_repairs": false,
+  "reviewed": false
+}

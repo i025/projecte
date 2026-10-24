@@ -1,0 +1,322 @@
+{
+  "status": "completed",
+  "protocol": {
+    "scene_id": "bw_0074",
+    "region_id": "R3",
+    "experiment": "post-hoc exploratory",
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+    "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+    "source_result": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/records_group_verification_bw0074/verification_results.json",
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/group_identity_b2a12569436543f2b0bafdb796ff955e",
+    "image_size": [
+      1258,
+      855
+    ],
+    "crops": {
+      "context": [
+        883,
+        119,
+        1258,
+        541
+      ],
+      "display": [
+        883,
+        119,
+        1258,
+        322
+      ]
+    },
+    "crop_provenance": "Coordinator Reference-only visual draft: upper two cabinet bands; exclude lower receiver/turntables. Not automatic grounding or independently reviewed GT.",
+    "crop_scope_note": "Display crop retains a subset of visible cabinet contents; not every member of the full Group.",
+    "system": "你是图像内容分类器。只依据当前图片中目标柜格陈列内容本身的可见视觉证据分类，不猜测不可见内容。不能仅凭附近音响、唱机或其他设备推断唱片存在。证据不足时允许ambiguous，不强行判为不存在或类别错误。只输出JSON，不解释。",
+    "user": "目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。",
+    "categories": [
+      "vinyl_sleeves",
+      "books",
+      "other",
+      "ambiguous",
+      "absent"
+    ],
+    "schema": {
+      "type": "object",
+      "required": [
+        "category"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "vinyl_sleeves",
+            "books",
+            "other",
+            "ambiguous",
+            "absent"
+          ]
+        }
+      }
+    },
+    "input_processing": "Identical crop coordinates on Reference-native grid; 2x LANCZOS for all four. No labels, outlines, masking, generated pixels or expected answers.",
+    "backend": "Codex Subagent",
+    "model": "gpt-6-sol",
+    "maximum_verifiers": 4,
+    "serial": true,
+    "automatic_retries": false,
+    "no_expected_labels": true,
+    "prior_render_knowledge_disclosed": true,
+    "strict_blind_test": false,
+    "reference_crop_frozen_before_new_render_read": true,
+    "reviewed": false,
+    "usage": "provisional/debug"
+  },
+  "answers": {
+    "render_context": {
+      "raw_answer": "{\"category\":\"ambiguous\"}",
+      "parsed": {
+        "status": "valid",
+        "category": "ambiguous"
+      },
+      "actual_input": {
+        "task_name": "v_d251f476d635",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/0c366ef0069b43229f78a4423bd50c5f/2f7170f28d71469489289f91946d7c41.png\n\nSystem：\n你是图像内容分类器。只依据当前图片中目标柜格陈列内容本身的可见视觉证据分类，不猜测不可见内容。不能仅凭附近音响、唱机或其他设备推断唱片存在。证据不足时允许ambiguous，不强行判为不存在或类别错误。只输出JSON，不解释。\n\nUser：\n目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const result = await tools.view_image({path:\"/tmp/0c366ef0069b43229f78a4423bd50c5f/2f7170f28d71469489289f91946d7c41.png\",detail:\"original\"}); image(result.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/23/rollout-2026-10-23T03-36-27-01a166d4-d94b-7011-be40-39ede1526848.jsonl",
+      "agent_path": "/root/v_d251f476d635",
+      "usage": {
+        "input_tokens": 44245,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 370,
+        "reasoning_output_tokens": 281,
+        "total_tokens": 44615
+      },
+      "duration_seconds": 16.214,
+      "started_at": 1792726587,
+      "completed_at": 1792726603,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    },
+    "reference_context": {
+      "raw_answer": "{\"category\":\"vinyl_sleeves\"}",
+      "parsed": {
+        "status": "valid",
+        "category": "vinyl_sleeves"
+      },
+      "actual_input": {
+        "task_name": "v_5a0e0991399c",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/f3e679882cdf4e9fb54f7f54881e3d93/70224106625f4ebdb0c965c38d9e73df.png\n\nSystem：\n你是图像内容分类器。只依据当前图片中目标柜格陈列内容本身的可见视觉证据分类，不猜测不可见内容。不能仅凭附近音响、唱机或其他设备推断唱片存在。证据不足时允许ambiguous，不强行判为不存在或类别错误。只输出JSON，不解释。\n\nUser：\n目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const result = await tools.view_image({path:\"/tmp/f3e679882cdf4e9fb54f7f54881e3d93/70224106625f4ebdb0c965c38d9e73df.png\",detail:\"original\"}); image(result.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/23/rollout-2026-10-23T03-35-01-01a166d3-89b8-7f81-aa80-959781f77e88.jsonl",
+      "agent_path": "/root/v_5a0e0991399c",
+      "usage": {
+        "input_tokens": 44257,
+        "cached_input_tokens": 21504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 141,
+        "reasoning_output_tokens": 49,
+        "total_tokens": 44398
+      },
+      "duration_seconds": 10.331,
+      "started_at": 1792726501,
+      "completed_at": 1792726512,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    },
+    "render_display": {
+      "raw_answer": "{\"category\":\"ambiguous\"}",
+      "parsed": {
+        "status": "valid",
+        "category": "ambiguous"
+      },
+      "actual_input": {
+        "task_name": "v_8c5aff30a01f",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/725840d7ec2c4d24aa034f1c26f463c9/7ea6bb6d65834b05b72a96c31f2ca6b0.png\n\nSystem：\n你是图像内容分类器。只依据当前图片中目标柜格陈列内容本身的可见视觉证据分类，不猜测不可见内容。不能仅凭附近音响、唱机或其他设备推断唱片存在。证据不足时允许ambiguous，不强行判为不存在或类别错误。只输出JSON，不解释。\n\nUser：\n目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const result = await tools.view_image({path:\"/tmp/725840d7ec2c4d24aa034f1c26f463c9/7ea6bb6d65834b05b72a96c31f2ca6b0.png\",detail:\"original\"}); image(result.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/23/rollout-2026-10-23T03-37-03-01a166d5-648a-75c0-b78f-93b05598a1cc.jsonl",
+      "agent_path": "/root/v_8c5aff30a01f",
+      "usage": {
+        "input_tokens": 43870,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 229,
+        "reasoning_output_tokens": 135,
+        "total_tokens": 44099
+      },
+      "duration_seconds": 12.124,
+      "started_at": 1792726623,
+      "completed_at": 1792726635,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    },
+    "reference_display": {
+      "raw_answer": "{\"category\":\"vinyl_sleeves\"}",
+      "parsed": {
+        "status": "valid",
+        "category": "vinyl_sleeves"
+      },
+      "actual_input": {
+        "task_name": "v_16642c0c8665",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/a310d11ecb9046b2a521dca62c3226c7/113a93c814574420b1144ad5a8cb8ccc.png\n\nSystem：\n你是图像内容分类器。只依据当前图片中目标柜格陈列内容本身的可见视觉证据分类，不猜测不可见内容。不能仅凭附近音响、唱机或其他设备推断唱片存在。证据不足时允许ambiguous，不强行判为不存在或类别错误。只输出JSON，不解释。\n\nUser：\n目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const r=await tools.view_image({path:\"/tmp/a310d11ecb9046b2a521dca62c3226c7/113a93c814574420b1144ad5a8cb8ccc.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/23/rollout-2026-10-23T03-35-40-01a166d4-1f62-7362-a5a3-3c3aa6b60c34.jsonl",
+      "agent_path": "/root/v_16642c0c8665",
+      "usage": {
+        "input_tokens": 43836,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 111,
+        "reasoning_output_tokens": 22,
+        "total_tokens": 43947
+      },
+      "duration_seconds": 12.695,
+      "started_at": 1792726540,
+      "completed_at": 1792726552,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    }
+  },
+  "crop_comparability": {
+    "reference_context": {
+      "status": "target_visible",
+      "comparable": true,
+      "note": "既有R3完整范围，保留柜格、收录机、唱机。",
+      "reviewed": false,
+      "reviewer_type": "Codex static visibility candidate, not independent human",
+      "human_review": "unreviewed",
+      "class_ground_truth": null
+    },
+    "reference_display": {
+      "status": "residual_context",
+      "comparable": true,
+      "note": "两层竖直封套陈列清晰保留；排除下方收录机、唱机，但右缘保留局部扬声器、左缘有植物。不构成纯集合无背景输入。",
+      "reviewed": false,
+      "reviewer_type": "Codex static visibility candidate, not independent human",
+      "human_review": "unreviewed",
+      "class_ground_truth": null
+    },
+    "render_context": {
+      "status": "target_visible",
+      "comparable": true,
+      "note": "同坐标保留陈列与设备，也包含更多顶棚/墙面；没有移动ROI。",
+      "reviewed": false,
+      "reviewer_type": "Codex static visibility candidate, not independent human",
+      "human_review": "unreviewed",
+      "class_ground_truth": null
+    },
+    "render_display": {
+      "status": "partial_target_visible",
+      "comparable": true,
+      "note": "同坐标因相机差异截取一整排及部分下一排，仍有可见陈列集合，未完全裁掉；含较多顶棚/墙面。仅能研究所保留子集的类别判断，不能比较完整Group的数量/密度。",
+      "reviewed": false,
+      "reviewer_type": "Codex static visibility candidate, not independent human",
+      "human_review": "unreviewed",
+      "class_ground_truth": null
+    }
+  },
+  "context_effect": {
+    "reference": {
+      "first_answer": "vinyl_sleeves",
+      "second_answer": "vinyl_sleeves",
+      "status": "satisfied",
+      "raw_label_changed": false,
+      "reason": "Context/input comparison only; not a reconstruction error or correctness label",
+      "reviewed": false,
+      "scorable": false,
+      "value": null
+    },
+    "render": {
+      "first_answer": "ambiguous",
+      "second_answer": "ambiguous",
+      "status": "unknown",
+      "raw_label_changed": false,
+      "reason": "Context/input comparison only; not a reconstruction error or correctness label",
+      "reviewed": false,
+      "scorable": false,
+      "value": null
+    }
+  },
+  "experiment": "post-hoc exploratory",
+  "reviewed": false,
+  "scorable": false,
+  "usage": "provisional/debug",
+  "verifier_sessions": 4,
+  "ofox_calls": 0,
+  "total_verifier_seconds": 51.364,
+  "verifier_usage": {
+    "input_tokens": 176208,
+    "cached_input_tokens": 145536,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 851,
+    "reasoning_output_tokens": 487,
+    "total_tokens": 177059
+  },
+  "actual_currency_cost": null,
+  "formal_energy": null,
+  "old_results_revised": false,
+  "strict_blind_test_established": false,
+  "api_equivalence_established": false
+}

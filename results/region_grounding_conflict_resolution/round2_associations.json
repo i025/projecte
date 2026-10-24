@@ -1,0 +1,280 @@
+{
+  "rows": [
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m000",
+      "category": "bookshelf",
+      "name_match": true,
+      "content_match": false,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "candidate_id": "bw_0074_sam3_text_m000",
+      "category": "bookshelf",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": true,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m001",
+      "category": "bookshelf",
+      "name_match": true,
+      "content_match": false,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "candidate_id": "bw_0074_sam3_text_m001",
+      "category": "bookshelf",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": true,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m002",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m003",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m004",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m005",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m006",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m007",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m008",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m009",
+      "category": "books",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R1",
+      "candidate_id": "bw_0074_sam3_text_m010",
+      "category": "monitor",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R1",
+      "candidate_id": "bw_0074_sam3_text_m011",
+      "category": "chair",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R4",
+      "candidate_id": "bw_0074_sam3_text_m012",
+      "category": "sofa",
+      "name_match": true,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m013",
+      "category": "globe",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_text_m014",
+      "category": "aquarium",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "candidate_id": "bw_0074_sam3_visual_m005",
+      "category": "records group",
+      "name_match": true,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_visual_m006",
+      "category": "books group",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_visual_m007",
+      "category": "bookshelf",
+      "name_match": true,
+      "content_match": false,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "candidate_id": "bw_0074_sam3_visual_m007",
+      "category": "bookshelf",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": true,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R1",
+      "candidate_id": "bw_0074_sam3_visual_m000",
+      "category": "monitor",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R1",
+      "candidate_id": "bw_0074_sam3_visual_m001",
+      "category": "transparent chair",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R4",
+      "candidate_id": "bw_0074_sam3_visual_m002",
+      "category": "sofa",
+      "name_match": true,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_visual_m003",
+      "category": "globe",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "candidate_id": "bw_0074_sam3_visual_m004",
+      "category": "aquarium",
+      "name_match": false,
+      "content_match": true,
+      "suppressed_incidental_mention": false,
+      "raw_score_used_as_reliability": false,
+      "reviewed": false
+    }
+  ],
+  "heuristic_score_definition": "Uncalibrated semantic/area-specificity + SAM-boundary interior + soft location; not reliability",
+  "score_weights": {
+    "named_semantics": 0.9,
+    "mentioned_semantics": 0.85,
+    "area_penalty": 0.5,
+    "interior": 0.04,
+    "position": 0.04
+  },
+  "per_region_order": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "reliability_used": false,
+  "reviewed": false
+}

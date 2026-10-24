@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "baseline": true,
+    "deleted": true,
+    "moved": true,
+    "color": true,
+    "distribution": true,
+    "penetration": true,
+    "billboard": true,
+    "ortho": true
+  },
+  "source": "results/agentic_verified_cpu"
+}

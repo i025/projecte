@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "scenes": [
+    {
+      "task_id": "bw_0074",
+      "original_size": [
+        1258,
+        855
+      ],
+      "actual_response_status": "unavailable",
+      "original_plan_bytes_identical": true,
+      "prompt_and_schema_unchanged": true,
+      "actual_provider_coordinates_unchanged": true,
+      "request_count": 1,
+      "native_masks_checked": 4,
+      "existing_loader_passed": true,
+      "all_candidates_unreviewed": true,
+      "historical_preview_pixels_identical": true,
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "original_size": [
+        1672,
+        941
+      ],
+      "actual_response_status": "coordinates_valid",
+      "original_plan_bytes_identical": true,
+      "prompt_and_schema_unchanged": true,
+      "actual_provider_coordinates_unchanged": true,
+      "request_count": 1,
+      "native_masks_checked": 6,
+      "existing_loader_passed": true,
+      "all_candidates_unreviewed": true,
+      "historical_preview_pixels_identical": true,
+      "reviewed": false
+    }
+  ],
+  "total_new_paid_requests": 2,
+  "automatic_retries": 0,
+  "planning_requests": 0,
+  "verification_requests": 0,
+  "native_binary_masks_checked": 10,
+  "frozen_prompt_schema_validation_and_rasterization_unchanged": true,
+  "frozen_b2_and_vocabulary_unchanged": true,
+  "raw_coordinates_repaired": false,
+  "rejected_partial_result_salvage": false,
+  "local_artifact_links_checked": 54,
+  "credential_value_absent": true,
+  "credential_fields_absent_from_json": true,
+  "text_artifacts_scanned": 56,
+  "tests_before_requests": 127,
+  "tests_final_passed": 128,
+  "tests_failed": 0,
+  "offline_replay_passed": true,
+  "all_evidence_unreviewed": true,
+  "formal_energy_or_3d_scoring_executed": false,
+  "sam3_runs": 0,
+  "dino_runs": 0,
+  "slic_runs": 0,
+  "blender_runs": 0,
+  "agent_code_executions": 0,
+  "gpu_inference_runs": 0,
+  "reviewed": false
+}

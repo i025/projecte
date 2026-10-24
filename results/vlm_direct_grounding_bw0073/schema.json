@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "regions"
+  ],
+  "properties": {
+    "regions": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "bbox",
+          "polygons"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "R1",
+              "R2",
+              "R3",
+              "R4"
+            ]
+          },
+          "bbox": {
+            "anyOf": [
+              {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "polygons": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 2,
+            "items": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 8,
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

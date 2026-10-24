@@ -1,0 +1,33 @@
+{
+  "inspector": "assistant static inspection of reference and segmentation overlays; not human GT",
+  "reviewed": false,
+  "mask_reviewed": false,
+  "observations": {
+    "bw_9064": [
+      "SAM2 Auto finds ceiling/side-wall candidates but misses the large back wall, table and whole-chair masks at this fixed budget. The refrigerator is represented by parts and duplicate wall masks exist.",
+      "Prompted candidates need contact-boundary review at the table/plant and chair legs; coverage is not semantic validation.",
+      "SAM3 Text returns 1 table, 2 chairs, 1 refrigerator, 1 potted plant, 3 walls, 1 ceiling and 1 wood-floor candidate. This is useful reference-side discovery with seven concept prompts, not no-prompt automation or verified recall."
+    ],
+    "bw_0074": [
+      "SAM2 Auto produces several shelf-level record/book groups and individual display objects; it does not recover the whole bookcase or transparent chair as a complete instance.",
+      "Prompted books/records/bookcase masks mix hierarchy levels and sometimes include cabinet structure, other objects or many holes. Transparent chair and sofa boundaries need review.",
+      "SAM3 Text returns books=8 but vinyl records=0 at confidence threshold 0.5. Bookshelf=2 appears to recover much of the cabinet structure while leaving contents as holes; shelf structure and book/record collections require different upper-layer Regions."
+    ],
+    "bw_0073": [
+      "SAM2 Auto misses the four foreground stools at this grid/threshold budget. Unified loose boxes produce four separate stool candidates, retaining leg gaps and some disconnected fragments.",
+      "Ceiling and floor masks contain many holes/fragments around lights, shadows and stool occlusion; thin structures are resolution-limited by the 7952x4333 to 1536x837 working resize.",
+      "SAM3 Text returns chair=0, cabinets=26, countertop=3, plant=4, bowl=4 and window=6. The cabinet concept mixes object/door/drawer granularities; these counts are not true object counts. The four foreground chairs are omitted by this fixed text prompt, whereas the same loose boxes yield four separate SAM3 Visual masks. No prompt-word or threshold tuning was performed after this failure."
+    ],
+    "bw_0043": [
+      "SAM2 Auto and Prompted both return a visually complete flower silhouette. This supports whole-flower candidate utility, not petal-instance completeness or boundary accuracy.",
+      "Leaves/background prompts yield disconnected fragments; narrow leaves and hidden portions remain uncertain.",
+      "SAM3 Text returns flower=1 and petals=6, but leaves=0 and stem=0. Whole-flower/petal overlap is legitimate hierarchy, not automatically a conflict. The text run does not demonstrate recovery of surrounding narrow leaves."
+    ],
+    "bw_0075": [
+      "This reference is a textured painted landscape, not a photograph of discrete furniture objects. No physical-object Anchor was forced into the prompt list.",
+      "SLIC breaks broad painted sky/cloud/hill bands into many visual patches. SAM2 Auto finds only tiny local shapes; Prompted follows some large bands but leaves brushstroke holes and fragments.",
+      "SAM3 Text returns painted sky=1, clouds=3, painted hills=0. Sky/cloud candidates overlap substantially (27.99% of working pixels); the depicted-content concepts do not provide a reliable exclusive partition. The visual boxes recover several broad bands but leave holes and unassigned brushwork."
+    ]
+  },
+  "quantitative_accuracy": "N/A: no human-reviewed pixel masks"
+}

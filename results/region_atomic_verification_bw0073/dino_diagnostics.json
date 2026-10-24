@@ -1,0 +1,198 @@
+{
+  "rows": [
+    {
+      "id": "box_R2",
+      "input_variant": "official_black_crop",
+      "perceptual": 0.1862958144071905,
+      "reason": null,
+      "original_cached_perceptual": 0.1862958144071905,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R2",
+      "input_variant": "common_gray_crop",
+      "perceptual": 0.1862958144071905,
+      "reason": null,
+      "original_cached_perceptual": 0.1862958144071905,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R2",
+      "input_variant": "bbox_context",
+      "perceptual": 0.1862958144071905,
+      "reason": null,
+      "original_cached_perceptual": 0.1862958144071905,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R2",
+      "input_variant": "full_frame_black",
+      "perceptual": 0.16196572656795805,
+      "reason": null,
+      "original_cached_perceptual": 0.1862958144071905,
+      "delta_from_official": -0.02433008783923246,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R2",
+      "input_variant": "official_black_crop",
+      "perceptual": 0.1565570979201936,
+      "reason": null,
+      "original_cached_perceptual": 0.1565570979201936,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R2",
+      "input_variant": "common_gray_crop",
+      "perceptual": 0.17244337611415073,
+      "reason": null,
+      "original_cached_perceptual": 0.1565570979201936,
+      "delta_from_official": 0.015886278193957132,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R2",
+      "input_variant": "bbox_context",
+      "perceptual": 0.1860231181081036,
+      "reason": null,
+      "original_cached_perceptual": 0.1565570979201936,
+      "delta_from_official": 0.029466020187910003,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R2",
+      "input_variant": "full_frame_black",
+      "perceptual": 0.1668612771197891,
+      "reason": null,
+      "original_cached_perceptual": 0.1565570979201936,
+      "delta_from_official": 0.010304179199595503,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R3",
+      "input_variant": "official_black_crop",
+      "perceptual": 0.2593002592774739,
+      "reason": null,
+      "original_cached_perceptual": 0.2593002592774739,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R3",
+      "input_variant": "common_gray_crop",
+      "perceptual": 0.2593002592774739,
+      "reason": null,
+      "original_cached_perceptual": 0.2593002592774739,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R3",
+      "input_variant": "bbox_context",
+      "perceptual": 0.2593002592774739,
+      "reason": null,
+      "original_cached_perceptual": 0.2593002592774739,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "box_R3",
+      "input_variant": "full_frame_black",
+      "perceptual": 0.08819045383731694,
+      "reason": null,
+      "original_cached_perceptual": 0.2593002592774739,
+      "delta_from_official": -0.17110980544015697,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R3",
+      "input_variant": "official_black_crop",
+      "perceptual": 0.2762875083897305,
+      "reason": null,
+      "original_cached_perceptual": 0.2762875083897305,
+      "delta_from_official": 0.0,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R3",
+      "input_variant": "common_gray_crop",
+      "perceptual": 0.25772140145660766,
+      "reason": null,
+      "original_cached_perceptual": 0.2762875083897305,
+      "delta_from_official": -0.018566106933122828,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R3",
+      "input_variant": "bbox_context",
+      "perceptual": 0.2711480892369793,
+      "reason": null,
+      "original_cached_perceptual": 0.2762875083897305,
+      "delta_from_official": -0.005139419152751179,
+      "diagnostic_only": true,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R3",
+      "input_variant": "full_frame_black",
+      "perceptual": 0.08883347877421127,
+      "reason": null,
+      "original_cached_perceptual": 0.2762875083897305,
+      "delta_from_official": -0.1874540296155192,
+      "diagnostic_only": true,
+      "reviewed": false
+    }
+  ],
+  "self_checks": [
+    {
+      "input_variant": "official_black_crop",
+      "value": 0.0,
+      "reason": null,
+      "reviewed": false
+    },
+    {
+      "input_variant": "common_gray_crop",
+      "value": 0.0,
+      "reason": null,
+      "reviewed": false
+    },
+    {
+      "input_variant": "bbox_context",
+      "value": 5.551115123125783e-17,
+      "reason": null,
+      "reviewed": false
+    },
+    {
+      "input_variant": "full_frame_black",
+      "value": 0.0,
+      "reason": null,
+      "reviewed": false
+    }
+  ],
+  "device": "cpu",
+  "model_loaded": true,
+  "unavailable_reason": null,
+  "seconds": 16.955452772788703,
+  "official_formula_changed": false,
+  "roi_geometry_changed": false,
+  "diagnostic_only": true,
+  "reviewed": false
+}

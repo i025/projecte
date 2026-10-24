@@ -1,0 +1,440 @@
+{
+  "tasks": [
+    {
+      "task_id": "bw_9064",
+      "image_size": [
+        1672,
+        941
+      ],
+      "working_size": [
+        1536,
+        864
+      ],
+      "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "original_reference_image": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/references/image_01.png",
+      "reference_copy": "references/bw_9064/reference.png",
+      "working_image": "references/bw_9064/working.png",
+      "provenance": {
+        "input_json": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/input.json",
+        "task_json": "/home/xymo/projects/BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/task.json",
+        "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/scene_064-harbor-generation/scene_064/task__LY4dtPw/config.json",
+        "run_ids": [
+          "scene_064-harbor-generation/scene_064/task__LY4dtPw"
+        ],
+        "metadata_correspondence_verified": true
+      },
+      "visual_prompts": [
+        {
+          "id": "a_table",
+          "category": "table",
+          "role": "anchor",
+          "bbox": [
+            346,
+            564,
+            589,
+            812
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "a_chair_left",
+          "category": "chair",
+          "role": "anchor",
+          "bbox": [
+            205,
+            563,
+            428,
+            854
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "a_chair_right",
+          "category": "chair",
+          "role": "anchor",
+          "bbox": [
+            523,
+            546,
+            700,
+            808
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "a_refrigerator",
+          "category": "refrigerator",
+          "role": "anchor",
+          "bbox": [
+            1144,
+            313,
+            1395,
+            794
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "a_potted_plant",
+          "category": "potted_plant",
+          "role": "anchor",
+          "bbox": [
+            433,
+            507,
+            504,
+            580
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "wall_back",
+          "category": "wall",
+          "role": "region",
+          "bbox": [
+            248,
+            105,
+            1429,
+            743
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "ceiling",
+          "category": "ceiling",
+          "role": "region",
+          "bbox": [
+            78,
+            0,
+            1595,
+            107
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "floor",
+          "category": "wood floor",
+          "role": "region",
+          "bbox": [
+            0,
+            741,
+            1672,
+            941
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "wall_left",
+          "category": "wall",
+          "role": "region",
+          "bbox": [
+            0,
+            0,
+            249,
+            851
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "wall_right",
+          "category": "wall",
+          "role": "region",
+          "bbox": [
+            1428,
+            0,
+            1672,
+            851
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        }
+      ],
+      "text_prompts": [
+        "table",
+        "chair",
+        "refrigerator",
+        "potted plant",
+        "wall",
+        "ceiling",
+        "wood floor"
+      ],
+      "reviewed": false,
+      "render_used": false,
+      "coordinate_note": "Masks nearest-resized to original RGB; statistics use the working grid.",
+      "local_reference": "bw_9064/reference.png",
+      "vlm_reference": "bw_9064/vlm_reference.png",
+      "vlm_image_size": [
+        1280,
+        720
+      ],
+      "original_staged_bytes_equal": true
+    },
+    {
+      "task_id": "bw_0074",
+      "image_size": [
+        1258,
+        855
+      ],
+      "working_size": [
+        1258,
+        855
+      ],
+      "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/references/image_01.jpg",
+      "original_reference_image": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+      "reference_copy": "references/bw_0074/reference.jpg",
+      "working_image": "references/bw_0074/working.png",
+      "provenance": {
+        "input_json": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/input.json",
+        "task_json": "/home/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/task.json",
+        "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/config.json",
+        "run_ids": [
+          "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8"
+        ],
+        "metadata_correspondence_verified": true
+      },
+      "visual_prompts": [
+        {
+          "id": "p00",
+          "category": "monitor",
+          "role": "anchor",
+          "bbox": [
+            210,
+            376,
+            390,
+            490
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p01",
+          "category": "transparent chair",
+          "role": "anchor",
+          "bbox": [
+            93,
+            532,
+            331,
+            846
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p02",
+          "category": "sofa",
+          "role": "anchor",
+          "bbox": [
+            381,
+            551,
+            1258,
+            855
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p03",
+          "category": "globe",
+          "role": "anchor",
+          "bbox": [
+            230,
+            144,
+            297,
+            211
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p04",
+          "category": "aquarium",
+          "role": "anchor",
+          "bbox": [
+            536,
+            447,
+            679,
+            532
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p05",
+          "category": "records group",
+          "role": "region",
+          "bbox": [
+            882,
+            111,
+            1258,
+            428
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p06",
+          "category": "books group",
+          "role": "region",
+          "bbox": [
+            126,
+            120,
+            497,
+            371
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p07",
+          "category": "bookshelf",
+          "role": "region",
+          "bbox": [
+            107,
+            81,
+            1258,
+            746
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p08",
+          "category": "wall",
+          "role": "region",
+          "bbox": [
+            132,
+            0,
+            1233,
+            86
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        },
+        {
+          "id": "p09",
+          "category": "wood floor",
+          "role": "region",
+          "bbox": [
+            47,
+            724,
+            405,
+            855
+          ],
+          "reviewed": false,
+          "mask_reviewed": false,
+          "reliability": 0.0,
+          "source": "fixed_test_reference_rgb_candidate",
+          "precision": "loose_bbox_not_GT",
+          "prompt_author": "assistant_reference_rgb_inspection"
+        }
+      ],
+      "text_prompts": [
+        "bookshelf",
+        "books",
+        "vinyl records",
+        "monitor",
+        "chair",
+        "sofa",
+        "globe",
+        "aquarium"
+      ],
+      "reviewed": false,
+      "render_used": false,
+      "coordinate_note": "Masks nearest-resized to original RGB; statistics use the working grid.",
+      "local_reference": "bw_0074/reference.jpg",
+      "vlm_reference": "bw_0074/vlm_reference.png",
+      "vlm_image_size": [
+        1258,
+        855
+      ],
+      "original_staged_bytes_equal": true
+    }
+  ],
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction",
+  "render_used": false,
+  "reviewed": false,
+  "request_limit": 4,
+  "per_image_request_limit": 2
+}

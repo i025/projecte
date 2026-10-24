@@ -1,0 +1,35 @@
+{
+  "source": "Assistant static inspection of the supplied RGB/ROI views after the two calls; not an independent VLM request or human GT",
+  "reviewed": false,
+  "judgments": [
+    {
+      "id": "q1",
+      "reference": "与可见中央岛台存在性相符",
+      "render": "与可见中央岛台存在性相符",
+      "reason": "两幅完整画面中央均可观察到台面与下方岛台主体；仅验证基本存在性，不检验形状、尺寸或材质",
+      "reviewed": false
+    },
+    {
+      "id": "q2",
+      "reference": "与前侧4把可辨认高脚椅相符",
+      "render": "与前侧4把可辨认高脚椅相符",
+      "reason": "前侧4个椅背及其座面/支撑可见；本次没有明显遮挡计数歧义，但不是完整隐藏实例清单",
+      "reviewed": false
+    },
+    {
+      "id": "q3",
+      "reference": "与吊灯在岛台上方的图像投影关系相符",
+      "render": "与吊灯在岛台上方的图像投影关系相符",
+      "reason": "完整画面中吊灯和岛台均可见；Render吊灯主体部分移出固定Polygon，完整上下文避免将其直接当作缺失",
+      "reviewed": false
+    }
+  ],
+  "limitations": [
+    "每侧一次不能证明重测稳定性",
+    "两侧可能共同识别错误；没有人工GT或校准正确率",
+    "这三个命题对纹理、形状、精确位移、灯具高度和材质差异不敏感",
+    "Q3没有独立吊灯可见性答案，程序不能核实该条件",
+    "历史相机与T0不同；图像上方不代表世界坐标或三维几何正确"
+  ],
+  "formal_correctness_confirmed": false
+}

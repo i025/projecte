@@ -1,0 +1,279 @@
+{
+  "expected_source": "construction_expected",
+  "reviewed": false,
+  "samples": {
+    "A": {
+      "scene_id": "independent_books_controls_A",
+      "reviewed": false,
+      "regions": [
+        {
+          "id": "R_shelf",
+          "description": "independent synthetic book display",
+          "reviewed": false
+        }
+      ],
+      "semantic_groups": [
+        {
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "name": "visible book display",
+          "scope": "all visible books in the independently constructed shelf",
+          "evidence": [
+            "books_horizontal_stack",
+            "books_upright_books"
+          ],
+          "member_instance_ids": null,
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "reviewed": false,
+          "reliability": 0.0
+        }
+      ],
+      "optional_anchors": [],
+      "atomic_evidence": [
+        {
+          "id": "books_horizontal_stack",
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "type": "statistical",
+          "claim": "当前图像中存在至少两本清晰水平叠放书籍",
+          "definition": "至少两本可辨认的书水平叠放，存在明显上下堆叠关系。",
+          "question": "是否能清楚看到至少两本水平叠放的书籍？",
+          "answer_field": "horizontal_stack",
+          "expected": true,
+          "answer_type": "boolean",
+          "requires": [],
+          "status": "candidate",
+          "canonical_fact_id": "books_horizontal_stack",
+          "owner_id": "G_books",
+          "scope": "visible books in the whole image",
+          "source": "construction config, not a VLM answer or reviewed GT",
+          "source_type": "construction_expected",
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0
+        },
+        {
+          "id": "books_upright_books",
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "type": "statistical",
+          "claim": "当前图像中存在清晰竖直站立书籍",
+          "definition": "存在可辨认的书籍，其书脊或书体主要呈竖直站立状态。",
+          "question": "是否能清楚看到竖直站立摆放的书籍？",
+          "answer_field": "upright_books",
+          "expected": true,
+          "answer_type": "boolean",
+          "requires": [],
+          "status": "candidate",
+          "canonical_fact_id": "books_upright_books",
+          "owner_id": "G_books",
+          "scope": "visible books in the whole image",
+          "source": "construction config, not a VLM answer or reviewed GT",
+          "source_type": "construction_expected",
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0
+        }
+      ]
+    },
+    "B": {
+      "scene_id": "independent_books_controls_B",
+      "reviewed": false,
+      "regions": [
+        {
+          "id": "R_shelf",
+          "description": "independent synthetic book display",
+          "reviewed": false
+        }
+      ],
+      "semantic_groups": [
+        {
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "name": "visible book display",
+          "scope": "all visible books in the independently constructed shelf",
+          "evidence": [
+            "books_horizontal_stack",
+            "books_upright_books"
+          ],
+          "member_instance_ids": null,
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "reviewed": false,
+          "reliability": 0.0
+        }
+      ],
+      "optional_anchors": [],
+      "atomic_evidence": [
+        {
+          "id": "books_horizontal_stack",
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "type": "statistical",
+          "claim": "当前图像中存在至少两本清晰水平叠放书籍",
+          "definition": "至少两本可辨认的书水平叠放，存在明显上下堆叠关系。",
+          "question": "是否能清楚看到至少两本水平叠放的书籍？",
+          "answer_field": "horizontal_stack",
+          "expected": false,
+          "answer_type": "boolean",
+          "requires": [],
+          "status": "candidate",
+          "canonical_fact_id": "books_horizontal_stack",
+          "owner_id": "G_books",
+          "scope": "visible books in the whole image",
+          "source": "construction config, not a VLM answer or reviewed GT",
+          "source_type": "construction_expected",
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0
+        },
+        {
+          "id": "books_upright_books",
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "type": "statistical",
+          "claim": "当前图像中存在清晰竖直站立书籍",
+          "definition": "存在可辨认的书籍，其书脊或书体主要呈竖直站立状态。",
+          "question": "是否能清楚看到竖直站立摆放的书籍？",
+          "answer_field": "upright_books",
+          "expected": true,
+          "answer_type": "boolean",
+          "requires": [],
+          "status": "candidate",
+          "canonical_fact_id": "books_upright_books",
+          "owner_id": "G_books",
+          "scope": "visible books in the whole image",
+          "source": "construction config, not a VLM answer or reviewed GT",
+          "source_type": "construction_expected",
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0
+        }
+      ]
+    },
+    "C": {
+      "scene_id": "independent_books_controls_C",
+      "reviewed": false,
+      "regions": [
+        {
+          "id": "R_shelf",
+          "description": "independent synthetic book display",
+          "reviewed": false
+        }
+      ],
+      "semantic_groups": [
+        {
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "name": "visible book display",
+          "scope": "all visible books in the independently constructed shelf",
+          "evidence": [
+            "books_horizontal_stack",
+            "books_upright_books"
+          ],
+          "member_instance_ids": null,
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "reviewed": false,
+          "reliability": 0.0
+        }
+      ],
+      "optional_anchors": [],
+      "atomic_evidence": [
+        {
+          "id": "books_horizontal_stack",
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "type": "statistical",
+          "claim": "当前图像中存在至少两本清晰水平叠放书籍",
+          "definition": "至少两本可辨认的书水平叠放，存在明显上下堆叠关系。",
+          "question": "是否能清楚看到至少两本水平叠放的书籍？",
+          "answer_field": "horizontal_stack",
+          "expected": true,
+          "answer_type": "boolean",
+          "requires": [],
+          "status": "candidate",
+          "canonical_fact_id": "books_horizontal_stack",
+          "owner_id": "G_books",
+          "scope": "visible books in the whole image",
+          "source": "construction config, not a VLM answer or reviewed GT",
+          "source_type": "construction_expected",
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0
+        },
+        {
+          "id": "books_upright_books",
+          "group_id": "G_books",
+          "region_id": "R_shelf",
+          "type": "statistical",
+          "claim": "当前图像中存在清晰竖直站立书籍",
+          "definition": "存在可辨认的书籍，其书脊或书体主要呈竖直站立状态。",
+          "question": "是否能清楚看到竖直站立摆放的书籍？",
+          "answer_field": "upright_books",
+          "expected": true,
+          "answer_type": "boolean",
+          "requires": [],
+          "status": "candidate",
+          "canonical_fact_id": "books_upright_books",
+          "owner_id": "G_books",
+          "scope": "visible books in the whole image",
+          "source": "construction config, not a VLM answer or reviewed GT",
+          "source_type": "construction_expected",
+          "provenance": {
+            "source": "new trusted procedural books fixture",
+            "render_used": false,
+            "expected_source": "construction_expected",
+            "reviewed": false
+          },
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0
+        }
+      ]
+    }
+  }
+}

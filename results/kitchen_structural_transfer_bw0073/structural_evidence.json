@@ -1,0 +1,873 @@
+{
+  "scene": "bw_0073",
+  "region_id": "R4",
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "scorable": false,
+  "formal_energy": null,
+  "reference_seed": {
+    "scene": "bw_0073",
+    "region_id": "R4",
+    "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+    "reference": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+    "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/measurement_rois/box_R4.png",
+    "bbox": [
+      1094,
+      0,
+      1536,
+      762
+    ],
+    "image_size": [
+      1536,
+      837
+    ],
+    "claims": [
+      {
+        "id": "K1",
+        "claim": "深色高柜正面可见并排大型门板或前面板，并由明确的竖向接合边界区分。",
+        "question": "目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？",
+        "scope": "竖向门板外观边界；不推断柜内隔板。",
+        "source": "coordinator_reference_only_visual_candidate",
+        "reference_observation": "present_candidate",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "id": "K2",
+        "claim": "高柜上方另有一排较矮前面板，与下方高门板形成上下两层。",
+        "question": "高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？",
+        "scope": "上方短柜前面板和下方高门板的可见分层；颜色仅为参考定位线索。",
+        "source": "coordinator_reference_only_visual_candidate",
+        "reference_observation": "present_candidate",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "id": "K3",
+        "claim": "右侧台面以下可见至少两块上下叠置的抽屉样前面板，具有水平接合边界与拉手线索。",
+        "question": "目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？",
+        "scope": "抽屉样可见外立面；不确认内部抽屉机构。",
+        "source": "coordinator_reference_only_visual_candidate",
+        "reference_observation": "present_candidate",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "id": "K4",
+        "claim": "高柜与其右侧较低台面柜并置，形成可见的高低柜交接。",
+        "question": "是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？",
+        "scope": "粗空间组织；不以不同颜色本身定义两个结构。",
+        "source": "coordinator_reference_only_visual_candidate",
+        "reference_observation": "present_candidate",
+        "reviewed": false,
+        "reliability": 0.0
+      }
+    ],
+    "evidence_scope": "Visible exterior facade divisions and cabinet-group layout only. No hidden interior structure, complete instance graph or exact part counts.",
+    "freeze": {
+      "unix": 1792851633.3253455,
+      "render_read_in_this_phase": false,
+      "prior_render_knowledge_disclosed": true,
+      "strict_blind_test": false,
+      "human_review": "unreviewed"
+    },
+    "reviewed": false,
+    "usage": "provisional/debug"
+  },
+  "protocol": {
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/kitchen_structural_e7f38ad2e3c848ac89a94640e5351baf",
+    "output": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/kitchen_structural_transfer_bw0073",
+    "reference_frozen": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/kitchen_structural_e7f38ad2e3c848ac89a94640e5351baf/reference_frozen.json",
+    "frozen_before_current_render_read": true,
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+    "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+    "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/measurement_rois/box_R4.png",
+    "bbox": [
+      1094,
+      0,
+      1536,
+      762
+    ],
+    "image_size": [
+      1536,
+      837
+    ],
+    "region": {
+      "id": "R4",
+      "name": "右侧高柜区",
+      "location": "右侧",
+      "content": "浅木色柜体、深色高柜和下方的抽屉柜",
+      "reviewed": false,
+      "reliability": 0.0
+    },
+    "pair_audit": {
+      "task_id": "bw_0073",
+      "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+      "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+      "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+      "agent_input_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/references/image_01.jpg",
+      "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+      "inventory_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blenderworld_runs_inventory/selected.csv",
+      "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/config.json",
+      "task_metadata": "/home/xymo/projects/BlenderWorld/data/BlenderWorld/tasks/bw_0073/task.json",
+      "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/input.json",
+      "artifact_manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/manifest.json",
+      "exact_reference_bytes_equal": true,
+      "run_task_mapping_verified": true,
+      "export_mapping_verified": true,
+      "run_exception": null,
+      "reference_native_size": [
+        7952,
+        4333
+      ],
+      "render_native_size": [
+        1672,
+        941
+      ],
+      "render_alpha_range": [
+        255,
+        255
+      ],
+      "png_metadata": {
+        "Camera": "Camera",
+        "Scene": "Scene",
+        "File": "/workspace/exports/final.blend",
+        "RenderTime": "01:27.84"
+      },
+      "camera_export_source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/camera_parameters.json",
+      "camera_export": {
+        "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+        "T_c2w": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            -6
+          ],
+          [
+            0,
+            1,
+            0,
+            1.5
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "K": [
+          [
+            1045.0,
+            0,
+            836.0
+          ],
+          [
+            0,
+            1045.0,
+            470.5
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+        "resolution": [
+          1672,
+          941
+        ],
+        "camera_object": "Camera",
+        "lens_mm": 22.5,
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "project_e_fixed_T0": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "exported_pose_matches_T0": false,
+      "actual_blend_camera_reverified": false,
+      "reference_camera": "unknown",
+      "camera_alignment_confirmed": false,
+      "camera_protocol": "historical_camera",
+      "render_blend_sync": "unknown; saved PNG metadata is not a rerender verification",
+      "comparison_transform": {
+        "original_size": [
+          1672,
+          941
+        ],
+        "common_size": [
+          1536,
+          837
+        ],
+        "nominal_scale": 0.8894792773645058,
+        "resized_size": [
+          1487,
+          837
+        ],
+        "offset_xy": [
+          24,
+          0
+        ],
+        "padding_is_not_observation": true,
+        "content_alignment": false,
+        "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+      },
+      "observed_canvas_fraction": 0.9680989583333334,
+      "official_benchmark_eligible": false,
+      "usage": "offline provisional/debug only",
+      "reviewed": false
+    },
+    "transform": {
+      "original_size": [
+        1672,
+        941
+      ],
+      "common_size": [
+        1536,
+        837
+      ],
+      "nominal_scale": 0.8894792773645058,
+      "resized_size": [
+        1487,
+        837
+      ],
+      "offset_xy": [
+        24,
+        0
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "system": "你是图像空间结构验证器。只根据当前单侧图片逐条判断可见柜体外部结构。present 表示充分可见证据支持；absent 表示相关局部足够清晰可见且可确认不满足；unknown 表示该局部被遮挡、裁切、类别歧义或对应无法确认。不要因其他局部不可见而弃权整个区域。区分前面板接合边界、柜体外框、装饰缝、拉手和内容边缘；不推测面板后方的内部隔板。只输出简洁 JSON。",
+    "format": "左侧为完整图，橙框为目标区域；右侧为相同固定坐标的放大图。完整图仅提供上下文；不把标记线、裁切或留边当作柜体结构。颜色仅用于定位，不能仅凭颜色不同推断结构。逐条回答，不要求完整物体列表。\n输出一个 JSON 对象，唯一字段 evidence，为四项数组。每项仅含 id、answer（present/absent/unknown）、visibility（clear/partial/unobservable/ambiguous）、visual_basis（不超过80字的直接可见依据或不确定原因）、boundary_type（facade_joint/group_transition/uncertain）、segments（0–4条粗边界线段）。\n坐标相对于右侧目标裁剪图归一化到0–1000，左上为原点；线段为[x1,y1,x2,y2]。只画当前图中独立观察到的可见边界，不补画未见结构；没有可靠线段可用空数组。partial 不自动否定可见的正证据；不能确认不存在时应回答 unknown。仅输出 JSON，不输出推理过程。",
+    "questions": [
+      {
+        "id": "K1",
+        "question": "目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？"
+      },
+      {
+        "id": "K2",
+        "question": "高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？"
+      },
+      {
+        "id": "K3",
+        "question": "目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？"
+      },
+      {
+        "id": "K4",
+        "question": "是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？"
+      }
+    ],
+    "model": "gpt-6-sol",
+    "backend": "Codex Subagent",
+    "maximum_verifiers": 2,
+    "serial": true,
+    "automatic_retries": false,
+    "reviewed": false
+  },
+  "observations": {
+    "render": {
+      "raw_answer": "{\"evidence\":[{\"id\":\"K1\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。\",\"boundary_type\":\"facade_joint\",\"segments\":[[188,426,188,672]]},{\"id\":\"K2\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"灰色高门板上方可见一排较矮的白色面板，中间有横向分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[[0,455,403,394]]},{\"id\":\"K3\",\"answer\":\"absent\",\"visibility\":\"clear\",\"visual_basis\":\"右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[]},{\"id\":\"K4\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜右缘与右侧较低台面柜并置，高低交接清楚可见。\",\"boundary_type\":\"group_transition\",\"segments\":[[403,394,403,650]]}]}",
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "K1": {
+            "status": "valid",
+            "data": {
+              "id": "K1",
+              "answer": "present",
+              "visibility": "partial",
+              "visual_basis": "高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。",
+              "boundary_type": "facade_joint",
+              "segments": [
+                [
+                  188,
+                  426,
+                  188,
+                  672
+                ]
+              ]
+            },
+            "error": null
+          },
+          "K2": {
+            "status": "valid",
+            "data": {
+              "id": "K2",
+              "answer": "present",
+              "visibility": "partial",
+              "visual_basis": "灰色高门板上方可见一排较矮的白色面板，中间有横向分界。",
+              "boundary_type": "facade_joint",
+              "segments": [
+                [
+                  0,
+                  455,
+                  403,
+                  394
+                ]
+              ]
+            },
+            "error": null
+          },
+          "K3": {
+            "status": "valid",
+            "data": {
+              "id": "K3",
+              "answer": "absent",
+              "visibility": "clear",
+              "visual_basis": "右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。",
+              "boundary_type": "facade_joint",
+              "segments": []
+            },
+            "error": null
+          },
+          "K4": {
+            "status": "valid",
+            "data": {
+              "id": "K4",
+              "answer": "present",
+              "visibility": "clear",
+              "visual_basis": "高柜右缘与右侧较低台面柜并置，高低交接清楚可见。",
+              "boundary_type": "group_transition",
+              "segments": [
+                [
+                  403,
+                  394,
+                  403,
+                  650
+                ]
+              ]
+            },
+            "error": null
+          }
+        }
+      },
+      "actual_input": {
+        "task_name": "v_2d4649fb8988",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/85408ca08e4b46b3a0e8a9d94abdc4ff/c41369d6df7743c7a3e5fb1d83893c64.png\n\nSystem：\n你是图像空间结构验证器。只根据当前单侧图片逐条判断可见柜体外部结构。present 表示充分可见证据支持；absent 表示相关局部足够清晰可见且可确认不满足；unknown 表示该局部被遮挡、裁切、类别歧义或对应无法确认。不要因其他局部不可见而弃权整个区域。区分前面板接合边界、柜体外框、装饰缝、拉手和内容边缘；不推测面板后方的内部隔板。只输出简洁 JSON。\n\nUser：\nK1：目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？\nK2：高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？\nK3：目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？\nK4：是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？\n\n左侧为完整图，橙框为目标区域；右侧为相同固定坐标的放大图。完整图仅提供上下文；不把标记线、裁切或留边当作柜体结构。颜色仅用于定位，不能仅凭颜色不同推断结构。逐条回答，不要求完整物体列表。\n输出一个 JSON 对象，唯一字段 evidence，为四项数组。每项仅含 id、answer（present/absent/unknown）、visibility（clear/partial/unobservable/ambiguous）、visual_basis（不超过80字的直接可见依据或不确定原因）、boundary_type（facade_joint/group_transition/uncertain）、segments（0–4条粗边界线段）。\n坐标相对于右侧目标裁剪图归一化到0–1000，左上为原点；线段为[x1,y1,x2,y2]。只画当前图中独立观察到的可见边界，不补画未见结构；没有可靠线段可用空数组。partial 不自动否定可见的正证据；不能确认不存在时应回答 unknown。仅输出 JSON，不输出推理过程。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const result = await tools.view_image({path:\"/tmp/85408ca08e4b46b3a0e8a9d94abdc4ff/c41369d6df7743c7a3e5fb1d83893c64.png\",detail:\"original\"}); image(result.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T14-26-49-01a16e4e-a196-7952-ad30-dd0b1f96aa60.jsonl",
+      "agent_path": "/root/v_2d4649fb8988",
+      "usage": {
+        "input_tokens": 47577,
+        "cached_input_tokens": 41600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 602,
+        "reasoning_output_tokens": 263,
+        "total_tokens": 48179
+      },
+      "duration_seconds": 14.297,
+      "started_at": 1792852009,
+      "completed_at": 1792852023,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    },
+    "reference": {
+      "raw_answer": "{\"evidence\":[{\"id\":\"K1\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。\",\"boundary_type\":\"facade_joint\",\"segments\":[[174,294,174,746],[286,263,286,786]]},{\"id\":\"K2\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[[52,305,548,211]]},{\"id\":\"K3\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。\",\"boundary_type\":\"facade_joint\",\"segments\":[[589,672,1000,741],[589,775,1000,845]]},{\"id\":\"K4\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。\",\"boundary_type\":\"group_transition\",\"segments\":[[549,210,549,870]]}]}",
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "K1": {
+            "status": "valid",
+            "data": {
+              "id": "K1",
+              "answer": "present",
+              "visibility": "clear",
+              "visual_basis": "高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。",
+              "boundary_type": "facade_joint",
+              "segments": [
+                [
+                  174,
+                  294,
+                  174,
+                  746
+                ],
+                [
+                  286,
+                  263,
+                  286,
+                  786
+                ]
+              ]
+            },
+            "error": null
+          },
+          "K2": {
+            "status": "valid",
+            "data": {
+              "id": "K2",
+              "answer": "present",
+              "visibility": "clear",
+              "visual_basis": "深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。",
+              "boundary_type": "facade_joint",
+              "segments": [
+                [
+                  52,
+                  305,
+                  548,
+                  211
+                ]
+              ]
+            },
+            "error": null
+          },
+          "K3": {
+            "status": "valid",
+            "data": {
+              "id": "K3",
+              "answer": "present",
+              "visibility": "partial",
+              "visual_basis": "右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。",
+              "boundary_type": "facade_joint",
+              "segments": [
+                [
+                  589,
+                  672,
+                  1000,
+                  741
+                ],
+                [
+                  589,
+                  775,
+                  1000,
+                  845
+                ]
+              ]
+            },
+            "error": null
+          },
+          "K4": {
+            "status": "valid",
+            "data": {
+              "id": "K4",
+              "answer": "present",
+              "visibility": "clear",
+              "visual_basis": "高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。",
+              "boundary_type": "group_transition",
+              "segments": [
+                [
+                  549,
+                  210,
+                  549,
+                  870
+                ]
+              ]
+            },
+            "error": null
+          }
+        }
+      },
+      "actual_input": {
+        "task_name": "v_d00464676c56",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/6e142335fd024a8e9f749d900a2a1961/9cc6ada418c64493a9def61b8f0ce166.png\n\nSystem：\n你是图像空间结构验证器。只根据当前单侧图片逐条判断可见柜体外部结构。present 表示充分可见证据支持；absent 表示相关局部足够清晰可见且可确认不满足；unknown 表示该局部被遮挡、裁切、类别歧义或对应无法确认。不要因其他局部不可见而弃权整个区域。区分前面板接合边界、柜体外框、装饰缝、拉手和内容边缘；不推测面板后方的内部隔板。只输出简洁 JSON。\n\nUser：\nK1：目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？\nK2：高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？\nK3：目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？\nK4：是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？\n\n左侧为完整图，橙框为目标区域；右侧为相同固定坐标的放大图。完整图仅提供上下文；不把标记线、裁切或留边当作柜体结构。颜色仅用于定位，不能仅凭颜色不同推断结构。逐条回答，不要求完整物体列表。\n输出一个 JSON 对象，唯一字段 evidence，为四项数组。每项仅含 id、answer（present/absent/unknown）、visibility（clear/partial/unobservable/ambiguous）、visual_basis（不超过80字的直接可见依据或不确定原因）、boundary_type（facade_joint/group_transition/uncertain）、segments（0–4条粗边界线段）。\n坐标相对于右侧目标裁剪图归一化到0–1000，左上为原点；线段为[x1,y1,x2,y2]。只画当前图中独立观察到的可见边界，不补画未见结构；没有可靠线段可用空数组。partial 不自动否定可见的正证据；不能确认不存在时应回答 unknown。仅输出 JSON，不输出推理过程。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const r=await tools.view_image({path:\"/tmp/6e142335fd024a8e9f749d900a2a1961/9cc6ada418c64493a9def61b8f0ce166.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T14-25-35-01a16e4d-8283-7c33-96b1-40be0d0d46f0.jsonl",
+      "agent_path": "/root/v_d00464676c56",
+      "usage": {
+        "input_tokens": 47556,
+        "cached_input_tokens": 41600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 692,
+        "reasoning_output_tokens": 324,
+        "total_tokens": 48248
+      },
+      "duration_seconds": 17.093,
+      "started_at": 1792851935,
+      "completed_at": 1792851953,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    }
+  },
+  "comparison": [
+    {
+      "id": "K1",
+      "reference": {
+        "status": "valid",
+        "data": {
+          "id": "K1",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              174,
+              294,
+              174,
+              746
+            ],
+            [
+              286,
+              263,
+              286,
+              786
+            ]
+          ]
+        },
+        "error": null
+      },
+      "render": {
+        "status": "valid",
+        "data": {
+          "id": "K1",
+          "answer": "present",
+          "visibility": "partial",
+          "visual_basis": "高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              188,
+              426,
+              188,
+              672
+            ]
+          ]
+        },
+        "error": null
+      },
+      "effective_reference_answer": "present",
+      "effective_render_answer": "present",
+      "status": "structure_consistent",
+      "reference_comparability_reason": "Clear local evidence",
+      "render_comparability_reason": "Positive partial evidence is usable",
+      "reference_seed_support": "supported_candidate",
+      "geometry_support": "N/A: no object-level Scene Graph for this Run",
+      "reviewed": false,
+      "scorable": false,
+      "formal_energy": null
+    },
+    {
+      "id": "K2",
+      "reference": {
+        "status": "valid",
+        "data": {
+          "id": "K2",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              52,
+              305,
+              548,
+              211
+            ]
+          ]
+        },
+        "error": null
+      },
+      "render": {
+        "status": "valid",
+        "data": {
+          "id": "K2",
+          "answer": "present",
+          "visibility": "partial",
+          "visual_basis": "灰色高门板上方可见一排较矮的白色面板，中间有横向分界。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              0,
+              455,
+              403,
+              394
+            ]
+          ]
+        },
+        "error": null
+      },
+      "effective_reference_answer": "present",
+      "effective_render_answer": "present",
+      "status": "structure_consistent",
+      "reference_comparability_reason": "Clear local evidence",
+      "render_comparability_reason": "Positive partial evidence is usable",
+      "reference_seed_support": "supported_candidate",
+      "geometry_support": "N/A: no object-level Scene Graph for this Run",
+      "reviewed": false,
+      "scorable": false,
+      "formal_energy": null
+    },
+    {
+      "id": "K3",
+      "reference": {
+        "status": "valid",
+        "data": {
+          "id": "K3",
+          "answer": "present",
+          "visibility": "partial",
+          "visual_basis": "右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              589,
+              672,
+              1000,
+              741
+            ],
+            [
+              589,
+              775,
+              1000,
+              845
+            ]
+          ]
+        },
+        "error": null
+      },
+      "render": {
+        "status": "valid",
+        "data": {
+          "id": "K3",
+          "answer": "absent",
+          "visibility": "clear",
+          "visual_basis": "右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。",
+          "boundary_type": "facade_joint",
+          "segments": []
+        },
+        "error": null
+      },
+      "effective_reference_answer": "present",
+      "effective_render_answer": "absent",
+      "status": "candidate_structural_layout_mismatch",
+      "reference_comparability_reason": "Positive partial evidence is usable",
+      "render_comparability_reason": "Clear local evidence",
+      "reference_seed_support": "supported_candidate",
+      "geometry_support": "N/A: no object-level Scene Graph for this Run",
+      "reviewed": false,
+      "scorable": false,
+      "formal_energy": null
+    },
+    {
+      "id": "K4",
+      "reference": {
+        "status": "valid",
+        "data": {
+          "id": "K4",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。",
+          "boundary_type": "group_transition",
+          "segments": [
+            [
+              549,
+              210,
+              549,
+              870
+            ]
+          ]
+        },
+        "error": null
+      },
+      "render": {
+        "status": "valid",
+        "data": {
+          "id": "K4",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "高柜右缘与右侧较低台面柜并置，高低交接清楚可见。",
+          "boundary_type": "group_transition",
+          "segments": [
+            [
+              403,
+              394,
+              403,
+              650
+            ]
+          ]
+        },
+        "error": null
+      },
+      "effective_reference_answer": "present",
+      "effective_render_answer": "present",
+      "status": "structure_consistent",
+      "reference_comparability_reason": "Clear local evidence",
+      "render_comparability_reason": "Clear local evidence",
+      "reference_seed_support": "supported_candidate",
+      "geometry_support": "N/A: no object-level Scene Graph for this Run",
+      "reviewed": false,
+      "scorable": false,
+      "formal_energy": null
+    }
+  ],
+  "metadata_assistance": {
+    "status": "unavailable",
+    "object_level_scene_graph": null,
+    "reason": "No existing object-level export for the paired bw_0073 Run; no new Blender extraction authorized or executed",
+    "searched": [
+      "Project e results/runs scene_graph/scene_summary/scene_metadata/object_metadata JSON paths",
+      "Paired Run artifacts/workspace/exports JSON files"
+    ],
+    "available_export_files": [
+      "camera_parameters.json",
+      "final.png",
+      "preview.png"
+    ],
+    "excluded_wrong_scene_graph": "blender_scene_graph_audit_bw0074/scene_graph.json belongs to a different scene and Run",
+    "excluded_non_graph": "vlm_direct_grounding_bw0073/geometry_audit.json is ROI overlap, not object geometry",
+    "camera_metadata_only": {
+      "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+      "T_c2w": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -6
+        ],
+        [
+          0,
+          1,
+          0,
+          1.5
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "K": [
+        [
+          1045.0,
+          0,
+          836.0
+        ],
+        [
+          0,
+          1045.0,
+          470.5
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+      "resolution": [
+        1672,
+        941
+      ],
+      "camera_object": "Camera",
+      "lens_mm": 22.5,
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "sensor_fit": "HORIZONTAL",
+      "shift_x": 0.0,
+      "shift_y": 0.0
+    },
+    "supports_door_drawer_geometry": false,
+    "reviewed": false
+  },
+  "execution": {
+    "backend": "Codex Subagent",
+    "model": "gpt-6-sol",
+    "sessions": 2,
+    "serial": true,
+    "automatic_retries": false,
+    "total_session_seconds": 31.39,
+    "token_usage": {
+      "input_tokens": 95133,
+      "cached_input_tokens": 83200,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1294,
+      "reasoning_output_tokens": 587,
+      "total_tokens": 96427
+    },
+    "actual_currency_cost": null,
+    "token_scope": "Whole verifier sessions incl platform/image/tool context; parent excluded; cached input and reasoning are already included",
+    "ofox": 0,
+    "blender": 0,
+    "gpu": 0,
+    "sam": 0,
+    "slic": 0
+  },
+  "isolation": {
+    "fork_turns": "none",
+    "single_image_tool_audit": true,
+    "no_expected_values_or_other_side_supplied": true,
+    "strict_blind_test": false,
+    "shared_filesystem_not_hard_isolated": true,
+    "received_task_text_independently_readable": false
+  },
+  "checks": {
+    "frozen_reference_unchanged": true,
+    "source_files_unchanged": true,
+    "anonymous_inputs_equal_staged_images": true,
+    "prompt_symmetric": true
+  }
+}

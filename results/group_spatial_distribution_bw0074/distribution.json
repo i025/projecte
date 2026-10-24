@@ -1,0 +1,857 @@
+{
+  "scene": "bw_0074",
+  "region_id": "R3",
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "scorable": false,
+  "reference_frozen_file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/group_distribution_1792771996838547599/reference_frozen.json",
+  "reference": {
+    "scene": "bw_0074",
+    "region_id": "R3",
+    "reference_group_id": "bw_0074_R3_records",
+    "image_size": [
+      1258,
+      855
+    ],
+    "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+    "fixed_roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+    "coordinate_convention": "Reference original pixels; xyxy right/bottom exclusive; coarse inspection windows, not exact Group Masks",
+    "source_type": "assistant_reference_only_visual_candidate",
+    "reference_band_basis": "Visible horizontal shelf boards; cells separated only at visible vertical dividers, not by Blender Z or per-instance detection",
+    "bands": [
+      {
+        "id": "F1",
+        "name": "最上层",
+        "bbox": [
+          893,
+          122,
+          1258,
+          219
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "第二层",
+        "bbox": [
+          893,
+          227,
+          1258,
+          319
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "收录机所在层",
+        "bbox": [
+          893,
+          328,
+          1258,
+          420
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "唱机所在下层",
+        "bbox": [
+          893,
+          430,
+          1258,
+          538
+        ]
+      }
+    ],
+    "units": [
+      {
+        "unit_id": "U1",
+        "band_id": "F1",
+        "name": "最上层左柜格",
+        "bbox_xyxy": [
+          893,
+          122,
+          1073,
+          219
+        ],
+        "collection_presence": "yes",
+        "coarse_density": "dense",
+        "main_orientation": "upright_or_leaning",
+        "observation": "薄封套侧缘密集可见，中间有小间隙；竖向隔板界定右边界。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "unit_id": "U2",
+        "band_id": "F1",
+        "name": "最上层右柜格",
+        "bbox_xyxy": [
+          1081,
+          122,
+          1258,
+          219
+        ],
+        "collection_presence": "yes",
+        "coarse_density": "dense",
+        "main_orientation": "upright_or_leaning",
+        "observation": "多簇薄封套主要竖放或倾斜；右边界被图像裁切，柜格全宽未知。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "unit_id": "U3",
+        "band_id": "F2",
+        "name": "第二层左柜格",
+        "bbox_xyxy": [
+          893,
+          227,
+          983,
+          319
+        ],
+        "collection_presence": "yes",
+        "coarse_density": "dense",
+        "main_orientation": "upright_or_leaning",
+        "observation": "左侧小柜格内薄封套密集竖放；右侧有可见隔板。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "unit_id": "U4",
+        "band_id": "F2",
+        "name": "第二层右柜格",
+        "bbox_xyxy": [
+          991,
+          227,
+          1258,
+          319
+        ],
+        "collection_presence": "yes",
+        "coarse_density": "partial",
+        "main_orientation": "upright_or_leaning",
+        "observation": "封套主要位于左中部，右侧有扬声器和空隙；非整格均匀占据。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "unit_id": "U5",
+        "band_id": "F3",
+        "name": "收录机层左柜格",
+        "bbox_xyxy": [
+          893,
+          328,
+          1156,
+          420
+        ],
+        "collection_presence": "yes",
+        "coarse_density": "sparse",
+        "main_orientation": "upright_or_leaning",
+        "observation": "候选封套集中在柜格左侧，收录机占据中央，右侧较空；不能将收录机边缘算作封套。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "unit_id": "U6",
+        "band_id": "F3",
+        "name": "收录机层右柜格",
+        "bbox_xyxy": [
+          1163,
+          328,
+          1258,
+          420
+        ],
+        "collection_presence": "yes",
+        "coarse_density": "dense",
+        "main_orientation": "upright_or_leaning",
+        "observation": "可见右柜格有较密集竖放或倾斜封套；图像右缘截断其完整范围。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      },
+      {
+        "unit_id": "U7",
+        "band_id": "F4",
+        "name": "唱机下层可见柜格",
+        "bbox_xyxy": [
+          893,
+          430,
+          1258,
+          538
+        ],
+        "collection_presence": "unknown",
+        "coarse_density": "unknown",
+        "main_orientation": "unknown",
+        "observation": "左缘可见少量薄片状物体；类别、可见成员范围与遮挡程度不足以可靠确认唱片集合。",
+        "identity_status": "candidate_not_gt",
+        "reviewed": false,
+        "reliability": 0.0
+      }
+    ],
+    "definitions": {
+      "collection_presence": "yes: visible candidate collection; no: clear cell without collection; unknown: ambiguity/occlusion prevents judgment; identity still requires review",
+      "coarse_density": "Qualitative within this visible cell only: dense=most horizontal span has repeated sleeves; partial=substantial occupied and other-content/gap portions; sparse=small local cluster; unknown=not observable. No numeric thresholds or metric density.",
+      "main_orientation": "upright_or_leaning: major visible sleeves stand or lean vertically; unknown: class/visibility insufficient"
+    },
+    "freeze": {
+      "created_unix": 1792771996.8387501,
+      "before_current_render_read": true,
+      "render_or_id_used_to_define_units": false,
+      "prior_knowledge_disclosed": "Conversation already exposed three Blender height rows, ID statistics and historical Render; not a strict blind test.",
+      "human_review": "unreviewed"
+    },
+    "reviewed": false,
+    "usage": "provisional/debug"
+  },
+  "sources": {
+    "graph": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blender_scene_graph_audit_bw0074/scene_graph.json",
+    "candidates": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blender_scene_graph_audit_bw0074/group_correspondence.json",
+    "visibility": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blender_group_visibility_bw0074/visibility.json",
+    "records": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/records_group_verification_bw0074/verification_results.json",
+    "identity": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_identity_context_bw0074/verification_results.json"
+  },
+  "provenance": {
+    "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+    "reference_cached": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+    "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+    "blend": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/final.blend",
+    "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/config.json",
+    "manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/manifest.json",
+    "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/input.json",
+    "same_run_verified": true,
+    "pixel_synchronization_reverified": false,
+    "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+    "reference_group_id": "bw_0074_R3_records",
+    "group_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/records_group_verification_bw0074/verification_results.json",
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/scene_graph_audit_1792767018825950306",
+    "reviewed": false,
+    "usage": "provisional/debug"
+  },
+  "transform": {
+    "original_size": [
+      1920,
+      1300
+    ],
+    "common_size": [
+      1258,
+      855
+    ],
+    "nominal_scale": 0.6552083333333333,
+    "resized_size": [
+      1258,
+      852
+    ],
+    "offset_xy": [
+      0,
+      1
+    ],
+    "padding_is_not_observation": true,
+    "content_alignment": false,
+    "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+  },
+  "render_layers": [
+    {
+      "indices": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241
+      ],
+      "source_world_row": "2.36",
+      "candidate_bodies": 99,
+      "bodies_with_sampled_id_pixels": 93,
+      "mask_pixels": 1753,
+      "inside_r3_pixels": 1580,
+      "outside_r3_pixels": 173,
+      "reviewed": false,
+      "native_support_bbox": [
+        348,
+        89,
+        458,
+        108
+      ],
+      "image_centroid_y": 98.20422133485454,
+      "origin": "Existing candidate ID mapping; world-height grouping checked in previous audit; G order independently follows projected pixel height",
+      "semantic_identity": "unknown",
+      "id": "G1",
+      "visual_candidate": {
+        "source": "assistant_postfreeze_render_inspection",
+        "collection_shape": "Repeated thin upright forms",
+        "main_orientation": "upright_or_leaning",
+        "density": "not_assigned_without_comparable_cell_scope",
+        "reviewed": false
+      }
+    },
+    {
+      "indices": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "source_world_row": "1.90",
+      "candidate_bodies": 99,
+      "bodies_with_sampled_id_pixels": 94,
+      "mask_pixels": 3165,
+      "inside_r3_pixels": 2834,
+      "outside_r3_pixels": 331,
+      "reviewed": false,
+      "native_support_bbox": [
+        348,
+        111,
+        457,
+        142
+      ],
+      "image_centroid_y": 126.90363349131121,
+      "origin": "Existing candidate ID mapping; world-height grouping checked in previous audit; G order independently follows projected pixel height",
+      "semantic_identity": "unknown",
+      "id": "G2",
+      "visual_candidate": {
+        "source": "assistant_postfreeze_render_inspection",
+        "collection_shape": "Repeated thin upright forms",
+        "main_orientation": "upright_or_leaning",
+        "density": "not_assigned_without_comparable_cell_scope",
+        "reviewed": false
+      }
+    },
+    {
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "source_world_row": "1.45",
+      "candidate_bodies": 43,
+      "bodies_with_sampled_id_pixels": 41,
+      "mask_pixels": 1519,
+      "inside_r3_pixels": 1218,
+      "outside_r3_pixels": 301,
+      "reviewed": false,
+      "native_support_bbox": [
+        347,
+        148,
+        456,
+        176
+      ],
+      "image_centroid_y": 160.9282422646478,
+      "origin": "Existing candidate ID mapping; world-height grouping checked in previous audit; G order independently follows projected pixel height",
+      "semantic_identity": "unknown",
+      "id": "G3",
+      "visual_candidate": {
+        "source": "assistant_postfreeze_render_inspection",
+        "collection_shape": "Two separated side clusters around visible stereo",
+        "main_orientation": "upright_or_leaning",
+        "density": "not_assigned_without_comparable_cell_scope",
+        "reviewed": false
+      }
+    }
+  ],
+  "correspondence": [
+    {
+      "reference_band": "F1",
+      "reference_units": [
+        "U1",
+        "U2"
+      ],
+      "render_band_candidate": "G1",
+      "topology": "two Reference cells versus a continuous-looking Render opening",
+      "basis": "Both are the upper visible display above the next display band and stereo; no Z label used as a Reference label",
+      "coarse_attribute_status": "coarse_consistent",
+      "observation": "Repeated thin upright content spans the upper display in both images; visible divider structure differs.",
+      "correspondence_status": "candidate_only",
+      "reliable_cell_correspondence": "unknown",
+      "semantic_collection_match": "unknown",
+      "continuous_density_error": null,
+      "orientation_comparison_scope": "Qualitative image-view static observations only; global prior VQA is not per-cell evidence; world +Z is separate",
+      "reviewed": false,
+      "scorable": false
+    },
+    {
+      "reference_band": "F2",
+      "reference_units": [
+        "U3",
+        "U4"
+      ],
+      "render_band_candidate": "G2",
+      "topology": "two Reference cells versus a continuous-looking Render opening",
+      "basis": "Display immediately above the stereo-containing band, with another display above it",
+      "coarse_attribute_status": "candidate_difference",
+      "observation": "Reference right cell contains a speaker/gap; Render middle display looks more continuous. Scope/divider mismatch prevents a density error.",
+      "correspondence_status": "candidate_only",
+      "reliable_cell_correspondence": "unknown",
+      "semantic_collection_match": "unknown",
+      "continuous_density_error": null,
+      "orientation_comparison_scope": "Qualitative image-view static observations only; global prior VQA is not per-cell evidence; world +Z is separate",
+      "reviewed": false,
+      "scorable": false
+    },
+    {
+      "reference_band": "F3",
+      "reference_units": [
+        "U5",
+        "U6"
+      ],
+      "render_band_candidate": "G3",
+      "topology": "Reference divider separates stereo cell from right cell; Render appears to share a wider opening",
+      "basis": "Stereo supplies an image-visible contextual landmark; candidate thin contents occur on both sides",
+      "coarse_attribute_status": "coarse_consistent",
+      "observation": "Side clusters around a central stereo are visible in both; no unique one-to-one cabinet mapping.",
+      "correspondence_status": "candidate_only",
+      "reliable_cell_correspondence": "unknown",
+      "semantic_collection_match": "unknown",
+      "continuous_density_error": null,
+      "orientation_comparison_scope": "Qualitative image-view static observations only; global prior VQA is not per-cell evidence; world +Z is separate",
+      "reviewed": false,
+      "scorable": false
+    },
+    {
+      "reference_band": "F4",
+      "reference_units": [
+        "U7"
+      ],
+      "render_band_candidate": null,
+      "topology": "Reference target identity and extent unknown",
+      "basis": "Turntable-containing lower area is observable; Reference left-edge thin objects are uncertain",
+      "coarse_attribute_status": "unknown",
+      "observation": "No fourth layer in the declared candidate ID set does not prove the semantic target is absent.",
+      "correspondence_status": "unknown",
+      "reliable_cell_correspondence": "unknown",
+      "semantic_collection_match": "unknown",
+      "continuous_density_error": null,
+      "orientation_comparison_scope": "Qualitative image-view static observations only; global prior VQA is not per-cell evidence; world +Z is separate",
+      "reviewed": false,
+      "scorable": false
+    }
+  ],
+  "historical_answers": {
+    "backend": "Codex Subagent",
+    "model": "gpt-6-sol",
+    "binary": {
+      "render": "{\"present\":\"yes\",\"multiple_sections\":\"yes\",\"upright_display\":\"yes\"}",
+      "reference": "{\"present\":\"yes\",\"multiple_sections\":\"yes\",\"upright_display\":\"yes\"}"
+    },
+    "binary_comparison_unchanged": [
+      {
+        "id": "present",
+        "group_id": "bw_0074_R3_records",
+        "region_id": "R3",
+        "question": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+        "energy": "semantic",
+        "reference_answer": "yes",
+        "render_answer": "yes",
+        "independent_comparison": "satisfied",
+        "status": "satisfied",
+        "reason": "Answer comparison only; neither answer is GT",
+        "reviewed": false,
+        "q": 0.0,
+        "value": null,
+        "score": null,
+        "scorable": false,
+        "usage": "provisional/debug"
+      },
+      {
+        "id": "multiple_sections",
+        "group_id": "bw_0074_R3_records",
+        "region_id": "R3",
+        "question": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+        "energy": "spatial",
+        "reference_answer": "yes",
+        "render_answer": "yes",
+        "independent_comparison": "satisfied",
+        "status": "satisfied",
+        "reason": "Answer comparison only; neither answer is GT",
+        "reviewed": false,
+        "q": 0.0,
+        "value": null,
+        "score": null,
+        "scorable": false,
+        "usage": "provisional/debug"
+      },
+      {
+        "id": "upright_display",
+        "group_id": "bw_0074_R3_records",
+        "region_id": "R3",
+        "question": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？",
+        "energy": "statistical",
+        "reference_answer": "yes",
+        "render_answer": "yes",
+        "independent_comparison": "satisfied",
+        "status": "satisfied",
+        "reason": "Answer comparison only; neither answer is GT",
+        "reviewed": false,
+        "q": 0.0,
+        "value": null,
+        "score": null,
+        "scorable": false,
+        "usage": "provisional/debug"
+      }
+    ],
+    "identity": {
+      "render_context": "{\"category\":\"ambiguous\"}",
+      "reference_context": "{\"category\":\"vinyl_sleeves\"}",
+      "render_display": "{\"category\":\"ambiguous\"}",
+      "reference_display": "{\"category\":\"vinyl_sleeves\"}"
+    },
+    "applies_to": "whole historical Group/crop, not each newly proposed Reference cell"
+  },
+  "fixed_window_diagnostic": {
+    "units": [
+      {
+        "unit_id": "U1",
+        "render_id_pixels_by_band": {
+          "G1": 0,
+          "G2": 0,
+          "G3": 0
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      },
+      {
+        "unit_id": "U2",
+        "render_id_pixels_by_band": {
+          "G1": 0,
+          "G2": 0,
+          "G3": 0
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      },
+      {
+        "unit_id": "U3",
+        "render_id_pixels_by_band": {
+          "G1": 528,
+          "G2": 639,
+          "G3": 0
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      },
+      {
+        "unit_id": "U4",
+        "render_id_pixels_by_band": {
+          "G1": 827,
+          "G2": 904,
+          "G3": 0
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      },
+      {
+        "unit_id": "U5",
+        "render_id_pixels_by_band": {
+          "G1": 0,
+          "G2": 840,
+          "G3": 954
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      },
+      {
+        "unit_id": "U6",
+        "render_id_pixels_by_band": {
+          "G1": 0,
+          "G2": 0,
+          "G3": 0
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      },
+      {
+        "unit_id": "U7",
+        "render_id_pixels_by_band": {
+          "G1": 0,
+          "G2": 0,
+          "G3": 1
+        },
+        "meaning": "Support in fixed Reference coordinates only, NOT corresponding Render cabinet occupancy or a missing-object judgment",
+        "reviewed": false
+      }
+    ],
+    "inside_r3_outside_coarse_units_pixels": 939,
+    "interpretation": "Sampling diagnostic, not matched-cell comparison",
+    "reviewed": false
+  },
+  "outside_roi": {
+    "pixels": 805,
+    "fraction_of_group": 0.12505825695199627,
+    "sides": {
+      "left": 805,
+      "right": 0,
+      "above": 0,
+      "below": 0,
+      "inside_bbox_outside_roi": 0
+    },
+    "retained": true,
+    "roi_modified": false
+  },
+  "comparability": {
+    "identity": "unknown",
+    "cell_correspondence": "unknown",
+    "coarse_image_layout": "candidate qualitative comparison",
+    "continuous_density_error": null,
+    "reference_group_mask": null,
+    "quantitative_occupancy_error": null,
+    "camera": "Reference unknown; historical camera z=1.71m/lens26mm; no fixed-T0 or same-view proof",
+    "mask": "Cached 512x347 IndexOB, 1 sample; current-reader support not exact historical PNG mask; 28 unowned title parts excluded",
+    "technical_warnings": [
+      {
+        "kind": "newer_file_version",
+        "messages": [
+          "Warning: File written by newer Blender binary (402.67), expect loss of data!"
+        ],
+        "consequence": "Installed reader may lose unsupported state; exact original-renderer equivalence is not certified"
+      },
+      {
+        "kind": "cycles_unregister_cleanup",
+        "message": "ValueError: list.remove(x): x not in list during cycles.unregister / version_update callback removal",
+        "consequence": "ID output completed and process exited 0; factory callback clearing caused a teardown exception; preserve full log"
+      }
+    ],
+    "counts": "241 Mesh candidates and 228 sampled Mesh IDs are not record counts"
+  },
+  "new_execution": {
+    "blender": 0,
+    "gpu": 0,
+    "vlm": 0,
+    "subagents": 0
+  },
+  "formal_energy": null,
+  "checks": {
+    "original_stats_reproduced": true,
+    "reference_units_in_range_nonoverlapping": true,
+    "pixel_conservation": true,
+    "reference_draft_unchanged": true,
+    "source_files_unchanged": true
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "image_size": [
+    1536,
+    864
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "name": "桌椅区",
+      "location": "画面左下方",
+      "content": "一张圆桌、两把木椅，桌上有一盆绿植",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R1.png",
+      "bbox": [
+        190,
+        503,
+        640,
+        781
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_9064/region_plan.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "R2",
+      "name": "冰箱区",
+      "location": "画面右侧",
+      "content": "一台银灰色双门冰箱，周围可见浅色墙面和木地板",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R2.png",
+      "bbox": [
+        1054,
+        289,
+        1277,
+        723
+      ],
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_9064/region_plan.json",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "inventory_complete": false,
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_9064/region_plan.json",
+  "formal_score": false,
+  "statistics": {
+    "region_union_fraction": 0.16719262393904322,
+    "overlap_fraction": 0.0,
+    "unassigned_fraction": 0.8328073760609568,
+    "per_region_pixels": [
+      125100,
+      96782
+    ],
+    "pixel_count": 1327104,
+    "dense_global_coverage": 1.0,
+    "reviewed_region_coverage": 0.0
+  }
+}

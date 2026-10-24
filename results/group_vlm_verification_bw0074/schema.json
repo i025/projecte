@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "present",
+    "shelf_sections",
+    "arrangement"
+  ],
+  "properties": {
+    "present": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "shelf_sections": {
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3+",
+        "unknown"
+      ]
+    },
+    "arrangement": {
+      "type": "string",
+      "enum": [
+        "upright",
+        "horizontal",
+        "mixed",
+        "unknown"
+      ]
+    }
+  }
+}

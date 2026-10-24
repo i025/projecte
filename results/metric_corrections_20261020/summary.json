@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "tests": {
+    "unit": 47,
+    "controlled_dino": 15,
+    "controlled_without_model": 12,
+    "blender": 52
+  },
+  "unresolved_failures": 0,
+  "actual_dino_cpu": true,
+  "gpu_used": false,
+  "paid_api_calls": 0,
+  "modified_files": [
+    "e_harness/benchmark_metrics.py",
+    "e_harness/benchmark_evidence.py",
+    "e_harness/benchmark_config.py",
+    "e_harness/benchmark.py",
+    "tests/test_benchmark.py",
+    "scripts/smoke_benchmark.py",
+    "README.md"
+  ],
+  "controlled_cases": 16,
+  "controlled_seconds": 62.236,
+  "blender_seconds": 19.57,
+  "successful_serial_blender_renders": 8,
+  "expected_invalid_intrinsics_rejection": true,
+  "identical_rgb_cases": 7,
+  "structural_energy_unchanged": {
+    "baseline": true,
+    "deleted": true,
+    "moved": true,
+    "color": true,
+    "distribution": true,
+    "penetration": true,
+    "billboard": true
+  },
+  "sources": {
+    "unit": "unit_tests_final.log",
+    "paired": "controlled/summary.json",
+    "cpu_only": "controlled_cpu_only/summary.json",
+    "blender": "blender_smoke/summary.json",
+    "same_rgb": "blender_before_after.json"
+  },
+  "coverage_definitions": {
+    "before": "valid / q-positive records",
+    "after": "valid / all expected records"
+  },
+  "skipped": {
+    "gpu": "nvidia-smi failed to communicate with driver in two observations",
+    "vlm": "No paid API or live VLM invoked; semantic oracles validate metric logic only",
+    "agent": "No real Agent code replay; Runtime remains blocked"
+  },
+  "limitations": [
+    "Synthetic occupancy is an oracle, not real-image object-density accuracy.",
+    "Gradient-only distribution remains an edge proxy; texture responds to brightness.",
+    "DINO is not a monotonic displacement ruler; appearances saturate after leaving the reference bbox.",
+    "No calibrated weights, probabilities, rankings or real-world accuracy conclusions."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-5.1",
+  "source": "vlm_api",
+  "request_number": 1,
+  "evaluation_status": "not_evaluable",
+  "error": "SSLError",
+  "status": "unavailable",
+  "reviewed": false,
+  "render_used": false
+}

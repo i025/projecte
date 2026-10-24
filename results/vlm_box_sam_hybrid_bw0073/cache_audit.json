@@ -1,0 +1,27 @@
+{
+  "historical_prompts_checked": 12,
+  "regions": [
+    {
+      "id": "R1",
+      "exact_historical_prompt_match": false,
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "exact_historical_prompt_match": false,
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "exact_historical_prompt_match": false,
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "exact_historical_prompt_match": false,
+      "reviewed": false
+    }
+  ],
+  "unrelated_masks_substituted": false,
+  "reviewed": false
+}

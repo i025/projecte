@@ -1,0 +1,92 @@
+{
+  "review_type": "assistant_reference_only_visual_initial_review_not_human_GT",
+  "reviewed": false,
+  "human_reviewed": false,
+  "semantic_GT": false,
+  "tasks": {
+    "bw_9064": {
+      "reviewed": false,
+      "plan_status": "reasonable_coarse_candidate",
+      "plan_region_count": 2,
+      "planning_failures": [],
+      "plan_notes": "两个主要可见家具功能区；没有逐椅拆分。连续背景不单列符合本轮协议。没有明显语义重复或可确认的幻觉。",
+      "regions": [
+        {
+          "id": "R1",
+          "reviewed": false,
+          "failure_categories": ["Grounding Failure", "Uncertain"],
+          "failure_extent": "partial_content",
+          "A_completeness": "桌椅主体得到保留，但盆栽上部叶片落在窗口上方。",
+          "B2_completeness": "与 A 逐像素相同；同样缺盆栽上部。",
+          "background": "椅间墙面及椅下地板属于粗矩形带入的上下文；没有像素级背景真值。",
+          "comparison": "没有 B2 增益，也没有额外裁剪。",
+          "cause": "名称中的椅触发 primary 椅子候选，未将所有内容词纳入初始包络；绿植不属于冻结词表中盆栽的别名。B2 只向内调整，不能补回上游遗漏。"
+        },
+        {
+          "id": "R2",
+          "reviewed": false,
+          "failure_categories": ["Uncertain"],
+          "failure_extent": "pixel_boundary_unreviewed",
+          "A_completeness": "可见冰箱主体大致完整。",
+          "B2_completeness": "与 A 逐像素相同，冰箱主体大致完整。",
+          "background": "背景较少；投影、接触边缘和最外沿尚未进行人工像素审核。",
+          "comparison": "A/B2 等价，不能宣布多边形改善。"
+        }
+      ]
+    },
+    "bw_0073": {
+      "reviewed": false,
+      "plan_status": "reasonable_coarse_candidate_with_visibility_uncertainty",
+      "plan_region_count": 4,
+      "planning_failures": [],
+      "plan_notes": "窗边水槽、岛台、后方料理、高柜四个局部功能区有评价意义；没有逐把高脚椅拆分，也没有拆物体部件。岛台区包含其上方吊灯，需要跨较大纵向范围。",
+      "planning_uncertain": ["后方料理区中的炉灶被前景遮挡，实际可观察范围需人工核实；不能直接把这一项确认为幻觉或真值。"],
+      "regions": [
+        {
+          "id": "R1",
+          "reviewed": false,
+          "failure_categories": ["Grounding Failure"],
+          "failure_extent": "unavailable",
+          "A_completeness": "N/A，没有可用窗口。",
+          "B2_completeness": "N/A，没有可供 B2 调整的窗口。",
+          "background": "不适用；没有补分背景。",
+          "comparison": "两方案均失败，保留空候选和失败原因，不能记作零误差。",
+          "cause": "冻结词表没有将窗户、水槽、橱柜、大理石台面、壁灯等描述映射到既有 window/cabinets/countertop 候选。存在相关缓存，不等于当前代码能够关联。"
+        },
+        {
+          "id": "R2",
+          "reviewed": false,
+          "failure_categories": ["Grounding Failure", "Conflict / Boundary Failure"],
+          "failure_extent": "partial_content_and_additional_boundary_loss",
+          "A_completeness": "四把高脚椅和部分岛台前沿被保留，但岛台后部、摆放物及上方金色吊灯遗漏。",
+          "B2_completeness": "进一步向内收缩后主要保留椅子及其周围；台面前沿比 A 保留得更少，吊灯仍完全不在 ROI 内。",
+          "background": "B2 少带入部分地板和侧面柜体，但仍有椅下地板；背景减少不能抵消主要内容不完整。",
+          "comparison": "A 对该组主要内容保留得更多，但 A 本身也没有完成整组定位。B2 没有表现出内容完整性优势。",
+          "cause": "冻结词表仅关联到椅子候选，无法利用已有 countertop/pendant light 缓存。B2 边缘吸附缺乏岛台和吊灯的内容护栏。没有区域间冲突，Boundary Failure 来自单窗口边缘收缩，不是冲突消解排序。"
+        },
+        {
+          "id": "R3",
+          "reviewed": false,
+          "failure_categories": ["Grounding Failure", "Uncertain"],
+          "failure_extent": "unavailable",
+          "A_completeness": "N/A，没有可用窗口。",
+          "B2_completeness": "N/A，没有可供 B2 调整的窗口。",
+          "background": "不适用。",
+          "comparison": "两方案均失败。",
+          "cause": "内容仅识别出墙面，但本图相应缓存类别为石材背板/橱柜等；后方中央不能被原位置窗口解析器转换为有效先验。炉灶可见性另需人工核实。"
+        },
+        {
+          "id": "R4",
+          "reviewed": false,
+          "failure_categories": ["Grounding Failure"],
+          "failure_extent": "unavailable",
+          "A_completeness": "N/A，没有可用窗口。",
+          "B2_completeness": "N/A，没有可供 B2 调整的窗口。",
+          "background": "不适用。",
+          "comparison": "两方案均失败。",
+          "cause": "冻结词表缺少高柜、柜体、抽屉柜与既有 cabinets 缓存之间的关联；本轮没有扩展词表或手工替代框。"
+        }
+      ]
+    }
+  }
+}

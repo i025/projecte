@@ -1,0 +1,46 @@
+{
+  "system": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。",
+  "user": "请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。",
+  "definitions": {
+    "horizontal_stack": "至少两本可辨认的书水平叠放，存在明显上下堆叠关系。",
+    "upright_books": "存在可辨认的书籍，其书脊或书体主要呈竖直站立状态。",
+    "exclusions": "唱片、文件夹、单本平放且无法确认的物体不强行当作横向书堆。",
+    "abstention": "遮挡严重、分辨率不足或类别不明确时回答unknown。"
+  },
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "horizontal_stack",
+      "upright_books"
+    ],
+    "properties": {
+      "horizontal_stack": {
+        "type": "string",
+        "enum": [
+          "yes",
+          "no",
+          "unknown"
+        ]
+      },
+      "upright_books": {
+        "type": "string",
+        "enum": [
+          "yes",
+          "no",
+          "unknown"
+        ]
+      }
+    }
+  },
+  "reviewed": false,
+  "frozen_before_images": true,
+  "maximum_actual_requests_authorized": 0,
+  "proposed_future_budget": 3,
+  "prompt_tuning_allowed": false,
+  "model": "openai/gpt-6-sol",
+  "temperature": 0.1,
+  "max_tokens": 400,
+  "json_mode": false,
+  "note": "Definitions/Prompt are fixed before rendering and cannot be revised after model results"
+}

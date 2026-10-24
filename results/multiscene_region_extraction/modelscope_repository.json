@@ -1,0 +1,29 @@
+{
+  "repository": "https://www.modelscope.cn/models/facebook/sam3",
+  "access": "public file listing returned Code=200 and Success=true",
+  "local_existing_checkpoint": false,
+  "proxy_request": "TLS SSL_ERROR_SYSCALL / SSLEOFError",
+  "direct_initial": "Temporary failure in name resolution",
+  "direct_with_temporary_DNS_mapping": "success; no system DNS/proxy changes",
+  "file_sizes_bytes": {
+    "sam3.pt": 3450062241,
+    "config.json": 25843,
+    "configuration.json": 73,
+    "model.safetensors": 3439938512
+  },
+  "requested_files": [
+    "sam3.pt",
+    "config.json",
+    "configuration.json"
+  ],
+  "excluded_duplicate_weights": [
+    "model.safetensors"
+  ],
+  "available_disk_tib": 4.2,
+  "access_permission_for_weight_download": "Confirmed: public SDK download completed successfully",
+  "official_code": "https://github.com/facebookresearch/sam3",
+  "official_tokenizer": "sam3/assets/bpe_simple_vocab_16e6.txt.gz",
+  "load_from_HF": false,
+  "custom_hash_validation": false,
+  "sdk_hash_validation": false
+}

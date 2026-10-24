@@ -1,0 +1,8 @@
+{
+  "status": "available",
+  "text": "available",
+  "visual": "available",
+  "automatic": "unavailable",
+  "automatic_reason": "Official image API exposes text/concept and interactive prompts; no supported no-prompt AutomaticMaskGenerator found in this checkout. Not emulated with text prompts.",
+  "reviewed": false
+}

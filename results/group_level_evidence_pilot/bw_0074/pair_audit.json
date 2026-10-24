@@ -1,0 +1,58 @@
+{
+  "task_id": "bw_0074",
+  "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+  "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+  "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/references/image_01.jpg",
+  "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+  "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/config.json",
+  "artifact_manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/manifest.json",
+  "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/input.json",
+  "metadata_correspondence_verified": true,
+  "original_staged_bytes_equal": true,
+  "render_native_size": [
+    1920,
+    1300
+  ],
+  "reference_native_size": [
+    1258,
+    855
+  ],
+  "run_exception": null,
+  "png_metadata": {
+    "Camera": "CAMERA - front left photographic angle",
+    "Scene": "Scene",
+    "File": "/workspace/exports/final.blend"
+  },
+  "reference_camera": "unknown",
+  "actual_blend_camera_reverified": false,
+  "camera_protocol": "historical_camera",
+  "camera_alignment_confirmed": false,
+  "final_blend_png_sync": "unknown",
+  "comparison_transform": {
+    "original_size": [
+      1920,
+      1300
+    ],
+    "common_size": [
+      1258,
+      855
+    ],
+    "nominal_scale": 0.6552083333333333,
+    "resized_size": [
+      1258,
+      852
+    ],
+    "offset_xy": [
+      0,
+      1
+    ],
+    "padding_is_not_observation": true,
+    "content_alignment": false,
+    "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+  },
+  "observed_canvas_fraction": 0.9964912280701754,
+  "official_benchmark_eligible": false,
+  "usage": "provisional/debug",
+  "reviewed": false
+}

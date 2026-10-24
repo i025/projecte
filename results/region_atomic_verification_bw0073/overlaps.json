@@ -1,0 +1,195 @@
+{
+  "groups": {
+    "box": {
+      "union_fraction": 0.8467998618578255,
+      "overlap_fraction": 0.07562117308841099,
+      "unassigned_fraction": 0.15320013814217442,
+      "pairwise": [
+        {
+          "first": "box_R1",
+          "second": "box_R2",
+          "pixels": 14421,
+          "observed_pixels": 14421
+        },
+        {
+          "first": "box_R1",
+          "second": "box_R3",
+          "pixels": 0,
+          "observed_pixels": 0
+        },
+        {
+          "first": "box_R1",
+          "second": "box_R4",
+          "pixels": 0,
+          "observed_pixels": 0
+        },
+        {
+          "first": "box_R2",
+          "second": "box_R3",
+          "pixels": 82800,
+          "observed_pixels": 82800
+        },
+        {
+          "first": "box_R2",
+          "second": "box_R4",
+          "pixels": 0,
+          "observed_pixels": 0
+        },
+        {
+          "first": "box_R3",
+          "second": "box_R4",
+          "pixels": 0,
+          "observed_pixels": 0
+        }
+      ],
+      "unique_shared_appearance": [
+        {
+          "id": "box_R1",
+          "unique": {
+            "observed_pixels": 394209,
+            "appearance": 0.2456426012166301
+          },
+          "shared": {
+            "observed_pixels": 14421,
+            "appearance": 0.15227375835802273
+          },
+          "reviewed": false
+        },
+        {
+          "id": "box_R2",
+          "unique": {
+            "observed_pixels": 241359,
+            "appearance": 0.21543455715778467
+          },
+          "shared": {
+            "observed_pixels": 97221,
+            "appearance": 0.28792524652242685
+          },
+          "reviewed": false
+        },
+        {
+          "id": "box_R3",
+          "unique": {
+            "observed_pixels": 0,
+            "appearance": null
+          },
+          "shared": {
+            "observed_pixels": 82800,
+            "appearance": 0.31155121404439395
+          },
+          "reviewed": false
+        },
+        {
+          "id": "box_R4",
+          "unique": {
+            "observed_pixels": 317754,
+            "appearance": 0.22196108791521668
+          },
+          "shared": {
+            "observed_pixels": 0,
+            "appearance": null
+          },
+          "reviewed": false
+        }
+      ],
+      "reviewed": false
+    },
+    "polygon": {
+      "union_fraction": 0.599470921694544,
+      "overlap_fraction": 0.013625205346475508,
+      "unassigned_fraction": 0.400529078305456,
+      "pairwise": [
+        {
+          "first": "polygon_R1",
+          "second": "polygon_R2",
+          "pixels": 725,
+          "observed_pixels": 725
+        },
+        {
+          "first": "polygon_R1",
+          "second": "polygon_R3",
+          "pixels": 0,
+          "observed_pixels": 0
+        },
+        {
+          "first": "polygon_R1",
+          "second": "polygon_R4",
+          "pixels": 0,
+          "observed_pixels": 0
+        },
+        {
+          "first": "polygon_R2",
+          "second": "polygon_R3",
+          "pixels": 16792,
+          "observed_pixels": 16792
+        },
+        {
+          "first": "polygon_R2",
+          "second": "polygon_R4",
+          "pixels": 0,
+          "observed_pixels": 0
+        },
+        {
+          "first": "polygon_R3",
+          "second": "polygon_R4",
+          "pixels": 0,
+          "observed_pixels": 0
+        }
+      ],
+      "unique_shared_appearance": [
+        {
+          "id": "polygon_R1",
+          "unique": {
+            "observed_pixels": 253350,
+            "appearance": 0.29775054530726175
+          },
+          "shared": {
+            "observed_pixels": 725,
+            "appearance": 0.2224331755690782
+          },
+          "reviewed": false
+        },
+        {
+          "id": "polygon_R2",
+          "unique": {
+            "observed_pixels": 164563,
+            "appearance": 0.27038718786960386
+          },
+          "shared": {
+            "observed_pixels": 17517,
+            "appearance": 0.2753653686931948
+          },
+          "reviewed": false
+        },
+        {
+          "id": "polygon_R3",
+          "unique": {
+            "observed_pixels": 51509,
+            "appearance": 0.33245914128592546
+          },
+          "shared": {
+            "observed_pixels": 16792,
+            "appearance": 0.27765073315335337
+          },
+          "reviewed": false
+        },
+        {
+          "id": "polygon_R4",
+          "unique": {
+            "observed_pixels": 246460,
+            "appearance": 0.24840207932560343
+          },
+          "shared": {
+            "observed_pixels": 0,
+            "appearance": null
+          },
+          "reviewed": false
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  "losses_added": false,
+  "perceptual_is_not_additive": true,
+  "reviewed": false
+}

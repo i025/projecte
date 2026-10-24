@@ -1,0 +1,12 @@
+{
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+  "original_metadata": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_pilot_bw0074/input.json",
+  "rectangle_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_pilot_bw0074/localized_regions.json",
+  "plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_pilot_bw0074/vlm_plan.json",
+  "control_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_grounding_conflict_resolution/round2_C_resolved/evidence.json",
+  "paid_vlm_calls": 0,
+  "new_model_inferences": 0,
+  "agent_render_used": false,
+  "gpu_used": false,
+  "reviewed": false
+}

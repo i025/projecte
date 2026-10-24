@@ -1,0 +1,165 @@
+{
+  "scene_id": "bw_0074",
+  "region_id": "R2",
+  "group": {
+    "group_id": "bw_0074_R2_books",
+    "region_id": "R2",
+    "name": "书籍陈列集合",
+    "scope": "R2中可识别的装订书籍，包括竖立、水平叠放和正面陈列；排除R3唱片、独立框画和柜体隔板。",
+    "evidence": [
+      "bw_0074_R2_books_presence",
+      "bw_0074_R2_books_orientations",
+      "bw_0074_R2_books_front_cover",
+      "bw_0074_R2_books_below_frame"
+    ],
+    "provenance": {
+      "source_type": "human_seeded_provisional",
+      "method": "assistant_reference_only_visual_draft",
+      "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+      "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/region_plan.json",
+      "render_used": false
+    },
+    "reviewed": false,
+    "reliability": 0.0,
+    "member_instance_ids": null,
+    "mask": null,
+    "localization_status": "unknown",
+    "uncertainty": "密集遮挡，书籍总数unknown；不识别逐本身份，不新增Group坐标或Mask。"
+  },
+  "frozen_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_level_evidence_pilot/reference_groups_frozen.json",
+  "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+  "original_group_evidence": [
+    {
+      "id": "bw_0074_R2_books_presence",
+      "group_id": "bw_0074_R2_books",
+      "region_id": "R2",
+      "type": "semantic",
+      "claim": "R2中可见可识别为装订书籍的内容。",
+      "question": "该区域是否可见装订书籍？",
+      "expected": true,
+      "answer_type": "boolean",
+      "status": "candidate",
+      "requires": [],
+      "canonical_fact_id": "bw_0074_R2_books_presence",
+      "owner_id": "bw_0074_R2_books",
+      "alias_of": null,
+      "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+        "frozen_reference_evidence_ids": [],
+        "render_used": false
+      },
+      "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+      "anchor_refs": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+      "verification_mode": "atomic_vqa"
+    },
+    {
+      "id": "bw_0074_R2_books_orientations",
+      "group_id": "bw_0074_R2_books",
+      "region_id": "R2",
+      "type": "statistical",
+      "claim": "该集合同时包含竖立和水平叠放的书籍。",
+      "question": "该区域书籍的摆放方向是否同时包含竖立与水平叠放？",
+      "expected": true,
+      "answer_type": "boolean",
+      "status": "candidate",
+      "requires": [],
+      "canonical_fact_id": "bw_0074_R2_books_orientations",
+      "owner_id": "bw_0074_R2_books",
+      "alias_of": null,
+      "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+        "frozen_reference_evidence_ids": [],
+        "render_used": false
+      },
+      "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+      "anchor_refs": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "uncertainty": "Qualitative orientation-category presence; not exact density, area or element counting.",
+      "verification_mode": "qualitative_vqa"
+    },
+    {
+      "id": "bw_0074_R2_books_front_cover",
+      "group_id": "bw_0074_R2_books",
+      "region_id": "R2",
+      "type": "spatial",
+      "claim": "区域左半部中层有封面朝向观察者的大开本书籍。",
+      "question": "该区域左半部中层是否存在封面朝向观察者的大开本书籍？",
+      "expected": true,
+      "answer_type": "boolean",
+      "status": "candidate",
+      "requires": [],
+      "canonical_fact_id": "bw_0074_R2_books_front_cover",
+      "owner_id": "bw_0074_R2_books",
+      "alias_of": null,
+      "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+        "frozen_reference_evidence_ids": [],
+        "render_used": false
+      },
+      "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+      "anchor_refs": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+      "verification_mode": "atomic_vqa"
+    },
+    {
+      "id": "bw_0074_R2_books_below_frame",
+      "group_id": "bw_0074_R2_books",
+      "region_id": "R2",
+      "type": "spatial",
+      "claim": "大幅飞机框画下方可见水平叠放书籍。",
+      "question": "大幅飞机框画下方是否存在水平叠放的书籍？",
+      "expected": true,
+      "answer_type": "boolean",
+      "status": "candidate",
+      "requires": [],
+      "canonical_fact_id": "bw_0074_R2_books_below_frame",
+      "owner_id": "bw_0074_R2_books",
+      "alias_of": null,
+      "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+        "frozen_reference_evidence_ids": [],
+        "render_used": false
+      },
+      "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+      "anchor_refs": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+      "verification_mode": "atomic_vqa"
+    }
+  ],
+  "questions": {
+    "present": {
+      "provenance": "frozen_candidate",
+      "source_evidence": "bw_0074_R2_books_presence"
+    },
+    "shelf_sections": {
+      "provenance": "exploratory",
+      "reason": "Frozen evidence has no occupied shelf-compartment count"
+    },
+    "arrangement": {
+      "provenance": "exploratory_categorical_extension",
+      "source_evidence": "bw_0074_R2_books_orientations",
+      "reason": "Frozen bool only says both orientations occur; no dominant-orientation/mixed threshold"
+    }
+  },
+  "frozen_expected_answers_sent_to_model": false,
+  "reviewed": false,
+  "reliability": 0.0,
+  "root_prior_render_knowledge_disclosed": true,
+  "strict_blind_test": false
+}

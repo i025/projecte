@@ -1,0 +1,12 @@
+{
+  "status": "not_run",
+  "tasks": [
+    "bw_0074",
+    "bw_9064"
+  ],
+  "reason": "bw_0073 did not show a clear consistent boundary benefit without content risk; conditional expansion gate not met",
+  "missing_data_or_resources_claimed": false,
+  "additional_paid_calls": 0,
+  "additional_model_runs": 0,
+  "reviewed": false
+}

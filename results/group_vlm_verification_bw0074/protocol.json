@@ -1,0 +1,16 @@
+{
+  "system": "你是图像证据验证器。只根据当前图片判断指定区域中可见的书籍集合。不要将唱片误认为书籍，不推测不可见内容。无法可靠判断时返回 unknown。只输出 JSON，不解释。",
+  "user": "请观察标记的书架区域，回答：\n\n1. 该区域内是否有可辨认的书籍？\n2. 书籍占据多少个不同的书架分区？\n3. 书籍的主要摆放方向是什么？\n\n输出：\n{\n  \"present\": \"yes\",\n  \"shelf_sections\": \"3+\",\n  \"arrangement\": \"upright\"\n}\n\n以上仅为格式示例，不是预期答案。\n\n取值严格限定：\n- present：yes、no、unknown\n- shelf_sections：0、1、2、3+、unknown\n- arrangement：upright、horizontal、mixed、unknown\n\n只有清晰可辨的独立柜格才计入数量。无法区分书籍与唱片、柜格边界不明确或遮挡严重时，选择 unknown。",
+  "model": "openai/gpt-6-sol",
+  "temperature": 0.1,
+  "max_tokens": 600,
+  "maximum_paid_requests": 2,
+  "per_side_limit": 1,
+  "automatic_retries": false,
+  "json_mode": false,
+  "region_definition": "R2展示书架中的可辨认装订书籍；排除独立框画、柜体隔板及R3唱片。",
+  "region_definition_note": "Exact frozen membership details stay local; only neutral supplied prompt plus R2 outline sent.",
+  "candidate_expected_answers_in_prompt": false,
+  "usage": "provisional/debug",
+  "reviewed": false
+}

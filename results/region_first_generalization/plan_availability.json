@@ -1,0 +1,43 @@
+{
+  "tasks": [
+    {
+      "task_id": "bw_9064",
+      "usable_vlm_plan": false,
+      "valid_plan_paths": [],
+      "reason": "No valid saved coarse Region Plan",
+      "examined_plan_files": [
+        "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy/bw_9064/prompt_plan.json",
+        "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy/bw_9064/vlm_plan.json",
+        "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy_review/records/bw_9064/prompt_plan.json",
+        "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy_review/records/bw_9064/vlm_plan.json"
+      ],
+      "failures": [
+        {
+          "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy/bw_9064/vlm_plan.json",
+          "status": "unavailable",
+          "saved_error": "SSLError",
+          "schema_error": "Expected 2–5 Regions"
+        },
+        {
+          "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy_review/records/bw_9064/vlm_plan.json",
+          "status": "unavailable",
+          "saved_error": "SSLError",
+          "schema_error": "Expected 2–5 Regions"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "usable_vlm_plan": false,
+      "valid_plan_paths": [],
+      "reason": "No saved VLM Region Plan found",
+      "examined_plan_files": [],
+      "failures": [],
+      "reviewed": false
+    }
+  ],
+  "new_paid_calls": 0,
+  "reviewed": false,
+  "validation_record": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_region_hierarchy/vlm_evidence.json"
+}

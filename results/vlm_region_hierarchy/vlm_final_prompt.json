@@ -1,0 +1,23 @@
+{
+  "system": "你是参考 RGB 证据规划与区域分组助手。只分析提供的图片，不推测不可见内容，不生成像素边界，不输出推理过程，只输出 JSON。",
+  "user": "由于只剩一次请求，同时完成两张图片的规划与区域分组。每张图左侧为原始 Reference RGB 缩小副本，右侧为同一张图的算法编号候选；灰色未编号部分不参与分组。两个任务的 ID 各自独立，不得跨图片引用。\n你是图像评测证据规划器。只根据提供的 RGB 图像提取可观察内容。区分连续区域、重复元素集合和重要独立物体。不要猜测不可见内容。不要进行像素分割。存在歧义时标记 unknown。只输出 JSON。\n分析图片，输出：\n1. 最多12个重要 Regions，包括连续区域或重复元素集合；\n2. 最多12个 Salient Anchors，仅选择明确且重要的物体；\n3. 明确的区域包含关系及重要空间关系；\n4. 哪些 Anchor 需要精细 Mask。\n每项给出简短名称、位置描述及选择原因。只输出 JSON，不要解释。\n不要重复列举大量相似小物体；重复元素优先用集合。不要输出置信概率、bbox 或 Mask。\n不要因分割模型未检测到而断言不存在。不要输出推理过程。\n严格使用结构 {\"regions\":[{\"id\":\"r1\",\"name\":\"short English name\",\"kind\":\"continuous|collection|unknown\",\"location\":\"short English location\",\"reason\":\"简短原因\"}],\"anchors\":[{\"id\":\"a1\",\"name\":\"short English name\",\"location\":\"short English location\",\"reason\":\"简短原因\",\"need_mask\":true}],\"relations\":[{\"subject\":\"已有ID\",\"predicate\":\"关系\",\"object\":\"已有ID\"}],\"uncertain\":[\"简短歧义\"]}。\n关系仅限 left_of,right_of,above,below,in_front_of,behind,on,inside,contains,beside,attached_to,overlap。\n示例中的名字不是图片内容，必须观察图片。\n你是视觉区域分组助手。根据原始 RGB 和编号区域图，识别属于同一语义结构的区域集合。只引用已有区域 ID，不创造不存在的区域。允许不连续的区域属于同一集合。无法确认时保留 unknown。只输出 JSON。\n根据原图和候选区域编号，建议：\n1. 哪些 Region IDs 应组成同一个语义集合；\n2. 集合的简短名称；\n3. 哪些候选区域存在明显混合内容，不宜合并。\n只输出 JSON，不要解释。最多12个集合。\n结构：{\"groups\":[{\"name\":\"short English name\",\"region_ids\":[\"已有ID\"]}],\"uncertain_region_ids\":[\"已有ID\"]}。\n未编号的灰色部分不参与本次分组。不要把混合内容的区域加入语义集合。\n允许弃权，不要求覆盖全图。不要输出 bbox、Mask、置信概率或推理过程。\n为控制输出，每张图 Regions 和 Anchors 各最多8个，groups 最多8个，reason 不超过15字。name/location 用简短英文。只输出 {\"scenes\":{\"bw_9064\":{\"plan\":{规划结构},\"group\":{分组结构}},\"bw_0074\":{\"plan\":{规划结构},\"group\":{分组结构}}}}。\n可用编号：{\"bw_9064\": [\"c001\", \"c002\", \"c003\", \"c004\", \"c005\", \"c006\", \"c007\", \"c008\", \"c009\", \"c010\", \"c011\", \"c012\", \"c013\", \"c014\", \"c015\", \"c016\", \"c017\", \"c018\", \"c019\", \"c020\", \"c021\"], \"bw_0074\": [\"c001\", \"c003\", \"c004\", \"c005\", \"c006\", \"c007\", \"c011\", \"c012\", \"c014\", \"c015\", \"c016\", \"c021\", \"c022\", \"c023\", \"c024\", \"c027\", \"c028\", \"c029\", \"c035\", \"c037\", \"c038\", \"c045\", \"c046\", \"c047\", \"c048\", \"c049\", \"c053\", \"c059\", \"c060\", \"c061\", \"c063\", \"c067\"]}",
+  "image_files": [
+    "bw_9064/vlm_final_input.png",
+    "bw_0074/vlm_final_input.png"
+  ],
+  "image_sizes": [
+    [
+      2048,
+      618
+    ],
+    [
+      2048,
+      738
+    ]
+  ],
+  "reference_only": true,
+  "agent_render_used": false,
+  "temperature": 0.2,
+  "max_tokens": 6000,
+  "deviation": "Planning and grouping combined in one request because the user authorized one remaining attempt."
+}

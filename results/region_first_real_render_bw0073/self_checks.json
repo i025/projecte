@@ -1,0 +1,26 @@
+{
+  "reference_vs_itself": [
+    {
+      "id": "global",
+      "appearance": 0.0,
+      "perceptual": 0.0,
+      "reason": null,
+      "reviewed": false
+    },
+    {
+      "id": "box_R2",
+      "appearance": 0.0,
+      "perceptual": 0.0,
+      "reason": null,
+      "reviewed": false
+    },
+    {
+      "id": "polygon_R2",
+      "appearance": 0.0,
+      "perceptual": 0.0,
+      "reason": null,
+      "reviewed": false
+    }
+  ],
+  "reviewed": false
+}

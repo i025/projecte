@@ -1,0 +1,52 @@
+{
+  "mode": "Offline inspection with standard-library json.loads; no project code imported or executed",
+  "raw_answer_characters": 2255,
+  "raw_answer_utf8_bytes": 2431,
+  "json_syntax": "valid",
+  "parsed_equals_saved_parsed_answer": true,
+  "scene_keys": [
+    "bw_9064"
+  ],
+  "bw_9064_plan_top_level_fields": [
+    "regions"
+  ],
+  "region_item_types": [
+    "dict",
+    "dict",
+    "dict",
+    "dict",
+    "dict",
+    "dict",
+    "dict",
+    "dict",
+    "dict",
+    "str",
+    "str",
+    "str"
+  ],
+  "first_invalid_region": {
+    "path": "$.scenes.bw_9064.plan.regions[8]",
+    "fields": [
+      "anchors",
+      "relations",
+      "uncertain"
+    ],
+    "missing_field": "id"
+  },
+  "string_region_items": [
+    {
+      "index": 9,
+      "value": "group\":{\"groups':[{"
+    },
+    {
+      "index": 10,
+      "value": "name'':'left wall area',"
+    },
+    {
+      "index": 11,
+      "value": "region_ids"
+    }
+  ],
+  "new_api_requests": 0,
+  "project_code_executed": false
+}

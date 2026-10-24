@@ -1,0 +1,173 @@
+{
+  "source_kind": "mock",
+  "render_inspected": false,
+  "reviewed": false,
+  "formal_eligible": false,
+  "raw_answers": [
+    {
+      "id": "R2_island",
+      "status": "satisfied",
+      "observed": true,
+      "finding": "matched",
+      "reason": "MOCK fixture; not an observation of bw_0073"
+    },
+    {
+      "id": "R2_stools",
+      "status": "satisfied",
+      "observed": true,
+      "finding": "matched",
+      "reason": "MOCK fixture; not an observation of bw_0073"
+    },
+    {
+      "id": "R2_count",
+      "status": "violated",
+      "observed": 3,
+      "finding": "count_mismatch",
+      "reason": "MOCK fixture; not an observation of bw_0073"
+    },
+    {
+      "id": "R2_lamp",
+      "status": "violated",
+      "observed": false,
+      "finding": "confirmed_missing",
+      "reason": "MOCK fixture; not an observation of bw_0073"
+    },
+    {
+      "id": "R2_above",
+      "status": "violated",
+      "observed": false,
+      "finding": "none",
+      "reason": "MOCK fixture; not an observation of bw_0073"
+    }
+  ],
+  "state_demo": [
+    {
+      "id": "R2_island",
+      "region_id": "R2",
+      "status": "satisfied",
+      "observed": true,
+      "finding": "matched",
+      "reason": "MOCK fixture; not an observation of bw_0073",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_stools",
+      "region_id": "R2",
+      "status": "satisfied",
+      "observed": true,
+      "finding": "matched",
+      "reason": "MOCK fixture; not an observation of bw_0073",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_lamp",
+      "region_id": "R2",
+      "status": "unknown",
+      "observed": null,
+      "finding": "not_detected",
+      "reason": "Non-detection/self-asserted absence is not a reviewed confirmed-missing verdict",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_above",
+      "region_id": "R2",
+      "status": "unknown",
+      "observed": null,
+      "finding": "none",
+      "reason": "Presence prerequisite not established; do not charge dependent count/relation again",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_count",
+      "region_id": "R2",
+      "status": "violated",
+      "observed": 3,
+      "finding": "count_mismatch",
+      "reason": "MOCK fixture; not an observation of bw_0073",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    }
+  ],
+  "conflict_demo": [
+    {
+      "id": "R2_island",
+      "region_id": "R2",
+      "status": "unknown",
+      "observed": null,
+      "finding": "none",
+      "reason": "Conflicting verification answers; human resolution required",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_stools",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_lamp",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_above",
+      "region_id": "R2",
+      "status": "unknown",
+      "observed": null,
+      "finding": "none",
+      "reason": "Presence prerequisite not established; do not charge dependent count/relation again",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_count",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "Presence prerequisite not established; do not charge dependent count/relation again",
+      "source_kind": "mock",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    }
+  ],
+  "existing_vlm_gateway_demo": {
+    "score": 1.0,
+    "status": "valid",
+    "reason": "MOCK binary violation; not a real Energy"
+  },
+  "mock_gateway_score_is_not_used_in_real_records": true
+}

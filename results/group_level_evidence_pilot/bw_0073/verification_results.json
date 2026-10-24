@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "id": "bw_0073_R2_chairs_frame",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null,
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_frame",
+      "scene_id": "bw_0073",
+      "value": null,
+      "q": 0.0,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "bw_0073_R2_chairs_below_counter",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null,
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+      "scene_id": "bw_0073",
+      "value": null,
+      "q": 0.0,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "bw_0073_R2_chairs_one_row",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null,
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+      "scene_id": "bw_0073",
+      "value": null,
+      "q": 0.0,
+      "usage": "provisional/debug"
+    }
+  ],
+  "actual_new_vlm_responses": 0,
+  "mocks_used": false,
+  "formal_observation_energy": null
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "request_number": 1,
+    "purpose": "bw_9064:plan",
+    "provider": "api.ofox.ai",
+    "model": "gpt-5.1",
+    "image_count": 1,
+    "max_output_tokens": 3000,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 120
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_completion_tokens",
+    "request_limit": 4,
+    "prompt": "分析图片，输出：\n1. 最多12个重要 Regions，包括连续区域或重复元素集合；\n2. 最多12个 Salient Anchors，仅选择明确且重要的物体；\n3. 明确的区域包含关系及重要空间关系；\n4. 哪些 Anchor 需要精细 Mask。\n每项给出简短名称、位置描述及选择原因。只输出 JSON，不要解释。\n不要重复列举大量相似小物体；重复元素优先用集合。不要输出置信概率、bbox 或 Mask。\n不要因分割模型未检测到而断言不存在。不要输出推理过程。\n严格使用结构 {\"regions\":[{\"id\":\"r1\",\"name\":\"short English name\",\"kind\":\"continuous|collection|unknown\",\"location\":\"short English location\",\"reason\":\"简短原因\"}],\"anchors\":[{\"id\":\"a1\",\"name\":\"short English name\",\"location\":\"short English location\",\"reason\":\"简短原因\",\"need_mask\":true}],\"relations\":[{\"subject\":\"已有ID\",\"predicate\":\"关系\",\"object\":\"已有ID\"}],\"uncertain\":[\"简短歧义\"]}。\n关系仅限 left_of,right_of,above,below,in_front_of,behind,on,inside,contains,beside,attached_to,overlap。\n示例中的名字不是图片内容，必须观察图片。",
+    "outcome": "network_error",
+    "error": "SSLError",
+    "latency_seconds": 0.6559784600976855
+  }
+]

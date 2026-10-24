@@ -1,0 +1,181 @@
+{
+  "status": "Verification Pending",
+  "authorized_now": 0,
+  "proposed_future_requests": 3,
+  "images_per_request": 1,
+  "requests": [
+    {
+      "sample_id": "sample_01",
+      "image_file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_01.png",
+      "model": "openai/gpt-6-sol",
+      "temperature": 0.1,
+      "max_tokens": 400,
+      "automatic_retries": 0,
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+            },
+            {
+              "type": "image_ref",
+              "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_01.png",
+              "detail": "high"
+            }
+          ]
+        }
+      ],
+      "response_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "horizontal_stack",
+          "upright_books"
+        ],
+        "properties": {
+          "horizontal_stack": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "upright_books": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        }
+      },
+      "send_json_mode": false,
+      "status": "prepared_not_sent"
+    },
+    {
+      "sample_id": "sample_02",
+      "image_file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_02.png",
+      "model": "openai/gpt-6-sol",
+      "temperature": 0.1,
+      "max_tokens": 400,
+      "automatic_retries": 0,
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+            },
+            {
+              "type": "image_ref",
+              "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_02.png",
+              "detail": "high"
+            }
+          ]
+        }
+      ],
+      "response_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "horizontal_stack",
+          "upright_books"
+        ],
+        "properties": {
+          "horizontal_stack": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "upright_books": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        }
+      },
+      "send_json_mode": false,
+      "status": "prepared_not_sent"
+    },
+    {
+      "sample_id": "sample_03",
+      "image_file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_03.png",
+      "model": "openai/gpt-6-sol",
+      "temperature": 0.1,
+      "max_tokens": 400,
+      "automatic_retries": 0,
+      "messages": [
+        {
+          "role": "system",
+          "content": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。"
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+            },
+            {
+              "type": "image_ref",
+              "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_03.png",
+              "detail": "high"
+            }
+          ]
+        }
+      ],
+      "response_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "horizontal_stack",
+          "upright_books"
+        ],
+        "properties": {
+          "horizontal_stack": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "upright_books": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        }
+      },
+      "send_json_mode": false,
+      "status": "prepared_not_sent"
+    }
+  ],
+  "transport": "existing OfoxTunnel + VLMClient after explicit future authorization only",
+  "image_encoding": "materialize image_ref as image_url in memory only after authorization; never persist Base64",
+  "credentials_included": false,
+  "expected_labels_sent": false,
+  "automatic_retries": false
+}

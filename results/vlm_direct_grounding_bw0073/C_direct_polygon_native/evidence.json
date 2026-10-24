@@ -1,0 +1,421 @@
+{
+  "image_size": [
+    7952,
+    4333
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "name": "窗边水槽区",
+      "location": "左侧",
+      "content": "拱形窗户下的水槽、黑色橱柜和大理石台面，上方有搁板与壁灯",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R1.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 7312264,
+      "semantic_GT": false,
+      "predicted_polygons_normalized": [
+        [
+          [
+            0,
+            55
+          ],
+          [
+            150,
+            125
+          ],
+          [
+            170,
+            285
+          ],
+          [
+            315,
+            310
+          ],
+          [
+            335,
+            510
+          ],
+          [
+            342,
+            625
+          ],
+          [
+            0,
+            665
+          ]
+        ],
+        [
+          [
+            0,
+            585
+          ],
+          [
+            340,
+            505
+          ],
+          [
+            346,
+            660
+          ],
+          [
+            0,
+            1000
+          ]
+        ]
+      ],
+      "predicted_polygons_native": [
+        [
+          [
+            0.0,
+            238.315
+          ],
+          [
+            1192.8,
+            541.625
+          ],
+          [
+            1351.84,
+            1234.905
+          ],
+          [
+            2504.88,
+            1343.23
+          ],
+          [
+            2663.92,
+            2209.83
+          ],
+          [
+            2719.584,
+            2708.125
+          ],
+          [
+            0.0,
+            2881.445
+          ]
+        ],
+        [
+          [
+            0.0,
+            2534.805
+          ],
+          [
+            2703.68,
+            2188.165
+          ],
+          [
+            2751.392,
+            2859.78
+          ],
+          [
+            0.0,
+            4333.0
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "中央岛台区",
+      "location": "画面中央及前景",
+      "content": "大理石岛台、四把高脚椅和上方的金色吊灯",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R2.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 4875788,
+      "semantic_GT": false,
+      "predicted_polygons_normalized": [
+        [
+          [
+            500,
+            110
+          ],
+          [
+            511,
+            193
+          ],
+          [
+            560,
+            245
+          ],
+          [
+            561,
+            343
+          ],
+          [
+            505,
+            357
+          ],
+          [
+            449,
+            330
+          ],
+          [
+            444,
+            245
+          ],
+          [
+            490,
+            192
+          ]
+        ],
+        [
+          [
+            363,
+            475
+          ],
+          [
+            615,
+            476
+          ],
+          [
+            675,
+            542
+          ],
+          [
+            680,
+            855
+          ],
+          [
+            338,
+            855
+          ],
+          [
+            342,
+            600
+          ],
+          [
+            333,
+            548
+          ]
+        ]
+      ],
+      "predicted_polygons_native": [
+        [
+          [
+            3976.0,
+            476.63
+          ],
+          [
+            4063.472,
+            836.269
+          ],
+          [
+            4453.12,
+            1061.585
+          ],
+          [
+            4461.072,
+            1486.219
+          ],
+          [
+            4015.76,
+            1546.881
+          ],
+          [
+            3570.448,
+            1429.89
+          ],
+          [
+            3530.688,
+            1061.585
+          ],
+          [
+            3896.48,
+            831.936
+          ]
+        ],
+        [
+          [
+            2886.576,
+            2058.175
+          ],
+          [
+            4890.48,
+            2062.508
+          ],
+          [
+            5367.6,
+            2348.486
+          ],
+          [
+            5407.36,
+            3704.715
+          ],
+          [
+            2687.776,
+            3704.715
+          ],
+          [
+            2719.584,
+            2599.8
+          ],
+          [
+            2648.016,
+            2374.484
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "后方料理区",
+      "location": "后方中央",
+      "content": "黑色橱柜、大理石墙面与台面、炉灶及摆放的器皿和绿植",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R3.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 1826877,
+      "semantic_GT": false,
+      "predicted_polygons_normalized": [
+        [
+          [
+            360,
+            286
+          ],
+          [
+            605,
+            286
+          ],
+          [
+            610,
+            505
+          ],
+          [
+            505,
+            510
+          ],
+          [
+            462,
+            480
+          ],
+          [
+            360,
+            510
+          ]
+        ]
+      ],
+      "predicted_polygons_native": [
+        [
+          [
+            2862.72,
+            1239.238
+          ],
+          [
+            4810.96,
+            1239.238
+          ],
+          [
+            4850.72,
+            2188.165
+          ],
+          [
+            4015.76,
+            2209.83
+          ],
+          [
+            3673.824,
+            2079.84
+          ],
+          [
+            2862.72,
+            2209.83
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "右侧高柜区",
+      "location": "右侧",
+      "content": "浅木色柜体、深色高柜和下方的抽屉柜",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R4.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 7102500,
+      "semantic_GT": false,
+      "predicted_polygons_normalized": [
+        [
+          [
+            721,
+            172
+          ],
+          [
+            873,
+            12
+          ],
+          [
+            921,
+            0
+          ],
+          [
+            1000,
+            0
+          ],
+          [
+            1000,
+            891
+          ],
+          [
+            875,
+            818
+          ],
+          [
+            725,
+            674
+          ]
+        ]
+      ],
+      "predicted_polygons_native": [
+        [
+          [
+            5733.392,
+            745.276
+          ],
+          [
+            6942.096,
+            51.996
+          ],
+          [
+            7323.792,
+            0.0
+          ],
+          [
+            7952.0,
+            0.0
+          ],
+          [
+            7952.0,
+            3860.703
+          ],
+          [
+            6958.0,
+            3544.394
+          ],
+          [
+            5765.2,
+            2920.442
+          ]
+        ]
+      ]
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "coordinate_convention": "pixel edges, continuous xy; masks sampled at pixel centers",
+  "formal_score": false
+}

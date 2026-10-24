@@ -1,0 +1,60 @@
+{
+  "region_only": [
+    {
+      "scene_id": "bw_0073",
+      "region_id": "R2",
+      "region_name": "中央岛台区",
+      "semantic_groups": 1,
+      "optional_anchors": 1,
+      "new_questions": 3,
+      "new_real_verified": 0,
+      "unavailable": 3,
+      "unknown": 0,
+      "appearance": 0.27086611358075746,
+      "perceptual": 0.1565570979201936,
+      "semantic": null,
+      "spatial": null,
+      "statistical": null
+    },
+    {
+      "scene_id": "bw_0074",
+      "region_id": "R2",
+      "region_name": "展示书架",
+      "semantic_groups": 2,
+      "optional_anchors": 0,
+      "new_questions": 7,
+      "new_real_verified": 0,
+      "unavailable": 6,
+      "unknown": 1,
+      "appearance": 0.26588369949072815,
+      "perceptual": null,
+      "semantic": null,
+      "spatial": null,
+      "statistical": null
+    }
+  ],
+  "region_plus_groups": [
+    {
+      "scene_id": "bw_0073",
+      "region_id": "R2",
+      "same_visual_measurements": "bw_0073/region_only.json",
+      "new_questions": 3,
+      "new_real_verified": 0,
+      "unavailable": 3,
+      "unknown": 0
+    },
+    {
+      "scene_id": "bw_0074",
+      "region_id": "R2",
+      "same_visual_measurements": "bw_0074/region_only.json",
+      "new_questions": 7,
+      "new_real_verified": 0,
+      "unavailable": 6,
+      "unknown": 1
+    }
+  ],
+  "numeric_region_measurements_duplicated": false,
+  "region_scores_added_or_summed": false,
+  "new_group_quantitative_energy": null,
+  "note": "Same visual measurements; Group-aware adds typed, mostly unavailable evidence, not a new score"
+}

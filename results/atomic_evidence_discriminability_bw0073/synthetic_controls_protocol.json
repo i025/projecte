@@ -1,0 +1,101 @@
+{
+  "controls": [
+    {
+      "id": "C1",
+      "reference_ids": [
+        "R2_SEM_02"
+      ],
+      "target": "台面主要摆件类别",
+      "positive_violation": "在可信、已知类别fixture中将水果容器替换为明显不同的非水果物；其余布局保持。",
+      "negative_preserved": "只改变水果色系但保留水果容器类别和可见性。",
+      "expected_positive": "candidate_violated",
+      "expected_negative": "satisfied",
+      "limits": "先固定可接受的盘/碗类别；类别模糊或被遮挡时unknown。",
+      "executed": false,
+      "generated_images": 0,
+      "reviewed": false,
+      "source": "future_protocol_design_only"
+    },
+    {
+      "id": "C2",
+      "reference_ids": [
+        "R2_STA_01"
+      ],
+      "target": "可见椅子数量",
+      "positive_violation": "固定相机/对象尺寸，清楚显示3把而非4把椅子，不以模糊遮挡模拟删除。",
+      "negative_preserved": "保留4把和全部位置，只改变椅子颜色。",
+      "expected_positive": "candidate_violated",
+      "expected_negative": "satisfied",
+      "limits": "可信fixture实例单元必须确定；一个缺失事件不另加满额语义/关系惩罚。",
+      "executed": false,
+      "generated_images": 0,
+      "reviewed": false,
+      "source": "future_protocol_design_only"
+    },
+    {
+      "id": "C3",
+      "reference_ids": [
+        "R2_SPA_02"
+      ],
+      "target": "横向单排与分布",
+      "positive_violation": "保持数量、颜色和尺度，明显改变一把椅子的行归属，所有目标仍完整可见。",
+      "negative_preserved": "保留同一行的中心与尺度，仅修改表面纹理。",
+      "expected_positive": "candidate_violated",
+      "expected_negative": "satisfied",
+      "limits": "生成前预注册何谓一排，不能看完结果调容差；计数应在正负对照均保持4。",
+      "executed": false,
+      "generated_images": 0,
+      "reviewed": false,
+      "source": "future_protocol_design_only"
+    },
+    {
+      "id": "C4",
+      "reference_ids": [
+        "R2_APP_01",
+        "R3_APP_01"
+      ],
+      "target": "可见高反差脉纹",
+      "positive_violation": "在已知表面支持范围内完全移除深色脉纹，使原有脉纹类别明确不成立；保持几何和对象数量。",
+      "negative_preserved": "保留纹理支持范围和脉纹，在其外改变无关物体颜色。",
+      "expected_positive": "candidate_violated",
+      "expected_negative": "texture_proposition_satisfied",
+      "limits": "负对照针对纹理命题；全Region Appearance可以因外部颜色变化响应，不能误称全Region假阳性。仅弱化分支不计作明确原子违例正样本。",
+      "executed": false,
+      "generated_images": 0,
+      "reviewed": false,
+      "source": "future_protocol_design_only",
+      "sensitivity_branch": "仅弱化纹理时，原粗类别可能仍成立；只记录连续指标/类别边界敏感性，不预设原子违例。"
+    },
+    {
+      "id": "C5",
+      "reference_ids": [
+        "R2_SEM_01",
+        "R3_SEM_02"
+      ],
+      "target": "移出ROI与无法观察",
+      "positive_violation": "目标移出Reference局部Mask但在完整画面仍明确可见。",
+      "negative_preserved": "保持目标位于原位置和可见；另设边界遮挡导致难辨身份的弃权支路。",
+      "expected_positive": "presence_satisfied_not_confirmed_missing; position_diagnostic_may_change",
+      "expected_negative": "presence_satisfied; ambiguous_occlusion_branch_unknown",
+      "limits": "这是定位/弃权控制，不把真实可见目标移出ROI作为语义缺失正例。",
+      "executed": false,
+      "generated_images": 0,
+      "reviewed": false,
+      "source": "future_protocol_design_only"
+    }
+  ],
+  "terminology": "C1-C4 positive_violation是明确违例检出正样本，negative_preserved是命题保持；C5单独为可见性/位置控制。",
+  "execution_authorized_this_round": false,
+  "images_generated": 0,
+  "new_paid_requests": 0,
+  "required_future_records": [
+    "可信fixture标签与来源",
+    "固定相机/可见单元定义",
+    "模型原始答案",
+    "独立确定性比较",
+    "Unknown/Unavailable",
+    "人工控制质量审核"
+  ],
+  "formal_weights_or_formulas_changed": false,
+  "reviewed": false
+}

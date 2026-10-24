@@ -1,0 +1,742 @@
+{
+  "status": "completed",
+  "backend": "Codex Subagent",
+  "protocol": {
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/books_controls_31bc7758b31a4e36b309c4dc8ec44201",
+    "system": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。",
+    "user": "请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "horizontal_stack",
+        "upright_books"
+      ],
+      "properties": {
+        "horizontal_stack": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "upright_books": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "definitions": {
+      "horizontal_stack": "至少两本可辨认的书水平叠放，存在明显上下堆叠关系。",
+      "upright_books": "存在可辨认的书籍，其书脊或书体主要呈竖直站立状态。",
+      "exclusions": "唱片、文件夹、单本平放且无法确认的物体不强行当作横向书堆。",
+      "abstention": "遮挡严重、分辨率不足或类别不明确时回答unknown。"
+    },
+    "expected": {
+      "T1": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "T2": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "T3": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "T4": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "T5": {
+        "horizontal_stack": null,
+        "upright_books": null
+      }
+    },
+    "expected_source": "construction_expected",
+    "reviewed": false,
+    "T5_label_status": "human_review_pending; visible labels unset, no correctness scoring",
+    "T5_underlying_construction": {
+      "horizontal_stack": "yes",
+      "upright_books": "yes"
+    },
+    "T5_transform": {
+      "source": "T1",
+      "operation": "whole-image Gaussian blur",
+      "radius_pixels": 14
+    },
+    "model": "gpt-6-sol",
+    "backend": "Codex Subagent",
+    "maximum_new_verifiers": 5,
+    "serial": true,
+    "no_api_equivalence": true,
+    "strict_blind_test": false,
+    "samples": {
+      "T1": {
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_hard_books/images/acbff508fe234a72a6f0cc667161d7e0.png"
+      },
+      "T2": {
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_hard_books/images/2f51e236b89845cb8c9ee5f2c1247fdc.png"
+      },
+      "T3": {
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_hard_books/images/74bdd43dc89640f0a8f6f78717f2091e.png"
+      },
+      "T4": {
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_hard_books/images/7bdbd2b5e8f942bba5bb3c2bcd545404.png"
+      },
+      "T5": {
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_hard_books/images/49ed5ad32e6d400e8eb92187f853d331.png"
+      }
+    },
+    "authoring_resources": {
+      "logical_cpus": 256,
+      "load_average": [
+        4.32,
+        4.54,
+        5.6
+      ],
+      "blender_device": "CPU",
+      "threads": 2,
+      "gpu_used": false
+    }
+  },
+  "cases": {
+    "T1": {
+      "expected": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "expected_source": "construction_expected",
+      "prediction": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "fields": [
+        {
+          "field": "horizontal_stack",
+          "expected": "yes",
+          "prediction": "yes",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "expected": "yes",
+          "prediction": "yes",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        }
+      ],
+      "original_image": "images/acbff508fe234a72a6f0cc667161d7e0.png",
+      "raw_response": {
+        "raw_answer": "{\"horizontal_stack\":\"yes\",\"upright_books\":\"yes\"}",
+        "parsed": {
+          "status": "valid",
+          "fields": {
+            "horizontal_stack": {
+              "value": "yes",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "error": null
+            },
+            "upright_books": {
+              "value": "yes",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "error": null
+            }
+          },
+          "schema_errors": []
+        },
+        "actual_input": {
+          "task_name": "v_23690a13b659",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/5e4a88b4d5f2407e855c65671156a4a5/a157e63530164b1aac9d96e8aef31d33.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。\n\nUser：\n请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "source": "Codex Subagent",
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T16-02-14-01a16459-44c5-7983-a638-b57556ea0dbe.jsonl",
+        "agent_path": "/root/v_23690a13b659",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/tmp/5e4a88b4d5f2407e855c65671156a4a5/a157e63530164b1aac9d96e8aef31d33.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+          }
+        ],
+        "read_audit_passed": true,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "final_messages": 1,
+        "usage": {
+          "input_tokens": 43929,
+          "cached_input_tokens": 41216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 122,
+          "reasoning_output_tokens": 26,
+          "total_tokens": 44051
+        },
+        "usage_events": 2,
+        "duration_seconds": 8.004,
+        "started_at": 1792684934,
+        "completed_at": 1792684942,
+        "reviewed": false,
+        "scorable": false
+      },
+      "reviewed": false,
+      "usage": "provisional/debug"
+    },
+    "T2": {
+      "expected": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "expected_source": "construction_expected",
+      "prediction": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "fields": [
+        {
+          "field": "horizontal_stack",
+          "expected": "no",
+          "prediction": "no",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "expected": "yes",
+          "prediction": "yes",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        }
+      ],
+      "original_image": "images/2f51e236b89845cb8c9ee5f2c1247fdc.png",
+      "raw_response": {
+        "raw_answer": "{\"horizontal_stack\":\"no\",\"upright_books\":\"yes\"}",
+        "parsed": {
+          "status": "valid",
+          "fields": {
+            "horizontal_stack": {
+              "value": "no",
+              "raw_value": "no",
+              "validation_status": "valid",
+              "error": null
+            },
+            "upright_books": {
+              "value": "yes",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "error": null
+            }
+          },
+          "schema_errors": []
+        },
+        "actual_input": {
+          "task_name": "v_fc0ba08f15fe",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/9de9fd5de1b14ea581b0356d62e85f11/b65c52f7596048fdb01dfb08d8fc4ab3.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。\n\nUser：\n请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "source": "Codex Subagent",
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T16-02-40-01a16459-abf1-7010-8ca4-1f1fd5dd3a00.jsonl",
+        "agent_path": "/root/v_fc0ba08f15fe",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/tmp/9de9fd5de1b14ea581b0356d62e85f11/b65c52f7596048fdb01dfb08d8fc4ab3.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "read_audit_passed": true,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "final_messages": 1,
+        "usage": {
+          "input_tokens": 43934,
+          "cached_input_tokens": 41216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 111,
+          "reasoning_output_tokens": 20,
+          "total_tokens": 44045
+        },
+        "usage_events": 2,
+        "duration_seconds": 7.622,
+        "started_at": 1792684960,
+        "completed_at": 1792684968,
+        "reviewed": false,
+        "scorable": false
+      },
+      "reviewed": false,
+      "usage": "provisional/debug"
+    },
+    "T3": {
+      "expected": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "expected_source": "construction_expected",
+      "prediction": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "fields": [
+        {
+          "field": "horizontal_stack",
+          "expected": "no",
+          "prediction": "no",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "expected": "yes",
+          "prediction": "yes",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        }
+      ],
+      "original_image": "images/74bdd43dc89640f0a8f6f78717f2091e.png",
+      "raw_response": {
+        "raw_answer": "{\"horizontal_stack\":\"no\",\"upright_books\":\"yes\"}",
+        "parsed": {
+          "status": "valid",
+          "fields": {
+            "horizontal_stack": {
+              "value": "no",
+              "raw_value": "no",
+              "validation_status": "valid",
+              "error": null
+            },
+            "upright_books": {
+              "value": "yes",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "error": null
+            }
+          },
+          "schema_errors": []
+        },
+        "actual_input": {
+          "task_name": "v_0dcc0dcc91a0",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/290bed76e6ce4183982dd49e88b41331/5ac0c7eb5e3f45b48df1df2992b273c3.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。\n\nUser：\n请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "source": "Codex Subagent",
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T16-03-07-01a1645a-15c3-7741-b419-51c748c89fab.jsonl",
+        "agent_path": "/root/v_0dcc0dcc91a0",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/tmp/290bed76e6ce4183982dd49e88b41331/5ac0c7eb5e3f45b48df1df2992b273c3.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "read_audit_passed": true,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "final_messages": 1,
+        "usage": {
+          "input_tokens": 43932,
+          "cached_input_tokens": 41216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 131,
+          "reasoning_output_tokens": 41,
+          "total_tokens": 44063
+        },
+        "usage_events": 2,
+        "duration_seconds": 11.155,
+        "started_at": 1792684987,
+        "completed_at": 1792684999,
+        "reviewed": false,
+        "scorable": false
+      },
+      "reviewed": false,
+      "usage": "provisional/debug"
+    },
+    "T4": {
+      "expected": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "expected_source": "construction_expected",
+      "prediction": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "fields": [
+        {
+          "field": "horizontal_stack",
+          "expected": "no",
+          "prediction": "no",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "expected": "yes",
+          "prediction": "yes",
+          "assessment": "correct",
+          "verification_status": "satisfied",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": true,
+          "energy_value": null,
+          "scorable": false
+        }
+      ],
+      "original_image": "images/7bdbd2b5e8f942bba5bb3c2bcd545404.png",
+      "raw_response": {
+        "raw_answer": "{\"horizontal_stack\":\"no\",\"upright_books\":\"yes\"}",
+        "parsed": {
+          "status": "valid",
+          "fields": {
+            "horizontal_stack": {
+              "value": "no",
+              "raw_value": "no",
+              "validation_status": "valid",
+              "error": null
+            },
+            "upright_books": {
+              "value": "yes",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "error": null
+            }
+          },
+          "schema_errors": []
+        },
+        "actual_input": {
+          "task_name": "v_2131a2d599c7",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/2d3257f941174c83ad5b1c6dbb1afd52/967e0fdeaa6f4a7c9ade0c3d64eca8c9.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。\n\nUser：\n请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "source": "Codex Subagent",
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T16-03-34-01a1645a-7f39-78d3-8d4b-430776d601bb.jsonl",
+        "agent_path": "/root/v_2131a2d599c7",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r=await tools.view_image({path:\"/tmp/2d3257f941174c83ad5b1c6dbb1afd52/967e0fdeaa6f4a7c9ade0c3d64eca8c9.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "read_audit_passed": true,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "final_messages": 1,
+        "usage": {
+          "input_tokens": 43950,
+          "cached_input_tokens": 41216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 115,
+          "reasoning_output_tokens": 21,
+          "total_tokens": 44065
+        },
+        "usage_events": 2,
+        "duration_seconds": 7.219,
+        "started_at": 1792685014,
+        "completed_at": 1792685022,
+        "reviewed": false,
+        "scorable": false
+      },
+      "reviewed": false,
+      "usage": "provisional/debug"
+    },
+    "T5": {
+      "expected": {
+        "horizontal_stack": null,
+        "upright_books": null
+      },
+      "expected_source": "human_review_pending",
+      "prediction": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "fields": [
+        {
+          "field": "horizontal_stack",
+          "expected": null,
+          "prediction": "no",
+          "assessment": "expected_unreviewed",
+          "verification_status": "unknown",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": false,
+          "energy_value": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "expected": null,
+          "prediction": "yes",
+          "assessment": "expected_unreviewed",
+          "verification_status": "unknown",
+          "reference_label_review": "unreviewed",
+          "reviewed": false,
+          "correctness_scored": false,
+          "construction_comparison_available": false,
+          "energy_value": null,
+          "scorable": false
+        }
+      ],
+      "original_image": "images/49ed5ad32e6d400e8eb92187f853d331.png",
+      "raw_response": {
+        "raw_answer": "{\"horizontal_stack\":\"no\",\"upright_books\":\"yes\"}",
+        "parsed": {
+          "status": "valid",
+          "fields": {
+            "horizontal_stack": {
+              "value": "no",
+              "raw_value": "no",
+              "validation_status": "valid",
+              "error": null
+            },
+            "upright_books": {
+              "value": "yes",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "error": null
+            }
+          },
+          "schema_errors": []
+        },
+        "actual_input": {
+          "task_name": "v_4ba912e14afe",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张图像。仅使用 view_image 读取此 PNG，不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出下面规定的 JSON。\n\n图像：/tmp/73ba1175317048658dfe40abc5842334/dc6624d118894efe84a6bf53588b2b43.png\n\nSystem：\n你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。\n\nUser：\n请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "source": "Codex Subagent",
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T16-04-04-01a1645a-f322-7b63-8064-33fda812d93c.jsonl",
+        "agent_path": "/root/v_4ba912e14afe",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/tmp/73ba1175317048658dfe40abc5842334/dc6624d118894efe84a6bf53588b2b43.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "read_audit_passed": true,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "final_messages": 1,
+        "usage": {
+          "input_tokens": 43907,
+          "cached_input_tokens": 41216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 173,
+          "reasoning_output_tokens": 90,
+          "total_tokens": 44080
+        },
+        "usage_events": 2,
+        "duration_seconds": 7.865,
+        "started_at": 1792685044,
+        "completed_at": 1792685052,
+        "reviewed": false,
+        "scorable": false
+      },
+      "reviewed": false,
+      "usage": "provisional/debug"
+    }
+  },
+  "comparison": {
+    "T1_T2": [
+      {
+        "field": "horizontal_stack",
+        "first_answer": "yes",
+        "second_answer": "no",
+        "status": "candidate_violated",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "first_answer": "yes",
+        "second_answer": "yes",
+        "status": "satisfied",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ]
+  },
+  "candidate_counts_T1_T4": {
+    "correct": 8,
+    "false_positive": 0,
+    "false_negative": 0,
+    "unknown": 0,
+    "unavailable": 0
+  },
+  "T5_correctness": "not_scored_pending_human_labels",
+  "previous_input_audit": {
+    "strict_blind_test_established": false,
+    "observed_extra_reads": false,
+    "prior_context_inheritance": "none",
+    "prior_model": "gpt-6-sol",
+    "prior_each_view_image_calls": 1,
+    "limitations": [
+      "Prior paths exposed project/experiment; sequential names were not randomized.",
+      "Coordinator template contains no labels, but persisted parent task message is encrypted and not independently readable.",
+      "Shared filesystem remained readable; task instruction is not an OS access boundary.",
+      "Frozen System text was task text; platform context/temperature differs from API."
+    ],
+    "reviewed": false,
+    "previous_experiment": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/subagent_verification",
+    "parent_spawn_log": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/19/rollout-2026-10-19T17-51-48-01a1554a-7fff-7b62-a398-3c507869f603.jsonl",
+    "parent_spawn_lines": [
+      7583,
+      7600,
+      7619
+    ],
+    "child_tool_evidence": [
+      {
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T15-38-06-01a16443-2bb4-7683-954d-a6515a276a58.jsonl",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_01.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "model": [
+          "gpt-6-sol"
+        ],
+        "reasoning_effort": [
+          "medium"
+        ]
+      },
+      {
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T15-38-31-01a16443-8d32-77b0-a137-71e02716b42c.jsonl",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_02.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "model": [
+          "gpt-6-sol"
+        ],
+        "reasoning_effort": [
+          "medium"
+        ]
+      },
+      {
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/22/rollout-2026-10-22T15-39-06-01a16444-18e7-7492-90e3-799795e6fd79.jsonl",
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_03.png\"}); image(r.image_url);\n"
+          }
+        ],
+        "model": [
+          "gpt-6-sol"
+        ],
+        "reasoning_effort": [
+          "medium"
+        ]
+      }
+    ]
+  },
+  "verification_sessions": 5,
+  "ofox_api_calls": 0,
+  "total_verifier_session_seconds": 41.865,
+  "verifier_usage": {
+    "input_tokens": 219652,
+    "cached_input_tokens": 206080,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 652,
+    "reasoning_output_tokens": 198,
+    "total_tokens": 220304
+  },
+  "usage_scope": "Whole five child sessions, tools/platform context included; parent/preparation excluded",
+  "actual_currency_cost": null,
+  "ofox_cost_usd": 0,
+  "strict_blind_test_established": false,
+  "single_image_filesystem_access_enforced": false,
+  "received_task_text_independently_readable": false,
+  "formal_statistical_energy": null,
+  "reviewed": false,
+  "scorable": false,
+  "usage": "provisional/debug"
+}

@@ -1,0 +1,67 @@
+{
+  "anchors": [
+    {
+      "id": "anchor",
+      "category": "red_cuboid",
+      "bbox": [
+        17,
+        75,
+        46,
+        118
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "importance": 1.0,
+      "source": "Known source-controlled synthetic fixture oracle"
+    },
+    {
+      "id": "other",
+      "category": "blue_cube",
+      "bbox": [
+        69,
+        87,
+        98,
+        118
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "importance": 1.0,
+      "source": "Known source-controlled synthetic fixture oracle"
+    }
+  ],
+  "reviewed": true,
+  "inventory_complete": true,
+  "image_size": [
+    128,
+    128
+  ],
+  "regions": [
+    {
+      "id": "whole_texture",
+      "bbox": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "description": "Whole reference image texture/appearance",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0
+    }
+  ],
+  "verification_questions": [
+    {
+      "id": "visible_material",
+      "energy": "appearance",
+      "question": "Does visible surface material differ?",
+      "reviewed": true,
+      "reliability": 1.0
+    }
+  ]
+}

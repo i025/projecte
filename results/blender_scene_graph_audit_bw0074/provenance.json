@@ -1,0 +1,18 @@
+{
+  "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+  "reference_cached": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+  "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+  "blend": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/final.blend",
+  "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/config.json",
+  "manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/manifest.json",
+  "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/input.json",
+  "same_run_verified": true,
+  "pixel_synchronization_reverified": false,
+  "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+  "reference_group_id": "bw_0074_R3_records",
+  "group_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/records_group_verification_bw0074/verification_results.json",
+  "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/scene_graph_audit_1792767018825950306",
+  "reviewed": false,
+  "usage": "provisional/debug"
+}

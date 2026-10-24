@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "offline_before_paid_requests": true,
+  "unit_tests": {
+    "run": 173,
+    "passed": 173,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "actual_requests": 2,
+  "per_side_requests": 1,
+  "network_retries": 0,
+  "valid_response_sides": 2,
+  "strict_raw_json_replay": true,
+  "third_attempt_blocked_before_config_or_network": true,
+  "offline_replay_results_identical": true,
+  "raw_responses_and_original_ledger_unchanged": true,
+  "core_modules_and_frozen_roi_byte_identical": true,
+  "paid_implementation_matches_preflight_source": true,
+  "actual_credential_absence_checked": true,
+  "json_files_scanned": 15,
+  "headers_and_base64_payloads_absent": true,
+  "html_links_checked": 6,
+  "html_missing_links": 0,
+  "formal_energies_all_na": true,
+  "all_review_flags_false": true,
+  "no_new_grounding_models_or_blender": true,
+  "reviewed": false
+}

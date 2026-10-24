@@ -1,0 +1,58 @@
+{
+  "status": "completed",
+  "protocol": {
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_layout_4c14a310f5124e489572e4afedbca517",
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+    "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+    "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+    "bbox": [
+      883,
+      119,
+      1258,
+      541
+    ],
+    "image_size": [
+      1258,
+      855
+    ],
+    "transform": {
+      "original_size": [
+        1920,
+        1300
+      ],
+      "common_size": [
+        1258,
+        855
+      ],
+      "nominal_scale": 0.6552083333333333,
+      "resized_size": [
+        1258,
+        852
+      ],
+      "offset_xy": [
+        0,
+        1
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "system": "你是图像空间结构分析器。只分析图片中的书柜结构，不分析摆放物的数量。识别清晰可见的水平层板、竖向结构隔板及由它们形成的独立柜格。不要把书脊、唱片封套或装饰品边缘误认为柜体隔板。无法区分时返回 unknown。只输出简洁 JSON。",
+    "user": "分析图中目标书柜的可见结构，输出：\n\n1. 可辨认的主要水平层次。\n2. 每个层次内清晰的竖向分隔。\n3. 是否形成多个左右独立的柜格。\n4. 不能确定的结构。\n\n不要推测遮挡后的隔板。仅输出 JSON，不要解释。",
+    "format": "左侧为完整图片，橙框为目标；右侧为同坐标目标放大图。完整图仅提供上下文，只分析橙框内目标柜体；不把框线或图像裁切边缘当作隔板。\n统一定义：rows 是自上而下的可见开口层带，不是摆放物高度组；vertical_dividers 只数同一层内部清晰的结构隔板，排除外侧框架；separate_compartments 是该层实际可辨的左右独立开口数量。不能确认时计数为字符串 unknown，不根据摆放物分簇推定柜格。horizontal_shelves 只标层带之间可见的内部水平层板，不含外顶板/底座。\n所有位置均相对于右侧目标裁剪图，归一化到0–1000；原点在左上，x向右、y向下。线段坐标为[x1,y1,x2,y2]，只需粗定位；不确定的线不画。y_range 为该开口层带粗略的上下位置，无法定位则null。\n严格输出对象字段：\n- top_to_bottom_complete：yes/no/unknown，表示能否确认目标柜体从最上可见开口到最下可见开口的垂直范围均包含在输入中（不代表左右边界完整）。\n- horizontal_shelves：可见内部水平层板的粗线段数组。\n- rows：按图像从上到下排列，每项仅含 id（唯一字符串）、y_range、vertical_dividers（非负整数或unknown）、separate_compartments（正整数或unknown）、divider_segments（该层清晰隔板的粗线段数组）、certainty（clear/partial/unknown）。已明确计数的隔板应有对应线段。\n- unknown：简短的不确定结构说明字符串数组。\n不预设层数或柜格数，不输出其他字段或推理过程。",
+    "backend": "Codex Subagent",
+    "model": "gpt-6-sol",
+    "maximum_verifiers": 2,
+    "serial": true,
+    "automatic_retries": false,
+    "images": "Full image at native size plus 2x fixed ROI crop; no expected answers, no topology markup",
+    "no_u1_u7_input": true,
+    "prior_coordinator_knowledge_disclosed": true,
+    "strict_blind_test": false,
+    "reviewed": false,
+    "usage": "provisional/debug"
+  },
+  "reviewed": false,
+  "result": "topology_comparison.json",
+  "real_verifier_sessions": 2
+}

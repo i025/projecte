@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "q1",
+    "q2",
+    "q3"
+  ],
+  "properties": {
+    "q1": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "q2": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "const": "unknown"
+        }
+      ]
+    },
+    "q3": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    }
+  }
+}

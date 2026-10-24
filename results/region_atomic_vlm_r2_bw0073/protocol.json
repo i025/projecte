@@ -1,0 +1,15 @@
+{
+  "system": "你是视觉证据验证器。只根据当前图像回答给定问题。不要猜测不可见内容。无法可靠判断时回答 unknown。不要比较其他图像，不要评价整体重建质量。只输出 JSON。",
+  "user": "请根据图像回答以下三个问题：\n\nQ1：画面中是否存在中央厨房岛台？\n\nQ2：岛台靠近相机的一侧，可见几把高脚椅？\n\nQ3：如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？\n\n仅返回一个 JSON 对象，包含 q1、q2、q3 三个字段。\n\n- q1：yes、no 或 unknown\n- q2：非负整数或 unknown\n- q3：yes、no 或 unknown\n\n不要输出其他字段、解释或推理过程。",
+  "model": "openai/gpt-6-sol",
+  "max_tokens": 800,
+  "temperature": 0.1,
+  "output_schema": "schema.json",
+  "maximum_paid_requests": 2,
+  "per_side_limit": 1,
+  "automatic_retries": false,
+  "reference_expected_answers_in_prompt": false,
+  "json_mode": false,
+  "usage": "provisional/debug",
+  "reviewed": false
+}

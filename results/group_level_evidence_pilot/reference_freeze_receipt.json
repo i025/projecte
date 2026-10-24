@@ -1,0 +1,15 @@
+{
+  "reference_file": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_level_evidence_pilot/reference_groups_frozen.json",
+  "frozen_at": "2026-10-22T11:32:29.053627+00:00",
+  "bytes": 23361,
+  "reviewed": false,
+  "region_count": 2,
+  "semantic_group_count": 3,
+  "optional_anchor_count": 1,
+  "atomic_evidence_count": 10,
+  "root_prior_render_knowledge_disclosed": true,
+  "strict_blind_test": false,
+  "no_content_hash": true,
+  "no_new_paid_requests": true,
+  "render_read_allowed_after_this_receipt": true
+}

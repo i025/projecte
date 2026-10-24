@@ -1,0 +1,83 @@
+{
+  "anchors": [
+    {
+      "id": "anchor",
+      "category": "red_cuboid",
+      "bbox": [
+        17,
+        75,
+        46,
+        118
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "importance": 1.0,
+      "source": "Known source-controlled synthetic fixture oracle",
+      "position": [
+        31.5,
+        96.5
+      ]
+    },
+    {
+      "id": "other",
+      "category": "blue_cube",
+      "bbox": [
+        69,
+        87,
+        98,
+        118
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "importance": 1.0,
+      "source": "Known source-controlled synthetic fixture oracle",
+      "position": [
+        83.5,
+        102.5
+      ]
+    }
+  ],
+  "reviewed": true,
+  "inventory_complete": true,
+  "image_size": [
+    128,
+    128
+  ],
+  "regions": [
+    {
+      "id": "whole_texture",
+      "bbox": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "description": "Whole reference image texture/appearance",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0
+    }
+  ],
+  "verification_questions": [
+    {
+      "id": "visible_material",
+      "energy": "appearance",
+      "question": "Does visible surface material differ?",
+      "reviewed": true,
+      "reliability": 1.0
+    }
+  ],
+  "global_evidence": {
+    "description": "Complete reference RGB",
+    "reviewed": true,
+    "reliability": 1.0
+  },
+  "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+  "source": "reference RGB and independently supplied annotations only",
+  "mask_archive": "reference_masks.npz"
+}

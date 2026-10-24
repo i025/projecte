@@ -1,0 +1,31 @@
+{
+  "tasks": {
+    "bw_9064": {
+      "node_count": 343,
+      "acyclic": true,
+      "all_unreviewed": true,
+      "native_mask_rows": 343,
+      "loader_compatible": true,
+      "fine_preserved": true,
+      "all_dense_levels_coverage": 1.0
+    },
+    "bw_0074": {
+      "node_count": 509,
+      "acyclic": true,
+      "all_unreviewed": true,
+      "native_mask_rows": 509,
+      "loader_compatible": true,
+      "fine_preserved": true,
+      "all_dense_levels_coverage": 1.0
+    }
+  },
+  "html_links": 56,
+  "all_unreviewed": true,
+  "scoring_run": false,
+  "network_calls_in_validation": 0,
+  "final_request_count": 1,
+  "local_total_vlm_attempts": 2,
+  "semantic_generation_status": "unavailable",
+  "unit_test_log": "test_results.log",
+  "passed": true
+}

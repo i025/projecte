@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "A clean PNG",
+      "passed": true,
+      "detail": "PNG RGB (768, 640); no text overlay"
+    },
+    {
+      "check": "A construction metadata",
+      "passed": true,
+      "detail": "nine books; no FONT/external assets; CPU 2 threads"
+    },
+    {
+      "check": "B clean PNG",
+      "passed": true,
+      "detail": "PNG RGB (768, 640); no text overlay"
+    },
+    {
+      "check": "B construction metadata",
+      "passed": true,
+      "detail": "nine books; no FONT/external assets; CPU 2 threads"
+    },
+    {
+      "check": "C clean PNG",
+      "passed": true,
+      "detail": "PNG RGB (768, 640); no text overlay"
+    },
+    {
+      "check": "C construction metadata",
+      "passed": true,
+      "detail": "nine books; no FONT/external assets; CPU 2 threads"
+    },
+    {
+      "check": "all camera matrices identical",
+      "passed": true,
+      "detail": "exported Blender matrices"
+    },
+    {
+      "check": "A/C book transforms identical",
+      "passed": true,
+      "detail": "exported matrices; C changes cover colors only"
+    },
+    {
+      "check": "B original three standing books unchanged",
+      "passed": true,
+      "detail": "six other books are rotated/repositioned"
+    },
+    {
+      "check": "actual API requests",
+      "passed": true,
+      "detail": "0; request() always refuses before loading credentials"
+    },
+    {
+      "check": "C appearance actually differs from A",
+      "passed": true,
+      "detail": "pixel differences confirm a nonidentical image; not a semantic measurement"
+    }
+  ],
+  "model_executed": false,
+  "human_label_review": "unreviewed"
+}

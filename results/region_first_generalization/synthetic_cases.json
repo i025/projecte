@@ -1,0 +1,1049 @@
+{
+  "cases": [
+    {
+      "task_id": "bw_9064",
+      "case": "wall_back_color_0.25",
+      "target_region": "wall_back",
+      "kind": "color",
+      "strength": 0.25,
+      "patch_xyxy": [
+        233,
+        168,
+        285,
+        220
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 2704,
+      "changed_fraction": 0.008150077160493827,
+      "image": "synthetic/bw_9064/wall_back_color_0.25.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_back_color_0.5",
+      "target_region": "wall_back",
+      "kind": "color",
+      "strength": 0.5,
+      "patch_xyxy": [
+        233,
+        168,
+        285,
+        220
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 2704,
+      "changed_fraction": 0.008150077160493827,
+      "image": "synthetic/bw_9064/wall_back_color_0.5.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_back_color_1.0",
+      "target_region": "wall_back",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        233,
+        168,
+        285,
+        220
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 2704,
+      "changed_fraction": 0.008150077160493827,
+      "image": "synthetic/bw_9064/wall_back_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_back_blur_0.25",
+      "target_region": "wall_back",
+      "kind": "blur",
+      "strength": 0.25,
+      "patch_xyxy": [
+        233,
+        168,
+        285,
+        220
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 183,
+      "changed_fraction": 0.0005515769675925925,
+      "image": "synthetic/bw_9064/wall_back_blur_0.25.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_back_blur_0.5",
+      "target_region": "wall_back",
+      "kind": "blur",
+      "strength": 0.5,
+      "patch_xyxy": [
+        233,
+        168,
+        285,
+        220
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 1528,
+      "changed_fraction": 0.004605516975308642,
+      "image": "synthetic/bw_9064/wall_back_blur_0.5.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_back_blur_1.0",
+      "target_region": "wall_back",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        233,
+        168,
+        285,
+        220
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 2233,
+      "changed_fraction": 0.006730444637345679,
+      "image": "synthetic/bw_9064/wall_back_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "ceiling_color_1.0",
+      "target_region": "ceiling",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        135,
+        -26,
+        187,
+        26
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "image": "synthetic/bw_9064/ceiling_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "ceiling_blur_1.0",
+      "target_region": "ceiling",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        135,
+        -26,
+        187,
+        26
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "image": "synthetic/bw_9064/ceiling_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "floor_color_1.0",
+      "target_region": "floor",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        168,
+        405,
+        220,
+        457
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 1404,
+      "changed_fraction": 0.004231770833333333,
+      "image": "synthetic/bw_9064/floor_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "floor_blur_1.0",
+      "target_region": "floor",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        168,
+        405,
+        220,
+        457
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 1398,
+      "changed_fraction": 0.004213686342592593,
+      "image": "synthetic/bw_9064/floor_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_left_color_1.0",
+      "target_region": "wall_left",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        -26,
+        131,
+        26,
+        183
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "image": "synthetic/bw_9064/wall_left_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_left_blur_1.0",
+      "target_region": "wall_left",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        -26,
+        131,
+        26,
+        183
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "image": "synthetic/bw_9064/wall_left_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_right_color_1.0",
+      "target_region": "wall_right",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        741,
+        129,
+        793,
+        181
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 1404,
+      "changed_fraction": 0.004231770833333333,
+      "image": "synthetic/bw_9064/wall_right_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "case": "wall_right_blur_1.0",
+      "target_region": "wall_right",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        741,
+        129,
+        793,
+        181
+      ],
+      "image_size": [
+        768,
+        432
+      ],
+      "geometry_image_size": [
+        1536,
+        864
+      ],
+      "changed_pixels": 1207,
+      "changed_fraction": 0.0036379967206790122,
+      "image": "synthetic/bw_9064/wall_right_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p07_color_0.25",
+      "target_region": "p07",
+      "kind": "color",
+      "strength": 0.25,
+      "patch_xyxy": [
+        178,
+        393,
+        228,
+        443
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1300,
+      "changed_fraction": 0.004039876690533015,
+      "image": "synthetic/bw_0073/p07_color_0.25.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p07_color_0.5",
+      "target_region": "p07",
+      "kind": "color",
+      "strength": 0.5,
+      "patch_xyxy": [
+        178,
+        393,
+        228,
+        443
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1300,
+      "changed_fraction": 0.004039876690533015,
+      "image": "synthetic/bw_0073/p07_color_0.5.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p07_color_1.0",
+      "target_region": "p07",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        178,
+        393,
+        228,
+        443
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1300,
+      "changed_fraction": 0.004039876690533015,
+      "image": "synthetic/bw_0073/p07_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p07_blur_0.25",
+      "target_region": "p07",
+      "kind": "blur",
+      "strength": 0.25,
+      "patch_xyxy": [
+        178,
+        393,
+        228,
+        443
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1052,
+      "changed_fraction": 0.003269192521877486,
+      "image": "synthetic/bw_0073/p07_blur_0.25.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p07_blur_0.5",
+      "target_region": "p07",
+      "kind": "blur",
+      "strength": 0.5,
+      "patch_xyxy": [
+        178,
+        393,
+        228,
+        443
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1209,
+      "changed_fraction": 0.003757085322195704,
+      "image": "synthetic/bw_0073/p07_blur_0.5.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p07_blur_1.0",
+      "target_region": "p07",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        178,
+        393,
+        228,
+        443
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1262,
+      "changed_fraction": 0.003921787987271281,
+      "image": "synthetic/bw_0073/p07_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p08_color_1.0",
+      "target_region": "p08",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        138,
+        184,
+        174,
+        220
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1296,
+      "changed_fraction": 0.004027446300715991,
+      "image": "synthetic/bw_0073/p08_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p08_blur_1.0",
+      "target_region": "p08",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        138,
+        184,
+        174,
+        220
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 1295,
+      "changed_fraction": 0.004024338703261734,
+      "image": "synthetic/bw_0073/p08_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p09_color_1.0",
+      "target_region": "p09",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        632,
+        167,
+        682,
+        217
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 2500,
+      "changed_fraction": 0.007768993635640414,
+      "image": "synthetic/bw_0073/p09_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p09_blur_1.0",
+      "target_region": "p09",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        632,
+        167,
+        682,
+        217
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 2169,
+      "changed_fraction": 0.006740378878281623,
+      "image": "synthetic/bw_0073/p09_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p10_color_1.0",
+      "target_region": "p10",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        288,
+        209,
+        310,
+        231
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 484,
+      "changed_fraction": 0.001504077167859984,
+      "image": "synthetic/bw_0073/p10_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p10_blur_1.0",
+      "target_region": "p10",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        288,
+        209,
+        310,
+        231
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 483,
+      "changed_fraction": 0.0015009695704057279,
+      "image": "synthetic/bw_0073/p10_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p11_color_1.0",
+      "target_region": "p11",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        218,
+        -25,
+        268,
+        25
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "image": "synthetic/bw_0073/p11_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0073",
+      "case": "p11_blur_1.0",
+      "target_region": "p11",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        218,
+        -25,
+        268,
+        25
+      ],
+      "image_size": [
+        768,
+        419
+      ],
+      "geometry_image_size": [
+        1536,
+        837
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "image": "synthetic/bw_0073/p11_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R1_color_0.25",
+      "target_region": "R1",
+      "kind": "color",
+      "strength": 0.25,
+      "patch_xyxy": [
+        112,
+        409,
+        174,
+        471
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3844,
+      "changed_fraction": 0.00958852171136654,
+      "image": "synthetic/bw_0074/R1_color_0.25.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R1_color_0.5",
+      "target_region": "R1",
+      "kind": "color",
+      "strength": 0.5,
+      "patch_xyxy": [
+        112,
+        409,
+        174,
+        471
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3844,
+      "changed_fraction": 0.00958852171136654,
+      "image": "synthetic/bw_0074/R1_color_0.5.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R1_color_1.0",
+      "target_region": "R1",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        112,
+        409,
+        174,
+        471
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3844,
+      "changed_fraction": 0.00958852171136654,
+      "image": "synthetic/bw_0074/R1_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R1_blur_0.25",
+      "target_region": "R1",
+      "kind": "blur",
+      "strength": 0.25,
+      "patch_xyxy": [
+        112,
+        409,
+        174,
+        471
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3297,
+      "changed_fraction": 0.008224078065134099,
+      "image": "synthetic/bw_0074/R1_blur_0.25.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R1_blur_0.5",
+      "target_region": "R1",
+      "kind": "blur",
+      "strength": 0.5,
+      "patch_xyxy": [
+        112,
+        409,
+        174,
+        471
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3709,
+      "changed_fraction": 0.009251776021711367,
+      "image": "synthetic/bw_0074/R1_blur_0.5.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R1_blur_1.0",
+      "target_region": "R1",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        112,
+        409,
+        174,
+        471
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3800,
+      "changed_fraction": 0.009478767560664113,
+      "image": "synthetic/bw_0074/R1_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R2_color_1.0",
+      "target_region": "R2",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        375,
+        129,
+        437,
+        191
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3844,
+      "changed_fraction": 0.00958852171136654,
+      "image": "synthetic/bw_0074/R2_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R2_blur_1.0",
+      "target_region": "R2",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        375,
+        129,
+        437,
+        191
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3825,
+      "changed_fraction": 0.009541127873563218,
+      "image": "synthetic/bw_0074/R2_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R3_color_1.0",
+      "target_region": "R3",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        642,
+        170,
+        704,
+        232
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3844,
+      "changed_fraction": 0.00958852171136654,
+      "image": "synthetic/bw_0074/R3_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R3_blur_1.0",
+      "target_region": "R3",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        642,
+        170,
+        704,
+        232
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 3761,
+      "changed_fraction": 0.009381485472541508,
+      "image": "synthetic/bw_0074/R3_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R4_color_1.0",
+      "target_region": "R4",
+      "kind": "color",
+      "strength": 1.0,
+      "patch_xyxy": [
+        451,
+        490,
+        513,
+        552
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 1984,
+      "changed_fraction": 0.004948914431673053,
+      "image": "synthetic/bw_0074/R4_color_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_0074",
+      "case": "R4_blur_1.0",
+      "target_region": "R4",
+      "kind": "blur",
+      "strength": 1.0,
+      "patch_xyxy": [
+        451,
+        490,
+        513,
+        552
+      ],
+      "image_size": [
+        768,
+        522
+      ],
+      "geometry_image_size": [
+        1258,
+        855
+      ],
+      "changed_pixels": 1982,
+      "changed_fraction": 0.004943925606641124,
+      "image": "synthetic/bw_0074/R4_blur_1.0.png",
+      "origin": "synthetic_local_RGB_edit_not_Agent_reconstruction",
+      "reviewed": false
+    }
+  ],
+  "skips": [],
+  "metric_source": "e_harness.benchmark_metrics.numerical_errors (unchanged)",
+  "candidate_evidence_promoted_to_reviewed": false,
+  "formal_benchmark": false,
+  "seconds": 29.28682910394855
+}

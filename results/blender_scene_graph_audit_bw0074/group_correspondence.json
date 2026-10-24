@@ -1,0 +1,4098 @@
+{
+  "reference_group_id": "bw_0074_R3_records",
+  "reference_group_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/records_group_verification_bw0074/verification_results.json",
+  "candidate_object_ids": [
+    "VINYL archival sleeve row 1.45 000",
+    "VINYL archival sleeve row 1.45 000.001",
+    "VINYL archival sleeve row 1.45 001",
+    "VINYL archival sleeve row 1.45 001.001",
+    "VINYL archival sleeve row 1.45 002",
+    "VINYL archival sleeve row 1.45 002.001",
+    "VINYL archival sleeve row 1.45 003",
+    "VINYL archival sleeve row 1.45 003.001",
+    "VINYL archival sleeve row 1.45 004",
+    "VINYL archival sleeve row 1.45 004.001",
+    "VINYL archival sleeve row 1.45 005",
+    "VINYL archival sleeve row 1.45 005.001",
+    "VINYL archival sleeve row 1.45 006",
+    "VINYL archival sleeve row 1.45 006.001",
+    "VINYL archival sleeve row 1.45 007",
+    "VINYL archival sleeve row 1.45 007.001",
+    "VINYL archival sleeve row 1.45 008",
+    "VINYL archival sleeve row 1.45 008.001",
+    "VINYL archival sleeve row 1.45 009",
+    "VINYL archival sleeve row 1.45 009.001",
+    "VINYL archival sleeve row 1.45 010",
+    "VINYL archival sleeve row 1.45 010.001",
+    "VINYL archival sleeve row 1.45 011",
+    "VINYL archival sleeve row 1.45 011.001",
+    "VINYL archival sleeve row 1.45 012",
+    "VINYL archival sleeve row 1.45 012.001",
+    "VINYL archival sleeve row 1.45 013",
+    "VINYL archival sleeve row 1.45 013.001",
+    "VINYL archival sleeve row 1.45 014",
+    "VINYL archival sleeve row 1.45 014.001",
+    "VINYL archival sleeve row 1.45 015",
+    "VINYL archival sleeve row 1.45 015.001",
+    "VINYL archival sleeve row 1.45 016",
+    "VINYL archival sleeve row 1.45 016.001",
+    "VINYL archival sleeve row 1.45 017",
+    "VINYL archival sleeve row 1.45 017.001",
+    "VINYL archival sleeve row 1.45 018",
+    "VINYL archival sleeve row 1.45 018.001",
+    "VINYL archival sleeve row 1.45 019",
+    "VINYL archival sleeve row 1.45 019.001",
+    "VINYL archival sleeve row 1.45 020",
+    "VINYL archival sleeve row 1.45 020.001",
+    "VINYL archival sleeve row 1.45 021",
+    "VINYL archival sleeve row 1.90 000",
+    "VINYL archival sleeve row 1.90 001",
+    "VINYL archival sleeve row 1.90 002",
+    "VINYL archival sleeve row 1.90 003",
+    "VINYL archival sleeve row 1.90 004",
+    "VINYL archival sleeve row 1.90 005",
+    "VINYL archival sleeve row 1.90 006",
+    "VINYL archival sleeve row 1.90 007",
+    "VINYL archival sleeve row 1.90 008",
+    "VINYL archival sleeve row 1.90 009",
+    "VINYL archival sleeve row 1.90 010",
+    "VINYL archival sleeve row 1.90 011",
+    "VINYL archival sleeve row 1.90 012",
+    "VINYL archival sleeve row 1.90 013",
+    "VINYL archival sleeve row 1.90 014",
+    "VINYL archival sleeve row 1.90 015",
+    "VINYL archival sleeve row 1.90 016",
+    "VINYL archival sleeve row 1.90 017",
+    "VINYL archival sleeve row 1.90 018",
+    "VINYL archival sleeve row 1.90 019",
+    "VINYL archival sleeve row 1.90 020",
+    "VINYL archival sleeve row 1.90 021",
+    "VINYL archival sleeve row 1.90 022",
+    "VINYL archival sleeve row 1.90 023",
+    "VINYL archival sleeve row 1.90 024",
+    "VINYL archival sleeve row 1.90 025",
+    "VINYL archival sleeve row 1.90 026",
+    "VINYL archival sleeve row 1.90 027",
+    "VINYL archival sleeve row 1.90 028",
+    "VINYL archival sleeve row 1.90 029",
+    "VINYL archival sleeve row 1.90 030",
+    "VINYL archival sleeve row 1.90 031",
+    "VINYL archival sleeve row 1.90 032",
+    "VINYL archival sleeve row 1.90 033",
+    "VINYL archival sleeve row 1.90 034",
+    "VINYL archival sleeve row 1.90 035",
+    "VINYL archival sleeve row 1.90 036",
+    "VINYL archival sleeve row 1.90 037",
+    "VINYL archival sleeve row 1.90 038",
+    "VINYL archival sleeve row 1.90 039",
+    "VINYL archival sleeve row 1.90 040",
+    "VINYL archival sleeve row 1.90 041",
+    "VINYL archival sleeve row 1.90 042",
+    "VINYL archival sleeve row 1.90 043",
+    "VINYL archival sleeve row 1.90 044",
+    "VINYL archival sleeve row 1.90 045",
+    "VINYL archival sleeve row 1.90 046",
+    "VINYL archival sleeve row 1.90 047",
+    "VINYL archival sleeve row 1.90 048",
+    "VINYL archival sleeve row 1.90 049",
+    "VINYL archival sleeve row 1.90 050",
+    "VINYL archival sleeve row 1.90 051",
+    "VINYL archival sleeve row 1.90 052",
+    "VINYL archival sleeve row 1.90 053",
+    "VINYL archival sleeve row 1.90 054",
+    "VINYL archival sleeve row 1.90 055",
+    "VINYL archival sleeve row 1.90 056",
+    "VINYL archival sleeve row 1.90 057",
+    "VINYL archival sleeve row 1.90 058",
+    "VINYL archival sleeve row 1.90 059",
+    "VINYL archival sleeve row 1.90 060",
+    "VINYL archival sleeve row 1.90 061",
+    "VINYL archival sleeve row 1.90 062",
+    "VINYL archival sleeve row 1.90 063",
+    "VINYL archival sleeve row 1.90 064",
+    "VINYL archival sleeve row 1.90 065",
+    "VINYL archival sleeve row 1.90 066",
+    "VINYL archival sleeve row 1.90 067",
+    "VINYL archival sleeve row 1.90 068",
+    "VINYL archival sleeve row 1.90 069",
+    "VINYL archival sleeve row 1.90 070",
+    "VINYL archival sleeve row 1.90 071",
+    "VINYL archival sleeve row 1.90 072",
+    "VINYL archival sleeve row 1.90 073",
+    "VINYL archival sleeve row 1.90 074",
+    "VINYL archival sleeve row 1.90 075",
+    "VINYL archival sleeve row 1.90 076",
+    "VINYL archival sleeve row 1.90 077",
+    "VINYL archival sleeve row 1.90 078",
+    "VINYL archival sleeve row 1.90 079",
+    "VINYL archival sleeve row 1.90 080",
+    "VINYL archival sleeve row 1.90 081",
+    "VINYL archival sleeve row 1.90 082",
+    "VINYL archival sleeve row 1.90 083",
+    "VINYL archival sleeve row 1.90 084",
+    "VINYL archival sleeve row 1.90 085",
+    "VINYL archival sleeve row 1.90 086",
+    "VINYL archival sleeve row 1.90 087",
+    "VINYL archival sleeve row 1.90 088",
+    "VINYL archival sleeve row 1.90 089",
+    "VINYL archival sleeve row 1.90 090",
+    "VINYL archival sleeve row 1.90 091",
+    "VINYL archival sleeve row 1.90 092",
+    "VINYL archival sleeve row 1.90 093",
+    "VINYL archival sleeve row 1.90 094",
+    "VINYL archival sleeve row 1.90 095",
+    "VINYL archival sleeve row 1.90 096",
+    "VINYL archival sleeve row 1.90 097",
+    "VINYL archival sleeve row 1.90 098",
+    "VINYL archival sleeve row 2.36 000",
+    "VINYL archival sleeve row 2.36 001",
+    "VINYL archival sleeve row 2.36 002",
+    "VINYL archival sleeve row 2.36 003",
+    "VINYL archival sleeve row 2.36 004",
+    "VINYL archival sleeve row 2.36 005",
+    "VINYL archival sleeve row 2.36 006",
+    "VINYL archival sleeve row 2.36 007",
+    "VINYL archival sleeve row 2.36 008",
+    "VINYL archival sleeve row 2.36 009",
+    "VINYL archival sleeve row 2.36 010",
+    "VINYL archival sleeve row 2.36 011",
+    "VINYL archival sleeve row 2.36 012",
+    "VINYL archival sleeve row 2.36 013",
+    "VINYL archival sleeve row 2.36 014",
+    "VINYL archival sleeve row 2.36 015",
+    "VINYL archival sleeve row 2.36 016",
+    "VINYL archival sleeve row 2.36 017",
+    "VINYL archival sleeve row 2.36 018",
+    "VINYL archival sleeve row 2.36 019",
+    "VINYL archival sleeve row 2.36 020",
+    "VINYL archival sleeve row 2.36 021",
+    "VINYL archival sleeve row 2.36 022",
+    "VINYL archival sleeve row 2.36 023",
+    "VINYL archival sleeve row 2.36 024",
+    "VINYL archival sleeve row 2.36 025",
+    "VINYL archival sleeve row 2.36 026",
+    "VINYL archival sleeve row 2.36 027",
+    "VINYL archival sleeve row 2.36 028",
+    "VINYL archival sleeve row 2.36 029",
+    "VINYL archival sleeve row 2.36 030",
+    "VINYL archival sleeve row 2.36 031",
+    "VINYL archival sleeve row 2.36 032",
+    "VINYL archival sleeve row 2.36 033",
+    "VINYL archival sleeve row 2.36 034",
+    "VINYL archival sleeve row 2.36 035",
+    "VINYL archival sleeve row 2.36 036",
+    "VINYL archival sleeve row 2.36 037",
+    "VINYL archival sleeve row 2.36 038",
+    "VINYL archival sleeve row 2.36 039",
+    "VINYL archival sleeve row 2.36 040",
+    "VINYL archival sleeve row 2.36 041",
+    "VINYL archival sleeve row 2.36 042",
+    "VINYL archival sleeve row 2.36 043",
+    "VINYL archival sleeve row 2.36 044",
+    "VINYL archival sleeve row 2.36 045",
+    "VINYL archival sleeve row 2.36 046",
+    "VINYL archival sleeve row 2.36 047",
+    "VINYL archival sleeve row 2.36 048",
+    "VINYL archival sleeve row 2.36 049",
+    "VINYL archival sleeve row 2.36 050",
+    "VINYL archival sleeve row 2.36 051",
+    "VINYL archival sleeve row 2.36 052",
+    "VINYL archival sleeve row 2.36 053",
+    "VINYL archival sleeve row 2.36 054",
+    "VINYL archival sleeve row 2.36 055",
+    "VINYL archival sleeve row 2.36 056",
+    "VINYL archival sleeve row 2.36 057",
+    "VINYL archival sleeve row 2.36 058",
+    "VINYL archival sleeve row 2.36 059",
+    "VINYL archival sleeve row 2.36 060",
+    "VINYL archival sleeve row 2.36 061",
+    "VINYL archival sleeve row 2.36 062",
+    "VINYL archival sleeve row 2.36 063",
+    "VINYL archival sleeve row 2.36 064",
+    "VINYL archival sleeve row 2.36 065",
+    "VINYL archival sleeve row 2.36 066",
+    "VINYL archival sleeve row 2.36 067",
+    "VINYL archival sleeve row 2.36 068",
+    "VINYL archival sleeve row 2.36 069",
+    "VINYL archival sleeve row 2.36 070",
+    "VINYL archival sleeve row 2.36 071",
+    "VINYL archival sleeve row 2.36 072",
+    "VINYL archival sleeve row 2.36 073",
+    "VINYL archival sleeve row 2.36 074",
+    "VINYL archival sleeve row 2.36 075",
+    "VINYL archival sleeve row 2.36 076",
+    "VINYL archival sleeve row 2.36 077",
+    "VINYL archival sleeve row 2.36 078",
+    "VINYL archival sleeve row 2.36 079",
+    "VINYL archival sleeve row 2.36 080",
+    "VINYL archival sleeve row 2.36 081",
+    "VINYL archival sleeve row 2.36 082",
+    "VINYL archival sleeve row 2.36 083",
+    "VINYL archival sleeve row 2.36 084",
+    "VINYL archival sleeve row 2.36 085",
+    "VINYL archival sleeve row 2.36 086",
+    "VINYL archival sleeve row 2.36 087",
+    "VINYL archival sleeve row 2.36 088",
+    "VINYL archival sleeve row 2.36 089",
+    "VINYL archival sleeve row 2.36 090",
+    "VINYL archival sleeve row 2.36 091",
+    "VINYL archival sleeve row 2.36 092",
+    "VINYL archival sleeve row 2.36 093",
+    "VINYL archival sleeve row 2.36 094",
+    "VINYL archival sleeve row 2.36 095",
+    "VINYL archival sleeve row 2.36 096",
+    "VINYL archival sleeve row 2.36 097",
+    "VINYL archival sleeve row 2.36 098"
+  ],
+  "candidate_decoration_part_ids": [
+    "LP colored paper narrow title",
+    "LP colored paper narrow title.001",
+    "LP colored paper narrow title.002",
+    "LP colored paper narrow title.003",
+    "LP colored paper narrow title.004",
+    "LP colored paper narrow title.005",
+    "LP colored paper narrow title.006",
+    "LP colored paper narrow title.007",
+    "LP colored paper narrow title.008",
+    "LP colored paper narrow title.009",
+    "LP colored paper narrow title.010",
+    "LP colored paper narrow title.011",
+    "LP colored paper narrow title.012",
+    "LP colored paper narrow title.013",
+    "LP colored paper narrow title.014",
+    "LP colored paper narrow title.015",
+    "LP colored paper narrow title.016",
+    "LP colored paper narrow title.017",
+    "LP colored paper narrow title.018",
+    "LP colored paper narrow title.019",
+    "LP colored paper narrow title.020",
+    "LP colored paper narrow title.021",
+    "LP colored paper narrow title.022",
+    "LP colored paper narrow title.023",
+    "LP colored paper narrow title.024",
+    "LP colored paper narrow title.025",
+    "LP colored paper narrow title.026",
+    "LP colored paper narrow title.027"
+  ],
+  "candidate_collection_ids": [
+    "Collection"
+  ],
+  "contextual_object_ids": [
+    "DJ deck chassis 0",
+    "DJ deck chassis 1",
+    "DJ record turntable platter 0",
+    "DJ record turntable platter 1",
+    "black vinyl spinning platter 0",
+    "black vinyl spinning platter 1",
+    "boombox carrying handle",
+    "boombox circular speaker",
+    "boombox circular speaker.001",
+    "boombox dark display and keys",
+    "boombox dark display and keys.001",
+    "boombox dark display and keys.002",
+    "boombox dark display and keys.003",
+    "boombox dark display and keys.004",
+    "boombox dark display and keys.005",
+    "boombox dark display and keys.006",
+    "boombox dark display and keys.007",
+    "main shelf at desk / turntable height",
+    "record library continuous shelf z1.42",
+    "record library continuous shelf z1.87",
+    "record library continuous shelf z2.33",
+    "silver twin cassette retro boombox",
+    "speaker pale central cone",
+    "speaker pale central cone.001",
+    "vintage speaker left"
+  ],
+  "matching_status": "candidate_intent_and_geometry; semantic correctness unreviewed",
+  "name_clues": "VINYL archival sleeve row / LP title names; vinyl sleeve materials; separate book names/materials",
+  "hierarchy": {
+    "semantic_collection_present": false,
+    "body_parent_links": 0,
+    "title_to_body_links": "unavailable; independent objects, no saved parent/Group IDs"
+  },
+  "geometry": {
+    "candidate_body_objects": 241,
+    "decoration_part_objects": 28,
+    "book_named_body_objects": 136,
+    "unique_body_meshes": 241,
+    "body_base_topology": {
+      "(8, 6)": 241
+    },
+    "positive_3d_extents": true,
+    "local_dimensions_xyz_range": [
+      [
+        0.0080526,
+        0.0188676
+      ],
+      [
+        0.2956737,
+        0.3699093
+      ],
+      [
+        0.1910456,
+        0.4091566
+      ]
+    ],
+    "height_to_depth_ratio_range": [
+      0.5268744,
+      1.3176886
+    ],
+    "rows": [
+      {
+        "name_row_hint": "1.45",
+        "candidate_body_objects": 43,
+        "actual_world_x_center_range": [
+          3.8431568,
+          5.3580403
+        ],
+        "actual_world_y_center_range": [
+          -0.28,
+          -0.28
+        ],
+        "actual_base_aabb_bottom_z_range": [
+          1.4497441,
+          1.4500488
+        ],
+        "tilt_from_world_up_degrees_range": [
+          0.0127254,
+          3.4279369
+        ],
+        "object_center_x_histogram_8_bins": [
+          13,
+          8,
+          0,
+          0,
+          0,
+          0,
+          9,
+          13
+        ],
+        "histogram_scope": "Declared candidate body centers, per-row range; not visible density or GT element count",
+        "reviewed": false
+      },
+      {
+        "name_row_hint": "1.90",
+        "candidate_body_objects": 99,
+        "actual_world_x_center_range": [
+          3.8427198,
+          5.3637481
+        ],
+        "actual_world_y_center_range": [
+          -0.28,
+          -0.28
+        ],
+        "actual_base_aabb_bottom_z_range": [
+          1.8997843,
+          1.9000567
+        ],
+        "tilt_from_world_up_degrees_range": [
+          0.0003782,
+          3.3900776
+        ],
+        "object_center_x_histogram_8_bins": [
+          13,
+          12,
+          12,
+          13,
+          13,
+          12,
+          11,
+          13
+        ],
+        "histogram_scope": "Declared candidate body centers, per-row range; not visible density or GT element count",
+        "reviewed": false
+      },
+      {
+        "name_row_hint": "2.36",
+        "candidate_body_objects": 99,
+        "actual_world_x_center_range": [
+          3.8390634,
+          5.3835831
+        ],
+        "actual_world_y_center_range": [
+          -0.28,
+          -0.28
+        ],
+        "actual_base_aabb_bottom_z_range": [
+          2.3596823,
+          2.3599861
+        ],
+        "tilt_from_world_up_degrees_range": [
+          0.1097329,
+          3.3817723
+        ],
+        "object_center_x_histogram_8_bins": [
+          14,
+          13,
+          12,
+          11,
+          13,
+          12,
+          12,
+          12
+        ],
+        "histogram_scope": "Declared candidate body centers, per-row range; not visible density or GT element count",
+        "reviewed": false
+      }
+    ],
+    "counts_are_mesh_metadata_not_record_gt": true,
+    "scope": "Stored base mesh/transform only; no evaluated modifier, sleeve interior, contact or collision check"
+  },
+  "projections": [
+    {
+      "object_id": "VINYL archival sleeve row 1.45 000",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        832.0692534,
+        371.77259319999996,
+        860.9370825999999,
+        432.11821960000003
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 000.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1026.2225575999998,
+        364.5832468,
+        1063.5225092,
+        430.7357644
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        837.6629504,
+        373.7056108,
+        860.662587,
+        431.90326
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 001.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1028.0767238,
+        370.6106356,
+        1067.6945404,
+        430.9282312
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 002",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        839.9224442,
+        367.6943248,
+        862.9893838,
+        431.91689199999996
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 002.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1031.7025314,
+        364.441474,
+        1069.6781548,
+        430.8589636
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 003",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        840.9860831999999,
+        371.56036,
+        866.954474,
+        432.0415396
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 003.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1033.732566,
+        366.9213052,
+        1073.3252226,
+        430.808014
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 004",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        845.0246405999999,
+        371.4527524,
+        868.3139945999999,
+        431.8077508
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 004.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1036.3507156,
+        369.94513839999996,
+        1076.5484701999999,
+        430.8401344
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 005",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        846.6073304,
+        367.5974524,
+        871.9608108,
+        431.7781012
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 005.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1041.822135,
+        370.0443112,
+        1076.6182892,
+        430.5398044
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 006",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        847.7908567999999,
+        368.291236,
+        875.3043232,
+        432.0329344
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 006.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1041.6658914,
+        365.6634124,
+        1081.3437145999999,
+        430.72511440000005
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 007",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        852.3407912,
+        366.5909848,
+        876.4874722000001,
+        431.7905404
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 007.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1044.4946302,
+        369.30255999999997,
+        1081.9997615999998,
+        430.6714384
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 008",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        853.8485042000001,
+        373.5486724,
+        881.0054534,
+        431.8749736
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 008.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1048.9239224,
+        371.2527028,
+        1082.7213504000001,
+        430.48945119999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 009",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        855.5827830000001,
+        365.7021784,
+        885.4650634,
+        431.9791732
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 009.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1049.9767426,
+        367.3747396,
+        1087.4469016,
+        430.51918600000005
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 010",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        860.2388926,
+        371.58379,
+        885.690497,
+        431.78849560000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 010.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1050.5082476,
+        368.1546604,
+        1091.4951456,
+        430.68524080000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 011",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        861.6107416,
+        370.0244596,
+        889.7100585999999,
+        431.9371696
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 011.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1054.9532648,
+        372.87883,
+        1091.1553598,
+        430.44668079999997
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 012",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        865.6257744,
+        370.2015904,
+        890.6151895999999,
+        431.78832520000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 012.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1054.400248,
+        367.5927664,
+        1097.4259866,
+        430.65627279999995
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 013",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        867.4664799999999,
+        365.0299504,
+        894.580783,
+        431.6686192
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 013.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1060.3626648,
+        371.1628168,
+        1096.63005,
+        430.4922628
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 014",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        870.0055014,
+        370.3546096,
+        898.2598039999999,
+        431.93776599999995
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 014.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1059.9554502,
+        365.935456,
+        1103.364753,
+        430.6716088
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 015",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        873.2969326000001,
+        373.01583159999996,
+        900.802222,
+        431.8540144
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 015.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1063.2665062,
+        366.71461000000005,
+        1104.9406496,
+        430.6784248
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 016",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        874.9045308,
+        372.9706756,
+        904.4248846,
+        431.74589560000004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 016.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1067.9236222,
+        367.776202,
+        1104.7625168,
+        430.3704268
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 017",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        876.9114182,
+        366.3920428,
+        908.4039386,
+        431.88196
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 017.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1066.6861276,
+        364.44616,
+        1109.7555188000001,
+        430.5655348
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 018",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        883.2509834,
+        369.99958119999997,
+        907.1333586,
+        431.5457608
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 018.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1070.1389602,
+        363.5133904,
+        1110.4373547999999,
+        430.5513916
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 019",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        883.1427954,
+        372.63285759999997,
+        912.1910218,
+        431.7736708
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 019.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1072.4642474,
+        367.74433719999996,
+        1114.1402778000001,
+        430.631224
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 020",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        886.7170249999999,
+        371.4971416,
+        914.6187102,
+        431.66819319999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 020.001",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1077.1314274,
+        366.5210356,
+        1115.7832257999999,
+        430.4590348
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.45 021",
+      "row_hint": "1.45",
+      "xyxy_common_pixels": [
+        1079.6657942,
+        363.25208200000003,
+        1119.2615958,
+        430.5112624
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 000",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        834.1935122,
+        276.2259904,
+        860.4504881999999,
+        351.2671684
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 001",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        839.3699306000001,
+        279.5723908,
+        860.6557938,
+        351.1825648
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 002",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        838.8785558000001,
+        274.2859012,
+        868.2201478000001,
+        351.3959908
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 003",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        843.7560734000001,
+        283.0809268,
+        868.9643806,
+        351.3054232
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 004",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        846.6083368,
+        281.7801784,
+        871.049893,
+        351.2132368
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 005",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        848.268142,
+        282.71593,
+        874.615065,
+        351.36131439999997
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 006",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        851.0576312000001,
+        278.8962436,
+        877.5991667999999,
+        351.381592
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 007",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        853.1660392,
+        273.0269008,
+        881.5709244,
+        351.4660252
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 008",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        855.5447913999999,
+        282.52346320000004,
+        884.0095574000001,
+        351.4851952
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 009",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        859.9627615999999,
+        279.6891148,
+        885.190442,
+        351.4005064
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 010",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        863.1568236,
+        282.0396124,
+        886.1149462,
+        351.2871052
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 011",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        861.3850564,
+        276.67039359999995,
+        892.8134188,
+        351.5007016
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 012",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        866.6340614,
+        276.2980696,
+        892.8558134000001,
+        351.3314944
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 013",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        869.4718578,
+        276.0377836,
+        894.90975,
+        351.38269959999997
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 014",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        870.5631728000001,
+        278.55604,
+        899.468742,
+        351.5372524
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 015",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        874.7414940000001,
+        278.414182,
+        899.7595916,
+        351.3553504
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 016",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        878.0668912,
+        280.8595924,
+        901.6869733999999,
+        351.3383104
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 017",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        878.7141322,
+        282.78196,
+        907.536925,
+        351.5334184
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 018",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        881.7060336000001,
+        283.99776399999996,
+        909.9829801999999,
+        351.5696284
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 019",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        883.320425,
+        280.158226,
+        914.0278276,
+        351.5919508
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 020",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        886.4998942,
+        284.24109519999996,
+        916.0713228,
+        351.5802784
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 021",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        889.1366621999999,
+        275.6084608,
+        917.6050763999999,
+        351.4424248
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 022",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        889.2429632,
+        280.1775664,
+        922.2019342000001,
+        351.5897356
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 023",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        893.1436438,
+        276.5756512,
+        924.0428913999999,
+        351.5582968
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 024",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        895.7429234,
+        282.240088,
+        926.418247,
+        351.5270284
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 025",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        898.2830769999999,
+        281.7231796,
+        927.9399238,
+        351.6152104
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 026",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        902.0887786000001,
+        277.0215028,
+        929.678354,
+        351.4776976
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 027",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        904.6556018,
+        277.25248,
+        933.3835413999999,
+        351.5905024
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 028",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        907.0341024,
+        278.6645848,
+        936.482876,
+        351.541342
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 029",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        908.4472138,
+        283.1068276,
+        941.0481580000001,
+        351.6808996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 030",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        911.3056414,
+        276.9177292,
+        944.5833896,
+        351.6365104
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 031",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        914.5256182,
+        281.32291000000004,
+        946.52549,
+        351.7176208
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 032",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        919.2439988,
+        280.17645880000003,
+        946.6954458,
+        351.5364856
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 033",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        920.3359428,
+        276.12571,
+        950.9160358,
+        351.6196408
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 034",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        921.0581606,
+        280.11698920000003,
+        955.5432114,
+        351.7505932
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 035",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        923.7341782,
+        281.279032,
+        959.4864124000001,
+        351.762862
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 036",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        929.3024636,
+        282.4081024,
+        958.6346206,
+        351.690868
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 037",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        929.697853,
+        277.40865160000004,
+        962.2874752,
+        351.705352
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 038",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        932.9090238,
+        277.81488520000005,
+        963.9453934,
+        351.7200064
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 039",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        936.2839862,
+        281.7149152,
+        964.8251127999999,
+        351.63097239999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 040",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        938.6287724,
+        284.190316,
+        967.1375684,
+        351.6075424
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 041",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        938.6319174,
+        275.7436732,
+        972.4543796,
+        351.74053960000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 042",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        941.850133,
+        279.528172,
+        973.2386167999999,
+        351.78228759999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 043",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        944.5197348,
+        278.29907679999997,
+        974.8086008,
+        351.7089304
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 044",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        946.4403234,
+        281.2596916,
+        977.4751834,
+        351.73219
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 045",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        947.8731854,
+        281.9000548,
+        981.818051,
+        351.80887
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 046",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        952.1362958,
+        281.73110319999995,
+        982.6834292000001,
+        351.716002
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 047",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        952.8782642000001,
+        277.2923536,
+        986.9050255999999,
+        351.73934679999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 048",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        953.8315766,
+        284.6200648,
+        991.5652865999999,
+        351.9019084
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 049",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        958.047512,
+        285.5582872,
+        992.0243307999999,
+        351.7603912
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 050",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        960.8133508,
+        285.65217759999996,
+        993.3371796,
+        351.7604764
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 051",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        964.9156888,
+        277.3952752,
+        994.0176317999999,
+        351.732616
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 052",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        964.4780305999999,
+        280.0283812,
+        1000.7228975999999,
+        351.9128992
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 053",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        967.4740834,
+        282.8544652,
+        1003.0343468000001,
+        351.868936
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 054",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        968.985193,
+        278.2701088,
+        1005.8539022000001,
+        351.83869
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 055",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        973.7571644,
+        283.5416032,
+        1004.5062068000001,
+        351.767974
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 056",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        976.5997411999999,
+        278.6747236,
+        1006.464787,
+        351.7638844
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 057",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        978.7219872,
+        284.88409959999996,
+        1009.4327863999999,
+        351.75417159999995
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 058",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        980.1260410000001,
+        282.282262,
+        1012.6722622000001,
+        351.7809244
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 059",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        982.1580884,
+        285.61025920000003,
+        1015.2146802,
+        351.8734516
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 060",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        982.2221206,
+        282.093544,
+        1020.2413965999999,
+        351.9193744
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 061",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        984.5589814,
+        278.6388544,
+        1022.8421858,
+        351.9650416
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 062",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        988.468468,
+        283.6377088,
+        1025.384478,
+        351.9492796
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 063",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        992.1126424,
+        285.84924520000004,
+        1028.4274542,
+        351.9269572
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 064",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        994.735824,
+        283.6673584,
+        1031.5215051999999,
+        351.9438268
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 065",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        998.6806604,
+        279.67693119999996,
+        1032.4741886,
+        351.8718328
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 066",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        998.7824325999999,
+        281.6981308,
+        1036.8531608,
+        352.05382
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 067",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1002.9506898,
+        281.9596948,
+        1038.3806244,
+        352.0029556
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 068",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1005.365295,
+        276.60768640000003,
+        1041.5254986,
+        351.87532600000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 069",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1007.4935794,
+        277.26602679999996,
+        1043.765745,
+        352.05969880000004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 070",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1012.794414,
+        286.41684760000004,
+        1043.93872,
+        351.89705200000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 071",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1013.6492250000001,
+        285.6077884,
+        1050.0099538,
+        352.0100272
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 072",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1017.0975288,
+        283.5329128,
+        1052.0261504,
+        352.0162468
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 073",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1018.7023594,
+        285.0138592,
+        1056.0274709999999,
+        352.1120968
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 074",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1020.1903218,
+        275.8409716,
+        1059.4577854,
+        352.0153096
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 075",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1022.0004580000001,
+        281.2204144,
+        1062.9035732,
+        352.1457508
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 076",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1024.9770118,
+        277.5253756,
+        1065.7594847999999,
+        352.1703736
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 077",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1030.0842402,
+        286.4279236,
+        1065.8664148,
+        352.02195520000004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 078",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1030.8955243999999,
+        279.24616,
+        1071.9184012,
+        352.1691808
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 079",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1035.7263702,
+        286.3817452,
+        1072.37581,
+        352.0417216
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 080",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1039.8557552,
+        286.94534319999997,
+        1073.4028412,
+        352.0202512
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 081",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1040.2386904,
+        277.4388124,
+        1078.9487342,
+        352.1851984
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 082",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1042.1717332,
+        286.32321279999996,
+        1082.3855902,
+        352.1716516
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 083",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1045.7520012,
+        285.84788199999997,
+        1084.0344508,
+        352.16049039999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 084",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1050.6949348,
+        279.53328400000004,
+        1084.1797498,
+        352.06447000000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 085",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1049.946928,
+        278.38683280000004,
+        1090.0195116,
+        352.234018
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 086",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1053.4207692,
+        283.2945232,
+        1091.2471938,
+        352.07137120000004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 087",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1054.9025674,
+        279.5326024,
+        1094.8571506,
+        352.2449236
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 088",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1059.405201,
+        280.8753544,
+        1095.5394898,
+        352.1472844
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 089",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1058.6834864,
+        281.0624536,
+        1100.6117458,
+        352.24909840000004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 090",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1061.1114264,
+        285.1282828,
+        1101.8835838,
+        352.2462868
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 091",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1065.4841086,
+        284.1168736,
+        1102.9380394,
+        352.2167224
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 092",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1068.1840281999998,
+        277.9500976,
+        1107.0233944,
+        352.23487
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 093",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1068.906246,
+        279.440842,
+        1112.0404242,
+        352.2900796
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 094",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1071.743665,
+        283.0119148,
+        1114.7492756000001,
+        352.2729544
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 095",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1075.4884794,
+        279.7365712,
+        1115.1096926,
+        352.2533584
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 096",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1074.4264758,
+        279.7582972,
+        1120.4761948,
+        352.3505716
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 097",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1080.7382392,
+        282.1554844,
+        1118.489058,
+        352.25395480000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 1.90 098",
+      "row_hint": "1.90",
+      "xyxy_common_pixels": [
+        1080.9444254,
+        280.0132156,
+        1123.8675111999999,
+        352.34988999999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 000",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        835.0020288000001,
+        220.2977284,
+        859.885143,
+        271.460158
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 001",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        838.4015221999999,
+        228.12956799999998,
+        861.2103202,
+        270.9724732
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 002",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        840.3887847999999,
+        222.1625008,
+        865.5380918,
+        271.3266496
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 003",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        843.8331888,
+        226.36959159999998,
+        869.0887968,
+        271.1380168
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 004",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        846.5161254,
+        221.90596359999998,
+        872.2738012000001,
+        271.52397279999997
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 005",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        849.2452305999999,
+        226.6627648,
+        873.2825913999999,
+        271.28200480000004
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 006",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        851.2103523999999,
+        224.22323319999998,
+        875.4727694000001,
+        271.20541
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 007",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        851.9500564,
+        223.22307039999998,
+        878.8803139999999,
+        271.728538
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 008",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        855.2828757999999,
+        224.4315472,
+        880.5462834,
+        271.2516736
+      ],
+      "bbox_intersects_fixed_roi": false,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 009",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        858.1065826,
+        222.486346,
+        883.4615726000001,
+        271.6132624
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 010",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        859.1358782,
+        222.95613880000002,
+        887.2720545999999,
+        271.6504948
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 011",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        864.0973044,
+        218.53016920000002,
+        887.5727165999999,
+        271.287628
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 012",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        865.0375336000001,
+        227.16322960000002,
+        891.0011440000001,
+        271.762192
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 013",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        867.6984552,
+        228.52038040000002,
+        893.1752196,
+        271.39523560000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 014",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        871.1600937999999,
+        223.4875312,
+        895.269538,
+        271.526614
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 015",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        873.4861358,
+        227.7102136,
+        898.2647102,
+        271.483162
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 016",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        876.2271920000001,
+        218.0140276,
+        901.927503,
+        271.5920476
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 017",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        878.8111240000001,
+        225.5479228,
+        905.3998346,
+        271.7872408
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 018",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        880.4526882,
+        225.5482636,
+        908.7453598,
+        271.87056640000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 019",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        882.02783,
+        225.2248444,
+        911.0609604,
+        272.1513004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": false,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 020",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        884.6528986,
+        221.1845752,
+        912.2892716,
+        272.0116576
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 021",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        888.3929326,
+        223.18225959999998,
+        913.12559,
+        271.6461496
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 022",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        889.2326476,
+        221.6957752,
+        917.4069414,
+        271.959856
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 023",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        891.3127506,
+        225.4980808,
+        920.894998,
+        272.22746920000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 024",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        895.6931066,
+        221.41887519999997,
+        922.3487428000001,
+        271.98771639999995
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 025",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        896.2636096,
+        221.46863199999999,
+        926.5620363999999,
+        272.2841272
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 026",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        899.459936,
+        222.79477,
+        928.1745407999999,
+        272.2673428
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 027",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        901.9405862,
+        225.3653392,
+        930.8335754,
+        272.1452512
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 028",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        904.1244741999999,
+        228.93112960000002,
+        934.6685884,
+        272.3704348
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 029",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        908.3044308,
+        219.1229908,
+        935.7951274000001,
+        272.0898712
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 030",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        910.7499828,
+        226.02989920000002,
+        939.5815816,
+        272.1363904
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 031",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        912.9138686,
+        227.7567328,
+        943.3788546,
+        272.6302096
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 032",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        916.2029096,
+        227.17524279999998,
+        944.0693708,
+        272.30875
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 033",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        916.8324128,
+        227.770876,
+        947.4525102,
+        272.6723836
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 034",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        920.7499505999999,
+        222.8141956,
+        948.2991441999999,
+        272.22994
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 035",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        921.8587517999999,
+        223.4062504,
+        952.306,
+        272.4594688
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 036",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        924.7232177999999,
+        227.95797520000002,
+        954.5984533999999,
+        272.28191200000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 037",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        929.1479812,
+        228.1686748,
+        955.4814436,
+        272.1525784
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 038",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        928.085726,
+        226.6821904,
+        961.7597442,
+        272.8075108
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 039",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        930.930064,
+        222.189424,
+        964.0963534,
+        272.75196040000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 040",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        933.0398557999999,
+        221.7641056,
+        966.9299984,
+        272.9483464
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 041",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        936.798005,
+        225.2756236,
+        969.0521186000001,
+        272.5848832
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 042",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        940.5389196000001,
+        222.8688088,
+        970.5861238,
+        272.3978692
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 043",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        941.3763702,
+        222.56941600000002,
+        975.670205,
+        273.0426628
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 044",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        945.8090589999999,
+        221.42364639999997,
+        978.0493346,
+        272.8311112
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 045",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        947.8653858,
+        219.6477376,
+        982.6373864,
+        273.176512
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 046",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        950.245396,
+        227.7516208,
+        986.3171622,
+        273.233596
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 047",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        954.1122364,
+        221.41904559999998,
+        988.544577,
+        273.0590212
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 048",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        957.5737492,
+        226.01277399999998,
+        990.9384252,
+        273.09182319999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 049",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        960.2457412,
+        226.96181679999998,
+        994.8135684,
+        273.25523680000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 050",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        963.0171152,
+        227.21366799999998,
+        998.2233774,
+        273.3595216
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 051",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        967.1405876,
+        230.03370280000001,
+        999.3320528,
+        273.0349948
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 052",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        970.7540668,
+        230.0728096,
+        1000.7525863999999,
+        272.77249359999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 053",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        971.732665,
+        222.079516,
+        1005.8395609999999,
+        273.1690144
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 054",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        973.3525916000001,
+        223.6874104,
+        1009.5331748000001,
+        273.3591808
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 055",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        979.4715036,
+        224.28219159999998,
+        1009.2796877999999,
+        272.8547116
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 056",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        980.7062306,
+        220.33018959999998,
+        1013.2009995999999,
+        273.28190440000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 057",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        983.8567658,
+        229.47632439999998,
+        1014.3554662,
+        273.031246
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 058",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        984.1947904,
+        227.96104240000003,
+        1018.191863,
+        273.5227648
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 059",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        987.2477048000001,
+        229.1380804,
+        1019.037239,
+        273.00704920000004
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 060",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        989.6948921999999,
+        226.1748244,
+        1020.692138,
+        273.0688192
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 061",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        989.8112572,
+        227.65466320000002,
+        1026.0001432,
+        273.6400852
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 062",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        994.0539880000001,
+        221.26764519999998,
+        1028.3976396,
+        273.4641472
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 063",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        997.7974186,
+        223.01739759999998,
+        1030.4610112,
+        273.15061119999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 064",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1000.0928911999999,
+        228.9715996,
+        1033.4107695999999,
+        273.3376252
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 065",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1000.3404656,
+        224.30068,
+        1038.2043786,
+        273.7229848
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 066",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1002.8813739999999,
+        230.47708360000001,
+        1040.6978604,
+        273.8931292
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 067",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1007.6369913999999,
+        222.0963856,
+        1041.5580808,
+        273.565024
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 068",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1010.9862906000001,
+        224.66363200000004,
+        1042.3955314,
+        273.31436560000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 069",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1010.4401928,
+        230.4863704,
+        1048.0109918,
+        273.824458
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 070",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1015.787196,
+        227.62450239999998,
+        1047.9604202,
+        273.3936016
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 071",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1017.2174162,
+        224.6973712,
+        1051.5750316,
+        273.7029628
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 072",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1020.3124736,
+        221.2362064,
+        1053.1596084,
+        273.6062608
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 073",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1020.452489,
+        221.53892199999999,
+        1059.154859,
+        273.8438836
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 074",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1023.1335386000001,
+        221.8326916,
+        1062.7878372,
+        274.1728408
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 075",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1028.4775226000002,
+        226.72317159999997,
+        1062.7682124,
+        273.69972520000005
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 076",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1028.6240796,
+        227.1025672,
+        1068.8122734,
+        274.146514
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 077",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1033.0253184,
+        226.30722519999998,
+        1069.0979652,
+        273.8650132
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 078",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1036.0295482000001,
+        224.48777919999998,
+        1070.8777836,
+        273.69180159999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 079",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1036.851148,
+        228.274834,
+        1076.1996268,
+        274.2305212
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 080",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1042.507745,
+        229.7158216,
+        1076.8619638,
+        273.762262
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 081",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1045.6665830000002,
+        231.77416839999998,
+        1079.5028832,
+        273.771634
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 082",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1048.0025632,
+        229.9040284,
+        1082.707764,
+        273.80136880000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 083",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1050.112984,
+        232.2981484,
+        1085.7194160000001,
+        273.9834412
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 084",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1052.6701206,
+        224.4364888,
+        1087.4682876000002,
+        274.0620808
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 085",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1054.0106454000002,
+        223.12287519999998,
+        1090.4059692,
+        274.2430456
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 086",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1054.3208682,
+        229.6927324,
+        1096.262085,
+        274.61622159999996
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 087",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1057.8074152,
+        226.2795352,
+        1099.3709804,
+        274.55198079999997
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 088",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1061.2586124,
+        222.14384200000003,
+        1102.7932435999999,
+        274.5477208
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 089",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1066.3781692,
+        232.668172,
+        1102.739527,
+        274.29246159999997
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 090",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1067.48219,
+        225.657916,
+        1105.654942,
+        274.27175800000003
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 091",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1068.514379,
+        231.0180184,
+        1109.3413851999999,
+        274.6309612
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 092",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1070.658011,
+        227.8095568,
+        1112.7685546,
+        274.8837496
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 093",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1073.4814662,
+        228.71301759999997,
+        1115.2254286,
+        274.8045136
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 094",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1078.8143798,
+        223.8727204,
+        1114.5800746,
+        274.3566172
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 095",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1079.1560525999998,
+        231.0457936,
+        1118.7440546,
+        274.64919399999997
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 096",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1080.598098,
+        232.65028,
+        1122.8078978,
+        274.7988052
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 097",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1085.263391,
+        231.9565816,
+        1123.9661384,
+        274.6648708
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    },
+    {
+      "object_id": "VINYL archival sleeve row 2.36 098",
+      "row_hint": "2.36",
+      "xyxy_common_pixels": [
+        1088.1810704,
+        224.8571212,
+        1126.0286294,
+        274.5673168
+      ],
+      "bbox_intersects_fixed_roi": true,
+      "bbox_fully_inside_fixed_roi": true,
+      "kind": "base_bbox_projection_not_visible_mask",
+      "actual_visibility": "unknown",
+      "reviewed": false
+    }
+  ],
+  "camera_render_consistency": {
+    "camera_name_matches_png": true,
+    "render_size_matches_png": true,
+    "scene_name_matches_png": true,
+    "output_basename_matches": true,
+    "pixel_synchronization_reverified": false,
+    "png_metadata": {
+      "size": [
+        1920,
+        1300
+      ],
+      "camera": "CAMERA - front left photographic angle",
+      "scene": "Scene",
+      "file": "/workspace/exports/final.blend",
+      "frame": "001"
+    }
+  },
+  "projection_summary": {
+    "available_bbox_projections": 241,
+    "intersects_roi": 215,
+    "fully_inside_roi": 184,
+    "actual_visible_mask": "N/A",
+    "actual_visible_object_count": null,
+    "occlusion_test": "not performed",
+    "group_visible_position": null,
+    "group_visible_density": null
+  },
+  "limitations": [
+    "Names/material names are Agent declarations, not category GT",
+    "Thin cuboid body geometry overlaps book-like geometry; visual category remains unconfirmed",
+    "Title parts have no explicit per-sleeve ownership",
+    "No Object-ID/segmentation pass, all object pass_index values are zero",
+    "Stored camera/PNG metadata agree but final scene vs saved pixels not re-render verified",
+    "Historical camera differs from fixed-T0 protocol; no Reference 3D or exact Group-mask GT"
+  ],
+  "reviewed": false,
+  "scorable": false,
+  "usage": "provisional/debug",
+  "formal_energy": null
+}

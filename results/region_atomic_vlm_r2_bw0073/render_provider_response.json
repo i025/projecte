@@ -1,0 +1,5 @@
+{
+  "http_status": 200,
+  "raw_response_text": "{\"id\":\"chatcmpl-Ebhct91cpoBAWYGY4CH6Qgl9IXB8j\",\"object\":\"chat.completion\",\"created\":1792654543,\"model\":\"openai/gpt-6-sol\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"q1\\\":\\\"yes\\\",\\\"q2\\\":4,\\\"q3\\\":\\\"yes\\\"}\"},\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":1576,\"completion_tokens\":35,\"total_tokens\":1611,\"completion_tokens_details\":{\"reasoning_tokens\":10}}}",
+  "reviewed": false
+}

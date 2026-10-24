@@ -1,0 +1,478 @@
+{
+  "image_size": [
+    1024,
+    768
+  ],
+  "anchors": [
+    {
+      "object_id": "O01",
+      "instance_id": "O01",
+      "category": "desk",
+      "bbox": [
+        0,
+        240,
+        610,
+        768
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": true,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "One desk: top, metal legs/base and integrated drawer cabinet.",
+      "uncertainty": [
+        "Desk is cut by left and bottom frame; include all visible structural parts, not only desktop."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Visible lower cross-base/black brace incompletely selected; left leg fragmented; isolated wall/floor pixels near left leg."
+      ],
+      "id": "O01",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O01.png",
+      "position": [
+        305.0,
+        504.0
+      ]
+    },
+    {
+      "object_id": "O02",
+      "instance_id": "O02",
+      "category": "laptop",
+      "bbox": [
+        169,
+        240,
+        387,
+        436
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": "O02",
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Open blue screen connected to keyboard/base.",
+      "uncertainty": [
+        "Screen and keyboard must remain one unit."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Check screen+keyboard remain one object and frame reflections are not excluded."
+      ],
+      "id": "O02",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O02.png",
+      "position": [
+        278.0,
+        338.0
+      ]
+    },
+    {
+      "object_id": "O03",
+      "instance_id": "O03",
+      "category": "desk_lamp",
+      "bbox": [
+        277,
+        126,
+        424,
+        324
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Thin articulated arm, narrow lamp head and round base.",
+      "uncertainty": [
+        "Thin arm can disappear from segmentation."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Review thin lamp arm, joints and head outline."
+      ],
+      "id": "O03",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O03.png",
+      "position": [
+        350.5,
+        225.0
+      ]
+    },
+    {
+      "object_id": "O04",
+      "instance_id": "O04",
+      "category": "chair",
+      "bbox": [
+        516,
+        369,
+        902,
+        768
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": true,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Single upholstered chair with two arms, back, seat and dark legs.",
+      "uncertainty": [
+        "Arms/legs are thin; bottommost leg cut by frame; holes should remain background."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Review arm-to-back joints, leg tips, holes and bottom clipping."
+      ],
+      "id": "O04",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O04.png",
+      "position": [
+        709.0,
+        568.5
+      ]
+    },
+    {
+      "object_id": "O05",
+      "instance_id": "O05",
+      "category": "side_table",
+      "bbox": [
+        825,
+        310,
+        970,
+        441
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Small round top and slender light-colored legs near the window.",
+      "uncertainty": [
+        "Window/floor must not be merged into table mask."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Review slender legs and round-top rim."
+      ],
+      "id": "O05",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O05.png",
+      "position": [
+        897.5,
+        375.5
+      ]
+    },
+    {
+      "object_id": "O06",
+      "instance_id": "O06",
+      "category": "magazine_stack",
+      "bbox": [
+        400,
+        258,
+        535,
+        324
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Several printed magazines/papers under a small optical device.",
+      "uncertainty": [
+        "Grouped unit; count of sheets/books not established; exclude the object on top."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Confirm printed-stack visible pieces exclude camera; sheet count unresolved."
+      ],
+      "id": "O06",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O06.png",
+      "position": [
+        467.5,
+        291.0
+      ]
+    },
+    {
+      "object_id": "O07",
+      "instance_id": "O07",
+      "category": "camera",
+      "bbox": [
+        422,
+        237,
+        490,
+        297
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": false,
+      "group_id": "O07",
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Small reflective body joined to a cylindrical lens facing left.",
+      "uncertainty": [
+        "Candidate camera identity needs human confirmation; small reflective body can be confused with glassware; body+lens form one unit."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Confirm camera identity from original crop; reflective body/lens boundary unclear."
+      ],
+      "id": "O07",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_masks/O07.png",
+      "position": [
+        456.0,
+        267.0
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "patch_0_0",
+      "bbox": [
+        0,
+        0,
+        512,
+        384
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_0_1",
+      "bbox": [
+        512,
+        0,
+        1024,
+        384
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_0",
+      "bbox": [
+        0,
+        384,
+        512,
+        768
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_1",
+      "bbox": [
+        512,
+        384,
+        1024,
+        768
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    }
+  ],
+  "relations": [
+    {
+      "fact_id": "r01",
+      "subject": "O02",
+      "predicate": "left_of",
+      "object": "O03",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Blue-screen laptop is left of lamp base/arm.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r02",
+      "subject": "O04",
+      "predicate": "right_of",
+      "object": "O01",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Chair occupies image-right of desk.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r03",
+      "subject": "O05",
+      "predicate": "right_of",
+      "object": "O04",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Small round table is right of chair.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r04",
+      "subject": "O06",
+      "predicate": "right_of",
+      "object": "O02",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Printed stack lies right of laptop.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r05",
+      "subject": "O02",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Laptop base appears seated on desktop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r06",
+      "subject": "O03",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Round lamp base appears to rest on desktop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r07",
+      "subject": "O06",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Magazine stack appears supported by desktop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r08",
+      "subject": "O07",
+      "predicate": "on",
+      "object": "O06",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Optical device appears to rest on magazines; identity/contact unverified.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    }
+  ],
+  "candidate_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_02_A/candidate_objects.json",
+  "reviewed": false,
+  "global_evidence": {
+    "description": "Complete reference RGB",
+    "reviewed": true,
+    "reliability": 1.0
+  },
+  "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+  "source": "reference RGB and independently supplied annotations only",
+  "mask_archive": "reference_masks.npz"
+}

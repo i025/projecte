@@ -1,0 +1,38 @@
+{
+  "sides": {
+    "reference": {
+      "images": [
+        "request_images/reference_full.png",
+        "request_images/reference_r2.png"
+      ],
+      "image_size": [
+        1024,
+        558
+      ],
+      "same_side_only": true
+    },
+    "render": {
+      "images": [
+        "request_images/render_full.png",
+        "request_images/render_r2.png"
+      ],
+      "image_size": [
+        1024,
+        558
+      ],
+      "same_side_only": true
+    }
+  },
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073",
+  "common_grid": [
+    1536,
+    837
+  ],
+  "roi_polygon": "R2_polygon.png",
+  "roi_box": "R2_box.png",
+  "request_roi": "request_R2_polygon.png",
+  "roi_changed": false,
+  "full_context_preserved": true,
+  "images_black_masked": false,
+  "reviewed": false
+}

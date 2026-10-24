@@ -1,0 +1,379 @@
+{
+  "source": "codex_subagent",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "original_protocol_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/frozen_protocol.json",
+  "model_requested": "gpt-6-sol",
+  "original_api_model": "openai/gpt-6-sol",
+  "api_equivalence_established": false,
+  "actual_ofox_api_requests": 0,
+  "independent_subagent_sessions": 3,
+  "total_subagent_session_seconds": 21.63,
+  "subagent_usage": {
+    "input_tokens": 131394,
+    "cached_input_tokens": 111488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 301,
+    "reasoning_output_tokens": 81,
+    "total_tokens": 131695
+  },
+  "usage_scope": "Three complete child sessions only; cached input already included in input; parent excluded",
+  "ofox_cost_usd": 0,
+  "subagent_cost_usd": null,
+  "actual_currency_total": null,
+  "conditions": {
+    "A": {
+      "construction_expected": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "prediction": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "horizontal_stack": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          },
+          "upright_books": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          }
+        },
+        "schema_errors": []
+      },
+      "comparison": [
+        {
+          "field": "horizontal_stack",
+          "construction_expected": "yes",
+          "prediction": "yes",
+          "status": "satisfied",
+          "expected_source": "construction_expected",
+          "reviewed": false,
+          "value": null,
+          "score": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "construction_expected": "yes",
+          "prediction": "yes",
+          "status": "satisfied",
+          "expected_source": "construction_expected",
+          "reviewed": false,
+          "value": null,
+          "score": null,
+          "scorable": false
+        }
+      ],
+      "outcome": "MATCH construction_expected",
+      "raw_response": "raw_responses/sample_01.json",
+      "duration_seconds": 7.073,
+      "tokens": {
+        "input_tokens": 43789,
+        "cached_input_tokens": 29056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_output_tokens": 9,
+        "total_tokens": 43870
+      },
+      "reviewed": false
+    },
+    "B": {
+      "construction_expected": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "prediction": {
+        "horizontal_stack": "no",
+        "upright_books": "yes"
+      },
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "horizontal_stack": {
+            "value": "no",
+            "raw_value": "no",
+            "validation_status": "valid",
+            "error": null
+          },
+          "upright_books": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          }
+        },
+        "schema_errors": []
+      },
+      "comparison": [
+        {
+          "field": "horizontal_stack",
+          "construction_expected": "no",
+          "prediction": "no",
+          "status": "satisfied",
+          "expected_source": "construction_expected",
+          "reviewed": false,
+          "value": null,
+          "score": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "construction_expected": "yes",
+          "prediction": "yes",
+          "status": "satisfied",
+          "expected_source": "construction_expected",
+          "reviewed": false,
+          "value": null,
+          "score": null,
+          "scorable": false
+        }
+      ],
+      "outcome": "MATCH construction_expected",
+      "raw_response": "raw_responses/sample_02.json",
+      "duration_seconds": 6.795,
+      "tokens": {
+        "input_tokens": 43790,
+        "cached_input_tokens": 41216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 95,
+        "reasoning_output_tokens": 21,
+        "total_tokens": 43885
+      },
+      "reviewed": false
+    },
+    "C": {
+      "construction_expected": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "prediction": {
+        "horizontal_stack": "yes",
+        "upright_books": "yes"
+      },
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "horizontal_stack": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          },
+          "upright_books": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          }
+        },
+        "schema_errors": []
+      },
+      "comparison": [
+        {
+          "field": "horizontal_stack",
+          "construction_expected": "yes",
+          "prediction": "yes",
+          "status": "satisfied",
+          "expected_source": "construction_expected",
+          "reviewed": false,
+          "value": null,
+          "score": null,
+          "scorable": false
+        },
+        {
+          "field": "upright_books",
+          "construction_expected": "yes",
+          "prediction": "yes",
+          "status": "satisfied",
+          "expected_source": "construction_expected",
+          "reviewed": false,
+          "value": null,
+          "score": null,
+          "scorable": false
+        }
+      ],
+      "outcome": "MATCH construction_expected",
+      "raw_response": "raw_responses/sample_03.json",
+      "duration_seconds": 7.762,
+      "tokens": {
+        "input_tokens": 43815,
+        "cached_input_tokens": 41216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 125,
+        "reasoning_output_tokens": 51,
+        "total_tokens": 43940
+      },
+      "reviewed": false
+    }
+  },
+  "pairs": {
+    "A_B": [
+      {
+        "field": "horizontal_stack",
+        "first_answer": "yes",
+        "second_answer": "no",
+        "status": "candidate_violated",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "first_answer": "yes",
+        "second_answer": "yes",
+        "status": "satisfied",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ],
+    "A_C": [
+      {
+        "field": "horizontal_stack",
+        "first_answer": "yes",
+        "second_answer": "yes",
+        "status": "satisfied",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "first_answer": "yes",
+        "second_answer": "yes",
+        "status": "satisfied",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ]
+  },
+  "energy_records": {
+    "A": [
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_horizontal_stack",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "Codex subagent compared with unreviewed construction_expected; no calibrated score mapping",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_horizontal_stack",
+        "owner_id": "G_books",
+        "verification_status": "satisfied",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      },
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_upright_books",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "Codex subagent compared with unreviewed construction_expected; no calibrated score mapping",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_upright_books",
+        "owner_id": "G_books",
+        "verification_status": "satisfied",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      }
+    ],
+    "B": [
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_horizontal_stack",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "Codex subagent compared with unreviewed construction_expected; no calibrated score mapping",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_horizontal_stack",
+        "owner_id": "G_books",
+        "verification_status": "satisfied",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      },
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_upright_books",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "Codex subagent compared with unreviewed construction_expected; no calibrated score mapping",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_upright_books",
+        "owner_id": "G_books",
+        "verification_status": "satisfied",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      }
+    ],
+    "C": [
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_horizontal_stack",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "Codex subagent compared with unreviewed construction_expected; no calibrated score mapping",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_horizontal_stack",
+        "owner_id": "G_books",
+        "verification_status": "satisfied",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      },
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_upright_books",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "Codex subagent compared with unreviewed construction_expected; no calibrated score mapping",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_upright_books",
+        "owner_id": "G_books",
+        "verification_status": "satisfied",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      }
+    ]
+  },
+  "formal_statistical_energy": null,
+  "scorable": false,
+  "unknown_fields": 0,
+  "unavailable_fields": 0,
+  "construction_mismatch_fields": 0
+}

@@ -1,0 +1,177 @@
+{
+  "native_image_size": [
+    7952,
+    4333
+  ],
+  "pairwise_overlap": [
+    {
+      "method": "B_direct_box",
+      "left": "R1",
+      "right": "R2",
+      "overlap_pixels": 386155,
+      "overlap_fraction_of_image": 0.011207186576648908
+    },
+    {
+      "method": "B_direct_box",
+      "left": "R1",
+      "right": "R3",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "B_direct_box",
+      "left": "R1",
+      "right": "R4",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "B_direct_box",
+      "left": "R2",
+      "right": "R3",
+      "overlap_pixels": 2211690,
+      "overlap_fraction_of_image": 0.06418879071799827
+    },
+    {
+      "method": "B_direct_box",
+      "left": "R2",
+      "right": "R4",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "B_direct_box",
+      "left": "R3",
+      "right": "R4",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "C_direct_polygon",
+      "left": "R1",
+      "right": "R2",
+      "overlap_pixels": 19397,
+      "overlap_fraction_of_image": 0.0005629495876714243
+    },
+    {
+      "method": "C_direct_polygon",
+      "left": "R1",
+      "right": "R3",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "C_direct_polygon",
+      "left": "R1",
+      "right": "R4",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "C_direct_polygon",
+      "left": "R2",
+      "right": "R3",
+      "overlap_pixels": 448676,
+      "overlap_fraction_of_image": 0.013021702799302159
+    },
+    {
+      "method": "C_direct_polygon",
+      "left": "R2",
+      "right": "R4",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    },
+    {
+      "method": "C_direct_polygon",
+      "left": "R3",
+      "right": "R4",
+      "overlap_pixels": 0,
+      "overlap_fraction_of_image": 0.0
+    }
+  ],
+  "independent_fields": [
+    {
+      "id": "R1",
+      "predicted_bbox": [
+        0,
+        50,
+        350,
+        1000
+      ],
+      "polygon_envelope_for_audit_only": [
+        0.0,
+        55.0,
+        346.0,
+        1000.0
+      ],
+      "equal": false,
+      "box_mask_generated_from": "actual bbox field, never the polygon envelope"
+    },
+    {
+      "id": "R2",
+      "predicted_bbox": [
+        335,
+        108,
+        687,
+        857
+      ],
+      "polygon_envelope_for_audit_only": [
+        333.0,
+        110.0,
+        680.0,
+        855.0
+      ],
+      "equal": false,
+      "box_mask_generated_from": "actual bbox field, never the polygon envelope"
+    },
+    {
+      "id": "R3",
+      "predicted_bbox": [
+        355,
+        280,
+        615,
+        527
+      ],
+      "polygon_envelope_for_audit_only": [
+        360.0,
+        286.0,
+        610.0,
+        510.0
+      ],
+      "equal": false,
+      "box_mask_generated_from": "actual bbox field, never the polygon envelope"
+    },
+    {
+      "id": "R4",
+      "predicted_bbox": [
+        712,
+        0,
+        1000,
+        910
+      ],
+      "polygon_envelope_for_audit_only": [
+        721.0,
+        0.0,
+        1000.0,
+        891.0
+      ],
+      "equal": false,
+      "box_mask_generated_from": "actual bbox field, never the polygon envelope"
+    }
+  ],
+  "polygon_components": [
+    {
+      "id": "R1",
+      "component_overlap_pixels": 1166144,
+      "disjoint": false
+    },
+    {
+      "id": "R2",
+      "component_overlap_pixels": 0,
+      "disjoint": true
+    }
+  ],
+  "coordinates_modified": false,
+  "conflict_resolution": false,
+  "reviewed": false
+}

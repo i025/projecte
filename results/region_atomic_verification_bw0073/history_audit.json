@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_0073/vlm_plan.json",
+      "top_fields": [
+        "regions",
+        "reviewed",
+        "structure_valid",
+        "semantic_review",
+        "render_used"
+      ]
+    },
+    {
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+      "top_fields": [
+        "regions",
+        "reviewed",
+        "structure_valid",
+        "semantic_review",
+        "render_used"
+      ]
+    },
+    {
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/direct_regions.json",
+      "top_fields": [
+        "regions",
+        "coordinate_system",
+        "reviewed"
+      ]
+    },
+    {
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/metrics.json",
+      "top_fields": [
+        "rows",
+        "formal_observation_energy",
+        "formal_benchmark_score",
+        "semantic_evidence_reviewed",
+        "region_losses_summed",
+        "reviewed"
+      ]
+    }
+  ],
+  "reusable_atomic_verification_responses_found": false,
+  "reason": "Inspected planning, coordinate and image-metric artifacts; none supplies typed atomic Render observations",
+  "reviewed": false
+}

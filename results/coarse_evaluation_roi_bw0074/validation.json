@@ -1,0 +1,48 @@
+{
+  "checks": {
+    "A_rectangles": {
+      "native_shape": true,
+      "loader": true,
+      "all_unreviewed": true,
+      "polygon_raster_matches": true,
+      "allocation_shares_sum_one_on_union": true
+    },
+    "B1_coarse_notches": {
+      "native_shape": true,
+      "loader": true,
+      "all_unreviewed": true,
+      "polygon_raster_matches": true,
+      "allocation_shares_sum_one_on_union": true
+    },
+    "B2_edge_polygons": {
+      "native_shape": true,
+      "loader": true,
+      "all_unreviewed": true,
+      "polygon_raster_matches": true,
+      "allocation_shares_sum_one_on_union": true
+    },
+    "C_cached_SAM3": {
+      "native_shape": true,
+      "loader": true,
+      "all_unreviewed": true,
+      "polygon_raster_matches": null,
+      "allocation_shares_sum_one_on_union": true,
+      "polygon_check_reason": "Not applicable: historical SAM3 mask, not a polygon ROI"
+    }
+  },
+  "order_invariance": true,
+  "new_api_calls": 0,
+  "new_model_inferences": 0,
+  "five_energy_formulas_modified": false,
+  "polygon_rounds": 2,
+  "total_seconds": 14.251650090096518,
+  "html_targets_checked": 44,
+  "historical_control_pixels_unchanged": true,
+  "unit_tests": {
+    "passed": 108,
+    "failed": 0,
+    "seconds": 1.862,
+    "log": "tests.log"
+  },
+  "manual_review_complete": false
+}

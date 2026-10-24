@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "raw_response_text": "{\"id\": \"chatcmpl-EblkoVQqArsDCQRBwwcASoUCk1Oay\", \"object\": \"chat.completion\", \"created\": 1792670410, \"model\": \"openai/gpt-6-sol\", \"choices\": [{\"index\": 0, \"message\": {\"role\": \"assistant\", \"content\": \"{\\\"present\\\":\\\"yes\\\",\\\"shelf_sections\\\":\\\"3+\\\",\\\"arrangement\\\":\\\"upright\\\"}\"}, \"finish_reason\": \"stop\"}], \"usage\": {\"prompt_tokens\": 1928, \"completion_tokens\": 75, \"total_tokens\": 2003, \"completion_tokens_details\": {\"reasoning_tokens\": 48}}}",
+  "redaction": "Credentials and exact image echoes removed",
+  "reviewed": false
+}

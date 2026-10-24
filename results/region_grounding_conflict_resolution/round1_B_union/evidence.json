@@ -1,0 +1,136 @@
+{
+  "image_size": [
+    1258,
+    855
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "name": "工作区",
+      "location": "左侧中下部",
+      "content": "书桌、显示器、台灯和透明椅子",
+      "mask": "R1.png",
+      "bbox": [
+        99,
+        382,
+        385,
+        855
+      ],
+      "reviewed": false,
+      "mask_reviewed": false,
+      "reliability": 0.0,
+      "localization_status": "candidate_partial_support",
+      "source": "Historical SAM3 candidates; name/content association",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "R2",
+      "name": "展示书架",
+      "location": "左侧及中部上方",
+      "content": "书籍、地球仪、装饰摆件、飞机图片和小型水族箱",
+      "mask": "R2.png",
+      "bbox": [
+        96,
+        86,
+        1258,
+        730
+      ],
+      "reviewed": false,
+      "mask_reviewed": false,
+      "reliability": 0.0,
+      "localization_status": "candidate_partial_support",
+      "source": "Historical SAM3 candidates; name/content association",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "R3",
+      "name": "唱片与音响区",
+      "location": "右侧",
+      "content": "书架上的大量唱片、收录机和下方的唱盘设备",
+      "mask": "R3.png",
+      "bbox": [
+        97,
+        86,
+        1258,
+        730
+      ],
+      "reviewed": false,
+      "mask_reviewed": false,
+      "reliability": 0.0,
+      "localization_status": "candidate_partial_support",
+      "source": "Historical SAM3 candidates; name/content association",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    },
+    {
+      "id": "R4",
+      "name": "沙发区",
+      "location": "前景下方",
+      "content": "蓝色沙发、靠垫和彩色抱枕",
+      "mask": "R4.png",
+      "bbox": [
+        384,
+        559,
+        1258,
+        855
+      ],
+      "reviewed": false,
+      "mask_reviewed": false,
+      "reliability": 0.0,
+      "localization_status": "candidate_partial_support",
+      "source": "Historical SAM3 candidates; name/content association",
+      "metrics": [
+        "semantic",
+        "spatial",
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "inventory_complete": false,
+      "semantic_extent_verified": false
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "inventory_complete": false,
+  "source": "Historical SAM3 candidates; name/content association",
+  "formal_score": false,
+  "statistics": {
+    "region_union_fraction": 0.6451947303340492,
+    "overlap_fraction": 0.3218103552468878,
+    "unassigned_fraction": 0.3548052696659508,
+    "per_region_pixels": [
+      51766,
+      410648,
+      392667,
+      186280
+    ],
+    "pixel_count": 1075590,
+    "dense_global_coverage": 1.0,
+    "reviewed_region_coverage": 0.0
+  }
+}

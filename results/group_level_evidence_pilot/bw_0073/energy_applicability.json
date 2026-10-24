@@ -1,0 +1,212 @@
+{
+  "groups": [
+    {
+      "group_id": "bw_0073_R2_chairs",
+      "region_id": "R2",
+      "match_state": "Unknown",
+      "reason": "No independently reviewed Group correspondence verifier",
+      "semantic": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0073_R2_chairs_frame"
+        ],
+        "reason": "Mask-free VQA is possible in principle; no real response for these properties"
+      },
+      "spatial_discrete": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0073_R2_chairs_below_counter"
+        ],
+        "reason": "Projected discrete relations need a real verifier and visible endpoints"
+      },
+      "spatial_continuous": {
+        "value": null,
+        "reason": "No reliable independent two-side Group localization; Region centre not used"
+      },
+      "statistical": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0073_R2_chairs_one_row"
+        ],
+        "reason": "Qualitative questions/exact count unknown; no validated density, area or distribution measure"
+      },
+      "group_mask_required_for_semantic": false,
+      "quantitative_area_density_available": false,
+      "reviewed": false,
+      "score": null,
+      "scorable": false
+    }
+  ],
+  "energy_records": [
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "bw_0073_R2_chairs_frame",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_frame",
+      "owner_id": "bw_0073_R2_chairs",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "bw_0073_R2_chairs_below_counter",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+      "owner_id": "bw_0073_R2_chairs",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "bw_0073_R2_chairs_one_row",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+      "owner_id": "bw_0073_R2_chairs",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    }
+  ],
+  "aggregate_new_atomic_only": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 1,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:bw_0073_R2_chairs_frame"
+      ],
+      "unavailable_metrics": [
+        "region:bw_0073_R2_chairs_frame"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 1,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:bw_0073_R2_chairs_below_counter"
+      ],
+      "unavailable_metrics": [
+        "region:bw_0073_R2_chairs_below_counter"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "appearance": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "statistical": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 1,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:bw_0073_R2_chairs_one_row"
+      ],
+      "unavailable_metrics": [
+        "region:bw_0073_R2_chairs_one_row"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "perceptual": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    }
+  },
+  "observation_energy": null,
+  "note": "N/A records for the new question plan only; not a replacement Benchmark coverage or score"
+}

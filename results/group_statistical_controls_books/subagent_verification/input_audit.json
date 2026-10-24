@@ -1,0 +1,10 @@
+{
+  "frozen_prompt_forwarded_verbatim_by_coordinator": true,
+  "one_view_image_call_each": true,
+  "context_inheritance": "none",
+  "sequential": true,
+  "expected_labels_not_provided": true,
+  "reviewed": false,
+  "forwarding_audit": "Exact spawn task text is coordinator-side; child session stores parent message encrypted, not exported or decrypted.",
+  "limits": "Frozen System text was within agent task. Platform system/developer context remains. Temperature/max_tokens not controllable."
+}

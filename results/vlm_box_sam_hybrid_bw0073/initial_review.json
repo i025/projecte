@@ -1,0 +1,41 @@
+{
+  "task_id": "bw_0073",
+  "review_type": "assistant_static_reference_rgb_inspection",
+  "human_reviewed": false,
+  "pixel_ground_truth_available": false,
+  "regions": [
+    {
+      "id": "R1",
+      "sam": "较大连续面保留窗、台面和下柜，但仍带入墙面/窗景，部分壁灯和搁板摆物形成缺口；未退化成只有水槽，也不能视为功能区完整。",
+      "hybrid": "保留全部原始 Box，uncertain；不把 SAM 缺口直接当作背景。",
+      "uncertain": "水槽细部、搁板摆物及壁灯是否完整需要人工检查；SAM 保留的墙面并非自动正确。",
+      "automatic_diagnosis": "partial_or_uncertain",
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "sam": "明显不完整：吊灯、摆物和椅子局部仍在，但岛台主体/台面大面积被删除，椅子也不完整；不是只分出岛台，反而遗漏了岛台主体。",
+      "hybrid": "保留 Box 中岛台、四椅和吊灯，uncertain；没有采纳这个严重碎片化 Mask。",
+      "uncertain": "136 个工作网格连通块包含小噪点，不代表 136 个物体；无像素 GT 不计算召回率。",
+      "automatic_diagnosis": "content_failure",
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "sam": "后柜和石材背板主要可见部分保留，前景吊灯和大块岛台混入减少；台面、器皿及绿植的完整性仍不确定。",
+      "hybrid": "保持原始 Box，uncertain；本轮没有独立依据批准删除所有剩余像素。",
+      "uncertain": "前后景可见内容的归属和台面/器皿边缘需要人工确认，不推断遮挡后结构。",
+      "automatic_diagnosis": "promising_boundary_but_completeness_uncertain",
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "sam": "整体柜体候选较好：浅木色柜、深色高柜与右侧抽屉柜大致连成一组，减少顶部/底部的背景；没有只留下深色柜。",
+      "hybrid": "仍保留原始 Box，uncertain；没有按 Region 名称或视觉结果给 R4 单独放行。",
+      "uncertain": "抽屉底部、台面小缺口、接触边界以及原始 Box 自身是否截掉极端边缘，仍需人工确认。",
+      "automatic_diagnosis": "promising_group_mask_pending_review",
+      "reviewed": false
+    }
+  ],
+  "reviewed": false
+}

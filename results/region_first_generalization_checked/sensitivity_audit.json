@@ -1,0 +1,191 @@
+{
+  "baseline_all_zero": true,
+  "case_count": 40,
+  "effective_edits": 40,
+  "no_effect_case_ids": [],
+  "non_target_roi_appearance_max": 0.0,
+  "dense_global_L1_accounting_max_abs_error": 4.336808689942018e-19,
+  "sweeps": [
+    {
+      "task_id": "bw_0073",
+      "kind": "color",
+      "target_region": "p07",
+      "values": [
+        {
+          "strength": 0.25,
+          "appearance": 0.0012439173678984363,
+          "spatial": 4.069010416666674e-05,
+          "statistical": 5.966796757172764e-05
+        },
+        {
+          "strength": 0.5,
+          "appearance": 0.0024862672995974036,
+          "spatial": 8.451021634615398e-05,
+          "statistical": 0.00012291967231922837
+        },
+        {
+          "strength": 1.0,
+          "appearance": 0.004972430103448177,
+          "spatial": 0.00017528044871794875,
+          "statistical": 0.00025347704984984333
+        }
+      ],
+      "nondecreasing": {
+        "B2_appearance": true,
+        "B2_spatial": true,
+        "B2_statistical": true
+      }
+    },
+    {
+      "task_id": "bw_0073",
+      "kind": "blur",
+      "target_region": "p07",
+      "values": [
+        {
+          "strength": 0.25,
+          "appearance": 0.0002566415537263575,
+          "spatial": 0.0002096514801040155,
+          "statistical": 0.0003012508783809822
+        },
+        {
+          "strength": 0.5,
+          "appearance": 0.0005199708352371153,
+          "spatial": 0.00035983280796444126,
+          "statistical": 0.0005203531698407451
+        },
+        {
+          "strength": 1.0,
+          "appearance": 0.0010398197587698273,
+          "spatial": 0.000541373272708031,
+          "statistical": 0.0007850062669892944
+        }
+      ],
+      "nondecreasing": {
+        "B2_appearance": true,
+        "B2_spatial": true,
+        "B2_statistical": true
+      }
+    },
+    {
+      "task_id": "bw_0074",
+      "kind": "color",
+      "target_region": "R1",
+      "values": [
+        {
+          "strength": 0.25,
+          "appearance": 0.0019102168635240027,
+          "spatial": 3.7484217171717196e-05,
+          "statistical": 7.538624890029068e-05
+        },
+        {
+          "strength": 0.5,
+          "appearance": 0.0038212105870066293,
+          "spatial": 6.996042152292116e-05,
+          "statistical": 0.00014214312971166303
+        },
+        {
+          "strength": 1.0,
+          "appearance": 0.00764244161769638,
+          "spatial": 0.0001000084984459984,
+          "statistical": 0.00021737108262258713
+        }
+      ],
+      "nondecreasing": {
+        "B2_appearance": true,
+        "B2_spatial": true,
+        "B2_statistical": true
+      }
+    },
+    {
+      "task_id": "bw_0074",
+      "kind": "blur",
+      "target_region": "R1",
+      "values": [
+        {
+          "strength": 0.25,
+          "appearance": 0.0005572743582140113,
+          "spatial": 0.000292513476107226,
+          "statistical": 0.0005741724303667049
+        },
+        {
+          "strength": 0.5,
+          "appearance": 0.0011293294993250007,
+          "spatial": 0.0005198089670745921,
+          "statistical": 0.0010400819691164563
+        },
+        {
+          "strength": 1.0,
+          "appearance": 0.0022571461660989968,
+          "spatial": 0.001254696908993784,
+          "statistical": 0.002360332915633268
+        }
+      ],
+      "nondecreasing": {
+        "B2_appearance": true,
+        "B2_spatial": true,
+        "B2_statistical": true
+      }
+    },
+    {
+      "task_id": "bw_9064",
+      "kind": "color",
+      "target_region": "wall_back",
+      "values": [
+        {
+          "strength": 0.25,
+          "appearance": 0.000666271067448679,
+          "spatial": 0.0,
+          "statistical": 2.6065977048715376e-07
+        },
+        {
+          "strength": 0.5,
+          "appearance": 0.0013302291224076667,
+          "spatial": 0.0,
+          "statistical": 5.830547497738897e-07
+        },
+        {
+          "strength": 1.0,
+          "appearance": 0.0026593634737792867,
+          "spatial": 0.0,
+          "statistical": 9.15052983762794e-07
+        }
+      ],
+      "nondecreasing": {
+        "B2_appearance": true,
+        "B2_spatial": true,
+        "B2_statistical": true
+      }
+    },
+    {
+      "task_id": "bw_9064",
+      "kind": "blur",
+      "target_region": "wall_back",
+      "values": [
+        {
+          "strength": 0.25,
+          "appearance": 1.6956604016953642e-06,
+          "spatial": 0.0,
+          "statistical": 6.173520879958826e-07
+        },
+        {
+          "strength": 0.5,
+          "appearance": 1.7837359662494437e-05,
+          "spatial": 0.0,
+          "statistical": 4.252869939527202e-06
+        },
+        {
+          "strength": 1.0,
+          "appearance": 3.6547243609356396e-05,
+          "spatial": 0.0,
+          "statistical": 7.832140156374461e-06
+        }
+      ],
+      "nondecreasing": {
+        "B2_appearance": true,
+        "B2_spatial": true,
+        "B2_statistical": true
+      }
+    }
+  ],
+  "interpretation": "Amplification is conditional normalization by ROI area, not proof of semantic ROI quality"
+}

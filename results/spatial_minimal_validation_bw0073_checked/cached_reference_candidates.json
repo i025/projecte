@@ -1,0 +1,140 @@
+[
+  {
+    "id": "bw_0073_sam2_prompted_m004",
+    "category": "pendant light",
+    "source_json": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0073/sam2_prompted/candidates.json",
+    "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0073/sam2_prompted/bw_0073_sam2_prompted_m004.png",
+    "image_size": [
+      7952,
+      4333
+    ],
+    "bbox": [
+      3536,
+      487,
+      4463,
+      1512
+    ],
+    "candidate_mask_pixels": 421715,
+    "reviewed": false,
+    "mask_reviewed": false,
+    "reliability": 0.0,
+    "whole_island": false,
+    "valid_visible_area": false,
+    "limitation": "Suspension/holes unreviewed; candidate area is not validated object area"
+  },
+  {
+    "id": "bw_0073_sam3_visual_m004",
+    "category": "pendant light",
+    "source_json": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0073/sam3_visual/candidates.json",
+    "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0073/sam3_visual/bw_0073_sam3_visual_m004.png",
+    "image_size": [
+      7952,
+      4333
+    ],
+    "bbox": [
+      3541,
+      487,
+      4463,
+      1517
+    ],
+    "candidate_mask_pixels": 492463,
+    "reviewed": false,
+    "mask_reviewed": false,
+    "reliability": 0.0,
+    "whole_island": false,
+    "valid_visible_area": false,
+    "limitation": "Suspension/holes unreviewed; candidate area is not validated object area"
+  },
+  {
+    "id": "bw_0073_sam3_text_m029",
+    "category": "pendant light",
+    "source_json": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0073/sam3_text/candidates.json",
+    "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0073/sam3_text/bw_0073_sam3_text_m029.png",
+    "image_size": [
+      7952,
+      4333
+    ],
+    "bbox": [
+      3541,
+      487,
+      4463,
+      1517
+    ],
+    "candidate_mask_pixels": 441816,
+    "reviewed": false,
+    "mask_reviewed": false,
+    "reliability": 0.0,
+    "whole_island": false,
+    "valid_visible_area": false,
+    "limitation": "Suspension/holes unreviewed; candidate area is not validated object area"
+  },
+  {
+    "id": "bw_0073_sam2_prompted_m010",
+    "category": "island countertop",
+    "source_json": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0073/sam2_prompted/candidates.json",
+    "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0073/sam2_prompted/bw_0073_sam2_prompted_m010.png",
+    "image_size": [
+      7952,
+      4333
+    ],
+    "bbox": [
+      2723,
+      2159,
+      5338,
+      2480
+    ],
+    "candidate_mask_pixels": 626201,
+    "reviewed": false,
+    "mask_reviewed": false,
+    "reliability": 0.0,
+    "whole_island": false,
+    "valid_visible_area": false,
+    "limitation": "Only countertop, not whole island"
+  },
+  {
+    "id": "bw_0073_sam3_visual_m010",
+    "category": "island countertop",
+    "source_json": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0073/sam3_visual/candidates.json",
+    "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0073/sam3_visual/bw_0073_sam3_visual_m010.png",
+    "image_size": [
+      7952,
+      4333
+    ],
+    "bbox": [
+      2728,
+      2133,
+      5338,
+      2475
+    ],
+    "candidate_mask_pixels": 617399,
+    "reviewed": false,
+    "mask_reviewed": false,
+    "reliability": 0.0,
+    "whole_island": false,
+    "valid_visible_area": false,
+    "limitation": "Only countertop, not whole island"
+  },
+  {
+    "id": "bw_0073_sam3_text_m028",
+    "category": "countertop",
+    "source_json": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0073/sam3_text/candidates.json",
+    "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0073/sam3_text/bw_0073_sam3_text_m028.png",
+    "image_size": [
+      7952,
+      4333
+    ],
+    "bbox": [
+      2739,
+      2164,
+      5338,
+      2480
+    ],
+    "candidate_mask_pixels": 596390,
+    "reviewed": false,
+    "mask_reviewed": false,
+    "reliability": 0.0,
+    "whole_island": false,
+    "valid_visible_area": false,
+    "limitation": "Only countertop, not whole island"
+  }
+]

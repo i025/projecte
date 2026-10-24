@@ -1,0 +1,11 @@
+{
+  "source": "runs/scene_064_environment_normalized_replay/summary.json",
+  "recorded_date_utc": "2026-10-09",
+  "raw_artifacts_removed_from_runs": true,
+  "success": true,
+  "unattended_runtime": "blocked",
+  "cases": [
+    {"name": "default", "success": true, "cleanup_complete": true, "seconds": 0.610},
+    {"name": "world_initialized", "success": true, "cleanup_complete": true, "seconds": 0.613}
+  ]
+}

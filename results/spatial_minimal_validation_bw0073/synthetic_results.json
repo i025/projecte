@@ -1,0 +1,151 @@
+{
+  "baseline": {
+    "image_size": [
+      200,
+      120
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "island known visible synthetic shape",
+      "pendant": "pendant known visible synthetic shape"
+    },
+    "delta_x": 0.0,
+    "delta_y": -0.5416666666666667,
+    "bbox_area_ratio_proxy": 0.13333333333333333,
+    "visible_mask_area_ratio": 0.1,
+    "normalized_centers": {
+      "island": [
+        0.5,
+        0.7083333333333334
+      ],
+      "pendant": [
+        0.5,
+        0.16666666666666666
+      ]
+    },
+    "status": "valid_geometry",
+    "reason": "Known geometry; no Energy aggregation",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": false
+  },
+  "controls": [
+    {
+      "case": "positive_unchanged",
+      "delta_x_change": 0.0,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0,
+      "passed": true
+    },
+    {
+      "case": "negative_horizontal_20px",
+      "delta_x_change": 0.09999999999999998,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0,
+      "passed": true
+    },
+    {
+      "case": "negative_vertical_12px",
+      "delta_x_change": 0.0,
+      "delta_y_change": 0.10000000000000003,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0,
+      "passed": true
+    },
+    {
+      "case": "negative_visible_area_x4",
+      "delta_x_change": 0.0,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.4,
+      "visible_mask_area_ratio_change": 0.30000000000000004,
+      "passed": true
+    },
+    {
+      "case": "invariance_common_translation",
+      "delta_x_change": 0.0,
+      "delta_y_change": 1.1102230246251565e-16,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0,
+      "passed": true
+    },
+    {
+      "case": "unlocatable_unknown",
+      "delta_x_change": null,
+      "delta_y_change": null,
+      "bbox_area_ratio_proxy_change": null,
+      "visible_mask_area_ratio_change": null,
+      "passed": true
+    },
+    {
+      "case": "unlocatable_confirmed_missing",
+      "delta_x_change": null,
+      "delta_y_change": null,
+      "bbox_area_ratio_proxy_change": null,
+      "visible_mask_area_ratio_change": null,
+      "passed": true
+    },
+    {
+      "case": "unlocatable_semantic_mismatch",
+      "delta_x_change": null,
+      "delta_y_change": null,
+      "bbox_area_ratio_proxy_change": null,
+      "visible_mask_area_ratio_change": null,
+      "passed": true
+    }
+  ],
+  "horizontal_strength": [
+    {
+      "lamp_horizontal_pixels": 0,
+      "direction": "render_minus_reference",
+      "score": null,
+      "participates_in_energy": false,
+      "delta_x_change": 0.0,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0
+    },
+    {
+      "lamp_horizontal_pixels": 5,
+      "direction": "render_minus_reference",
+      "score": null,
+      "participates_in_energy": false,
+      "delta_x_change": 0.025000000000000022,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0
+    },
+    {
+      "lamp_horizontal_pixels": 10,
+      "direction": "render_minus_reference",
+      "score": null,
+      "participates_in_energy": false,
+      "delta_x_change": 0.050000000000000044,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0
+    },
+    {
+      "lamp_horizontal_pixels": 20,
+      "direction": "render_minus_reference",
+      "score": null,
+      "participates_in_energy": false,
+      "delta_x_change": 0.09999999999999998,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0
+    },
+    {
+      "lamp_horizontal_pixels": 40,
+      "direction": "render_minus_reference",
+      "score": null,
+      "participates_in_energy": false,
+      "delta_x_change": 0.19999999999999996,
+      "delta_y_change": 0.0,
+      "bbox_area_ratio_proxy_change": 0.0,
+      "visible_mask_area_ratio_change": 0.0
+    }
+  ],
+  "assertion": "All expected values checked numerically; this does not validate object localization"
+}

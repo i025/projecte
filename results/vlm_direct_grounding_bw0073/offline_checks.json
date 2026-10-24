@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "cpu_tests": 125,
+  "schema_coordinate_and_visual_tests_passed": true,
+  "plan_bytes_unchanged": true,
+  "reference_only": true,
+  "maximum_paid_requests": 1,
+  "independent_box_and_polygon_fields": true,
+  "native_pixel_center_rasterization_tested": true,
+  "automatic_retries": false,
+  "reviewed": false
+}

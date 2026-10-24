@@ -1,0 +1,3 @@
+task_id,paid_requests,http_status,status,prompt_tokens,completion_tokens,total_tokens,latency_seconds,actual_cost,automatic_retries,reviewed
+bw_0074,1,200,unavailable,1422,699,2121,22.46658700192347,,0,False
+bw_9064,1,200,coordinates_valid,1170,887,2057,17.073505672160536,,0,False

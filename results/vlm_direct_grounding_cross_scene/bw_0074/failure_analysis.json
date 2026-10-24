@@ -1,0 +1,52 @@
+{
+  "failure_type": "Schema / Coordinate Contract Failure",
+  "original_error": "Expected 3–8 vertices",
+  "offending_path": "regions[0].polygons[0]",
+  "actual_vertex_count": 10,
+  "allowed_vertex_count": [
+    3,
+    8
+  ],
+  "partial_result_salvage": false,
+  "coordinate_repairs": false,
+  "direct_masks_generated": false,
+  "individual_diagnostics": [
+    {
+      "id": "R1",
+      "polygon_vertex_counts": [
+        10
+      ],
+      "isolated_geometry_error": "Expected 3–8 vertices",
+      "accepted": false,
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "polygon_vertex_counts": [
+        6
+      ],
+      "isolated_geometry_error": null,
+      "accepted": false,
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "polygon_vertex_counts": [
+        4
+      ],
+      "isolated_geometry_error": null,
+      "accepted": false,
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "polygon_vertex_counts": [
+        8
+      ],
+      "isolated_geometry_error": null,
+      "accepted": false,
+      "reviewed": false
+    }
+  ],
+  "reviewed": false
+}

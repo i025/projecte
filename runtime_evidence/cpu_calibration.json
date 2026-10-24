@@ -1,0 +1,28 @@
+{
+  "source": "runs/manual_cpu_calibration/summary.json",
+  "recorded_date_utc": "2026-10-09",
+  "raw_artifacts_removed_from_runs": true,
+  "success": true,
+  "unattended_runtime": "blocked",
+  "task_quota": false,
+  "cases": [
+    {
+      "success": true, "seconds": 1.590, "peak_rss_bytes": 274182144,
+      "cleanup_complete": true, "sampled_peak_processes": 2, "sampled_peak_threads": 11,
+      "sampled_max_cpu_seconds": 1.41, "all_sampled_threads_within_affinity": true,
+      "render_seconds": 0.6324069190013688
+    },
+    {
+      "success": true, "seconds": 1.302, "peak_rss_bytes": 273313792,
+      "cleanup_complete": true, "sampled_peak_processes": 4, "sampled_peak_threads": 11,
+      "sampled_max_cpu_seconds": 1.44, "all_sampled_threads_within_affinity": true,
+      "render_seconds": 0.651783224006067
+    },
+    {
+      "success": true, "seconds": 1.419, "peak_rss_bytes": 271114240,
+      "cleanup_complete": true, "sampled_peak_processes": 2, "sampled_peak_threads": 11,
+      "sampled_max_cpu_seconds": 1.41, "all_sampled_threads_within_affinity": true,
+      "render_seconds": 0.5458307829976548
+    }
+  ]
+}

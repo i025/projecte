@@ -1,0 +1,21 @@
+{
+  "unit_tests_exit_code": 0,
+  "synthetic_controls_passed": 8,
+  "formal_source_unchanged": {
+    "benchmark_evidence.py": true,
+    "benchmark_metrics.py": true,
+    "benchmark_config.py": true
+  },
+  "original_reference_evidence_unchanged": true,
+  "fixed_roi_unchanged": true,
+  "candidate_review_states_preserved": true,
+  "paid_requests": 0,
+  "gpu_model_runs": 0,
+  "blender_runs": 0,
+  "reviewed": false,
+  "unit_tests_count": 94,
+  "spatial_unit_tests_count": 19,
+  "unit_test_elapsed_seconds": 1.999,
+  "previous_runner_import_failure_preserved": "results/spatial_minimal_validation_bw0073/tests.txt",
+  "html_links_checked": true
+}

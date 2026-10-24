@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-22T07:56:29.417807+00:00",
+  "frozen_file": "reference_evidence_frozen.json",
+  "byte_count": 23549,
+  "atomic_ids": [
+    "R2_SEM_01",
+    "R2_SEM_02",
+    "R2_SPA_01",
+    "R2_SPA_02",
+    "R2_STA_01",
+    "R2_APP_01",
+    "R2_APP_02",
+    "R3_SEM_01",
+    "R3_SEM_02",
+    "R3_SPA_01",
+    "R3_SPA_02",
+    "R3_STA_01",
+    "R3_APP_01",
+    "R3_SEM_03"
+  ],
+  "read_only": true,
+  "phase2_render_read_allowed_after_this_receipt": true,
+  "root_prior_render_knowledge_disclosed": true,
+  "strict_blind_test": false,
+  "no_content_hash": true,
+  "reviewed": false
+}

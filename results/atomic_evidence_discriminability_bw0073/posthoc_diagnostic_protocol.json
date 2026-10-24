@@ -1,0 +1,78 @@
+{
+  "proposals": [
+    {
+      "id": "P1",
+      "region_id": "R2",
+      "target": [
+        "D05"
+      ],
+      "question": "在两侧均确认岛台和灯体对应后，灯体相对岛台的归一化投影纵向间距是多少？",
+      "method": "匹配后的图像位置/间距描述，先固定参照与可见部分；不从Mask中心推断对象中心",
+      "energy": "spatial",
+      "source": "post_render_diagnostic_only",
+      "reference_independent": false,
+      "reviewed": false,
+      "executed": false,
+      "expected": null,
+      "not_added_to_frozen_reference": true,
+      "not_formal_energy": true
+    },
+    {
+      "id": "P2",
+      "region_id": "R2",
+      "target": [
+        "D03"
+      ],
+      "question": "椅背是否具有清楚可辨的外框？无法看清时unknown。",
+      "method": "单一可见构造属性；尺寸比例另由有对应的轮廓/尺度诊断处理，不与框架问题捆绑",
+      "energy": "semantic",
+      "source": "post_render_diagnostic_only",
+      "reference_independent": false,
+      "reviewed": false,
+      "executed": false,
+      "expected": null,
+      "not_added_to_frozen_reference": true,
+      "not_formal_energy": true
+    },
+    {
+      "id": "P3",
+      "region_id": "R3",
+      "target": [
+        "D08",
+        "D09"
+      ],
+      "question": "确认柜组/盆栽对应且可见后，其投影范围占区域的比例是多少？",
+      "method": "候选连续面积/尺度诊断；柜组、盆栽分别报告；相机不一致时不归因为真实三维尺寸错误",
+      "energy": "spatial",
+      "source": "post_render_diagnostic_only",
+      "reference_independent": false,
+      "reviewed": false,
+      "executed": false,
+      "expected": null,
+      "not_added_to_frozen_reference": true,
+      "not_formal_energy": true
+    },
+    {
+      "id": "P4",
+      "region_id": "R2",
+      "target": [
+        "D03"
+      ],
+      "question": "在可数单元一致时，四把椅子的归一化中心间距与投影尺度分布是否保留？",
+      "method": "对象级分布描述，需要独立对应和可见单元；不使用梯度或颜色代理冒充密度；间距与尺度分别输出",
+      "energy": "statistical",
+      "source": "post_render_diagnostic_only",
+      "reference_independent": false,
+      "reviewed": false,
+      "executed": false,
+      "expected": null,
+      "not_added_to_frozen_reference": true,
+      "not_formal_energy": true
+    }
+  ],
+  "not_reference_side_evidence": true,
+  "continuous_reuse": [
+    "颜色、脉纹强度/细节优先复用现有Appearance/Perceptual；没有新增正式公式或分数"
+  ],
+  "reviewed": false
+}

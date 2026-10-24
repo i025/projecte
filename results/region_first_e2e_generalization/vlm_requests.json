@@ -1,0 +1,66 @@
+[
+  {
+    "request_number": 1,
+    "purpose": "bw_9064:region_first_e2e",
+    "provider": "api.ofox.ai",
+    "model": "openai/gpt-6-sol",
+    "image_count": 1,
+    "max_output_tokens": 1500,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 300
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_tokens",
+    "request_limit": 2,
+    "prompt": "将图片划分为 2–5 个重要的粗粒度评价区域，使不同局部能够得到充分评价。背景不必强制单独划分，不拆分物体部件。\n\n只输出：\n{\"regions\":[{\"id\":\"R1\",\"name\":\"简短区域名称\",\"location\":\"大致位置\",\"content\":\"主要可见内容\"}]}\n\n不要输出 Anchor、Relation、Mask、bbox、置信概率或解释。",
+    "outcome": "answered",
+    "http_status": 200,
+    "returned_model": "openai/gpt-6-sol",
+    "usage": {
+      "prompt_tokens": 857,
+      "completion_tokens": 143,
+      "total_tokens": 1000,
+      "completion_tokens_details": {
+        "reasoning_tokens": 45
+      }
+    },
+    "actual_cost": null,
+    "finish_reason": "stop",
+    "latency_seconds": 7.514766885899007
+  },
+  {
+    "request_number": 2,
+    "purpose": "bw_0073:region_first_e2e",
+    "provider": "api.ofox.ai",
+    "model": "openai/gpt-6-sol",
+    "image_count": 1,
+    "max_output_tokens": 1500,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 300
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_tokens",
+    "request_limit": 2,
+    "prompt": "将图片划分为 2–5 个重要的粗粒度评价区域，使不同局部能够得到充分评价。背景不必强制单独划分，不拆分物体部件。\n\n只输出：\n{\"regions\":[{\"id\":\"R1\",\"name\":\"简短区域名称\",\"location\":\"大致位置\",\"content\":\"主要可见内容\"}]}\n\n不要输出 Anchor、Relation、Mask、bbox、置信概率或解释。",
+    "outcome": "answered",
+    "http_status": 200,
+    "returned_model": "openai/gpt-6-sol",
+    "usage": {
+      "prompt_tokens": 857,
+      "completion_tokens": 286,
+      "total_tokens": 1143,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "actual_cost": null,
+    "finish_reason": "stop",
+    "latency_seconds": 9.490352320950478
+  }
+]

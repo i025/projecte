@@ -1,0 +1,38 @@
+{
+  "frozen_source_text_unchanged": true,
+  "parameters_unchanged": true,
+  "automatic_evidence_reviewed": false,
+  "formal_scoring_executed": false,
+  "geometry_controls": 2,
+  "valid_new_scene_vlm_plans": 0,
+  "paid_calls": 0,
+  "model_inferences": 0,
+  "gpu_used": false,
+  "synthetic_cases": 40,
+  "measurement_rows": 576,
+  "skipped_patches": [],
+  "geometry_reused_from": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization",
+  "synthetic_patch_bounds_checked": true,
+  "effective_synthetic_edits": 40,
+  "cpu_thread_limit": 2,
+  "seconds": 39.11196934711188,
+  "exclusion_probe_cases": 2,
+  "unit_tests": {
+    "passed": 113,
+    "failed": 0,
+    "log": "tests_final.log"
+  },
+  "initial_perturbation_attempt": {
+    "directory": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_generalization",
+    "status": "invalid fixture for edge-touching patches; excluded from final sensitivity analysis",
+    "correction": "Pad EDT with outside-image zeros and reject out-of-bounds edits; B2 geometry unchanged"
+  },
+  "html_local_targets_checked": 71,
+  "candidate_regions_checked": 28,
+  "unchanged_cached_geometry": true,
+  "original_bw0074_masks_equal": true,
+  "all_saved_edits_match_pixel_counts": true,
+  "all_edits_in_bounds_and_local": true,
+  "all_cached_text_and_visual_hints_reproduce_identical_B2": true,
+  "shared_vocabulary_source_snapshot": true
+}

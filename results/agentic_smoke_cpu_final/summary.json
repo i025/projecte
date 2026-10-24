@@ -1,0 +1,206 @@
+{
+  "success": true,
+  "checks": {
+    "baseline_fixed_T0": true,
+    "baseline_intrinsics": true,
+    "baseline_data_passes": true,
+    "baseline_reprojection": true,
+    "baseline_vlm_unavailable": true,
+    "deleted_fixed_T0": true,
+    "deleted_intrinsics": true,
+    "deleted_data_passes": true,
+    "deleted_reprojection": true,
+    "deleted_vlm_unavailable": true,
+    "moved_fixed_T0": true,
+    "moved_intrinsics": true,
+    "moved_data_passes": true,
+    "moved_reprojection": true,
+    "moved_vlm_unavailable": true,
+    "color_fixed_T0": true,
+    "color_intrinsics": true,
+    "color_data_passes": true,
+    "color_reprojection": true,
+    "color_vlm_unavailable": true,
+    "distribution_fixed_T0": true,
+    "distribution_intrinsics": true,
+    "distribution_data_passes": true,
+    "distribution_reprojection": true,
+    "distribution_vlm_unavailable": true,
+    "penetration_fixed_T0": true,
+    "penetration_intrinsics": true,
+    "penetration_data_passes": true,
+    "penetration_reprojection": true,
+    "penetration_vlm_unavailable": true,
+    "billboard_fixed_T0": true,
+    "billboard_intrinsics": true,
+    "billboard_data_passes": true,
+    "billboard_reprojection": true,
+    "billboard_vlm_unavailable": true,
+    "ortho_fixed_T0": true,
+    "ortho_intrinsics": true,
+    "ortho_data_passes": true,
+    "ortho_reprojection": true,
+    "ortho_projection": true,
+    "identity_zero": true,
+    "deletion_semantic": true,
+    "movement_spatial": true,
+    "color_appearance": true,
+    "distribution_statistics": true,
+    "penetration_detected": true,
+    "billboard_detected": true,
+    "vlm_unavailable_safe": true,
+    "five_energies_numeric": true,
+    "dino_responds_to_deletion": true
+  },
+  "variants": {
+    "baseline": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.0,
+        "appearance": 0.0,
+        "statistical": 0.0,
+        "perceptual": 2.7755575615628914e-17
+      },
+      "observation_energy": 5.551115123125783e-18,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/baseline/report.html",
+      "peak_rss_bytes": 289226752,
+      "render_seconds": 0.906
+    },
+    "deleted": {
+      "energies": {
+        "semantic": 0.20596402255470442,
+        "spatial": 0.18622611508155273,
+        "appearance": 0.04475027776666782,
+        "statistical": 0.0026005437594025264,
+        "perceptual": 0.06374658945234804
+      },
+      "observation_energy": 0.1006575097229351,
+      "structural_energy": null,
+      "structural_energies": {
+        "penetration": null,
+        "support": null,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/deleted/report.html",
+      "peak_rss_bytes": 287461376,
+      "render_seconds": 0.76
+    },
+    "moved": {
+      "energies": {
+        "semantic": 0.012309772987400464,
+        "spatial": 0.045682872811832226,
+        "appearance": 0.053874752083244284,
+        "statistical": 0.0030979039737171,
+        "perceptual": 0.07559171479941229
+      },
+      "observation_energy": 0.03811140333112127,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/moved/report.html",
+      "peak_rss_bytes": 289792000,
+      "render_seconds": 0.763
+    },
+    "color": {
+      "energies": {
+        "semantic": 0.02303415793151105,
+        "spatial": 0.004627554134700851,
+        "appearance": 0.04280464999093253,
+        "statistical": 0.004661135938975076,
+        "perceptual": 0.040805484178127266
+      },
+      "observation_energy": 0.023186596434849355,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/color/report.html",
+      "peak_rss_bytes": 289726464,
+      "render_seconds": 0.764
+    },
+    "distribution": {
+      "energies": {
+        "semantic": 0.012536611680398074,
+        "spatial": 0.008180874415243813,
+        "appearance": 0.004229388296462353,
+        "statistical": 0.0017016094143963104,
+        "perceptual": 0.027559884253533583
+      },
+      "observation_energy": 0.010841673612006827,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/distribution/report.html",
+      "peak_rss_bytes": 287289344,
+      "render_seconds": 0.723
+    },
+    "penetration": {
+      "energies": {
+        "semantic": 0.04435234935007856,
+        "spatial": 0.0517149921040064,
+        "appearance": 0.07733376317795022,
+        "statistical": 0.0008861598761047707,
+        "perceptual": 0.08968383737386115
+      },
+      "observation_energy": 0.052794220376400226,
+      "structural_energy": 0.5,
+      "structural_energies": {
+        "penetration": 1.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/penetration/report.html",
+      "peak_rss_bytes": 287059968,
+      "render_seconds": 0.787
+    },
+    "billboard": {
+      "energies": {
+        "semantic": 0.02742617965917578,
+        "spatial": 0.02635320398879357,
+        "appearance": 0.05243793033848583,
+        "statistical": 0.001742758244013425,
+        "perceptual": 0.05451418402295948
+      },
+      "observation_energy": 0.032494851250685616,
+      "structural_energy": 0.6666666666666666,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 1.0,
+        "degeneration": 1.0
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_smoke_cpu_final/billboard/report.html",
+      "peak_rss_bytes": 289230848,
+      "render_seconds": 0.788
+    }
+  },
+  "api_calls": 0,
+  "gpu_used": false,
+  "scope": "Synthetic pipeline/perturbation checks; not calibrated reconstruction accuracy",
+  "skipped": [
+    "GPU unavailable/not requested",
+    "Live VLM: no authorized verified model",
+    "Real Agent replay: human approval required"
+  ],
+  "seconds": 21.415
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "bw_9064",
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/references/image_01.png",
+  "provenance": {
+    "input_json": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/input.json",
+    "task_json": "/home/xymo/projects/BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/task.json",
+    "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/scene_064-harbor-generation/scene_064/task__LY4dtPw/config.json",
+    "run_ids": [
+      "scene_064-harbor-generation/scene_064/task__LY4dtPw"
+    ],
+    "metadata_correspondence_verified": true
+  },
+  "original_staged_bytes_equal": true,
+  "native_image_size": [
+    1672,
+    941
+  ],
+  "image_size": [
+    1536,
+    864
+  ],
+  "request_image_size": [
+    1024,
+    576
+  ],
+  "render_used": false,
+  "reviewed": false,
+  "plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_9064/vlm_plan.json",
+  "historical_evidence": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_9064/B2_frozen/evidence.json"
+}

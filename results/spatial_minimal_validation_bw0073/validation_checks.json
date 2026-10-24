@@ -1,0 +1,16 @@
+{
+  "unit_tests_exit_code": 1,
+  "synthetic_controls_passed": 8,
+  "formal_source_unchanged": {
+    "benchmark_evidence.py": true,
+    "benchmark_metrics.py": true,
+    "benchmark_config.py": true
+  },
+  "original_reference_evidence_unchanged": true,
+  "fixed_roi_unchanged": true,
+  "candidate_review_states_preserved": true,
+  "paid_requests": 0,
+  "gpu_model_runs": 0,
+  "blender_runs": 0,
+  "reviewed": false
+}

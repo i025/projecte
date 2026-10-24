@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "atomic_candidates": 9,
+  "reference_unknown": 1,
+  "real_verified": 0,
+  "core_modules_byte_identical": true,
+  "frozen_masks_and_pair_identical": true,
+  "real_metrics_reused": true,
+  "all_real_atomic_scores_unavailable": true,
+  "all_review_flags_false": true,
+  "mocks_separated": true,
+  "html_and_question_inputs_exist": true,
+  "formal_score": null,
+  "reviewed": false,
+  "cpu_tests": {
+    "run": 159,
+    "passed": 159,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_pipeline_replay": {
+    "passed": true,
+    "temporary_output": true,
+    "new_model_inference": false,
+    "actual_statuses_and_energy_records_identical": true
+  },
+  "dino_ablation_actual_comparisons": 16,
+  "dino_actual_identity_checks": 4
+}

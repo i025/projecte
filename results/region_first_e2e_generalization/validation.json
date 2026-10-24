@@ -1,0 +1,36 @@
+{
+  "paid_requests": 2,
+  "per_image_requests": 1,
+  "automatic_retries": 0,
+  "extra_verification_calls": 0,
+  "frozen_source_and_vocabulary_unchanged": true,
+  "frozen_parameters_unchanged": true,
+  "prompt_matches_successful_pilot": true,
+  "saved_raw_responses_parse": true,
+  "evidence_rows_checked": 12,
+  "all_candidates_unreviewed": true,
+  "native_and_working_coordinates_explicit": true,
+  "standalone_region_figures": 6,
+  "svg_embedded_pngs_checked": 6,
+  "html_local_targets_checked": 44,
+  "credential_values_absent": true,
+  "credentials_scanned_files": 50,
+  "tests": {
+    "passed": 118,
+    "failed": 0,
+    "log": "tests_final.log"
+  },
+  "offline_replay_passed": true,
+  "usage": {
+    "prompt_tokens": 1714,
+    "completion_tokens": 429,
+    "total_tokens": 2143
+  },
+  "provider_cost": "unknown",
+  "formal_scores_generated": false,
+  "sam3_runs": 0,
+  "dino_runs": 0,
+  "blender_runs": 0,
+  "perturbation_cases": 0,
+  "reviewed": false
+}

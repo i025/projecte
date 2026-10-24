@@ -1,0 +1,14 @@
+{
+  "region_union_fraction": 0.599470921694544,
+  "overlap_fraction": 0.013625205346475508,
+  "unassigned_fraction": 0.400529078305456,
+  "per_region_pixels": [
+    272830,
+    182080,
+    68301,
+    265005
+  ],
+  "pixel_count": 1285632,
+  "dense_global_coverage": 1.0,
+  "reviewed_region_coverage": 0.0
+}

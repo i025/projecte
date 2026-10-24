@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cpu_tests": 118,
+  "maximum_requests": 2,
+  "per_image_limit": 1,
+  "image_count_per_call": 1,
+  "prompt_identical_to_successful_bw0074": true,
+  "no_scene_names_in_prompt": true,
+  "retries": false,
+  "json_mode": false,
+  "frozen_sources_unchanged": true,
+  "reviewed": false
+}

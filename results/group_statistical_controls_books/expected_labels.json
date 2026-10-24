@@ -1,0 +1,20 @@
+{
+  "expected_source": "construction_expected",
+  "reviewed": false,
+  "review_status": "unreviewed",
+  "samples": {
+    "A": {
+      "horizontal_stack": "yes",
+      "upright_books": "yes"
+    },
+    "B": {
+      "horizontal_stack": "no",
+      "upright_books": "yes"
+    },
+    "C": {
+      "horizontal_stack": "yes",
+      "upright_books": "yes"
+    }
+  },
+  "not_pixel_gt": true
+}

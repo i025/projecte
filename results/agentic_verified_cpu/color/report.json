@@ -1,0 +1,2696 @@
+{
+  "scene_validity": {
+    "status": "valid",
+    "reason": "Trusted exporter completed",
+    "camera_contract": "fixed T0, Agent intrinsics",
+    "metadata": {
+      "render_seconds": 0.0748101930366829,
+      "image_size": [
+        128,
+        128
+      ],
+      "samples": 8,
+      "threads": 2,
+      "device": "CPU",
+      "camera_unchanged": true,
+      "camera": {
+        "name": "BenchmarkCamera",
+        "type": "PERSP",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.0,
+          -6.0,
+          2.0
+        ],
+        "rotation_euler_world": [
+          1.570796251296997,
+          -0.0,
+          0.0
+        ],
+        "rotation_units": "radians",
+        "lens_mm": 42.0,
+        "sensor_fit": "HORIZONTAL",
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "shift_x": 0.05000000074505806,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0,
+        "dof_enabled": false
+      },
+      "intrinsics_pixels": [
+        [
+          149.3333282470703,
+          0.0,
+          57.599998474121094
+        ],
+        [
+          0.0,
+          149.3333282470703,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_matrix_blender": [
+        [
+          2.3333332538604736,
+          0.0,
+          0.10000002384185791,
+          0.0
+        ],
+        [
+          0.0,
+          2.3333332538604736,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0001999139785767,
+          -0.20002000033855438
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+      "depth_convention": "camera_z",
+      "depth_computation": "negative Blender-camera z of same-render world Position pass",
+      "depth_units": "scene coordinate units; no metric ground truth asserted",
+      "valid_depth_pixel_count": 4711,
+      "raw_z_vs_world_distance_max_error": 1.0099410326662266,
+      "raw_z_vs_world_distance_mean_error": 0.4126552590378331,
+      "position_reprojection_mean_error_pixels": 0.0007472892996729637,
+      "position_reprojection_max_error_pixels": 0.0007827246308145429,
+      "semantic_ids": {
+        "1": "floor",
+        "2": "other",
+        "3": "repeat_0",
+        "4": "repeat_1",
+        "5": "repeat_2",
+        "6": "repeat_3",
+        "7": "repeat_4",
+        "8": "repeat_5",
+        "9": "anchor"
+      },
+      "visible_pixel_counts_by_type": {
+        "floor": {
+          "CURVE": 0,
+          "MESH": 2476
+        },
+        "other": {
+          "CURVE": 0,
+          "MESH": 879
+        },
+        "repeat_0": {
+          "CURVE": 0,
+          "MESH": 25
+        },
+        "repeat_1": {
+          "CURVE": 0,
+          "MESH": 0
+        },
+        "repeat_2": {
+          "CURVE": 0,
+          "MESH": 35
+        },
+        "repeat_3": {
+          "CURVE": 0,
+          "MESH": 40
+        },
+        "repeat_4": {
+          "CURVE": 0,
+          "MESH": 0
+        },
+        "repeat_5": {
+          "CURVE": 0,
+          "MESH": 26
+        },
+        "anchor": {
+          "CURVE": 0,
+          "MESH": 1230
+        }
+      },
+      "components": [
+        {
+          "component_id": 1,
+          "name": "anchor",
+          "type": "MESH",
+          "semantic_id": 9,
+          "visible_pixel_count": 1230
+        },
+        {
+          "component_id": 2,
+          "name": "floor",
+          "type": "MESH",
+          "semantic_id": 1,
+          "visible_pixel_count": 2476
+        },
+        {
+          "component_id": 3,
+          "name": "other",
+          "type": "MESH",
+          "semantic_id": 2,
+          "visible_pixel_count": 879
+        },
+        {
+          "component_id": 4,
+          "name": "repeat_0",
+          "type": "MESH",
+          "semantic_id": 3,
+          "visible_pixel_count": 25
+        },
+        {
+          "component_id": 5,
+          "name": "repeat_1",
+          "type": "MESH",
+          "semantic_id": 4,
+          "visible_pixel_count": 0
+        },
+        {
+          "component_id": 6,
+          "name": "repeat_2",
+          "type": "MESH",
+          "semantic_id": 5,
+          "visible_pixel_count": 35
+        },
+        {
+          "component_id": 7,
+          "name": "repeat_3",
+          "type": "MESH",
+          "semantic_id": 6,
+          "visible_pixel_count": 40
+        },
+        {
+          "component_id": 8,
+          "name": "repeat_4",
+          "type": "MESH",
+          "semantic_id": 7,
+          "visible_pixel_count": 0
+        },
+        {
+          "component_id": 9,
+          "name": "repeat_5",
+          "type": "MESH",
+          "semantic_id": 8,
+          "visible_pixel_count": 26
+        }
+      ],
+      "background_objects": [],
+      "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+      "input_alignment_accuracy_verified": false,
+      "input_masks_reviewed": false,
+      "source_saved": false,
+      "fixed_T0": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 6.0,
+      "fixed_extrinsics_enforced": true,
+      "color_management": {
+        "display_device": "sRGB",
+        "view_transform": "Standard",
+        "look": "None",
+        "exposure": 0.0,
+        "gamma": 1.0
+      },
+      "component_identity_is_semantics": false
+    }
+  },
+  "energies": {
+    "semantic": {
+      "value": 0.01641170463598668,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 2,
+      "applicable_count": 2,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "global:global",
+        "anchor:instance_1_minus_f1"
+      ]
+    },
+    "spatial": {
+      "value": 0.004627554134700851,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 3,
+      "applicable_count": 3,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "region:whole_texture",
+        "anchor:anchor",
+        "anchor:other"
+      ]
+    },
+    "appearance": {
+      "value": 0.04280464999093253,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 5,
+      "coverage": 0.8,
+      "reason": null,
+      "participating_metrics": [
+        "global:global",
+        "region:whole_texture",
+        "anchor:anchor",
+        "anchor:other"
+      ]
+    },
+    "statistical": {
+      "value": 0.004661135938975076,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 1,
+      "applicable_count": 1,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "region:whole_texture"
+      ]
+    },
+    "perceptual": {
+      "value": 0.042246971824410985,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 4,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "global:global",
+        "region:whole_texture",
+        "anchor:anchor",
+        "anchor:other"
+      ]
+    }
+  },
+  "observation_energy": 0.022150403305001225,
+  "structural_energy": 0.0,
+  "structure": {
+    "energy": 0.0,
+    "energies": {
+      "penetration": {
+        "value": 0.0,
+        "status": "partial",
+        "valid_count": 1,
+        "check_count": 36,
+        "coverage": 0.027777777777777776,
+        "reason": null
+      },
+      "support": {
+        "value": 0.0,
+        "status": "valid",
+        "valid_count": 1,
+        "check_count": 1,
+        "coverage": 1.0,
+        "reason": null
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 1,
+        "coverage": 0.0,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": 0.05263157894736842,
+    "checks": {
+      "penetration": [
+        {
+          "unit_ids": [
+            "floor",
+            "other"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_0"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_1"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_0"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_1"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "anchor"
+          ],
+          "value": 0.0,
+          "reason": null,
+          "classification": "independent_objects",
+          "reviewed": true
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_1"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_5",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        }
+      ],
+      "support": [
+        {
+          "unit_id": "anchor",
+          "value": 0.0,
+          "reason": null
+        }
+      ],
+      "degeneration": [
+        {
+          "unit_id": "anchor",
+          "value": null,
+          "reason": "Non-planarity alone cannot verify structural fidelity"
+        }
+      ]
+    },
+    "diagnostics": [],
+    "raw_geometry": {
+      "collisions": [
+        {
+          "unit_ids": [
+            "floor",
+            "other"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "other"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_0"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "repeat_0"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_1"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 1.6858739115832577e-07,
+              "components": [
+                "floor",
+                "repeat_1"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_2"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 5.960464477539063e-08,
+              "components": [
+                "floor",
+                "repeat_2"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_3"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 1.4901161193847656e-07,
+              "components": [
+                "floor",
+                "repeat_3"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_4"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 1.1920928955078125e-07,
+              "components": [
+                "floor",
+                "repeat_4"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_5"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "repeat_5"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "anchor"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "anchor"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_0"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_1"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_2"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_1"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_2"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_2"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_5",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        }
+      ],
+      "objects": [
+        {
+          "unit_id": "floor",
+          "bounds": [
+            [
+              -3.5,
+              -2.5,
+              -0.30000001192092896
+            ],
+            [
+              3.5,
+              2.5,
+              0.0
+            ]
+          ],
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": null,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "component_names": [
+            "floor"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "other",
+          "bounds": [
+            [
+              0.5,
+              -0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              1.0
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5,
+                      -0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5,
+                      0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.5,
+                      -0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.5,
+                      0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "other"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_0",
+          "bounds": [
+            [
+              -2.125,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.875,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -2.125,
+                      1.1749999523162842,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -2.125,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.875,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.875,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_0"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_1",
+          "bounds": [
+            [
+              -1.3250000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.0750000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.3250000476837158,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.3250000476837158,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.0750000476837158,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.0750000476837158,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_1"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_2",
+          "bounds": [
+            [
+              -0.5249999761581421,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -0.2750000059604645,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.5249999761581421,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.5249999761581421,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.2750000059604645,
+                      1.1749999523162842,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.2750000059604645,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_2"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_3",
+          "bounds": [
+            [
+              0.2750000059604645,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              0.5249999761581421,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.2750000059604645,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.2750000059604645,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5249999761581421,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5249999761581421,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_3"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_4",
+          "bounds": [
+            [
+              1.0750000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              1.3250000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.0750000476837158,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.0750000476837158,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.3250000476837158,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.3250000476837158,
+                      1.4249999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_4"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_5",
+          "bounds": [
+            [
+              1.875,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              2.125,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.875,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.875,
+                      1.4249999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      2.125,
+                      1.1749999523162842,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      2.125,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_5"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "anchor",
+          "bounds": [
+            [
+              -1.5,
+              -0.5,
+              0.0
+            ],
+            [
+              -0.5,
+              0.5,
+              1.5
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.5,
+                      -0.5,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.5,
+                      0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.5,
+                      -0.5,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.5,
+                      0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "anchor"
+          ],
+          "affine_rank": 3
+        }
+      ],
+      "semantic_grouping_reviewed": true,
+      "support_receivers_complete": true,
+      "components": [
+        {
+          "name": "floor",
+          "closed": true,
+          "bounds": [
+            [
+              -3.5,
+              -2.5,
+              -0.30000001192092896
+            ],
+            [
+              3.5,
+              2.5,
+              0.0
+            ]
+          ],
+          "volume_estimate": 10.500000417232513,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "anchor",
+          "closed": true,
+          "bounds": [
+            [
+              -1.5,
+              -0.5,
+              0.0
+            ],
+            [
+              -0.5,
+              0.5,
+              1.5
+            ]
+          ],
+          "volume_estimate": 1.5,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "other",
+          "closed": true,
+          "bounds": [
+            [
+              0.5,
+              -0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              1.0
+            ]
+          ],
+          "volume_estimate": 1.0,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_0",
+          "closed": true,
+          "bounds": [
+            [
+              -2.125,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.875,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_1",
+          "closed": true,
+          "bounds": [
+            [
+              -1.3250000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.0750000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_2",
+          "closed": true,
+          "bounds": [
+            [
+              -0.5249999761581421,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -0.2750000059604645,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.01499999787658457,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_3",
+          "closed": true,
+          "bounds": [
+            [
+              0.2750000059604645,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              0.5249999761581421,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.01499999787658457,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_4",
+          "closed": true,
+          "bounds": [
+            [
+              1.0750000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              1.3250000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_5",
+          "closed": true,
+          "bounds": [
+            [
+              1.875,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              2.125,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        }
+      ],
+      "scope": "Evaluated scene coordinates; +Z up; geometry-only candidates, semantic triage required"
+    },
+    "existing_triage": {
+      "pairs": [
+        {
+          "unit_ids": [
+            "anchor",
+            "other"
+          ],
+          "reviewed": true,
+          "classification": "independent_objects",
+          "reason": "Controlled independent synthetic cubes"
+        }
+      ]
+    },
+    "rules": {
+      "up_axis": "+Z",
+      "support_receivers_complete": true,
+      "support": [
+        {
+          "unit_id": "anchor",
+          "expected": true,
+          "receivers": [
+            "floor"
+          ],
+          "reviewed": true,
+          "attachment_known_absent": true
+        }
+      ],
+      "degeneration": [
+        {
+          "unit_id": "anchor",
+          "components": [
+            "anchor"
+          ],
+          "reviewed": true,
+          "must_enclose_volume": true
+        }
+      ]
+    },
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.9333333333333333,
+  "uncertainty": {
+    "region_coverage": 1.0,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": 1.0,
+    "anchor_evidence_review_coverage": 1.0,
+    "structural_check_coverage": 0.05263157894736842,
+    "unknown_evidence": [
+      {
+        "id": "visible_material",
+        "reason": "No authorized verified VLM configured"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 0
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 16384.0,
+        "color_l1": 0.04425615298202615,
+        "coarse_boundary_error": 0.00653076171875,
+        "grayscale_wasserstein": 0.01458740234375,
+        "edge_coverage_error": 6.103515625e-05,
+        "gradient_mean_error": 0.00015845205269607846,
+        "spatial_texture_error": 0.000586416207107843,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "whole_texture",
+        "level": "region",
+        "reference_pixel_weight": 14238.0,
+        "color_l1": 0.04568424551072477,
+        "coarse_boundary_error": 0.006941331202051276,
+        "grayscale_wasserstein": 0.014924848995645463,
+        "edge_coverage_error": 0.0026689141733389522,
+        "gradient_mean_error": 0.000498527828043705,
+        "spatial_texture_error": 0.0005522527588721828,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [
+      {
+        "reference_id": "anchor",
+        "rendered_id": "anchor",
+        "status": "matched",
+        "category": "red_cuboid",
+        "weight": 1.0
+      },
+      {
+        "reference_id": "other",
+        "rendered_id": "other",
+        "status": "matched",
+        "category": "blue_cube",
+        "weight": 1.0
+      }
+    ],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": true,
+      "supplied": true,
+      "unknown_candidates": 0,
+      "tp": 2.0,
+      "fn": 0,
+      "fp": 0
+    }
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.04425615298202615,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": 0.03282340927197336,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "semantic",
+      "level": "global",
+      "id": "global",
+      "value": 0.03282340927197336,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "whole_texture",
+      "value": 0.04568424551072477,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "whole_texture",
+      "value": 0.006941331202051276,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "whole_texture",
+      "value": 0.004661135938975076,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "whole_texture",
+      "value": 0.04004857373591578,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "semantic",
+      "level": "anchor",
+      "id": "instance_1_minus_f1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null
+    },
+    {
+      "energy": "appearance",
+      "level": "anchor",
+      "id": "anchor",
+      "value": 0.030582155342757256,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB L1 at reference Anchor coordinates"
+    },
+    {
+      "energy": "perceptual",
+      "level": "anchor",
+      "id": "anchor",
+      "value": 0.04595345416645094,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO at reference Anchor coordinates"
+    },
+    {
+      "energy": "spatial",
+      "level": "anchor",
+      "id": "anchor",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "Normalized center displacement"
+    },
+    {
+      "energy": "appearance",
+      "level": "anchor",
+      "id": "other",
+      "value": 0.0406057565777516,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB L1 at reference Anchor coordinates"
+    },
+    {
+      "energy": "perceptual",
+      "level": "anchor",
+      "id": "other",
+      "value": 0.06618120694122712,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO at reference Anchor coordinates"
+    },
+    {
+      "energy": "spatial",
+      "level": "anchor",
+      "id": "other",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "Normalized center displacement"
+    },
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "visible_material",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "No authorized verified VLM configured",
+      "method": "VLM metric verification"
+    }
+  ],
+  "reference_evidence": {
+    "anchors": [
+      {
+        "id": "anchor",
+        "category": "red_cuboid",
+        "bbox": [
+          17,
+          75,
+          46,
+          118
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "importance": 1.0,
+        "source": "Known source-controlled synthetic fixture oracle",
+        "position": [
+          31.5,
+          96.5
+        ]
+      },
+      {
+        "id": "other",
+        "category": "blue_cube",
+        "bbox": [
+          69,
+          87,
+          98,
+          118
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "importance": 1.0,
+        "source": "Known source-controlled synthetic fixture oracle",
+        "position": [
+          83.5,
+          102.5
+        ]
+      }
+    ],
+    "reviewed": true,
+    "inventory_complete": true,
+    "image_size": [
+      128,
+      128
+    ],
+    "regions": [
+      {
+        "id": "whole_texture",
+        "bbox": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "description": "Whole reference image texture/appearance",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0
+      }
+    ],
+    "verification_questions": [
+      {
+        "id": "visible_material",
+        "energy": "appearance",
+        "question": "Does visible surface material differ?",
+        "reviewed": true,
+        "reliability": 1.0
+      }
+    ],
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+    "source": "reference RGB and independently supplied annotations only"
+  },
+  "render_metadata": {
+    "render_seconds": 0.0748101930366829,
+    "image_size": [
+      128,
+      128
+    ],
+    "samples": 8,
+    "threads": 2,
+    "device": "CPU",
+    "camera_unchanged": true,
+    "camera": {
+      "name": "BenchmarkCamera",
+      "type": "PERSP",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        0.0,
+        -6.0,
+        2.0
+      ],
+      "rotation_euler_world": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "rotation_units": "radians",
+      "lens_mm": 42.0,
+      "sensor_fit": "HORIZONTAL",
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "shift_x": 0.05000000074505806,
+      "shift_y": 0.0,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "dof_enabled": false
+    },
+    "intrinsics_pixels": [
+      [
+        149.3333282470703,
+        0.0,
+        57.599998474121094
+      ],
+      [
+        0.0,
+        149.3333282470703,
+        64.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "projection_matrix_blender": [
+      [
+        2.3333332538604736,
+        0.0,
+        0.10000002384185791,
+        0.0
+      ],
+      [
+        0.0,
+        2.3333332538604736,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0001999139785767,
+        -0.20002000033855438
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+    "depth_convention": "camera_z",
+    "depth_computation": "negative Blender-camera z of same-render world Position pass",
+    "depth_units": "scene coordinate units; no metric ground truth asserted",
+    "valid_depth_pixel_count": 4711,
+    "raw_z_vs_world_distance_max_error": 1.0099410326662266,
+    "raw_z_vs_world_distance_mean_error": 0.4126552590378331,
+    "position_reprojection_mean_error_pixels": 0.0007472892996729637,
+    "position_reprojection_max_error_pixels": 0.0007827246308145429,
+    "semantic_ids": {
+      "1": "floor",
+      "2": "other",
+      "3": "repeat_0",
+      "4": "repeat_1",
+      "5": "repeat_2",
+      "6": "repeat_3",
+      "7": "repeat_4",
+      "8": "repeat_5",
+      "9": "anchor"
+    },
+    "visible_pixel_counts_by_type": {
+      "floor": {
+        "CURVE": 0,
+        "MESH": 2476
+      },
+      "other": {
+        "CURVE": 0,
+        "MESH": 879
+      },
+      "repeat_0": {
+        "CURVE": 0,
+        "MESH": 25
+      },
+      "repeat_1": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_2": {
+        "CURVE": 0,
+        "MESH": 35
+      },
+      "repeat_3": {
+        "CURVE": 0,
+        "MESH": 40
+      },
+      "repeat_4": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_5": {
+        "CURVE": 0,
+        "MESH": 26
+      },
+      "anchor": {
+        "CURVE": 0,
+        "MESH": 1230
+      }
+    },
+    "components": [
+      {
+        "component_id": 1,
+        "name": "anchor",
+        "type": "MESH",
+        "semantic_id": 9,
+        "visible_pixel_count": 1230
+      },
+      {
+        "component_id": 2,
+        "name": "floor",
+        "type": "MESH",
+        "semantic_id": 1,
+        "visible_pixel_count": 2476
+      },
+      {
+        "component_id": 3,
+        "name": "other",
+        "type": "MESH",
+        "semantic_id": 2,
+        "visible_pixel_count": 879
+      },
+      {
+        "component_id": 4,
+        "name": "repeat_0",
+        "type": "MESH",
+        "semantic_id": 3,
+        "visible_pixel_count": 25
+      },
+      {
+        "component_id": 5,
+        "name": "repeat_1",
+        "type": "MESH",
+        "semantic_id": 4,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 6,
+        "name": "repeat_2",
+        "type": "MESH",
+        "semantic_id": 5,
+        "visible_pixel_count": 35
+      },
+      {
+        "component_id": 7,
+        "name": "repeat_3",
+        "type": "MESH",
+        "semantic_id": 6,
+        "visible_pixel_count": 40
+      },
+      {
+        "component_id": 8,
+        "name": "repeat_4",
+        "type": "MESH",
+        "semantic_id": 7,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 9,
+        "name": "repeat_5",
+        "type": "MESH",
+        "semantic_id": 8,
+        "visible_pixel_count": 26
+      }
+    ],
+    "background_objects": [],
+    "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+    "input_alignment_accuracy_verified": false,
+    "input_masks_reviewed": false,
+    "source_saved": false,
+    "fixed_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ortho_scale": 6.0,
+    "fixed_extrinsics_enforced": true,
+    "color_management": {
+      "display_device": "sRGB",
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "component_identity_is_semantics": false
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "provenance": {
+    "synthetic_oracle": true,
+    "reference_frozen_from_baseline": true,
+    "api_calls": 0
+  }
+}

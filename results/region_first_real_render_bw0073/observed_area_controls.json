@@ -1,0 +1,138 @@
+{
+  "units": [
+    {
+      "id": "valid_area_R1",
+      "group": "ordinary_observed_area",
+      "description": "Rectangle matched to observed Polygon area/bbox; geometry only",
+      "mask": "measurement_rois/valid_area_R1.png",
+      "matched_to": "polygon_R1",
+      "reviewed": false,
+      "reliability": 0.0,
+      "formal_eligible": false
+    },
+    {
+      "id": "valid_area_R2",
+      "group": "ordinary_observed_area",
+      "description": "Rectangle matched to observed Polygon area/bbox; geometry only",
+      "mask": "measurement_rois/valid_area_R2.png",
+      "matched_to": "polygon_R2",
+      "reviewed": false,
+      "reliability": 0.0,
+      "formal_eligible": false
+    },
+    {
+      "id": "valid_area_R3",
+      "group": "ordinary_observed_area",
+      "description": "Rectangle matched to observed Polygon area/bbox; geometry only",
+      "mask": "measurement_rois/valid_area_R3.png",
+      "matched_to": "polygon_R3",
+      "reviewed": false,
+      "reliability": 0.0,
+      "formal_eligible": false
+    },
+    {
+      "id": "valid_area_R4",
+      "group": "ordinary_observed_area",
+      "description": "Rectangle matched to observed Polygon area/bbox; geometry only",
+      "mask": "measurement_rois/valid_area_R4.png",
+      "matched_to": "polygon_R4",
+      "reviewed": false,
+      "reliability": 0.0,
+      "formal_eligible": false
+    }
+  ],
+  "controls": [
+    {
+      "id": "valid_area_R1",
+      "matched_to": "polygon_R1",
+      "source_bbox": [
+        24,
+        52,
+        531,
+        824
+      ],
+      "control_bbox": [
+        73,
+        127,
+        481,
+        749
+      ],
+      "source_pixels": 254075,
+      "control_pixels": 253776,
+      "area_ratio": 0.9988231821312604,
+      "semantics_used": false,
+      "actual_observed_area_ratio": 0.9988231821312604,
+      "reviewed": false
+    },
+    {
+      "id": "valid_area_R2",
+      "matched_to": "polygon_R2",
+      "source_bbox": [
+        512,
+        94,
+        1044,
+        716
+      ],
+      "control_bbox": [
+        580,
+        174,
+        975,
+        635
+      ],
+      "source_pixels": 182080,
+      "control_pixels": 182095,
+      "area_ratio": 1.000082381370826,
+      "semantics_used": false,
+      "actual_observed_area_ratio": 1.000082381370826,
+      "reviewed": false
+    },
+    {
+      "id": "valid_area_R3",
+      "matched_to": "polygon_R3",
+      "source_bbox": [
+        553,
+        239,
+        937,
+        427
+      ],
+      "control_bbox": [
+        558,
+        241,
+        932,
+        424
+      ],
+      "source_pixels": 68301,
+      "control_pixels": 68442,
+      "area_ratio": 1.0020643914437564,
+      "semantics_used": false,
+      "actual_observed_area_ratio": 1.0020643914437564,
+      "reviewed": false
+    },
+    {
+      "id": "valid_area_R4",
+      "matched_to": "polygon_R4",
+      "source_bbox": [
+        1107,
+        0,
+        1511,
+        738
+      ],
+      "control_bbox": [
+        1125,
+        33,
+        1492,
+        704
+      ],
+      "source_pixels": 246460,
+      "control_pixels": 246257,
+      "area_ratio": 0.9991763369309421,
+      "semantics_used": false,
+      "actual_observed_area_ratio": 0.9991763369309421,
+      "reviewed": false
+    }
+  ],
+  "based_on_reference_and_validity_geometry_only": true,
+  "based_on_rgb_errors": false,
+  "original_rois_changed": false,
+  "reviewed": false
+}

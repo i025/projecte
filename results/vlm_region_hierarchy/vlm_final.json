@@ -1,0 +1,226 @@
+{
+  "model": "openai/gpt-5.1",
+  "source": "vlm_api",
+  "request_number": 1,
+  "raw_answer": "{\"scenes\":{\"bw_9064\":{\"plan\":{\"regions\":[{\"id\":\"r1\",\"name\":\"left wall\",\"kind\":\"continuous\",\"location\":\"left half background\",\"reason\":\"大面积背景墙\"},{\"id\":\"r2\",\"name\":\"right wall\",\"kind\":\"continuous\",\"location\":\"right background behind fridge\",\"reason\":\"另一侧背景墙\"},{\"id\":\"r3\",\"name\":\"ceiling\",\"kind\":\"continuous\",\"location\":\"top strip\",\"reason\":\"顶部统一区域\"},{\"id\":\"r4\",\"name\":\"floor\",\"kind\":\"continuous\",\"location\":\"bottom area\",\"reason\":\"木地板连续面\"},{\"id\":\"r5\",\"name\":\"dining set\",\"kind\":\"collection\",\"location\":\"left middle\",\"reason\":\"桌与两椅整体\"},{\"id\":\"r6\",\"name\":\"table top\",\"kind\":\"continuous\",\"location\":\"center of dining set\",\"reason\":\"桌面承载物\"},{\"id\":\"r7\",\"name\":\"chairs pair\",\"kind\":\"collection\",\"location\":\"around table\",\"reason\":\"两把相似木椅\"},{\"id\":\"r8\",\"name\":\"fridge body\",\"kind\":\"continuous\",\"location\":\"right middle\",\"reason\":\"主要家电立方体\"},{\"anchors\":[{\"id\":\"a1\",\"name\":\"round table\",\"location\":\"left middle\",\"reason\":\"核心家具承载植物\",\"need_mask\":true},{\"id\":\"a2\",\"name\":\"left chair\",\"location\":\"left of table\",\"reason\":\"显著单椅\",\"need_mask\":true},{\"id\":\"a3\",\"name\":\"right chair\",\"location\":\"right of table\",\"reason\":\"显著单椅\",\"need_mask\":true},{\"id\":\"a4\",\"name\":\"potted plant\",\"location\":\"on table center\",\"reason\":\"小而重要装饰\",\"need_mask\":true},{\"id\":\"a5\",\"name\":\"refrigerator\",\"location\":\"right middle\",\"reason\":\"唯一大型电器\",\"need_mask\":true},{\"id\":\"a6\",\"name\":\"wall corner\",\"location\":\"center back\",\"reason\":\"几何结构分界\",\"need_mask\":false}],\"relations\":[{\"subject\":\"r1\",\"predicate\":\"left_of\",\"object\":\"r2\"},{\"subject\":\"r4\",\"predicate\":\"below\",\"object\":\"r1\"},{\"subject\":\"r4\",\"predicate\":\"below\",\"object\":\"r2\"},{\"subject\":\"a1\",\"predicate\":\"on\",\"object\":\"r4\"},{\"subject\":\"a1\",\"predicate\":\"below\",\"object\":\"r1\"},{\"subject\":\"a2\",\"predicate\":\"beside\",\"object\":\"a1\"},{\"subject\":\"a3\",\"predicate\":\"beside\",\"object\":\"a1\"},{\"subject\":\"a4\",\"predicate\":\"on\",\"object\":\"a1\"},{\"subject\":\"a5\",\"predicate\":\"right_of\",\"object\":\"a1\"},{\"subject\":\"a5\",\"predicate\":\"on\",\"object\":\"r4\"},{\"subject\":\"r5\",\"predicate\":\"contains\",\"object\":\"a1\"},{\"subject\":\"r5\",\"predicate\":\"contains\",\"object\":\"a2\"},{\"subject\":\"r5\",\"predicate\":\"contains\",\"object\":\"a3\"},{\"subject\":\"r8\",\"predicate\":\"contains\",\"object\":\"a5\"}],\"uncertain\":[\"wall corner精确范围不明\"]},\"group\\\":{\\\"groups':[{\",\"name'':'left wall area',\" ,\"region_ids\"\t\t]}}}}",
+  "parsed_answer": {
+    "scenes": {
+      "bw_9064": {
+        "plan": {
+          "regions": [
+            {
+              "id": "r1",
+              "name": "left wall",
+              "kind": "continuous",
+              "location": "left half background",
+              "reason": "大面积背景墙"
+            },
+            {
+              "id": "r2",
+              "name": "right wall",
+              "kind": "continuous",
+              "location": "right background behind fridge",
+              "reason": "另一侧背景墙"
+            },
+            {
+              "id": "r3",
+              "name": "ceiling",
+              "kind": "continuous",
+              "location": "top strip",
+              "reason": "顶部统一区域"
+            },
+            {
+              "id": "r4",
+              "name": "floor",
+              "kind": "continuous",
+              "location": "bottom area",
+              "reason": "木地板连续面"
+            },
+            {
+              "id": "r5",
+              "name": "dining set",
+              "kind": "collection",
+              "location": "left middle",
+              "reason": "桌与两椅整体"
+            },
+            {
+              "id": "r6",
+              "name": "table top",
+              "kind": "continuous",
+              "location": "center of dining set",
+              "reason": "桌面承载物"
+            },
+            {
+              "id": "r7",
+              "name": "chairs pair",
+              "kind": "collection",
+              "location": "around table",
+              "reason": "两把相似木椅"
+            },
+            {
+              "id": "r8",
+              "name": "fridge body",
+              "kind": "continuous",
+              "location": "right middle",
+              "reason": "主要家电立方体"
+            },
+            {
+              "anchors": [
+                {
+                  "id": "a1",
+                  "name": "round table",
+                  "location": "left middle",
+                  "reason": "核心家具承载植物",
+                  "need_mask": true
+                },
+                {
+                  "id": "a2",
+                  "name": "left chair",
+                  "location": "left of table",
+                  "reason": "显著单椅",
+                  "need_mask": true
+                },
+                {
+                  "id": "a3",
+                  "name": "right chair",
+                  "location": "right of table",
+                  "reason": "显著单椅",
+                  "need_mask": true
+                },
+                {
+                  "id": "a4",
+                  "name": "potted plant",
+                  "location": "on table center",
+                  "reason": "小而重要装饰",
+                  "need_mask": true
+                },
+                {
+                  "id": "a5",
+                  "name": "refrigerator",
+                  "location": "right middle",
+                  "reason": "唯一大型电器",
+                  "need_mask": true
+                },
+                {
+                  "id": "a6",
+                  "name": "wall corner",
+                  "location": "center back",
+                  "reason": "几何结构分界",
+                  "need_mask": false
+                }
+              ],
+              "relations": [
+                {
+                  "subject": "r1",
+                  "predicate": "left_of",
+                  "object": "r2"
+                },
+                {
+                  "subject": "r4",
+                  "predicate": "below",
+                  "object": "r1"
+                },
+                {
+                  "subject": "r4",
+                  "predicate": "below",
+                  "object": "r2"
+                },
+                {
+                  "subject": "a1",
+                  "predicate": "on",
+                  "object": "r4"
+                },
+                {
+                  "subject": "a1",
+                  "predicate": "below",
+                  "object": "r1"
+                },
+                {
+                  "subject": "a2",
+                  "predicate": "beside",
+                  "object": "a1"
+                },
+                {
+                  "subject": "a3",
+                  "predicate": "beside",
+                  "object": "a1"
+                },
+                {
+                  "subject": "a4",
+                  "predicate": "on",
+                  "object": "a1"
+                },
+                {
+                  "subject": "a5",
+                  "predicate": "right_of",
+                  "object": "a1"
+                },
+                {
+                  "subject": "a5",
+                  "predicate": "on",
+                  "object": "r4"
+                },
+                {
+                  "subject": "r5",
+                  "predicate": "contains",
+                  "object": "a1"
+                },
+                {
+                  "subject": "r5",
+                  "predicate": "contains",
+                  "object": "a2"
+                },
+                {
+                  "subject": "r5",
+                  "predicate": "contains",
+                  "object": "a3"
+                },
+                {
+                  "subject": "r8",
+                  "predicate": "contains",
+                  "object": "a5"
+                }
+              ],
+              "uncertain": [
+                "wall corner精确范围不明"
+              ]
+            },
+            "group\":{\"groups':[{",
+            "name'':'left wall area',",
+            "region_ids"
+          ]
+        }
+      }
+    }
+  },
+  "evaluation_status": "answered",
+  "status": "partial",
+  "reviewed": false,
+  "scenes": {
+    "bw_9064": {
+      "plan": {
+        "status": "unavailable",
+        "validation_error": "Invalid text field: id",
+        "reviewed": false
+      },
+      "group": {
+        "status": "unavailable",
+        "validation_error": "'group'",
+        "reviewed": false
+      }
+    },
+    "bw_0074": {
+      "plan": {
+        "status": "unavailable",
+        "validation_error": "'bw_0074'",
+        "reviewed": false
+      },
+      "group": {
+        "status": "unavailable",
+        "validation_error": "'bw_0074'",
+        "reviewed": false
+      }
+    }
+  },
+  "transport": "provided OfoxTunnel; end-to-end verified TLS"
+}

@@ -1,0 +1,144 @@
+{
+  "image_size": [
+    960,
+    720
+  ],
+  "anchors": [
+    {
+      "object_id": "O01",
+      "instance_id": "O01",
+      "category": "book_stack",
+      "bbox": [
+        106,
+        100,
+        857,
+        666
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": null,
+      "members": [
+        "O02",
+        "O03"
+      ],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Whole visible stack of overlapping books on a wood surface.",
+      "uncertainty": [
+        "Exact book count and lower-member identities unresolved; group is the only selected evaluation unit."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Texture-driven holes on light cover/printing; missing dark lower-spine patches; retain raw output."
+      ],
+      "id": "O01",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/R1_05/candidate_masks/O01.png",
+      "position": [
+        481.5,
+        383.0
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "patch_0_0",
+      "bbox": [
+        0,
+        0,
+        480,
+        360
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_0_1",
+      "bbox": [
+        480,
+        0,
+        960,
+        360
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_0",
+      "bbox": [
+        0,
+        360,
+        480,
+        720
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_1",
+      "bbox": [
+        480,
+        360,
+        960,
+        720
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    }
+  ],
+  "relations": [],
+  "candidate_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/R1_05/candidate_objects.json",
+  "reviewed": false,
+  "global_evidence": {
+    "description": "Complete reference RGB",
+    "reviewed": true,
+    "reliability": 1.0
+  },
+  "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+  "source": "reference RGB and independently supplied annotations only",
+  "mask_archive": "reference_masks.npz"
+}

@@ -1,0 +1,82 @@
+{
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books",
+  "created_at": "2026-10-22T15:37:58.768971+00:00",
+  "requested_model": "gpt-6-sol",
+  "original_api_model": "openai/gpt-6-sol",
+  "system": "你是视觉证据验证器。只根据当前图像判断书籍的可见摆放方式。不要把唱片或文件夹当作书籍，不猜测不可见内容。无法判断时回答 unknown。只输出 JSON。",
+  "user": "请回答：\n\n1. 是否能清楚看到至少两本水平叠放的书籍？\n2. 是否能清楚看到竖直站立摆放的书籍？\n\n只输出：\n{\n  \"horizontal_stack\": \"yes\",\n  \"upright_books\": \"yes\"\n}\n\n字段取值均为 yes、no 或 unknown。\n\n以上 JSON 只是格式示例，不是预期答案。",
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "horizontal_stack",
+      "upright_books"
+    ],
+    "properties": {
+      "horizontal_stack": {
+        "type": "string",
+        "enum": [
+          "yes",
+          "no",
+          "unknown"
+        ]
+      },
+      "upright_books": {
+        "type": "string",
+        "enum": [
+          "yes",
+          "no",
+          "unknown"
+        ]
+      }
+    }
+  },
+  "source_type": "codex_subagent",
+  "ofox_calls": 0,
+  "maximum_independent_agents": 3,
+  "serial": true,
+  "one_agent_per_image": true,
+  "context_inheritance": "none",
+  "expected_answers_shared_with_verifiers": false,
+  "image_preprocessing": "none; original RGB PNG via view_image",
+  "frozen_api_temperature": 0.1,
+  "frozen_api_max_tokens": 400,
+  "subagent_temperature_control": "unavailable",
+  "subagent_output_token_cap_control": "unavailable",
+  "additional_system_context": true,
+  "api_equivalence_established": false,
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "images": [
+    {
+      "sample_id": "sample_01",
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_01.png",
+      "size": [
+        768,
+        640
+      ],
+      "mtime_ns": 1792674046175961263,
+      "bytes": 875873
+    },
+    {
+      "sample_id": "sample_02",
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_02.png",
+      "size": [
+        768,
+        640
+      ],
+      "mtime_ns": 1792674052996012150,
+      "bytes": 887296
+    },
+    {
+      "sample_id": "sample_03",
+      "path": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_statistical_controls_books/images/sample_03.png",
+      "size": [
+        768,
+        640
+      ],
+      "mtime_ns": 1792674059752062548,
+      "bytes": 879002
+    }
+  ]
+}

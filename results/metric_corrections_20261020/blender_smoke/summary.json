@@ -1,0 +1,306 @@
+{
+  "success": true,
+  "checks": {
+    "baseline_fixed_T0": true,
+    "baseline_intrinsics": true,
+    "baseline_data_passes": true,
+    "baseline_reprojection": true,
+    "baseline_vlm_unavailable": true,
+    "deleted_fixed_T0": true,
+    "deleted_intrinsics": true,
+    "deleted_data_passes": true,
+    "deleted_reprojection": true,
+    "deleted_vlm_unavailable": true,
+    "moved_fixed_T0": true,
+    "moved_intrinsics": true,
+    "moved_data_passes": true,
+    "moved_reprojection": true,
+    "moved_vlm_unavailable": true,
+    "color_fixed_T0": true,
+    "color_intrinsics": true,
+    "color_data_passes": true,
+    "color_reprojection": true,
+    "color_vlm_unavailable": true,
+    "distribution_fixed_T0": true,
+    "distribution_intrinsics": true,
+    "distribution_data_passes": true,
+    "distribution_reprojection": true,
+    "distribution_vlm_unavailable": true,
+    "penetration_fixed_T0": true,
+    "penetration_intrinsics": true,
+    "penetration_data_passes": true,
+    "penetration_reprojection": true,
+    "penetration_vlm_unavailable": true,
+    "billboard_fixed_T0": true,
+    "billboard_intrinsics": true,
+    "billboard_data_passes": true,
+    "billboard_reprojection": true,
+    "billboard_vlm_unavailable": true,
+    "ortho_fixed_T0": true,
+    "ortho_intrinsics": true,
+    "ortho_data_passes": true,
+    "ortho_reprojection": true,
+    "ortho_projection": true,
+    "color_preserves_anchor_semantics": true,
+    "identity_zero": true,
+    "deletion_semantic": true,
+    "movement_spatial": true,
+    "color_appearance": true,
+    "distribution_statistics": true,
+    "penetration_detected": true,
+    "billboard_detected": true,
+    "vlm_unavailable_safe": true,
+    "five_energies_numeric": true,
+    "dino_responds_to_deletion": true,
+    "illegal_intrinsics_rejected": true
+  },
+  "variants": {
+    "baseline": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.0,
+        "appearance": 0.0,
+        "statistical": 0.0,
+        "perceptual": 1.734723475976807e-17
+      },
+      "observation_energy": 3.469446951953614e-18,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/baseline/report.html",
+      "peak_rss_bytes": 284164096,
+      "render_seconds": 0.684,
+      "delta_energies": {
+        "semantic": 0.0,
+        "spatial": 0.0,
+        "appearance": 0.0,
+        "statistical": 0.0,
+        "perceptual": 0.0
+      },
+      "delta_observation": 0.0
+    },
+    "deleted": {
+      "energies": {
+        "semantic": 0.33333333333333337,
+        "spatial": 0.18622611508155273,
+        "appearance": 0.04475027776666782,
+        "statistical": 0.01033907859172263,
+        "perceptual": 0.05322785796193877
+      },
+      "observation_energy": 0.12557533254704306,
+      "structural_energy": null,
+      "structural_energies": {
+        "penetration": null,
+        "support": null,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/deleted/report.html",
+      "peak_rss_bytes": 286691328,
+      "render_seconds": 0.647,
+      "delta_energies": {
+        "semantic": 0.33333333333333337,
+        "spatial": 0.18622611508155273,
+        "appearance": 0.04475027776666782,
+        "statistical": 0.01033907859172263,
+        "perceptual": 0.053227857961938754
+      },
+      "delta_observation": 0.12557533254704306
+    },
+    "moved": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.045682872811832226,
+        "appearance": 0.053874752083244284,
+        "statistical": 0.013197268067509713,
+        "perceptual": 0.057785057004726914
+      },
+      "observation_energy": 0.03410798999346263,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/moved/report.html",
+      "peak_rss_bytes": 286752768,
+      "render_seconds": 0.661,
+      "delta_energies": {
+        "semantic": 0.0,
+        "spatial": 0.045682872811832226,
+        "appearance": 0.053874752083244284,
+        "statistical": 0.013197268067509713,
+        "perceptual": 0.0577850570047269
+      },
+      "delta_observation": 0.03410798999346262
+    },
+    "color": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.004627554134700851,
+        "appearance": 0.04280464999093253,
+        "statistical": 0.005739877160933252,
+        "perceptual": 0.042246971824410985
+      },
+      "observation_energy": 0.019083810622195524,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/color/report.html",
+      "peak_rss_bytes": 286482432,
+      "render_seconds": 0.662,
+      "delta_energies": {
+        "semantic": 0.0,
+        "spatial": 0.004627554134700851,
+        "appearance": 0.04280464999093253,
+        "statistical": 0.005739877160933252,
+        "perceptual": 0.042246971824410964
+      },
+      "delta_observation": 0.01908381062219552
+    },
+    "distribution": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.008180874415243813,
+        "appearance": 0.004229388296462353,
+        "statistical": 0.006074441634296926,
+        "perceptual": 0.033626804095859955
+      },
+      "observation_energy": 0.010422301688372609,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/distribution/report.html",
+      "peak_rss_bytes": 287150080,
+      "render_seconds": 0.662,
+      "delta_energies": {
+        "semantic": 0.0,
+        "spatial": 0.008180874415243813,
+        "appearance": 0.004229388296462353,
+        "statistical": 0.006074441634296926,
+        "perceptual": 0.03362680409585994
+      },
+      "delta_observation": 0.010422301688372606
+    },
+    "penetration": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.0517149921040064,
+        "appearance": 0.07733376317795022,
+        "statistical": 0.0061128845934150244,
+        "perceptual": 0.07107543577802447
+      },
+      "observation_energy": 0.04124741513067923,
+      "structural_energy": 0.5,
+      "structural_energies": {
+        "penetration": 1.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/penetration/report.html",
+      "peak_rss_bytes": 286380032,
+      "render_seconds": 0.66,
+      "delta_energies": {
+        "semantic": 0.0,
+        "spatial": 0.0517149921040064,
+        "appearance": 0.07733376317795022,
+        "statistical": 0.0061128845934150244,
+        "perceptual": 0.07107543577802446
+      },
+      "delta_observation": 0.04124741513067923
+    },
+    "billboard": {
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.02635320398879357,
+        "appearance": 0.05243793033848583,
+        "statistical": 0.00972817871964618,
+        "perceptual": 0.04729960203662824
+      },
+      "observation_energy": 0.02716378301671077,
+      "structural_energy": 0.6666666666666666,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 1.0,
+        "degeneration": 1.0
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/billboard/report.html",
+      "peak_rss_bytes": 286396416,
+      "render_seconds": 0.66,
+      "delta_energies": {
+        "semantic": 0.0,
+        "spatial": 0.02635320398879357,
+        "appearance": 0.05243793033848583,
+        "statistical": 0.00972817871964618,
+        "perceptual": 0.047299602036628224
+      },
+      "delta_observation": 0.027163783016710765
+    }
+  },
+  "api_calls": 0,
+  "gpu_used": false,
+  "scope": "Synthetic pipeline/perturbation checks; not calibrated reconstruction accuracy",
+  "skipped": [
+    "GPU unavailable/not requested",
+    "Live VLM: no authorized verified model",
+    "Real Agent replay: human approval required"
+  ],
+  "expected_failure": {
+    "success": false,
+    "error": "Process exit 1; see benchmark.log",
+    "returncode": 1,
+    "seconds": 0.544,
+    "peak_rss_bytes": 261763072,
+    "log": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/invalid_intrinsics/benchmark.log",
+    "command": [
+      "/usr/bin/unshare",
+      "--user",
+      "--map-root-user",
+      "--net",
+      "--mount",
+      "--propagation",
+      "private",
+      "--pid",
+      "--fork",
+      "--kill-child=SIGKILL",
+      "--mount-proc",
+      "--",
+      "/srv/lab-disks/disk2/users/xymo/projects/bvb-repro/runtime/blender-4.2.0-linux-x64/blender",
+      "--background",
+      "--factory-startup",
+      "--disable-autoexec",
+      "--threads",
+      "2",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/srv/lab-disks/disk2/users/xymo/projects/e-harness/e_harness/runtime/benchmark_blender.py",
+      "--",
+      "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/metric_corrections_20261020/blender_smoke/invalid_intrinsics/job.json"
+    ],
+    "task_quota": false,
+    "cleanup_complete": true,
+    "tracked_pids": [
+      171,
+      172
+    ],
+    "process_limit": 4,
+    "scene_validity": "invalid"
+  },
+  "seconds": 19.57
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "documents": 40,
+  "original_grid_binary_masks": 238,
+  "unique_candidate_ids": 238,
+  "html_links": 269,
+  "controlled_statistic_cases": 4,
+  "hierarchy_mask_links": 78,
+  "actual_evidence_loader_checked": true,
+  "scoring_performed": false,
+  "all_candidates_unreviewed": true,
+  "no_agent_render_used": true
+}

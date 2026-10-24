@@ -1,0 +1,11 @@
+{
+  "seconds": 21.6225789161399,
+  "device": "cpu",
+  "paid_api_requests": 0,
+  "sam_runs": 0,
+  "slic_runs": 0,
+  "agent_runs": 0,
+  "blender_runs": 0,
+  "official_scoring": false,
+  "reviewed": false
+}

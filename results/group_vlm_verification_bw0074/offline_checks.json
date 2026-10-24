@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "synthetic_transport_only": true,
+  "real_requests": 0,
+  "no_credential_read": true,
+  "same_prompt_and_preprocessing": true,
+  "request_image_size": [
+    1024,
+    696
+  ],
+  "original_roi_unchanged": true,
+  "field_parser_tests": "tests/test_group_vlm.py",
+  "unit_tests_exit_code": 0,
+  "reviewed": false
+}

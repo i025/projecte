@@ -1,0 +1,97 @@
+{
+  "image_size": [
+    128,
+    128
+  ],
+  "global_evidence": {
+    "description": "Complete reference RGB",
+    "reviewed": true,
+    "reliability": 1.0
+  },
+  "regions": [
+    {
+      "id": "patch_0_0",
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_0_1",
+      "bbox": [
+        64,
+        0,
+        128,
+        64
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_0",
+      "bbox": [
+        0,
+        64,
+        64,
+        128
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_1",
+      "bbox": [
+        64,
+        64,
+        128,
+        128
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    }
+  ],
+  "anchors": [],
+  "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+  "source": "reference RGB and independently supplied annotations only",
+  "mask_archive": "reference_masks.npz"
+}

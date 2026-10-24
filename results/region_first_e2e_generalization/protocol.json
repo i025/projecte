@@ -1,0 +1,27 @@
+{
+  "tasks": [
+    "bw_9064",
+    "bw_0073"
+  ],
+  "system": "你是图像评测区域规划器。根据单张 RGB 图像选择少量重要的粗粒度评价区域。区域可以包含多个物体，不需要逐个识别或精确分割。只描述可见内容，不猜测不可见内容。只输出合法 JSON。",
+  "user": "将图片划分为 2–5 个重要的粗粒度评价区域，使不同局部能够得到充分评价。背景不必强制单独划分，不拆分物体部件。\n\n只输出：\n{\"regions\":[{\"id\":\"R1\",\"name\":\"简短区域名称\",\"location\":\"大致位置\",\"content\":\"主要可见内容\"}]}\n\n不要输出 Anchor、Relation、Mask、bbox、置信概率或解释。",
+  "model": "openai/gpt-6-sol",
+  "max_tokens": 1500,
+  "temperature": 0.2,
+  "json_mode": false,
+  "maximum_paid_requests": 2,
+  "per_image_limit": 1,
+  "automatic_retries": false,
+  "verification_requests": 0,
+  "grounding_max_side": 1536,
+  "vlm_image_max_side": 1024,
+  "reviewed": false,
+  "frozen_parameters": {
+    "snap_limit_short_image": 0.12,
+    "snap_limit_roi_side": 0.2,
+    "overlap_band_short_image": 0.015,
+    "hint_loss_weight": 4.0,
+    "edge_weight": 0.35,
+    "center_weight": 0.05
+  }
+}

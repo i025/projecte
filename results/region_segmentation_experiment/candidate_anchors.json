@@ -1,0 +1,269 @@
+{
+  "image_size": [
+    1672,
+    941
+  ],
+  "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+  "reviewed": false,
+  "inventory_complete": false,
+  "regions": [],
+  "anchors": [
+    {
+      "id": "a_table",
+      "description": "圆形桌面与单柱底座组成一个圆桌 Anchor；不拆分桌面和桌腿。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        348,
+        548,
+        585,
+        819
+      ],
+      "category": "table",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        466.5,
+        683.5
+      ],
+      "candidate_reason": "桌面、立柱和底座可见，构成明确物体。",
+      "uncertainty": "椅子局部遮挡；框内包含背景和椅子像素，框不能充当精确轮廓或不可见部分真值。",
+      "mask_recommendation": "优先：圆桌外轮廓、细立柱与底座；必须排除椅子和盆栽，保留真实孔隙/遮挡。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Round table",
+      "overlay_color": [
+        36,
+        120,
+        220
+      ],
+      "overlay_label_xy": [
+        345,
+        864
+      ],
+      "prompt_bbox": [
+        346,
+        564,
+        589,
+        812
+      ],
+      "mask": "sam2/anchor_masks/a_table.png",
+      "mask_provenance": {
+        "model": "/home/xymo/models/sam2",
+        "adapter": "existing sam2_box_masks",
+        "reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png"
+      }
+    },
+    {
+      "id": "a_chair_left",
+      "description": "画面左侧的一把椅子，包含椅背、坐垫、框架和可见椅腿。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        207,
+        567,
+        425,
+        851
+      ],
+      "category": "chair",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        316.0,
+        709.0
+      ],
+      "candidate_reason": "与右椅是可区分的两个可见实例，按画面位置命名。",
+      "uncertainty": "细腿、扶边及与桌面/背景的遮挡需要复核；不补齐看不见的构件。",
+      "mask_recommendation": "优先：椅背与细腿、镂空和交叠区域；只能标可见实例轮廓，不能用实心 bbox 代替。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Left chair",
+      "overlay_color": [
+        211,
+        77,
+        69
+      ],
+      "overlay_label_xy": [
+        22,
+        510
+      ],
+      "prompt_bbox": [
+        205,
+        563,
+        428,
+        854
+      ],
+      "mask": "sam2/anchor_masks/a_chair_left.png",
+      "mask_provenance": {
+        "model": "/home/xymo/models/sam2",
+        "adapter": "existing sam2_box_masks",
+        "reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png"
+      }
+    },
+    {
+      "id": "a_chair_right",
+      "description": "圆桌右侧的一把椅子，按画面投影位置定义实例。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        525,
+        549,
+        697,
+        804
+      ],
+      "category": "chair",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        611.0,
+        676.5
+      ],
+      "candidate_reason": "椅背、座面和可见椅腿清楚，可与左椅分开。",
+      "uncertainty": "椅子与桌的局部相接/重叠不提供可靠深度顺序；腿部细边需要复核。",
+      "mask_recommendation": "优先：细腿、椅背边缘与桌面接近处；不从二维遮挡自动推断 amodal Mask。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Right chair",
+      "overlay_color": [
+        21,
+        147,
+        105
+      ],
+      "overlay_label_xy": [
+        604,
+        478
+      ],
+      "prompt_bbox": [
+        523,
+        546,
+        700,
+        808
+      ],
+      "mask": "sam2/anchor_masks/a_chair_right.png",
+      "mask_provenance": {
+        "model": "/home/xymo/models/sam2",
+        "adapter": "existing sam2_box_masks",
+        "reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png"
+      }
+    },
+    {
+      "id": "a_refrigerator",
+      "description": "画面右侧独立冰箱整体；包括可见箱体、门、把手/分隔及脚。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        1149,
+        316,
+        1390,
+        787
+      ],
+      "category": "refrigerator",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        1269.5,
+        551.5
+      ],
+      "candidate_reason": "独立电器外轮廓和上下门分隔清楚，适合重要 Anchor。",
+      "uncertainty": "边缘抗锯齿、投影和脚部与地面接触界限需复核；不推断内部容积、背面或品牌。",
+      "mask_recommendation": "次优先但易审核：完整可见箱体轮廓，注意底脚与投影；反光边缘单独检查。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Refrigerator",
+      "overlay_color": [
+        150,
+        68,
+        183
+      ],
+      "overlay_label_xy": [
+        1080,
+        251
+      ],
+      "prompt_bbox": [
+        1144,
+        313,
+        1395,
+        794
+      ],
+      "mask": "sam2/anchor_masks/a_refrigerator.png",
+      "mask_provenance": {
+        "model": "/home/xymo/models/sam2",
+        "adapter": "existing sam2_box_masks",
+        "reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png"
+      }
+    },
+    {
+      "id": "a_potted_plant",
+      "description": "桌上花盆与其叶簇合成一个盆栽 Anchor；不拆分叶片或植物品种。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        438,
+        510,
+        500,
+        576
+      ],
+      "category": "potted_plant",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        469.0,
+        543.0
+      ],
+      "candidate_reason": "可见浅色花盆和上方绿叶，作为一个小物体比单片叶子粒度更稳妥。",
+      "uncertainty": "目标较小、叶缘细碎；叶片真实数量、植物品种和精确接触几何不可确定。",
+      "mask_recommendation": "优先且最难：花盆与叶簇整体，保留叶间背景；应放大审核，不强制现在生成 Mask。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Potted plant",
+      "overlay_color": [
+        192,
+        112,
+        15
+      ],
+      "overlay_label_xy": [
+        345,
+        426
+      ],
+      "prompt_bbox": [
+        433,
+        507,
+        504,
+        580
+      ],
+      "mask": "sam2/anchor_masks/a_potted_plant.png",
+      "mask_provenance": {
+        "model": "/home/xymo/models/sam2",
+        "adapter": "existing sam2_box_masks",
+        "reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png"
+      }
+    }
+  ],
+  "relations": [],
+  "score_note": "SAM2 head scores remain in sam2/run.json, never used as reliability"
+}

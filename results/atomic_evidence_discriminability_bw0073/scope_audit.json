@@ -1,0 +1,105 @@
+{
+  "rows": [
+    {
+      "id": "R2_SEM_01",
+      "scope_pixels": 37881,
+      "scope_inside_frozen_mask_fraction": 0.5435706554737203,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R2_SEM_02",
+      "scope_pixels": 6313,
+      "scope_inside_frozen_mask_fraction": 0.7288135593220338,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R2_SPA_01",
+      "scope_pixels": 205352,
+      "scope_inside_frozen_mask_fraction": 0.2903745763372161,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R2_SPA_02",
+      "scope_pixels": 141777,
+      "scope_inside_frozen_mask_fraction": 0.9776691564922378,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R2_STA_01",
+      "scope_pixels": 127440,
+      "scope_inside_frozen_mask_fraction": 0.977165725047081,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R2_APP_01",
+      "scope_pixels": 33726,
+      "scope_inside_frozen_mask_fraction": 0.9546344066892012,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R2_APP_02",
+      "scope_pixels": 51480,
+      "scope_inside_frozen_mask_fraction": 0.9894716394716395,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_SEM_01",
+      "scope_pixels": 36480,
+      "scope_inside_frozen_mask_fraction": 1.0,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_SEM_02",
+      "scope_pixels": 6006,
+      "scope_inside_frozen_mask_fraction": 1.0,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_SPA_01",
+      "scope_pixels": 48488,
+      "scope_inside_frozen_mask_fraction": 1.0,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_SPA_02",
+      "scope_pixels": 26208,
+      "scope_inside_frozen_mask_fraction": 1.0,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_STA_01",
+      "scope_pixels": 6580,
+      "scope_inside_frozen_mask_fraction": 1.0,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_APP_01",
+      "scope_pixels": 33166,
+      "scope_inside_frozen_mask_fraction": 1.0,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    },
+    {
+      "id": "R3_SEM_03",
+      "scope_pixels": 6688,
+      "scope_inside_frozen_mask_fraction": 0.9164174641148325,
+      "scope_is_annotation_not_replacement_roi": true,
+      "reviewed": false
+    }
+  ],
+  "not_semantic_accuracy": true,
+  "roi_changed": false,
+  "reviewed": false
+}

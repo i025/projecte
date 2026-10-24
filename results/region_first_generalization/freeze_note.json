@@ -1,0 +1,15 @@
+{
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/scripts/coarse_roi_experiment.py",
+  "parameters": {
+    "snap_limit_short_image": 0.12,
+    "snap_limit_roi_side": 0.2,
+    "overlap_band_short_image": 0.015,
+    "hint_loss_weight": 4.0,
+    "edge_weight": 0.35,
+    "center_weight": 0.05
+  },
+  "human_feedback": "bw_0074 B2 granularity and approximate completeness accepted as preferred candidate",
+  "pixelwise_semantic_GT": false,
+  "automatic_candidates_remain_unreviewed": true,
+  "parameter_tuning": false
+}

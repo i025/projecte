@@ -1,0 +1,475 @@
+{
+  "status": "completed",
+  "protocol": {
+    "scene_id": "bw_0074",
+    "region_id": "R3",
+    "region": {
+      "id": "R3",
+      "name": "唱片与音响区",
+      "location": "右侧",
+      "content": "书架上的大量唱片、收录机和下方的唱盘设备",
+      "reviewed": false,
+      "reliability": 0.0,
+      "source": "VLM reference-only planning"
+    },
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+    "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+    "image_size": [
+      1258,
+      855
+    ],
+    "crop_bbox": [
+      883,
+      119,
+      1258,
+      541
+    ],
+    "plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_pilot_bw0074/vlm_plan.json",
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/records_group_87adcd00ebf84540acd9efe30551dfe3",
+    "backend": "Codex Subagent",
+    "model": "gpt-6-sol",
+    "system": "你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。",
+    "user": "图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。",
+    "questions": {
+      "present": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+      "multiple_sections": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+      "upright_display": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "present",
+        "multiple_sections",
+        "upright_display"
+      ],
+      "properties": {
+        "present": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "multiple_sections": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "upright_display": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "group": {
+      "group_id": "bw_0074_R3_records",
+      "region_id": "R3",
+      "name": "唱片封套陈列集合",
+      "scope": "R3内可辨认黑胶LP封套的可见陈列；排除R2装订书籍、音响与隔板。",
+      "evidence": [
+        {
+          "id": "present",
+          "type": "semantic",
+          "question": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+          "expected": null,
+          "reviewed": false,
+          "source_type": "assistant_reference_only_provisional"
+        },
+        {
+          "id": "multiple_sections",
+          "type": "spatial",
+          "question": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+          "expected": null,
+          "reviewed": false,
+          "source_type": "assistant_reference_only_provisional"
+        },
+        {
+          "id": "upright_display",
+          "type": "statistical",
+          "question": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？",
+          "expected": null,
+          "reviewed": false,
+          "source_type": "assistant_reference_only_provisional"
+        }
+      ],
+      "reference_observation": "右侧柜架多层可见密集薄封套侧缘，主要竖立并有倾斜；类别与柜格判断仍需审核。",
+      "provenance": {
+        "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+        "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_pilot_bw0074/vlm_plan.json",
+        "render_used": false
+      },
+      "exact_mask": null,
+      "member_instance_ids": null,
+      "reliability": 0.0,
+      "reviewed": false
+    },
+    "source_type": "assistant_reference_only_provisional",
+    "render_viewed_before_freeze_this_run": false,
+    "prior_render_knowledge_disclosed": true,
+    "strict_blind_test": false,
+    "leakage_note": "历史对话已暴露Render概况；清点所读Inventory含旧概括性书架/书本差异描述，非严格盲测。未据Render构造本轮问题。",
+    "maximum_verifiers": 2,
+    "serial": true,
+    "automatic_retries": false,
+    "ofox_calls": 0,
+    "camera_protocol": "historical_camera",
+    "fixed_t0_compliant": false,
+    "reviewed": false,
+    "usage": "provisional/debug"
+  },
+  "answers": {
+    "render": {
+      "raw_answer": "{\"present\":\"yes\",\"multiple_sections\":\"yes\",\"upright_display\":\"yes\"}",
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "present": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          },
+          "multiple_sections": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          },
+          "upright_display": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          }
+        },
+        "unexpected_fields": []
+      },
+      "actual_input": {
+        "task_name": "v_f470f37a1846",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/3ab27179fcd54606b5072549205c8654/8d7d0aff1e2d4c71841122c94e981ae0.png\n\nSystem：\n你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。\n\nUser：\n图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const r=await tools.view_image({path:\"/tmp/3ab27179fcd54606b5072549205c8654/8d7d0aff1e2d4c71841122c94e981ae0.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/23/rollout-2026-10-23T00-58-10-01a16643-ef01-7fc0-9b45-424d8e0860ee.jsonl",
+      "agent_path": "/root/v_f470f37a1846",
+      "usage": {
+        "input_tokens": 46221,
+        "cached_input_tokens": 41600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 140,
+        "reasoning_output_tokens": 41,
+        "total_tokens": 46361
+      },
+      "duration_seconds": 11.774,
+      "started_at": 1792717090,
+      "completed_at": 1792717102,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    },
+    "reference": {
+      "raw_answer": "{\"present\":\"yes\",\"multiple_sections\":\"yes\",\"upright_display\":\"yes\"}",
+      "parsed": {
+        "status": "valid",
+        "fields": {
+          "present": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          },
+          "multiple_sections": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          },
+          "upright_display": {
+            "value": "yes",
+            "raw_value": "yes",
+            "validation_status": "valid",
+            "error": null
+          }
+        },
+        "unexpected_fields": []
+      },
+      "actual_input": {
+        "task_name": "v_7af7c02697ba",
+        "model": "gpt-6-sol",
+        "fork_turns": "none",
+        "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/c145a530a07e4ade8f7dda63fec959eb/cd9412efa7eb4bfa91fb57f60d225d93.png\n\nSystem：\n你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。\n\nUser：\n图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。"
+      },
+      "model_observed": [
+        "gpt-6-sol"
+      ],
+      "effort_observed": [
+        "medium"
+      ],
+      "read_audit_passed": true,
+      "tool_calls": [
+        {
+          "name": "exec",
+          "input": "const r = await tools.view_image({path:\"/tmp/c145a530a07e4ade8f7dda63fec959eb/cd9412efa7eb4bfa91fb57f60d225d93.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+        }
+      ],
+      "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/23/rollout-2026-10-23T00-57-34-01a16643-6294-7753-bd28-171fea9719ec.jsonl",
+      "agent_path": "/root/v_7af7c02697ba",
+      "usage": {
+        "input_tokens": 46206,
+        "cached_input_tokens": 33664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 168,
+        "reasoning_output_tokens": 74,
+        "total_tokens": 46374
+      },
+      "duration_seconds": 12.886,
+      "started_at": 1792717054,
+      "completed_at": 1792717067,
+      "received_task_text_independently_readable": false,
+      "context_inheritance": "none",
+      "reviewed": false
+    }
+  },
+  "comparison": [
+    {
+      "id": "present",
+      "group_id": "bw_0074_R3_records",
+      "region_id": "R3",
+      "question": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+      "energy": "semantic",
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "independent_comparison": "satisfied",
+      "status": "satisfied",
+      "reason": "Answer comparison only; neither answer is GT",
+      "reviewed": false,
+      "q": 0.0,
+      "value": null,
+      "score": null,
+      "scorable": false,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "multiple_sections",
+      "group_id": "bw_0074_R3_records",
+      "region_id": "R3",
+      "question": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+      "energy": "spatial",
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "independent_comparison": "satisfied",
+      "status": "satisfied",
+      "reason": "Answer comparison only; neither answer is GT",
+      "reviewed": false,
+      "q": 0.0,
+      "value": null,
+      "score": null,
+      "scorable": false,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "upright_display",
+      "group_id": "bw_0074_R3_records",
+      "region_id": "R3",
+      "question": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？",
+      "energy": "statistical",
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "independent_comparison": "satisfied",
+      "status": "satisfied",
+      "reason": "Answer comparison only; neither answer is GT",
+      "reviewed": false,
+      "q": 0.0,
+      "value": null,
+      "score": null,
+      "scorable": false,
+      "usage": "provisional/debug"
+    }
+  ],
+  "pair_audit": {
+    "source_audit": {
+      "task_id": "bw_0074",
+      "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+      "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/references/image_01.jpg",
+      "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+      "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/config.json",
+      "artifact_manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/manifest.json",
+      "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/input.json",
+      "metadata_correspondence_verified": true,
+      "original_staged_bytes_equal": true,
+      "render_native_size": [
+        1920,
+        1300
+      ],
+      "reference_native_size": [
+        1258,
+        855
+      ],
+      "run_exception": null,
+      "png_metadata": {
+        "Camera": "CAMERA - front left photographic angle",
+        "Scene": "Scene",
+        "File": "/workspace/exports/final.blend"
+      },
+      "reference_camera": "unknown",
+      "actual_blend_camera_reverified": false,
+      "camera_protocol": "historical_camera",
+      "camera_alignment_confirmed": false,
+      "final_blend_png_sync": "unknown",
+      "comparison_transform": {
+        "original_size": [
+          1920,
+          1300
+        ],
+        "common_size": [
+          1258,
+          855
+        ],
+        "nominal_scale": 0.6552083333333333,
+        "resized_size": [
+          1258,
+          852
+        ],
+        "offset_xy": [
+          0,
+          1
+        ],
+        "padding_is_not_observation": true,
+        "content_alignment": false,
+        "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+      },
+      "observed_canvas_fraction": 0.9964912280701754,
+      "official_benchmark_eligible": false,
+      "usage": "provisional/debug",
+      "reviewed": false
+    },
+    "transform": {
+      "original_size": [
+        1920,
+        1300
+      ],
+      "common_size": [
+        1258,
+        855
+      ],
+      "nominal_scale": 0.6552083333333333,
+      "resized_size": [
+        1258,
+        852
+      ],
+      "offset_xy": [
+        0,
+        1
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+    "valid_roi_pixels": 158250,
+    "roi_pixels": 158250,
+    "coordinates": "Reference native pixel grid; x right, y down; unchanged ROI on both sides",
+    "reference_frozen_before_render_read": true,
+    "roi_relocated": false,
+    "reviewed": false
+  },
+  "static_review_candidates": {
+    "reviewer_type": "Codex post-freeze static review candidates; not independent human",
+    "reviewed": false,
+    "observations": [
+      {
+        "id": "appearance_detail",
+        "observation": "Reference右侧封套侧缘的颜色、宽窄和倾斜更不规则；Render整体更浅色、规整，封套身份细节不足。",
+        "existing_questions_detect": false,
+        "applicability": "Appearance/Perceptual；本轮不重算",
+        "uncertainty": "类别细节不足，不能确认每条薄侧缘均为唱片；不输出数量或精确密度。",
+        "reviewed": false
+      },
+      {
+        "id": "distribution_detail",
+        "observation": "两侧均可见跨多层柜格的竖立薄封套状陈列，但局部分簇、倾斜和间隙不同。",
+        "existing_questions_detect": false,
+        "applicability": "Group-level Statistical的更细分布候选；没有真实验证，当前N/A",
+        "uncertainty": "至少两个柜格和主要竖直两项均会饱和；无法据此确认密度或具体占据图一致。",
+        "reviewed": false
+      },
+      {
+        "id": "camera_boundary",
+        "observation": "同坐标R3在Render顶部含明显顶棚/墙面，Reference主要从柜内上层开始；两侧柜架投影高度不同。",
+        "existing_questions_detect": false,
+        "applicability": "相机/投影/固定ROI边界诊断",
+        "uncertainty": "相机未知且未配准，无法将差异直接归为三维几何错误；右缘画外内容不推断。",
+        "reviewed": false
+      }
+    ],
+    "classification_reliability": "unestablished; no independent LP-vs-book GT or contrast controls",
+    "new_questions_after_render": false,
+    "reference_evidence_changed": false
+  },
+  "offline_checks": {
+    "tests_run": 8,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "frozen_prompt_unchanged": true,
+    "anonymous_inputs_identical_except_image": true,
+    "input_dimensions": [
+      2080,
+      931
+    ],
+    "one_side_per_input": true,
+    "reference_frozen_before_render": true,
+    "render_roi_relocated": false,
+    "independent_human_review": false,
+    "reviewed": false,
+    "preparation_issue": "Initial plotting failed because CJK font was absent; local DejaVu with English display captions used before any verifier, without changing frozen questions."
+  },
+  "backend": "Codex Subagent",
+  "model": "gpt-6-sol",
+  "verification_sessions": 2,
+  "ofox_calls": 0,
+  "verifier_session_seconds": 24.659999999999997,
+  "verifier_usage": {
+    "input_tokens": 92427,
+    "cached_input_tokens": 75264,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 308,
+    "reasoning_output_tokens": 115,
+    "total_tokens": 92735
+  },
+  "usage_scope": "Complete verifier sessions including platform/tool context; parent excluded. Cache is included in input.",
+  "actual_currency_cost": null,
+  "formal_energy": {
+    "semantic": null,
+    "spatial": null,
+    "statistical": null
+  },
+  "reviewed": false,
+  "scorable": false,
+  "usage": "provisional/debug",
+  "strict_blind_test_established": false
+}

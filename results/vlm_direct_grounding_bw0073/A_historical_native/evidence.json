@@ -1,0 +1,77 @@
+{
+  "image_size": [
+    7952,
+    4333
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "name": "窗边水槽区",
+      "location": "左侧",
+      "content": "拱形窗户下的水槽、黑色橱柜和大理石台面，上方有搁板与壁灯",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R1.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "unavailable",
+      "native_pixel_count": 0,
+      "semantic_GT": false,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_0073/B2_frozen/evidence.json",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    },
+    {
+      "id": "R2",
+      "name": "中央岛台区",
+      "location": "画面中央及前景",
+      "content": "大理石岛台、四把高脚椅和上方的金色吊灯",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R2.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 4677449,
+      "semantic_GT": false,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_0073/B2_frozen/evidence.json",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    },
+    {
+      "id": "R3",
+      "name": "后方料理区",
+      "location": "后方中央",
+      "content": "黑色橱柜、大理石墙面与台面、炉灶及摆放的器皿和绿植",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R3.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "unavailable",
+      "native_pixel_count": 0,
+      "semantic_GT": false,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_0073/B2_frozen/evidence.json",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    },
+    {
+      "id": "R4",
+      "name": "右侧高柜区",
+      "location": "右侧",
+      "content": "浅木色柜体、深色高柜和下方的抽屉柜",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R4.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "unavailable",
+      "native_pixel_count": 0,
+      "semantic_GT": false,
+      "historical_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_e2e_generalization/bw_0073/B2_frozen/evidence.json",
+      "resampling": "nearest from historical working grid; no grounding rerun"
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "coordinate_convention": "pixel edges, continuous xy; masks sampled at pixel centers",
+  "formal_score": false
+}

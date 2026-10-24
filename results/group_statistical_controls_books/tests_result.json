@@ -1,0 +1,11 @@
+{
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 0.04015803197398782,
+  "passed": true,
+  "model_executed": false,
+  "fixture_answers_only": true,
+  "initial_invocation": "A dotted module path failed because tests is not a package; discover succeeds. initial_tests* retains the loader error."
+}

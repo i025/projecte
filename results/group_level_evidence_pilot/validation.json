@@ -1,0 +1,28 @@
+{
+  "frozen_reference_unchanged": true,
+  "saved_reference_snapshots_equal": true,
+  "fixed_roi_membership_unchanged": true,
+  "all_candidates_unreviewed": true,
+  "all_new_energy_records_na": true,
+  "new_questions": 10,
+  "new_unavailable": 9,
+  "new_unknown": 1,
+  "new_real_verifications": 0,
+  "historical_answer_comparisons": 3,
+  "formal_group_scores_available": 0,
+  "paid_requests": 0,
+  "segmentation_or_large_model_runs": 0,
+  "blender_runs": 0,
+  "mocks_in_real_results": false,
+  "formal_sources_unchanged": {
+    "benchmark_evidence.py": true,
+    "benchmark_metrics.py": true,
+    "benchmark_config.py": true
+  },
+  "html_local_links_resolved": 25,
+  "passed": true,
+  "cpu_unit_tests": 206,
+  "new_group_unit_tests": 14,
+  "cpu_tests_seconds": 3.515,
+  "offline_replay_passed": true
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "request_number": 1,
+    "purpose": "bw_0074:R2:books:reference",
+    "provider": "api.ofox.ai",
+    "model": "openai/gpt-6-sol",
+    "image_count": 2,
+    "max_output_tokens": 600,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 300
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_tokens",
+    "request_limit": 2,
+    "prompt": "请观察标记的书架区域，回答：\n\n1. 该区域内是否有可辨认的书籍？\n2. 书籍占据多少个不同的书架分区？\n3. 书籍的主要摆放方向是什么？\n\n输出：\n{\n  \"present\": \"yes\",\n  \"shelf_sections\": \"3+\",\n  \"arrangement\": \"upright\"\n}\n\n以上仅为格式示例，不是预期答案。\n\n取值严格限定：\n- present：yes、no、unknown\n- shelf_sections：0、1、2、3+、unknown\n- arrangement：upright、horizontal、mixed、unknown\n\n只有清晰可辨的独立柜格才计入数量。无法区分书籍与唱片、柜格边界不明确或遮挡严重时，选择 unknown。",
+    "outcome": "answered",
+    "http_status": 200,
+    "returned_model": "openai/gpt-6-sol",
+    "usage": {
+      "prompt_tokens": 1928,
+      "completion_tokens": 212,
+      "total_tokens": 2140,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "actual_cost": null,
+    "finish_reason": "stop",
+    "latency_seconds": 9.838966907002032
+  },
+  {
+    "request_number": 2,
+    "purpose": "bw_0074:R2:books:render",
+    "provider": "api.ofox.ai",
+    "model": "openai/gpt-6-sol",
+    "image_count": 2,
+    "max_output_tokens": 600,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 300
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_tokens",
+    "request_limit": 2,
+    "prompt": "请观察标记的书架区域，回答：\n\n1. 该区域内是否有可辨认的书籍？\n2. 书籍占据多少个不同的书架分区？\n3. 书籍的主要摆放方向是什么？\n\n输出：\n{\n  \"present\": \"yes\",\n  \"shelf_sections\": \"3+\",\n  \"arrangement\": \"upright\"\n}\n\n以上仅为格式示例，不是预期答案。\n\n取值严格限定：\n- present：yes、no、unknown\n- shelf_sections：0、1、2、3+、unknown\n- arrangement：upright、horizontal、mixed、unknown\n\n只有清晰可辨的独立柜格才计入数量。无法区分书籍与唱片、柜格边界不明确或遮挡严重时，选择 unknown。",
+    "outcome": "answered",
+    "http_status": 200,
+    "returned_model": "openai/gpt-6-sol",
+    "usage": {
+      "prompt_tokens": 1928,
+      "completion_tokens": 75,
+      "total_tokens": 2003,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48
+      }
+    },
+    "actual_cost": null,
+    "finish_reason": "stop",
+    "latency_seconds": 6.854787846794352
+  }
+]

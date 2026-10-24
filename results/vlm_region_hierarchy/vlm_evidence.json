@@ -1,0 +1,34 @@
+{
+  "tasks": {
+    "bw_9064": {
+      "plan": {
+        "status": "unavailable",
+        "validation_error": "Invalid text field: id",
+        "reviewed": false
+      },
+      "group": {
+        "status": "unavailable",
+        "validation_error": "'group'",
+        "reviewed": false
+      }
+    },
+    "bw_0074": {
+      "plan": {
+        "status": "unavailable",
+        "validation_error": "'bw_0074'",
+        "reviewed": false
+      },
+      "group": {
+        "status": "unavailable",
+        "validation_error": "'bw_0074'",
+        "reviewed": false
+      }
+    }
+  },
+  "all_automatic_candidates_unreviewed": true,
+  "raw_response_files": [
+    "vlm_final.json",
+    "bw_9064/vlm_plan.json"
+  ],
+  "status": "unavailable"
+}

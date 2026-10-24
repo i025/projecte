@@ -1,0 +1,117 @@
+{
+  "rounds": 3,
+  "methods": [
+    {
+      "method": "A_baseline",
+      "region_union_fraction": 0.8644873976143326,
+      "overlap_fraction": 0.1229706486672431,
+      "unassigned_fraction": 0.1355126023856674,
+      "per_region_pixels": [
+        249016,
+        353121,
+        195068,
+        264895
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round1_B_union",
+      "region_union_fraction": 0.6451947303340492,
+      "overlap_fraction": 0.3218103552468878,
+      "unassigned_fraction": 0.3548052696659508,
+      "per_region_pixels": [
+        51766,
+        410648,
+        392667,
+        186280
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round1_C_resolved",
+      "region_union_fraction": 0.32338437508716145,
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.6766156249128386,
+      "per_region_pixels": [
+        50591,
+        64512,
+        46531,
+        186195
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round2_B_union",
+      "region_union_fraction": 0.6451947303340492,
+      "overlap_fraction": 0.021263678539220336,
+      "unassigned_fraction": 0.3548052696659508,
+      "per_region_pixels": [
+        51766,
+        410648,
+        68142,
+        186280
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round2_C_resolved",
+      "region_union_fraction": 0.6417222175736108,
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.35827778242638925,
+      "per_region_pixels": [
+        51760,
+        387777,
+        64489,
+        186204
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round3_B_union",
+      "region_union_fraction": 0.5182699727591369,
+      "overlap_fraction": 0.0038704339013936537,
+      "unassigned_fraction": 0.48173002724086317,
+      "per_region_pixels": [
+        50220,
+        275269,
+        68142,
+        167978
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round3_C_resolved",
+      "region_union_fraction": 0.5181890869197371,
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.4818109130802629,
+      "per_region_pixels": [
+        50220,
+        271106,
+        68055,
+        167978
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    }
+  ],
+  "source_sam3_candidates": 25,
+  "paid_api_calls": 0,
+  "new_model_inference_calls": 0,
+  "cpu_experiment_seconds": 37.468590227887034,
+  "gpu_inference": "skipped_all_GPUs_busy",
+  "accuracy_metrics_not_computed": true,
+  "all_candidates_reviewed": false
+}

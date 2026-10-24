@@ -1,0 +1,30 @@
+{
+  "task_id": "bw_0073",
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+  "provenance": {
+    "input_json": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/input.json",
+    "task_json": "/home/xymo/projects/BlenderWorld/data/BlenderWorld/tasks/bw_0073/task.json",
+    "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/config.json",
+    "run_ids": [
+      "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+      "bw_0073-codex-fixed-camera-v1-official-query-generation/bw_0073/task__Dpf9tyA",
+      "bw_0073-official-harbor-continued/bw_0073/task__qtzUWks"
+    ],
+    "metadata_correspondence_verified": true
+  },
+  "original_staged_bytes_equal": true,
+  "render_used": false,
+  "native_image_size": [
+    7952,
+    4333
+  ],
+  "image_size": [
+    1536,
+    837
+  ],
+  "geometry_max_side": 1536,
+  "source_manifest": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/manifest.json",
+  "plan_status": "unavailable",
+  "experiment": "conditional_cached_bbox_geometry_control",
+  "reviewed": false
+}

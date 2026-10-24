@@ -1,0 +1,36 @@
+{
+  "methods": [
+    {
+      "method": "round3_B_union",
+      "region_union_fraction": 0.5182699727591369,
+      "overlap_fraction": 0.0038704339013936537,
+      "unassigned_fraction": 0.48173002724086317,
+      "per_region_pixels": [
+        50220,
+        275269,
+        68142,
+        167978
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    {
+      "method": "round3_C_resolved",
+      "region_union_fraction": 0.5181890869197371,
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.4818109130802629,
+      "per_region_pixels": [
+        50220,
+        271106,
+        68055,
+        167978
+      ],
+      "pixel_count": 1075590,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    }
+  ],
+  "cpu_seconds": 7.253039225935936,
+  "reviewed": false
+}

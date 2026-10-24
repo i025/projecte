@@ -1,0 +1,3970 @@
+{
+  "success": true,
+  "checks": {
+    "matched": true,
+    "misplaced": true,
+    "semantic_mismatch": true,
+    "confirmed_missing": true,
+    "false_negative_unknown": true,
+    "single_absence": true,
+    "confirmed_extra": true,
+    "unknown_extra": true,
+    "region_visual_response": true,
+    "region_missing_requires_verified_occupancy": true,
+    "q_zero_invariant": true,
+    "q_zero_coverage": true,
+    "no_instance_mask_needed": true,
+    "confirmed_missing_oracle_not_tripled": true,
+    "single_anchor_human_absence_not_tripled": true
+  },
+  "cases": {
+    "matched": {
+      "states": {
+        "a": "matched"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 1.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.0,
+        "appearance": 0.0,
+        "statistical": 0.0,
+        "perceptual": null
+      },
+      "observation": 0.0,
+      "coverage": 0.7692307692307693,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    },
+    "misplaced": {
+      "states": {
+        "a": "misplaced"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 1.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.16982306417384332,
+        "appearance": 0.10866013071895424,
+        "statistical": 0.011420000437023261,
+        "perceptual": null
+      },
+      "observation": 0.07247579883245521,
+      "coverage": 0.7692307692307693,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.034313725490196074,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.013671875,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.017512988101223394,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.01115056818181818,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.010014204545454545,
+            "8": 0.013671875,
+            "16": 0.009765625
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.06862745098039215,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.015299479166666666,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.04739696804647784,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.015299479166666666,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.015299479166666664,
+            "8": 0.015299479166666666,
+            "16": 0.015299479166666666
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.3660130718954248,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.4949835154381967,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    },
+    "semantic_mismatch": {
+      "states": {
+        "a": "semantic_mismatch"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 0,
+        "fn": 1.0,
+        "fp": 1.0
+      },
+      "energies": {
+        "semantic": 1.0,
+        "spatial": 0.0020616319444444445,
+        "appearance": 0.04390488834422658,
+        "statistical": 0.0032757345898813423,
+        "perceptual": null
+      },
+      "observation": 0.26231056371963807,
+      "coverage": 0.7692307692307693,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.007863562091503268,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.012369791666666666,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.016053572426121446,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.010152304292929293,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.009135298295454545,
+            "8": 0.012369791666666666,
+            "16": 0.008951822916666666
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 1.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.16775599128540306,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    },
+    "confirmed_missing_oracle": {
+      "states": {
+        "a": "confirmed_missing"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": true,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 0,
+        "fn": 1.0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 1.0,
+        "spatial": 0.00341796875,
+        "appearance": 0.005718954248366013,
+        "statistical": 0.003582944535380197,
+        "perceptual": null
+      },
+      "observation": 0.2531799668834366,
+      "coverage": 0.6923076923076923,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.017156862745098037,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.013671875,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.017512988101223394,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.01115056818181818,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.010014204545454545,
+            "8": 0.013671875,
+            "16": 0.009765625
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 1.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Confirmed missing Anchor: absence is charged once in Semantic; object-level comparison unavailable"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Confirmed missing Anchor: absence is charged once in Semantic; object-level comparison unavailable"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Confirmed missing Anchor: absence is charged once in Semantic; object-level comparison unavailable"
+        }
+      ]
+    },
+    "detector_false_negative": {
+      "states": {
+        "a": "unknown"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": null,
+        "spatial": 0.0,
+        "appearance": 0.0,
+        "statistical": 0.0,
+        "perceptual": null
+      },
+      "observation": 0.0,
+      "coverage": 0.6666666666666666,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "No verified Anchor correspondence or absence/extra conclusion",
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "a:presence",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Detector non-detection or incomplete evidence is not verified absence"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Unknown rendered Anchor correspondence"
+        }
+      ]
+    },
+    "single_anchor_human_absence": {
+      "states": {
+        "a": "confirmed_missing"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [
+          {
+            "status": "confirmed_missing",
+            "reviewed": true,
+            "reliability": 1.0,
+            "verification_type": "human",
+            "evidence_scope": "input_view",
+            "source": "Known visible raster fixture",
+            "reference_id": "a",
+            "accepted": true,
+            "reason": null
+          }
+        ],
+        "tp": 0,
+        "fn": 1.0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 1.0,
+        "spatial": 0.00341796875,
+        "appearance": 0.005718954248366013,
+        "statistical": 0.003582944535380197,
+        "perceptual": null
+      },
+      "observation": 0.2531799668834366,
+      "coverage": 0.6923076923076923,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.017156862745098037,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.013671875,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.017512988101223394,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.01115056818181818,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.010014204545454545,
+            "8": 0.013671875,
+            "16": 0.009765625
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 1.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Confirmed missing Anchor: absence is charged once in Semantic; object-level comparison unavailable"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Confirmed missing Anchor: absence is charged once in Semantic; object-level comparison unavailable"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Confirmed missing Anchor: absence is charged once in Semantic; object-level comparison unavailable"
+        }
+      ]
+    },
+    "confirmed_extra": {
+      "states": {
+        "a": "matched"
+      },
+      "extras": [
+        "extra"
+      ],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [
+          {
+            "rendered_id": "extra",
+            "status": "confirmed_extra",
+            "reason": "Reviewed per-Anchor extra verdict or complete reviewed reference inventory"
+          }
+        ],
+        "verdict_records": [
+          {
+            "status": "confirmed_extra",
+            "reviewed": true,
+            "reliability": 1.0,
+            "verification_type": "synthetic_oracle",
+            "evidence_scope": "input_view",
+            "source": "Known visible raster fixture",
+            "rendered_id": "extra",
+            "accepted": true,
+            "reason": null
+          }
+        ],
+        "tp": 1.0,
+        "fn": 0,
+        "fp": 1.0
+      },
+      "energies": {
+        "semantic": 0.33333333333333337,
+        "spatial": 0.002549913194444444,
+        "appearance": 0.012867647058823529,
+        "statistical": 0.007837055901643063,
+        "perceptual": null
+      },
+      "observation": 0.0891469873720611,
+      "coverage": 0.7692307692307693,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.017156862745098037,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.06862745098039215,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.015299479166666664,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.04739696804647784,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.015299479166666666,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.015299479166666666,
+            "8": 0.015299479166666664,
+            "16": 0.015299479166666666
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 0.33333333333333337,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    },
+    "unknown_extra": {
+      "states": {
+        "a": "matched"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [
+          "extra"
+        ],
+        "unknown_rendered_candidates": [],
+        "extra_records": [
+          {
+            "rendered_id": "extra",
+            "status": "unknown",
+            "reason": "Unmatched rendered object; reference extraction may be incomplete"
+          }
+        ],
+        "verdict_records": [],
+        "tp": 1.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.002549913194444444,
+        "appearance": 0.012867647058823529,
+        "statistical": 0.007837055901643063,
+        "perceptual": null
+      },
+      "observation": 0.0058136540387277585,
+      "coverage": 0.7407407407407407,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.017156862745098037,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.06862745098039215,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.015299479166666664,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.04739696804647784,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.015299479166666666,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.015299479166666666,
+            "8": 0.015299479166666664,
+            "16": 0.015299479166666666
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "extra:extra",
+          "value": null,
+          "q": 0.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Unverified rendered candidate/extra; reference extraction or visibility may be incomplete"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    },
+    "region_content_replaced": {
+      "states": {},
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 1.0,
+        "spatial": 0.0,
+        "appearance": 0.12708787218591142,
+        "statistical": 0.0009985475671750183,
+        "perceptual": null
+      },
+      "observation": 0.2820216049382716,
+      "coverage": 0.7333333333333333,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.16339869281045752,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "region",
+          "id": "grass",
+          "value": 1.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Region content missing fraction at fixed reference coordinates"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "grass",
+          "value": 0.32679738562091504,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "grass",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0019970951343500367,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0019970951343500367,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        }
+      ]
+    },
+    "region_detector_failed": {
+      "states": {},
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": null,
+        "spatial": 0.0,
+        "appearance": 0.12708787218591142,
+        "statistical": 0.0009985475671750183,
+        "perceptual": null
+      },
+      "observation": 0.04269547325102881,
+      "coverage": 0.6666666666666666,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.16339869281045752,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "region",
+          "id": "grass",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Reviewed occupancy of the reference content unavailable; detector failure is not region absence",
+          "method": "Region content missing fraction at fixed reference coordinates"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "grass",
+          "value": 0.32679738562091504,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "grass",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0019970951343500367,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0019970951343500367,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        }
+      ]
+    },
+    "color_error_baseline": {
+      "states": {
+        "a": "matched"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 1.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.0,
+        "appearance": 0.15395220588235295,
+        "statistical": 0.00018853695324283566,
+        "perceptual": null
+      },
+      "observation": 0.038535185708898946,
+      "coverage": 0.7692307692307693,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.027573529411764705,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0015082956259426853,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.5882352941176471,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    },
+    "add_q_zero": {
+      "states": {
+        "a": "matched"
+      },
+      "extras": [],
+      "inventory": {
+        "complete": false,
+        "supplied": true,
+        "reference_complete": false,
+        "unknown_candidates": 0,
+        "unknown_extras": [],
+        "unknown_rendered_candidates": [],
+        "extra_records": [],
+        "verdict_records": [],
+        "tp": 1.0,
+        "fn": 0,
+        "fp": 0
+      },
+      "energies": {
+        "semantic": 0.0,
+        "spatial": 0.0,
+        "appearance": 0.15395220588235295,
+        "statistical": 0.00018853695324283566,
+        "perceptual": null
+      },
+      "observation": 0.038535185708898946,
+      "coverage": 0.6666666666666666,
+      "metric_records": [
+        {
+          "energy": "appearance",
+          "level": "global",
+          "id": "global",
+          "value": 0.027573529411764705,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "perceptual",
+          "level": "global",
+          "id": "global",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:texture",
+          "value": 0.0015082956259426853,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_0_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_0_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_0:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_0",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "appearance",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "spatial",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:texture",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Texture statistics proxy"
+        },
+        {
+          "energy": "statistical",
+          "level": "region",
+          "id": "patch_1_1:distribution",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "status": "valid",
+          "reason": null,
+          "method": "Multiscale edge distribution proxy",
+          "per_scale": {
+            "4": 0.0,
+            "8": 0.0,
+            "16": 0.0
+          }
+        },
+        {
+          "energy": "perceptual",
+          "level": "region",
+          "id": "patch_1_1",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO multiscale perceptual features"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "instance_1_minus_f1",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Existing weighted instance F1 on verified conclusions; Unknown excluded and reported"
+        },
+        {
+          "energy": "semantic",
+          "level": "anchor",
+          "id": "pending",
+          "value": null,
+          "q": 0.0,
+          "aggregation_weight": 50.0,
+          "status": "unavailable",
+          "reason": "Unreviewed or unknown Anchor evidence"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "pending",
+          "value": null,
+          "q": 0.0,
+          "aggregation_weight": 50.0,
+          "status": "unavailable",
+          "reason": "Unreviewed or unknown Anchor evidence"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "pending",
+          "value": null,
+          "q": 0.0,
+          "aggregation_weight": 50.0,
+          "status": "unavailable",
+          "reason": "Unreviewed or unknown Anchor evidence"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "pending",
+          "value": null,
+          "q": 0.0,
+          "aggregation_weight": 50.0,
+          "status": "unavailable",
+          "reason": "Unreviewed or unknown Anchor evidence"
+        },
+        {
+          "energy": "appearance",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.5882352941176471,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "RGB L1 at reference Anchor coordinates"
+        },
+        {
+          "energy": "perceptual",
+          "level": "anchor",
+          "id": "a",
+          "value": null,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "unavailable",
+          "reason": "Local DINO extractor unavailable; no substitute feature score",
+          "method": "DINO at reference Anchor coordinates"
+        },
+        {
+          "energy": "spatial",
+          "level": "anchor",
+          "id": "a",
+          "value": 0.0,
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "status": "valid",
+          "reason": null,
+          "method": "Normalized center displacement"
+        }
+      ]
+    }
+  },
+  "api_calls": 0,
+  "gpu_used": false,
+  "blender_used": false,
+  "note": "Synthetic raster oracle only; Perceptual N/A without local DINO. These are not bw_9064 reconstruction scores.",
+  "unit_tests": {
+    "tests_run": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": [
+      "test_benchmark.BenchmarkTests.test_adaptive_formula",
+      "test_benchmark.BenchmarkTests.test_anchor_appearance_at_reference_position",
+      "test_benchmark.BenchmarkTests.test_anchor_importance_increases_spatial_and_appearance_influence",
+      "test_benchmark.BenchmarkTests.test_candidates_are_never_ground_truth",
+      "test_benchmark.BenchmarkTests.test_color_does_not_change_anchor_semantics_with_dino",
+      "test_benchmark.BenchmarkTests.test_color_perturbation",
+      "test_benchmark.BenchmarkTests.test_conflicting_and_inferred_evidence_excluded",
+      "test_benchmark.BenchmarkTests.test_deleted_anchor_and_extra",
+      "test_benchmark.BenchmarkTests.test_dino_available_without_semantics_returns_semantic_na",
+      "test_benchmark.BenchmarkTests.test_dino_formula_unit_stub",
+      "test_benchmark.BenchmarkTests.test_dino_preserves_full_frame_and_same_coordinates",
+      "test_benchmark.BenchmarkTests.test_duplicate_rendered_ids_rejected",
+      "test_benchmark.BenchmarkTests.test_edge_only_statistics_are_labelled_proxy",
+      "test_benchmark.BenchmarkTests.test_expected_measurements_and_weights_retained_when_unavailable",
+      "test_benchmark.BenchmarkTests.test_fixed_camera_prompt",
+      "test_benchmark.BenchmarkTests.test_flat_components_can_form_three_dimensional_assembly",
+      "test_benchmark.BenchmarkTests.test_flatness_requires_expectation",
+      "test_benchmark.BenchmarkTests.test_global_assignment_same_class_instances",
+      "test_benchmark.BenchmarkTests.test_identity_and_all_five_outputs",
+      "test_benchmark.BenchmarkTests.test_importance_affects_missing_anchor_f1",
+      "test_benchmark.BenchmarkTests.test_invalid_evidence_and_image_size",
+      "test_benchmark.BenchmarkTests.test_multiscale_distribution_preserves_count_and_coverage",
+      "test_benchmark.BenchmarkTests.test_na_without_evidence",
+      "test_benchmark.BenchmarkTests.test_no_inventory_is_unknown_not_missing",
+      "test_benchmark.BenchmarkTests.test_occupancy_roundtrip_and_actual_aggregation_weights",
+      "test_benchmark.BenchmarkTests.test_optional_mask_and_movement",
+      "test_benchmark.BenchmarkTests.test_reference_independence_and_nonmutation",
+      "test_benchmark.BenchmarkTests.test_region_occupancy_uses_independent_same_grid_mask",
+      "test_benchmark.BenchmarkTests.test_region_semantics_require_reviewed_categories",
+      "test_benchmark.BenchmarkTests.test_relation_rules_and_complex_na",
+      "test_benchmark.BenchmarkTests.test_reliability_and_importance_only_weight_within_energy",
+      "test_benchmark.BenchmarkTests.test_repeated_distribution_perturbation",
+      "test_benchmark.BenchmarkTests.test_reviewed_occupancy_is_distinct_from_texture_proxy",
+      "test_benchmark.BenchmarkTests.test_runtime_still_blocked_and_review_required",
+      "test_benchmark.BenchmarkTests.test_same_coordinates_not_best_patch",
+      "test_benchmark.BenchmarkTests.test_saved_evidence_can_be_evaluated_again",
+      "test_benchmark.BenchmarkTests.test_semantic_mismatch",
+      "test_benchmark.BenchmarkTests.test_soft_mask_exclusion_report_roundtrip",
+      "test_benchmark.BenchmarkTests.test_structural_triage_gate",
+      "test_benchmark.BenchmarkTests.test_support_needs_coordinate_attachment_evidence",
+      "test_benchmark.BenchmarkTests.test_unreviewed_additions_do_not_change_conditional_error",
+      "test_benchmark.BenchmarkTests.test_unreviewed_regions_preserve_grid",
+      "test_benchmark.BenchmarkTests.test_unreviewed_render_candidates_prevent_false_absence",
+      "test_benchmark.BenchmarkTests.test_unreviewed_statistical_components_remain_expected",
+      "test_benchmark.BenchmarkTests.test_vlm_dict_and_uncertain_are_preserved",
+      "test_benchmark.BenchmarkTests.test_vlm_inside_energy",
+      "test_benchmark.BenchmarkTests.test_vlm_unavailable_malformed_exception",
+      "test_missing_evidence.CoverageAuditTests.test_boolean_mask_archive_uses_existing_loader_without_promotion",
+      "test_missing_evidence.CoverageAuditTests.test_dense_unknown_partition_and_sparse_candidates_are_distinct",
+      "test_missing_evidence.CoverageAuditTests.test_union_not_area_sum_and_unreviewed_semantics",
+      "test_missing_evidence.MissingEvidenceTests.test_complete_reference_allows_confirmed_extra",
+      "test_missing_evidence.MissingEvidenceTests.test_complete_reviewed_render_oracle_confirms_missing",
+      "test_missing_evidence.MissingEvidenceTests.test_conflicting_reviewed_verdicts_stay_unknown",
+      "test_missing_evidence.MissingEvidenceTests.test_detector_false_negative_with_object_present_is_unknown",
+      "test_missing_evidence.MissingEvidenceTests.test_empty_scene_inventory_cannot_confirm_input_view_absence",
+      "test_missing_evidence.MissingEvidenceTests.test_explicit_correspondence_permits_displaced_class_mismatch",
+      "test_missing_evidence.MissingEvidenceTests.test_explicit_verified_extra_without_complete_reference",
+      "test_missing_evidence.MissingEvidenceTests.test_matched_and_no_mask_required",
+      "test_missing_evidence.MissingEvidenceTests.test_missing_not_duplicated_as_anchor_appearance_or_spatial_penalty",
+      "test_missing_evidence.MissingEvidenceTests.test_missing_relation_endpoint_is_not_another_absence_penalty",
+      "test_missing_evidence.MissingEvidenceTests.test_overlapping_class_replacement_is_semantic_mismatch",
+      "test_missing_evidence.MissingEvidenceTests.test_partial_verified_missing_and_unknown_remain_separate",
+      "test_missing_evidence.MissingEvidenceTests.test_q_zero_additions_preserve_conditioned_scores",
+      "test_missing_evidence.MissingEvidenceTests.test_region_replacement_still_compares_reference_pixels",
+      "test_missing_evidence.MissingEvidenceTests.test_remote_unrelated_class_does_not_prove_replacement",
+      "test_missing_evidence.MissingEvidenceTests.test_scene_only_object_is_not_an_input_view_match",
+      "test_missing_evidence.MissingEvidenceTests.test_single_human_absence_without_complete_inventory",
+      "test_missing_evidence.MissingEvidenceTests.test_unknown_extra_reduces_coverage_not_existing_conditional_error",
+      "test_missing_evidence.MissingEvidenceTests.test_unmatched_render_is_unknown_extra_with_incomplete_reference",
+      "test_missing_evidence.MissingEvidenceTests.test_unreviewed_render_candidate_does_not_erase_verified_absence",
+      "test_missing_evidence.MissingEvidenceTests.test_unvalidated_vlm_or_unreviewed_absence_cannot_confirm",
+      "test_missing_evidence.MissingEvidenceTests.test_verified_region_occupancy_missing_fraction_and_wrong_category_gate",
+      "test_missing_evidence.MissingEvidenceTests.test_zero_iou_large_displacement_is_misplaced_not_missing",
+      "test_missing_evidence.SegmentationResourceTests.test_busy_gpu_is_rejected_before_model_loading",
+      "test_missing_evidence.SegmentationResourceTests.test_gpu_must_be_explicit_single_uuid"
+    ],
+    "log": "unit_tests_final.log",
+    "baseline_tests": 47
+  }
+}

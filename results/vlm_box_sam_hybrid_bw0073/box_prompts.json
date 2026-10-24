@@ -1,0 +1,74 @@
+{
+  "image_size": [
+    7952,
+    4333
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "normalized_bbox": [
+        0,
+        50,
+        350,
+        1000
+      ],
+      "native_bbox": [
+        0.0,
+        216.65,
+        2783.2,
+        4333.0
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "normalized_bbox": [
+        335,
+        108,
+        687,
+        857
+      ],
+      "native_bbox": [
+        2663.92,
+        467.964,
+        5463.024,
+        3713.381
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "normalized_bbox": [
+        355,
+        280,
+        615,
+        527
+      ],
+      "native_bbox": [
+        2822.96,
+        1213.24,
+        4890.48,
+        2283.491
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "normalized_bbox": [
+        712,
+        0,
+        1000,
+        910
+      ],
+      "native_bbox": [
+        5661.824,
+        0.0,
+        7952.0,
+        3943.03
+      ],
+      "reviewed": false
+    }
+  ],
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/direct_regions.json",
+  "reviewed": false
+}

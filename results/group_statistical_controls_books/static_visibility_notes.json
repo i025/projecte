@@ -1,0 +1,13 @@
+{
+  "source": "Codex static visibility notes; not human GT or VLM verification",
+  "reviewed": false,
+  "human_review": "unreviewed",
+  "A_C": "Left upper and right lower compartments show three horizontal layers; left lower shows standing forms.",
+  "B": "Three groups show standing forms; no obvious whole-book image clipping seen.",
+  "risks": [
+    "Visible 8-sample grain; weak page-block detail can cause book/folder/record-sleeve category ambiguity.",
+    "Shelf boards, short spine bands, dark divider junctions and top gap may be distracting lines.",
+    "C pale cover colors change boundary contrast even with identical geometry."
+  ],
+  "changes_after_visual_check": "none; frozen prompt/labels/configs/images unchanged"
+}

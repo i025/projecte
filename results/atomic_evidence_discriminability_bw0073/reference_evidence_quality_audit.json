@@ -1,0 +1,130 @@
+{
+  "source": "reference_text_only_methodology_review",
+  "reviewed": false,
+  "image_facts_confirmed": false,
+  "render_read": false,
+  "scope": "仅对已获准阅读的冻结Reference证据JSON及reference_only_notes.md进行文字结构与可验证性审查。未查看Reference图像、Mask图像、Render、差异图或既有评价；本审查不是人工GT，不确认任何图像事实或验证器有效性。",
+  "global_findings": [
+    {
+      "topic": "自评不等于可靠性",
+      "finding": "uncertainty.level=low是草拟者对该陈述的自评，不是经过校准的可靠性，也不改变reviewed=false、reliability=0与formal_score=false的边界。",
+      "suggested_future_protocol": "分别记录陈述自评、独立事实复核状态、验证器有效性及实际检查结果；不得用low自评自动提升为人工GT、已验证事实或正式得分依据。"
+    },
+    {
+      "topic": "bbox不等于Mask",
+      "finding": "各scope bbox在数值上位于相应region bbox内，但矩形包含关系不能证明其落在二值Mask内部。笔记明确允许支持范围超出继承的未复核候选Mask；不能把这些观察统一解释为Mask内部证据。",
+      "suggested_future_protocol": "前瞻地明确检查支持范围采用bbox、bbox与Mask交集还是对象支持范围，并区分观察支持与区域归属。若交集裁掉目标，不能据此判目标缺失；本轮不确认任何Mask像素包含关系。"
+    },
+    {
+      "topic": "计数不等于分布",
+      "finding": "R2_STA_01与R3_STA_01两条Statistical证据均为整数计数，未独立覆盖分布、密度或尺度。R2_SPA_02的单排描述及R3_APP_01中的dense标签不能自动补足这些覆盖。",
+      "suggested_future_protocol": "未来按任务目标另行预先定义相对尺寸、归一化间距分布、覆盖比例或纹理密度与尺度等指标。此类建议不作为本轮已冻结证据，也不回填本轮覆盖。"
+    },
+    {
+      "topic": "定位描述与被测属性",
+      "finding": "若干claim包含的对象形态或位置描述多于expected实际测试的属性。类别回答符合expected，不意味着所有定位描述与附加形容词均已被验证。",
+      "suggested_future_protocol": "将目标定位用描述与真正被评分的属性明确分开；对每条证据预先规定允许的类别范围、部分满足时的处理和Unknown条件。"
+    },
+    {
+      "topic": "可观察性与缺失",
+      "finding": "目前需要进一步区分目标缺失、遮挡、定位失败及类别含糊。未知存在性不能转换为对象不存在，定位失败也不能自动当作违例或通过。",
+      "suggested_future_protocol": "分别记录对象对应、可观察性与属性判定；预先规定Unknown或弃权条件，关系证据缺少参照对象时单独报告原因。"
+    },
+    {
+      "topic": "方法适用性与实际检出",
+      "finding": "本审查只讨论文字可操作性，不能据此认定已有验证器有效、已经执行或已经检出真实Render差异。",
+      "suggested_future_protocol": "分别记录证据覆盖、验证器适用与有效状态、实际执行结果和人工静态观察；潜在可检测不能写成实际已检出，相同问答输出不能推出重建质量良好。"
+    },
+    {
+      "topic": "未来建议与本轮冻结边界",
+      "finding": "逐条建议面向未来前瞻协议，不修改本轮冻结陈述，也不构成新增Reference证据。",
+      "suggested_future_protocol": "保持本轮冻结文件不变；在未来任务中于查看待评Render前明确证据、判据、允许回答及可观察性规则。"
+    }
+  ],
+  "per_evidence": [
+    {
+      "id": "R2_SEM_01",
+      "issue": "expected=intersecting_broad_loop_bands主要测试可见形态，未直接测试灯具类别。若将其通过解释为对象类别和形状均正确，会扩大证据覆盖；形态是否归入Semantic还依赖预先明确的分类定义。",
+      "suggested_future_protocol": "区分对象类别与可见形态，并明确该条实际测试范围；可将其作为形态证据，但不由其单独推断灯具类别、真实材质或其他属性已正确。",
+      "reviewed": false
+    },
+    {
+      "id": "R2_SEM_02",
+      "issue": "claim允许浅盘或碗，而expected=fruit_bowl若被严格解释为仅允许碗，可能比陈述范围更窄。问题中的主要摆件还需要通过scope明确定位。盛水果的容器可以作为一个复合类别，不必机械拆分所有名词。",
+      "suggested_future_protocol": "预先明确接受的类别范围和同义表达，例如允许盛水果的浅盘或碗，并说明容器与水果是类别定义的一部分；避免只按英文标签字面判断。",
+      "reviewed": false
+    },
+    {
+      "id": "R2_SPA_01",
+      "issue": "同时测试位于台面上方和近似水平居中两个可独立改变的关系。一个成立、另一个不成立时，单一类别输出不能充分定位结果；中部与近似也尚无明确容差。",
+      "suggested_future_protocol": "将上下关系与归一化水平偏移分别定义和输出，预先规定参照对象、中心计算方式与容差；如需总体结论，再显式合取两个结果。",
+      "reviewed": false
+    },
+    {
+      "id": "R2_SPA_02",
+      "issue": "横向单排是可检查配置，但从左至右本身区分力有限，因为任意实例集合均可按横坐标排序。expected还包含below_countertop，需明确它是定位限定还是另一项被测关系。",
+      "suggested_future_protocol": "预先定义什么构成一排及其容差，区分排列形态与台面下方关系；不额外要求等距或三维共线，除非这些也被单独预先定义。",
+      "reviewed": false
+    },
+    {
+      "id": "R2_STA_01",
+      "issue": "可作为离散可见实例计数目标，有靠背可作为实例筛选条件；但部分可见实例以及椅背与座位对应不清时的计数和弃权规则尚需明确。数量为四不代表间距、尺寸或排列分布匹配。",
+      "suggested_future_protocol": "预先规定可计数实例的最低可见条件、部件对应和Unknown规则；只将该条解释为计数证据，分布与尺度须另有独立判据。",
+      "reviewed": false
+    },
+    {
+      "id": "R2_APP_01",
+      "issue": "这是粗粒度纹理类别，不能代表脉纹密度、尺度、方向或位置已匹配。浅底、深纹、高反差、不规则若仅部分满足，当前类别判定缺少明确处理规则。",
+      "suggested_future_protocol": "预先明确纹理类别的接受范围和部分满足规则；若任务关注连续差异，在有效台面表面支持范围内另定义密度、尺度、方向或反差指标，不推断真实材质。",
+      "reviewed": false
+    },
+    {
+      "id": "R2_APP_02",
+      "issue": "该条聚合多把椅子的座位与靠背，主要色系可能允许局部显著错色仍得到相同类别。颜色距离不能替代Semantic，但这不意味着颜色指标不能用于验证Appearance。",
+      "suggested_future_protocol": "明确采用逐实例、面积多数还是平均色系判定，并说明光照、曝光与可见性条件；将颜色结果限制在外观属性，不由其推断椅子类别或真实材质正确。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_SEM_01",
+      "issue": "壁柜及门板类别基本可操作；壁挂若被解释为真实安装结构，则可能超过可见柜门外观能够支持的范围。此处未进行图像事实确认。",
+      "suggested_future_protocol": "明确测试上部壁柜的视觉类别与可见门板，不声称已经验证安装机制、内部结构或完整柜门数量。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_SEM_02",
+      "issue": "expected只测试盆栽类别，未测试claim中的长叶、向上展开及右侧位置。类别回答一致不能证明这些附加描述均正确。",
+      "suggested_future_protocol": "明确哪些描述仅用于定位，哪些属性需要独立判定；若长叶、展开方向或位置属于任务要求，未来分别预先定义对应判据。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_SPA_01",
+      "issue": "左右均有可以定义为一个夹置关系，但检查时需要分别确认左右两侧；只发现一侧不足以支持整体关系。关系成立也不验证中央面板的纹理或真实材质。",
+      "suggested_future_protocol": "预先定义中央参照对象和两侧柜门组，分别输出左侧与右侧关系后合取；对参照对象缺失或不可见的情况记录原因，不扩大解释到外观或材质。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_SPA_02",
+      "issue": "左右关系较简单，但壁柜门板究竟指邻接门板还是全部柜组不明确。scope数值只覆盖更大柜组bbox的一部分，需明确实际参照范围，不能据此确认图像内的对象完整性。",
+      "suggested_future_protocol": "指定邻接门板或完整柜组作为参照，并预先说明按边界、中心还是其他位置定义image_left；为关系双方保留足够的观察支持。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_STA_01",
+      "issue": "expected=3只测试器皿数量，不测试分处不同高度。scope宽度仅47像素，更适合作为局部计数探针；相对于区域布局、柜组覆盖与背景纹理，其区域级保真代表性有限，但不能只凭JSON确认其视觉显著性或真实优先级。",
+      "suggested_future_protocol": "若高度只是定位辅助，明确不据计数结果验证高度分布。按任务目标决定该局部计数的优先级，不为Statistical形式配额赋予主要代表性；未来另行覆盖区域分布、密度与尺度。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_APP_01",
+      "issue": "expected增加了dense，而claim未明确提出密度要求；中央墙面和相邻背景板还聚合多个表面。单个纹理类别不能同时保证密度、方向、尺度及跨表面分布一致。",
+      "suggested_future_protocol": "使被测纹理类别与陈述范围对应，区分目标表面；未来对密度、方向及尺度另设连续指标和支持范围，不从可见脉纹推断真实石材。",
+      "reviewed": false
+    },
+    {
+      "id": "R3_SEM_03",
+      "issue": "expected=null并排除计分保持了未知边界。但肯定式存在命题与能否明确辨认的问题混合了存在性和可辨识性：不可辨认不等于不存在，不能将null转换为false。",
+      "suggested_future_protocol": "分开记录对象存在性未知与因遮挡或细节不足而不可辨认；未知项不计入肯定或否定正确性分母，也不据待评Render补出Reference中的存在性真值。",
+      "reviewed": false
+    }
+  ]
+}

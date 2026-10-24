@@ -1,0 +1,111 @@
+{
+  "record_kind": "publication_excerpt_not_new_experiment",
+  "source": "Original server inventory.csv and selected.csv, retained locally without changes",
+  "all_inventory_records": 29,
+  "selected_records": 9,
+  "selected": [
+    {
+      "run_id": "scene_064-harbor-generation/scene_064/task__LY4dtPw",
+      "task_id": "bw_9064",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "unknown：准备输入仅一图和通用指令，但本轮不将其升级为经过完整输入隔离证明的 Strict Baseline。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "1",
+      "batch": "1"
+    },
+    {
+      "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+      "task_id": "bw_0074",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "2",
+      "batch": "1"
+    },
+    {
+      "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+      "task_id": "bw_0073",
+      "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "supported_by_saved_input_and_native_trace：单张初始 input_image；仅通用重建/工具/相机指令，无原任务 query/rubric；详见 report.md 的证据和边界。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "3",
+      "batch": "1"
+    },
+    {
+      "run_id": "bw_0073-codex-fixed-camera-v1-official-query-generation/bw_0073/task__Dpf9tyA",
+      "task_id": "bw_0073",
+      "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "4",
+      "batch": "2"
+    },
+    {
+      "run_id": "bw_0073-official-harbor-continued/bw_0073/task__qtzUWks",
+      "task_id": "bw_0073",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "5",
+      "batch": "2"
+    },
+    {
+      "run_id": "official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T",
+      "task_id": "bw_0063",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "6",
+      "batch": "2"
+    },
+    {
+      "run_id": "official-showcase-10-images-v2/bw_0043/bw_0043__p7isE6U",
+      "task_id": "bw_0043",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "7",
+      "batch": "2"
+    },
+    {
+      "run_id": "official-showcase-10-images-v2/bw_0006/bw_0006__gfHGhky",
+      "task_id": "bw_0006",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "8",
+      "batch": "2"
+    },
+    {
+      "run_id": "official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5",
+      "task_id": "bw_0075",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "eligibility": "eligible",
+      "offline_evaluator_candidate": "yes_pending_manual_scene_review",
+      "strict_rgb_only_baseline": "not_proven：原始 Image+Text 任务提供了场景描述。",
+      "fixed_t0_compliant": "not_proven_or_different：不得认定符合当前 Project e T0。",
+      "recommendation_rank": "9",
+      "batch": "2"
+    }
+  ],
+  "omitted": "Third-party task briefs, reference/render/scene files, broad server paths and full run directory lists",
+  "selection_is_ground_truth": false,
+  "reviewed": false,
+  "usage": "provisional/debug"
+}

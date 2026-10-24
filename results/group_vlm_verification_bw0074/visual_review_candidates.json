@@ -1,0 +1,29 @@
+{
+  "source": "Assistant static image review after actual VLM responses; no further model request",
+  "reviewed": false,
+  "reliability": 0.0,
+  "actual_vlm_verification": false,
+  "human_ground_truth": false,
+  "reference_or_roi_modified": false,
+  "items": [
+    {
+      "field": "present",
+      "assessment": "两侧R2可见装订书籍，yes/yes与可见证据大体一致。",
+      "uncertainty": "无需计入R3即可支持yes；但三个答案不能证明模型实际使用了哪些书籍/柜格。",
+      "reviewed": false
+    },
+    {
+      "field": "shelf_sections",
+      "assessment": "两侧各可辨至少三个含书的独立柜格，3+/3+在这一粗类别下合理。",
+      "uncertainty": "3+存在饱和，不能推出精确数量、占用位置、覆盖范围或分散程度一致。",
+      "reviewed": false
+    },
+    {
+      "field": "arrangement",
+      "assessment": "Reference兼有竖立书籍与多个水平书堆；Render主要为竖立书脊，mixed→upright具有可见候选依据。",
+      "uncertainty": "Render少数扁平结构不易区分书堆与隔板/底座；主要方向与mixed没有比例阈值。不能据此确认冻结“两方向存在”命题被违反。",
+      "reviewed": false
+    }
+  ],
+  "scope_warning": "固定R2在Render右边界可能略含R3唱片左缘；无需使用它们即可解释yes/3+，但不能排除模型受其影响。相机与遮挡不同、取证位置未返回，全部保留人工审核；没有为此移动ROI或追加请求。"
+}

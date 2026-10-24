@@ -1,0 +1,49 @@
+{
+  "side": "reference",
+  "status": "valid",
+  "answers": {
+    "present": "yes",
+    "shelf_sections": "3+",
+    "arrangement": "mixed"
+  },
+  "fields": {
+    "present": {
+      "validation_status": "valid",
+      "value": "yes",
+      "error": null,
+      "raw_value": "yes",
+      "field_present": true
+    },
+    "shelf_sections": {
+      "validation_status": "valid",
+      "value": "3+",
+      "error": null,
+      "raw_value": "3+",
+      "field_present": true
+    },
+    "arrangement": {
+      "validation_status": "valid",
+      "value": "mixed",
+      "error": null,
+      "raw_value": "mixed",
+      "field_present": true
+    }
+  },
+  "source": "real_vlm",
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "response": {
+    "model": "openai/gpt-6-sol",
+    "source": "vlm_api",
+    "request_number": 1,
+    "raw_answer": "{\"present\":\"yes\",\"shelf_sections\":\"3+\",\"arrangement\":\"mixed\"}",
+    "parsed_answer": {
+      "present": "yes",
+      "shelf_sections": "3+",
+      "arrangement": "mixed"
+    },
+    "evaluation_status": "answered"
+  },
+  "schema_valid": true,
+  "schema_errors": []
+}

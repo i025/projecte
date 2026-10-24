@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "cpu_wall_seconds": 89.40188442496583,
+  "method_iterations": 1,
+  "actual_labels": {
+    "200": 144,
+    "400": 298
+  },
+  "paid_calls": 0,
+  "model_calls": 0,
+  "gpu_runs": 0,
+  "reviewed": false
+}

@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "reference": "yes",
+      "render": "yes",
+      "status": "satisfied",
+      "what_it_checks": "中央岛台存在性",
+      "what_it_misses": "形态、台面纹理、尺寸、位置、台上组成内容",
+      "relevant_difference_ids": [
+        "D01",
+        "D03",
+        "D06"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "q2",
+      "reference": 4,
+      "render": 4,
+      "status": "satisfied",
+      "what_it_checks": "前侧可见高脚椅数量",
+      "what_it_misses": "椅子外观、比例、精细位置、间距与密度；单排也不等于形状/分布一致",
+      "relevant_difference_ids": [
+        "D02",
+        "D03"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "q3",
+      "reference": "yes",
+      "render": "yes",
+      "status": "satisfied",
+      "what_it_checks": "吊灯相对于岛台的粗投影上方关系",
+      "what_it_misses": "纵向间距、灯体大小和外观、精确位置；条件可见性未独立核验",
+      "relevant_difference_ids": [
+        "D04",
+        "D05"
+      ],
+      "reviewed": false
+    }
+  ],
+  "actual_source": "prior_atomic_verification_results.json",
+  "answers_same_is_not_good_reconstruction": true,
+  "r3_actual_paid_atomic_answers_available": false,
+  "new_vlm_requests": 0,
+  "reviewed": false
+}

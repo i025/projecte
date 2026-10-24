@@ -1,0 +1,565 @@
+{
+  "status": "completed",
+  "protocol": {
+    "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87",
+    "backend": "Codex Subagent",
+    "model": "gpt-6-sol",
+    "system": "你是图像结构验证器。只根据当前图片判断指定书架结构。present 表示有充分可见证据确认内部竖向结构隔板存在；absent 表示目标层足够可见，能确认没有该隔板；unknown 表示遮挡、模糊或类别歧义导致无法判断。不要把柜体外框、书脊、阴影或遮挡物当成内部隔板，不猜测被遮挡的结构。只输出 JSON。",
+    "user": "书架最上方开口层（柜体外顶板与第一块内部水平层板之间）是否存在把同层左右开口分开的内部竖向结构隔板？仅输出一个 JSON 对象，唯一字段 internal_divider，其值只能为 present、absent 或 unknown。不要输出解释。",
+    "schema": {
+      "type": "object",
+      "required": [
+        "internal_divider"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "internal_divider": {
+          "type": "string",
+          "enum": [
+            "present",
+            "absent",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "maximum_verifiers": 3,
+    "serial": true,
+    "automatic_retries": false,
+    "synthetic": true,
+    "reviewed": false,
+    "usage": "provisional/debug",
+    "generation": "New Pillow 2.5D fixture; CPU only; same view/frame/books; no history images or Agent code",
+    "source_inspection": "Coordinator inspected this small drawing function before execution; no dynamic code, network, Blender or subprocess",
+    "maximum_cpu_seconds_per_process": 30,
+    "maximum_address_space_bytes": 1073741824
+  },
+  "rows": [
+    {
+      "sample": {
+        "sample_id": "i_a51bf07bba",
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/2758d1bbf3ce44dd89c506b5f6d18a03.png",
+        "condition": "divider_present",
+        "scene": {
+          "size": [
+            1024,
+            800
+          ],
+          "projection": "fixed affine orthographic 2.5D; no perspective camera fitting",
+          "projection_formula": "x=495+185*(x+.38*y); y=752-177*(z+.20*y)",
+          "frame_bounds": [
+            [
+              -2.1,
+              0,
+              0.2
+            ],
+            [
+              2.1,
+              0.48,
+              3.8
+            ]
+          ],
+          "target_divider": [
+            [
+              -0.055,
+              0,
+              2.05
+            ],
+            [
+              0.055,
+              0.45,
+              3.64
+            ]
+          ],
+          "divider_constructed": true,
+          "foreground_occluder": false,
+          "other_book_and_frame_geometry_unchanged": true,
+          "supersampling": 2,
+          "upper_book_geometry": [
+            [
+              -1.76,
+              0.17,
+              1.13
+            ],
+            [
+              -1.52,
+              0.17,
+              1.29
+            ],
+            [
+              -1.28,
+              0.17,
+              1.18
+            ],
+            [
+              -1.04,
+              0.17,
+              1.36
+            ],
+            [
+              0.72,
+              0.17,
+              1.13
+            ],
+            [
+              0.96,
+              0.17,
+              1.29
+            ],
+            [
+              1.2,
+              0.17,
+              1.18
+            ],
+            [
+              1.44,
+              0.17,
+              1.36
+            ],
+            [
+              1.68,
+              0.17,
+              1.13
+            ]
+          ]
+        },
+        "construction_truth": "present",
+        "answer_candidate": "present",
+        "answer_candidate_source": "coordinator_pre_inference_image_inspection; construction_expected for clear cases, separate visibility candidate for occlusion",
+        "human_visibility_review": "not_independently_reviewed_construction_label",
+        "reviewed": false,
+        "visibility_audit": {
+          "answer_candidate": "present",
+          "observability_candidate": "visible",
+          "observation": "上方开口中央可见与柜体同饰面的厚竖板，并连接顶板与中间层板；书籍细边与其分离。",
+          "source": "coordinator_pre_inference_image_inspection; construction_expected for clear cases, separate visibility candidate for occlusion",
+          "observed_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/2758d1bbf3ce44dd89c506b5f6d18a03.png",
+          "reviewed": false,
+          "human_review": "unreviewed",
+          "created_unix": 1792849077.263157,
+          "before_verifier_sessions": true
+        }
+      },
+      "observation": {
+        "raw_answer": "{\"internal_divider\":\"present\"}",
+        "parsed": {
+          "status": "valid",
+          "value": "present"
+        },
+        "actual_input": {
+          "task_name": "v_9ceece229180",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/9fe6870f540d481db44f812802185918/8122861496814c4986cd70bd2813210e.png\n\nSystem：\n你是图像结构验证器。只根据当前图片判断指定书架结构。present 表示有充分可见证据确认内部竖向结构隔板存在；absent 表示目标层足够可见，能确认没有该隔板；unknown 表示遮挡、模糊或类别歧义导致无法判断。不要把柜体外框、书脊、阴影或遮挡物当成内部隔板，不猜测被遮挡的结构。只输出 JSON。\n\nUser：\n书架最上方开口层（柜体外顶板与第一块内部水平层板之间）是否存在把同层左右开口分开的内部竖向结构隔板？仅输出一个 JSON 对象，唯一字段 internal_divider，其值只能为 present、absent 或 unknown。不要输出解释。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "read_audit_passed": true,
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/tmp/9fe6870f540d481db44f812802185918/8122861496814c4986cd70bd2813210e.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+          }
+        ],
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T13-38-16-01a16e22-3048-71a0-a537-7f673cd7b953.jsonl",
+        "agent_path": "/root/v_9ceece229180",
+        "usage": {
+          "input_tokens": 44228,
+          "cached_input_tokens": 29056,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 79,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 44307
+        },
+        "duration_seconds": 8.503,
+        "started_at": 1792849096,
+        "completed_at": 1792849105,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "reviewed": false
+      },
+      "comparison": {
+        "status": "matches_construction_expected",
+        "prediction": "present",
+        "expected": "present",
+        "labels_are_reviewed_gt": false,
+        "reviewed": false
+      },
+      "reviewed": false
+    },
+    {
+      "sample": {
+        "sample_id": "i_b6de505eb6",
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/8383663ef8b240e3adeb1e85209299a3.png",
+        "condition": "divider_absent",
+        "scene": {
+          "size": [
+            1024,
+            800
+          ],
+          "projection": "fixed affine orthographic 2.5D; no perspective camera fitting",
+          "projection_formula": "x=495+185*(x+.38*y); y=752-177*(z+.20*y)",
+          "frame_bounds": [
+            [
+              -2.1,
+              0,
+              0.2
+            ],
+            [
+              2.1,
+              0.48,
+              3.8
+            ]
+          ],
+          "target_divider": [
+            [
+              -0.055,
+              0,
+              2.05
+            ],
+            [
+              0.055,
+              0.45,
+              3.64
+            ]
+          ],
+          "divider_constructed": false,
+          "foreground_occluder": false,
+          "other_book_and_frame_geometry_unchanged": true,
+          "supersampling": 2,
+          "upper_book_geometry": [
+            [
+              -1.76,
+              0.17,
+              1.13
+            ],
+            [
+              -1.52,
+              0.17,
+              1.29
+            ],
+            [
+              -1.28,
+              0.17,
+              1.18
+            ],
+            [
+              -1.04,
+              0.17,
+              1.36
+            ],
+            [
+              0.72,
+              0.17,
+              1.13
+            ],
+            [
+              0.96,
+              0.17,
+              1.29
+            ],
+            [
+              1.2,
+              0.17,
+              1.18
+            ],
+            [
+              1.44,
+              0.17,
+              1.36
+            ],
+            [
+              1.68,
+              0.17,
+              1.13
+            ]
+          ]
+        },
+        "construction_truth": "absent",
+        "answer_candidate": "absent",
+        "answer_candidate_source": "coordinator_pre_inference_image_inspection; construction_expected for clear cases, separate visibility candidate for occlusion",
+        "human_visibility_review": "not_independently_reviewed_construction_label",
+        "reviewed": false,
+        "visibility_audit": {
+          "answer_candidate": "absent",
+          "observability_candidate": "visible",
+          "observation": "上方开口结构范围清晰可见，中央为连续背板与空隙；左右书籍未形成连接上下层板的结构竖板。",
+          "source": "coordinator_pre_inference_image_inspection; construction_expected for clear cases, separate visibility candidate for occlusion",
+          "observed_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/8383663ef8b240e3adeb1e85209299a3.png",
+          "reviewed": false,
+          "human_review": "unreviewed",
+          "created_unix": 1792849077.2631598,
+          "before_verifier_sessions": true
+        }
+      },
+      "observation": {
+        "raw_answer": "{\"internal_divider\":\"absent\"}",
+        "parsed": {
+          "status": "valid",
+          "value": "absent"
+        },
+        "actual_input": {
+          "task_name": "v_08cec5fc7eb9",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/fdc51dddef1c4f3480af6ce7b8982ec6/399b0900d10f4a63858b8dbc30b38efb.png\n\nSystem：\n你是图像结构验证器。只根据当前图片判断指定书架结构。present 表示有充分可见证据确认内部竖向结构隔板存在；absent 表示目标层足够可见，能确认没有该隔板；unknown 表示遮挡、模糊或类别歧义导致无法判断。不要把柜体外框、书脊、阴影或遮挡物当成内部隔板，不猜测被遮挡的结构。只输出 JSON。\n\nUser：\n书架最上方开口层（柜体外顶板与第一块内部水平层板之间）是否存在把同层左右开口分开的内部竖向结构隔板？仅输出一个 JSON 对象，唯一字段 internal_divider，其值只能为 present、absent 或 unknown。不要输出解释。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "read_audit_passed": true,
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const result = await tools.view_image({path:\"/tmp/fdc51dddef1c4f3480af6ce7b8982ec6/399b0900d10f4a63858b8dbc30b38efb.png\",detail:\"original\"}); image(result.image_url,\"original\");\n"
+          }
+        ],
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T13-38-57-01a16e22-cd69-78c1-8f1f-c99276605a45.jsonl",
+        "agent_path": "/root/v_08cec5fc7eb9",
+        "usage": {
+          "input_tokens": 44301,
+          "cached_input_tokens": 19840,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 144,
+          "reasoning_output_tokens": 52,
+          "total_tokens": 44445
+        },
+        "duration_seconds": 8.705,
+        "started_at": 1792849137,
+        "completed_at": 1792849145,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "reviewed": false
+      },
+      "comparison": {
+        "status": "matches_construction_expected",
+        "prediction": "absent",
+        "expected": "absent",
+        "labels_are_reviewed_gt": false,
+        "reviewed": false
+      },
+      "reviewed": false
+    },
+    {
+      "sample": {
+        "sample_id": "i_fca1460f33",
+        "image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/bf0cfa337e6b40dfb5bd068060aecadb.png",
+        "condition": "target_occluded",
+        "scene": {
+          "size": [
+            1024,
+            800
+          ],
+          "projection": "fixed affine orthographic 2.5D; no perspective camera fitting",
+          "projection_formula": "x=495+185*(x+.38*y); y=752-177*(z+.20*y)",
+          "frame_bounds": [
+            [
+              -2.1,
+              0,
+              0.2
+            ],
+            [
+              2.1,
+              0.48,
+              3.8
+            ]
+          ],
+          "target_divider": [
+            [
+              -0.055,
+              0,
+              2.05
+            ],
+            [
+              0.055,
+              0.45,
+              3.64
+            ]
+          ],
+          "divider_constructed": true,
+          "foreground_occluder": true,
+          "other_book_and_frame_geometry_unchanged": true,
+          "supersampling": 2,
+          "upper_book_geometry": [
+            [
+              -1.76,
+              0.17,
+              1.13
+            ],
+            [
+              -1.52,
+              0.17,
+              1.29
+            ],
+            [
+              -1.28,
+              0.17,
+              1.18
+            ],
+            [
+              -1.04,
+              0.17,
+              1.36
+            ],
+            [
+              0.72,
+              0.17,
+              1.13
+            ],
+            [
+              0.96,
+              0.17,
+              1.29
+            ],
+            [
+              1.2,
+              0.17,
+              1.18
+            ],
+            [
+              1.44,
+              0.17,
+              1.36
+            ],
+            [
+              1.68,
+              0.17,
+              1.13
+            ]
+          ]
+        },
+        "construction_truth": "present",
+        "answer_candidate": "unknown",
+        "answer_candidate_source": "coordinator_pre_inference_image_inspection; construction_expected for clear cases, separate visibility candidate for occlusion",
+        "human_visibility_review": "unreviewed",
+        "reviewed": false,
+        "visibility_audit": {
+          "answer_candidate": "unknown",
+          "observability_candidate": "unobservable_candidate",
+          "observation": "修正后的前景布帘遮住整个目标开口和隔板上下连接位置；不能从源场景存在性推断当前图可见。仍需独立人工审核遮挡程度。",
+          "source": "coordinator_pre_inference_image_inspection; construction_expected for clear cases, separate visibility candidate for occlusion",
+          "observed_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/bf0cfa337e6b40dfb5bd068060aecadb.png",
+          "reviewed": false,
+          "human_review": "unreviewed",
+          "created_unix": 1792849077.2631617,
+          "before_verifier_sessions": true
+        }
+      },
+      "observation": {
+        "raw_answer": "{\"internal_divider\":\"unknown\"}",
+        "parsed": {
+          "status": "valid",
+          "value": "unknown"
+        },
+        "actual_input": {
+          "task_name": "v_36e13e3e21b0",
+          "model": "gpt-6-sol",
+          "fork_turns": "none",
+          "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/318f8d153fb944539f91029f3e50c76d/f2869e0d24ec42bc939b80f668de6f41.png\n\nSystem：\n你是图像结构验证器。只根据当前图片判断指定书架结构。present 表示有充分可见证据确认内部竖向结构隔板存在；absent 表示目标层足够可见，能确认没有该隔板；unknown 表示遮挡、模糊或类别歧义导致无法判断。不要把柜体外框、书脊、阴影或遮挡物当成内部隔板，不猜测被遮挡的结构。只输出 JSON。\n\nUser：\n书架最上方开口层（柜体外顶板与第一块内部水平层板之间）是否存在把同层左右开口分开的内部竖向结构隔板？仅输出一个 JSON 对象，唯一字段 internal_divider，其值只能为 present、absent 或 unknown。不要输出解释。"
+        },
+        "model_observed": [
+          "gpt-6-sol"
+        ],
+        "effort_observed": [
+          "medium"
+        ],
+        "read_audit_passed": true,
+        "tool_calls": [
+          {
+            "name": "exec",
+            "input": "const r = await tools.view_image({path:\"/tmp/318f8d153fb944539f91029f3e50c76d/f2869e0d24ec42bc939b80f668de6f41.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+          }
+        ],
+        "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T13-39-41-01a16e23-7b4a-78c1-8472-3a8ca75bba93.jsonl",
+        "agent_path": "/root/v_36e13e3e21b0",
+        "usage": {
+          "input_tokens": 44262,
+          "cached_input_tokens": 41216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 100,
+          "reasoning_output_tokens": 13,
+          "total_tokens": 44362
+        },
+        "duration_seconds": 9.671,
+        "started_at": 1792849181,
+        "completed_at": 1792849191,
+        "received_task_text_independently_readable": false,
+        "context_inheritance": "none",
+        "reviewed": false
+      },
+      "comparison": {
+        "status": "not_scored_visibility_review_pending",
+        "prediction": "unknown",
+        "matches_frozen_visibility_candidate": true,
+        "diagnostic": "abstained",
+        "reviewed": false
+      },
+      "reviewed": false
+    }
+  ],
+  "backend": "Codex Subagent",
+  "model": "gpt-6-sol",
+  "actual_verifier_sessions": 3,
+  "total_session_seconds": 26.878999999999998,
+  "token_usage": {
+    "input_tokens": 132791,
+    "cached_input_tokens": 90112,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 323,
+    "reasoning_output_tokens": 65,
+    "total_tokens": 133114
+  },
+  "token_scope": "Full verifier sessions incl platform/image/tool context; parent excluded; cache included in input and reasoning included in output",
+  "actual_currency_cost": null,
+  "formal_energy": null,
+  "accuracy": null,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "strict_blind_test": false,
+  "isolation": "fork_turns=none + anonymous image + one-image tool trace; shared filesystem not hard isolated; received task text not independently readable",
+  "new_execution": {
+    "ofox": 0,
+    "blender": 0,
+    "gpu": 0,
+    "sam": 0,
+    "slic": 0
+  },
+  "clear_construction_label_outcomes": {
+    "matches_construction_expected": 2,
+    "false_positive": 0,
+    "false_negative": 0,
+    "abstained": 0,
+    "unavailable": 0
+  },
+  "pre_inference_image_preflight": {
+    "reason": "Initial foreground cloth exposed a small divider top cap; before any inference/final label freeze, extend cloth upward. Original image retained.",
+    "old_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/9af11450059a45d19289e45c31b3959d.png",
+    "new_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/structural_visual_e270c5514c5b4bbe99b84e2c0782dd87/images/bf0cfa337e6b40dfb5bd068060aecadb.png",
+    "vlm_calls_before_change": 0,
+    "prompt_changed": false,
+    "reviewed": false
+  },
+  "present_absent_pixel_difference_bbox": [
+    482,
+    90,
+    540,
+    391
+  ],
+  "checks": {
+    "frozen_labels_unchanged": true,
+    "historical_sources_unchanged": true,
+    "labels_frozen_before_all_sessions": true,
+    "same_anonymous_prompt_except_path": true,
+    "anonymous_inputs_equal_frozen_images": true,
+    "png_metadata_empty": true,
+    "offline_unit_tests_passed": 4
+  },
+  "generation_scope": "2.5D deterministic drawings, not real Render or photorealistic 3D scenes"
+}

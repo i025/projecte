@@ -1,0 +1,65 @@
+{
+  "image_size": [
+    1672,
+    941
+  ],
+  "regions": [
+    {
+      "id": "R1",
+      "name": "桌椅区",
+      "location": "画面左下方",
+      "content": "一张圆桌、两把木椅，桌上有一盆绿植",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R1.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 176853,
+      "semantic_GT": false,
+      "predicted_bbox_normalized": [
+        120,
+        535,
+        420,
+        910
+      ],
+      "predicted_bbox_native": [
+        200.64,
+        503.435,
+        702.24,
+        856.31
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "冰箱区",
+      "location": "画面右侧",
+      "content": "一台银灰色双门冰箱，周围可见浅色墙面和木地板",
+      "reviewed": false,
+      "reliability": 0.0,
+      "mask": "R2.png",
+      "mask_reviewed": false,
+      "representation": "coarse_evaluation_roi",
+      "status": "candidate",
+      "native_pixel_count": 143277,
+      "semantic_GT": false,
+      "predicted_bbox_normalized": [
+        680,
+        330,
+        855,
+        850
+      ],
+      "predicted_bbox_native": [
+        1136.96,
+        310.53,
+        1429.56,
+        799.85
+      ]
+    }
+  ],
+  "anchors": [],
+  "relations": [],
+  "reviewed": false,
+  "coordinate_convention": "pixel edges, continuous xy; masks sampled at pixel centers",
+  "formal_score": false
+}

@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "c1_overlap": 0.5,
+    "inside_seed": 0.8,
+    "outside_seed": 0.2,
+    "position_weight": 0.75,
+    "decision_margin": 0.15,
+    "core_margin_pixels": 2,
+    "granularities": [
+      200,
+      400
+    ],
+    "primary_granularity": 400
+  },
+  "method_iterations": 1,
+  "roi_sources": [
+    "Box",
+    "Polygon"
+  ],
+  "decision_grid": [
+    1536,
+    837
+  ],
+  "native_image_size": [
+    7952,
+    4333
+  ],
+  "reference_only": true,
+  "recomputed_slic": false,
+  "new_paid_calls": 0,
+  "gpu_runs": 0,
+  "reviewed": false
+}

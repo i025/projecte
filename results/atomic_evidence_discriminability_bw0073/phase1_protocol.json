@@ -1,0 +1,19 @@
+{
+  "phase": "reference_only_before_freeze",
+  "allowed_inputs": [
+    "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+    "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+    "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/evidence.json",
+    "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+    "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png"
+  ],
+  "prohibited_inputs": [
+    "Agent Render",
+    "difference images",
+    "prior evaluation/verification answers and reports"
+  ],
+  "root_has_prior_render_knowledge": true,
+  "reference_only_subagent_inherits_prior_context": false,
+  "strict_blind_test": false,
+  "reviewed": false
+}

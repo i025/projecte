@@ -1,0 +1,24 @@
+{
+  "existing_document_loader_readable": true,
+  "new_candidate_answer_types": {
+    "category": 11,
+    "integer": 2,
+    "boolean": 1
+  },
+  "previous_pilot_atom_question_builder_types": [
+    "boolean",
+    "count"
+  ],
+  "previous_real_vlm_schema": "q1/q3 yes-no-unknown; q2 nonnegative integer or unknown",
+  "loader_readable_does_not_imply_verifier_compatible": true,
+  "new_candidate_verification_adapter_executed": false,
+  "all_new_atom_scores": null,
+  "formal_scoring_eligible": false,
+  "future_protocol_only": [
+    "统一integer/count元数据名称或外置适配，不改冻结命题",
+    "类别答案需预先固定可接受范围、同义表达与Unknown规则，不能严格字符串相等代替语义校准",
+    "每项分别生成中立Reference/Render问题，不泄露期望答案",
+    "对象可见性、对应、审核状态及冲突处理先于Energy映射"
+  ],
+  "reviewed": false
+}

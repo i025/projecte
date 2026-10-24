@@ -1,0 +1,15 @@
+{
+  "status": "static_code_checked",
+  "human_label_review": "unreviewed",
+  "source": "newly authored primitive-only fixture; reviewed before execution",
+  "external_assets": false,
+  "historical_agent_code": false,
+  "loads_blend": false,
+  "network": false,
+  "checks": [
+    "nine closed books with cream page blocks and two covers",
+    "horizontal books touch their supporting shelf/book",
+    "fixed camera/lights/seed; no text objects or image stamps",
+    "CPU only; existing serial resource-limited launcher"
+  ]
+}

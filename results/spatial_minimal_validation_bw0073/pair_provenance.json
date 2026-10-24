@@ -1,0 +1,32 @@
+{
+  "original_pair_audit": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/pair_audit.json",
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+  "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+  "render_camera_height_m": 1.5,
+  "protocol_height_m": 2.0,
+  "reference_camera": "unknown",
+  "comparison_transform": {
+    "original_size": [
+      1672,
+      941
+    ],
+    "common_size": [
+      1536,
+      837
+    ],
+    "nominal_scale": 0.8894792773645058,
+    "resized_size": [
+      1487,
+      837
+    ],
+    "offset_xy": [
+      24,
+      0
+    ],
+    "padding_is_not_observation": true,
+    "content_alignment": false,
+    "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+  },
+  "official_benchmark_eligible": false,
+  "scope": "Historical camera; full-frame letterbox reused, no new alignment"
+}

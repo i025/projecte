@@ -1,0 +1,62 @@
+{
+  "sides": {
+    "reference": {
+      "images": [
+        "request_images/reference_full.png",
+        "request_images/reference_r2.png"
+      ],
+      "image_size": [
+        1024,
+        696
+      ],
+      "same_side_only": true
+    },
+    "render": {
+      "images": [
+        "request_images/render_full.png",
+        "request_images/render_r2.png"
+      ],
+      "image_size": [
+        1024,
+        696
+      ],
+      "same_side_only": true
+    }
+  },
+  "common_grid": [
+    1258,
+    855
+  ],
+  "request_grid": [
+    1024,
+    696
+  ],
+  "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+  "reference_roi_unchanged": true,
+  "full_context_preserved": true,
+  "no_black_mask": true,
+  "render_fit": {
+    "original_size": [
+      1920,
+      1300
+    ],
+    "common_size": [
+      1258,
+      855
+    ],
+    "nominal_scale": 0.6552083333333333,
+    "resized_size": [
+      1258,
+      852
+    ],
+    "offset_xy": [
+      0,
+      1
+    ],
+    "padding_is_not_observation": true,
+    "content_alignment": false,
+    "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+  },
+  "render_roi_not_relocated": true,
+  "reviewed": false
+}

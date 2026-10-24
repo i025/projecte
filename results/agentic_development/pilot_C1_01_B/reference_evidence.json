@@ -1,0 +1,698 @@
+{
+  "image_size": [
+    1024,
+    768
+  ],
+  "anchors": [
+    {
+      "object_id": "O01",
+      "instance_id": "O01",
+      "category": "table",
+      "bbox": [
+        248,
+        230,
+        963,
+        637
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Marble-pattern top plus visible slab/pedestal and lattice supports.",
+      "uncertainty": [
+        "Chairs occlude supports; metal lattice belongs to table, not extra objects."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Thin table lattice/support incompletely selected; speckled contamination near lower support."
+      ],
+      "id": "O01",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O01.png",
+      "position": [
+        605.5,
+        433.5
+      ]
+    },
+    {
+      "object_id": "O02",
+      "instance_id": "O02",
+      "category": "chair",
+      "bbox": [
+        0,
+        389,
+        287,
+        740
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": true,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Left foreground upholstered chair with silver frame and legs.",
+      "uncertainty": [
+        "Left edge cut; thin metal structure and holes require review."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Review silver frame, thin legs, holes and left crop."
+      ],
+      "id": "O02",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O02.png",
+      "position": [
+        143.5,
+        564.5
+      ]
+    },
+    {
+      "object_id": "O03",
+      "instance_id": "O03",
+      "category": "chair",
+      "bbox": [
+        489,
+        438,
+        784,
+        768
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": true,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Front center upholstered chair, seat/back and silver legs.",
+      "uncertainty": [
+        "Part of seat behind table; bottom legs clipped."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Check speckled pixels inside chair opening versus table/floor; clipped lower legs."
+      ],
+      "id": "O03",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O03.png",
+      "position": [
+        636.5,
+        603.0
+      ]
+    },
+    {
+      "object_id": "O04",
+      "instance_id": "O04",
+      "category": "chair",
+      "bbox": [
+        782,
+        346,
+        1024,
+        660
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": true,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Right foreground chair and visible silver frame/legs.",
+      "uncertainty": [
+        "Right edge clipped; distinguish from rear-right chair."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Mask extends beyond proposed bbox; verify frame pixels and separation from rear chair."
+      ],
+      "id": "O04",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O04.png",
+      "position": [
+        903.0,
+        503.0
+      ]
+    },
+    {
+      "object_id": "O05",
+      "instance_id": "O05",
+      "category": "chair",
+      "bbox": [
+        525,
+        210,
+        655,
+        273
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Rear-left visible dark chair back behind tabletop.",
+      "uncertainty": [
+        "Only small visible back region reliably bounded; do not invent hidden legs."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Mostly visible chair back only; do not complete hidden seat/legs."
+      ],
+      "id": "O05",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O05.png",
+      "position": [
+        590.0,
+        241.5
+      ]
+    },
+    {
+      "object_id": "O06",
+      "instance_id": "O06",
+      "category": "chair",
+      "bbox": [
+        831,
+        221,
+        997,
+        395
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": true,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Rear-right chair back and small visible frame behind/right of tabletop.",
+      "uncertainty": [
+        "Table and near-right chair occlude parts; visible pieces may be disconnected."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "partially_occluded",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Severe table/near-chair occlusion; check disconnected visible frame membership."
+      ],
+      "id": "O06",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O06.png",
+      "position": [
+        914.0,
+        308.0
+      ]
+    },
+    {
+      "object_id": "O07",
+      "instance_id": "O07",
+      "category": "countertop_blender",
+      "bbox": [
+        657,
+        132,
+        752,
+        284
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": "O07",
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Dark transparent jug on a white motor base.",
+      "uncertainty": [
+        "Jug and base are one appliance; handle may be missed."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Jug, handle and motor base must remain one appliance."
+      ],
+      "id": "O07",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O07.png",
+      "position": [
+        704.5,
+        208.0
+      ]
+    },
+    {
+      "object_id": "O08",
+      "instance_id": "O08",
+      "category": "kettle",
+      "bbox": [
+        704,
+        223,
+        817,
+        313
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Reflective rounded vessel with lid and loop handle.",
+      "uncertainty": [
+        "Reflective edges and handle hole; confirm kettle subtype."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Input category/handle uncertain; generated cloche candidate must not determine input category."
+      ],
+      "id": "O08",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O08.png",
+      "position": [
+        760.5,
+        268.0
+      ]
+    },
+    {
+      "object_id": "O09",
+      "instance_id": "O09",
+      "category": "wine_glass",
+      "bbox": [
+        553,
+        228,
+        600,
+        311
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Transparent bowl, thin stem and circular foot.",
+      "uncertainty": [
+        "Transparent stem/foot may not segment reliably."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Thin transparent stem/foot and highlights need close review."
+      ],
+      "id": "O09",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O09.png",
+      "position": [
+        576.5,
+        269.5
+      ]
+    },
+    {
+      "object_id": "O10",
+      "instance_id": "O10",
+      "category": "dish",
+      "bbox": [
+        627,
+        304,
+        700,
+        345
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": false,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Small shallow circular dish on table.",
+      "uncertainty": [
+        "Plate versus shallow bowl subtype not established."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Dish subtype and thin rim unresolved."
+      ],
+      "id": "O10",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O10.png",
+      "position": [
+        663.5,
+        324.5
+      ]
+    },
+    {
+      "object_id": "O11",
+      "instance_id": "O11",
+      "category": "wall_art",
+      "bbox": [
+        306,
+        0,
+        471,
+        102
+      ],
+      "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+      "visible": true,
+      "visibility": "sufficient",
+      "occluded": false,
+      "truncated": true,
+      "group_id": null,
+      "members": [],
+      "evaluate": true,
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "visible_evidence": "Visible cropped wall picture/frame above dining area.",
+      "uncertainty": [
+        "Top of picture outside frame; use visible portion only."
+      ],
+      "mask_status": "candidate_unreviewed",
+      "visible_state": "visible",
+      "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+      "mask_review_issues": [
+        "Top truncation; only visible frame/picture may be evaluated."
+      ],
+      "id": "O11",
+      "importance": 1.0,
+      "reliability": 1.0,
+      "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_masks/O11.png",
+      "position": [
+        388.5,
+        51.0
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "patch_0_0",
+      "bbox": [
+        0,
+        0,
+        512,
+        384
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_0_1",
+      "bbox": [
+        512,
+        0,
+        1024,
+        384
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_0",
+      "bbox": [
+        0,
+        384,
+        512,
+        768
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    },
+    {
+      "id": "patch_1_1",
+      "bbox": [
+        512,
+        384,
+        1024,
+        768
+      ],
+      "description": "Reference-coordinate fallback patch; no semantic category claimed",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ],
+      "reviewed": true,
+      "reliability": 1.0,
+      "source": "deterministic RGB grid",
+      "status": "observable"
+    }
+  ],
+  "relations": [
+    {
+      "fact_id": "r01",
+      "subject": "O02",
+      "predicate": "left_of",
+      "object": "O01",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Left foreground chair lies left of table.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r02",
+      "subject": "O04",
+      "predicate": "right_of",
+      "object": "O01",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Right foreground chair lies right of table.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r03",
+      "subject": "O03",
+      "predicate": "below",
+      "object": "O01",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Front chair lies below tabletop in image.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r04",
+      "subject": "O05",
+      "predicate": "above",
+      "object": "O01",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Rear-left visible back is above table center.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r05",
+      "subject": "O06",
+      "predicate": "above",
+      "object": "O01",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Rear-right visible back is above table center.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r06",
+      "subject": "O08",
+      "predicate": "right_of",
+      "object": "O07",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Reflective vessel is right of blender.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r07",
+      "subject": "O07",
+      "predicate": "right_of",
+      "object": "O09",
+      "status": "observable",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Blender is right of wine glass.",
+      "diagnostic_only": false,
+      "uncertainty": "Candidate requires review; no score computed"
+    },
+    {
+      "fact_id": "r08",
+      "subject": "O07",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Appliance base appears supported by tabletop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r09",
+      "subject": "O08",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Vessel base appears on tabletop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r10",
+      "subject": "O09",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Stemmed glass foot appears on tabletop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r11",
+      "subject": "O10",
+      "predicate": "on",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Shallow dish appears on tabletop.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r12",
+      "subject": "O05",
+      "predicate": "behind",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Tabletop occludes rear-left chair; depth ordering suggested by occlusion.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    },
+    {
+      "fact_id": "r13",
+      "subject": "O06",
+      "predicate": "behind",
+      "object": "O01",
+      "status": "inferred",
+      "confidence": null,
+      "reviewed": false,
+      "evidence": "Tabletop occludes rear-right chair; depth ordering suggested by occlusion.",
+      "diagnostic_only": false,
+      "uncertainty": "Numeric confidence not established; inferred facts have no scoring weight"
+    }
+  ],
+  "candidate_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/C1_01_B/candidate_objects.json",
+  "reviewed": false,
+  "global_evidence": {
+    "description": "Complete reference RGB",
+    "reviewed": true,
+    "reliability": 1.0
+  },
+  "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+  "source": "reference RGB and independently supplied annotations only",
+  "mask_archive": "reference_masks.npz"
+}

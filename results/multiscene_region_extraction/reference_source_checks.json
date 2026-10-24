@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "task_id": "bw_9064",
+      "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "dataset_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/references/image_01.png",
+      "direct_bytes_equal": true,
+      "hash_validation": false
+    },
+    {
+      "task_id": "bw_0074",
+      "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/references/image_01.jpg",
+      "dataset_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+      "direct_bytes_equal": true,
+      "hash_validation": false
+    },
+    {
+      "task_id": "bw_0073",
+      "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/references/image_01.jpg",
+      "dataset_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+      "direct_bytes_equal": true,
+      "hash_validation": false
+    },
+    {
+      "task_id": "bw_0043",
+      "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0043/environment/inputs/references/image_01.jpg",
+      "dataset_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0043/tests/dataset/tasks/bw_0043/references/image_01.jpg",
+      "direct_bytes_equal": true,
+      "hash_validation": false
+    },
+    {
+      "task_id": "bw_0075",
+      "staged_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0075/environment/inputs/references/image_01.jpg",
+      "dataset_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0075/tests/dataset/tasks/bw_0075/references/image_01.jpg",
+      "direct_bytes_equal": true,
+      "hash_validation": false
+    }
+  ],
+  "hash_validation": false
+}

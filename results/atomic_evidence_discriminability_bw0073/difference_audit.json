@@ -1,0 +1,257 @@
+{
+  "phase": "post_reference_freeze",
+  "reference_frozen_file": "reference_evidence_frozen.json",
+  "observations": [
+    {
+      "id": "D01",
+      "region_id": "R2",
+      "kind": "纹理/外观",
+      "observation": "Reference岛台表面有强烈密集的深色脉纹；Render同区域以浅色、较淡纹理为主。",
+      "uncertainty": "可见图样差异明确；不等于确认真实石材材质错误。",
+      "reference_evidence_ids": [
+        "R2_APP_01"
+      ],
+      "evidence_coverage": "partial",
+      "capability_class": "continuous_metric_preferred",
+      "applicable_energy": [
+        "appearance",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "粗纹理类别不能保证对比度/密度匹配；候选未用真实VQA验证，既有图像距离也不能只归因于脉纹。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D02",
+      "region_id": "R2",
+      "kind": "颜色/外观",
+      "observation": "Reference椅背和座位偏暖黄褐；Render更浅、偏粉米色。",
+      "uncertainty": "光照、曝光和材质呈现混合，不能推出真实材质类别。",
+      "reference_evidence_ids": [
+        "R2_APP_02"
+      ],
+      "evidence_coverage": "explicit",
+      "capability_class": "continuous_metric_preferred",
+      "applicable_energy": [
+        "appearance",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "颜色候选已覆盖，但未校准主要色系的判据；连续颜色差更合适。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D03",
+      "region_id": "R2",
+      "kind": "轮廓/比例",
+      "observation": "两侧均为四把高脚椅，但靠背轮廓、外框可见细节及局部比例不同。",
+      "uncertainty": "这是可见形态差异，不是已确认的类别替换或真实三维尺寸误差。",
+      "reference_evidence_ids": [],
+      "evidence_coverage": "not_covered",
+      "capability_class": "not_covered",
+      "applicable_energy": [
+        "spatial",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "四把和横向一排都可保持；冻结证据没有椅背构造或归一化尺寸比例。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D04",
+      "region_id": "R2",
+      "kind": "灯具可见外观",
+      "observation": "两侧都可见交叠环带式吊灯；Reference偏金黄，Render偏浅米白，细部和比例的呈现也不同。",
+      "uncertainty": "不确认环带拓扑或真实金属材质；粗环带类别可能仍相同。",
+      "reference_evidence_ids": [
+        "R2_SEM_01"
+      ],
+      "evidence_coverage": "partial",
+      "capability_class": "continuous_metric_preferred",
+      "applicable_energy": [
+        "appearance",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "形态类别一致并不验证灯具色调、反光和精细轮廓；冻结Appearance未单列灯具。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D05",
+      "region_id": "R2",
+      "kind": "投影位置",
+      "observation": "Render灯体在相同像素坐标下更低，主体部分落在原吊灯Polygon块下方；仍在岛台上方。",
+      "uncertainty": "二维差异可见，不能排除相机/FOV/整体布局因素，不能当作三维位移GT。",
+      "reference_evidence_ids": [
+        "R2_SPA_01"
+      ],
+      "evidence_coverage": "partial",
+      "capability_class": "camera_or_visibility_uncertain",
+      "applicable_energy": [
+        "spatial",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "above及大致居中未描述纵向位置/间距；Q3仍可正确回答yes。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D06",
+      "region_id": "R2",
+      "kind": "摆件类别候选",
+      "observation": "Reference台面有明确的盛水果容器；Render对应功能组附近是较小浅绿色容器样物，未呈现同样清楚的水果组。",
+      "uncertainty": "只能记候选语义替代/遗漏或可见性差异；不能确认对象缺失，也不能将偏离Reference小bbox当作缺失。",
+      "reference_evidence_ids": [
+        "R2_SEM_02"
+      ],
+      "evidence_coverage": "explicit",
+      "capability_class": "covered_pending_verifier",
+      "applicable_energy": [
+        "semantic"
+      ],
+      "missing_or_failure_reason": "已有Reference类别命题可供检查，但尚无对应真实VQA；容器类别、对应与可见性需要人工或有效验证器。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D07",
+      "region_id": "R3",
+      "kind": "纹理/外观",
+      "observation": "Reference后墙与中央背景有强烈斜向深色脉纹；Render更浅，纹理弱且形态不同。",
+      "uncertainty": "表面呈现差异明确；不能据此证明石材品种或真实材质。",
+      "reference_evidence_ids": [
+        "R3_APP_01"
+      ],
+      "evidence_coverage": "explicit",
+      "capability_class": "continuous_metric_preferred",
+      "applicable_energy": [
+        "appearance",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "冻结纹理候选有覆盖，但密度/方向缺乏量化判据；未执行新VQA，已有全区域特征距离不能隔离这一原因。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D08",
+      "region_id": "R3",
+      "kind": "投影范围/位置",
+      "observation": "Render后方柜组的图像位置和可见范围与Reference不同，在固定R3裁剪中更低，混入更多天花板和前景灯体。",
+      "uncertainty": "不能单凭该相机不一致的配对判定柜体真实尺寸或空间位置错误。",
+      "reference_evidence_ids": [
+        "R3_SEM_01",
+        "R3_SPA_01",
+        "R3_SPA_02"
+      ],
+      "evidence_coverage": "partial",
+      "capability_class": "camera_or_visibility_uncertain",
+      "applicable_energy": [
+        "spatial",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "柜组类别和粗左右关系仍可成立；没有柜组二维范围、面积比例或精确相对尺度证据。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D09",
+      "region_id": "R3",
+      "kind": "盆栽位置/尺度",
+      "observation": "完整Render仍可见后方右侧盆栽，但更小、更低；固定R3裁剪未保留其完整主体。",
+      "uncertainty": "存在性不能记missing；相机、遮挡和对象比例影响混合。",
+      "reference_evidence_ids": [
+        "R3_SEM_02"
+      ],
+      "evidence_coverage": "partial",
+      "capability_class": "not_covered",
+      "applicable_energy": [
+        "spatial",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "冻结expected只检查potted_leafy_plant类别，未操作化右侧位置、叶形和投影尺度；有类别证据不等于有位移检测。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    },
+    {
+      "id": "D10",
+      "region_id": "R3",
+      "kind": "陈列组形态/数量/分布候选",
+      "observation": "Reference窄陈列列有三个可辨器皿及下方收纳块；完整Render该列有约四个相似浅色小体块，形态与层级不同。",
+      "uncertainty": "Render小体块能否归类为器皿尚待核对；固定Reference小bbox又截去移位后的部分内容，不能直接宣称3→4的已验证计数错误。",
+      "reference_evidence_ids": [
+        "R3_STA_01",
+        "R3_SPA_02"
+      ],
+      "evidence_coverage": "partial",
+      "capability_class": "camera_or_visibility_uncertain",
+      "applicable_energy": [
+        "statistical",
+        "semantic",
+        "perceptual"
+      ],
+      "missing_or_failure_reason": "缺少统一可数单元、对应与可见性规则；计数3不描述大小/高度分布，且该局部不是整个R3统计保真的代表。",
+      "atomic_verifier_status": "not_executed_for_frozen_atoms",
+      "actual_atomic_detection": "not_established",
+      "static_difference_source": "assistant_post_freeze_image_review",
+      "observation_status": "candidate_not_independent_gt",
+      "reviewed": false,
+      "formal_error_confirmed": false
+    }
+  ],
+  "unjudgeable_cases": [
+    {
+      "id": "U01",
+      "region_id": "R3",
+      "reference_evidence_ids": [
+        "R3_SEM_03"
+      ],
+      "observation": "炉灶是否存在、是否重建或是否缺失，不能从当前图像可靠判断。",
+      "reason": "Reference本身expected=null；遮挡/分辨率不足。",
+      "applicable_energy": [
+        "semantic"
+      ],
+      "expected": null,
+      "status": "unknown",
+      "reviewed": false
+    }
+  ],
+  "no_confirmed_missing": true,
+  "not_reconstruction_error_gt": true,
+  "reviewed": false
+}

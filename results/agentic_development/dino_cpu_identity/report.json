@@ -1,0 +1,1093 @@
+{
+  "scene_validity": {
+    "status": "valid",
+    "reason": "Trusted exporter completed",
+    "camera_contract": "fixed T0, Agent intrinsics",
+    "metadata": {
+      "render_seconds": 0.06689324788749218,
+      "image_size": [
+        128,
+        128
+      ],
+      "samples": 8,
+      "threads": 2,
+      "device": "CPU",
+      "camera_unchanged": true,
+      "camera": {
+        "name": "BenchmarkCamera",
+        "type": "PERSP",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "location": [
+          0.0,
+          -6.0,
+          2.0
+        ],
+        "rotation_euler_world": [
+          1.570796251296997,
+          -0.0,
+          0.0
+        ],
+        "rotation_units": "radians",
+        "lens_mm": 42.0,
+        "sensor_fit": "HORIZONTAL",
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "shift_x": 0.05000000074505806,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0,
+        "dof_enabled": false
+      },
+      "intrinsics_pixels": [
+        [
+          149.3333282470703,
+          0.0,
+          57.599998474121094
+        ],
+        [
+          0.0,
+          149.3333282470703,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_matrix_blender": [
+        [
+          2.3333332538604736,
+          0.0,
+          0.10000002384185791,
+          0.0
+        ],
+        [
+          0.0,
+          2.3333332538604736,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0001999139785767,
+          -0.20002000033855438
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+      "depth_convention": "camera_z",
+      "depth_computation": "negative Blender-camera z of same-render world Position pass",
+      "depth_units": "scene coordinate units; no metric ground truth asserted",
+      "valid_depth_pixel_count": 4711,
+      "raw_z_vs_world_distance_max_error": 1.0099410326662266,
+      "raw_z_vs_world_distance_mean_error": 0.4126552590378331,
+      "position_reprojection_mean_error_pixels": 0.0007472892996729637,
+      "position_reprojection_max_error_pixels": 0.0007827246308145429,
+      "semantic_ids": {
+        "1": "floor",
+        "2": "anchor",
+        "3": "other",
+        "4": "repeat_0",
+        "5": "repeat_1",
+        "6": "repeat_2",
+        "7": "repeat_3",
+        "8": "repeat_4",
+        "9": "repeat_5"
+      },
+      "visible_pixel_counts_by_type": {
+        "floor": {
+          "CURVE": 0,
+          "MESH": 2476
+        },
+        "anchor": {
+          "CURVE": 0,
+          "MESH": 1230
+        },
+        "other": {
+          "CURVE": 0,
+          "MESH": 879
+        },
+        "repeat_0": {
+          "CURVE": 0,
+          "MESH": 25
+        },
+        "repeat_1": {
+          "CURVE": 0,
+          "MESH": 0
+        },
+        "repeat_2": {
+          "CURVE": 0,
+          "MESH": 35
+        },
+        "repeat_3": {
+          "CURVE": 0,
+          "MESH": 40
+        },
+        "repeat_4": {
+          "CURVE": 0,
+          "MESH": 0
+        },
+        "repeat_5": {
+          "CURVE": 0,
+          "MESH": 26
+        }
+      },
+      "components": [
+        {
+          "component_id": 1,
+          "name": "anchor",
+          "type": "MESH",
+          "semantic_id": 2,
+          "visible_pixel_count": 1230
+        },
+        {
+          "component_id": 2,
+          "name": "floor",
+          "type": "MESH",
+          "semantic_id": 1,
+          "visible_pixel_count": 2476
+        },
+        {
+          "component_id": 3,
+          "name": "other",
+          "type": "MESH",
+          "semantic_id": 3,
+          "visible_pixel_count": 879
+        },
+        {
+          "component_id": 4,
+          "name": "repeat_0",
+          "type": "MESH",
+          "semantic_id": 4,
+          "visible_pixel_count": 25
+        },
+        {
+          "component_id": 5,
+          "name": "repeat_1",
+          "type": "MESH",
+          "semantic_id": 5,
+          "visible_pixel_count": 0
+        },
+        {
+          "component_id": 6,
+          "name": "repeat_2",
+          "type": "MESH",
+          "semantic_id": 6,
+          "visible_pixel_count": 35
+        },
+        {
+          "component_id": 7,
+          "name": "repeat_3",
+          "type": "MESH",
+          "semantic_id": 7,
+          "visible_pixel_count": 40
+        },
+        {
+          "component_id": 8,
+          "name": "repeat_4",
+          "type": "MESH",
+          "semantic_id": 8,
+          "visible_pixel_count": 0
+        },
+        {
+          "component_id": 9,
+          "name": "repeat_5",
+          "type": "MESH",
+          "semantic_id": 9,
+          "visible_pixel_count": 26
+        }
+      ],
+      "background_objects": [],
+      "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+      "input_alignment_accuracy_verified": false,
+      "input_masks_reviewed": false,
+      "source_saved": false,
+      "fixed_T0": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 6.0,
+      "fixed_extrinsics_enforced": true,
+      "color_management": {
+        "display_device": "sRGB",
+        "view_transform": "Standard",
+        "look": "None",
+        "exposure": 0.0,
+        "gamma": 1.0
+      },
+      "component_identity_is_semantics": false
+    }
+  },
+  "energies": {
+    "semantic": {
+      "value": 0.0,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 1,
+      "applicable_count": 1,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "global:global"
+      ]
+    },
+    "spatial": {
+      "value": 0.0,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 4,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    },
+    "appearance": {
+      "value": 0.0,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 5,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    },
+    "statistical": {
+      "value": 0.0,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 4,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    },
+    "perceptual": {
+      "value": 9.25185853854297e-18,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 5,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    }
+  },
+  "observation_energy": 1.8503717077085942e-18,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": null,
+    "checks": {
+      "penetration": [],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [],
+    "raw_geometry": {},
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 1.0,
+  "uncertainty": {
+    "region_coverage": 1.0,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": null,
+    "structural_check_coverage": null,
+    "unknown_evidence": [],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 0
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 16384.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "spatial_texture_error": 0.0,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 4096.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "spatial_texture_error": 0.0,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 4096.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "spatial_texture_error": 0.0,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 4096.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "spatial_texture_error": 0.0,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 4096.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "spatial_texture_error": 0.0,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "unknown_candidates": 0,
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    }
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "semantic",
+      "level": "global",
+      "id": "global",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 2.7755575615628914e-17,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 2.7755575615628914e-17,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.0,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale feature proxy"
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      128,
+      128
+    ],
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "regions": [
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          64,
+          64
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          64,
+          0,
+          128,
+          64
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          64,
+          64,
+          128
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          64,
+          64,
+          128,
+          128
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "anchors": [],
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+    "source": "reference RGB and independently supplied annotations only"
+  },
+  "render_metadata": {
+    "render_seconds": 0.06689324788749218,
+    "image_size": [
+      128,
+      128
+    ],
+    "samples": 8,
+    "threads": 2,
+    "device": "CPU",
+    "camera_unchanged": true,
+    "camera": {
+      "name": "BenchmarkCamera",
+      "type": "PERSP",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        0.0,
+        -6.0,
+        2.0
+      ],
+      "rotation_euler_world": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "rotation_units": "radians",
+      "lens_mm": 42.0,
+      "sensor_fit": "HORIZONTAL",
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "shift_x": 0.05000000074505806,
+      "shift_y": 0.0,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "dof_enabled": false
+    },
+    "intrinsics_pixels": [
+      [
+        149.3333282470703,
+        0.0,
+        57.599998474121094
+      ],
+      [
+        0.0,
+        149.3333282470703,
+        64.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "projection_matrix_blender": [
+      [
+        2.3333332538604736,
+        0.0,
+        0.10000002384185791,
+        0.0
+      ],
+      [
+        0.0,
+        2.3333332538604736,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0001999139785767,
+        -0.20002000033855438
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+    "depth_convention": "camera_z",
+    "depth_computation": "negative Blender-camera z of same-render world Position pass",
+    "depth_units": "scene coordinate units; no metric ground truth asserted",
+    "valid_depth_pixel_count": 4711,
+    "raw_z_vs_world_distance_max_error": 1.0099410326662266,
+    "raw_z_vs_world_distance_mean_error": 0.4126552590378331,
+    "position_reprojection_mean_error_pixels": 0.0007472892996729637,
+    "position_reprojection_max_error_pixels": 0.0007827246308145429,
+    "semantic_ids": {
+      "1": "floor",
+      "2": "anchor",
+      "3": "other",
+      "4": "repeat_0",
+      "5": "repeat_1",
+      "6": "repeat_2",
+      "7": "repeat_3",
+      "8": "repeat_4",
+      "9": "repeat_5"
+    },
+    "visible_pixel_counts_by_type": {
+      "floor": {
+        "CURVE": 0,
+        "MESH": 2476
+      },
+      "anchor": {
+        "CURVE": 0,
+        "MESH": 1230
+      },
+      "other": {
+        "CURVE": 0,
+        "MESH": 879
+      },
+      "repeat_0": {
+        "CURVE": 0,
+        "MESH": 25
+      },
+      "repeat_1": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_2": {
+        "CURVE": 0,
+        "MESH": 35
+      },
+      "repeat_3": {
+        "CURVE": 0,
+        "MESH": 40
+      },
+      "repeat_4": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_5": {
+        "CURVE": 0,
+        "MESH": 26
+      }
+    },
+    "components": [
+      {
+        "component_id": 1,
+        "name": "anchor",
+        "type": "MESH",
+        "semantic_id": 2,
+        "visible_pixel_count": 1230
+      },
+      {
+        "component_id": 2,
+        "name": "floor",
+        "type": "MESH",
+        "semantic_id": 1,
+        "visible_pixel_count": 2476
+      },
+      {
+        "component_id": 3,
+        "name": "other",
+        "type": "MESH",
+        "semantic_id": 3,
+        "visible_pixel_count": 879
+      },
+      {
+        "component_id": 4,
+        "name": "repeat_0",
+        "type": "MESH",
+        "semantic_id": 4,
+        "visible_pixel_count": 25
+      },
+      {
+        "component_id": 5,
+        "name": "repeat_1",
+        "type": "MESH",
+        "semantic_id": 5,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 6,
+        "name": "repeat_2",
+        "type": "MESH",
+        "semantic_id": 6,
+        "visible_pixel_count": 35
+      },
+      {
+        "component_id": 7,
+        "name": "repeat_3",
+        "type": "MESH",
+        "semantic_id": 7,
+        "visible_pixel_count": 40
+      },
+      {
+        "component_id": 8,
+        "name": "repeat_4",
+        "type": "MESH",
+        "semantic_id": 8,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 9,
+        "name": "repeat_5",
+        "type": "MESH",
+        "semantic_id": 9,
+        "visible_pixel_count": 26
+      }
+    ],
+    "background_objects": [],
+    "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+    "input_alignment_accuracy_verified": false,
+    "input_masks_reviewed": false,
+    "source_saved": false,
+    "fixed_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ortho_scale": 6.0,
+    "fixed_extrinsics_enforced": true,
+    "color_management": {
+      "display_device": "sRGB",
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "component_identity_is_semantics": false
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "max_anchors": 12
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "provenance": {
+    "input": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_development/baseline/render.png",
+    "render": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_development/baseline/render.png",
+    "dino": {
+      "status": "available",
+      "device": "cpu",
+      "source": "/home/xymo/models/dinov2"
+    },
+    "api_calls": 0,
+    "agent_python_executed": false
+  }
+}

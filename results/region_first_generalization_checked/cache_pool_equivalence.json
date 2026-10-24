@@ -1,0 +1,22 @@
+[
+  {
+    "task_id": "bw_9064",
+    "all_available_cached_candidates": 20,
+    "sources": [
+      "sam3_text",
+      "sam3_visual"
+    ],
+    "B2_changed_pixels_vs_saved": 0,
+    "parameters_unchanged": true
+  },
+  {
+    "task_id": "bw_0073",
+    "all_available_cached_candidates": 57,
+    "sources": [
+      "sam3_text",
+      "sam3_visual"
+    ],
+    "B2_changed_pixels_vs_saved": 0,
+    "parameters_unchanged": true
+  }
+]

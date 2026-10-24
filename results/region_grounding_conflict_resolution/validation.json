@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "methods": {
+    "A_baseline": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "overlap_fraction": 0.1229706486672431,
+      "unassigned_fraction": 0.1355126023856674
+    },
+    "round1_B_union": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        5,
+        323,
+        256,
+        33
+      ],
+      "overlap_fraction": 0.3218103552468878,
+      "unassigned_fraction": 0.3548052696659508
+    },
+    "round1_C_resolved": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        8,
+        34,
+        47,
+        31
+      ],
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.6766156249128386
+    },
+    "round2_B_union": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        5,
+        323,
+        28,
+        33
+      ],
+      "overlap_fraction": 0.021263678539220336,
+      "unassigned_fraction": 0.3548052696659508
+    },
+    "round2_C_resolved": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        5,
+        222,
+        29,
+        31
+      ],
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.35827778242638925
+    },
+    "round3_B_union": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        2,
+        83,
+        28,
+        72
+      ],
+      "overlap_fraction": 0.0038704339013936537,
+      "unassigned_fraction": 0.48173002724086317
+    },
+    "round3_C_resolved": {
+      "regions": 4,
+      "loader_compatible": true,
+      "unreviewed": true,
+      "component_counts": [
+        2,
+        85,
+        28,
+        72
+      ],
+      "overlap_fraction": 0.0,
+      "unassigned_fraction": 0.4818109130802629
+    }
+  },
+  "html_links": 63,
+  "native_mask_grid": [
+    1258,
+    855
+  ],
+  "raw_candidates_preserved": 25,
+  "paid_api_calls": 0,
+  "new_model_inference_calls": 0,
+  "region_id_priority_used": false,
+  "all_final_C_disjoint": true,
+  "all_final_C_order_invariant": true,
+  "all_final_C_subset_of_candidate_support": true,
+  "semantic_accuracy_claimed": false,
+  "all_unreviewed": true,
+  "formal_scoring_run": false
+}

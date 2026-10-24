@@ -1,0 +1,4 @@
+{
+  "historical_control": true,
+  "computation": "read cached masks only"
+}

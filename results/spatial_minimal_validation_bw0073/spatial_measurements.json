@@ -1,0 +1,243 @@
+{
+  "usage": "provisional/debug; no formal Spatial Energy",
+  "reviewed": false,
+  "automatic_reference": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "pendant": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background"
+    },
+    "delta_x": null,
+    "delta_y": null,
+    "bbox_area_ratio_proxy": null,
+    "visible_mask_area_ratio": null,
+    "normalized_centers": {},
+    "status": "unavailable",
+    "reason": "island: unavailable; pendant: unreviewed/unreliable localization",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": false
+  },
+  "automatic_render": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "pendant": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background"
+    },
+    "delta_x": null,
+    "delta_y": null,
+    "bbox_area_ratio_proxy": null,
+    "visible_mask_area_ratio": null,
+    "normalized_centers": {},
+    "status": "unavailable",
+    "reason": "island: unavailable; pendant: unavailable",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": false
+  },
+  "automatic_comparison": {
+    "direction": "render_minus_reference",
+    "score": null,
+    "participates_in_energy": false,
+    "delta_x_change": null,
+    "delta_y_change": null,
+    "bbox_area_ratio_proxy_change": null,
+    "visible_mask_area_ratio_change": null
+  },
+  "review_gated_reference": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "pendant": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background"
+    },
+    "delta_x": null,
+    "delta_y": null,
+    "bbox_area_ratio_proxy": null,
+    "visible_mask_area_ratio": null,
+    "normalized_centers": {},
+    "status": "unavailable",
+    "reason": "island: unreviewed/unreliable localization; pendant: unreviewed/unreliable localization",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": false
+  },
+  "review_gated_render": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "pendant": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background"
+    },
+    "delta_x": null,
+    "delta_y": null,
+    "bbox_area_ratio_proxy": null,
+    "visible_mask_area_ratio": null,
+    "normalized_centers": {},
+    "status": "unavailable",
+    "reason": "island: unreviewed/unreliable localization; pendant: unreviewed/unreliable localization",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": false
+  },
+  "conditional_debug_reference": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "pendant": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background"
+    },
+    "delta_x": -0.0032552083333333703,
+    "delta_y": -0.4002389486260455,
+    "bbox_area_ratio_proxy": 0.31971153846153844,
+    "visible_mask_area_ratio": null,
+    "normalized_centers": {
+      "island": [
+        0.5078125,
+        0.6332138590203107
+      ],
+      "pendant": [
+        0.5045572916666666,
+        0.23297491039426524
+      ]
+    },
+    "status": "conditional_debug",
+    "reason": "Visible-object masks unavailable/unreviewed; bbox area remains a separate proxy",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": true
+  },
+  "conditional_debug_render": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "center_method": "bbox_center",
+    "extent_definition": {
+      "island": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+      "pendant": "whole visible fixture: canopy, suspension and lamp body; exclude holes/background"
+    },
+    "delta_x": 0.00032552083333331483,
+    "delta_y": -0.28733572281959385,
+    "bbox_area_ratio_proxy": 0.2181879773343188,
+    "visible_mask_area_ratio": null,
+    "normalized_centers": {
+      "island": [
+        0.4996744791666667,
+        0.6356033452807647
+      ],
+      "pendant": [
+        0.5,
+        0.3482676224611708
+      ]
+    },
+    "status": "conditional_debug",
+    "reason": "Visible-object masks unavailable/unreviewed; bbox area remains a separate proxy",
+    "score": null,
+    "participates_in_energy": false,
+    "allow_provisional": true
+  },
+  "conditional_debug_comparison": {
+    "direction": "render_minus_reference",
+    "score": null,
+    "participates_in_energy": false,
+    "delta_x_change": 0.003580729166666685,
+    "delta_y_change": 0.11290322580645162,
+    "bbox_area_ratio_proxy_change": -0.10152356112721964,
+    "visible_mask_area_ratio_change": null
+  },
+  "uncertainty": {
+    "method": "Independent extremes of uncalibrated draft edge ranges; not confidence intervals",
+    "reference": {
+      "delta_x": [
+        -0.01627604166666663,
+        0.00813802083333326
+      ],
+      "delta_y": [
+        -0.4181600955794504,
+        -0.3763440860215054
+      ],
+      "bbox_area_ratio_proxy": [
+        0.23037735849056604,
+        0.4181184668989547
+      ]
+    },
+    "render": {
+      "delta_x": [
+        -0.0068359374999999445,
+        0.0078124999999999445
+      ],
+      "delta_y": [
+        -0.2998805256869773,
+        -0.2735961768219833
+      ],
+      "bbox_area_ratio_proxy": [
+        0.16816516816516816,
+        0.28997844827586206
+      ]
+    },
+    "render_minus_reference": {
+      "delta_x": [
+        -0.014973958333333204,
+        0.024088541666666574
+      ],
+      "delta_y": [
+        0.07646356033452806,
+        0.1445639187574671
+      ],
+      "bbox_area_ratio_proxy": [
+        -0.24995329873378655,
+        0.05960108978529602
+      ]
+    }
+  },
+  "fixed_roi_diagnostics": [
+    {
+      "side": "reference",
+      "object": "island",
+      "bbox_inside_fixed_R2_fraction": 0.9764423076923077,
+      "bbox_in_valid_frame_fraction": 1.0,
+      "definition": "bbox diagnostic only; outside R2 does not mean object missing"
+    },
+    {
+      "side": "reference",
+      "object": "pendant",
+      "bbox_inside_fixed_R2_fraction": 0.5160651629072681,
+      "bbox_in_valid_frame_fraction": 1.0,
+      "definition": "bbox diagnostic only; outside R2 does not mean object missing"
+    },
+    {
+      "side": "render",
+      "object": "island",
+      "bbox_inside_fixed_R2_fraction": 1.0,
+      "bbox_in_valid_frame_fraction": 1.0,
+      "definition": "bbox diagnostic only; outside R2 does not mean object missing"
+    },
+    {
+      "side": "render",
+      "object": "pendant",
+      "bbox_inside_fixed_R2_fraction": 0.5021171489061397,
+      "bbox_in_valid_frame_fraction": 1.0,
+      "definition": "bbox diagnostic only; outside R2 does not mean object missing"
+    }
+  ],
+  "score": null,
+  "participates_in_energy": false
+}

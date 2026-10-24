@@ -1,0 +1,117 @@
+{
+  "image_size": [
+    1258,
+    855
+  ],
+  "coordinate_convention": "pixel edges, xy; even-odd fill",
+  "regions": [
+    {
+      "id": "R1",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              0,
+              348
+            ],
+            [
+              511,
+              348
+            ],
+            [
+              511,
+              855
+            ],
+            [
+              0,
+              855
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              97,
+              87
+            ],
+            [
+              893,
+              87
+            ],
+            [
+              893,
+              573
+            ],
+            [
+              97,
+              573
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              843,
+              91
+            ],
+            [
+              1258,
+              91
+            ],
+            [
+              1258,
+              582
+            ],
+            [
+              843,
+              582
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              384,
+              559
+            ],
+            [
+              1258,
+              559
+            ],
+            [
+              1258,
+              855
+            ],
+            [
+              384,
+              855
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    }
+  ]
+}

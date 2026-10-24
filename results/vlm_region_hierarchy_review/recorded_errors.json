@@ -1,0 +1,46 @@
+[
+  {
+    "source": "records/bw_9064/vlm_plan.json",
+    "stage": "first_attempt_transport",
+    "recorded_error": "SSLError",
+    "exception_detail_or_traceback_preserved": false
+  },
+  {
+    "source": "records/vlm_final.json",
+    "task": "bw_9064",
+    "stage": "plan",
+    "recorded_error": "Invalid text field: id",
+    "expected_exception_type_from_current_code": "ValueError",
+    "origin": "Recorded error string; exception type inferred from current source, not a saved traceback"
+  },
+  {
+    "source": "records/vlm_final.json",
+    "task": "bw_9064",
+    "stage": "group",
+    "recorded_error": "'group'",
+    "expected_exception_type_from_current_code": "KeyError",
+    "origin": "Recorded error string; exception type inferred from current source, not a saved traceback"
+  },
+  {
+    "source": "records/vlm_final.json",
+    "task": "bw_0074",
+    "stage": "plan",
+    "recorded_error": "'bw_0074'",
+    "expected_exception_type_from_current_code": "KeyError",
+    "origin": "Recorded error string; exception type inferred from current source, not a saved traceback"
+  },
+  {
+    "source": "records/vlm_final.json",
+    "task": "bw_0074",
+    "stage": "group",
+    "recorded_error": "'bw_0074'",
+    "expected_exception_type_from_current_code": "KeyError",
+    "origin": "Recorded error string; exception type inferred from current source, not a saved traceback"
+  },
+  {
+    "source": "records/balance_before.json",
+    "stage": "balance_query",
+    "recorded_error": "SSLError",
+    "exception_detail_or_traceback_preserved": false
+  }
+]

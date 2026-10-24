@@ -1,0 +1,170 @@
+{
+  "regions": [
+    {
+      "id": "R1",
+      "hybrid_decision": {
+        "decision": "retain_box",
+        "status": "uncertain",
+        "reviewed": false,
+        "reason": "No independent functional-content completeness evidence; SAM quality and geometry alone cannot authorize deleting Box pixels"
+      },
+      "reviewed": false,
+      "A_box": {
+        "native_pixels": 11454828,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "C_hybrid": {
+        "native_pixels": 11454828,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "B_sam": {
+        "native_pixels": 7815717,
+        "working_grid_components": 36,
+        "largest_component_fraction": 0.9976790269054606,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "sam_retained_box_fraction": 0.6786128085031046,
+      "sam_removed_box_pixels": 3681435,
+      "sam_outside_box_pixels": 42324,
+      "removed_pixels_are_not_verified_background": true
+    },
+    {
+      "id": "R2",
+      "hybrid_decision": {
+        "decision": "retain_box",
+        "status": "uncertain",
+        "reviewed": false,
+        "reason": "No independent functional-content completeness evidence; SAM quality and geometry alone cannot authorize deleting Box pixels"
+      },
+      "reviewed": false,
+      "A_box": {
+        "native_pixels": 9082755,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "C_hybrid": {
+        "native_pixels": 9082755,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "B_sam": {
+        "native_pixels": 867697,
+        "working_grid_components": 136,
+        "largest_component_fraction": 0.48127335041837777,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "sam_retained_box_fraction": 0.09553235774828232,
+      "sam_removed_box_pixels": 8215058,
+      "sam_outside_box_pixels": 0,
+      "removed_pixels_are_not_verified_background": true
+    },
+    {
+      "id": "R3",
+      "hybrid_decision": {
+        "decision": "retain_box",
+        "status": "uncertain",
+        "reviewed": false,
+        "reason": "No independent functional-content completeness evidence; SAM quality and geometry alone cannot authorize deleting Box pixels"
+      },
+      "reviewed": false,
+      "A_box": {
+        "native_pixels": 2211690,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "C_hybrid": {
+        "native_pixels": 2211690,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "B_sam": {
+        "native_pixels": 990691,
+        "working_grid_components": 12,
+        "largest_component_fraction": 0.9941316458434745,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "sam_retained_box_fraction": 0.4479339328748604,
+      "sam_removed_box_pixels": 1220999,
+      "sam_outside_box_pixels": 0,
+      "removed_pixels_are_not_verified_background": true
+    },
+    {
+      "id": "R4",
+      "hybrid_decision": {
+        "decision": "retain_box",
+        "status": "uncertain",
+        "reviewed": false,
+        "reason": "No independent functional-content completeness evidence; SAM quality and geometry alone cannot authorize deleting Box pixels"
+      },
+      "reviewed": false,
+      "A_box": {
+        "native_pixels": 9029470,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "C_hybrid": {
+        "native_pixels": 9029470,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "B_sam": {
+        "native_pixels": 6960670,
+        "working_grid_components": 1,
+        "largest_component_fraction": 1.0,
+        "component_statistics_grid": [
+          1536,
+          837
+        ]
+      },
+      "sam_retained_box_fraction": 0.7704097804190058,
+      "sam_removed_box_pixels": 2073078,
+      "sam_outside_box_pixels": 4278,
+      "removed_pixels_are_not_verified_background": true
+    }
+  ],
+  "reviewed": false,
+  "accuracy_available": false
+}

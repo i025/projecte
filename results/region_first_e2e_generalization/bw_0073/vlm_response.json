@@ -1,0 +1,37 @@
+{
+  "model": "openai/gpt-6-sol",
+  "source": "vlm_api",
+  "request_number": 2,
+  "raw_answer": "{\"regions\":[{\"id\":\"R1\",\"name\":\"窗边水槽区\",\"location\":\"左侧\",\"content\":\"拱形窗户下的水槽、黑色橱柜和大理石台面，上方有搁板与壁灯\"},{\"id\":\"R2\",\"name\":\"中央岛台区\",\"location\":\"画面中央及前景\",\"content\":\"大理石岛台、四把高脚椅和上方的金色吊灯\"},{\"id\":\"R3\",\"name\":\"后方料理区\",\"location\":\"后方中央\",\"content\":\"黑色橱柜、大理石墙面与台面、炉灶及摆放的器皿和绿植\"},{\"id\":\"R4\",\"name\":\"右侧高柜区\",\"location\":\"右侧\",\"content\":\"浅木色柜体、深色高柜和下方的抽屉柜\"}]}",
+  "parsed_answer": {
+    "regions": [
+      {
+        "id": "R1",
+        "name": "窗边水槽区",
+        "location": "左侧",
+        "content": "拱形窗户下的水槽、黑色橱柜和大理石台面，上方有搁板与壁灯"
+      },
+      {
+        "id": "R2",
+        "name": "中央岛台区",
+        "location": "画面中央及前景",
+        "content": "大理石岛台、四把高脚椅和上方的金色吊灯"
+      },
+      {
+        "id": "R3",
+        "name": "后方料理区",
+        "location": "后方中央",
+        "content": "黑色橱柜、大理石墙面与台面、炉灶及摆放的器皿和绿植"
+      },
+      {
+        "id": "R4",
+        "name": "右侧高柜区",
+        "location": "右侧",
+        "content": "浅木色柜体、深色高柜和下方的抽屉柜"
+      }
+    ]
+  },
+  "evaluation_status": "answered",
+  "status": "structure_valid",
+  "reviewed": false
+}

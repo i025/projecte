@@ -1,0 +1,50 @@
+{
+  "actual_request_attempts": 2,
+  "request_budget": 2,
+  "prompt_tokens": 3856,
+  "completion_tokens": 287,
+  "total_tokens": 4143,
+  "total_latency_seconds": 16.693754753796384,
+  "actual_cost": "unknown unless explicitly supplied per request",
+  "requests": [
+    {
+      "request_number": 1,
+      "purpose": "bw_0074:R2:books:reference",
+      "model": "openai/gpt-6-sol",
+      "returned_model": "openai/gpt-6-sol",
+      "http_status": 200,
+      "usage": {
+        "prompt_tokens": 1928,
+        "completion_tokens": 212,
+        "total_tokens": 2140,
+        "completion_tokens_details": {
+          "reasoning_tokens": 186
+        }
+      },
+      "latency_seconds": 9.838966907002032,
+      "actual_cost": null,
+      "outcome": "answered",
+      "automatic_network_retry_enabled": false
+    },
+    {
+      "request_number": 2,
+      "purpose": "bw_0074:R2:books:render",
+      "model": "openai/gpt-6-sol",
+      "returned_model": "openai/gpt-6-sol",
+      "http_status": 200,
+      "usage": {
+        "prompt_tokens": 1928,
+        "completion_tokens": 75,
+        "total_tokens": 2003,
+        "completion_tokens_details": {
+          "reasoning_tokens": 48
+        }
+      },
+      "latency_seconds": 6.854787846794352,
+      "actual_cost": null,
+      "outcome": "answered",
+      "automatic_network_retry_enabled": false
+    }
+  ],
+  "reviewed": false
+}

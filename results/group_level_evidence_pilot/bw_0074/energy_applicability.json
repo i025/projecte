@@ -1,0 +1,328 @@
+{
+  "groups": [
+    {
+      "group_id": "bw_0074_R2_books",
+      "region_id": "R2",
+      "match_state": "Unknown",
+      "reason": "No independently reviewed Group correspondence verifier",
+      "semantic": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0074_R2_books_presence"
+        ],
+        "reason": "Mask-free VQA is possible in principle; no real response for these properties"
+      },
+      "spatial_discrete": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0074_R2_books_front_cover",
+          "bw_0074_R2_books_below_frame"
+        ],
+        "reason": "Projected discrete relations need a real verifier and visible endpoints"
+      },
+      "spatial_continuous": {
+        "value": null,
+        "reason": "No reliable independent two-side Group localization; Region centre not used"
+      },
+      "statistical": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0074_R2_books_orientations"
+        ],
+        "reason": "Qualitative questions/exact count unknown; no validated density, area or distribution measure"
+      },
+      "group_mask_required_for_semantic": false,
+      "quantitative_area_density_available": false,
+      "reviewed": false,
+      "score": null,
+      "scorable": false
+    },
+    {
+      "group_id": "bw_0074_R2_framed_images",
+      "region_id": "R2",
+      "match_state": "Unknown",
+      "reason": "No independently reviewed Group correspondence verifier",
+      "semantic": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0074_R2_framed_images_airplane"
+        ],
+        "reason": "Mask-free VQA is possible in principle; no real response for these properties"
+      },
+      "spatial_discrete": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0074_R2_framed_images_relative_position"
+        ],
+        "reason": "Projected discrete relations need a real verifier and visible endpoints"
+      },
+      "spatial_continuous": {
+        "value": null,
+        "reason": "No reliable independent two-side Group localization; Region centre not used"
+      },
+      "statistical": {
+        "applicable": true,
+        "value": null,
+        "evidence_ids": [
+          "bw_0074_R2_framed_images_exact_count"
+        ],
+        "reason": "Qualitative questions/exact count unknown; no validated density, area or distribution measure"
+      },
+      "group_mask_required_for_semantic": false,
+      "quantitative_area_density_available": false,
+      "reviewed": false,
+      "score": null,
+      "scorable": false
+    }
+  ],
+  "energy_records": [
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "bw_0074_R2_books_presence",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0074_R2_books",
+      "canonical_fact_id": "bw_0074_R2_books_presence",
+      "owner_id": "bw_0074_R2_books",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "bw_0074_R2_books_orientations",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0074_R2_books",
+      "canonical_fact_id": "bw_0074_R2_books_orientations",
+      "owner_id": "bw_0074_R2_books",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "bw_0074_R2_books_front_cover",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0074_R2_books",
+      "canonical_fact_id": "bw_0074_R2_books_front_cover",
+      "owner_id": "bw_0074_R2_books",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "bw_0074_R2_books_below_frame",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0074_R2_books",
+      "canonical_fact_id": "bw_0074_R2_books_below_frame",
+      "owner_id": "bw_0074_R2_books",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "bw_0074_R2_framed_images_airplane",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0074_R2_framed_images",
+      "canonical_fact_id": "bw_0074_R2_framed_images_airplane",
+      "owner_id": "bw_0074_R2_framed_images",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "bw_0074_R2_framed_images_relative_position",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "group_id": "bw_0074_R2_framed_images",
+      "canonical_fact_id": "bw_0074_R2_framed_images_relative_position",
+      "owner_id": "bw_0074_R2_framed_images",
+      "verification_status": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "bw_0074_R2_framed_images_exact_count",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Reference proposition is unknown; cannot define a violation",
+      "group_id": "bw_0074_R2_framed_images",
+      "canonical_fact_id": "bw_0074_R2_framed_images_exact_count",
+      "owner_id": "bw_0074_R2_framed_images",
+      "verification_status": "unknown",
+      "reviewed": false,
+      "scorable": false,
+      "method": "Group atomic evidence; no calibrated score mapping"
+    }
+  ],
+  "aggregate_new_atomic_only": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 2,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:bw_0074_R2_books_presence",
+        "region:bw_0074_R2_framed_images_airplane"
+      ],
+      "unavailable_metrics": [
+        "region:bw_0074_R2_books_presence",
+        "region:bw_0074_R2_framed_images_airplane"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 3,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:bw_0074_R2_books_front_cover",
+        "region:bw_0074_R2_books_below_frame",
+        "region:bw_0074_R2_framed_images_relative_position"
+      ],
+      "unavailable_metrics": [
+        "region:bw_0074_R2_books_front_cover",
+        "region:bw_0074_R2_books_below_frame",
+        "region:bw_0074_R2_framed_images_relative_position"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "appearance": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "statistical": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 2,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:bw_0074_R2_books_orientations",
+        "region:bw_0074_R2_framed_images_exact_count"
+      ],
+      "unavailable_metrics": [
+        "region:bw_0074_R2_books_orientations",
+        "region:bw_0074_R2_framed_images_exact_count"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "perceptual": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    }
+  },
+  "observation_energy": null,
+  "note": "N/A records for the new question plan only; not a replacement Benchmark coverage or score"
+}

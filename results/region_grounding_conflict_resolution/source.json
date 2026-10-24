@@ -1,0 +1,12 @@
+{
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+  "vlm_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_pilot_bw0074/vlm_plan.json",
+  "image_size": [
+    1258,
+    855
+  ],
+  "task_id": "bw_0074",
+  "agent_render_used": false,
+  "paid_vlm_calls": 0,
+  "new_sam3_inference": false
+}

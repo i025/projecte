@@ -1,0 +1,6 @@
+{
+  "side": "reference",
+  "maximum_side_requests": 1,
+  "automatic_retry": false,
+  "reviewed": false
+}

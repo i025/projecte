@@ -1,0 +1,7 @@
+{
+  "environment": "/tmp/project_e_sam3_env_yhqvf4jo",
+  "python": "/tmp/project_e_sam3_env_yhqvf4jo/bin/python",
+  "official_code": "/tmp/project_e_sam3_env_yhqvf4jo/source/sam3",
+  "model_directory": "/home/xymo/models/sam3",
+  "shared_environments_modified": false
+}

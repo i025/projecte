@@ -1,0 +1,155 @@
+{
+  "status": "Verification Pending",
+  "actual_requests": 0,
+  "raw_predictions": {
+    "A": {
+      "status": "unavailable",
+      "fields": {},
+      "request_status": "not_requested",
+      "reason": "Verification Pending: no paid requests authorized",
+      "source": "not_requested",
+      "reviewed": false
+    },
+    "B": {
+      "status": "unavailable",
+      "fields": {},
+      "request_status": "not_requested",
+      "reason": "Verification Pending: no paid requests authorized",
+      "source": "not_requested",
+      "reviewed": false
+    },
+    "C": {
+      "status": "unavailable",
+      "fields": {},
+      "request_status": "not_requested",
+      "reason": "Verification Pending: no paid requests authorized",
+      "source": "not_requested",
+      "reviewed": false
+    }
+  },
+  "per_sample": {
+    "A": [
+      {
+        "field": "horizontal_stack",
+        "construction_expected": "yes",
+        "prediction": null,
+        "status": "unavailable",
+        "expected_source": "construction_expected",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "construction_expected": "yes",
+        "prediction": null,
+        "status": "unavailable",
+        "expected_source": "construction_expected",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ],
+    "B": [
+      {
+        "field": "horizontal_stack",
+        "construction_expected": "no",
+        "prediction": null,
+        "status": "unavailable",
+        "expected_source": "construction_expected",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "construction_expected": "yes",
+        "prediction": null,
+        "status": "unavailable",
+        "expected_source": "construction_expected",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ],
+    "C": [
+      {
+        "field": "horizontal_stack",
+        "construction_expected": "yes",
+        "prediction": null,
+        "status": "unavailable",
+        "expected_source": "construction_expected",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "construction_expected": "yes",
+        "prediction": null,
+        "status": "unavailable",
+        "expected_source": "construction_expected",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ]
+  },
+  "pairs": {
+    "A_B": [
+      {
+        "field": "horizontal_stack",
+        "first_answer": null,
+        "second_answer": null,
+        "status": "unavailable",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "first_answer": null,
+        "second_answer": null,
+        "status": "unavailable",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ],
+    "A_C": [
+      {
+        "field": "horizontal_stack",
+        "first_answer": null,
+        "second_answer": null,
+        "status": "unavailable",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      },
+      {
+        "field": "upright_books",
+        "first_answer": null,
+        "second_answer": null,
+        "status": "unavailable",
+        "reviewed": false,
+        "value": null,
+        "score": null,
+        "scorable": false
+      }
+    ]
+  },
+  "detection_rate": null,
+  "accuracy": null,
+  "statistical_energy": null,
+  "scorable": false,
+  "reviewed": false
+}

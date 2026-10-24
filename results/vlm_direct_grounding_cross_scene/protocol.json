@@ -1,0 +1,27 @@
+{
+  "tasks": [
+    "bw_0074",
+    "bw_9064"
+  ],
+  "maximum_new_paid_requests": 2,
+  "per_image_limit": 1,
+  "automatic_retries": false,
+  "planning_requests": 0,
+  "verification_requests": 0,
+  "model": "openai/gpt-6-sol",
+  "frozen_methods": [
+    "SYSTEM",
+    "prompt_for",
+    "schema_for",
+    "cross",
+    "intersects",
+    "validate_direct",
+    "native_coordinates",
+    "masks_for",
+    "request_payload"
+  ],
+  "freeze_source": "results/vlm_direct_grounding_bw0073/source_snapshot/vlm_direct_grounding.py",
+  "known_template_limitation": "Unchanged literal four Regions conflicts with bw_9064 two-entry Plan; validate exact Plan IDs, never invent entries",
+  "cpu_tests": 127,
+  "reviewed": false
+}

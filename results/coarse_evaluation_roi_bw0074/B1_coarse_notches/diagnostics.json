@@ -1,0 +1,110 @@
+{
+  "snap": false,
+  "adjusted_boxes": [
+    [
+      0,
+      348,
+      511,
+      855
+    ],
+    [
+      97,
+      87,
+      893,
+      573
+    ],
+    [
+      843,
+      91,
+      1258,
+      582
+    ],
+    [
+      384,
+      559,
+      1258,
+      855
+    ]
+  ],
+  "side_adjustments": [],
+  "pair_decisions": [
+    {
+      "region_indices": [
+        1,
+        0
+      ],
+      "axis": "y",
+      "cut": 375,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.11586452762923351,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    },
+    {
+      "region_indices": [
+        0,
+        3
+      ],
+      "axis": "x",
+      "cut": 390,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.0,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    },
+    {
+      "region_indices": [
+        1,
+        2
+      ],
+      "axis": "x",
+      "cut": 883,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.0,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    },
+    {
+      "region_indices": [
+        1,
+        3
+      ],
+      "axis": "y",
+      "cut": 567,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.0,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    },
+    {
+      "region_indices": [
+        2,
+        3
+      ],
+      "axis": "y",
+      "cut": 561,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.0,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    }
+  ],
+  "parameters": {
+    "snap_limit_short_image": 0.12,
+    "snap_limit_roi_side": 0.2,
+    "overlap_band_short_image": 0.015,
+    "hint_loss_weight": 4.0,
+    "edge_weight": 0.35,
+    "center_weight": 0.05
+  }
+}

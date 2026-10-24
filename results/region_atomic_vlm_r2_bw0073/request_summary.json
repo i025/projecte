@@ -1,0 +1,39 @@
+{
+  "actual_requests": 2,
+  "maximum_authorized": 2,
+  "usage": [
+    {
+      "side": "bw_0073:R2:reference_atomic_answers",
+      "model": "openai/gpt-6-sol",
+      "tokens": {
+        "prompt_tokens": 1576,
+        "completion_tokens": 35,
+        "total_tokens": 1611,
+        "completion_tokens_details": {
+          "reasoning_tokens": 10
+        }
+      },
+      "latency_seconds": 5.8596190710086375,
+      "actual_cost": null
+    },
+    {
+      "side": "bw_0073:R2:render_atomic_answers",
+      "model": "openai/gpt-6-sol",
+      "tokens": {
+        "prompt_tokens": 1576,
+        "completion_tokens": 35,
+        "total_tokens": 1611,
+        "completion_tokens_details": {
+          "reasoning_tokens": 10
+        }
+      },
+      "latency_seconds": 5.310503120999783,
+      "actual_cost": null
+    }
+  ],
+  "total_tokens": 3222,
+  "total_latency_seconds": 11.17012219200842,
+  "total_actual_cost": null,
+  "actual_cost_unknown_reason": "Provider did not supply a numeric cost; no estimate/balance request",
+  "reviewed": false
+}

@@ -1,0 +1,33 @@
+{
+  "previous_source": "results/vlm_region_hierarchy/vlm_final.json",
+  "previous_gateway_status": "answered",
+  "previous_task_status": "partial",
+  "saved_raw_json_parses": true,
+  "previous_errors": {
+    "bw_9064": {
+      "plan": {
+        "status": "unavailable",
+        "validation_error": "Invalid text field: id",
+        "reviewed": false
+      },
+      "group": {
+        "status": "unavailable",
+        "validation_error": "'group'",
+        "reviewed": false
+      }
+    },
+    "bw_0074": {
+      "plan": {
+        "status": "unavailable",
+        "validation_error": "'bw_0074'",
+        "reviewed": false
+      },
+      "group": {
+        "status": "unavailable",
+        "validation_error": "'bw_0074'",
+        "reviewed": false
+      }
+    }
+  },
+  "change": "One raw reference, one Region-only contract, no scene wrapper or grouping IDs; no JSON Mode."
+}

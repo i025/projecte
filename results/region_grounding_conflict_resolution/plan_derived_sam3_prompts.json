@@ -1,0 +1,57 @@
+{
+  "regions": [
+    {
+      "region_id": "R1",
+      "prompts": [
+        "chair",
+        "desk",
+        "lamp",
+        "monitor"
+      ],
+      "location": "左侧中下部",
+      "source": "Plan-derived noun translation; no per-instance prompts",
+      "reviewed": false
+    },
+    {
+      "region_id": "R2",
+      "prompts": [
+        "aquarium",
+        "books collection",
+        "bookshelf",
+        "decorative objects",
+        "globe",
+        "picture"
+      ],
+      "location": "左侧及中部上方",
+      "source": "Plan-derived noun translation; no per-instance prompts",
+      "reviewed": false
+    },
+    {
+      "region_id": "R3",
+      "prompts": [
+        "audio equipment",
+        "bookshelf",
+        "boombox",
+        "turntable",
+        "vinyl records"
+      ],
+      "location": "右侧",
+      "source": "Plan-derived noun translation; no per-instance prompts",
+      "reviewed": false
+    },
+    {
+      "region_id": "R4",
+      "prompts": [
+        "cushions",
+        "pillows",
+        "sofa"
+      ],
+      "location": "前景下方",
+      "source": "Plan-derived noun translation; no per-instance prompts",
+      "reviewed": false
+    }
+  ],
+  "executed": false,
+  "reason": "Both GPU observations show all eight GPUs occupied; use cached historical SAM3 masks only",
+  "location_usage": "Soft prior only; no hand-authored boxes, points or Region-ID priorities"
+}

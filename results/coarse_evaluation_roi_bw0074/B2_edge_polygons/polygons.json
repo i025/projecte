@@ -1,0 +1,133 @@
+{
+  "image_size": [
+    1258,
+    855
+  ],
+  "coordinate_convention": "pixel edges, xy; even-odd fill",
+  "regions": [
+    {
+      "id": "R1",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              86,
+              375
+            ],
+            [
+              511,
+              375
+            ],
+            [
+              511,
+              559
+            ],
+            [
+              403,
+              559
+            ],
+            [
+              403,
+              855
+            ],
+            [
+              86,
+              855
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              97,
+              87
+            ],
+            [
+              883,
+              87
+            ],
+            [
+              883,
+              550
+            ],
+            [
+              511,
+              550
+            ],
+            [
+              511,
+              396
+            ],
+            [
+              97,
+              396
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              883,
+              119
+            ],
+            [
+              1258,
+              119
+            ],
+            [
+              1258,
+              541
+            ],
+            [
+              883,
+              541
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "polygons": [
+        {
+          "vertices": [
+            [
+              384,
+              559
+            ],
+            [
+              1258,
+              559
+            ],
+            [
+              1258,
+              855
+            ],
+            [
+              384,
+              855
+            ]
+          ],
+          "hole": false
+        }
+      ],
+      "reviewed": false
+    }
+  ]
+}

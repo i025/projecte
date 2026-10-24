@@ -1,0 +1,443 @@
+{
+  "image_size": [
+    1672,
+    941
+  ],
+  "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+  "render_used": false,
+  "slic_implementation": {
+    "package": "scikit-image",
+    "version": "0.26.0",
+    "dependency_path": "/tmp/project_e_slic_deps_rlhjhcvv"
+  },
+  "slic_granularities": {
+    "100": {
+      "requested_segments": 100,
+      "actual_segments": 92,
+      "seconds": 1.3992610990535468,
+      "pixel_size_quantiles": {
+        "min": 7766.0,
+        "p25": 13411.0,
+        "median": 16350.5,
+        "p75": 18893.25,
+        "p95": 25694.5,
+        "max": 51881.0
+      },
+      "nonrectangular_region_fraction": 1.0,
+      "median_bbox_fill": 0.7263646105418258,
+      "boundary_pixel_fraction": 0.02100928463560602,
+      "anchor_boundary_straddling_cells": 18,
+      "params": {
+        "compactness": 10.0,
+        "sigma": 1.0,
+        "max_num_iter": 10,
+        "convert2lab": true,
+        "enforce_connectivity": true
+      },
+      "reviewed": false,
+      "semantic_claim": false
+    },
+    "200": {
+      "requested_segments": 200,
+      "actual_segments": 199,
+      "seconds": 1.4418111350387335,
+      "pixel_size_quantiles": {
+        "min": 3861.0,
+        "p25": 6877.5,
+        "median": 7707.0,
+        "p75": 8818.0,
+        "p95": 11424.999999999996,
+        "max": 17273.0
+      },
+      "nonrectangular_region_fraction": 1.0,
+      "median_bbox_fill": 0.7342127659574468,
+      "boundary_pixel_fraction": 0.02911935790592315,
+      "anchor_boundary_straddling_cells": 30,
+      "params": {
+        "compactness": 10.0,
+        "sigma": 1.0,
+        "max_num_iter": 10,
+        "convert2lab": true,
+        "enforce_connectivity": true
+      },
+      "reviewed": false,
+      "semantic_claim": false
+    },
+    "400": {
+      "requested_segments": 400,
+      "actual_segments": 384,
+      "seconds": 1.4901786991395056,
+      "pixel_size_quantiles": {
+        "min": 2043.0,
+        "p25": 3523.0,
+        "median": 4093.5,
+        "p75": 4401.25,
+        "p95": 5381.249999999998,
+        "max": 14013.0
+      },
+      "nonrectangular_region_fraction": 0.9973958333333334,
+      "median_bbox_fill": 0.8273339583122192,
+      "boundary_pixel_fraction": 0.0368258342697629,
+      "anchor_boundary_straddling_cells": 51,
+      "params": {
+        "compactness": 10.0,
+        "sigma": 1.0,
+        "max_num_iter": 10,
+        "convert2lab": true,
+        "enforce_connectivity": true
+      },
+      "reviewed": false,
+      "semantic_claim": false
+    }
+  },
+  "methods": {
+    "slic": {
+      "status": "available",
+      "illustrative_setting": 200,
+      "coverage": {
+        "dense_pixel_coverage": 1.0,
+        "candidate_region_coverage": 1.0,
+        "candidate_semantic_coverage": 0.0,
+        "reviewed_semantic_coverage": 0.0,
+        "unassigned_pixels": 0,
+        "unclassified_pixels": 1573352,
+        "overlap_pixels": 0,
+        "overlap_fraction": 0.0,
+        "max_mask_multiplicity": 1,
+        "region_count": 199,
+        "definition": "Positive mask support unions on original grid; dense assignment is not semantic correctness"
+      },
+      "anchor_masks": 0,
+      "anchor_boundary_straddling_cells": 30
+    },
+    "sam2": {
+      "status": "available",
+      "coverage": {
+        "dense_pixel_coverage": 1.0,
+        "candidate_region_coverage": 1.0,
+        "candidate_semantic_coverage": 0.8485767965464817,
+        "reviewed_semantic_coverage": 0.0,
+        "unassigned_pixels": 0,
+        "unclassified_pixels": 238242,
+        "overlap_pixels": 0,
+        "overlap_fraction": 0.0,
+        "max_mask_multiplicity": 1,
+        "region_count": 9,
+        "definition": "Positive mask support unions on original grid; dense assignment is not semantic correctness"
+      },
+      "raw_prompt_region_coverage": 0.8485767965464817,
+      "raw_prompt_overlap_fraction": 0.0,
+      "anchor_masks": 5,
+      "dense_source": "deterministic 2x2 fallback plus raw SAM2 masks",
+      "inference": {
+        "status": "available",
+        "device": "cuda:0",
+        "gpu_uuid": "GPU-158426a4-6684-7863-8cbe-ed6595f97683",
+        "cpu_threads": 2,
+        "wall_seconds": 3.6233299309387803,
+        "model_directory": "/home/xymo/models/sam2",
+        "image_size": [
+          1672,
+          941
+        ],
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+        "prompts": [
+          {
+            "id": "a_table",
+            "category": "table",
+            "bbox": [
+              346,
+              564,
+              589,
+              812
+            ],
+            "role": "anchor",
+            "raw_iou_head_score": 0.9444139003753662,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "a_chair_left",
+            "category": "chair",
+            "bbox": [
+              205,
+              563,
+              428,
+              854
+            ],
+            "role": "anchor",
+            "raw_iou_head_score": 0.9628623723983765,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "a_chair_right",
+            "category": "chair",
+            "bbox": [
+              523,
+              546,
+              700,
+              808
+            ],
+            "role": "anchor",
+            "raw_iou_head_score": 0.9505482316017151,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "a_refrigerator",
+            "category": "refrigerator",
+            "bbox": [
+              1144,
+              313,
+              1395,
+              794
+            ],
+            "role": "anchor",
+            "raw_iou_head_score": 0.9905545115470886,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "a_potted_plant",
+            "category": "potted_plant",
+            "bbox": [
+              433,
+              507,
+              504,
+              580
+            ],
+            "role": "anchor",
+            "raw_iou_head_score": 0.9543281197547913,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "sam_wall_back",
+            "category": "wall",
+            "bbox": [
+              248,
+              105,
+              1429,
+              743
+            ],
+            "role": "surface",
+            "raw_iou_head_score": 0.9884752035140991,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "sam_ceiling",
+            "category": "ceiling",
+            "bbox": [
+              78,
+              0,
+              1595,
+              107
+            ],
+            "role": "surface",
+            "raw_iou_head_score": 0.9963229894638062,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "sam_floor",
+            "category": "wood_floor",
+            "bbox": [
+              0,
+              741,
+              1672,
+              941
+            ],
+            "role": "surface",
+            "raw_iou_head_score": 0.9889074563980103,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "sam_wall_left",
+            "category": "wall",
+            "bbox": [
+              0,
+              0,
+              249,
+              851
+            ],
+            "role": "surface",
+            "raw_iou_head_score": 0.9931116104125977,
+            "reviewed": false,
+            "mask_reviewed": false
+          },
+          {
+            "id": "sam_wall_right",
+            "category": "wall",
+            "bbox": [
+              1428,
+              0,
+              1672,
+              851
+            ],
+            "role": "surface",
+            "raw_iou_head_score": 0.9947395920753479,
+            "reviewed": false,
+            "mask_reviewed": false
+          }
+        ],
+        "score_note": "Raw SAM2 IoU head outputs only; not semantic correctness probabilities or reliability weights",
+        "gpu_peak_allocated_mib": 688.591796875,
+        "info": {
+          "inference_seconds": 0.5809461360331625,
+          "effective_tensor_shape": [
+            1,
+            3,
+            1024,
+            1024
+          ],
+          "loading_info": {
+            "missing_keys": [],
+            "unexpected_keys": [],
+            "mismatched_keys": [],
+            "error_msgs": []
+          },
+          "multimask_output": false,
+          "postprocessing": "official resize to original grid and zero-logit threshold; no mask corrections",
+          "loading_note": "Official sam2_video checkpoint; static Sam2Model loads image branch and ignores video-only parameters",
+          "reviewed": false
+        },
+        "reviewed": false
+      }
+    },
+    "combined": {
+      "status": "available",
+      "coverage": {
+        "dense_pixel_coverage": 1.0,
+        "candidate_region_coverage": 1.0,
+        "candidate_semantic_coverage": 0.8485767965464817,
+        "reviewed_semantic_coverage": 0.0,
+        "unassigned_pixels": 0,
+        "unclassified_pixels": 238242,
+        "overlap_pixels": 0,
+        "overlap_fraction": 0.0,
+        "max_mask_multiplicity": 1,
+        "region_count": 376,
+        "definition": "Positive mask support unions on original grid; dense assignment is not semantic correctness"
+      },
+      "anchor_masks": 5,
+      "anchor_masks_changed": false,
+      "anchor_boundary_straddling_cells": 0,
+      "fusion": "Split (SLIC label, SAM2 mask membership bits); no forced semantic merge or deletion of small pieces",
+      "warning": "Candidate boundaries are not reliable GT; splitting can amplify oversegmentation",
+      "piece_sizes": {
+        "min": 1,
+        "median": 4665.0,
+        "max": 16480,
+        "below_16_pixels": 23,
+        "pixels_in_tiny_pieces": 122
+      }
+    }
+  },
+  "previous_roi_coverage": {
+    "dense_pixel_coverage": 0.3273266249383482,
+    "candidate_region_coverage": 0.3273266249383482,
+    "candidate_semantic_coverage": 0.0,
+    "reviewed_semantic_coverage": 0.0,
+    "unassigned_pixels": 1058352,
+    "unclassified_pixels": 1573352,
+    "overlap_pixels": 0,
+    "overlap_fraction": 0.0,
+    "max_mask_multiplicity": 1,
+    "region_count": 3,
+    "definition": "Positive mask support unions on original grid; dense assignment is not semantic correctness"
+  },
+  "anchor_mask_stats": [
+    {
+      "id": "a_table",
+      "area_pixels": 13614,
+      "mask_bbox": [
+        348,
+        548,
+        585,
+        819
+      ],
+      "fraction_outside_prompt": 0.004039958865873366
+    },
+    {
+      "id": "a_chair_left",
+      "area_pixels": 19740,
+      "mask_bbox": [
+        207,
+        567,
+        425,
+        851
+      ],
+      "fraction_outside_prompt": 0.0
+    },
+    {
+      "id": "a_chair_right",
+      "area_pixels": 13828,
+      "mask_bbox": [
+        525,
+        549,
+        697,
+        804
+      ],
+      "fraction_outside_prompt": 0.0
+    },
+    {
+      "id": "a_refrigerator",
+      "area_pixels": 110077,
+      "mask_bbox": [
+        1149,
+        316,
+        1390,
+        787
+      ],
+      "fraction_outside_prompt": 0.0
+    },
+    {
+      "id": "a_potted_plant",
+      "area_pixels": 2613,
+      "mask_bbox": [
+        438,
+        510,
+        500,
+        576
+      ],
+      "fraction_outside_prompt": 0.0
+    }
+  ],
+  "no_final_method_selected": true,
+  "reviewed": false,
+  "semantic_coverage_note": "No human semantic review: all reviewed semantic coverage must remain zero",
+  "anchor_overlap": {
+    "overlap_pixels": 209,
+    "union_pixels": 159663,
+    "max_multiplicity": 2,
+    "pairwise_pixels": {
+      "a_table / a_chair_left": 85,
+      "a_table / a_chair_right": 0,
+      "a_table / a_refrigerator": 0,
+      "a_table / a_potted_plant": 124,
+      "a_chair_left / a_chair_right": 0,
+      "a_chair_left / a_refrigerator": 0,
+      "a_chair_left / a_potted_plant": 0,
+      "a_chair_right / a_refrigerator": 0,
+      "a_chair_right / a_potted_plant": 0,
+      "a_refrigerator / a_potted_plant": 0
+    }
+  },
+  "failure_cases": {
+    "slic": [
+      "大面积平滑墙顶被过度划分；椅腿、盆栽与地板板缝不等于独立语义对象。",
+      "200档有30个单元横跨 SAM2 候选 Anchor 边界。"
+    ],
+    "sam2": [
+      "桌/盆栽有124像素重叠，桌/左椅有85像素重叠；接触处归属需要人工审核，未自动消重。",
+      "冰箱底脚、盆栽细叶与叶间背景、细椅腿、踢脚线需要放大检查；没有精确GT，不能报告Mask准确率。"
+    ],
+    "combined": [
+      "199个单元变成376个区域；23个区域不足16像素（共122像素），保留而不删除。",
+      "只改善对候选边界的遵守，不改善SAM2 Mask本身；错误边界会继承，不能自动认定优于单独方法。"
+    ]
+  }
+}

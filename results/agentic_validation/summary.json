@@ -1,0 +1,85 @@
+{
+  "client_date": "2026-10-20",
+  "unit_tests": {
+    "passed": 34,
+    "failed": 0,
+    "log": "unit_tests.log"
+  },
+  "existing_evaluator_regression": {
+    "passed": 96,
+    "failed": 0,
+    "log": "scene_benchmark_regression.log"
+  },
+  "end_to_end": {
+    "passed": 51,
+    "failed": 0,
+    "successful_serial_renders": 8,
+    "expected_illegal_intrinsics_rejection": true,
+    "local_dino_cpu": true,
+    "seconds": 19.781,
+    "source": "../agentic_verified_cpu/summary.json"
+  },
+  "rgb_depth_normal_mask_validation": {
+    "passed": 8,
+    "source": "data_pass_checks.json"
+  },
+  "structural_failure_fallback": {
+    "passed": true,
+    "source": "geometry_unavailable/geometry.json"
+  },
+  "actual_cli": {
+    "passed": true,
+    "source": "cli_evaluation/report.json",
+    "energies": {
+      "semantic": 0.20116545813027076,
+      "spatial": 0.18622611508155273,
+      "appearance": 0.04475027776666782,
+      "statistical": 0.0026005437594025264,
+      "perceptual": 0.05322785796193877
+    }
+  },
+  "harness_mock": {
+    "passed": true,
+    "source": "../agentic_development/harness_fixed_camera/summary.json",
+    "real_api_calls": 0
+  },
+  "static_pilots": {
+    "C1_02_A": {
+      "report": "results/agentic_static_pilots/C1_02_A/report.json",
+      "observation_energy": 0.15198031869811726,
+      "structural_energy": null,
+      "review_coverage": 0.0,
+      "historical_proposals_associated": 36,
+      "restriction": "Historical source camera, pipeline debug only; unreviewed candidates are not GT"
+    },
+    "R1_05": {
+      "report": "results/agentic_static_pilots/R1_05/report.json",
+      "observation_energy": 0.08483740529873214,
+      "structural_energy": null,
+      "review_coverage": 0.0,
+      "historical_proposals_associated": 0,
+      "restriction": "Historical source camera, pipeline debug only; unreviewed candidates are not GT"
+    },
+    "C1_01_B": {
+      "report": "results/agentic_static_pilots/C1_01_B/report.json",
+      "observation_energy": 0.1925274532905564,
+      "structural_energy": null,
+      "review_coverage": 0.0,
+      "historical_proposals_associated": 5,
+      "restriction": "Historical source camera, pipeline debug only; unreviewed candidates are not GT"
+    }
+  },
+  "real_api_calls": 0,
+  "gpu_used": false,
+  "skipped": {
+    "gpu": "nvidia-smi could not communicate with NVIDIA driver on two observations",
+    "vlm": "No authorized verified VLM; unavailable paths tested with no API calls",
+    "sam2_relations": "Existing candidates reused; no new model inference requested",
+    "real_agent_replay": "Requires per-submission human review/approval; unattended runtime remains blocked"
+  },
+  "limitations": [
+    "Provisional weights/thresholds, feature/texture proxies; no statistical calibration or calibrated confidence.",
+    "Synthetic oracles validate implementation, not real-image reconstruction accuracy.",
+    "Structural coverage is incomplete; valid checks do not establish a globally correct scene."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "side": "render",
+  "status": "valid",
+  "answers": {
+    "q1": "yes",
+    "q2": 4,
+    "q3": "yes"
+  },
+  "source": "real_vlm",
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "response": {
+    "model": "openai/gpt-6-sol",
+    "source": "vlm_api",
+    "request_number": 2,
+    "raw_answer": "{\"q1\":\"yes\",\"q2\":4,\"q3\":\"yes\"}",
+    "parsed_answer": {
+      "q1": "yes",
+      "q2": 4,
+      "q3": "yes"
+    },
+    "evaluation_status": "answered"
+  }
+}

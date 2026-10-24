@@ -1,0 +1,20 @@
+{
+  "scene_id": "bw_0073",
+  "region_id": "R2",
+  "appearance": 0.27086611358075746,
+  "perceptual": 0.1565570979201936,
+  "perceptual_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/metrics.json#/rows[id=polygon_R2]",
+  "perceptual_unavailable_reason": null,
+  "semantic": null,
+  "spatial": null,
+  "statistical": null,
+  "q": 0.0,
+  "reviewed": false,
+  "formal_eligible": false,
+  "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+  "roi_pixels": 182080,
+  "observed_pixels": 182080,
+  "group_specific_visual_scores": false,
+  "region_losses_summed": false,
+  "usage": "provisional/debug"
+}

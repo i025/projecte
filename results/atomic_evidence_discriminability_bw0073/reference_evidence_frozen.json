@@ -1,0 +1,535 @@
+{
+  "schema_version": "reference_atomic_evidence_draft_v1",
+  "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+  "image_size": [
+    1536,
+    837
+  ],
+  "regions": [
+    {
+      "id": "R2",
+      "name": "中央岛台区",
+      "mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+      "bbox": [
+        512,
+        94,
+        1044,
+        716
+      ],
+      "reviewed": false,
+      "reliability": 0,
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "mask_source": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/evidence.json",
+      "inventory_complete": false
+    },
+    {
+      "id": "R3",
+      "name": "后方料理区",
+      "mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+      "bbox": [
+        553,
+        239,
+        937,
+        427
+      ],
+      "reviewed": false,
+      "reliability": 0,
+      "mask_reviewed": false,
+      "localization_status": "candidate_partial_support",
+      "mask_source": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/evidence.json",
+      "inventory_complete": false
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "R2_SEM_01",
+      "region_id": "R2",
+      "type": "semantic",
+      "claim": "岛台上方的悬挂灯具具有宽带交叠成环的主要轮廓。",
+      "question": "岛台上方悬挂灯具的主要可见轮廓是什么？",
+      "answer_type": "category",
+      "expected": "intersecting_broad_loop_bands",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "交叠宽环带轮廓清楚；不据此推断灯具真实材质。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          681,
+          94,
+          864,
+          301
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R2_SEM_02",
+      "region_id": "R2",
+      "type": "semantic",
+      "claim": "岛台台面上可见一个盛有水果的浅盘或碗。",
+      "question": "岛台台面中央附近的主要摆件属于什么类别？",
+      "answer_type": "category",
+      "expected": "fruit_bowl",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "容器及成堆果实可见；不要求辨认水果品种或逐颗数量。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          718,
+          382,
+          825,
+          441
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R2_SPA_01",
+      "region_id": "R2",
+      "type": "spatial",
+      "claim": "悬挂灯具在图像中位于岛台台面上方，且其水平中心落在岛台台面水平范围的中部。",
+      "question": "以图像坐标判断，悬挂灯具相对于岛台台面处于何种位置？",
+      "answer_type": "category",
+      "expected": "above_and_approximately_horizontally_centered",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "仅描述二维上下与水平对齐；中部为近似关系，不推断三维中心。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          512,
+          94,
+          1044,
+          480
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R2_SPA_02",
+      "region_id": "R2",
+      "type": "spatial",
+      "claim": "可见高脚椅在图像中沿岛台近侧形成一条从左至右的横向排列。",
+      "question": "岛台近侧高脚椅的可见排列形态是什么？",
+      "answer_type": "category",
+      "expected": "one_left_to_right_row_below_countertop",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "按图像排列观察；不要求椅子等距或在三维空间严格共线。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          513,
+          449,
+          1044,
+          716
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R2_STA_01",
+      "region_id": "R2",
+      "type": "statistical",
+      "claim": "岛台近侧可见四把有靠背的高脚椅。",
+      "question": "岛台近侧能直接数到多少把有靠背的高脚椅？",
+      "answer_type": "integer",
+      "expected": 4,
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "四个独立靠背和各自座位清楚；不推测岛台背后是否另有椅子。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          513,
+          476,
+          1044,
+          716
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R2_APP_01",
+      "region_id": "R2",
+      "type": "appearance",
+      "claim": "岛台台面可见浅色底面与高反差深色不规则脉纹。",
+      "question": "岛台台面的主要可见纹理类别是什么？",
+      "answer_type": "category",
+      "expected": "light_ground_with_irregular_dark_veining",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "只判断视觉脉纹类别，不将其作为真实大理石材质的证明。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          523,
+          414,
+          1034,
+          480
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R2_APP_02",
+      "region_id": "R2",
+      "type": "appearance",
+      "claim": "高脚椅座位及靠背的主要可见表面呈暖黄褐色。",
+      "question": "岛台近侧高脚椅座位及靠背的主要可见色系是什么？",
+      "answer_type": "category",
+      "expected": "warm_tan_brown",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "色系可见，但不推断皮革或其他真实材质；颜色距离不能代替语义判断。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          518,
+          477,
+          1038,
+          576
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_SEM_01",
+      "region_id": "R3",
+      "type": "semantic",
+      "claim": "后方料理区上部可见带门板的壁挂橱柜。",
+      "question": "后方料理区上部的主要收纳设施属于什么类别？",
+      "answer_type": "category",
+      "expected": "wall_cabinets_with_doors",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "门板及把手可见；不统计被灯具遮挡的门板数量，也不推断内部结构。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          602,
+          240,
+          922,
+          354
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_SEM_02",
+      "region_id": "R3",
+      "type": "semantic",
+      "claim": "后方料理台右侧可见一盆向上展开的长叶植物。",
+      "question": "后方料理台右侧较显著的有叶摆件属于什么类别？",
+      "answer_type": "category",
+      "expected": "potted_leafy_plant",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "盆与多片长叶清楚；不要求辨认植物物种或真实材质。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          807,
+          323,
+          885,
+          400
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_SPA_01",
+      "region_id": "R3",
+      "type": "spatial",
+      "claim": "在图像水平方向上，中央竖向脉纹面板的左侧和右侧均有壁柜门板。",
+      "question": "中央竖向脉纹面板与上方壁柜门板在图像水平方向上如何排列？",
+      "answer_type": "category",
+      "expected": "cabinet_doors_on_both_left_and_right_sides",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "只判断可见左右夹置关系；不将中央面板命名为已确认的抽油烟机。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          603,
+          240,
+          922,
+          392
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_SPA_02",
+      "region_id": "R3",
+      "type": "spatial",
+      "claim": "放置器皿的窄竖向开放搁架列位于壁柜门板的图像左侧。",
+      "question": "放有器皿的窄竖向开放搁架列位于壁柜门板的哪一侧？",
+      "answer_type": "category",
+      "expected": "image_left",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "左右关系可直接由图像观察；不推断搁架深度。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          553,
+          240,
+          721,
+          396
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_STA_01",
+      "region_id": "R3",
+      "type": "statistical",
+      "claim": "最左侧窄竖向开放搁架列中，可见三个分处不同高度的器皿。",
+      "question": "后方料理区最左侧窄开放搁架列中，能直接数到多少个器皿？",
+      "answer_type": "integer",
+      "expected": 3,
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "上部杯形、中部壶形、下部圆腹壶形三个主体可分辨；不把器皿装饰或把手另算。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          557,
+          253,
+          604,
+          393
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_APP_01",
+      "region_id": "R3",
+      "type": "appearance",
+      "claim": "后方中央墙面和相邻背景板可见浅色底上的高反差、斜向延伸的不规则深色脉纹。",
+      "question": "后方料理区中央背景板的主要可见纹理类别是什么？",
+      "answer_type": "category",
+      "expected": "light_ground_with_dense_irregular_diagonal_dark_veining",
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "low",
+        "reason": "只判断可见纹理类别，不确认真实石材品种或材质。"
+      },
+      "status": "unreviewed_reference_draft",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          606,
+          289,
+          928,
+          392
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    },
+    {
+      "id": "R3_SEM_03",
+      "region_id": "R3",
+      "type": "semantic",
+      "claim": "后方中央台面上存在能够与其他台面物件明确分辨的炉灶或灶眼。",
+      "question": "能否在后方中央台面上明确定位并辨认炉灶或灶眼？",
+      "answer_type": "boolean",
+      "expected": null,
+      "source": "assistant_reference_only_visual_draft",
+      "uncertainty": {
+        "level": "high",
+        "reason": "前景岛台遮挡且参考图中相关细节不清楚；区域计划提及炉灶不构成视觉确认。不得据此生成肯定或否定期望。"
+      },
+      "status": "unknown",
+      "reviewed": false,
+      "reliability": 0,
+      "scope": {
+        "coordinate_system": "reference_image_xy_origin_top_left",
+        "bbox": [
+          632,
+          375,
+          808,
+          413
+        ],
+        "bbox_convention": "[left, top, right, bottom), pixels",
+        "visibility": "visible_only",
+        "reference_image": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+        "region_mask": "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "mask_status": "inherited_unreviewed_candidate_partial_support",
+        "support_policy": "Visual claim is limited to the named visible content in this Reference bbox; the inherited mask is a candidate region and does not certify every object extent."
+      }
+    }
+  ],
+  "reviewed": false,
+  "reliability": 0,
+  "inventory_complete": false,
+  "formal_score": false,
+  "frozen": true,
+  "provenance": {
+    "source": "assistant_reference_only_visual_draft",
+    "read_inputs": [
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/evidence.json",
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+      "/home/xymo/projects/e-harness/e_harness/benchmark_evidence.py"
+    ],
+    "visual_read_inputs": [
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+      "/home/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png"
+    ],
+    "code_read_scope": "Only a keyword search of the permitted generic benchmark_evidence.py loader file; no result files were discovered or read through it.",
+    "method": "Assistant visual inspection of Reference via view_image; existing masks were viewed only as region candidates.",
+    "render_used": false,
+    "difference_images_used": false,
+    "evaluation_results_used": false,
+    "external_vlm_used": false,
+    "network_used": false,
+    "paid_api_used": false,
+    "gpu_used": false,
+    "human_ground_truth": false,
+    "generated_crops": [],
+    "freeze_policy": "Written once after Reference-only drafting and validation; no edits are authorized after the freeze notice."
+  },
+  "evaluation_policy": {
+    "unknown_expected_is_null": true,
+    "unknown_atoms_excluded_from_scoring": true,
+    "reviewed_false_is_not_human_ground_truth": true,
+    "appearance_separate_from_semantic": true,
+    "material_claims_limited_to_visible_texture_categories": true,
+    "spatial_relations_are_image_coordinate_relations": true
+  }
+}

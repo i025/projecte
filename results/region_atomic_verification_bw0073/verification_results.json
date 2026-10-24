@@ -1,0 +1,116 @@
+{
+  "results": [
+    {
+      "id": "R2_island",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_stools",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_lamp",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_above",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "Presence prerequisite not established; do not charge dependent count/relation again",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R2_count",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "Presence prerequisite not established; do not charge dependent count/relation again",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R3_cabinets",
+      "region_id": "R3",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R3_counter",
+      "region_id": "R3",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R3_above",
+      "region_id": "R3",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "Presence prerequisite not established; do not charge dependent count/relation again",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    },
+    {
+      "id": "R3_hob_count",
+      "region_id": "R3",
+      "status": "unknown",
+      "observed": null,
+      "finding": "none",
+      "reason": "Reference proposition is unknown; cannot define a violation",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null
+    }
+  ],
+  "mode": "real_verifier_unavailable",
+  "paid_requests": 0,
+  "mock_results_included": false,
+  "reviewed": false
+}

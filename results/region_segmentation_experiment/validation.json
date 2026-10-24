@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "candidate_ids": 589,
+  "reviewed_false": true,
+  "all_masks_original_grid": true,
+  "html_links_valid": 36,
+  "images": 15,
+  "unit_tests": 75,
+  "missing_checks": 15,
+  "controlled_regression_checks": 12,
+  "real_agent_scoring": false
+}

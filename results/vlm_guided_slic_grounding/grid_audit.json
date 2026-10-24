@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "input": "A_box",
+      "id": "R1",
+      "roundtrip_added_native_pixels": 8232,
+      "roundtrip_removed_native_pixels": 0,
+      "reviewed": false
+    },
+    {
+      "input": "A_box",
+      "id": "R2",
+      "roundtrip_added_native_pixels": 5592,
+      "roundtrip_removed_native_pixels": 12531,
+      "reviewed": false
+    },
+    {
+      "input": "A_box",
+      "id": "R3",
+      "roundtrip_added_native_pixels": 7350,
+      "roundtrip_removed_native_pixels": 0,
+      "reviewed": false
+    },
+    {
+      "input": "A_box",
+      "id": "R4",
+      "roundtrip_added_native_pixels": 4576,
+      "roundtrip_removed_native_pixels": 7886,
+      "reviewed": false
+    },
+    {
+      "input": "B_polygon",
+      "id": "R1",
+      "roundtrip_added_native_pixels": 4924,
+      "roundtrip_removed_native_pixels": 4967,
+      "reviewed": false
+    },
+    {
+      "input": "B_polygon",
+      "id": "R2",
+      "roundtrip_added_native_pixels": 11219,
+      "roundtrip_removed_native_pixels": 5238,
+      "reviewed": false
+    },
+    {
+      "input": "B_polygon",
+      "id": "R3",
+      "roundtrip_added_native_pixels": 5917,
+      "roundtrip_removed_native_pixels": 1804,
+      "reviewed": false
+    },
+    {
+      "input": "B_polygon",
+      "id": "R4",
+      "roundtrip_added_native_pixels": 3912,
+      "roundtrip_removed_native_pixels": 4138,
+      "reviewed": false
+    }
+  ],
+  "selection_change_statistics_grid": [
+    1536,
+    837
+  ],
+  "reviewed": false
+}

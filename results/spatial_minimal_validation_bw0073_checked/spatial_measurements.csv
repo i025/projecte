@@ -1,0 +1,7 @@
+method,side,delta_x,delta_y,bbox_area_ratio_proxy,visible_mask_area_ratio,status,score
+automatic,reference,,,,,unavailable,
+automatic,render,,,,,unavailable,
+review_gated_drafts,reference,,,,,unavailable,
+review_gated_drafts,render,,,,,unavailable,
+conditional_bbox_debug,reference,-0.0032552083333333703,-0.4002389486260455,0.31971153846153844,,conditional_debug,
+conditional_bbox_debug,render,0.00032552083333331483,-0.28733572281959385,0.2181879773343188,,conditional_debug,

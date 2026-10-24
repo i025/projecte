@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "cpu_unit_tests": {
+    "run": 145,
+    "passed": 145,
+    "failed": 0
+  },
+  "metric_scopes": 37,
+  "original_33_measurements_unchanged": true,
+  "frozen_native_region_masks": 8,
+  "original_masks_coordinates_and_reference_identical": true,
+  "official_core_modules_unchanged": true,
+  "render_fit_reproduced_exactly": true,
+  "reference_render_use_same_roi_grid": true,
+  "invalid_padding_excluded": true,
+  "rgb_l1_independently_recomputed_for_all_scopes": true,
+  "max_rgb_absolute_residual": 8.326672684688674e-17,
+  "dense_and_grid_partition_weighted_rgb_reconstructs_global": true,
+  "unique_shared_rgb_reconstructs_each_region": true,
+  "effective_area_control_max_relative_deviation": 0.0020643914437563637,
+  "actual_dino_self_comparisons": 3,
+  "actual_dino_self_comparison_values_zero": true,
+  "all_37_dino_distances_finite": true,
+  "html_local_links_checked": 41,
+  "html_missing_links": 0,
+  "all_candidates_unreviewed": true,
+  "forbidden_credential_fields_absent": true,
+  "formal_observation_energy": null,
+  "region_losses_summed": false,
+  "api_calls": 0,
+  "gpu_runs": 0,
+  "sam_runs": 0,
+  "slic_runs": 0,
+  "blender_runs": 0,
+  "agent_runs": 0,
+  "limitations": [
+    "historical_camera: exported z=1.5 vs Project e z=2.0",
+    "Reference camera unknown; alignment unconfirmed",
+    "Visual observations are unreviewed, not pixel GT",
+    "No formal scoring or structural evaluation"
+  ],
+  "reviewed": false
+}

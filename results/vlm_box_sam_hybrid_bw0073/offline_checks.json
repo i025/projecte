@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cpu_tests": 132,
+  "reference_only": true,
+  "saved_plan_and_box_valid": true,
+  "multicomponent_preservation_tested": true,
+  "raw_output_separation_tested": true,
+  "automatic_paid_calls": 0,
+  "reviewed": false
+}

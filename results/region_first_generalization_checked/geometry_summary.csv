@@ -1,0 +1,5 @@
+region_union_fraction,overlap_fraction,unassigned_fraction,per_region_pixels,pixel_count,dense_global_coverage,reviewed_region_coverage,method,task_id,roi_count,experiment,usable_vlm_plan,geometry_seconds
+1.0,0.061509120611496916,0.0,"[635810, 136514, 282624, 178849, 174944]",1327104,1.0,0.0,A_rectangles,bw_9064,5,conditional_cached_bbox_geometry_control,False,
+1.0,0.01686228057484568,0.0,"[635810, 134064, 253179, 165191, 161238]",1327104,1.0,0.0,B2_frozen,bw_9064,5,conditional_cached_bbox_geometry_control,False,
+0.6663096438172043,0.022938912534846676,0.3336903561827957,"[299046, 39198, 278005, 38700, 231171]",1285632,1.0,0.0,A_rectangles,bw_0073,5,conditional_cached_bbox_geometry_control,False,
+0.6187128198426921,0.007353581740342493,0.38128718015730784,"[299046, 22134, 232581, 29169, 221961]",1285632,1.0,0.0,B2_frozen,bw_0073,5,conditional_cached_bbox_geometry_control,False,

@@ -1,0 +1,49 @@
+# Local environments, models and downloaded data
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.cache/
+*.py[cod]
+/datasets/
+/models/
+/weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+.bashrc
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+
+# Raw execution records and large intermediate artifacts
+/runs/
+*.log
+*.jsonl
+*.blend
+*.blend1
+*.blend2
+*.exr
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.html
+/runtime_evidence/*
+!/runtime_evidence/cpu_calibration.json
+!/runtime_evidence/world_initialization.json
+
+# Results are opt-in: force-add only explicitly reviewed publication paths.
+# Tracked results remain updatable; new experiment folders stay ignored.
+/results/*
+!/results/README.md

@@ -1,0 +1,152 @@
+{
+  "task_id": "bw_0073",
+  "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+  "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+  "agent_input_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/references/image_01.jpg",
+  "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+  "inventory_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blenderworld_runs_inventory/selected.csv",
+  "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/config.json",
+  "task_metadata": "/home/xymo/projects/BlenderWorld/data/BlenderWorld/tasks/bw_0073/task.json",
+  "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/input.json",
+  "artifact_manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/manifest.json",
+  "exact_reference_bytes_equal": true,
+  "run_task_mapping_verified": true,
+  "export_mapping_verified": true,
+  "run_exception": null,
+  "reference_native_size": [
+    7952,
+    4333
+  ],
+  "render_native_size": [
+    1672,
+    941
+  ],
+  "render_alpha_range": [
+    255,
+    255
+  ],
+  "png_metadata": {
+    "Camera": "Camera",
+    "Scene": "Scene",
+    "File": "/workspace/exports/final.blend",
+    "RenderTime": "01:27.84"
+  },
+  "camera_export_source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/camera_parameters.json",
+  "camera_export": {
+    "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+    "T_c2w": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -6
+      ],
+      [
+        0,
+        1,
+        0,
+        1.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "K": [
+      [
+        1045.0,
+        0,
+        836.0
+      ],
+      [
+        0,
+        1045.0,
+        470.5
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+    "resolution": [
+      1672,
+      941
+    ],
+    "camera_object": "Camera",
+    "lens_mm": 22.5,
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "sensor_fit": "HORIZONTAL",
+    "shift_x": 0.0,
+    "shift_y": 0.0
+  },
+  "project_e_fixed_T0": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      -6.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "exported_pose_matches_T0": false,
+  "actual_blend_camera_reverified": false,
+  "reference_camera": "unknown",
+  "camera_alignment_confirmed": false,
+  "camera_protocol": "historical_camera",
+  "render_blend_sync": "unknown; saved PNG metadata is not a rerender verification",
+  "comparison_transform": {
+    "original_size": [
+      1672,
+      941
+    ],
+    "common_size": [
+      1536,
+      837
+    ],
+    "nominal_scale": 0.8894792773645058,
+    "resized_size": [
+      1487,
+      837
+    ],
+    "offset_xy": [
+      24,
+      0
+    ],
+    "padding_is_not_observation": true,
+    "content_alignment": false,
+    "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+  },
+  "observed_canvas_fraction": 0.9680989583333334,
+  "official_benchmark_eligible": false,
+  "usage": "offline provisional/debug only",
+  "reviewed": false
+}

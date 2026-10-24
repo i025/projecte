@@ -1,0 +1,70 @@
+{
+  "regions": [
+    {
+      "id": "R1",
+      "actual_bbox": [
+        120,
+        535,
+        420,
+        910
+      ],
+      "polygon_envelope": [
+        123,
+        540,
+        417,
+        908
+      ],
+      "bbox_differs_from_polygon_envelope": true,
+      "polygon_count": 2,
+      "component_intersection_pixels_on_normalized_grid": 4845,
+      "reviewed": false,
+      "component_intersection_native_pixels": 7627
+    },
+    {
+      "id": "R2",
+      "actual_bbox": [
+        680,
+        330,
+        855,
+        850
+      ],
+      "polygon_envelope": [
+        685,
+        336,
+        840,
+        842
+      ],
+      "bbox_differs_from_polygon_envelope": true,
+      "polygon_count": 1,
+      "component_intersection_pixels_on_normalized_grid": 0,
+      "reviewed": false,
+      "component_intersection_native_pixels": 0
+    }
+  ],
+  "pairwise_overlap": {
+    "A_historical": [
+      {
+        "first": "R1",
+        "second": "R2",
+        "intersection_native_pixels": 0
+      }
+    ],
+    "B_direct_box": [
+      {
+        "first": "R1",
+        "second": "R2",
+        "intersection_native_pixels": 0
+      }
+    ],
+    "C_direct_polygon": [
+      {
+        "first": "R1",
+        "second": "R2",
+        "intersection_native_pixels": 0
+      }
+    ]
+  },
+  "geometry_is_not_accuracy": true,
+  "conflict_resolution_applied": false,
+  "reviewed": false
+}

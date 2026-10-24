@@ -1,0 +1,10 @@
+{
+  "original_experiment_limit": 4,
+  "local_prior_attempts": 1,
+  "user_reported_cross_conversation_prior_attempts": 5,
+  "user_latest_total_limit": 6,
+  "remaining_authorized_attempts": 1,
+  "final_ledger": "vlm_final_requests.json",
+  "retries": 0,
+  "note": "External five-attempt count is user-reported, not fabricated local request records."
+}

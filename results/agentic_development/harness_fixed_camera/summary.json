@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "termination_reason": "single_shot_complete",
+  "model": "mock",
+  "mode": "single_shot",
+  "mock": true,
+  "context_policy": "full",
+  "prompt_version": "baseline",
+  "effective_prompt_version": "baseline",
+  "counts": {
+    "model_turns": 1,
+    "api_calls": 1,
+    "tool_calls": 1,
+    "blender_executions": 1,
+    "render_calls": 1,
+    "successful_renders": 1,
+    "inspect_calls": 0
+  },
+  "scene_version": 1,
+  "wall_seconds": 1.255,
+  "usage": [
+    null
+  ],
+  "cost_usd": 0,
+  "final_blend": "final.blend",
+  "final_render": "final.png",
+  "isolated_runtime": false,
+  "manual_approval": false
+}

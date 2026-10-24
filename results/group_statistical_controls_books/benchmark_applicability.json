@@ -1,0 +1,203 @@
+{
+  "A": {
+    "verification_results": [
+      {
+        "id": "books_horizontal_stack",
+        "region_id": "R_shelf",
+        "status": "unavailable",
+        "observed": null,
+        "finding": "none",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "source_kind": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "score": null
+      },
+      {
+        "id": "books_upright_books",
+        "region_id": "R_shelf",
+        "status": "unavailable",
+        "observed": null,
+        "finding": "none",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "source_kind": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "score": null
+      }
+    ],
+    "energy_records": [
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_horizontal_stack",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_horizontal_stack",
+        "owner_id": "G_books",
+        "verification_status": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      },
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_upright_books",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_upright_books",
+        "owner_id": "G_books",
+        "verification_status": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      }
+    ],
+    "statistical_energy": null,
+    "scorable": false,
+    "reason": "Verification Pending; no calibrated binary-to-energy mapping"
+  },
+  "B": {
+    "verification_results": [
+      {
+        "id": "books_horizontal_stack",
+        "region_id": "R_shelf",
+        "status": "unavailable",
+        "observed": null,
+        "finding": "none",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "source_kind": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "score": null
+      },
+      {
+        "id": "books_upright_books",
+        "region_id": "R_shelf",
+        "status": "unavailable",
+        "observed": null,
+        "finding": "none",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "source_kind": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "score": null
+      }
+    ],
+    "energy_records": [
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_horizontal_stack",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_horizontal_stack",
+        "owner_id": "G_books",
+        "verification_status": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      },
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_upright_books",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_upright_books",
+        "owner_id": "G_books",
+        "verification_status": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      }
+    ],
+    "statistical_energy": null,
+    "scorable": false,
+    "reason": "Verification Pending; no calibrated binary-to-energy mapping"
+  },
+  "C": {
+    "verification_results": [
+      {
+        "id": "books_horizontal_stack",
+        "region_id": "R_shelf",
+        "status": "unavailable",
+        "observed": null,
+        "finding": "none",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "source_kind": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "score": null
+      },
+      {
+        "id": "books_upright_books",
+        "region_id": "R_shelf",
+        "status": "unavailable",
+        "observed": null,
+        "finding": "none",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "source_kind": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "score": null
+      }
+    ],
+    "energy_records": [
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_horizontal_stack",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_horizontal_stack",
+        "owner_id": "G_books",
+        "verification_status": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      },
+      {
+        "energy": "statistical",
+        "level": "region",
+        "id": "books_upright_books",
+        "value": null,
+        "q": 0.0,
+        "aggregation_weight": 1.0,
+        "status": "unavailable",
+        "reason": "No reusable real atomic verification response; no authorized verifier configured",
+        "group_id": "G_books",
+        "canonical_fact_id": "books_upright_books",
+        "owner_id": "G_books",
+        "verification_status": "unavailable",
+        "reviewed": false,
+        "scorable": false,
+        "method": "Group atomic evidence; no calibrated score mapping"
+      }
+    ],
+    "statistical_energy": null,
+    "scorable": false,
+    "reason": "Verification Pending; no calibrated binary-to-energy mapping"
+  }
+}

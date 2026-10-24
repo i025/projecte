@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "cpu_tests": 144,
+  "frozen_roi_gate_tested": true,
+  "aspect_preserving_fit_tested": true,
+  "padding_unknown_not_zero_error": true,
+  "reference_only_control_geometry": true,
+  "reviewed": false
+}

@@ -1,0 +1,27 @@
+{
+  "initial": {
+    "uuid": "GPU-158426a4-6684-7863-8cbe-ed6595f97683",
+    "total_mib": 40960,
+    "used_mib": 3,
+    "utilization_percent": 0,
+    "pids": [],
+    "recorded_at": 1792500593.58146
+  },
+  "final": {
+    "uuid": "GPU-158426a4-6684-7863-8cbe-ed6595f97683",
+    "total_mib": 40960,
+    "used_mib": 4234,
+    "utilization_percent": 0,
+    "pids": [
+      2714423
+    ],
+    "recorded_at": 1792500651.885586
+  },
+  "process_memory_cap_fraction": 0.4,
+  "serial": true,
+  "cpu_threads": 2,
+  "load_seconds": 10.588240275159478,
+  "checkpoint": "/home/xymo/models/sam3/sam3.pt",
+  "load_from_HF": false,
+  "official_builder_missing_keys_reported": false
+}

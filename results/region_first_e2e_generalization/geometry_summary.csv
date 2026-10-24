@@ -1,0 +1,5 @@
+method,region_union_fraction,overlap_fraction,unassigned_fraction,per_region_pixels,pixel_count,dense_global_coverage,reviewed_region_coverage,task_id,planned_roi_count,grounded_roi_count
+A_rectangles,0.16719262393904322,0.0,0.8328073760609568,"[125100, 96782]",1327104,1.0,0.0,bw_9064,2,2
+B2_frozen,0.16719262393904322,0.0,0.8328073760609568,"[125100, 96782]",1327104,1.0,0.0,bw_9064,2,2
+A_rectangles,0.1963796794105934,0.0,0.8036203205894066,"[0, 252472, 0, 0]",1285632,1.0,0.0,bw_0073,4,1
+B2_frozen,0.1357169081043409,0.0,0.8642830918956591,"[0, 174482, 0, 0]",1285632,1.0,0.0,bw_0073,4,1

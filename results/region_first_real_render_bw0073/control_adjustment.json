@@ -1,0 +1,9 @@
+{
+  "reason": "Letterbox validity makes original total-area matches differ in observed area; add four observed-area controls",
+  "original_33_measurements_preserved": true,
+  "original_reference_rois_changed": false,
+  "control_geometry_uses_rgb_errors": false,
+  "additional_paid_calls": 0,
+  "additional_sam_or_slic_runs": 0,
+  "reviewed": false
+}

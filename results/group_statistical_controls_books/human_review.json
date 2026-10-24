@@ -1,0 +1,30 @@
+{
+  "status": "unreviewed",
+  "reviewed": false,
+  "rows": [
+    {
+      "condition": "A",
+      "horizontal_stack_visible": "unreviewed",
+      "upright_books_visible": "unreviewed",
+      "B_nonbook_horizontal_confounds": "unreviewed",
+      "occlusion_resolution_or_category_ambiguity": "unreviewed",
+      "text_or_condition_cues_in_image": "unreviewed"
+    },
+    {
+      "condition": "B",
+      "horizontal_stack_visible": "unreviewed",
+      "upright_books_visible": "unreviewed",
+      "B_nonbook_horizontal_confounds": "unreviewed",
+      "occlusion_resolution_or_category_ambiguity": "unreviewed",
+      "text_or_condition_cues_in_image": "unreviewed"
+    },
+    {
+      "condition": "C",
+      "horizontal_stack_visible": "unreviewed",
+      "upright_books_visible": "unreviewed",
+      "B_nonbook_horizontal_confounds": "unreviewed",
+      "occlusion_resolution_or_category_ambiguity": "unreviewed",
+      "text_or_condition_cues_in_image": "unreviewed"
+    }
+  ]
+}

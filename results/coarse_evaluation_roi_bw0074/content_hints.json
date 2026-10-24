@@ -1,0 +1,345 @@
+{
+  "regions": [
+    {
+      "id": "R1",
+      "matched": [
+        {
+          "id": "bw_0074_sam3_text_m010",
+          "bbox": [
+            214,
+            382,
+            385,
+            515
+          ],
+          "concepts": [
+            "monitor"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m011",
+          "bbox": [
+            99,
+            538,
+            322,
+            855
+          ],
+          "concepts": [
+            "chair"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_visual_m000",
+          "bbox": [
+            213,
+            382,
+            385,
+            485
+          ],
+          "concepts": [
+            "monitor"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_visual_m001",
+          "bbox": [
+            99,
+            538,
+            322,
+            855
+          ],
+          "concepts": [
+            "chair"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        }
+      ],
+      "unmatched_concepts": [
+        "desk",
+        "lamp"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R2",
+      "matched": [
+        {
+          "id": "bw_0074_sam3_text_m002",
+          "bbox": [
+            145,
+            340,
+            224,
+            372
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m003",
+          "bbox": [
+            246,
+            275,
+            332,
+            371
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m004",
+          "bbox": [
+            330,
+            276,
+            396,
+            370
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m005",
+          "bbox": [
+            96,
+            524,
+            162,
+            548
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m006",
+          "bbox": [
+            417,
+            128,
+            482,
+            211
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m007",
+          "bbox": [
+            703,
+            408,
+            789,
+            452
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m008",
+          "bbox": [
+            701,
+            507,
+            796,
+            531
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m009",
+          "bbox": [
+            787,
+            402,
+            816,
+            453
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m013",
+          "bbox": [
+            238,
+            147,
+            292,
+            202
+          ],
+          "concepts": [
+            "globe"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_text_m014",
+          "bbox": [
+            542,
+            452,
+            676,
+            527
+          ],
+          "concepts": [
+            "aquarium"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_visual_m006",
+          "bbox": [
+            121,
+            113,
+            505,
+            379
+          ],
+          "concepts": [
+            "books collection"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_visual_m003",
+          "bbox": [
+            235,
+            147,
+            292,
+            211
+          ],
+          "concepts": [
+            "globe"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_visual_m004",
+          "bbox": [
+            542,
+            452,
+            676,
+            538
+          ],
+          "concepts": [
+            "aquarium"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        }
+      ],
+      "unmatched_concepts": [
+        "decorative objects",
+        "picture"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R3",
+      "matched": [
+        {
+          "id": "bw_0074_sam3_visual_m005",
+          "bbox": [
+            893,
+            125,
+            1258,
+            420
+          ],
+          "concepts": [
+            "vinyl records"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/region_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        }
+      ],
+      "unmatched_concepts": [
+        "boombox",
+        "turntable"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "R4",
+      "matched": [
+        {
+          "id": "bw_0074_sam3_text_m012",
+          "bbox": [
+            385,
+            560,
+            1258,
+            855
+          ],
+          "concepts": [
+            "sofa"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_text/candidates.json",
+          "prompt_source": "Historical reference-side concept prompt",
+          "reviewed": false
+        },
+        {
+          "id": "bw_0074_sam3_visual_m002",
+          "bbox": [
+            384,
+            559,
+            1258,
+            855
+          ],
+          "concepts": [
+            "sofa"
+          ],
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/multiscene_region_extraction/anchor_candidates/bw_0074/sam3_visual/candidates.json",
+          "prompt_source": "Historical assistant-authored RGB loose bbox",
+          "reviewed": false
+        }
+      ],
+      "unmatched_concepts": [
+        "cushions",
+        "pillows"
+      ],
+      "reviewed": false
+    }
+  ],
+  "usage": "unreviewed cached bbox hints only; no SAM contours"
+}

@@ -1,0 +1,20 @@
+{
+  "scene_id": "bw_0074",
+  "region_id": "R2",
+  "appearance": 0.26588369949072815,
+  "perceptual": null,
+  "perceptual_source": null,
+  "perceptual_unavailable_reason": "No cached measurement for this pair/ROI; no model run",
+  "semantic": null,
+  "spatial": null,
+  "statistical": null,
+  "q": 0.0,
+  "reviewed": false,
+  "formal_eligible": false,
+  "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+  "roi_pixels": 300162,
+  "observed_pixels": 300162,
+  "group_specific_visual_scores": false,
+  "region_losses_summed": false,
+  "usage": "provisional/debug"
+}

@@ -1,0 +1,37 @@
+{
+  "requests": [
+    {
+      "task_id": "bw_0074",
+      "paid_requests": 1,
+      "http_status": 200,
+      "status": "unavailable",
+      "prompt_tokens": 1422,
+      "completion_tokens": 699,
+      "total_tokens": 2121,
+      "latency_seconds": 22.46658700192347,
+      "actual_cost": null,
+      "automatic_retries": 0,
+      "reviewed": false
+    },
+    {
+      "task_id": "bw_9064",
+      "paid_requests": 1,
+      "http_status": 200,
+      "status": "coordinates_valid",
+      "prompt_tokens": 1170,
+      "completion_tokens": 887,
+      "total_tokens": 2057,
+      "latency_seconds": 17.073505672160536,
+      "actual_cost": null,
+      "automatic_retries": 0,
+      "reviewed": false
+    }
+  ],
+  "total_paid_requests": 2,
+  "total_tokens": 4178,
+  "total_request_seconds": 39.54009267408401,
+  "actual_currency_cost": "unknown",
+  "new_planning_calls": 0,
+  "verification_calls": 0,
+  "reviewed": false
+}

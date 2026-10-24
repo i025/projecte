@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "id": "q1",
+      "region_id": "R2",
+      "energy": "semantic",
+      "question": "画面中是否存在中央厨房岛台？",
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reason": "Known answers agree; agreement does not establish correctness or GT",
+      "raw_answer_changed": false,
+      "level": "region",
+      "value": null,
+      "aggregation_weight": 1.0,
+      "score": null,
+      "q": 0.0,
+      "reviewed": false,
+      "scorable": false,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "q2",
+      "region_id": "R2",
+      "energy": "statistical",
+      "question": "岛台靠近相机的一侧，可见几把高脚椅？",
+      "reference_answer": 4,
+      "render_answer": 4,
+      "status": "satisfied",
+      "reason": "Known answers agree; agreement does not establish correctness or GT",
+      "raw_answer_changed": false,
+      "level": "region",
+      "value": null,
+      "aggregation_weight": 1.0,
+      "score": null,
+      "q": 0.0,
+      "reviewed": false,
+      "scorable": false,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "q3",
+      "region_id": "R2",
+      "energy": "spatial",
+      "question": "如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？",
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reason": "Known answers agree; agreement does not establish correctness or GT",
+      "raw_answer_changed": false,
+      "level": "region",
+      "value": null,
+      "aggregation_weight": 1.0,
+      "score": null,
+      "q": 0.0,
+      "reviewed": false,
+      "scorable": false,
+      "usage": "provisional/debug"
+    }
+  ],
+  "source": "independent real VLM answers + deterministic comparison",
+  "reference_answers_are_gt": false,
+  "mock_results_used": false,
+  "formal_energy": {
+    "semantic": null,
+    "spatial": null,
+    "statistical": null
+  },
+  "observation_energy": null,
+  "reviewed": false,
+  "usage": "provisional/debug"
+}

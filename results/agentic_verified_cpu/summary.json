@@ -1,0 +1,249 @@
+{
+  "success": true,
+  "checks": {
+    "baseline_fixed_T0": true,
+    "baseline_intrinsics": true,
+    "baseline_data_passes": true,
+    "baseline_reprojection": true,
+    "baseline_vlm_unavailable": true,
+    "deleted_fixed_T0": true,
+    "deleted_intrinsics": true,
+    "deleted_data_passes": true,
+    "deleted_reprojection": true,
+    "deleted_vlm_unavailable": true,
+    "moved_fixed_T0": true,
+    "moved_intrinsics": true,
+    "moved_data_passes": true,
+    "moved_reprojection": true,
+    "moved_vlm_unavailable": true,
+    "color_fixed_T0": true,
+    "color_intrinsics": true,
+    "color_data_passes": true,
+    "color_reprojection": true,
+    "color_vlm_unavailable": true,
+    "distribution_fixed_T0": true,
+    "distribution_intrinsics": true,
+    "distribution_data_passes": true,
+    "distribution_reprojection": true,
+    "distribution_vlm_unavailable": true,
+    "penetration_fixed_T0": true,
+    "penetration_intrinsics": true,
+    "penetration_data_passes": true,
+    "penetration_reprojection": true,
+    "penetration_vlm_unavailable": true,
+    "billboard_fixed_T0": true,
+    "billboard_intrinsics": true,
+    "billboard_data_passes": true,
+    "billboard_reprojection": true,
+    "billboard_vlm_unavailable": true,
+    "ortho_fixed_T0": true,
+    "ortho_intrinsics": true,
+    "ortho_data_passes": true,
+    "ortho_reprojection": true,
+    "ortho_projection": true,
+    "identity_zero": true,
+    "deletion_semantic": true,
+    "movement_spatial": true,
+    "color_appearance": true,
+    "distribution_statistics": true,
+    "penetration_detected": true,
+    "billboard_detected": true,
+    "vlm_unavailable_safe": true,
+    "five_energies_numeric": true,
+    "dino_responds_to_deletion": true,
+    "illegal_intrinsics_rejected": true
+  },
+  "variants": {
+    "baseline": {
+      "energies": {
+        "semantic": 2.7755575615628914e-17,
+        "spatial": 0.0,
+        "appearance": 0.0,
+        "statistical": 0.0,
+        "perceptual": 1.734723475976807e-17
+      },
+      "observation_energy": 9.020562075079397e-18,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/baseline/report.html",
+      "peak_rss_bytes": 284090368,
+      "render_seconds": 0.663
+    },
+    "deleted": {
+      "energies": {
+        "semantic": 0.20116545813027076,
+        "spatial": 0.18622611508155273,
+        "appearance": 0.04475027776666782,
+        "statistical": 0.0026005437594025264,
+        "perceptual": 0.05322785796193877
+      },
+      "observation_energy": 0.09759405053996653,
+      "structural_energy": null,
+      "structural_energies": {
+        "penetration": null,
+        "support": null,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/deleted/report.html",
+      "peak_rss_bytes": 284188672,
+      "render_seconds": 0.662
+    },
+    "moved": {
+      "energies": {
+        "semantic": 0.012927277170591472,
+        "spatial": 0.045682872811832226,
+        "appearance": 0.053874752083244284,
+        "statistical": 0.0030979039737171,
+        "perceptual": 0.057785057004726914
+      },
+      "observation_energy": 0.0346735726088224,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/moved/report.html",
+      "peak_rss_bytes": 286547968,
+      "render_seconds": 0.716
+    },
+    "color": {
+      "energies": {
+        "semantic": 0.01641170463598668,
+        "spatial": 0.004627554134700851,
+        "appearance": 0.04280464999093253,
+        "statistical": 0.004661135938975076,
+        "perceptual": 0.042246971824410985
+      },
+      "observation_energy": 0.022150403305001225,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/color/report.html",
+      "peak_rss_bytes": 284684288,
+      "render_seconds": 0.683
+    },
+    "distribution": {
+      "energies": {
+        "semantic": 0.013606566513363297,
+        "spatial": 0.008180874415243813,
+        "appearance": 0.004229388296462353,
+        "statistical": 0.0017016094143963104,
+        "perceptual": 0.033626804095859955
+      },
+      "observation_energy": 0.012269048547065144,
+      "structural_energy": 0.0,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/distribution/report.html",
+      "peak_rss_bytes": 284037120,
+      "render_seconds": 0.658
+    },
+    "penetration": {
+      "energies": {
+        "semantic": 0.03534072078822509,
+        "spatial": 0.0517149921040064,
+        "appearance": 0.07733376317795022,
+        "statistical": 0.0008861598761047707,
+        "perceptual": 0.07107543577802447
+      },
+      "observation_energy": 0.04727021434486219,
+      "structural_energy": 0.5,
+      "structural_energies": {
+        "penetration": 1.0,
+        "support": 0.0,
+        "degeneration": null
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/penetration/report.html",
+      "peak_rss_bytes": 288854016,
+      "render_seconds": 0.659
+    },
+    "billboard": {
+      "energies": {
+        "semantic": 0.024652334614739146,
+        "spatial": 0.02635320398879357,
+        "appearance": 0.05243793033848583,
+        "statistical": 0.001742758244013425,
+        "perceptual": 0.04729960203662824
+      },
+      "observation_energy": 0.03049716584453204,
+      "structural_energy": 0.6666666666666666,
+      "structural_energies": {
+        "penetration": 0.0,
+        "support": 1.0,
+        "degeneration": 1.0
+      },
+      "evidence_coverage": 0.9333333333333333,
+      "report": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/billboard/report.html",
+      "peak_rss_bytes": 286248960,
+      "render_seconds": 0.666
+    }
+  },
+  "api_calls": 0,
+  "gpu_used": false,
+  "scope": "Synthetic pipeline/perturbation checks; not calibrated reconstruction accuracy",
+  "skipped": [
+    "GPU unavailable/not requested",
+    "Live VLM: no authorized verified model",
+    "Real Agent replay: human approval required"
+  ],
+  "expected_failure": {
+    "success": false,
+    "error": "Process exit 1; see benchmark.log",
+    "returncode": 1,
+    "seconds": 0.565,
+    "peak_rss_bytes": 262492160,
+    "log": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/invalid_intrinsics/benchmark.log",
+    "command": [
+      "/usr/bin/unshare",
+      "--user",
+      "--map-root-user",
+      "--net",
+      "--mount",
+      "--propagation",
+      "private",
+      "--pid",
+      "--fork",
+      "--kill-child=SIGKILL",
+      "--mount-proc",
+      "--",
+      "/srv/lab-disks/disk2/users/xymo/projects/bvb-repro/runtime/blender-4.2.0-linux-x64/blender",
+      "--background",
+      "--factory-startup",
+      "--disable-autoexec",
+      "--threads",
+      "2",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/srv/lab-disks/disk2/users/xymo/projects/e-harness/e_harness/runtime/benchmark_blender.py",
+      "--",
+      "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/agentic_verified_cpu/invalid_intrinsics/job.json"
+    ],
+    "task_quota": false,
+    "cleanup_complete": true,
+    "tracked_pids": [
+      171,
+      172
+    ],
+    "process_limit": 4,
+    "scene_validity": "invalid"
+  },
+  "seconds": 19.781
+}

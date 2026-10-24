@@ -1,0 +1,194 @@
+{
+  "scene_comparisons": {
+    "baseline": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 2.7755575615628914e-17,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": 1.734723475976807e-17
+        },
+        "observation_energy": 9.020562075079397e-18,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0,
+          "appearance": 0.0,
+          "statistical": 0.0,
+          "perceptual": 1.734723475976807e-17
+        },
+        "observation_energy": 3.469446951953614e-18,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/baseline/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/baseline/report.json"
+    },
+    "deleted": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 0.20116545813027076,
+          "spatial": 0.18622611508155273,
+          "appearance": 0.04475027776666782,
+          "statistical": 0.0026005437594025264,
+          "perceptual": 0.05322785796193877
+        },
+        "observation_energy": 0.09759405053996653,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.33333333333333337,
+          "spatial": 0.18622611508155273,
+          "appearance": 0.04475027776666782,
+          "statistical": 0.01033907859172263,
+          "perceptual": 0.05322785796193877
+        },
+        "observation_energy": 0.12557533254704306,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/deleted/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/deleted/report.json"
+    },
+    "moved": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 0.012927277170591472,
+          "spatial": 0.045682872811832226,
+          "appearance": 0.053874752083244284,
+          "statistical": 0.0030979039737171,
+          "perceptual": 0.057785057004726914
+        },
+        "observation_energy": 0.0346735726088224,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.045682872811832226,
+          "appearance": 0.053874752083244284,
+          "statistical": 0.013197268067509713,
+          "perceptual": 0.057785057004726914
+        },
+        "observation_energy": 0.03410798999346263,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/moved/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/moved/report.json"
+    },
+    "color": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 0.01641170463598668,
+          "spatial": 0.004627554134700851,
+          "appearance": 0.04280464999093253,
+          "statistical": 0.004661135938975076,
+          "perceptual": 0.042246971824410985
+        },
+        "observation_energy": 0.022150403305001225,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.004627554134700851,
+          "appearance": 0.04280464999093253,
+          "statistical": 0.005739877160933252,
+          "perceptual": 0.042246971824410985
+        },
+        "observation_energy": 0.019083810622195524,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/color/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/color/report.json"
+    },
+    "distribution": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 0.013606566513363297,
+          "spatial": 0.008180874415243813,
+          "appearance": 0.004229388296462353,
+          "statistical": 0.0017016094143963104,
+          "perceptual": 0.033626804095859955
+        },
+        "observation_energy": 0.012269048547065144,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.008180874415243813,
+          "appearance": 0.004229388296462353,
+          "statistical": 0.006074441634296926,
+          "perceptual": 0.033626804095859955
+        },
+        "observation_energy": 0.010422301688372609,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/distribution/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/distribution/report.json"
+    },
+    "penetration": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 0.03534072078822509,
+          "spatial": 0.0517149921040064,
+          "appearance": 0.07733376317795022,
+          "statistical": 0.0008861598761047707,
+          "perceptual": 0.07107543577802447
+        },
+        "observation_energy": 0.04727021434486219,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.0517149921040064,
+          "appearance": 0.07733376317795022,
+          "statistical": 0.0061128845934150244,
+          "perceptual": 0.07107543577802447
+        },
+        "observation_energy": 0.04124741513067923,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/penetration/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/penetration/report.json"
+    },
+    "billboard": {
+      "identical_rgb": true,
+      "before": {
+        "energies": {
+          "semantic": 0.024652334614739146,
+          "spatial": 0.02635320398879357,
+          "appearance": 0.05243793033848583,
+          "statistical": 0.001742758244013425,
+          "perceptual": 0.04729960203662824
+        },
+        "observation_energy": 0.03049716584453204,
+        "coverage": 0.9333333333333333
+      },
+      "after": {
+        "energies": {
+          "semantic": 0.0,
+          "spatial": 0.02635320398879357,
+          "appearance": 0.05243793033848583,
+          "statistical": 0.00972817871964618,
+          "perceptual": 0.04729960203662824
+        },
+        "observation_energy": 0.02716378301671077,
+        "coverage": 0.9333333333333333
+      },
+      "original_report": "results/agentic_verified_cpu/billboard/report.json",
+      "current_report": "results/metric_corrections_20261020/blender_smoke/billboard/report.json"
+    }
+  },
+  "old_results_read_only": true
+}

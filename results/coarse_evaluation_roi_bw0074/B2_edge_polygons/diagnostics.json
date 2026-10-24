@@ -1,0 +1,197 @@
+{
+  "snap": true,
+  "adjusted_boxes": [
+    [
+      86,
+      375,
+      511,
+      855
+    ],
+    [
+      97,
+      87,
+      883,
+      550
+    ],
+    [
+      883,
+      119,
+      1258,
+      541
+    ],
+    [
+      384,
+      559,
+      1258,
+      855
+    ]
+  ],
+  "side_adjustments": [
+    {
+      "region_index": 0,
+      "side": 0,
+      "old": 0,
+      "new": 86,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 102
+    },
+    {
+      "region_index": 0,
+      "side": 1,
+      "old": 348,
+      "new": 375,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 101
+    },
+    {
+      "region_index": 0,
+      "side": 2,
+      "old": 511,
+      "new": 511,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 102
+    },
+    {
+      "region_index": 0,
+      "side": 3,
+      "old": 855,
+      "new": 855,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 101
+    },
+    {
+      "region_index": 1,
+      "side": 0,
+      "old": 97,
+      "new": 97,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 102
+    },
+    {
+      "region_index": 1,
+      "side": 1,
+      "old": 87,
+      "new": 87,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 97
+    },
+    {
+      "region_index": 1,
+      "side": 2,
+      "old": 893,
+      "new": 883,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 102
+    },
+    {
+      "region_index": 1,
+      "side": 3,
+      "old": 573,
+      "new": 550,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 97
+    },
+    {
+      "region_index": 2,
+      "side": 0,
+      "old": 843,
+      "new": 883,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 83
+    },
+    {
+      "region_index": 2,
+      "side": 1,
+      "old": 91,
+      "new": 119,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 98
+    },
+    {
+      "region_index": 2,
+      "side": 2,
+      "old": 1258,
+      "new": 1258,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 83
+    },
+    {
+      "region_index": 2,
+      "side": 3,
+      "old": 582,
+      "new": 541,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 98
+    },
+    {
+      "region_index": 3,
+      "side": 0,
+      "old": 384,
+      "new": 384,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 102
+    },
+    {
+      "region_index": 3,
+      "side": 1,
+      "old": 559,
+      "new": 559,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 59
+    },
+    {
+      "region_index": 3,
+      "side": 2,
+      "old": 1258,
+      "new": 1258,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 102
+    },
+    {
+      "region_index": 3,
+      "side": 3,
+      "old": 855,
+      "new": 855,
+      "reason": "stronger projected edge, cached content boxes guarded",
+      "maximum_shift": 59
+    }
+  ],
+  "pair_decisions": [
+    {
+      "region_indices": [
+        1,
+        0
+      ],
+      "axis": "y",
+      "cut": 383,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.5038759689922481,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    },
+    {
+      "region_indices": [
+        0,
+        3
+      ],
+      "axis": "x",
+      "cut": 390,
+      "overlap_band_each_side": 13,
+      "hint_loss": [
+        0.0,
+        0.0
+      ],
+      "reason": "coarse edge and cached content support; symmetric overlap retained"
+    }
+  ],
+  "parameters": {
+    "snap_limit_short_image": 0.12,
+    "snap_limit_roi_side": 0.2,
+    "overlap_band_short_image": 0.015,
+    "hint_loss_weight": 4.0,
+    "edge_weight": 0.35,
+    "center_weight": 0.05
+  }
+}

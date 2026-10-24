@@ -1,0 +1,26 @@
+{
+  "source": "https://www.modelscope.cn/models/facebook/sam3",
+  "files": [
+    "config.json",
+    "configuration.json",
+    "sam3.pt"
+  ],
+  "expected_sizes": {
+    "config.json": 25843,
+    "configuration.json": 73,
+    "sam3.pt": 3450062241
+  },
+  "wall_seconds": 523.3116582529619,
+  "proxy_bypassed_for_modelscope": true,
+  "temporary_dns_hosts": [
+    "modelscope.cn",
+    "www.modelscope.cn",
+    "cdn-lfs-cn-1.modelscope.cn"
+  ],
+  "sdk": "modelscope-hub HubApi.download_file",
+  "hash_validation": false,
+  "parallel_streams": 4,
+  "resumed_prefix_bytes": 191889408,
+  "checkpoint": "/home/xymo/models/sam3/sam3.pt",
+  "huggingface_used": false
+}

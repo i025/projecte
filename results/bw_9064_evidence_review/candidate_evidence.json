@@ -1,0 +1,445 @@
+{
+  "task_id": "bw_9064",
+  "image_size": [
+    1672,
+    941
+  ],
+  "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+  "coordinate_system": "xyxy original RGB pixel coordinates; top-left origin; x1/y1 exclusive",
+  "reviewed": false,
+  "inventory_complete": false,
+  "freeze_status": "awaiting_human_review",
+  "annotation_scope": "reference_only_candidates_not_GT_not_ready_for_scoring",
+  "created_at": "2026-10-20T15:00:02+08:00",
+  "global_evidence": {
+    "id": "global_rgb",
+    "description": "完整原始 RGB：封闭室内、连续墙/顶/木地板，以及可见家具和电器；仅为候选描述。",
+    "reviewed": false,
+    "reliability": 0.0,
+    "status": "observable",
+    "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+    "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+    "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+    "bbox": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "metrics": [
+      "appearance",
+      "statistical",
+      "perceptual"
+    ],
+    "metric_reasons": {
+      "appearance": "整体色调和明暗分布；需考虑曝光差异。",
+      "statistical": "全图纹理/边缘混合代理，不代表真实物体密度。",
+      "perceptual": "未来已有合规特征可用时比较整体视觉外观，不代替语义类别。"
+    },
+    "uncertainty": "房间真实尺寸、隐藏部分、相机真值、材质物理参数不可由此图确定。"
+  },
+  "regions": [
+    {
+      "id": "r_wall_back",
+      "description": "后墙内部的保守采样区域；不宣称覆盖整面后墙。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        260,
+        125,
+        1120,
+        490
+      ],
+      "metrics": [
+        "appearance",
+        "perceptual"
+      ],
+      "metric_reasons": {
+        "appearance": "浅色墙面的大尺度色调、照明渐变和表面质感。",
+        "perceptual": "可研究墙面局部视觉外观；不作类别证据。"
+      },
+      "uncertainty": "避开墙顶交线、右侧冰箱和下方物体；未标整墙轮廓。阴影、曝光和真实反射率不可分离。",
+      "region_scope": "conservative_interior_patch_not_full_surface_segmentation",
+      "bbox_precision": "coarse_assistant_proposal_needs_human_boundary_check",
+      "omitted_metrics_reason": "未建议 Semantic：材质/平面名称尚未审核，图像距离不等于语义。未建议 Spatial：此框是采样坐标，不是平面几何边界。",
+      "display_label": "Back wall interior patch",
+      "overlay_color": [
+        45,
+        112,
+        219
+      ]
+    },
+    {
+      "id": "r_ceiling",
+      "description": "顶棚中央内部的保守矩形采样区域。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        300,
+        12,
+        1370,
+        92
+      ],
+      "metrics": [
+        "appearance",
+        "perceptual"
+      ],
+      "metric_reasons": {
+        "appearance": "顶棚的亮度、颜色和照明渐变。",
+        "perceptual": "只作局部视觉外观建议；窄区域重采样可能影响特征。"
+      },
+      "uncertainty": "刻意避开透视斜边和墙顶交线；不是精确平面分割。低纹理区域不优先作统计分布实验。",
+      "region_scope": "conservative_interior_patch_not_full_surface_segmentation",
+      "bbox_precision": "coarse_assistant_proposal_needs_human_boundary_check",
+      "omitted_metrics_reason": "未建议 Semantic：材质/平面名称尚未审核，图像距离不等于语义。未建议 Spatial：此框是采样坐标，不是平面几何边界。",
+      "display_label": "Ceiling interior patch",
+      "overlay_color": [
+        147,
+        68,
+        195
+      ]
+    },
+    {
+      "id": "r_floor_foreground",
+      "description": "前景木地板的保守采样区域，避开家具、电器、踢脚线和主要接触影。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        440,
+        825,
+        1540,
+        930
+      ],
+      "metrics": [
+        "appearance",
+        "statistical",
+        "perceptual"
+      ],
+      "metric_reasons": {
+        "appearance": "木色、明暗、纹理与表面外观；不认定木材品种或物理粗糙度。",
+        "statistical": "板缝和木纹提供可观察的多尺度纹理/边缘分布；只有边缘代理，没有真实元素占据图或密度真值。",
+        "perceptual": "木纹、板缝和地板色调的局部视觉外观。"
+      },
+      "uncertainty": "是前景局部样本，不代表整片地板；透视、阴影和纹理尺度会混杂统计结果，不能由此判断三维板材尺寸。",
+      "region_scope": "conservative_interior_patch_not_full_surface_segmentation",
+      "bbox_precision": "coarse_assistant_proposal_needs_human_boundary_check",
+      "omitted_metrics_reason": "未建议 Semantic：材质/平面名称尚未审核，图像距离不等于语义。未建议 Spatial：此框是采样坐标，不是平面几何边界。",
+      "display_label": "Wood floor foreground patch",
+      "overlay_color": [
+        217,
+        126,
+        18
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a_table",
+      "description": "圆形桌面与单柱底座组成一个圆桌 Anchor；不拆分桌面和桌腿。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        346,
+        564,
+        589,
+        812
+      ],
+      "category": "table",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        467.5,
+        688.0
+      ],
+      "candidate_reason": "桌面、立柱和底座可见，构成明确物体。",
+      "uncertainty": "椅子局部遮挡；框内包含背景和椅子像素，框不能充当精确轮廓或不可见部分真值。",
+      "mask_recommendation": "优先：圆桌外轮廓、细立柱与底座；必须排除椅子和盆栽，保留真实孔隙/遮挡。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Round table",
+      "overlay_color": [
+        36,
+        120,
+        220
+      ],
+      "overlay_label_xy": [
+        345,
+        864
+      ]
+    },
+    {
+      "id": "a_chair_left",
+      "description": "画面左侧的一把椅子，包含椅背、坐垫、框架和可见椅腿。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        205,
+        563,
+        428,
+        854
+      ],
+      "category": "chair",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        316.5,
+        708.5
+      ],
+      "candidate_reason": "与右椅是可区分的两个可见实例，按画面位置命名。",
+      "uncertainty": "细腿、扶边及与桌面/背景的遮挡需要复核；不补齐看不见的构件。",
+      "mask_recommendation": "优先：椅背与细腿、镂空和交叠区域；只能标可见实例轮廓，不能用实心 bbox 代替。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Left chair",
+      "overlay_color": [
+        211,
+        77,
+        69
+      ],
+      "overlay_label_xy": [
+        22,
+        510
+      ]
+    },
+    {
+      "id": "a_chair_right",
+      "description": "圆桌右侧的一把椅子，按画面投影位置定义实例。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        523,
+        546,
+        700,
+        808
+      ],
+      "category": "chair",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        611.5,
+        677.0
+      ],
+      "candidate_reason": "椅背、座面和可见椅腿清楚，可与左椅分开。",
+      "uncertainty": "椅子与桌的局部相接/重叠不提供可靠深度顺序；腿部细边需要复核。",
+      "mask_recommendation": "优先：细腿、椅背边缘与桌面接近处；不从二维遮挡自动推断 amodal Mask。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Right chair",
+      "overlay_color": [
+        21,
+        147,
+        105
+      ],
+      "overlay_label_xy": [
+        604,
+        478
+      ]
+    },
+    {
+      "id": "a_refrigerator",
+      "description": "画面右侧独立冰箱整体；包括可见箱体、门、把手/分隔及脚。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        1144,
+        313,
+        1395,
+        794
+      ],
+      "category": "refrigerator",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        1269.5,
+        553.5
+      ],
+      "candidate_reason": "独立电器外轮廓和上下门分隔清楚，适合重要 Anchor。",
+      "uncertainty": "边缘抗锯齿、投影和脚部与地面接触界限需复核；不推断内部容积、背面或品牌。",
+      "mask_recommendation": "次优先但易审核：完整可见箱体轮廓，注意底脚与投影；反光边缘单独检查。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Refrigerator",
+      "overlay_color": [
+        150,
+        68,
+        183
+      ],
+      "overlay_label_xy": [
+        1080,
+        251
+      ]
+    },
+    {
+      "id": "a_potted_plant",
+      "description": "桌上花盆与其叶簇合成一个盆栽 Anchor；不拆分叶片或植物品种。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "bbox": [
+        433,
+        507,
+        504,
+        580
+      ],
+      "category": "potted_plant",
+      "importance": 1.0,
+      "mask_reviewed": false,
+      "visibility": "sufficient",
+      "position": [
+        468.5,
+        543.5
+      ],
+      "candidate_reason": "可见浅色花盆和上方绿叶，作为一个小物体比单片叶子粒度更稳妥。",
+      "uncertainty": "目标较小、叶缘细碎；叶片真实数量、植物品种和精确接触几何不可确定。",
+      "mask_recommendation": "优先且最难：花盆与叶簇整体，保留叶间背景；应放大审核，不强制现在生成 Mask。",
+      "bbox_scope": "bbox_of_visible_extent_not_a_filled_instance_mask_or_amodal_shape",
+      "importance_note": "沿用默认 1.0；本轮不改变评价权重。",
+      "display_label": "Potted plant",
+      "overlay_color": [
+        192,
+        112,
+        15
+      ],
+      "overlay_label_xy": [
+        345,
+        426
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_leftchair_leftof_table",
+      "description": "左椅与圆桌的可见主体中心在原图水平方向可区分；只声明画面投影左右关系。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "subject": "a_chair_left",
+      "predicate": "left_of",
+      "object": "a_table",
+      "candidate_assessment": "clear_2d_projection",
+      "uncertainty": "左右不等于世界坐标；椅子与桌框有局部重叠，关系不能理解为框完全不相交。",
+      "metrics": [
+        "spatial"
+      ],
+      "review_question": "仅根据原图，是否支持 a_chair_left left_of a_table，且节点粒度正确？"
+    },
+    {
+      "id": "rel_table_leftof_rightchair",
+      "description": "圆桌可见主体中心位于右椅主体中心左侧。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "subject": "a_table",
+      "predicate": "left_of",
+      "object": "a_chair_right",
+      "candidate_assessment": "clear_2d_projection",
+      "uncertainty": "不由此声明前后关系、真实距离或接触。",
+      "metrics": [
+        "spatial"
+      ],
+      "review_question": "仅根据原图，是否支持 a_table left_of a_chair_right，且节点粒度正确？"
+    },
+    {
+      "id": "rel_table_leftof_fridge",
+      "description": "圆桌与冰箱在画面左右两侧，投影水平方向分离明确；以圆桌作为家具组的一个已有节点。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "observable",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "subject": "a_table",
+      "predicate": "left_of",
+      "object": "a_refrigerator",
+      "candidate_assessment": "clear_2d_projection",
+      "uncertainty": "未创建虚构家具组节点，也未推出世界坐标或两者真实距离。",
+      "metrics": [
+        "spatial"
+      ],
+      "review_question": "仅根据原图，是否支持 a_table left_of a_refrigerator，且节点粒度正确？"
+    },
+    {
+      "id": "rel_plant_on_table",
+      "description": "花盆底部与可见桌面在图像中相接，提供在桌上摆放的视觉线索。",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "inferred",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/references/image_01.png",
+      "annotation_method": "assistant_reference_rgb_visual_proposal_not_human_review",
+      "reliability_note": "待人工审核并指定可靠性规则；0 表示未分配可用权重，不表示内容不存在，也不是正确概率。",
+      "subject": "a_potted_plant",
+      "predicate": "on",
+      "object": "a_table",
+      "candidate_assessment": "uncertain",
+      "uncertainty": "单张 RGB 不能证实真实三维接触/支撑；需要人工语义审核。现有 compare 对 on 走显式语义验证接口，不能由 bbox 自动证明，本轮未调用该接口。",
+      "metrics": [
+        "spatial"
+      ],
+      "review_question": "仅根据原图，是否支持 a_potted_plant on a_table，且节点粒度正确？"
+    }
+  ],
+  "reliability_policy": "所有数值 reliability 暂为 0.0，未建立审核后的计算权重；它不是置信概率或正确性评分。人工仅勾选 Correct 不会自动修改 JSON 或分配可靠性。",
+  "source_provenance": {
+    "run_id": "scene_064-harbor-generation/scene_064/task__LY4dtPw",
+    "task_id": "bw_9064",
+    "input_manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-harbor/task/environment/inputs/input.json",
+    "trial_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/scene_064-harbor-generation/scene_064/task__LY4dtPw/config.json",
+    "trial_result": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/scene_064-harbor-generation/scene_064/task__LY4dtPw/result.json",
+    "task_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/task.json",
+    "inventory": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blenderworld_runs_inventory/inventory.csv",
+    "selection": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blenderworld_runs_inventory/selected.csv",
+    "association_basis": "config.task.path → input.task_id/files → declared reference; matching successful trial exports; no filename-only match",
+    "evidence_content_source": "only the staged original reference RGB; no Agent render pixels, Blender names, old annotations or previous judge verdicts used"
+  },
+  "masks_note": "No model inference and no suitable masks tied to this staged RGB were established; bbox proposals only. No mask or mask_archive supplied.",
+  "omitted_relations": [
+    {
+      "predicates": [
+        "in_front_of",
+        "behind"
+      ],
+      "reason": "单图没有可靠相对深度真值；不推断。"
+    }
+  ]
+}

@@ -1,0 +1,2102 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "reason": "Static RGB only; Blender scene not loaded"
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": 0.5,
+      "base_weight": 1.0,
+      "valid_count": 0,
+      "applicable_count": 1,
+      "coverage": 0.0,
+      "reason": "No usable evidence or required extractor unavailable",
+      "participating_metrics": []
+    },
+    "spatial": {
+      "value": 0.015976924189814813,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 4,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    },
+    "appearance": {
+      "value": 0.20300322825889616,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 5,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    },
+    "statistical": {
+      "value": 0.03553206344748548,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 4,
+      "coverage": 1.0,
+      "reason": null,
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ]
+    },
+    "perceptual": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": 1.0,
+      "base_weight": 1.0,
+      "valid_count": 0,
+      "applicable_count": 5,
+      "coverage": 0.0,
+      "reason": "No usable evidence or required extractor unavailable",
+      "participating_metrics": []
+    }
+  },
+  "observation_energy": 0.08483740529873214,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 21,
+        "coverage": 0.0,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": 0.0,
+    "checks": {
+      "penetration": [
+        {
+          "unit_ids": [
+            "g001",
+            "g002"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g003"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g004"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g005"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g006"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g007"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g003"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g004"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g005"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g006"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g007"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g004"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g005"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g006"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g007"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g004",
+            "g005"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g004",
+            "g006"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g004",
+            "g007"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g005",
+            "g006"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g005",
+            "g007"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "g006",
+            "g007"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        }
+      ],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [
+      {
+        "kind": "penetration_candidate",
+        "geometry": {
+          "unit_ids": [
+            "g001",
+            "g005"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 26,
+              "probe_count": 53,
+              "components": [
+                "Bottom book",
+                "Second book"
+              ]
+            }
+          ]
+        },
+        "semantic_review": {},
+        "confirmed_error": false
+      },
+      {
+        "kind": "penetration_candidate",
+        "geometry": {
+          "unit_ids": [
+            "g002",
+            "g004"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 19,
+              "probe_count": 40,
+              "components": [
+                "Cream book",
+                "Light blue paperback"
+              ]
+            }
+          ]
+        },
+        "semantic_review": {},
+        "confirmed_error": false
+      },
+      {
+        "kind": "penetration_candidate",
+        "geometry": {
+          "unit_ids": [
+            "g002",
+            "g005"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 0,
+              "probe_count": 27,
+              "components": [
+                "Cream book",
+                "Second book"
+              ]
+            }
+          ]
+        },
+        "semantic_review": {},
+        "confirmed_error": false
+      },
+      {
+        "kind": "penetration_candidate",
+        "geometry": {
+          "unit_ids": [
+            "g002",
+            "g006"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 178,
+              "probe_count": 96,
+              "components": [
+                "Cream book",
+                "Weber book"
+              ]
+            }
+          ]
+        },
+        "semantic_review": {},
+        "confirmed_error": false
+      },
+      {
+        "kind": "penetration_candidate",
+        "geometry": {
+          "unit_ids": [
+            "g003",
+            "g006"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 171,
+              "probe_count": 96,
+              "components": [
+                "Fancy That book",
+                "Weber book"
+              ]
+            }
+          ]
+        },
+        "semantic_review": {},
+        "confirmed_error": false
+      },
+      {
+        "kind": "penetration_candidate",
+        "geometry": {
+          "unit_ids": [
+            "g004",
+            "g005"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 18,
+              "probe_count": 50,
+              "components": [
+                "Light blue paperback",
+                "Second book"
+              ]
+            }
+          ]
+        },
+        "semantic_review": {},
+        "confirmed_error": false
+      }
+    ],
+    "raw_geometry": {
+      "usage": "provisional/debug",
+      "reviewed": false,
+      "semantic_grouping_reviewed": false,
+      "collisions": [
+        {
+          "unit_ids": [
+            "g001",
+            "g002"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g003"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g004"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g005"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 26,
+              "probe_count": 53,
+              "components": [
+                "Bottom book",
+                "Second book"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g006"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g001",
+            "g007"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g003"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g004"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 19,
+              "probe_count": 40,
+              "components": [
+                "Cream book",
+                "Light blue paperback"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g005"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 0,
+              "probe_count": 27,
+              "components": [
+                "Cream book",
+                "Second book"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g006"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 178,
+              "probe_count": 96,
+              "components": [
+                "Cream book",
+                "Weber book"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "g002",
+            "g007"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g004"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g005"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g006"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 171,
+              "probe_count": 96,
+              "components": [
+                "Fancy That book",
+                "Weber book"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "g003",
+            "g007"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g004",
+            "g005"
+          ],
+          "status": "uncertain",
+          "value": null,
+          "narrow_phase": [
+            {
+              "status": "uncertain",
+              "value": null,
+              "reason": "Surface overlap or open/ambiguous solids without a reliable penetration witness",
+              "triangle_overlap_count": 18,
+              "probe_count": 50,
+              "components": [
+                "Light blue paperback",
+                "Second book"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "g004",
+            "g006"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g004",
+            "g007"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g005",
+            "g006"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g005",
+            "g007"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "g006",
+            "g007"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        }
+      ],
+      "objects": [
+        {
+          "unit_id": "g001",
+          "bounds": [
+            [
+              -1.4336999654769897,
+              -2.244999885559082,
+              0.002499997615814209
+            ],
+            [
+              1.4149999618530273,
+              2.244999885559082,
+              0.2915000021457672
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [],
+            "base_sample_count": 12,
+            "minimum_observed_downward_gap": 0.022499987632036207,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        },
+        {
+          "unit_id": "g002",
+          "bounds": [
+            [
+              -1.2950000762939453,
+              -2.315000057220459,
+              0.5254999995231628
+            ],
+            [
+              1.4049999713897705,
+              1.7649999856948853,
+              0.7236999869346619
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [
+              {
+                "receiver": "g004",
+                "value": null,
+                "contact_count": 1,
+                "base_sample_count": 4,
+                "contact_fraction": 0.25,
+                "contact_xy_rank": 0,
+                "points": [
+                  {
+                    "receiver": "g004",
+                    "point": [
+                      -1.2450001239776611,
+                      1.715000033378601,
+                      0.5274999737739563
+                    ],
+                    "gap": -0.0019999828562140467
+                  }
+                ],
+                "reason": "Insufficient distributed support samples; contact alone does not establish support"
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -0.0019999828562140467,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        },
+        {
+          "unit_id": "g003",
+          "bounds": [
+            [
+              -1.2599999904632568,
+              -1.5787020921707153,
+              0.9565000534057617
+            ],
+            [
+              0.5199999809265137,
+              1.9049999713897705,
+              1.165000081062317
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": 0.0065000557899475096,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        },
+        {
+          "unit_id": "g004",
+          "bounds": [
+            [
+              -1.3566999435424805,
+              -2.1499998569488525,
+              0.4364999830722809
+            ],
+            [
+              1.309999942779541,
+              1.909999966621399,
+              0.6373200416564941
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "g005",
+                "value": 1.0,
+                "contact_count": 8,
+                "base_sample_count": 8,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      -1.34250009059906,
+                      -2.1499998569488525,
+                      0.43700000643730164
+                    ],
+                    "gap": 0.003499973341822624
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      -1.34250009059906,
+                      1.909999966621399,
+                      0.43700000643730164
+                    ],
+                    "gap": 0.0034999752044677732
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      -1.3075000047683716,
+                      -2.1499998569488525,
+                      0.43700000643730164
+                    ],
+                    "gap": 0.0034999752044677732
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      -1.3075000047683716,
+                      1.909999966621399,
+                      0.43700000643730164
+                    ],
+                    "gap": 0.003499976135790348
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      -1.2919999361038208,
+                      -2.127000093460083,
+                      0.43700000643730164
+                    ],
+                    "gap": -0.0005000329017639162
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      -1.2919999361038208,
+                      1.8870002031326294,
+                      0.43700000643730164
+                    ],
+                    "gap": -0.0005000329017639162
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      1.2920000553131104,
+                      -2.127000093460083,
+                      0.43700000643730164
+                    ],
+                    "gap": -0.0005000329017639162
+                  },
+                  {
+                    "receiver": "g005",
+                    "point": [
+                      1.2920000553131104,
+                      1.8870002031326294,
+                      0.43700000643730164
+                    ],
+                    "gap": -0.0005000329017639162
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 8,
+            "minimum_observed_downward_gap": -0.0005000329017639162,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        },
+        {
+          "unit_id": "g005",
+          "bounds": [
+            [
+              -1.4256999492645264,
+              -2.1700000762939453,
+              0.2854999899864197
+            ],
+            [
+              1.3350000381469727,
+              2.1500000953674316,
+              0.6143200397491455
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "g001",
+                "value": 1.0,
+                "contact_count": 12,
+                "base_sample_count": 16,
+                "contact_fraction": 0.75,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      -1.3650001287460327,
+                      -2.1220710277557373,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079719811678
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      -1.3707736730575562,
+                      -2.1207735538482666,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.00177351500838995
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      -1.3720711469650269,
+                      -2.115000009536743,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.0030710787884891035
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      -1.3720711469650269,
+                      2.0950000286102295,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079254150391
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      -1.3707736730575562,
+                      2.100773572921753,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.00177351500838995
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      -1.3650001287460327,
+                      2.1020710468292236,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079254150391
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      1.2820712327957153,
+                      -2.115000009536743,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079254150391
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      1.2807737588882446,
+                      -2.1207735538482666,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.0017735159397125246
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      1.2750002145767212,
+                      -2.1220710277557373,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079254150391
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      1.2750002145767212,
+                      2.1020710468292236,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079719811678
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      1.2807737588882446,
+                      2.100773572921753,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.00177351500838995
+                  },
+                  {
+                    "receiver": "g001",
+                    "point": [
+                      1.2820712327957153,
+                      2.0950000286102295,
+                      0.2915000021457672
+                    ],
+                    "gap": -0.003071079719811678
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 16,
+            "minimum_observed_downward_gap": -0.0060000216960906985,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        },
+        {
+          "unit_id": "g006",
+          "bounds": [
+            [
+              -1.6340398788452148,
+              -1.4249999523162842,
+              0.6550000309944153
+            ],
+            [
+              0.9300000667572021,
+              2.1649999618530273,
+              1.0252200365066528
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": 0.1275000476837158,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        },
+        {
+          "unit_id": "g007",
+          "bounds": [
+            [
+              -10.0,
+              -10.0,
+              -0.3199999928474426
+            ],
+            [
+              10.0,
+              10.0,
+              -0.007999999448657036
+            ]
+          ],
+          "component_count": 1,
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": null,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "containment": {
+            "status": "not_evaluable",
+            "value": null,
+            "reason": "No reviewed closed containment region / boundary"
+          }
+        }
+      ],
+      "errors": [],
+      "components": [
+        {
+          "name": "Bottom book",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -1.4336999654769897,
+              -2.244999885559082,
+              0.002499997615814209
+            ],
+            [
+              1.4149999618530273,
+              2.244999885559082,
+              0.2915000021457672
+            ]
+          ],
+          "closed": false,
+          "vertex_count": 2740,
+          "triangle_count": 2808,
+          "volume_estimate": 3.612333679798207
+        },
+        {
+          "name": "Cream book",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -1.2950000762939453,
+              -2.315000057220459,
+              0.5254999995231628
+            ],
+            [
+              1.4049999713897705,
+              1.7649999856948853,
+              0.7236999869346619
+            ]
+          ],
+          "closed": false,
+          "vertex_count": 11784,
+          "triangle_count": 11628,
+          "volume_estimate": 2.0903367778068738
+        },
+        {
+          "name": "Fancy That book",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -1.2599999904632568,
+              -1.5787020921707153,
+              0.9565000534057617
+            ],
+            [
+              0.5199999809265137,
+              1.9049999713897705,
+              1.165000081062317
+            ]
+          ],
+          "closed": false,
+          "vertex_count": 7726,
+          "triangle_count": 8324,
+          "volume_estimate": 0.690594589843352
+        },
+        {
+          "name": "Light blue paperback",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -1.3566999435424805,
+              -2.1499998569488525,
+              0.4364999830722809
+            ],
+            [
+              1.309999942779541,
+              1.909999966621399,
+              0.6373200416564941
+            ]
+          ],
+          "closed": false,
+          "vertex_count": 692,
+          "triangle_count": 720,
+          "volume_estimate": 0.9749424272028233
+        },
+        {
+          "name": "Second book",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -1.4256999492645264,
+              -2.1700000762939453,
+              0.2854999899864197
+            ],
+            [
+              1.3350000381469727,
+              2.1500000953674316,
+              0.6143200397491455
+            ]
+          ],
+          "closed": false,
+          "vertex_count": 4204,
+          "triangle_count": 4300,
+          "volume_estimate": 1.8395880588881866
+        },
+        {
+          "name": "Weber book",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -1.6340398788452148,
+              -1.4249999523162842,
+              0.6550000309944153
+            ],
+            [
+              0.9300000667572021,
+              2.1649999618530273,
+              1.0252200365066528
+            ]
+          ],
+          "closed": false,
+          "vertex_count": 5888,
+          "triangle_count": 6136,
+          "volume_estimate": 3.0515144215290513
+        },
+        {
+          "name": "Wood table",
+          "type": "MESH",
+          "parent": null,
+          "bounds": [
+            [
+              -10.0,
+              -10.0,
+              -0.3199999928474426
+            ],
+            [
+              10.0,
+              10.0,
+              -0.007999999448657036
+            ]
+          ],
+          "closed": true,
+          "vertex_count": 1088,
+          "triangle_count": 1632,
+          "volume_estimate": 120.0349118059353
+        }
+      ],
+      "tolerances": {
+        "penetration": 0.002,
+        "contact": 0.005,
+        "units": "scene units, not asserted physical meters"
+      },
+      "narrow_phase_calls": 6,
+      "seconds": 0.6482186350040138,
+      "limitations": [
+        "Candidate units may be parts of a shared semantic object or architectural assembly.",
+        "Witnesses require review; closedness does not establish absence of mesh self-intersection.",
+        "Contact is not penetration. No room boundary, attachment absence or semantic identity invented.",
+        "Broad-phase separation is not a standalone reconstruction quality score."
+      ]
+    },
+    "existing_triage": {
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/geometry_witness_classification.json",
+      "reviewed": false,
+      "legacy_records": []
+    },
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.6842105263157895,
+  "uncertainty": {
+    "region_coverage": 0.75,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": 0.0,
+    "structural_check_coverage": 0.0,
+    "unknown_evidence": [
+      {
+        "id": "global",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "global",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_0_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_0_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "instance_1_minus_f1",
+        "reason": "Anchor presence/absence needs a reviewed complete rendered inventory"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Historical/static render does not verify the new T0 contract"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 1
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 691200.0,
+        "color_l1": 0.20300322825889613,
+        "coarse_boundary_error": 0.06390769675925927,
+        "grayscale_wasserstein": 0.062490234375000016,
+        "edge_coverage_error": 0.019301215277777777,
+        "gradient_mean_error": 0.0011539503146937781,
+        "spatial_texture_error": 0.009766302045509562,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 172800.0,
+        "color_l1": 0.164389554587267,
+        "coarse_boundary_error": 0.010690104166666665,
+        "grayscale_wasserstein": 0.08012442129629632,
+        "edge_coverage_error": 0.02407986111111111,
+        "gradient_mean_error": 0.008110914427499396,
+        "spatial_texture_error": 0.0020277286068748485,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 172800.0,
+        "color_l1": 0.2100537400145243,
+        "coarse_boundary_error": 0.013777488425925924,
+        "grayscale_wasserstein": 0.08267686631944446,
+        "edge_coverage_error": 0.018836805555555555,
+        "gradient_mean_error": 0.011280122851609778,
+        "spatial_texture_error": 0.003012447803195351,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 172800.0,
+        "color_l1": 0.18743423202614382,
+        "coarse_boundary_error": 0.01718171296296296,
+        "grayscale_wasserstein": 0.09368127893518534,
+        "edge_coverage_error": 0.060381944444444446,
+        "gradient_mean_error": 0.010298217743887679,
+        "spatial_texture_error": 0.0025745544359719198,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 172800.0,
+        "color_l1": 0.2501353864076495,
+        "coarse_boundary_error": 0.022258391203703706,
+        "grayscale_wasserstein": 0.10505967881944442,
+        "edge_coverage_error": 0.05973958333333333,
+        "gradient_mean_error": 0.0044770182764463816,
+        "spatial_texture_error": 0.0021515711994674414,
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "unknown_candidates": 0,
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    }
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.20300322825889613,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "semantic",
+      "level": "global",
+      "id": "global",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.164389554587267,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.010690104166666665,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.02858573136044542,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.2100537400145243,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.013777488425925924,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.028951560632451284,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.18743423202614382,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.01718171296296296,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.04173399888987235,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.2501353864076495,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.022258391203703706,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.04285696290717289,
+      "q": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": null,
+      "q": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale feature proxy"
+    },
+    {
+      "energy": "semantic",
+      "level": "anchor",
+      "id": "instance_1_minus_f1",
+      "value": null,
+      "q": 0.0,
+      "status": "unavailable",
+      "reason": "Anchor presence/absence needs a reviewed complete rendered inventory"
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      960,
+      720
+    ],
+    "anchors": [
+      {
+        "object_id": "O01",
+        "instance_id": "O01",
+        "category": "book_stack",
+        "bbox": [
+          106,
+          100,
+          857,
+          666
+        ],
+        "bbox_convention": "xyxy on original RGB; visible extent, not amodal",
+        "visible": true,
+        "visibility": "sufficient",
+        "occluded": false,
+        "truncated": false,
+        "group_id": null,
+        "members": [
+          "O02",
+          "O03"
+        ],
+        "evaluate": true,
+        "status": "observable",
+        "confidence": null,
+        "reviewed": false,
+        "visible_evidence": "Whole visible stack of overlapping books on a wood surface.",
+        "uncertainty": [
+          "Exact book count and lower-member identities unresolved; group is the only selected evaluation unit."
+        ],
+        "mask_status": "candidate_unreviewed",
+        "visible_state": "visible",
+        "visibility_note": "Candidate visible evidence sufficiency, pending review; visible_state and occluded describe visibility/occlusion separately.",
+        "mask_review_issues": [
+          "Texture-driven holes on light cover/printing; missing dark lower-spine patches; retain raw output."
+        ],
+        "id": "O01",
+        "importance": 1.0,
+        "reliability": 1.0,
+        "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/R1_05/candidate_masks/O01.png",
+        "position": [
+          481.5,
+          383.0
+        ]
+      }
+    ],
+    "regions": [
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          480,
+          360
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          480,
+          0,
+          960,
+          360
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          360,
+          480,
+          720
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          480,
+          360,
+          960,
+          720
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "relations": [],
+    "candidate_source": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evidence_pilot_debug/scenes/R1_05/candidate_objects.json",
+    "reviewed": false,
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights",
+    "source": "reference RGB and independently supplied annotations only"
+  },
+  "render_metadata": {
+    "render_seconds": 7.698032023967244,
+    "image_size": [
+      960,
+      720
+    ],
+    "samples": 8,
+    "threads": 2,
+    "device": "CPU",
+    "camera_unchanged": true,
+    "camera": {
+      "name": "Camera",
+      "type": "ORTHO",
+      "matrix_world": [
+        [
+          0.3813309073448181,
+          0.525536298751831,
+          -0.7605250477790833,
+          -8.0
+        ],
+        [
+          -0.9244385957717896,
+          0.21678374707698822,
+          -0.3137165307998657,
+          -3.299999952316284
+        ],
+        [
+          4.8080991632559744e-08,
+          0.8226885199546814,
+          0.5684924125671387,
+          6.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        -8.0,
+        -3.299999952316284,
+        6.5
+      ],
+      "rotation_euler_world": [
+        0.9661241769790649,
+        -4.8080991632559744e-08,
+        -1.1795607805252075
+      ],
+      "rotation_units": "radians",
+      "lens_mm": 50.0,
+      "sensor_fit": "AUTO",
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "dof_enabled": false
+    },
+    "intrinsics_pixels": null,
+    "projection_matrix_blender": [
+      [
+        0.3571428656578064,
+        0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.4761905074119568,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.0020001998636871576,
+        -1.0001999139785767
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+    "depth_convention": "camera_z",
+    "depth_computation": "negative Blender-camera z of same-render world Position pass",
+    "depth_units": "scene coordinate units; no metric ground truth asserted",
+    "valid_depth_pixel_count": 691200,
+    "raw_z_vs_world_distance_max_error": 0.6958165996540959,
+    "raw_z_vs_world_distance_mean_error": 0.1861121623194824,
+    "position_reprojection_mean_error_pixels": 0.0028440082970802466,
+    "position_reprojection_max_error_pixels": 0.5306179644916628,
+    "semantic_ids": {
+      "1": "g001",
+      "2": "g002",
+      "3": "g003",
+      "4": "g004",
+      "5": "g005",
+      "6": "g006",
+      "7": "g007"
+    },
+    "visible_pixel_counts_by_type": {
+      "g001": {
+        "MESH": 43177,
+        "CURVE": 0
+      },
+      "g002": {
+        "MESH": 57910,
+        "CURVE": 0
+      },
+      "g003": {
+        "MESH": 84436,
+        "CURVE": 0
+      },
+      "g004": {
+        "MESH": 13234,
+        "CURVE": 0
+      },
+      "g005": {
+        "MESH": 18565,
+        "CURVE": 0
+      },
+      "g006": {
+        "MESH": 81504,
+        "CURVE": 0
+      },
+      "g007": {
+        "MESH": 392374,
+        "CURVE": 0
+      }
+    },
+    "components": [
+      {
+        "component_id": 1,
+        "name": "Bottom book",
+        "type": "MESH",
+        "semantic_id": 1,
+        "visible_pixel_count": 43177
+      },
+      {
+        "component_id": 2,
+        "name": "Cream book",
+        "type": "MESH",
+        "semantic_id": 2,
+        "visible_pixel_count": 57910
+      },
+      {
+        "component_id": 3,
+        "name": "Fancy That book",
+        "type": "MESH",
+        "semantic_id": 3,
+        "visible_pixel_count": 84436
+      },
+      {
+        "component_id": 4,
+        "name": "Light blue paperback",
+        "type": "MESH",
+        "semantic_id": 4,
+        "visible_pixel_count": 13234
+      },
+      {
+        "component_id": 5,
+        "name": "Second book",
+        "type": "MESH",
+        "semantic_id": 5,
+        "visible_pixel_count": 18565
+      },
+      {
+        "component_id": 6,
+        "name": "Weber book",
+        "type": "MESH",
+        "semantic_id": 6,
+        "visible_pixel_count": 81504
+      },
+      {
+        "component_id": 7,
+        "name": "Wood table",
+        "type": "MESH",
+        "semantic_id": 7,
+        "visible_pixel_count": 392374
+      }
+    ],
+    "background_objects": [],
+    "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+    "input_alignment_accuracy_verified": false,
+    "input_masks_reviewed": false,
+    "source_saved": false,
+    "usage": "provisional/debug",
+    "semantic_mapping_reviewed": false,
+    "background_classification": "unavailable; empty background_objects is not evidence of absence"
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "provenance": {
+    "input": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/datasets/contrast24/images/R1_05.jpg",
+    "render": "/srv/lab-disks/disk2/users/xymo/projects/scene-benchmark/results/contrast24_evaluation_debug/scenes/R1_05/render.png",
+    "use": "Historical static pipeline debug only; source camera was not the new benchmark T0",
+    "candidates": "Review status unchanged; no semantic/structural accuracy claim"
+  }
+}

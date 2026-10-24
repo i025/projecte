@@ -1,0 +1,66 @@
+[
+  {
+    "request_number": 1,
+    "purpose": "bw_0073:R2:reference_atomic_answers",
+    "provider": "api.ofox.ai",
+    "model": "openai/gpt-6-sol",
+    "image_count": 2,
+    "max_output_tokens": 800,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 300
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_tokens",
+    "request_limit": 2,
+    "prompt": "请根据图像回答以下三个问题：\n\nQ1：画面中是否存在中央厨房岛台？\n\nQ2：岛台靠近相机的一侧，可见几把高脚椅？\n\nQ3：如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？\n\n仅返回一个 JSON 对象，包含 q1、q2、q3 三个字段。\n\n- q1：yes、no 或 unknown\n- q2：非负整数或 unknown\n- q3：yes、no 或 unknown\n\n不要输出其他字段、解释或推理过程。",
+    "outcome": "answered",
+    "http_status": 200,
+    "returned_model": "openai/gpt-6-sol",
+    "usage": {
+      "prompt_tokens": 1576,
+      "completion_tokens": 35,
+      "total_tokens": 1611,
+      "completion_tokens_details": {
+        "reasoning_tokens": 10
+      }
+    },
+    "actual_cost": null,
+    "finish_reason": "stop",
+    "latency_seconds": 5.8596190710086375
+  },
+  {
+    "request_number": 2,
+    "purpose": "bw_0073:R2:render_atomic_answers",
+    "provider": "api.ofox.ai",
+    "model": "openai/gpt-6-sol",
+    "image_count": 2,
+    "max_output_tokens": 800,
+    "timeout_seconds": {
+      "connect": 10,
+      "read": 300
+    },
+    "network_retry": false,
+    "automatic_network_retry_enabled": false,
+    "http_client": "configured_requests_session",
+    "token_parameter": "max_tokens",
+    "request_limit": 2,
+    "prompt": "请根据图像回答以下三个问题：\n\nQ1：画面中是否存在中央厨房岛台？\n\nQ2：岛台靠近相机的一侧，可见几把高脚椅？\n\nQ3：如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？\n\n仅返回一个 JSON 对象，包含 q1、q2、q3 三个字段。\n\n- q1：yes、no 或 unknown\n- q2：非负整数或 unknown\n- q3：yes、no 或 unknown\n\n不要输出其他字段、解释或推理过程。",
+    "outcome": "answered",
+    "http_status": 200,
+    "returned_model": "openai/gpt-6-sol",
+    "usage": {
+      "prompt_tokens": 1576,
+      "completion_tokens": 35,
+      "total_tokens": 1611,
+      "completion_tokens_details": {
+        "reasoning_tokens": 10
+      }
+    },
+    "actual_cost": null,
+    "finish_reason": "stop",
+    "latency_seconds": 5.310503120999783
+  }
+]
