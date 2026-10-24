@@ -1,0 +1,97 @@
+{
+  "suites": [
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_benchmark*.py"
+      ],
+      "tests": 65,
+      "returncode": 0,
+      "elapsed_seconds": 2.173,
+      "evidence": "Actual captured final invocation: Ran 65 tests in 2.173s; OK",
+      "models_executed": false,
+      "blender_executed": false
+    },
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_real_render.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.508367442060262,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.025s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    },
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_structural*.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.509359538089484,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.001s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    },
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_kitchen_structural_transfer.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.500137299997732,
+      "stdout": "",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    }
+  ],
+  "total_tests": 89,
+  "passed": true,
+  "previous_run": "test_results.json",
+  "final_change": "q=0 overlap does not withhold an existing reviewed measurement; added regression test",
+  "real_replay": "bw0073_checked",
+  "earlier_replay": "bw0073",
+  "real_measurements_unchanged_after_guard_fix": true,
+  "skipped": [
+    {
+      "check": "Live Blender execution/actual renderer export regression",
+      "reason": "Not authorized in this CPU static integration round"
+    },
+    {
+      "check": "DINO/SAM/SLIC/VLM inference",
+      "reason": "Explicitly prohibited; Perceptual remains N/A"
+    }
+  ]
+}

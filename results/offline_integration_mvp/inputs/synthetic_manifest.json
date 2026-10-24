@@ -1,0 +1,17 @@
+{
+  "reference_rgb": "synthetic/reference.png",
+  "render_rgb": "synthetic/render.png",
+  "reference_evidence": "synthetic/evidence.json",
+  "render_metadata": "synthetic/camera.json",
+  "evidence_category": "synthetic_oracle",
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Same deterministic CPU synthetic canvas; no camera inference"
+  },
+  "camera_comparability": "Synthetic pixel control only; metadata deliberately cannot attest trusted rendering",
+  "provenance": {
+    "construction": "Two known pixel rectangles, second rectangle changes RGB only",
+    "reviewed": false
+  }
+}

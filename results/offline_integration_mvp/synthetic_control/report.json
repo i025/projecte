@@ -1,0 +1,1325 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "pose_consistent_unverified",
+    "pose_matches_T0": true,
+    "actual_poses": {
+      "camera.matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": true,
+    "reason": "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": 0.002665201822916667,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 4,
+      "eligible_count": 4,
+      "coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [],
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "appearance": {
+      "value": 0.014467592592592593,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 7,
+      "eligible_count": 5,
+      "coverage": 0.7142857142857143,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:R1",
+        "region:R2",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:R1",
+        "region:R2"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.1111111111111111
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "statistical": {
+      "value": 0.006027299247968863,
+      "status": "valid",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 8,
+      "applicable_count": 8,
+      "eligible_count": 8,
+      "coverage": 1.0,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "unavailable_metrics": [],
+      "participating_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "perceptual": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 7,
+      "eligible_count": 5,
+      "coverage": 0.0,
+      "eligible_coverage": 0.0,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "global:global",
+        "region:R1",
+        "region:R2",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "global:global",
+        "region:R1",
+        "region:R2",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    }
+  },
+  "observation_energy": 0.007720031221159374,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": null,
+    "checks": {
+      "penetration": [],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [],
+    "raw_geometry": {},
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.6538461538461539,
+  "observation_status": "partial",
+  "evidence_counts": {
+    "expected": 26,
+    "eligible": 22,
+    "valid": 17
+  },
+  "eligible_evidence_coverage": 0.7727272727272727,
+  "uncertainty": {
+    "region_coverage": 0.6666666666666666,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": null,
+    "structural_check_coverage": null,
+    "unknown_evidence": [
+      {
+        "id": "global",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "R1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "patch_0_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_0_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 0
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 12288.0,
+        "color_l1": 0.014467592592592593,
+        "coarse_boundary_error": 0.010660807291666668,
+        "grayscale_wasserstein": 0.016601562500000056,
+        "edge_coverage_error": 0.010660807291666666,
+        "gradient_mean_error": 0.0009058202273965144,
+        "texture_statistics_proxy": 0.009389396673021078,
+        "edge_distribution_proxy": 0.010660807291666666,
+        "edge_distribution_per_scale": {
+          "4": 0.010660807291666666,
+          "8": 0.010660807291666668,
+          "16": 0.010660807291666666
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 3072.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "texture_statistics_proxy": 0.0,
+        "edge_distribution_proxy": 0.0,
+        "edge_distribution_per_scale": {
+          "4": 0.0,
+          "8": 0.0,
+          "16": 0.0
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 3072.0,
+        "color_l1": 0.030637254901960783,
+        "coarse_boundary_error": 0.005533854166666667,
+        "grayscale_wasserstein": 0.03515625,
+        "edge_coverage_error": 0.022135416666666668,
+        "gradient_mean_error": 0.0018807870370370378,
+        "texture_statistics_proxy": 0.019724151234567902,
+        "edge_distribution_proxy": 0.005533854166666667,
+        "edge_distribution_per_scale": {
+          "4": 0.005533854166666666,
+          "8": 0.005533854166666667,
+          "16": 0.005533854166666666
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 3072.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "texture_statistics_proxy": 0.0,
+        "edge_distribution_proxy": 0.0,
+        "edge_distribution_per_scale": {
+          "4": 0.0,
+          "8": 0.0,
+          "16": 0.0
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 3072.0,
+        "color_l1": 0.027233115468409588,
+        "coarse_boundary_error": 0.005126953125,
+        "grayscale_wasserstein": 0.031249999999999993,
+        "edge_coverage_error": 0.0205078125,
+        "gradient_mean_error": 0.0017424938725490201,
+        "texture_statistics_proxy": 0.017833435457516335,
+        "edge_distribution_proxy": 0.005126953125,
+        "edge_distribution_per_scale": {
+          "4": 0.005126953125,
+          "8": 0.005126953125,
+          "16": 0.005126953125
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "reference_complete": false,
+      "unknown_candidates": 0,
+      "unknown_extras": [],
+      "unknown_rendered_candidates": [],
+      "extra_records": [],
+      "verdict_records": [],
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "valid_pixels": 12288,
+    "measurement_pixels": 12288,
+    "overlap_aggregation_withheld": []
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.014467592592592593,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "R1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "R1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "R2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "R2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:texture",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:distribution",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0
+      },
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.030637254901960783,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.005533854166666667,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:texture",
+      "value": 0.019724151234567902,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:distribution",
+      "value": 0.005533854166666667,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.005533854166666666,
+        "8": 0.005533854166666667,
+        "16": 0.005533854166666666
+      },
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:texture",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:distribution",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0
+      },
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.027233115468409588,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.005126953125,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:texture",
+      "value": 0.017833435457516335,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:distribution",
+      "value": 0.005126953125,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.005126953125,
+        "8": 0.005126953125,
+        "16": 0.005126953125
+      },
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "synthetic_oracle",
+      "measurement_available": false
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      128,
+      96
+    ],
+    "reviewed": false,
+    "source": "reference RGB and independently supplied annotations only",
+    "regions": [
+      {
+        "id": "R1",
+        "bbox": [
+          16,
+          18,
+          70,
+          76
+        ],
+        "metrics": [
+          "appearance",
+          "perceptual"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "description": "Independently annotated reference region"
+      },
+      {
+        "id": "R2",
+        "bbox": [
+          72,
+          24,
+          118,
+          72
+        ],
+        "metrics": [
+          "appearance",
+          "perceptual"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "description": "Independently annotated reference region"
+      },
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          64,
+          48
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          64,
+          0,
+          128,
+          48
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          48,
+          64,
+          96
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          64,
+          48,
+          128,
+          96
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "anchors": [],
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights"
+  },
+  "render_metadata": {
+    "camera": {
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "resolution": [
+      128,
+      96
+    ],
+    "fixed_extrinsics_enforced": true
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "formal_eligible": false,
+  "evidence_category": "synthetic_oracle",
+  "diagnostics": {
+    "groups": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null,
+      "evidence": null,
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "structural_layout": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null,
+      "evidence": null,
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "fixed_region_measurements": [
+      {
+        "id": "R1",
+        "description": "Independently annotated reference region",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 3132.0,
+        "valid_pixel_weight": 3132.0,
+        "measurement_pixel_weight": 3132.0,
+        "appearance": 0.0,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.0,
+          "statistical": 0.0
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "R2",
+        "description": "Independently annotated reference region",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 2208.0,
+        "valid_pixel_weight": 2208.0,
+        "measurement_pixel_weight": 2208.0,
+        "appearance": 0.08051529790660225,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.013753255208333334,
+          "statistical": 0.032665382254360165
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    "region_overlap": {
+      "named_region_count": 2,
+      "overlap_pixels": 0,
+      "overlap_fraction_of_valid": 0.0,
+      "max_multiplicity": 1,
+      "unassigned_valid_pixels": 6948,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Same deterministic CPU synthetic canvas; no camera inference",
+    "applied_transform": {
+      "original_size": [
+        128,
+        96
+      ],
+      "common_size": [
+        128,
+        96
+      ],
+      "resized_size": [
+        128,
+        96
+      ],
+      "offset_xy": [
+        0,
+        0
+      ],
+      "nominal_scale": 1.0,
+      "content_alignment": false,
+      "padding_is_not_observation": true,
+      "transform": "identity"
+    },
+    "valid_pixels": 12288,
+    "canvas_pixels": 12288,
+    "valid_mask": "valid_pixels.png",
+    "measurement_pixels": 12288,
+    "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+  },
+  "provenance": {
+    "manifest": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/synthetic_manifest.json",
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/synthetic/reference.png",
+    "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/synthetic/render.png",
+    "reference_evidence": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/synthetic/evidence.json",
+    "optional_inputs": {
+      "render_evidence": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "geometry": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "triage": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "rules": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "render_metadata": {
+        "status": "available",
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/synthetic/camera.json",
+        "reviewed": null
+      }
+    },
+    "supplied_provenance": {
+      "construction": "Two known pixel rectangles, second rectangle changes RGB only",
+      "reviewed": false
+    },
+    "api_calls": 0,
+    "model_inferences": 0,
+    "blender_executions": 0,
+    "agent_code_executed": false
+  },
+  "measurement_interpretation": {
+    "appearance": "Actual RGB L1; affected by camera, lighting and visibility",
+    "spatial": "Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness",
+    "statistical": "Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density",
+    "semantic": "Reviewed evidence only; attached Group/Structural answers never become scores",
+    "perceptual": "N/A: no DINO inference in this entry",
+    "observation": "Conditional debug aggregate of core eligible records; not a formal Benchmark result"
+  },
+  "elapsed_seconds": 0.043734773993492126
+}

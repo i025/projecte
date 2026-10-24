@@ -4,6 +4,8 @@
 
 ## 近期核心实验图片核对
 
+Offline Integration MVP 的后续审核分支材料见[公开子集说明](offline_integration_mvp/PUBLICATION.md)及[发布审查](offline_integration_mvp/release_review/report.md)。其真实比较图和 valid-pixel Mask 仍排除，只有自制合成 PNG 纳入。为运行历史 CPU 冻结回归，本轮补入三个已有的第一方源码快照；原副本未改动，不包含模型或第三方像素。原实验与本轮测试记录分别保留，不能把旧的本地未发布快照当作当前 GitHub 状态。
+
 这些真实场景图片已存在，不是实验漏做。现有 BlenderWorld 软件 MIT 说明不足以确认每张参考图片及衍生内容的再分发权，因此不补传、不替换、不人工重画它们。原始图片、Mask 和 HTML 仍在服务器。
 
 | 项目内路径（非公开下载链接） | 服务器状态 | 公开状态 / 原因 |

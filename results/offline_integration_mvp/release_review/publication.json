@@ -1,0 +1,246 @@
+{
+  "base_commit": "2671c129ab66260f6658faf0f741137119836089",
+  "branch": "feat/offline-integration-mvp",
+  "target": "i025/projecte",
+  "audited_files": [
+    {
+      "path": "README.md",
+      "bytes": 5420
+    },
+    {
+      "path": "OFFLINE_EVALUATION.md",
+      "bytes": 7958
+    },
+    {
+      "path": "e_harness/benchmark.py",
+      "bytes": 16756
+    },
+    {
+      "path": "e_harness/benchmark_config.py",
+      "bytes": 3992
+    },
+    {
+      "path": "e_harness/benchmark_metrics.py",
+      "bytes": 34010
+    },
+    {
+      "path": "e_harness/benchmark_offline.py",
+      "bytes": 17990
+    },
+    {
+      "path": "e_harness/runtime/benchmark_blender.py",
+      "bytes": 9966
+    },
+    {
+      "path": "scripts/region_real_render.py",
+      "bytes": 22404
+    },
+    {
+      "path": "tests/test_benchmark_offline.py",
+      "bytes": 13233
+    },
+    {
+      "path": "results/LATEST.md",
+      "bytes": 7362
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 36352
+    },
+    {
+      "path": "results/PUBLICATION_NOTES.md",
+      "bytes": 21530
+    },
+    {
+      "path": "results/offline_integration_mvp/summary.md",
+      "bytes": 9068
+    },
+    {
+      "path": "results/offline_integration_mvp/PUBLICATION.md",
+      "bytes": 3647
+    },
+    {
+      "path": "results/offline_integration_mvp/preflight.json",
+      "bytes": 411
+    },
+    {
+      "path": "results/offline_integration_mvp/replay_checks.json",
+      "bytes": 181
+    },
+    {
+      "path": "results/offline_integration_mvp/test_results.json",
+      "bytes": 2684
+    },
+    {
+      "path": "results/offline_integration_mvp/test_results.md",
+      "bytes": 832
+    },
+    {
+      "path": "results/offline_integration_mvp/test_results_final.json",
+      "bytes": 2728
+    },
+    {
+      "path": "results/offline_integration_mvp/delivery_checks.json",
+      "bytes": 968
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073_checked/report.json",
+      "bytes": 112934
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073_checked/integration_checks.json",
+      "bytes": 5240
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073_checked/summary.md",
+      "bytes": 2552
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073/integration_checks.json",
+      "bytes": 5272
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/bw0073_groups.json",
+      "bytes": 13054
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/bw0073_manifest.json",
+      "bytes": 2614
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/synthetic/camera.json",
+      "bytes": 399
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/synthetic/evidence.json",
+      "bytes": 607
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/synthetic/reference.png",
+      "bytes": 349
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/synthetic/render.png",
+      "bytes": 352
+    },
+    {
+      "path": "results/offline_integration_mvp/inputs/synthetic_manifest.json",
+      "bytes": 648
+    },
+    {
+      "path": "results/offline_integration_mvp/synthetic_control/report.json",
+      "bytes": 38517
+    },
+    {
+      "path": "results/offline_integration_mvp/synthetic_control/integration_checks.json",
+      "bytes": 4917
+    },
+    {
+      "path": "results/offline_integration_mvp/synthetic_control/summary.md",
+      "bytes": 2402
+    },
+    {
+      "path": "results/offline_integration_mvp/synthetic_control/comparison.png",
+      "bytes": 32390
+    },
+    {
+      "path": "results/offline_integration_mvp/synthetic_control/valid_pixels.png",
+      "bytes": 133
+    },
+    {
+      "path": "results/offline_integration_mvp/release_review/report.md",
+      "bytes": 6271
+    },
+    {
+      "path": "results/offline_integration_mvp/release_review/cpu_tests.json",
+      "bytes": 56065
+    },
+    {
+      "path": "results/offline_integration_mvp/release_review/cpu_tests_final.json",
+      "bytes": 52670
+    },
+    {
+      "path": "results/region_first_generalization_checked/source_snapshot/benchmark_evidence.py",
+      "bytes": 35649
+    },
+    {
+      "path": "results/region_first_generalization_checked/source_snapshot/coarse_roi_experiment.py",
+      "bytes": 31258
+    },
+    {
+      "path": "results/vlm_direct_grounding_bw0073/source_snapshot/vlm_direct_grounding.py",
+      "bytes": 20018
+    },
+    {
+      "path": "results/offline_integration_mvp/release_review/cpu_tests_public_tree.json",
+      "bytes": 52398
+    }
+  ],
+  "receipt_path": "results/offline_integration_mvp/release_review/publication.json",
+  "total_candidate_files": 44,
+  "bytes_excluding_this_receipt": 694201,
+  "credential_pattern_findings": [],
+  "structured_credential_field_findings": [],
+  "image_request_payload_findings": [],
+  "personal_data_policy": "Only existing project-owner provenance paths retained; no private Git author email used",
+  "path_owners": [
+    "xymo"
+  ],
+  "public_pngs": [
+    "results/offline_integration_mvp/inputs/synthetic/reference.png",
+    "results/offline_integration_mvp/inputs/synthetic/render.png",
+    "results/offline_integration_mvp/synthetic_control/comparison.png",
+    "results/offline_integration_mvp/synthetic_control/valid_pixels.png"
+  ],
+  "public_png_provenance": "First-party primitive RGB fixtures and their own diagnostic output only; input pixels verified against authored arrays",
+  "withheld": [
+    {
+      "path": "results/offline_integration_mvp/bw0073/comparison.png",
+      "reason": "Real-image pixels or derived mask/support; redistribution rights unconfirmed"
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073/valid_pixels.png",
+      "reason": "Real-image pixels or derived mask/support; redistribution rights unconfirmed"
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073_checked/comparison.png",
+      "reason": "Real-image pixels or derived mask/support; redistribution rights unconfirmed"
+    },
+    {
+      "path": "results/offline_integration_mvp/bw0073_checked/valid_pixels.png",
+      "reason": "Real-image pixels or derived mask/support; redistribution rights unconfirmed"
+    }
+  ],
+  "other_exclusions": [
+    "Native third-party Reference and historical Render",
+    "All real ROI mask files and Blender assets",
+    "Models, caches, environments and credential configuration",
+    "Duplicate early full bw0073 report retained on server"
+  ],
+  "original_artifacts_modified": false,
+  "legacy_snapshots_original_bytes_preserved": true,
+  "core_energy_functions_and_policy_unchanged": true,
+  "runtime_blocked_unchanged": true,
+  "full_server_tests": {
+    "tests": 319,
+    "passed": true,
+    "integration_specific": 19,
+    "record": "cpu_tests_final.json"
+  },
+  "public_tree_tests": {
+    "tests": 319,
+    "passed": true,
+    "record": "cpu_tests_public_tree.json",
+    "sibling_dependency_still_required": true
+  },
+  "initial_errors_preserved": "cpu_tests.json",
+  "not_verified": [
+    "Actual trusted Blender render/export",
+    "GPU/model inference",
+    "Live VLM",
+    "Formal trusted RGB/camera binding",
+    "Independent clean installation"
+  ],
+  "review_scope": "Public-file curation and offline CPU regression only; not scientific evidence approval or formal scores",
+  "reviewed": false
+}

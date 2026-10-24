@@ -29,6 +29,50 @@ RENDER = {'resolution': [128, 128], 'samples': 8,
           'device': 'CPU', 'threads': 2, 'timeout': 120}
 
 
+def camera_pose(matrix, *, require_fixed=False):
+    """Validate camera-to-world numerically; a rigid pose is not necessarily T0."""
+    import numpy as np
+    pose = np.asarray(matrix, dtype=float)
+    if (pose.shape != (4, 4) or not np.isfinite(pose).all()
+            or not np.allclose(pose[3], [0, 0, 0, 1], rtol=0, atol=1e-6)
+            or not np.allclose(pose[:3, :3].T @ pose[:3, :3], np.eye(3), rtol=0, atol=1e-6)
+            or not np.isclose(np.linalg.det(pose[:3, :3]), 1., rtol=0, atol=1e-6)):
+        raise ValueError('Expected a finite rigid Blender camera-to-world matrix')
+    if require_fixed and not np.allclose(pose, FIXED_T0, rtol=0, atol=1e-6):
+        raise ValueError('Camera extrinsics differ from prescribed Project e T0')
+    return pose
+
+
+def camera_check(metadata=None):
+    """External metadata can establish consistency, never trusted execution."""
+    import numpy as np
+    metadata = metadata or {}
+    candidates = {}
+    if isinstance(metadata.get('camera'), dict) and 'matrix_world' in metadata['camera']:
+        candidates['camera.matrix_world'] = metadata['camera']['matrix_world']
+    for key in ('T_c2w', 'matrix_world'):
+        if key in metadata:
+            candidates[key] = metadata[key]
+    reasons, poses = [], {}
+    for key, value in candidates.items():
+        try:
+            poses[key] = camera_pose(value).tolist()
+        except (TypeError, ValueError) as exc:
+            reasons.append(f'{key}: {exc}')
+    matches = bool(poses) and len(poses) == len(candidates) and all(
+        np.allclose(p, FIXED_T0, rtol=0, atol=1e-6) for p in poses.values())
+    if poses and not matches:
+        reasons.append('Recorded actual pose differs from prescribed T0 or conflicts with another pose')
+    if not candidates:
+        reasons.append('Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient')
+    reasons.append('Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding')
+    return dict(status='unverified', formal_eligible=False,
+        camera_protocol='pose_consistent_unverified' if matches else 'historical_camera' if poses else 'unknown',
+        pose_matches_T0=matches, actual_poses=poses, expected_T0=FIXED_T0,
+        declared_fixed_extrinsics_enforced=metadata.get('fixed_extrinsics_enforced'),
+        reason='; '.join(reasons), reasons=reasons)
+
+
 def write_json(path, data):
     import json
     Path(path).write_text(json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + '\n')

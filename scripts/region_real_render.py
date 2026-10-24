@@ -15,25 +15,12 @@ sys.path.insert(0,str(ROOT))
 from e_harness.benchmark_config import POLICY,FIXED_T0
 from e_harness.benchmark_metrics import numerical_errors,perceptual_error
 from e_harness.benchmark_evidence import local_dino_extractor
+from e_harness.benchmark_offline import fit_render
 from scripts.region_grounding_experiment import read,save,edges
 from scripts.region_first_generalization import write_csv,panel_grid
 
 SOURCE=ROOT/'results/vlm_direct_grounding_bw0073'
 DINO=Path('/home/xymo/models/dinov2')
-
-
-def fit_render(image,size):
-    """One geometry-only full-frame fit, independent of image content or ROI."""
-    scale=min(size[0]/image.width,size[1]/image.height)
-    resized=[max(1,round(image.width*scale)),max(1,round(image.height*scale))]
-    offset=[(size[i]-resized[i])//2 for i in (0,1)]
-    rgba=image.convert('RGBA').resize(tuple(resized),Image.Resampling.LANCZOS)
-    canvas=Image.new('RGB',size,(145,145,145));canvas.paste(rgba.convert('RGB'),tuple(offset))
-    valid=np.zeros(size[::-1],bool);x,y=offset
-    valid[y:y+resized[1],x:x+resized[0]]=np.asarray(rgba.getchannel('A'))==255
-    return np.asarray(canvas),valid,dict(original_size=list(image.size),common_size=list(size),nominal_scale=scale,
-        resized_size=resized,offset_xy=offset,padding_is_not_observation=True,content_alignment=False,
-        transform='uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp')
 
 
 def fixed_grid(shape,n):

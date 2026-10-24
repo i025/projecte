@@ -13,7 +13,8 @@ import time
 import numpy as np
 from PIL import Image, ImageDraw
 
-from .benchmark_config import ENERGIES, POLICY, ROOT, RENDER, SCENE_BENCHMARK, write_json
+from .benchmark_config import (ENERGIES, POLICY, ROOT, RENDER, SCENE_BENCHMARK,
+                               camera_check, camera_pose, write_json)
 from .benchmark_evidence import (area_mask, build_reference, candidate_reference, load_document,
                                  local_dino_extractor, reliability, rgb)
 from .benchmark_metrics import aggregate, compare
@@ -37,16 +38,18 @@ def json_evidence(evidence):
 
 def evaluate(input_rgb, render_rgb, reference=None, rendered=None, *, geometry=None,
              triage=None, rules=None, extract=None, vlm=None, render_metadata=None,
-             human_annotation=None):
+             human_annotation=None, valid_mask=None, withhold_region_overlaps=False):
     evidence = build_reference(input_rgb, reference)
-    rows, diagnostics = compare(input_rgb, render_rgb, evidence, rendered, extract=extract, vlm=vlm)
+    rows, diagnostics = compare(input_rgb, render_rgb, evidence, rendered, extract=extract, vlm=vlm,
+                               valid_mask=valid_mask, withhold_region_overlaps=withhold_region_overlaps)
     energies, observation = aggregate(rows)
     structure = structural_report(geometry, triage, rules)
-    active = [r for r in rows if r['q']>0]
+    active = [r for r in rows if r['q']>0 and r.get('aggregation_eligible', True)]
     valid = [r for r in active if r['value'] is not None]
     def coverage(level):
         selected=[r for r in rows if r['level']==level]
-        return sum(r['q']>0 and r['value'] is not None for r in selected)/len(selected) if selected else None
+        return sum(r['q']>0 and r['value'] is not None and r.get('aggregation_eligible', True)
+                   for r in selected)/len(selected) if selected else None
     h,w=input_rgb.shape[:2]
     region_union=np.zeros((h,w),float)
     for region in evidence['regions']:
@@ -54,7 +57,8 @@ def evaluate(input_rgb, render_rgb, reference=None, rendered=None, *, geometry=N
             region_union=np.maximum(region_union,area_mask(region,(h,w)))
     known_anchors=[a for a in evidence['anchors'] if reliability(a)]
     known_ids={m['reference_id'] for m in diagnostics['anchor_matching'] if m['status']!='unknown'}
-    unknown=[dict(id=r['id'],reason=r['reason']) for r in rows if r['q']==0 or r['value'] is None]
+    unknown=[dict(id=r['id'],reason=r.get('aggregation_reason') or r['reason']) for r in rows
+             if r['q']==0 or r['value'] is None or not r.get('aggregation_eligible', True)]
     # Conflicting human evidence is retained and explicitly reported, not resolved from render.
     conflicts=deepcopy(evidence.get('conflicting_evidence',[]))
     conflicts += [dict(id=r['id'],reason='Explicitly marked conflicting reference evidence; excluded')
@@ -74,11 +78,9 @@ def evaluate(input_rgb, render_rgb, reference=None, rendered=None, *, geometry=N
         render_metadata=render_metadata,policy=POLICY,
         interpretation='Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.',
         human_annotation=human_annotation, calibration_status='not_calibrated')
-    if render_metadata and render_metadata.get('fixed_extrinsics_enforced') is True:
-        report['scene_validity']=dict(status='valid',reason='Trusted exporter completed',
-                                     camera_contract='fixed T0, Agent intrinsics',metadata=render_metadata)
-    else:
-        report['uncertainty']['unknown_evidence'].append(dict(id='fixed_camera_contract',reason='Historical/static render does not verify the new T0 contract'))
+    report['scene_validity'] = camera_check(render_metadata)
+    report['uncertainty']['unknown_evidence'].append(dict(id='fixed_camera_contract',
+                                                        reason=report['scene_validity']['reason']))
     return report, evidence
 
 
@@ -122,10 +124,11 @@ def render_cpu(out, *, fixture=None, blend=None, reviewed=False, config=None, in
         raise PermissionError('Static blend rendering requires explicit human review (--reviewed-blend). Agent Python replay uses the existing per-step approval entry.')
     if fixture and fixture not in {'baseline','deleted','moved','color','distribution','penetration','billboard','ortho'}:
         raise ValueError('Unknown trusted fixture')
-    out=Path(out).resolve();out.mkdir(parents=True,exist_ok=False)
     config=deepcopy(config or RENDER)
+    camera_pose(config['matrix_world'], require_fixed=True)
     if config['samples']!=8 or min(config['resolution'])<16 or max(config['resolution'])>1024:
         raise ValueError('CPU profile uses 8 samples and dimensions 16..1024')
+    out=Path(out).resolve();out.mkdir(parents=True,exist_ok=False)
     sys.path.insert(0,str(ROOT/'scripts'))
     from manual_cpu_render import launch
     from manual_reviewed_replay import LIMITS
@@ -164,6 +167,9 @@ def gpu_available(uuid):
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     sub=p.add_subparsers(dest='action',required=True)
+    off=sub.add_parser('offline',help='Auditable manifest replay; no models, APIs or Blender')
+    off.add_argument('--manifest',type=Path,required=True)
+    off.add_argument('--output',type=Path,required=True)
     ev=sub.add_parser('evaluate',help='Compare existing RGBs; no Blender or API execution')
     ev.add_argument('--input',type=Path,required=True);ev.add_argument('--render',type=Path,required=True)
     ev.add_argument('--reference',type=Path);ev.add_argument('--candidate-reference',type=Path)
@@ -185,6 +191,13 @@ def main(argv=None):
     args=p.parse_args(argv)
     if args.output.exists():
         p.error('Output already exists; choose a new result directory')
+    if args.action=='offline':
+        from .benchmark_offline import run_manifest
+        report = run_manifest(args.manifest,args.output)
+        print(json.dumps(dict(report=str(args.output/'report.json'),
+                              camera_protocol=report['scene_validity']['camera_protocol'],
+                              formal_eligible=False,usage=report['usage']),indent=2))
+        return 0
     if args.action=='render':
         result=render_cpu(args.output,fixture=args.fixture,blend=args.blend,reviewed=args.reviewed_blend,
                           config=read_json(args.camera),intrinsics=read_json(args.intrinsics),

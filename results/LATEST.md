@@ -1,8 +1,14 @@
 # 最近的重要实验
 
-整理日期：2026-10-24（Asia/Shanghai）。这是公开阅读入口，不是正式成绩。以下候选均为 `reviewed:false`、`provisional/debug`；原始回答、失败、Unknown/N/A 和相机限制不改写。公开修订以实际 Git Commit SHA 为准。
+整理日期：2026-10-25（Asia/Shanghai）。这是公开阅读入口，不是正式成绩。以下候选均为 `reviewed:false`、`provisional/debug`；原始回答、失败、Unknown/N/A 和相机限制不改写。公开修订以实际 Git Commit SHA 为准。
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
+
+## Offline Evaluation Integration MVP（2026-10-25；审核分支，未合并 main）
+
+| 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
+| --- | --- | --- | --- | --- |
+| Manifest 离线集成 · bw_0073 + CPU Synthetic | 复用四个核心函数跑通固定 ROI 与有效像素比较；阻止非 T0/外部布尔声明产生正式有效状态；Group/结构候选统一附入但不评分。发布回归完整 319 项通过，其中集成专用 19 项；原实验的 89 项记录保留。 | [自制 Synthetic PNG](offline_integration_mvp/synthetic_control/comparison.png)；真实比较 PNG/Mask 仅留服务器，第三方原图/衍生图许可未确认。 | [发布审查](offline_integration_mvp/release_review/report.md) · [集成报告](offline_integration_mvp/summary.md) · [真实 JSON](offline_integration_mvp/bw0073_checked/report.json) · [接口检查](offline_integration_mvp/bw0073_checked/integration_checks.json) · [全量测试](offline_integration_mvp/release_review/cpu_tests_final.json) · [公开边界](offline_integration_mvp/PUBLICATION.md) | 审核分支 feat/offline-integration-mvp；不合并 main。历史相机不合规；Semantic/Perceptual/3D N/A，Spatial/Statistical 仅既有图像代理。保留首次全量回归的两项冻结校验失败及最小兼容修复；原始结果不改写。可信执行绑定仍缺。 |
 
 ## 结构证据与跨场景验证（2026-10-24）
 

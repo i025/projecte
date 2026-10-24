@@ -4,6 +4,8 @@ Project e studies evaluation of Agentic Image-to-3D reconstruction without refer
 
 **Start with [the latest experiments](results/LATEST.md)** or [the complete experiment index](results/README.md). They link original JSON/CSV and Markdown, and publication-permitted synthetic PNGs. Real-image comparison PNGs are withheld where redistribution rights are unconfirmed; their reports and actual outcomes remain visible. [Publication notes](results/PUBLICATION_NOTES.md) list withheld figures, consolidated files and historical links that cannot open in a public checkout.
 
+The [Offline Evaluation MVP](OFFLINE_EVALUATION.md) provides one manifest-based entry for existing Reference/Render images, fixed ROI, optional evidence and camera checks. It emits auditable JSON, PNG and Markdown; external camera declarations and unreviewed Group/Structural answers do not create formal scores.
+
 ## Current findings
 
 - Direct coarse Reference ROI is the experimental baseline. SAM/SLIC have not demonstrated consistent improvements in functional-region completeness.

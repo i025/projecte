@@ -1,0 +1,3084 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "historical_camera",
+    "pose_matches_T0": false,
+    "actual_poses": {
+      "T_c2w": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": null,
+    "reason": "Recorded actual pose differs from prescribed T0 or conflicts with another pose; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Recorded actual pose differs from prescribed T0 or conflicts with another pose",
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 4,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4"
+      ],
+      "unavailable_metrics": [
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": 0.022814867036171898,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 8,
+      "eligible_count": 4,
+      "coverage": 0.5,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "appearance": {
+      "value": 0.21231669569527403,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 9,
+      "eligible_count": 5,
+      "coverage": 0.5555555555555556,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.1111111111111111
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "statistical": {
+      "value": 0.05807331380011658,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 8,
+      "applicable_count": 16,
+      "eligible_count": 8,
+      "coverage": 0.5,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:R1:texture",
+        "region:R1:distribution",
+        "region:R2:texture",
+        "region:R2:distribution",
+        "region:R3:texture",
+        "region:R3:distribution",
+        "region:R4:texture",
+        "region:R4:distribution",
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "unavailable_metrics": [
+        "region:R1:texture",
+        "region:R1:distribution",
+        "region:R2:texture",
+        "region:R2:distribution",
+        "region:R3:texture",
+        "region:R3:distribution",
+        "region:R4:texture",
+        "region:R4:distribution"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "perceptual": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 9,
+      "eligible_count": 5,
+      "coverage": 0.0,
+      "eligible_coverage": 0.0,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "global:global",
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "global:global",
+        "region:R1",
+        "region:R2",
+        "region:R3",
+        "region:R4",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    }
+  },
+  "observation_energy": 0.09773495884385416,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": null,
+    "checks": {
+      "penetration": [],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [],
+    "raw_geometry": {},
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.3695652173913043,
+  "observation_status": "partial",
+  "evidence_counts": {
+    "expected": 46,
+    "eligible": 22,
+    "valid": 17
+  },
+  "eligible_evidence_coverage": 0.7727272727272727,
+  "uncertainty": {
+    "region_coverage": 0.36363636363636365,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": null,
+    "structural_check_coverage": null,
+    "unknown_evidence": [
+      {
+        "id": "global",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "R1",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "R1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R1:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R1:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "R2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R3",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "R3",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R3",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R3:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R3:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R3",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R4",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "R4",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R4",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R4:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R4:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "R4",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "patch_0_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_0_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Recorded actual pose differs from prescribed T0 or conflicts with another pose; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 0
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 1243782.0,
+        "color_l1": 0.21234726599158252,
+        "coarse_boundary_error": 0.09125946814468759,
+        "grayscale_wasserstein": 0.16180955545264364,
+        "edge_coverage_error": 0.08824536775737227,
+        "gradient_mean_error": 0.024516960567338975,
+        "texture_statistics_proxy": 0.09152396125911828,
+        "edge_distribution_proxy": 0.09183152275090269,
+        "edge_distribution_per_scale": {
+          "4": 0.08849446521010836,
+          "8": 0.09125946814468759,
+          "16": 0.09574063489791212
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 310992.0,
+        "color_l1": 0.17995066010146407,
+        "coarse_boundary_error": 0.040930234335821665,
+        "grayscale_wasserstein": 0.11504918132942327,
+        "edge_coverage_error": 0.15907483150691978,
+        "gradient_mean_error": 0.03862191272557796,
+        "texture_statistics_proxy": 0.10424864185397366,
+        "edge_distribution_proxy": 0.04096946109972929,
+        "edge_distribution_per_scale": {
+          "4": 0.04014985380116959,
+          "8": 0.040930234335821665,
+          "16": 0.04182829516219662
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 310156.0,
+        "color_l1": 0.18533317874108804,
+        "coarse_boundary_error": 0.016534502392583153,
+        "grayscale_wasserstein": 0.1539983105276055,
+        "edge_coverage_error": 0.06733385780059067,
+        "gradient_mean_error": 0.01925013151720319,
+        "texture_statistics_proxy": 0.08019409994846645,
+        "edge_distribution_proxy": 0.01691689746196495,
+        "edge_distribution_per_scale": {
+          "4": 0.016643367446239073,
+          "8": 0.016534502392583153,
+          "16": 0.01757282254707262
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 311736.0,
+        "color_l1": 0.26011133771478495,
+        "coarse_boundary_error": 0.02118367278802547,
+        "grayscale_wasserstein": 0.20430388213103395,
+        "edge_coverage_error": 0.08110067493006903,
+        "gradient_mean_error": 0.02436900689052963,
+        "texture_statistics_proxy": 0.10325785465054421,
+        "edge_distribution_proxy": 0.02139360515522293,
+        "edge_distribution_per_scale": {
+          "4": 0.020023937042337535,
+          "8": 0.02118367278802547,
+          "16": 0.022973205635305798
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 310898.0,
+        "color_l1": 0.22381046563114218,
+        "coarse_boundary_error": 0.012611058628257307,
+        "grayscale_wasserstein": 0.19393277698795103,
+        "edge_coverage_error": 0.045420041299718876,
+        "gradient_mean_error": 0.015810355303466906,
+        "texture_statistics_proxy": 0.08505439119704561,
+        "edge_distribution_proxy": 0.012551559033985518,
+        "edge_distribution_per_scale": {
+          "4": 0.011677306920362156,
+          "8": 0.012611058628257307,
+          "16": 0.01336631155333709
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "reference_complete": false,
+      "unknown_candidates": 0,
+      "unknown_extras": [],
+      "unknown_rendered_candidates": [],
+      "extra_records": [],
+      "verdict_records": [],
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "valid_pixels": 1244619,
+    "measurement_pixels": 1243782,
+    "overlap_aggregation_withheld": []
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.21234726599158252,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "R1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "R1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R1:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R1:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "R1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "R2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "R2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R2:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R2:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "R2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "R3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "R3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R3:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R3:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "R3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "semantic",
+      "level": "region",
+      "id": "R4",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "R4",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "R4",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R4:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "R4:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "R4",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.17995066010146407,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.040930234335821665,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:texture",
+      "value": 0.10424864185397366,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:distribution",
+      "value": 0.04096946109972929,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.04014985380116959,
+        "8": 0.040930234335821665,
+        "16": 0.04182829516219662
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.18533317874108804,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.016534502392583153,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:texture",
+      "value": 0.08019409994846645,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:distribution",
+      "value": 0.01691689746196495,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.016643367446239073,
+        "8": 0.016534502392583153,
+        "16": 0.01757282254707262
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.26011133771478495,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.02118367278802547,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:texture",
+      "value": 0.10325785465054421,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:distribution",
+      "value": 0.02139360515522293,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.020023937042337535,
+        "8": 0.02118367278802547,
+        "16": 0.022973205635305798
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.22381046563114218,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.012611058628257307,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:texture",
+      "value": 0.08505439119704561,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:distribution",
+      "value": 0.012551559033985518,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.011677306920362156,
+        "8": 0.012611058628257307,
+        "16": 0.01336631155333709
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      1536,
+      837
+    ],
+    "regions": [
+      {
+        "id": "R1",
+        "name": "窗边水槽区",
+        "location": "左侧",
+        "content": "拱形窗户下的水槽、黑色橱柜和大理石台面，上方有搁板与壁灯",
+        "reviewed": false,
+        "reliability": 0.0,
+        "bbox": [
+          0,
+          46,
+          531,
+          837
+        ],
+        "mask_reviewed": false,
+        "localization_status": "candidate_partial_support",
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+        "metrics": [
+          "semantic",
+          "spatial",
+          "appearance",
+          "statistical",
+          "perceptual"
+        ],
+        "inventory_complete": false,
+        "semantic_extent_verified": false,
+        "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R1.png",
+        "description": "Independently annotated reference region"
+      },
+      {
+        "id": "R2",
+        "name": "中央岛台区",
+        "location": "画面中央及前景",
+        "content": "大理石岛台、四把高脚椅和上方的金色吊灯",
+        "reviewed": false,
+        "reliability": 0.0,
+        "bbox": [
+          512,
+          94,
+          1044,
+          716
+        ],
+        "mask_reviewed": false,
+        "localization_status": "candidate_partial_support",
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+        "metrics": [
+          "semantic",
+          "spatial",
+          "appearance",
+          "statistical",
+          "perceptual"
+        ],
+        "inventory_complete": false,
+        "semantic_extent_verified": false,
+        "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+        "description": "Independently annotated reference region"
+      },
+      {
+        "id": "R3",
+        "name": "后方料理区",
+        "location": "后方中央",
+        "content": "黑色橱柜、大理石墙面与台面、炉灶及摆放的器皿和绿植",
+        "reviewed": false,
+        "reliability": 0.0,
+        "bbox": [
+          553,
+          239,
+          937,
+          427
+        ],
+        "mask_reviewed": false,
+        "localization_status": "candidate_partial_support",
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+        "metrics": [
+          "semantic",
+          "spatial",
+          "appearance",
+          "statistical",
+          "perceptual"
+        ],
+        "inventory_complete": false,
+        "semantic_extent_verified": false,
+        "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R3.png",
+        "description": "Independently annotated reference region"
+      },
+      {
+        "id": "R4",
+        "name": "右侧高柜区",
+        "location": "右侧",
+        "content": "浅木色柜体、深色高柜和下方的抽屉柜",
+        "reviewed": false,
+        "reliability": 0.0,
+        "bbox": [
+          1107,
+          0,
+          1536,
+          746
+        ],
+        "mask_reviewed": false,
+        "localization_status": "candidate_partial_support",
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+        "metrics": [
+          "semantic",
+          "spatial",
+          "appearance",
+          "statistical",
+          "perceptual"
+        ],
+        "inventory_complete": false,
+        "semantic_extent_verified": false,
+        "mask_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R4.png",
+        "description": "Independently annotated reference region"
+      },
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          768,
+          418
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          768,
+          0,
+          1536,
+          418
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          418,
+          768,
+          837
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          768,
+          418,
+          1536,
+          837
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "anchors": [],
+    "relations": [],
+    "reviewed": false,
+    "inventory_complete": false,
+    "source": "reference RGB and independently supplied annotations only",
+    "formal_score": false,
+    "statistics": {
+      "region_union_fraction": 0.599470921694544,
+      "overlap_fraction": 0.013625205346475508,
+      "unassigned_fraction": 0.400529078305456,
+      "per_region_pixels": [
+        272830,
+        182080,
+        68301,
+        265005
+      ],
+      "pixel_count": 1285632,
+      "dense_global_coverage": 1.0,
+      "reviewed_region_coverage": 0.0
+    },
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights"
+  },
+  "render_metadata": {
+    "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+    "T_c2w": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -6
+      ],
+      [
+        0,
+        1,
+        0,
+        1.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "K": [
+      [
+        1045.0,
+        0,
+        836.0
+      ],
+      [
+        0,
+        1045.0,
+        470.5
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+    "resolution": [
+      1672,
+      941
+    ],
+    "camera_object": "Camera",
+    "lens_mm": 22.5,
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "sensor_fit": "HORIZONTAL",
+    "shift_x": 0.0,
+    "shift_y": 0.0
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "formal_eligible": false,
+  "evidence_category": "historical_diagnostic",
+  "diagnostics": {
+    "groups": {
+      "status": "available",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/bw0073_groups.json",
+      "reviewed": false,
+      "evidence": {
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "reference_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_level_evidence_pilot/reference_groups_frozen.json",
+        "reference_groups": [
+          {
+            "scene_id": "bw_0073",
+            "image_size": [
+              1536,
+              837
+            ],
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "region_plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+            "region_id": "R2",
+            "region_name": "中央岛台区",
+            "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+            "regions": [
+              {
+                "id": "R2",
+                "name": "中央岛台区",
+                "location": "画面中央及前景",
+                "content": "大理石岛台、四把高脚椅和上方的金色吊灯",
+                "reviewed": false,
+                "reliability": 0.0,
+                "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+                "metrics": []
+              }
+            ],
+            "anchors": [],
+            "semantic_groups": [
+              {
+                "group_id": "bw_0073_R2_chairs",
+                "region_id": "R2",
+                "name": "岛台近侧高脚椅集合",
+                "scope": "Reference中岛台近侧可见的有靠背高脚椅，作为整体集合；不推测被遮挡或画外成员。",
+                "evidence": [
+                  "bw_0073_R2_chairs_frame",
+                  "bw_0073_R2_chairs_below_counter",
+                  "bw_0073_R2_chairs_one_row"
+                ],
+                "provenance": {
+                  "source_type": "human_seeded_provisional",
+                  "method": "assistant_reference_only_visual_draft",
+                  "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+                  "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+                  "render_used": false
+                },
+                "reviewed": false,
+                "reliability": 0.0,
+                "member_instance_ids": null,
+                "mask": null,
+                "localization_status": "candidate_unreviewed",
+                "uncertainty": "框内包含背景、空隙和椅间岛台；没有经审核Group Mask。",
+                "candidate_bbox": [
+                  513,
+                  476,
+                  1044,
+                  716
+                ],
+                "candidate_bbox_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/atomic_evidence_discriminability_bw0073/reference_evidence_frozen.json#/atomic_evidence/R2_STA_01",
+                "candidate_bbox_role": "Frozen Reference support only, not reliable group localization or density support"
+              }
+            ],
+            "optional_anchors": [
+              {
+                "id": "bw_0073_R2_island",
+                "region_id": "R2",
+                "name": "岛台主体",
+                "category": "island",
+                "bbox": [
+                  520,
+                  410,
+                  1040,
+                  650
+                ],
+                "importance": 1.0,
+                "reviewed": false,
+                "reliability": 0.0,
+                "mask": null,
+                "role": "on-demand relation endpoint only; no independent presence or image-loss score",
+                "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+                "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/spatial_minimal_validation_bw0073_checked/reference_object_candidates.json#/conditional_debug_objects/island",
+                "uncertainty": "Assistant draft; occluded cabinet, bbox includes chairs/background; not visible-object area."
+              }
+            ],
+            "atomic_evidence": [
+              {
+                "id": "bw_0073_R2_chairs_frame",
+                "group_id": "bw_0073_R2_chairs",
+                "region_id": "R2",
+                "type": "semantic",
+                "claim": "集合中座椅可见支撑框架主要由细长杆件构成。",
+                "question": "这些座椅的可见支撑框架是否主要由细长杆件构成？",
+                "expected": true,
+                "answer_type": "boolean",
+                "status": "candidate",
+                "requires": [],
+                "canonical_fact_id": "bw_0073_R2_chairs_frame",
+                "owner_id": "bw_0073_R2_chairs",
+                "alias_of": null,
+                "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+                "source_type": "human_seeded_provisional",
+                "provenance": {
+                  "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+                  "frozen_reference_evidence_ids": [
+                    "R2_STA_01"
+                  ],
+                  "render_used": false
+                },
+                "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+                "anchor_refs": [],
+                "reviewed": false,
+                "reliability": 0.0,
+                "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+                "verification_mode": "atomic_vqa"
+              },
+              {
+                "id": "bw_0073_R2_chairs_below_counter",
+                "group_id": "bw_0073_R2_chairs",
+                "region_id": "R2",
+                "type": "spatial",
+                "claim": "可见椅背位于岛台台面下方。",
+                "question": "从当前图像上下方向看，这组座椅的椅背是否位于岛台台面下方？",
+                "expected": true,
+                "answer_type": "boolean",
+                "status": "candidate",
+                "requires": [],
+                "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+                "owner_id": "bw_0073_R2_chairs",
+                "alias_of": null,
+                "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+                "source_type": "human_seeded_provisional",
+                "provenance": {
+                  "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+                  "frozen_reference_evidence_ids": [
+                    "R2_SPA_02"
+                  ],
+                  "render_used": false
+                },
+                "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+                "anchor_refs": [
+                  "bw_0073_R2_island"
+                ],
+                "reviewed": false,
+                "reliability": 0.0,
+                "uncertainty": "Discrete projected relation only; no world-coordinate depth or continuous offset is inferred.",
+                "verification_mode": "atomic_vqa"
+              },
+              {
+                "id": "bw_0073_R2_chairs_one_row",
+                "group_id": "bw_0073_R2_chairs",
+                "region_id": "R2",
+                "type": "statistical",
+                "claim": "可见座椅沿岛台近侧形成从左至右的一排。",
+                "question": "可见座椅是否沿岛台近侧形成从左至右的一排？",
+                "expected": true,
+                "answer_type": "boolean",
+                "status": "candidate",
+                "requires": [],
+                "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+                "owner_id": "bw_0073_R2_chairs",
+                "alias_of": null,
+                "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+                "source_type": "human_seeded_provisional",
+                "provenance": {
+                  "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+                  "frozen_reference_evidence_ids": [
+                    "R2_SPA_02"
+                  ],
+                  "render_used": false
+                },
+                "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+                "anchor_refs": [],
+                "reviewed": false,
+                "reliability": 0.0,
+                "uncertainty": "Qualitative arrangement proposition, not density, exact spacing, count or calibrated numeric error.",
+                "verification_mode": "qualitative_vqa"
+              }
+            ],
+            "reviewed": false,
+            "inventory_complete": false,
+            "source_type": "human_seeded_provisional",
+            "provenance": {
+              "source": "assistant_reference_only_visual_draft",
+              "render_used": false,
+              "independent_inspector_reference_only": true,
+              "model_extraction": false,
+              "human_ground_truth": false,
+              "root_prior_render_knowledge_disclosed": true,
+              "strict_blind_test": false,
+              "reference_plan_validated_region_id": "R2",
+              "continuous_spatial_and_group_area_available": false
+            }
+          }
+        ],
+        "group_verification_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_level_evidence_pilot/verification_results.json",
+        "group_verification": [
+          {
+            "id": "bw_0073_R2_chairs_frame",
+            "region_id": "R2",
+            "status": "unavailable",
+            "observed": null,
+            "finding": "none",
+            "reason": "No reusable real atomic verification response; no authorized verifier configured",
+            "source_kind": "unavailable",
+            "reviewed": false,
+            "scorable": false,
+            "score": null,
+            "group_id": "bw_0073_R2_chairs",
+            "canonical_fact_id": "bw_0073_R2_chairs_frame",
+            "scene_id": "bw_0073",
+            "value": null,
+            "q": 0.0,
+            "usage": "provisional/debug"
+          },
+          {
+            "id": "bw_0073_R2_chairs_below_counter",
+            "region_id": "R2",
+            "status": "unavailable",
+            "observed": null,
+            "finding": "none",
+            "reason": "No reusable real atomic verification response; no authorized verifier configured",
+            "source_kind": "unavailable",
+            "reviewed": false,
+            "scorable": false,
+            "score": null,
+            "group_id": "bw_0073_R2_chairs",
+            "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+            "scene_id": "bw_0073",
+            "value": null,
+            "q": 0.0,
+            "usage": "provisional/debug"
+          },
+          {
+            "id": "bw_0073_R2_chairs_one_row",
+            "region_id": "R2",
+            "status": "unavailable",
+            "observed": null,
+            "finding": "none",
+            "reason": "No reusable real atomic verification response; no authorized verifier configured",
+            "source_kind": "unavailable",
+            "reviewed": false,
+            "scorable": false,
+            "score": null,
+            "group_id": "bw_0073_R2_chairs",
+            "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+            "scene_id": "bw_0073",
+            "value": null,
+            "q": 0.0,
+            "usage": "provisional/debug"
+          }
+        ],
+        "historical_atomic_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_atomic_vlm_r2_bw0073/verification_results.json",
+        "historical_atomic": {
+          "results": [
+            {
+              "id": "q1",
+              "region_id": "R2",
+              "energy": "semantic",
+              "question": "画面中是否存在中央厨房岛台？",
+              "reference_answer": "yes",
+              "render_answer": "yes",
+              "status": "satisfied",
+              "reason": "Known answers agree; agreement does not establish correctness or GT",
+              "raw_answer_changed": false,
+              "level": "region",
+              "value": null,
+              "aggregation_weight": 1.0,
+              "score": null,
+              "q": 0.0,
+              "reviewed": false,
+              "scorable": false,
+              "usage": "provisional/debug"
+            },
+            {
+              "id": "q2",
+              "region_id": "R2",
+              "energy": "statistical",
+              "question": "岛台靠近相机的一侧，可见几把高脚椅？",
+              "reference_answer": 4,
+              "render_answer": 4,
+              "status": "satisfied",
+              "reason": "Known answers agree; agreement does not establish correctness or GT",
+              "raw_answer_changed": false,
+              "level": "region",
+              "value": null,
+              "aggregation_weight": 1.0,
+              "score": null,
+              "q": 0.0,
+              "reviewed": false,
+              "scorable": false,
+              "usage": "provisional/debug"
+            },
+            {
+              "id": "q3",
+              "region_id": "R2",
+              "energy": "spatial",
+              "question": "如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？",
+              "reference_answer": "yes",
+              "render_answer": "yes",
+              "status": "satisfied",
+              "reason": "Known answers agree; agreement does not establish correctness or GT",
+              "raw_answer_changed": false,
+              "level": "region",
+              "value": null,
+              "aggregation_weight": 1.0,
+              "score": null,
+              "q": 0.0,
+              "reviewed": false,
+              "scorable": false,
+              "usage": "provisional/debug"
+            }
+          ],
+          "source": "independent real VLM answers + deterministic comparison",
+          "reference_answers_are_gt": false,
+          "mock_results_used": false,
+          "formal_energy": {
+            "semantic": null,
+            "spatial": null,
+            "statistical": null
+          },
+          "observation_energy": null,
+          "reviewed": false,
+          "usage": "provisional/debug"
+        }
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "structural_layout": {
+      "status": "available",
+      "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/kitchen_structural_transfer_bw0073/structural_evidence.json",
+      "reviewed": false,
+      "evidence": {
+        "scene": "bw_0073",
+        "region_id": "R4",
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "scorable": false,
+        "formal_energy": null,
+        "reference_seed": {
+          "scene": "bw_0073",
+          "region_id": "R4",
+          "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+          "reference": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+          "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/measurement_rois/box_R4.png",
+          "bbox": [
+            1094,
+            0,
+            1536,
+            762
+          ],
+          "image_size": [
+            1536,
+            837
+          ],
+          "claims": [
+            {
+              "id": "K1",
+              "claim": "深色高柜正面可见并排大型门板或前面板，并由明确的竖向接合边界区分。",
+              "question": "目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？",
+              "scope": "竖向门板外观边界；不推断柜内隔板。",
+              "source": "coordinator_reference_only_visual_candidate",
+              "reference_observation": "present_candidate",
+              "reviewed": false,
+              "reliability": 0.0
+            },
+            {
+              "id": "K2",
+              "claim": "高柜上方另有一排较矮前面板，与下方高门板形成上下两层。",
+              "question": "高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？",
+              "scope": "上方短柜前面板和下方高门板的可见分层；颜色仅为参考定位线索。",
+              "source": "coordinator_reference_only_visual_candidate",
+              "reference_observation": "present_candidate",
+              "reviewed": false,
+              "reliability": 0.0
+            },
+            {
+              "id": "K3",
+              "claim": "右侧台面以下可见至少两块上下叠置的抽屉样前面板，具有水平接合边界与拉手线索。",
+              "question": "目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？",
+              "scope": "抽屉样可见外立面；不确认内部抽屉机构。",
+              "source": "coordinator_reference_only_visual_candidate",
+              "reference_observation": "present_candidate",
+              "reviewed": false,
+              "reliability": 0.0
+            },
+            {
+              "id": "K4",
+              "claim": "高柜与其右侧较低台面柜并置，形成可见的高低柜交接。",
+              "question": "是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？",
+              "scope": "粗空间组织；不以不同颜色本身定义两个结构。",
+              "source": "coordinator_reference_only_visual_candidate",
+              "reference_observation": "present_candidate",
+              "reviewed": false,
+              "reliability": 0.0
+            }
+          ],
+          "evidence_scope": "Visible exterior facade divisions and cabinet-group layout only. No hidden interior structure, complete instance graph or exact part counts.",
+          "freeze": {
+            "unix": 1792851633.3253455,
+            "render_read_in_this_phase": false,
+            "prior_render_knowledge_disclosed": true,
+            "strict_blind_test": false,
+            "human_review": "unreviewed"
+          },
+          "reviewed": false,
+          "usage": "provisional/debug"
+        },
+        "protocol": {
+          "work": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/kitchen_structural_e7f38ad2e3c848ac89a94640e5351baf",
+          "output": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/kitchen_structural_transfer_bw0073",
+          "reference_frozen": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/runs/kitchen_structural_e7f38ad2e3c848ac89a94640e5351baf/reference_frozen.json",
+          "frozen_before_current_render_read": true,
+          "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+          "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+          "roi": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/measurement_rois/box_R4.png",
+          "bbox": [
+            1094,
+            0,
+            1536,
+            762
+          ],
+          "image_size": [
+            1536,
+            837
+          ],
+          "region": {
+            "id": "R4",
+            "name": "右侧高柜区",
+            "location": "右侧",
+            "content": "浅木色柜体、深色高柜和下方的抽屉柜",
+            "reviewed": false,
+            "reliability": 0.0
+          },
+          "pair_audit": {
+            "task_id": "bw_0073",
+            "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+            "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+            "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+            "agent_input_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/references/image_01.jpg",
+            "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+            "inventory_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/blenderworld_runs_inventory/selected.csv",
+            "run_config": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/config.json",
+            "task_metadata": "/home/xymo/projects/BlenderWorld/data/BlenderWorld/tasks/bw_0073/task.json",
+            "input_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/input.json",
+            "artifact_manifest": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/manifest.json",
+            "exact_reference_bytes_equal": true,
+            "run_task_mapping_verified": true,
+            "export_mapping_verified": true,
+            "run_exception": null,
+            "reference_native_size": [
+              7952,
+              4333
+            ],
+            "render_native_size": [
+              1672,
+              941
+            ],
+            "render_alpha_range": [
+              255,
+              255
+            ],
+            "png_metadata": {
+              "Camera": "Camera",
+              "Scene": "Scene",
+              "File": "/workspace/exports/final.blend",
+              "RenderTime": "01:27.84"
+            },
+            "camera_export_source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/camera_parameters.json",
+            "camera_export": {
+              "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+              "T_c2w": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  -1,
+                  -6
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  1.5
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ],
+              "K": [
+                [
+                  1045.0,
+                  0,
+                  836.0
+                ],
+                [
+                  0,
+                  1045.0,
+                  470.5
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ]
+              ],
+              "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+              "resolution": [
+                1672,
+                941
+              ],
+              "camera_object": "Camera",
+              "lens_mm": 22.5,
+              "sensor_width_mm": 36.0,
+              "sensor_height_mm": 24.0,
+              "sensor_fit": "HORIZONTAL",
+              "shift_x": 0.0,
+              "shift_y": 0.0
+            },
+            "project_e_fixed_T0": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                -1.0,
+                -6.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                2.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "exported_pose_matches_T0": false,
+            "actual_blend_camera_reverified": false,
+            "reference_camera": "unknown",
+            "camera_alignment_confirmed": false,
+            "camera_protocol": "historical_camera",
+            "render_blend_sync": "unknown; saved PNG metadata is not a rerender verification",
+            "comparison_transform": {
+              "original_size": [
+                1672,
+                941
+              ],
+              "common_size": [
+                1536,
+                837
+              ],
+              "nominal_scale": 0.8894792773645058,
+              "resized_size": [
+                1487,
+                837
+              ],
+              "offset_xy": [
+                24,
+                0
+              ],
+              "padding_is_not_observation": true,
+              "content_alignment": false,
+              "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+            },
+            "observed_canvas_fraction": 0.9680989583333334,
+            "official_benchmark_eligible": false,
+            "usage": "offline provisional/debug only",
+            "reviewed": false
+          },
+          "transform": {
+            "original_size": [
+              1672,
+              941
+            ],
+            "common_size": [
+              1536,
+              837
+            ],
+            "nominal_scale": 0.8894792773645058,
+            "resized_size": [
+              1487,
+              837
+            ],
+            "offset_xy": [
+              24,
+              0
+            ],
+            "padding_is_not_observation": true,
+            "content_alignment": false,
+            "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+          },
+          "system": "你是图像空间结构验证器。只根据当前单侧图片逐条判断可见柜体外部结构。present 表示充分可见证据支持；absent 表示相关局部足够清晰可见且可确认不满足；unknown 表示该局部被遮挡、裁切、类别歧义或对应无法确认。不要因其他局部不可见而弃权整个区域。区分前面板接合边界、柜体外框、装饰缝、拉手和内容边缘；不推测面板后方的内部隔板。只输出简洁 JSON。",
+          "format": "左侧为完整图，橙框为目标区域；右侧为相同固定坐标的放大图。完整图仅提供上下文；不把标记线、裁切或留边当作柜体结构。颜色仅用于定位，不能仅凭颜色不同推断结构。逐条回答，不要求完整物体列表。\n输出一个 JSON 对象，唯一字段 evidence，为四项数组。每项仅含 id、answer（present/absent/unknown）、visibility（clear/partial/unobservable/ambiguous）、visual_basis（不超过80字的直接可见依据或不确定原因）、boundary_type（facade_joint/group_transition/uncertain）、segments（0–4条粗边界线段）。\n坐标相对于右侧目标裁剪图归一化到0–1000，左上为原点；线段为[x1,y1,x2,y2]。只画当前图中独立观察到的可见边界，不补画未见结构；没有可靠线段可用空数组。partial 不自动否定可见的正证据；不能确认不存在时应回答 unknown。仅输出 JSON，不输出推理过程。",
+          "questions": [
+            {
+              "id": "K1",
+              "question": "目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？"
+            },
+            {
+              "id": "K2",
+              "question": "高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？"
+            },
+            {
+              "id": "K3",
+              "question": "目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？"
+            },
+            {
+              "id": "K4",
+              "question": "是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？"
+            }
+          ],
+          "model": "gpt-6-sol",
+          "backend": "Codex Subagent",
+          "maximum_verifiers": 2,
+          "serial": true,
+          "automatic_retries": false,
+          "reviewed": false
+        },
+        "observations": {
+          "render": {
+            "raw_answer": "{\"evidence\":[{\"id\":\"K1\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。\",\"boundary_type\":\"facade_joint\",\"segments\":[[188,426,188,672]]},{\"id\":\"K2\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"灰色高门板上方可见一排较矮的白色面板，中间有横向分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[[0,455,403,394]]},{\"id\":\"K3\",\"answer\":\"absent\",\"visibility\":\"clear\",\"visual_basis\":\"右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[]},{\"id\":\"K4\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜右缘与右侧较低台面柜并置，高低交接清楚可见。\",\"boundary_type\":\"group_transition\",\"segments\":[[403,394,403,650]]}]}",
+            "parsed": {
+              "status": "valid",
+              "fields": {
+                "K1": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K1",
+                    "answer": "present",
+                    "visibility": "partial",
+                    "visual_basis": "高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。",
+                    "boundary_type": "facade_joint",
+                    "segments": [
+                      [
+                        188,
+                        426,
+                        188,
+                        672
+                      ]
+                    ]
+                  },
+                  "error": null
+                },
+                "K2": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K2",
+                    "answer": "present",
+                    "visibility": "partial",
+                    "visual_basis": "灰色高门板上方可见一排较矮的白色面板，中间有横向分界。",
+                    "boundary_type": "facade_joint",
+                    "segments": [
+                      [
+                        0,
+                        455,
+                        403,
+                        394
+                      ]
+                    ]
+                  },
+                  "error": null
+                },
+                "K3": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K3",
+                    "answer": "absent",
+                    "visibility": "clear",
+                    "visual_basis": "右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。",
+                    "boundary_type": "facade_joint",
+                    "segments": []
+                  },
+                  "error": null
+                },
+                "K4": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K4",
+                    "answer": "present",
+                    "visibility": "clear",
+                    "visual_basis": "高柜右缘与右侧较低台面柜并置，高低交接清楚可见。",
+                    "boundary_type": "group_transition",
+                    "segments": [
+                      [
+                        403,
+                        394,
+                        403,
+                        650
+                      ]
+                    ]
+                  },
+                  "error": null
+                }
+              }
+            },
+            "actual_input": {
+              "task_name": "v_2d4649fb8988",
+              "model": "gpt-6-sol",
+              "fork_turns": "none",
+              "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/85408ca08e4b46b3a0e8a9d94abdc4ff/c41369d6df7743c7a3e5fb1d83893c64.png\n\nSystem：\n你是图像空间结构验证器。只根据当前单侧图片逐条判断可见柜体外部结构。present 表示充分可见证据支持；absent 表示相关局部足够清晰可见且可确认不满足；unknown 表示该局部被遮挡、裁切、类别歧义或对应无法确认。不要因其他局部不可见而弃权整个区域。区分前面板接合边界、柜体外框、装饰缝、拉手和内容边缘；不推测面板后方的内部隔板。只输出简洁 JSON。\n\nUser：\nK1：目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？\nK2：高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？\nK3：目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？\nK4：是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？\n\n左侧为完整图，橙框为目标区域；右侧为相同固定坐标的放大图。完整图仅提供上下文；不把标记线、裁切或留边当作柜体结构。颜色仅用于定位，不能仅凭颜色不同推断结构。逐条回答，不要求完整物体列表。\n输出一个 JSON 对象，唯一字段 evidence，为四项数组。每项仅含 id、answer（present/absent/unknown）、visibility（clear/partial/unobservable/ambiguous）、visual_basis（不超过80字的直接可见依据或不确定原因）、boundary_type（facade_joint/group_transition/uncertain）、segments（0–4条粗边界线段）。\n坐标相对于右侧目标裁剪图归一化到0–1000，左上为原点；线段为[x1,y1,x2,y2]。只画当前图中独立观察到的可见边界，不补画未见结构；没有可靠线段可用空数组。partial 不自动否定可见的正证据；不能确认不存在时应回答 unknown。仅输出 JSON，不输出推理过程。"
+            },
+            "model_observed": [
+              "gpt-6-sol"
+            ],
+            "effort_observed": [
+              "medium"
+            ],
+            "read_audit_passed": true,
+            "tool_calls": [
+              {
+                "name": "exec",
+                "input": "const result = await tools.view_image({path:\"/tmp/85408ca08e4b46b3a0e8a9d94abdc4ff/c41369d6df7743c7a3e5fb1d83893c64.png\",detail:\"original\"}); image(result.image_url,\"original\");\n"
+              }
+            ],
+            "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T14-26-49-01a16e4e-a196-7952-ad30-dd0b1f96aa60.jsonl",
+            "agent_path": "/root/v_2d4649fb8988",
+            "usage": {
+              "input_tokens": 47577,
+              "cached_input_tokens": 41600,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 602,
+              "reasoning_output_tokens": 263,
+              "total_tokens": 48179
+            },
+            "duration_seconds": 14.297,
+            "started_at": 1792852009,
+            "completed_at": 1792852023,
+            "received_task_text_independently_readable": false,
+            "context_inheritance": "none",
+            "reviewed": false
+          },
+          "reference": {
+            "raw_answer": "{\"evidence\":[{\"id\":\"K1\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。\",\"boundary_type\":\"facade_joint\",\"segments\":[[174,294,174,746],[286,263,286,786]]},{\"id\":\"K2\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[[52,305,548,211]]},{\"id\":\"K3\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。\",\"boundary_type\":\"facade_joint\",\"segments\":[[589,672,1000,741],[589,775,1000,845]]},{\"id\":\"K4\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。\",\"boundary_type\":\"group_transition\",\"segments\":[[549,210,549,870]]}]}",
+            "parsed": {
+              "status": "valid",
+              "fields": {
+                "K1": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K1",
+                    "answer": "present",
+                    "visibility": "clear",
+                    "visual_basis": "高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。",
+                    "boundary_type": "facade_joint",
+                    "segments": [
+                      [
+                        174,
+                        294,
+                        174,
+                        746
+                      ],
+                      [
+                        286,
+                        263,
+                        286,
+                        786
+                      ]
+                    ]
+                  },
+                  "error": null
+                },
+                "K2": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K2",
+                    "answer": "present",
+                    "visibility": "clear",
+                    "visual_basis": "深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。",
+                    "boundary_type": "facade_joint",
+                    "segments": [
+                      [
+                        52,
+                        305,
+                        548,
+                        211
+                      ]
+                    ]
+                  },
+                  "error": null
+                },
+                "K3": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K3",
+                    "answer": "present",
+                    "visibility": "partial",
+                    "visual_basis": "右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。",
+                    "boundary_type": "facade_joint",
+                    "segments": [
+                      [
+                        589,
+                        672,
+                        1000,
+                        741
+                      ],
+                      [
+                        589,
+                        775,
+                        1000,
+                        845
+                      ]
+                    ]
+                  },
+                  "error": null
+                },
+                "K4": {
+                  "status": "valid",
+                  "data": {
+                    "id": "K4",
+                    "answer": "present",
+                    "visibility": "clear",
+                    "visual_basis": "高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。",
+                    "boundary_type": "group_transition",
+                    "segments": [
+                      [
+                        549,
+                        210,
+                        549,
+                        870
+                      ]
+                    ]
+                  },
+                  "error": null
+                }
+              }
+            },
+            "actual_input": {
+              "task_name": "v_d00464676c56",
+              "model": "gpt-6-sol",
+              "fork_turns": "none",
+              "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：/tmp/6e142335fd024a8e9f749d900a2a1961/9cc6ada418c64493a9def61b8f0ce166.png\n\nSystem：\n你是图像空间结构验证器。只根据当前单侧图片逐条判断可见柜体外部结构。present 表示充分可见证据支持；absent 表示相关局部足够清晰可见且可确认不满足；unknown 表示该局部被遮挡、裁切、类别歧义或对应无法确认。不要因其他局部不可见而弃权整个区域。区分前面板接合边界、柜体外框、装饰缝、拉手和内容边缘；不推测面板后方的内部隔板。只输出简洁 JSON。\n\nUser：\nK1：目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？\nK2：高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？\nK3：目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？\nK4：是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？\n\n左侧为完整图，橙框为目标区域；右侧为相同固定坐标的放大图。完整图仅提供上下文；不把标记线、裁切或留边当作柜体结构。颜色仅用于定位，不能仅凭颜色不同推断结构。逐条回答，不要求完整物体列表。\n输出一个 JSON 对象，唯一字段 evidence，为四项数组。每项仅含 id、answer（present/absent/unknown）、visibility（clear/partial/unobservable/ambiguous）、visual_basis（不超过80字的直接可见依据或不确定原因）、boundary_type（facade_joint/group_transition/uncertain）、segments（0–4条粗边界线段）。\n坐标相对于右侧目标裁剪图归一化到0–1000，左上为原点；线段为[x1,y1,x2,y2]。只画当前图中独立观察到的可见边界，不补画未见结构；没有可靠线段可用空数组。partial 不自动否定可见的正证据；不能确认不存在时应回答 unknown。仅输出 JSON，不输出推理过程。"
+            },
+            "model_observed": [
+              "gpt-6-sol"
+            ],
+            "effort_observed": [
+              "medium"
+            ],
+            "read_audit_passed": true,
+            "tool_calls": [
+              {
+                "name": "exec",
+                "input": "const r=await tools.view_image({path:\"/tmp/6e142335fd024a8e9f749d900a2a1961/9cc6ada418c64493a9def61b8f0ce166.png\",detail:\"original\"}); image(r.image_url,\"original\");\n"
+              }
+            ],
+            "session_file": "/srv/lab-disks/disk2/users/xymo/.codex/sessions/2026/10/24/rollout-2026-10-24T14-25-35-01a16e4d-8283-7c33-96b1-40be0d0d46f0.jsonl",
+            "agent_path": "/root/v_d00464676c56",
+            "usage": {
+              "input_tokens": 47556,
+              "cached_input_tokens": 41600,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 692,
+              "reasoning_output_tokens": 324,
+              "total_tokens": 48248
+            },
+            "duration_seconds": 17.093,
+            "started_at": 1792851935,
+            "completed_at": 1792851953,
+            "received_task_text_independently_readable": false,
+            "context_inheritance": "none",
+            "reviewed": false
+          }
+        },
+        "comparison": [
+          {
+            "id": "K1",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K1",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    174,
+                    294,
+                    174,
+                    746
+                  ],
+                  [
+                    286,
+                    263,
+                    286,
+                    786
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K1",
+                "answer": "present",
+                "visibility": "partial",
+                "visual_basis": "高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    188,
+                    426,
+                    188,
+                    672
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "present",
+            "status": "structure_consistent",
+            "reference_comparability_reason": "Clear local evidence",
+            "render_comparability_reason": "Positive partial evidence is usable",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          },
+          {
+            "id": "K2",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K2",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    52,
+                    305,
+                    548,
+                    211
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K2",
+                "answer": "present",
+                "visibility": "partial",
+                "visual_basis": "灰色高门板上方可见一排较矮的白色面板，中间有横向分界。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    0,
+                    455,
+                    403,
+                    394
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "present",
+            "status": "structure_consistent",
+            "reference_comparability_reason": "Clear local evidence",
+            "render_comparability_reason": "Positive partial evidence is usable",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          },
+          {
+            "id": "K3",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K3",
+                "answer": "present",
+                "visibility": "partial",
+                "visual_basis": "右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    589,
+                    672,
+                    1000,
+                    741
+                  ],
+                  [
+                    589,
+                    775,
+                    1000,
+                    845
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K3",
+                "answer": "absent",
+                "visibility": "clear",
+                "visual_basis": "右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。",
+                "boundary_type": "facade_joint",
+                "segments": []
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "absent",
+            "status": "candidate_structural_layout_mismatch",
+            "reference_comparability_reason": "Positive partial evidence is usable",
+            "render_comparability_reason": "Clear local evidence",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          },
+          {
+            "id": "K4",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K4",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。",
+                "boundary_type": "group_transition",
+                "segments": [
+                  [
+                    549,
+                    210,
+                    549,
+                    870
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K4",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "高柜右缘与右侧较低台面柜并置，高低交接清楚可见。",
+                "boundary_type": "group_transition",
+                "segments": [
+                  [
+                    403,
+                    394,
+                    403,
+                    650
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "present",
+            "status": "structure_consistent",
+            "reference_comparability_reason": "Clear local evidence",
+            "render_comparability_reason": "Clear local evidence",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          }
+        ],
+        "metadata_assistance": {
+          "status": "unavailable",
+          "object_level_scene_graph": null,
+          "reason": "No existing object-level export for the paired bw_0073 Run; no new Blender extraction authorized or executed",
+          "searched": [
+            "Project e results/runs scene_graph/scene_summary/scene_metadata/object_metadata JSON paths",
+            "Paired Run artifacts/workspace/exports JSON files"
+          ],
+          "available_export_files": [
+            "camera_parameters.json",
+            "final.png",
+            "preview.png"
+          ],
+          "excluded_wrong_scene_graph": "blender_scene_graph_audit_bw0074/scene_graph.json belongs to a different scene and Run",
+          "excluded_non_graph": "vlm_direct_grounding_bw0073/geometry_audit.json is ROI overlap, not object geometry",
+          "camera_metadata_only": {
+            "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+            "T_c2w": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                -1,
+                -6
+              ],
+              [
+                0,
+                1,
+                0,
+                1.5
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "K": [
+              [
+                1045.0,
+                0,
+                836.0
+              ],
+              [
+                0,
+                1045.0,
+                470.5
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+            "resolution": [
+              1672,
+              941
+            ],
+            "camera_object": "Camera",
+            "lens_mm": 22.5,
+            "sensor_width_mm": 36.0,
+            "sensor_height_mm": 24.0,
+            "sensor_fit": "HORIZONTAL",
+            "shift_x": 0.0,
+            "shift_y": 0.0
+          },
+          "supports_door_drawer_geometry": false,
+          "reviewed": false
+        },
+        "execution": {
+          "backend": "Codex Subagent",
+          "model": "gpt-6-sol",
+          "sessions": 2,
+          "serial": true,
+          "automatic_retries": false,
+          "total_session_seconds": 31.39,
+          "token_usage": {
+            "input_tokens": 95133,
+            "cached_input_tokens": 83200,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1294,
+            "reasoning_output_tokens": 587,
+            "total_tokens": 96427
+          },
+          "actual_currency_cost": null,
+          "token_scope": "Whole verifier sessions incl platform/image/tool context; parent excluded; cached input and reasoning are already included",
+          "ofox": 0,
+          "blender": 0,
+          "gpu": 0,
+          "sam": 0,
+          "slic": 0
+        },
+        "isolation": {
+          "fork_turns": "none",
+          "single_image_tool_audit": true,
+          "no_expected_values_or_other_side_supplied": true,
+          "strict_blind_test": false,
+          "shared_filesystem_not_hard_isolated": true,
+          "received_task_text_independently_readable": false
+        },
+        "checks": {
+          "frozen_reference_unchanged": true,
+          "source_files_unchanged": true,
+          "anonymous_inputs_equal_staged_images": true,
+          "prompt_symmetric": true
+        }
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "fixed_region_measurements": [
+      {
+        "id": "R1",
+        "description": "Independently annotated reference region",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 272830.0,
+        "valid_pixel_weight": 254075.0,
+        "measurement_pixel_weight": 254075.0,
+        "appearance": 0.297535628085732,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.05017022870855002,
+          "statistical": 0.09724672186658627
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "R2",
+        "description": "Independently annotated reference region",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 182080.0,
+        "valid_pixel_weight": 182080.0,
+        "measurement_pixel_weight": 182080.0,
+        "appearance": 0.27086611358075746,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.06515830482255028,
+          "statistical": 0.0978687258216365
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "R3",
+        "description": "Independently annotated reference region",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 68301.0,
+        "valid_pixel_weight": 68301.0,
+        "measurement_pixel_weight": 68301.0,
+        "appearance": 0.31898433433782586,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.03652301311249938,
+          "statistical": 0.11502614079329204
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "R4",
+        "description": "Independently annotated reference region",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 265005.0,
+        "valid_pixel_weight": 246460.0,
+        "measurement_pixel_weight": 245722.0,
+        "appearance": 0.24887334020543858,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.015612262194893535,
+          "statistical": 0.056228302747379943
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    "region_overlap": {
+      "named_region_count": 4,
+      "overlap_pixels": 17517,
+      "overlap_fraction_of_valid": 0.014074186558296153,
+      "max_multiplicity": 2,
+      "unassigned_valid_pixels": 511220,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "uniform_fit",
+    "basis": "Reuse original bw_0073 full-frame thumbnail grid and frozen geometry-only fit; no alignment or crop search",
+    "expected_transform": {
+      "original_size": [
+        1672,
+        941
+      ],
+      "common_size": [
+        1536,
+        837
+      ],
+      "nominal_scale": 0.8894792773645058,
+      "resized_size": [
+        1487,
+        837
+      ],
+      "offset_xy": [
+        24,
+        0
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "applied_transform": {
+      "original_size": [
+        1672,
+        941
+      ],
+      "common_size": [
+        1536,
+        837
+      ],
+      "nominal_scale": 0.8894792773645058,
+      "resized_size": [
+        1487,
+        837
+      ],
+      "offset_xy": [
+        24,
+        0
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "valid_pixels": 1244619,
+    "canvas_pixels": 1285632,
+    "valid_mask": "valid_pixels.png",
+    "measurement_pixels": 1243782,
+    "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+  },
+  "provenance": {
+    "manifest": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/offline_integration_mvp/inputs/bw0073_manifest.json",
+    "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/reference.png",
+    "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+    "reference_evidence": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/evidence.json",
+    "optional_inputs": {
+      "render_evidence": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "geometry": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "triage": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "rules": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "render_metadata": {
+        "status": "available",
+        "source": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/camera_parameters.json",
+        "reviewed": null
+      }
+    },
+    "supplied_provenance": {
+      "task_id": "bw_0073",
+      "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+      "pair_audit_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/pair_audit.json",
+      "native_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+      "native_reference_size": [
+        7952,
+        4333
+      ],
+      "reference_thumbnail_verified": true,
+      "actual_agent_reference_bytes_equal": true,
+      "run_input_mapping_rechecked": true,
+      "artifact_mapping_rechecked": true,
+      "frozen_polygon_masks_equal_existing_real_render_masks": true,
+      "reviewed": false
+    },
+    "api_calls": 0,
+    "model_inferences": 0,
+    "blender_executions": 0,
+    "agent_code_executed": false
+  },
+  "measurement_interpretation": {
+    "appearance": "Actual RGB L1; affected by camera, lighting and visibility",
+    "spatial": "Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness",
+    "statistical": "Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density",
+    "semantic": "Reviewed evidence only; attached Group/Structural answers never become scores",
+    "perceptual": "N/A: no DINO inference in this entry",
+    "observation": "Conditional debug aggregate of core eligible records; not a formal Benchmark result"
+  },
+  "elapsed_seconds": 1.5985298119485378
+}

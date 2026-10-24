@@ -11,7 +11,7 @@ from mathutils import Matrix
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-from e_harness.benchmark_config import RENDER, SCENE_BENCHMARK, write_json
+from e_harness.benchmark_config import RENDER, SCENE_BENCHMARK, camera_pose, write_json
 from e_harness.runtime.blender_entry import render_settings
 from benchmark.render import metadata, export
 from benchmark.geometry import (semantic_unit, collision, support,
@@ -45,11 +45,7 @@ def benchmark_camera(scene, config, intrinsics=None):
             raise ValueError('Unexpected intrinsic parameter: '+key)
         if isinstance(values[key], (float,int)) and not np.isclose(getattr(cam,key),values[key],rtol=1e-6,atol=1e-7):
             raise ValueError('Blender clamped intrinsic parameter: '+key)
-    t0 = np.asarray(config['matrix_world'],float)
-    if (t0.shape!=(4,4) or not np.isfinite(t0).all() or not np.allclose(t0[3],[0,0,0,1])
-            or not np.allclose(t0[:3,:3].T@t0[:3,:3],np.eye(3),atol=1e-6)
-            or not np.isclose(np.linalg.det(t0[:3,:3]),1.)):
-        raise ValueError('T0 must be a finite rigid camera-to-world matrix')
+    t0 = camera_pose(config['matrix_world'], require_fixed=True)
     obj = bpy.data.objects.new('BenchmarkCamera',cam)
     scene.collection.objects.link(obj)
     obj.matrix_world = Matrix(t0.tolist())
@@ -167,8 +163,10 @@ def main():
                      for i,o in enumerate(scene.objects) if o.type in {'MESH','CURVE'}]
     if any(not re.fullmatch(r'[A-Za-z0-9_.-]+',r['unit_id']) or r['unit_id'] in {'.','..'} for r in mappings):
         raise ValueError('Unsafe geometry unit ID')
+    camera_pose(scene.camera.matrix_world, require_fixed=True)
     export(scene,metadata(scene),{'mappings':mappings},out,[],image_size=tuple(config['resolution']),include_normals=True)
     exported=json.loads((out/'export_metadata.json').read_text())
+    camera_pose(exported['camera']['matrix_world'], require_fixed=True)
     exported.update(fixed_T0=config['matrix_world'],ortho_scale=scene.camera.data.ortho_scale,
                     fixed_extrinsics_enforced=True,color_management=metadata(scene)['color_management'],
                     component_identity_is_semantics=False)

@@ -1,0 +1,40 @@
+{
+  "image_size": [
+    128,
+    96
+  ],
+  "reviewed": false,
+  "source": "synthetic_oracle: exact programmed supports, no human review",
+  "regions": [
+    {
+      "id": "R1",
+      "bbox": [
+        16,
+        18,
+        70,
+        76
+      ],
+      "metrics": [
+        "appearance",
+        "perceptual"
+      ],
+      "reviewed": false,
+      "reliability": 0.0
+    },
+    {
+      "id": "R2",
+      "bbox": [
+        72,
+        24,
+        118,
+        72
+      ],
+      "metrics": [
+        "appearance",
+        "perceptual"
+      ],
+      "reviewed": false,
+      "reliability": 0.0
+    }
+  ]
+}

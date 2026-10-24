@@ -1,0 +1,83 @@
+{
+  "suites": [
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_benchmark*.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.5506677399389446,
+      "stdout": "{\n  \"report\": \"/tmp/tmp7bhf2md0/out/report.json\",\n  \"camera_protocol\": \"pose_consistent_unverified\",\n  \"formal_eligible\": false,\n  \"usage\": \"provisional/debug\"\n}\n",
+      "stderr": "................................................................\n----------------------------------------------------------------------\nRan 64 tests in 2.105s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    },
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_real_render.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.508367442060262,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.025s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    },
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_structural*.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.509359538089484,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.001s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    },
+    {
+      "command": [
+        "/home/xymo/environments/relateanything-inference/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_kitchen_structural_transfer.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.500137299997732,
+      "stdout": "",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n",
+      "models_executed": false,
+      "blender_executed": false
+    }
+  ],
+  "passed": true,
+  "invocation_correction": "Initial unittest tests.test_benchmark invocation could not import tests as a package; corrected to unittest discover. Baseline 47 tests then passed.",
+  "synthetic_tests_are_not_visual_verifier_validation": true
+}

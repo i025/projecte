@@ -1,8 +1,10 @@
 # Project e 实验索引
 
-整理日期：2026-10-24（Asia/Shanghai）。公开版本以 GitHub 提交记录及交付时的实际 Commit SHA 为准，不以整理日期替代版本依据。
+整理日期：2026-10-25（Asia/Shanghai）。公开版本以 GitHub 提交记录及交付时的实际 Commit SHA 为准，不以整理日期替代版本依据。
 
 最近的重要实验见 [LATEST.md](LATEST.md)，缺失图像、历史链接和精简说明见 [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md)。
+
+审核分支 `feat/offline-integration-mvp`：[Offline Integration MVP](offline_integration_mvp/summary.md) 与[发布审查](offline_integration_mvp/release_review/report.md)（2026-10-25）。一个 Synthetic 与一个 bw_0073 历史配对完成统一 Manifest 回放；本轮完整 CPU 单元测试 319 项通过，其中集成专用 19 项，原实验 89 项记录保留。[最终 JSON](offline_integration_mvp/bw0073_checked/report.json)、[协议检查](offline_integration_mvp/bw0073_checked/integration_checks.json)、[自制 Synthetic PNG](offline_integration_mvp/synthetic_control/comparison.png) 纳入审核；真实图/衍生 Mask 等[继续排除](offline_integration_mvp/PUBLICATION.md)。未审核 Group/结构只作诊断，历史相机无正式成绩资格；不合并 main，原始结果中的未发布声明是创建时快照。
 
 这是已有实验的公开阅读入口，不是新实验或正式排行榜。原始 `reviewed`、`provisional/debug`、Unknown/N/A、真实失败和未解决问题保持原样。目录名不改，历史结果不回写。
 

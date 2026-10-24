@@ -1,0 +1,22 @@
+{
+  "base_commit": "2671c129ab66260f6658faf0f741137119836089",
+  "actual_pair_available": true,
+  "reference_native_size": [
+    7952,
+    4333
+  ],
+  "working_reference_size": [
+    1536,
+    837
+  ],
+  "render_native_size": [
+    1672,
+    941
+  ],
+  "camera_protocol": "historical_camera",
+  "reference_roi_frozen": true,
+  "api_calls": 0,
+  "model_inferences": 0,
+  "blender_runs": 0,
+  "reviewed": false
+}

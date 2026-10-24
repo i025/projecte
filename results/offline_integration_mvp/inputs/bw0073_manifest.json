@@ -1,0 +1,60 @@
+{
+  "reference_rgb": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/reference.png",
+  "render_rgb": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+  "reference_evidence": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/evidence.json",
+  "render_metadata": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/camera_parameters.json",
+  "evidence_category": "historical_diagnostic",
+  "diagnostics": {
+    "groups": "bw0073_groups.json",
+    "structural_layout": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/kitchen_structural_transfer_bw0073/structural_evidence.json"
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "uniform_fit",
+    "basis": "Reuse original bw_0073 full-frame thumbnail grid and frozen geometry-only fit; no alignment or crop search",
+    "expected_transform": {
+      "original_size": [
+        1672,
+        941
+      ],
+      "common_size": [
+        1536,
+        837
+      ],
+      "nominal_scale": 0.8894792773645058,
+      "resized_size": [
+        1487,
+        837
+      ],
+      "offset_xy": [
+        24,
+        0
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    }
+  },
+  "camera_comparability": {
+    "protocol": "historical_camera",
+    "reference_camera": "unknown",
+    "camera_alignment_confirmed": false,
+    "render_blend_sync": "unknown; no new Blender read/render"
+  },
+  "provenance": {
+    "task_id": "bw_0073",
+    "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+    "pair_audit_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_first_real_render_bw0073/pair_audit.json",
+    "native_reference": "/srv/lab-disks/disk2/users/xymo/projects/BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+    "native_reference_size": [
+      7952,
+      4333
+    ],
+    "reference_thumbnail_verified": true,
+    "actual_agent_reference_bytes_equal": true,
+    "run_input_mapping_rechecked": true,
+    "artifact_mapping_rechecked": true,
+    "frozen_polygon_masks_equal_existing_real_render_masks": true,
+    "reviewed": false
+  }
+}

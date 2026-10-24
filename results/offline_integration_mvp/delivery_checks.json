@@ -1,0 +1,28 @@
+{
+  "new_document_links_exist": true,
+  "nonfinite_json": false,
+  "new_html_files": 0,
+  "tests_by_suite": [
+    65,
+    7,
+    13,
+    4
+  ],
+  "total_tests": 89,
+  "new_files_scanned_for_key_private_key_patterns": true,
+  "credential_pattern_findings": [],
+  "git_HEAD": "2671c129ab66260f6658faf0f741137119836089",
+  "git_index_unchanged": true,
+  "committed": false,
+  "pushed": false,
+  "experiment_files_before_this_check": 28,
+  "experiment_bytes_before_this_check": 4134831,
+  "original_historical_results_modified": false,
+  "original_history_check_basis": "git diff only contains intended source/docs/index paths; all existing experiment inputs only read",
+  "historical_blenderworld_inputs_modified": false,
+  "models_or_api_executed": 0,
+  "figure_redistribution": "Real images and derivatives remain local; no redistribution clearance asserted",
+  "final_real_replay": "bw0073_checked",
+  "earlier_debug_replay_preserved": "bw0073",
+  "reviewed": false
+}

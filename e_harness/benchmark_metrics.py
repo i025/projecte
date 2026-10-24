@@ -242,15 +242,24 @@ def match_anchors(reference, rendered, shape, *, reference_complete=False):
         verdict_records=verdicts, tp=tp, fn=fn, fp=fp)
 
 
-def compare(a, b, reference, rendered=None, *, extract=None, vlm=None):
+def compare(a, b, reference, rendered=None, *, extract=None, vlm=None,
+            valid_mask=None, withhold_region_overlaps=False):
     if a.shape != b.shape or a.ndim != 3 or a.shape[2] != 3:
         raise ValueError('Reference and render must share the same HxWx3 RGB grid; no image alignment/warping')
     rows, diagnostics = [], []
     shape = a.shape[:2]
+    support = np.ones(shape, bool) if valid_mask is None else np.asarray(valid_mask)
+    if support.shape != shape or support.dtype != bool:
+        raise ValueError('Valid pixel support must be a boolean mask on the shared RGB grid')
+    # Existing gradients use the right/down neighbour. A valid centre alone is
+    # insufficient at a padding/alpha boundary; the entire stencil must be valid.
+    safe = support.copy()
+    safe[:, :-1] &= support[:, 1:]
+    safe[:-1, :] &= support[1:, :]
     # One set of energies, with a fixed level mixture. Global always retains weight.
     sections = [(dict(id='global', metrics=['appearance','perceptual'], reviewed=True,
-                     reliability=1.), np.ones(shape), 'global')]
-    masks = [area_mask(r, shape) * (1-reference['anchor_exclusion']) for r in reference['regions']]
+                     reliability=1.), safe.astype(float), 'global')]
+    masks = [area_mask(r, shape) * (1-reference['anchor_exclusion']) * safe for r in reference['regions']]
     multiplicity = np.maximum(1, np.sum([m for r, m in zip(reference['regions'], masks) if reliability(r)], axis=0)) if masks else np.ones(shape)
     sections += [(r, m/multiplicity, 'region') for r, m in zip(reference['regions'], masks)]
     for item, mask, level in sections:
@@ -320,9 +329,9 @@ def compare(a, b, reference, rendered=None, *, extract=None, vlm=None):
             other = next((r for r in (rendered or {}).get('regions', []) if r['id']==key and reliability(r)), None)
             layout = None
             if other is not None:
-                observed_mask = area_mask(other, shape) * (1-reference['anchor_exclusion'])
-                layout = float(np.abs(coarse(area_mask(item,shape)*(1-reference['anchor_exclusion']),np.ones(shape),8)-
-                                      coarse(observed_mask,np.ones(shape),8)).mean())
+                observed_mask = area_mask(other, shape) * (1-reference['anchor_exclusion']) * safe
+                layout = float(np.abs(coarse(area_mask(item,shape)*(1-reference['anchor_exclusion'])*safe,safe,8)-
+                                      coarse(observed_mask,safe,8)).mean())
             rows.append(record('spatial','region',key+':occupancy',layout,q,
                                None if layout is not None else 'Reviewed rendered region occupancy unavailable',
                                method='Fixed-grid soft-mask occupancy error'))
@@ -365,12 +374,14 @@ def compare(a, b, reference, rendered=None, *, extract=None, vlm=None):
             continue
         # Anchor image evidence stays at reference coordinates; a relocated lookalike
         # cannot erase position errors. Region pixels already exclude this Anchor.
-        anchor_mask = area_mask(ref if ref.get('mask_reviewed') is True else {'bbox':ref['bbox']}, shape)
-        errors, _ = numerical_errors(a,b,anchor_mask)
-        rows.append(record('appearance','anchor',ref['id'],errors['appearance'],reliability(ref),
+        anchor_mask = area_mask(ref if ref.get('mask_reviewed') is True else {'bbox':ref['bbox']}, shape) * safe
+        usable = anchor_mask.sum() > 0 and (valid_mask is None or anchor_mask.sum() >= POLICY['min_pixels'])
+        errors = numerical_errors(a,b,anchor_mask)[0] if usable else {}
+        rows.append(record('appearance','anchor',ref['id'],errors.get('appearance'),reliability(ref),
+                           None if usable else 'Insufficient valid Anchor pixels',
                            aggregation_weight=ref['importance'],
                            method='RGB L1 at reference Anchor coordinates'))
-        perceptual, reason = perceptual_error(a,b,anchor_mask,extract)
+        perceptual, reason = perceptual_error(a,b,anchor_mask,extract) if usable else (None, 'Insufficient valid Anchor pixels')
         rows.append(record('perceptual','anchor',ref['id'],perceptual,reliability(ref),reason,
                            aggregation_weight=ref['importance'],
                            method='DINO at reference Anchor coordinates'))
@@ -437,7 +448,29 @@ def compare(a, b, reference, rendered=None, *, extract=None, vlm=None):
         q = reliability(question)
         out = vlm_verify(question['question'], a, b, question.get('criteria',{}),vlm) if q else dict(score=None,reason='Unreviewed question')
         rows.append(record(energy,question.get('level','global'),question['id'],out['score'],q,out['reason'],method='VLM metric verification'))
-    return rows, dict(regions=diagnostics, anchor_matching=matches, extra_anchors=extras, inventory=inventory)
+    # Fractional per-pixel masks alone cannot deduplicate an average of separately
+    # normalized Region means. The offline guard keeps these measurements but
+    # withholds all overlapping named scopes from aggregation. No ROI is cut.
+    overlap_ids = set()
+    if withhold_region_overlaps:
+        for i, first in enumerate(reference['regions']):
+            if first.get('source') == 'deterministic RGB grid' or not reliability(first):
+                continue
+            for j, second in enumerate(reference['regions'][:i]):
+                if (second.get('source') != 'deterministic RGB grid' and reliability(second)
+                        and np.any((masks[i]>0)&(masks[j]>0))):
+                    overlap_ids.update((first['id'], second['id']))
+        for row in rows:
+            if row['level']=='region' and any(row['id']==key or row['id'].startswith(key+':') for key in overlap_ids):
+                row.update(aggregation_eligible=False,
+                           aggregation_reason='Overlapping named Region: retained as diagnostic; local aggregation withheld')
+    if not support.all():
+        for row in rows:
+            if row['energy']=='semantic' or (row['level']=='anchor' and row['energy']=='spatial'):
+                row.update(value=None,status='unavailable',reason='Partial valid image support; semantic/relational verdict not revalidated')
+    return rows, dict(regions=diagnostics, anchor_matching=matches, extra_anchors=extras, inventory=inventory,
+        valid_pixels=int(support.sum()),measurement_pixels=int(safe.sum()),
+        overlap_aggregation_withheld=sorted(overlap_ids))
 
 
 def aggregate(rows):
@@ -445,7 +478,7 @@ def aggregate(rows):
     results = {}
     for k in ENERGIES:
         planned = [r for r in rows if r['energy']==k]
-        active = [r for r in planned if r['q']>0]
+        active = [r for r in planned if r['q']>0 and r.get('aggregation_eligible',True)]
         valid = [r for r in active if r['value'] is not None]
         levels = []
         participating = []
@@ -471,7 +504,8 @@ def aggregate(rows):
             eligible_coverage=len(valid)/len(active) if active else None,
             reason=None if valid else 'No usable evidence or required extractor unavailable',
             expected_metrics=[f"{r['level']}:{r['id']}" for r in planned],
-            unavailable_metrics=[f"{r['level']}:{r['id']}" for r in planned if r['q']<=0 or r['value'] is None],
+            unavailable_metrics=[f"{r['level']}:{r['id']}" for r in planned
+                                 if r['q']<=0 or r['value'] is None or not r.get('aggregation_eligible',True)],
             participating_metrics=[f"{r['level']}:{r['id']}" for r in valid],participating_records=participating)
     denominator = sum(r['aggregation_weight'] for r in results.values())
     for item in results.values():

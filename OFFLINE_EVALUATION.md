@@ -1,0 +1,151 @@
+# Offline Evaluation Integration MVP
+
+This entry evaluates existing images, using `build_reference()`, `compare()`,
+`aggregate()` and independent `structural_report()`. It does not run a model,
+VLM client, Agent or Blender. The five Energy definitions and policy weights
+are unchanged. The existing `evaluate`, `render`, `pilot` commands remain
+available; the new entry writes PNG/JSON/Markdown without HTML.
+
+```bash
+python3 -B -m e_harness.benchmark offline \
+  --manifest /absolute/path/manifest.json \
+  --output /absolute/path/new-output-directory
+```
+
+Use the existing compatible environment; no extra dependencies are introduced.
+The sibling `scene-benchmark` import dependency and dataset permissions described
+in [REPRODUCING.md](REPRODUCING.md) still apply. This MVP does not make a public
+checkout self-contained.
+
+Release review and public-file boundaries are recorded in
+[the release review](results/offline_integration_mvp/release_review/report.md)
+and [the publication subset](results/offline_integration_mvp/PUBLICATION.md).
+
+## Manifest
+
+Paths are relative to the manifest file, or absolute. Only the two RGB paths
+and explicit coordinates are required. Reference Evidence may be omitted for
+Global/Dense RGB diagnostics. If supplied, invalid Reference Evidence stops the
+run; missing/malformed optional evidence is recorded as unavailable.
+
+```json
+{
+  "reference_rgb": "reference.png",
+  "render_rgb": "saved_render.png",
+  "reference_evidence": "reference_evidence.json",
+  "render_evidence": null,
+  "geometry": null,
+  "triage": null,
+  "rules": null,
+  "render_metadata": "camera.json",
+  "diagnostics": {
+    "groups": "group_verification.json",
+    "structural_layout": "structural_evidence.json"
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Both images use the same documented full-frame pixel grid"
+  },
+  "camera_comparability": "unknown",
+  "evidence_category": "historical_diagnostic"
+}
+```
+
+- Coordinates are Reference pixel edges, top-left origin, x right and y down.
+  Evidence `image_size` and masks must already match the Reference input. The
+  adapter does not silently rescale Reference Evidence or re-detect any ROI.
+- `identity` requires equal image sizes. `uniform_fit` explicitly opts into the
+  existing `bw_0073` full-frame uniform resize with centered letterbox, integer
+  rounding and Lanczos RGB/alpha sampling. It is display-grid conversion, not
+  pose alignment or perspective correction. ROI remains fixed on the Reference.
+- A previous `coordinates.expected_transform` object can be supplied; each
+  recorded field must match the applied transform exactly, otherwise the run
+  fails. `basis` is an explicit provenance declaration, not proof of alignment.
+- Opaque alpha support from both images is intersected. An optional top-level
+  `valid_pixels` binary 0/255 PNG can further restrict support. Padding and
+  transparency never count as observation. Existing right/down gradient
+  stencils must also lie entirely on valid support. The stricter shared support
+  is recorded in the report; it does not change a metric's formula.
+- Partial support conservatively withholds Semantic and Anchor-level Spatial
+  verdicts that have not been revalidated for the partial image. They remain N/A.
+
+## Camera trust and execution
+
+`render_cpu()` and the trusted Blender camera constructor now reject even a legal
+rigid matrix when it differs from the prescribed T0. The renderer checks the
+actual camera pose before export and in the exported camera metadata.
+
+Static evaluation checks actual pose fields (`camera.matrix_world`, `T_c2w`,
+or `matrix_world`) numerically. `fixed_T0` is only a declaration and
+`fixed_extrinsics_enforced=true` is not execution evidence. A matching external
+pose remains `pose_consistent_unverified`; a different pose is
+`historical_camera`. **Every static manifest report is provisional/debug and
+`formal_eligible=false`**, including a numerically matching pose. No file-based
+authentication or attestation system is invented here.
+
+Before formal results can be issued, a trusted in-process render/evaluation
+execution must bind the actual camera, image and evidence. This task does not
+open the Runtime, rerender historical scenes or claim that binding exists.
+
+## Group, structure and overlap
+
+Group verification and Structural Layout JSON are attached verbatim under
+`report.diagnostics`. This is a diagnostic bridge, not a numerical adapter:
+yes/no/unknown and candidate mismatches never become arbitrary 0/1 Energy.
+Original review states are preserved. Group membership is not inferred from ROI.
+
+Unreviewed named ROI can still have a fixed-domain Appearance measurement under
+`diagnostics.fixed_region_measurements`. That measures RGB differences within a
+candidate domain, without approving its semantics or contributing its candidate
+measurement to Energy. Perceptual stays N/A because this entry never runs DINO.
+
+The existing fractional pixel support does not by itself deduplicate an average
+of normalized overlapping Region losses. In this entry, overlapping eligible
+(reviewed, positive-reliability) named Region records are retained but flagged `aggregation_eligible=false`; their
+local aggregate stays N/A. Their reliability is not altered. Other eligible
+Global/Dense or disjoint reviewed records retain the original aggregation rules
+and weights. Coverage records withheld measurements. No ROI is cropped to remove
+overlap, and no missing content is silently treated as correct. Reviewed named
+ROI continue to exclude their pixels from fallback Dense Patch as before; an
+overlap guard can therefore leave local gaps, which the report preserves rather
+than optimizing away. Global retains its original full valid support.
+Unreviewed/q=0 candidates cannot trigger this guard against an existing valid
+measurement. Their overlaps remain visible in diagnostic statistics.
+
+3D Structural Energy remains separate from image Structural Layout diagnostics.
+Unavailable geometry/triage/rules do not discard available image measurements.
+Unknown/N/A is serialized as JSON null, never zero. Spatial and Statistical
+image-edge/texture proxies keep their existing meanings; they do not certify
+object layout, density or geometry.
+
+## Outputs and tests
+
+Each new output directory contains `report.json`, `summary.md`,
+`comparison.png`, `integration_checks.json` and `valid_pixels.png`.
+The JSON retains every planned core metric, actual participating weights,
+coverage, sources, attached diagnostic evidence and camera limitations.
+
+```bash
+python3 -B -m unittest discover -s tests -p 'test_benchmark*.py'
+python3 -B -m unittest discover -s tests -p 'test_real_render.py'
+python3 -B -m unittest discover -s tests -p 'test_structural*.py'
+python3 -B -m unittest discover -s tests -p 'test_kitchen_structural_transfer.py'
+```
+
+These tests use deterministic pixels/Oracle evidence and existing JSON only;
+they do not establish real visual-verifier quality or Blender runtime safety.
+The new integration experiment is in
+[`results/offline_integration_mvp/`](results/offline_integration_mvp/summary.md).
+Do not run `tests/run_tests.py` as a CPU-only check.
+
+The release review also ran the complete `tests/test_*.py` suite: 319 tests,
+including 19 integration-specific tests. All passed with real network and
+subprocess execution blocked. The three existing first-party source snapshots
+needed by legacy freeze tests are included as test inputs, without changing
+their bytes or bypassing their checks. `benchmark_evidence.py` remains identical
+to the baseline; shared `fit_render` lives in `benchmark_offline.py` and remains
+importable through the historical `scripts.region_real_render` binding.
+The new keyword arguments default to legacy behavior; camera validation is
+deliberately stricter. The release fix also treats wrong-shaped optional Render
+Evidence JSON as unavailable instead of discarding RGB measurements.

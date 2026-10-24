@@ -1,0 +1,327 @@
+{
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "energy_contribution": false,
+  "reference_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_level_evidence_pilot/reference_groups_frozen.json",
+  "reference_groups": [
+    {
+      "scene_id": "bw_0073",
+      "image_size": [
+        1536,
+        837
+      ],
+      "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+      "region_plan_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+      "region_id": "R2",
+      "region_name": "中央岛台区",
+      "roi_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+      "regions": [
+        {
+          "id": "R2",
+          "name": "中央岛台区",
+          "location": "画面中央及前景",
+          "content": "大理石岛台、四把高脚椅和上方的金色吊灯",
+          "reviewed": false,
+          "reliability": 0.0,
+          "mask": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/C_direct_polygon/R2.png",
+          "metrics": []
+        }
+      ],
+      "anchors": [],
+      "semantic_groups": [
+        {
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "name": "岛台近侧高脚椅集合",
+          "scope": "Reference中岛台近侧可见的有靠背高脚椅，作为整体集合；不推测被遮挡或画外成员。",
+          "evidence": [
+            "bw_0073_R2_chairs_frame",
+            "bw_0073_R2_chairs_below_counter",
+            "bw_0073_R2_chairs_one_row"
+          ],
+          "provenance": {
+            "source_type": "human_seeded_provisional",
+            "method": "assistant_reference_only_visual_draft",
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "region_plan": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/region_plan.json",
+            "render_used": false
+          },
+          "reviewed": false,
+          "reliability": 0.0,
+          "member_instance_ids": null,
+          "mask": null,
+          "localization_status": "candidate_unreviewed",
+          "uncertainty": "框内包含背景、空隙和椅间岛台；没有经审核Group Mask。",
+          "candidate_bbox": [
+            513,
+            476,
+            1044,
+            716
+          ],
+          "candidate_bbox_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/atomic_evidence_discriminability_bw0073/reference_evidence_frozen.json#/atomic_evidence/R2_STA_01",
+          "candidate_bbox_role": "Frozen Reference support only, not reliable group localization or density support"
+        }
+      ],
+      "optional_anchors": [
+        {
+          "id": "bw_0073_R2_island",
+          "region_id": "R2",
+          "name": "岛台主体",
+          "category": "island",
+          "bbox": [
+            520,
+            410,
+            1040,
+            650
+          ],
+          "importance": 1.0,
+          "reviewed": false,
+          "reliability": 0.0,
+          "mask": null,
+          "role": "on-demand relation endpoint only; no independent presence or image-loss score",
+          "extent_definition": "visible countertop and visible island cabinet body; exclude chairs and decor; do not complete occlusion",
+          "source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/spatial_minimal_validation_bw0073_checked/reference_object_candidates.json#/conditional_debug_objects/island",
+          "uncertainty": "Assistant draft; occluded cabinet, bbox includes chairs/background; not visible-object area."
+        }
+      ],
+      "atomic_evidence": [
+        {
+          "id": "bw_0073_R2_chairs_frame",
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "type": "semantic",
+          "claim": "集合中座椅可见支撑框架主要由细长杆件构成。",
+          "question": "这些座椅的可见支撑框架是否主要由细长杆件构成？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0073_R2_chairs_frame",
+          "owner_id": "bw_0073_R2_chairs",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "frozen_reference_evidence_ids": [
+              "R2_STA_01"
+            ],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Candidate visual fact; no independent human review or real verifier response.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0073_R2_chairs_below_counter",
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "type": "spatial",
+          "claim": "可见椅背位于岛台台面下方。",
+          "question": "从当前图像上下方向看，这组座椅的椅背是否位于岛台台面下方？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+          "owner_id": "bw_0073_R2_chairs",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "frozen_reference_evidence_ids": [
+              "R2_SPA_02"
+            ],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [
+            "bw_0073_R2_island"
+          ],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Discrete projected relation only; no world-coordinate depth or continuous offset is inferred.",
+          "verification_mode": "atomic_vqa"
+        },
+        {
+          "id": "bw_0073_R2_chairs_one_row",
+          "group_id": "bw_0073_R2_chairs",
+          "region_id": "R2",
+          "type": "statistical",
+          "claim": "可见座椅沿岛台近侧形成从左至右的一排。",
+          "question": "可见座椅是否沿岛台近侧形成从左至右的一排？",
+          "expected": true,
+          "answer_type": "boolean",
+          "status": "candidate",
+          "requires": [],
+          "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+          "owner_id": "bw_0073_R2_chairs",
+          "alias_of": null,
+          "source": "Reference-only assistant visual draft; candidate, not VLM extraction or human GT",
+          "source_type": "human_seeded_provisional",
+          "provenance": {
+            "reference_image": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/vlm_direct_grounding_bw0073/reference.png",
+            "frozen_reference_evidence_ids": [
+              "R2_SPA_02"
+            ],
+            "render_used": false
+          },
+          "scope": "Visible group within Reference functional region; full-image context allowed; image x right/y down",
+          "anchor_refs": [],
+          "reviewed": false,
+          "reliability": 0.0,
+          "uncertainty": "Qualitative arrangement proposition, not density, exact spacing, count or calibrated numeric error.",
+          "verification_mode": "qualitative_vqa"
+        }
+      ],
+      "reviewed": false,
+      "inventory_complete": false,
+      "source_type": "human_seeded_provisional",
+      "provenance": {
+        "source": "assistant_reference_only_visual_draft",
+        "render_used": false,
+        "independent_inspector_reference_only": true,
+        "model_extraction": false,
+        "human_ground_truth": false,
+        "root_prior_render_knowledge_disclosed": true,
+        "strict_blind_test": false,
+        "reference_plan_validated_region_id": "R2",
+        "continuous_spatial_and_group_area_available": false
+      }
+    }
+  ],
+  "group_verification_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/group_level_evidence_pilot/verification_results.json",
+  "group_verification": [
+    {
+      "id": "bw_0073_R2_chairs_frame",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null,
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_frame",
+      "scene_id": "bw_0073",
+      "value": null,
+      "q": 0.0,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "bw_0073_R2_chairs_below_counter",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null,
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_below_counter",
+      "scene_id": "bw_0073",
+      "value": null,
+      "q": 0.0,
+      "usage": "provisional/debug"
+    },
+    {
+      "id": "bw_0073_R2_chairs_one_row",
+      "region_id": "R2",
+      "status": "unavailable",
+      "observed": null,
+      "finding": "none",
+      "reason": "No reusable real atomic verification response; no authorized verifier configured",
+      "source_kind": "unavailable",
+      "reviewed": false,
+      "scorable": false,
+      "score": null,
+      "group_id": "bw_0073_R2_chairs",
+      "canonical_fact_id": "bw_0073_R2_chairs_one_row",
+      "scene_id": "bw_0073",
+      "value": null,
+      "q": 0.0,
+      "usage": "provisional/debug"
+    }
+  ],
+  "historical_atomic_source": "/srv/lab-disks/disk2/users/xymo/projects/e-harness/results/region_atomic_vlm_r2_bw0073/verification_results.json",
+  "historical_atomic": {
+    "results": [
+      {
+        "id": "q1",
+        "region_id": "R2",
+        "energy": "semantic",
+        "question": "画面中是否存在中央厨房岛台？",
+        "reference_answer": "yes",
+        "render_answer": "yes",
+        "status": "satisfied",
+        "reason": "Known answers agree; agreement does not establish correctness or GT",
+        "raw_answer_changed": false,
+        "level": "region",
+        "value": null,
+        "aggregation_weight": 1.0,
+        "score": null,
+        "q": 0.0,
+        "reviewed": false,
+        "scorable": false,
+        "usage": "provisional/debug"
+      },
+      {
+        "id": "q2",
+        "region_id": "R2",
+        "energy": "statistical",
+        "question": "岛台靠近相机的一侧，可见几把高脚椅？",
+        "reference_answer": 4,
+        "render_answer": 4,
+        "status": "satisfied",
+        "reason": "Known answers agree; agreement does not establish correctness or GT",
+        "raw_answer_changed": false,
+        "level": "region",
+        "value": null,
+        "aggregation_weight": 1.0,
+        "score": null,
+        "q": 0.0,
+        "reviewed": false,
+        "scorable": false,
+        "usage": "provisional/debug"
+      },
+      {
+        "id": "q3",
+        "region_id": "R2",
+        "energy": "spatial",
+        "question": "如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？",
+        "reference_answer": "yes",
+        "render_answer": "yes",
+        "status": "satisfied",
+        "reason": "Known answers agree; agreement does not establish correctness or GT",
+        "raw_answer_changed": false,
+        "level": "region",
+        "value": null,
+        "aggregation_weight": 1.0,
+        "score": null,
+        "q": 0.0,
+        "reviewed": false,
+        "scorable": false,
+        "usage": "provisional/debug"
+      }
+    ],
+    "source": "independent real VLM answers + deterministic comparison",
+    "reference_answers_are_gt": false,
+    "mock_results_used": false,
+    "formal_energy": {
+      "semantic": null,
+      "spatial": null,
+      "statistical": null
+    },
+    "observation_energy": null,
+    "reviewed": false,
+    "usage": "provisional/debug"
+  }
+}
