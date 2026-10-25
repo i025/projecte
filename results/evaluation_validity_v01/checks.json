@@ -1,0 +1,60 @@
+{
+  "baseline_commit": "77d9ec422cb240bb6c092bd2b56b2078efa4698b",
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "new_model_calls": 0,
+  "new_blender_executions": 0,
+  "cpu_tests": {
+    "status": "passed",
+    "tests_run": 469,
+    "new_audit_tests": 17,
+    "elapsed_seconds": 16.891,
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONPATH=<existing-isolated-jsonschema> python3 -B -m unittest discover -s tests",
+    "scope": "CPU contracts and Synthetic Oracle interface tests, not independent human or visual validation",
+    "skipped": [
+      "Blender execution",
+      "GPU",
+      "VLM/Codex inference",
+      "SAM/SLIC/DINO inference",
+      "historical Agent execution"
+    ]
+  },
+  "frozen_preservation": {
+    "files_checked": 286,
+    "size_and_mtime_unchanged": true,
+    "note": "No digest/signature protocol; read-only preparation, frozen contracts additionally cross-checked against paired results"
+  },
+  "audit": {
+    "pair_count": 13,
+    "unique_reference_claims": 80,
+    "paired_comparisons": 107,
+    "priority_count": 42,
+    "blank_human_labels": true,
+    "all_validity_rates_pending": true,
+    "private_pngs_verified": 180,
+    "stage1_excludes_questions_answers_statuses": true,
+    "stage1_full_first_then_fixed_scopes": true,
+    "blind_isolation": "Coordinator distribution only; no technical guarantee or claimed completed blind review"
+  },
+  "structural": {
+    "blends_exist": 13,
+    "blends_opened": 0,
+    "evaluated_collision_support_rank_caches": 0,
+    "existing_graph_count": 1,
+    "geometry_status": "unavailable",
+    "energy": null,
+    "extra_export_json_check": "Top-level JSON in 13 matched export directories inspected read-only: only three camera_parameters.json files, no evaluated structural cache; unrelated synthetic caches cannot be substituted"
+  },
+  "publication": {
+    "status": "reviewed_for_curated_publication",
+    "public_file_count": 12,
+    "secret_scan_findings": [],
+    "private_images_withheld": true,
+    "private_source_key_withheld": true,
+    "reason": "Third-party RGB/Render/crop redistribution rights unconfirmed; no human identity or filled annotation files are published",
+    "historical_result_files_modified": false,
+    "energy_formulas_and_weights_modified": false,
+    "runtime_gates_modified": false
+  },
+  "new_dataset_metric_evaluations": 0
+}

@@ -4,6 +4,10 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+## Evaluation Validity v0.1：两阶段人工审核准备（2026-10-25）
+
+[审核说明](evaluation_validity_v01/audit_packet.md) · [总结](evaluation_validity_v01/summary.md) · [107条空白证据审核模板](evaluation_validity_v01/human_review_template.csv) · [盲审差异模板](evaluation_validity_v01/blind_difference_template.csv) · [协议分层](evaluation_validity_v01/protocol_strata.csv) · [有效性待审与几何库存](evaluation_validity_v01/evidence_validity.json) · [指标适用范围](evaluation_validity_v01/metric_coverage.md) · [CPU及公开检查](evaluation_validity_v01/checks.json)。复用13组/107条冻结判断，0次新模型或Blender执行；首批42条（13候选差异、3Unknown、26条分层Satisfied）。73张第一阶段全图/局部PNG、107张第二阶段问答PNG仅在服务器私有目录。3组RGB+通用协议与10组场景文字、9完整与4不完整检查点分层；12条已记录Agent链、10任务，不混合排名。469项CPU测试通过，新增17项。人类标签全部空白，正确性、确认率、漏检和重复物理问题仍pending；没有正式成绩。现有审核接口可接Region/Anchor及Structural规则，Group VQA仍只作诊断；所有13组Structural继续N/A。不修改原问题/回答、Energy/权重或Runtime blocked，不冒充独立人工审核。
+
 
 ## Existing-Scene 真实批量评价（2026-10-25；审核分支）
 

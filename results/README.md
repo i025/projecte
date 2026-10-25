@@ -4,6 +4,8 @@
 
 最近的重要实验见 [LATEST.md](LATEST.md)，缺失图像、历史链接和精简说明见 [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md)。
 
+最新有效性审查准备：[Evaluation Validity v0.1](evaluation_validity_v01/summary.md)（2026-10-25），[两阶段审核说明](evaluation_validity_v01/audit_packet.md)、[107条待填证据表](evaluation_validity_v01/human_review_template.csv)、[盲审表](evaluation_validity_v01/blind_difference_template.csv)、[分层CSV](evaluation_validity_v01/protocol_strata.csv)、[有效性待审/Geometry库存](evaluation_validity_v01/evidence_validity.json)、[指标适用范围](evaluation_validity_v01/metric_coverage.md)、[检查](evaluation_validity_v01/checks.json)。13组冻结批次仅离线整理，首批42条人工审核优先项；180张第三方图像审核PNG仅在服务器私有目录。469项CPU测试通过，新增17项；无新模型/Blender/指标推理。所有人类结论pending，3组通用RGB与10组场景文字、9完整与4检查点、12运行链分开，不排名、不把重复检查点视作独立样本。Group VQA不直接进入Energy，Structural无可靠绑定几何继续N/A，不改历史结果/权重/Runtime blocked。
+
 最新真实批次：[Existing-Scene Batch](existing_scene_batch_20261025/findings.md)（2026-10-25），[汇总](existing_scene_batch_20261025/summary.md)、[13组逐配对CSV](existing_scene_batch_20261025/per_pair_results.csv)、[真实VQA和指标汇总](existing_scene_batch_20261025/report.json)、[人工审核](existing_scene_batch_20261025/evidence_audit.md)、[检查](existing_scene_batch_20261025/integration_checks.json)。33次实际Codex CLI调用、224次CPU DINO前向，13/13已有配对完成；9完整+4不完整分别保留。107条判断中13候选差异、3Unknown；不当作检出准确率。四类图像条件测量有值，Semantic/Structural N/A，正式成绩0。452项CPU回归通过。第三方所有RGB/PNG/Mask不公开；未审核证据和历史相机均provisional，不改Energy/权重/Runtime blocked、不运行新Agent或Blender。
 
 最新协议修订：[Existing-Scene VLM evidence v1](existing_scene_protocol_v1/report.md)（2026-10-25），[协议文档](../EVIDENCE_PROTOCOL.md)、[规划契约](existing_scene_protocol_v1/planning_protocol.json)、[CPU检查](existing_scene_protocol_v1/checks.json)。436项CPU测试通过、24项新协议测试；0次模型调用。新版本支持可配置证据预算和类别题，明确未知/弃权及逐回答审计；历史契约和原始回答保留，新Batch显式选择版本。未审核VLM仅诊断，不改五类Energy或Runtime blocked，不宣称模型效果提升。

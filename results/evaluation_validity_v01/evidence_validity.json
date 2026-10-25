@@ -1,0 +1,410 @@
+{
+  "baseline_commit": "77d9ec422cb240bb6c092bd2b56b2078efa4698b",
+  "frozen_batch": "existing_scene_batch_20261025",
+  "pair_count": 13,
+  "unique_references": 10,
+  "paired_comparisons": 107,
+  "unique_reference_evidence": 80,
+  "frozen_status_counts": {
+    "candidate_violated": 13,
+    "satisfied": 91,
+    "unknown": 3
+  },
+  "priority_review_count": 42,
+  "priority_status_counts": {
+    "candidate_violated": 13,
+    "satisfied": 26,
+    "unknown": 3
+  },
+  "satisfied_sampling": "First saved item per task x energy cell, plus each pair; deterministic coverage sample, not random or prevalence representative",
+  "human_review": {
+    "status": "pending",
+    "completed_reviews": 0,
+    "metrics": {
+      "reference_evidence_validity": {
+        "status": "pending",
+        "unit": "unique task_id / evidence_id",
+        "numerator": 0,
+        "adjudicated_denominator": 0,
+        "population_items": 80,
+        "unreviewed_items": 80,
+        "uncertain_items": 0,
+        "conflicting_items": 0,
+        "value": null
+      },
+      "reference_vqa_correctness": {
+        "status": "pending",
+        "unit": "unique task_id / evidence_id",
+        "numerator": 0,
+        "adjudicated_denominator": 0,
+        "population_items": 80,
+        "unreviewed_items": 80,
+        "uncertain_items": 0,
+        "conflicting_items": 0,
+        "value": null
+      },
+      "render_vqa_correctness": {
+        "status": "pending",
+        "numerator": 0,
+        "adjudicated_denominator": 0,
+        "population_items": 107,
+        "unreviewed_items": 107,
+        "uncertain_items": 0,
+        "value": null
+      },
+      "candidate_confirmation": {
+        "status": "pending",
+        "numerator": 0,
+        "adjudicated_denominator": 0,
+        "population_items": 13,
+        "unreviewed_items": 13,
+        "uncertain_items": 0,
+        "value": null
+      },
+      "satisfied_false_negative": {
+        "status": "pending",
+        "numerator": 0,
+        "adjudicated_denominator": 0,
+        "population_items": 91,
+        "unreviewed_items": 91,
+        "uncertain_items": 0,
+        "value": null
+      },
+      "abstention_appropriateness": {
+        "status": "pending",
+        "numerator": 0,
+        "adjudicated_denominator": 0,
+        "population_items": 3,
+        "unreviewed_items": 3,
+        "uncertain_items": 0,
+        "value": null
+      }
+    },
+    "reference_unit": "unique task/evidence IDs; Render judgments remain pair-specific and clustered",
+    "blind_uncovered_differences": {
+      "status": "pending",
+      "value": null,
+      "reason": "Requires frozen blind free-text differences and separate human coverage linking; no automatic recall"
+    },
+    "duplicate_associations": [],
+    "energy_contribution": false,
+    "human_independence": "Must be established by coordinator, not inferred by this program"
+  },
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "formal_eligible": false,
+  "new_model_calls": 0,
+  "image_preparation": {
+    "blind_pngs": 73,
+    "evidence_pngs": 107,
+    "model_calls": 0,
+    "blender_executions": 0
+  },
+  "input_strata": {
+    "rgb_generic_protocol": 3,
+    "rgb_scene_specific_text": 10
+  },
+  "completion_strata": {
+    "completed": 9,
+    "incomplete_checkpoint": 4
+  },
+  "recorded_agent_lineages": 12,
+  "geometry_inventory": [
+    {
+      "pair_id": "bw_0073__task__bA358eg",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0074__bw_0074__KcPDLD8",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": 900,
+      "graph_matches_blend": true,
+      "group_id_cache_available": true,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0006__bw_0006__gfHGhky",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0009__bw_0009__X9GcF9r",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0043__bw_0043__p7isE6U",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0063__bw_0063__Lj7uE6T",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0070__bw_0070__ofnJd6D",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0073__task__Dpf9tyA",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0073__task__qtzUWks",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0073__task__PiTqWFN",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0075__bw_0075__nVjEut5",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_0094__task__Uwpj6BC",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    },
+    {
+      "pair_id": "bw_9064__task__LY4dtPw",
+      "blend_exists": true,
+      "blend_opened": false,
+      "geometry_status": "unavailable",
+      "geometry_reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed",
+      "collision_records": 0,
+      "support_object_records": 0,
+      "evaluated_component_records": 0,
+      "scene_graph_objects": null,
+      "graph_matches_blend": null,
+      "group_id_cache_available": false,
+      "safe_current_collision_contact_rank_extraction": false,
+      "structural_energy": null,
+      "reason": "Names, base-mesh bounds and sampled Group-ID support do not establish contact, penetration or complete evaluated affine rank"
+    }
+  ],
+  "frozen_metric_coverage": {
+    "semantic": {
+      "measured_pairs": 0,
+      "selected_pairs": 13,
+      "fraction": 0.0,
+      "formal_scored_pairs": 0,
+      "interpretation": "Reviewed evidence required",
+      "valid_metric_records": 0,
+      "planned_metric_records": 17,
+      "metric_record_coverage": 0.0
+    },
+    "spatial": {
+      "measured_pairs": 13,
+      "selected_pairs": 13,
+      "fraction": 1.0,
+      "formal_scored_pairs": 0,
+      "interpretation": "Texture/edge proxy, not semantic layout/density",
+      "valid_metric_records": 52,
+      "planned_metric_records": 116,
+      "metric_record_coverage": 0.4482758620689655
+    },
+    "appearance": {
+      "measured_pairs": 13,
+      "selected_pairs": 13,
+      "fraction": 1.0,
+      "formal_scored_pairs": 0,
+      "interpretation": "Conditional image measure",
+      "valid_metric_records": 65,
+      "planned_metric_records": 129,
+      "metric_record_coverage": 0.5038759689922481
+    },
+    "statistical": {
+      "measured_pairs": 13,
+      "selected_pairs": 13,
+      "fraction": 1.0,
+      "formal_scored_pairs": 0,
+      "interpretation": "Texture/edge proxy, not semantic layout/density",
+      "valid_metric_records": 104,
+      "planned_metric_records": 198,
+      "metric_record_coverage": 0.5252525252525253
+    },
+    "perceptual": {
+      "measured_pairs": 13,
+      "selected_pairs": 13,
+      "fraction": 1.0,
+      "formal_scored_pairs": 0,
+      "interpretation": "Conditional image measure",
+      "valid_metric_records": 65,
+      "planned_metric_records": 129,
+      "metric_record_coverage": 0.5038759689922481
+    },
+    "structural": {
+      "measured_pairs": 0,
+      "selected_pairs": 13,
+      "fraction": 0.0,
+      "formal_scored_pairs": 0,
+      "interpretation": "Reviewed evidence required"
+    }
+  },
+  "diagnostic_duplicate_links_status": "pending human issue IDs; no claims merged, no penalties added",
+  "duplicate_review_candidates": [
+    {
+      "pair_id": "bw_0006__bw_0006__gfHGhky",
+      "scope_type": "group_id",
+      "scope_id": "g1",
+      "evidence_ids": [
+        "e7",
+        "e8"
+      ],
+      "status": "shared_scope_requires_human_check",
+      "reviewed": false,
+      "same_underlying_difference": null,
+      "energy_contribution": false
+    },
+    {
+      "pair_id": "bw_0094__task__Uwpj6BC",
+      "scope_type": "group_id",
+      "scope_id": "g1",
+      "evidence_ids": [
+        "e4",
+        "e5"
+      ],
+      "status": "shared_scope_requires_human_check",
+      "reviewed": false,
+      "same_underlying_difference": null,
+      "energy_contribution": false
+    }
+  ]
+}
