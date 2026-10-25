@@ -4,6 +4,12 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+## M3.0 Real-Agent Offline Pilot（2026-10-25；审核分支，未合并 main）
+
+| 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
+| --- | --- | --- | --- | --- |
+| bw_0073 厨房 + bw_0074 陈列书柜 | 两组来源/坐标重查并运行Offline；厨房粗问答一致但K3外立面候选不同；书籍mixed→upright保留，唱片类别另问为Unknown，隔板差异仅条件几何支持。395项CPU测试通过，新增9项，0次新VLM/Agent/Blender。 | 本机对照PNG/Mask不公开：第三方Reference/Render及衍生图再分发许可未确认。 | [总结](m3_real_agent_offline_pilot/summary.md) · [人工审核表](m3_real_agent_offline_pilot/evidence_audit.md) · [历史真实回答Replay](m3_real_agent_offline_pilot/verification_results.json) · [完整报告](m3_real_agent_offline_pilot/report.json) · [检查](m3_real_agent_offline_pilot/integration_checks.json) | reviewed=false、provisional/debug；历史相机不合规，Reference相机及PNG/blend同步未知。Semantic/Perceptual/独立Structural N/A；旧DINO仅缓存诊断，Continuous Spatial N/A。不宣称总体检出率；首次mask:null接入失败已保留，Runtime仍blocked。 |
+
 ## M2.1 Continuous Spatial Evidence（2026-10-25；审核分支，未合并 main）
 
 | 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |

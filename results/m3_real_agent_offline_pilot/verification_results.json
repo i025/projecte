@@ -1,0 +1,2796 @@
+{
+  "cases": {
+    "bw_0073": {
+      "primary": {
+        "reference": {
+          "backend": "replay",
+          "source_kind": "historical_real",
+          "model_requested": "openai/gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是视觉证据验证器。只根据当前图像回答给定问题。不要猜测不可见内容。无法可靠判断时回答 unknown。不要比较其他图像，不要评价整体重建质量。只输出 JSON。",
+            "user": "请根据图像回答以下三个问题：\n\nQ1：画面中是否存在中央厨房岛台？\n\nQ2：岛台靠近相机的一侧，可见几把高脚椅？\n\nQ3：如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？\n\n仅返回一个 JSON 对象，包含 q1、q2、q3 三个字段。\n\n- q1：yes、no 或 unknown\n- q2：非负整数或 unknown\n- q3：yes、no 或 unknown\n\n不要输出其他字段、解释或推理过程。",
+            "schema": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "q1",
+                "q2",
+                "q3"
+              ],
+              "properties": {
+                "q1": {
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "q2": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "const": "unknown"
+                    }
+                  ]
+                },
+                "q3": {
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "raw_answer": "{\"q1\":\"yes\",\"q2\":4,\"q3\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "q1": {
+                "value": "yes",
+                "validation_status": "valid"
+              },
+              "q2": {
+                "value": 4,
+                "validation_status": "valid"
+              },
+              "q3": {
+                "value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "q1": "yes",
+              "q2": 4,
+              "q3": "yes"
+            }
+          },
+          "metadata": {
+            "new_model_calls": 0,
+            "original_backend": "Ofox API",
+            "source": "../region_atomic_vlm_r2_bw0073/reference_answers.json",
+            "historical_inputs": {
+              "sides": {
+                "reference": {
+                  "images": [
+                    "request_images/reference_full.png",
+                    "request_images/reference_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    558
+                  ],
+                  "same_side_only": true
+                },
+                "render": {
+                  "images": [
+                    "request_images/render_full.png",
+                    "request_images/render_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    558
+                  ],
+                  "same_side_only": true
+                }
+              },
+              "source": "../region_first_real_render_bw0073",
+              "common_grid": [
+                1536,
+                837
+              ],
+              "roi_polygon": "R2_polygon.png",
+              "roi_box": "R2_box.png",
+              "request_roi": "request_R2_polygon.png",
+              "roi_changed": false,
+              "full_context_preserved": true,
+              "images_black_masked": false,
+              "reviewed": false
+            },
+            "new_cli_calls": 0
+          },
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "image_binding": {
+            "source_rgb": "../region_first_real_render_bw0073/reference.png",
+            "binding_scope": "Rechecked historical source lineage, not the exact submitted PNG file"
+          }
+        },
+        "render": {
+          "backend": "replay",
+          "source_kind": "historical_real",
+          "model_requested": "openai/gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是视觉证据验证器。只根据当前图像回答给定问题。不要猜测不可见内容。无法可靠判断时回答 unknown。不要比较其他图像，不要评价整体重建质量。只输出 JSON。",
+            "user": "请根据图像回答以下三个问题：\n\nQ1：画面中是否存在中央厨房岛台？\n\nQ2：岛台靠近相机的一侧，可见几把高脚椅？\n\nQ3：如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？\n\n仅返回一个 JSON 对象，包含 q1、q2、q3 三个字段。\n\n- q1：yes、no 或 unknown\n- q2：非负整数或 unknown\n- q3：yes、no 或 unknown\n\n不要输出其他字段、解释或推理过程。",
+            "schema": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "q1",
+                "q2",
+                "q3"
+              ],
+              "properties": {
+                "q1": {
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "q2": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "const": "unknown"
+                    }
+                  ]
+                },
+                "q3": {
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "raw_answer": "{\"q1\":\"yes\",\"q2\":4,\"q3\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "q1": {
+                "value": "yes",
+                "validation_status": "valid"
+              },
+              "q2": {
+                "value": 4,
+                "validation_status": "valid"
+              },
+              "q3": {
+                "value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "q1": "yes",
+              "q2": 4,
+              "q3": "yes"
+            }
+          },
+          "metadata": {
+            "new_model_calls": 0,
+            "original_backend": "Ofox API",
+            "source": "../region_atomic_vlm_r2_bw0073/render_answers.json",
+            "historical_inputs": {
+              "sides": {
+                "reference": {
+                  "images": [
+                    "request_images/reference_full.png",
+                    "request_images/reference_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    558
+                  ],
+                  "same_side_only": true
+                },
+                "render": {
+                  "images": [
+                    "request_images/render_full.png",
+                    "request_images/render_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    558
+                  ],
+                  "same_side_only": true
+                }
+              },
+              "source": "../region_first_real_render_bw0073",
+              "common_grid": [
+                1536,
+                837
+              ],
+              "roi_polygon": "R2_polygon.png",
+              "roi_box": "R2_box.png",
+              "request_roi": "request_R2_polygon.png",
+              "roi_changed": false,
+              "full_context_preserved": true,
+              "images_black_masked": false,
+              "reviewed": false
+            },
+            "new_cli_calls": 0
+          },
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "image_binding": {
+            "source_rgb": "<withheld-BlenderWorld>/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+            "binding_scope": "Rechecked historical source lineage, not the exact submitted PNG file"
+          }
+        },
+        "results": [
+          {
+            "evidence_id": "bw_0073_q1",
+            "field": "q1",
+            "region_id": "R2",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": null,
+            "question": "画面中是否存在中央厨房岛台？",
+            "provenance": {
+              "source": "../region_atomic_vlm_r2_bw0073/protocol.json",
+              "kind": "historical_frozen_question"
+            },
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "bw_0073_q2",
+            "field": "q2",
+            "region_id": "R2",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "statistical",
+            "claim": null,
+            "question": "岛台靠近相机的一侧，可见几把高脚椅？",
+            "provenance": {
+              "source": "../region_atomic_vlm_r2_bw0073/protocol.json",
+              "kind": "historical_frozen_question"
+            },
+            "reference_answer": 4,
+            "render_answer": 4,
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "bw_0073_q3",
+            "field": "q3",
+            "region_id": "R2",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": null,
+            "question": "如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？",
+            "provenance": {
+              "source": "../region_atomic_vlm_r2_bw0073/protocol.json",
+              "kind": "historical_frozen_question"
+            },
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          }
+        ],
+        "image_pair": {
+          "reference_rgb": "../region_first_real_render_bw0073/reference.png",
+          "render_rgb": "<withheld-BlenderWorld>/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png"
+        },
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "formal_eligible": false
+      },
+      "additional": [],
+      "structural": {
+        "source": "../kitchen_structural_transfer_bw0073/structural_evidence.json",
+        "rows": [
+          {
+            "id": "K1",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K1",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    174,
+                    294,
+                    174,
+                    746
+                  ],
+                  [
+                    286,
+                    263,
+                    286,
+                    786
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K1",
+                "answer": "present",
+                "visibility": "partial",
+                "visual_basis": "高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    188,
+                    426,
+                    188,
+                    672
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "present",
+            "status": "structure_consistent",
+            "reference_comparability_reason": "Clear local evidence",
+            "render_comparability_reason": "Positive partial evidence is usable",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          },
+          {
+            "id": "K2",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K2",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    52,
+                    305,
+                    548,
+                    211
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K2",
+                "answer": "present",
+                "visibility": "partial",
+                "visual_basis": "灰色高门板上方可见一排较矮的白色面板，中间有横向分界。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    0,
+                    455,
+                    403,
+                    394
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "present",
+            "status": "structure_consistent",
+            "reference_comparability_reason": "Clear local evidence",
+            "render_comparability_reason": "Positive partial evidence is usable",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          },
+          {
+            "id": "K3",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K3",
+                "answer": "present",
+                "visibility": "partial",
+                "visual_basis": "右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。",
+                "boundary_type": "facade_joint",
+                "segments": [
+                  [
+                    589,
+                    672,
+                    1000,
+                    741
+                  ],
+                  [
+                    589,
+                    775,
+                    1000,
+                    845
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K3",
+                "answer": "absent",
+                "visibility": "clear",
+                "visual_basis": "右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。",
+                "boundary_type": "facade_joint",
+                "segments": []
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "absent",
+            "status": "candidate_structural_layout_mismatch",
+            "reference_comparability_reason": "Positive partial evidence is usable",
+            "render_comparability_reason": "Clear local evidence",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          },
+          {
+            "id": "K4",
+            "reference": {
+              "status": "valid",
+              "data": {
+                "id": "K4",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。",
+                "boundary_type": "group_transition",
+                "segments": [
+                  [
+                    549,
+                    210,
+                    549,
+                    870
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "render": {
+              "status": "valid",
+              "data": {
+                "id": "K4",
+                "answer": "present",
+                "visibility": "clear",
+                "visual_basis": "高柜右缘与右侧较低台面柜并置，高低交接清楚可见。",
+                "boundary_type": "group_transition",
+                "segments": [
+                  [
+                    403,
+                    394,
+                    403,
+                    650
+                  ]
+                ]
+              },
+              "error": null
+            },
+            "effective_reference_answer": "present",
+            "effective_render_answer": "present",
+            "status": "structure_consistent",
+            "reference_comparability_reason": "Clear local evidence",
+            "render_comparability_reason": "Clear local evidence",
+            "reference_seed_support": "supported_candidate",
+            "geometry_support": "N/A: no object-level Scene Graph for this Run",
+            "reviewed": false,
+            "scorable": false,
+            "formal_energy": null
+          }
+        ],
+        "reference_claims": [
+          {
+            "id": "K1",
+            "claim": "深色高柜正面可见并排大型门板或前面板，并由明确的竖向接合边界区分。",
+            "question": "目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？",
+            "scope": "竖向门板外观边界；不推断柜内隔板。",
+            "source": "coordinator_reference_only_visual_candidate",
+            "reference_observation": "present_candidate",
+            "reviewed": false,
+            "reliability": 0.0
+          },
+          {
+            "id": "K2",
+            "claim": "高柜上方另有一排较矮前面板，与下方高门板形成上下两层。",
+            "question": "高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？",
+            "scope": "上方短柜前面板和下方高门板的可见分层；颜色仅为参考定位线索。",
+            "source": "coordinator_reference_only_visual_candidate",
+            "reference_observation": "present_candidate",
+            "reviewed": false,
+            "reliability": 0.0
+          },
+          {
+            "id": "K3",
+            "claim": "右侧台面以下可见至少两块上下叠置的抽屉样前面板，具有水平接合边界与拉手线索。",
+            "question": "目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？",
+            "scope": "抽屉样可见外立面；不确认内部抽屉机构。",
+            "source": "coordinator_reference_only_visual_candidate",
+            "reference_observation": "present_candidate",
+            "reviewed": false,
+            "reliability": 0.0
+          },
+          {
+            "id": "K4",
+            "claim": "高柜与其右侧较低台面柜并置，形成可见的高低柜交接。",
+            "question": "是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？",
+            "scope": "粗空间组织；不以不同颜色本身定义两个结构。",
+            "source": "coordinator_reference_only_visual_candidate",
+            "reference_observation": "present_candidate",
+            "reviewed": false,
+            "reliability": 0.0
+          }
+        ],
+        "original_raw_answers": {
+          "reference": "{\"evidence\":[{\"id\":\"K1\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。\",\"boundary_type\":\"facade_joint\",\"segments\":[[174,294,174,746],[286,263,286,786]]},{\"id\":\"K2\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[[52,305,548,211]]},{\"id\":\"K3\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。\",\"boundary_type\":\"facade_joint\",\"segments\":[[589,672,1000,741],[589,775,1000,845]]},{\"id\":\"K4\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。\",\"boundary_type\":\"group_transition\",\"segments\":[[549,210,549,870]]}]}",
+          "render": "{\"evidence\":[{\"id\":\"K1\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。\",\"boundary_type\":\"facade_joint\",\"segments\":[[188,426,188,672]]},{\"id\":\"K2\",\"answer\":\"present\",\"visibility\":\"partial\",\"visual_basis\":\"灰色高门板上方可见一排较矮的白色面板，中间有横向分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[[0,455,403,394]]},{\"id\":\"K3\",\"answer\":\"absent\",\"visibility\":\"clear\",\"visual_basis\":\"右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。\",\"boundary_type\":\"facade_joint\",\"segments\":[]},{\"id\":\"K4\",\"answer\":\"present\",\"visibility\":\"clear\",\"visual_basis\":\"高柜右缘与右侧较低台面柜并置，高低交接清楚可见。\",\"boundary_type\":\"group_transition\",\"segments\":[[403,394,403,650]]}]}"
+        },
+        "backend": "Historical Codex Subagent / gpt-6-sol; not new CLI",
+        "geometry": "unavailable: no evaluated object-level geometry for this Run",
+        "reviewed": false,
+        "energy_contribution": false
+      }
+    },
+    "bw_0074": {
+      "primary": {
+        "reference": {
+          "backend": "replay",
+          "source_kind": "historical_real",
+          "model_requested": "openai/gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是图像证据验证器。只根据当前图片判断指定区域中可见的书籍集合。不要将唱片误认为书籍，不推测不可见内容。无法可靠判断时返回 unknown。只输出 JSON，不解释。",
+            "user": "请观察标记的书架区域，回答：\n\n1. 该区域内是否有可辨认的书籍？\n2. 书籍占据多少个不同的书架分区？\n3. 书籍的主要摆放方向是什么？\n\n输出：\n{\n  \"present\": \"yes\",\n  \"shelf_sections\": \"3+\",\n  \"arrangement\": \"upright\"\n}\n\n以上仅为格式示例，不是预期答案。\n\n取值严格限定：\n- present：yes、no、unknown\n- shelf_sections：0、1、2、3+、unknown\n- arrangement：upright、horizontal、mixed、unknown\n\n只有清晰可辨的独立柜格才计入数量。无法区分书籍与唱片、柜格边界不明确或遮挡严重时，选择 unknown。",
+            "schema": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "present",
+                "shelf_sections",
+                "arrangement"
+              ],
+              "properties": {
+                "present": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "shelf_sections": {
+                  "type": "string",
+                  "enum": [
+                    "0",
+                    "1",
+                    "2",
+                    "3+",
+                    "unknown"
+                  ]
+                },
+                "arrangement": {
+                  "type": "string",
+                  "enum": [
+                    "upright",
+                    "horizontal",
+                    "mixed",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "raw_answer": "{\"present\":\"yes\",\"shelf_sections\":\"3+\",\"arrangement\":\"mixed\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "present": {
+                "value": "yes",
+                "validation_status": "valid"
+              },
+              "shelf_sections": {
+                "value": "3+",
+                "validation_status": "valid"
+              },
+              "arrangement": {
+                "value": "mixed",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "present": "yes",
+              "shelf_sections": "3+",
+              "arrangement": "mixed"
+            }
+          },
+          "metadata": {
+            "new_model_calls": 0,
+            "original_backend": "Ofox API",
+            "source": "../group_vlm_verification_bw0074/reference_answers.json",
+            "historical_inputs": {
+              "sides": {
+                "reference": {
+                  "images": [
+                    "request_images/reference_full.png",
+                    "request_images/reference_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    696
+                  ],
+                  "same_side_only": true
+                },
+                "render": {
+                  "images": [
+                    "request_images/render_full.png",
+                    "request_images/render_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    696
+                  ],
+                  "same_side_only": true
+                }
+              },
+              "common_grid": [
+                1258,
+                855
+              ],
+              "request_grid": [
+                1024,
+                696
+              ],
+              "roi_source": "../coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+              "reference_roi_unchanged": true,
+              "full_context_preserved": true,
+              "no_black_mask": true,
+              "render_fit": {
+                "original_size": [
+                  1920,
+                  1300
+                ],
+                "common_size": [
+                  1258,
+                  855
+                ],
+                "nominal_scale": 0.6552083333333333,
+                "resized_size": [
+                  1258,
+                  852
+                ],
+                "offset_xy": [
+                  0,
+                  1
+                ],
+                "padding_is_not_observation": true,
+                "content_alignment": false,
+                "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+              },
+              "render_roi_not_relocated": true,
+              "reviewed": false
+            },
+            "new_cli_calls": 0
+          },
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "image_binding": {
+            "source_rgb": "../group_vlm_verification_bw0074/reference.png",
+            "binding_scope": "Rechecked historical source lineage, not the exact submitted PNG file"
+          }
+        },
+        "render": {
+          "backend": "replay",
+          "source_kind": "historical_real",
+          "model_requested": "openai/gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是图像证据验证器。只根据当前图片判断指定区域中可见的书籍集合。不要将唱片误认为书籍，不推测不可见内容。无法可靠判断时返回 unknown。只输出 JSON，不解释。",
+            "user": "请观察标记的书架区域，回答：\n\n1. 该区域内是否有可辨认的书籍？\n2. 书籍占据多少个不同的书架分区？\n3. 书籍的主要摆放方向是什么？\n\n输出：\n{\n  \"present\": \"yes\",\n  \"shelf_sections\": \"3+\",\n  \"arrangement\": \"upright\"\n}\n\n以上仅为格式示例，不是预期答案。\n\n取值严格限定：\n- present：yes、no、unknown\n- shelf_sections：0、1、2、3+、unknown\n- arrangement：upright、horizontal、mixed、unknown\n\n只有清晰可辨的独立柜格才计入数量。无法区分书籍与唱片、柜格边界不明确或遮挡严重时，选择 unknown。",
+            "schema": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "present",
+                "shelf_sections",
+                "arrangement"
+              ],
+              "properties": {
+                "present": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "shelf_sections": {
+                  "type": "string",
+                  "enum": [
+                    "0",
+                    "1",
+                    "2",
+                    "3+",
+                    "unknown"
+                  ]
+                },
+                "arrangement": {
+                  "type": "string",
+                  "enum": [
+                    "upright",
+                    "horizontal",
+                    "mixed",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "raw_answer": "{\"present\":\"yes\",\"shelf_sections\":\"3+\",\"arrangement\":\"upright\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "present": {
+                "value": "yes",
+                "validation_status": "valid"
+              },
+              "shelf_sections": {
+                "value": "3+",
+                "validation_status": "valid"
+              },
+              "arrangement": {
+                "value": "upright",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "present": "yes",
+              "shelf_sections": "3+",
+              "arrangement": "upright"
+            }
+          },
+          "metadata": {
+            "new_model_calls": 0,
+            "original_backend": "Ofox API",
+            "source": "../group_vlm_verification_bw0074/render_answers.json",
+            "historical_inputs": {
+              "sides": {
+                "reference": {
+                  "images": [
+                    "request_images/reference_full.png",
+                    "request_images/reference_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    696
+                  ],
+                  "same_side_only": true
+                },
+                "render": {
+                  "images": [
+                    "request_images/render_full.png",
+                    "request_images/render_r2.png"
+                  ],
+                  "image_size": [
+                    1024,
+                    696
+                  ],
+                  "same_side_only": true
+                }
+              },
+              "common_grid": [
+                1258,
+                855
+              ],
+              "request_grid": [
+                1024,
+                696
+              ],
+              "roi_source": "../coarse_evaluation_roi_bw0074/B2_edge_polygons/R2.png",
+              "reference_roi_unchanged": true,
+              "full_context_preserved": true,
+              "no_black_mask": true,
+              "render_fit": {
+                "original_size": [
+                  1920,
+                  1300
+                ],
+                "common_size": [
+                  1258,
+                  855
+                ],
+                "nominal_scale": 0.6552083333333333,
+                "resized_size": [
+                  1258,
+                  852
+                ],
+                "offset_xy": [
+                  0,
+                  1
+                ],
+                "padding_is_not_observation": true,
+                "content_alignment": false,
+                "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+              },
+              "render_roi_not_relocated": true,
+              "reviewed": false
+            },
+            "new_cli_calls": 0
+          },
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "image_binding": {
+            "source_rgb": "<withheld-BlenderWorld>/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+            "binding_scope": "Rechecked historical source lineage, not the exact submitted PNG file"
+          }
+        },
+        "results": [
+          {
+            "evidence_id": "bw_0074_present",
+            "field": "present",
+            "region_id": "R2",
+            "group_id": "bw_0074_R2_books",
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": null,
+            "question": "该区域内是否有可辨认的书籍？",
+            "provenance": {
+              "source": "../group_vlm_verification_bw0074/protocol.json",
+              "kind": "historical_frozen_question"
+            },
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "bw_0074_shelf_sections",
+            "field": "shelf_sections",
+            "region_id": "R2",
+            "group_id": "bw_0074_R2_books",
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": null,
+            "question": "书籍占据多少个不同的书架分区？",
+            "provenance": {
+              "source": "../group_vlm_verification_bw0074/protocol.json",
+              "kind": "historical_frozen_question"
+            },
+            "reference_answer": "3+",
+            "render_answer": "3+",
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "bw_0074_arrangement",
+            "field": "arrangement",
+            "region_id": "R2",
+            "group_id": "bw_0074_R2_books",
+            "anchor_id": null,
+            "energy": "statistical",
+            "claim": null,
+            "question": "书籍的主要摆放方向是什么？",
+            "provenance": {
+              "source": "../group_vlm_verification_bw0074/protocol.json",
+              "kind": "historical_frozen_question"
+            },
+            "reference_answer": "mixed",
+            "render_answer": "upright",
+            "status": "candidate_violated",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          }
+        ],
+        "image_pair": {
+          "reference_rgb": "../group_vlm_verification_bw0074/reference.png",
+          "render_rgb": "<withheld-BlenderWorld>/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png"
+        },
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "formal_eligible": false
+      },
+      "additional": [
+        {
+          "reference": {
+            "backend": "subagent_import",
+            "source_kind": "historical_real",
+            "model_requested": "gpt-6-sol",
+            "model_observed": [
+              "gpt-6-sol"
+            ],
+            "actual_input": {
+              "system": "你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。",
+              "user": "图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "present",
+                  "multiple_sections",
+                  "upright_display"
+                ],
+                "properties": {
+                  "present": {
+                    "type": "string",
+                    "enum": [
+                      "yes",
+                      "no",
+                      "unknown"
+                    ]
+                  },
+                  "multiple_sections": {
+                    "type": "string",
+                    "enum": [
+                      "yes",
+                      "no",
+                      "unknown"
+                    ]
+                  },
+                  "upright_display": {
+                    "type": "string",
+                    "enum": [
+                      "yes",
+                      "no",
+                      "unknown"
+                    ]
+                  }
+                }
+              }
+            },
+            "raw_answer": "{\"present\":\"yes\",\"multiple_sections\":\"yes\",\"upright_display\":\"yes\"}",
+            "parsed": {
+              "status": "valid",
+              "fields": {
+                "present": {
+                  "value": "yes",
+                  "validation_status": "valid"
+                },
+                "multiple_sections": {
+                  "value": "yes",
+                  "validation_status": "valid"
+                },
+                "upright_display": {
+                  "value": "yes",
+                  "validation_status": "valid"
+                }
+              },
+              "schema_errors": [],
+              "document": {
+                "present": "yes",
+                "multiple_sections": "yes",
+                "upright_display": "yes"
+              }
+            },
+            "metadata": {
+              "new_model_calls": 0,
+              "recorded_input": {
+                "task_name": "v_7af7c02697ba",
+                "model": "gpt-6-sol",
+                "fork_turns": "none",
+                "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：<historical-temporary-image>\n\nSystem：\n你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。\n\nUser：\n图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。"
+              },
+              "original_usage": {
+                "input_tokens": 46206,
+                "cached_input_tokens": 33664,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 168,
+                "reasoning_output_tokens": 74,
+                "total_tokens": 46374
+              },
+              "input_isolation": "Historical supplied record only; strict filesystem isolation not established"
+            },
+            "reviewed": false,
+            "energy_contribution": false,
+            "usage": "provisional/debug",
+            "status": "valid"
+          },
+          "render": {
+            "backend": "subagent_import",
+            "source_kind": "historical_real",
+            "model_requested": "gpt-6-sol",
+            "model_observed": [
+              "gpt-6-sol"
+            ],
+            "actual_input": {
+              "system": "你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。",
+              "user": "图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "present",
+                  "multiple_sections",
+                  "upright_display"
+                ],
+                "properties": {
+                  "present": {
+                    "type": "string",
+                    "enum": [
+                      "yes",
+                      "no",
+                      "unknown"
+                    ]
+                  },
+                  "multiple_sections": {
+                    "type": "string",
+                    "enum": [
+                      "yes",
+                      "no",
+                      "unknown"
+                    ]
+                  },
+                  "upright_display": {
+                    "type": "string",
+                    "enum": [
+                      "yes",
+                      "no",
+                      "unknown"
+                    ]
+                  }
+                }
+              }
+            },
+            "raw_answer": "{\"present\":\"yes\",\"multiple_sections\":\"yes\",\"upright_display\":\"yes\"}",
+            "parsed": {
+              "status": "valid",
+              "fields": {
+                "present": {
+                  "value": "yes",
+                  "validation_status": "valid"
+                },
+                "multiple_sections": {
+                  "value": "yes",
+                  "validation_status": "valid"
+                },
+                "upright_display": {
+                  "value": "yes",
+                  "validation_status": "valid"
+                }
+              },
+              "schema_errors": [],
+              "document": {
+                "present": "yes",
+                "multiple_sections": "yes",
+                "upright_display": "yes"
+              }
+            },
+            "metadata": {
+              "new_model_calls": 0,
+              "recorded_input": {
+                "task_name": "v_f470f37a1846",
+                "model": "gpt-6-sol",
+                "fork_turns": "none",
+                "message": "只观察下面指定的一张PNG。仅允许一次view_image读取该图，设置detail=\"original\"，并用image(result.image_url,\"original\")转交图片；不读取其他文件，不联网，不调用其他模型，不写文件，不请求澄清。最终只输出规定JSON。\n\n图像：<historical-temporary-image>\n\nSystem：\n你是图像证据验证器。只根据当前图片及标记区域判断可见内容，不猜测不可见内容。不要把装订书籍、文件夹、柜体隔板或音响设备当作唱片封套，也不要因为问题提到唱片就假定它存在。类别、柜格边界、主要排列方式或可见性不明确时返回unknown。只输出JSON，不解释。\nyes：有充分可见证据确认命题成立。\nno：相关内容足够清晰，能够确认命题不成立。\nunknown：模糊、遮挡、类别歧义或证据不足，无法可靠判断。不要把没看清直接当作不存在。\n\nUser：\n图中橙色边界标记目标评价区域；右侧是该区域同坐标的放大图。只评价橙线范围，完整图仅提供上下文。不评价区域外的其他集合。\n集合范围：可辨认的黑胶LP唱片封套陈列；不包含装订书籍、音响设备或柜体本身。不要求逐张识别、计数或匹配。\n\nQ1：标记区域内是否存在可辨认的黑胶唱片封套集合？\nQ2：可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？\nQ3：可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？\n\n柜格必须有可见隔板或柜框分隔；同一柜格内的多个小簇不能算作多个柜格。Q3只判断可辨认封套的主要摆放方向；多方向接近、主次不清时回答unknown。若无法确认唱片封套存在，Q2和Q3回答unknown。不要凭区域内未识别就推断全图完全缺失。\n只输出一个JSON对象，严格包含present、multiple_sections、upright_display三个字段。每个字段只能为单个字符串yes、no或unknown。不要输出解释、推理或其他字段。"
+              },
+              "original_usage": {
+                "input_tokens": 46221,
+                "cached_input_tokens": 41600,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 140,
+                "reasoning_output_tokens": 41,
+                "total_tokens": 46361
+              },
+              "input_isolation": "Historical supplied record only; strict filesystem isolation not established"
+            },
+            "reviewed": false,
+            "energy_contribution": false,
+            "usage": "provisional/debug",
+            "status": "valid"
+          },
+          "results": [
+            {
+              "evidence_id": "bw_0074_records_present",
+              "field": "present",
+              "region_id": "R3",
+              "group_id": "bw_0074_R3_records",
+              "anchor_id": null,
+              "energy": "semantic",
+              "claim": null,
+              "question": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+              "provenance": {
+                "source": "results/records_group_verification_bw0074/verification_results.json",
+                "kind": "historical_reference_frozen"
+              },
+              "reference_answer": "yes",
+              "render_answer": "yes",
+              "status": "satisfied",
+              "reviewed": false,
+              "value": null,
+              "scorable": false,
+              "energy_contribution": false,
+              "uncertainty": "VLM answer is not GT; mismatches require independent review"
+            },
+            {
+              "evidence_id": "bw_0074_records_multiple_sections",
+              "field": "multiple_sections",
+              "region_id": "R3",
+              "group_id": "bw_0074_R3_records",
+              "anchor_id": null,
+              "energy": "spatial",
+              "claim": null,
+              "question": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+              "provenance": {
+                "source": "results/records_group_verification_bw0074/verification_results.json",
+                "kind": "historical_reference_frozen"
+              },
+              "reference_answer": "yes",
+              "render_answer": "yes",
+              "status": "satisfied",
+              "reviewed": false,
+              "value": null,
+              "scorable": false,
+              "energy_contribution": false,
+              "uncertainty": "VLM answer is not GT; mismatches require independent review"
+            },
+            {
+              "evidence_id": "bw_0074_records_upright_display",
+              "field": "upright_display",
+              "region_id": "R3",
+              "group_id": "bw_0074_R3_records",
+              "anchor_id": null,
+              "energy": "statistical",
+              "claim": null,
+              "question": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？",
+              "provenance": {
+                "source": "results/records_group_verification_bw0074/verification_results.json",
+                "kind": "historical_reference_frozen"
+              },
+              "reference_answer": "yes",
+              "render_answer": "yes",
+              "status": "satisfied",
+              "reviewed": false,
+              "value": null,
+              "scorable": false,
+              "energy_contribution": false,
+              "uncertainty": "VLM answer is not GT; mismatches require independent review"
+            }
+          ],
+          "image_pair": {
+            "reference_rgb": "../group_vlm_verification_bw0074/reference.png",
+            "render_rgb": "<withheld-BlenderWorld>/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png"
+          },
+          "reviewed": false,
+          "usage": "provisional/debug",
+          "energy_contribution": false,
+          "formal_eligible": false
+        }
+      ],
+      "structural": {
+        "source": "../structural_local_comparability_bw0074/structural_evidence.json",
+        "rows": [
+          {
+            "id": "H1",
+            "description": "第 1 条内部水平层板在相邻开口间可见",
+            "reference": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_predicted_internal_shelf_line",
+              "line": [
+                25,
+                243,
+                995,
+                243
+              ],
+              "conflict": false
+            },
+            "render": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_predicted_internal_shelf_line",
+              "line": [
+                0,
+                350,
+                690,
+                350
+              ],
+              "row_level_partial_does_not_negate_this_line": true
+            },
+            "result": {
+              "status": "structure_consistent",
+              "support": "local_observations",
+              "reason": "Compatible local proposition with visible support on both sides",
+              "image_only_status": "structure_consistent",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "H2",
+            "description": "第 2 条内部水平层板在相邻开口间可见",
+            "reference": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_predicted_internal_shelf_line",
+              "line": [
+                25,
+                483,
+                995,
+                483
+              ],
+              "conflict": false
+            },
+            "render": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_predicted_internal_shelf_line",
+              "line": [
+                0,
+                550,
+                690,
+                550
+              ],
+              "row_level_partial_does_not_negate_this_line": true
+            },
+            "result": {
+              "status": "structure_consistent",
+              "support": "local_observations",
+              "reason": "Compatible local proposition with visible support on both sides",
+              "image_only_status": "structure_consistent",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "H3",
+            "description": "第 3 条内部水平层板在相邻开口间可见",
+            "reference": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_predicted_internal_shelf_line",
+              "line": [
+                25,
+                720,
+                995,
+                720
+              ],
+              "conflict": false
+            },
+            "render": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_predicted_internal_shelf_line",
+              "line": [
+                0,
+                740,
+                690,
+                740
+              ],
+              "row_level_partial_does_not_negate_this_line": true
+            },
+            "result": {
+              "status": "structure_consistent",
+              "support": "local_observations",
+              "reason": "Compatible local proposition with visible support on both sides",
+              "image_only_status": "structure_consistent",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "V1",
+            "description": "第 1 个粗开口内存在将左右分开的内部隔板",
+            "reference": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_reference_divider_prediction",
+              "segments": [
+                [
+                  505,
+                  15,
+                  505,
+                  230
+                ]
+              ],
+              "conflict": false
+            },
+            "render": {
+              "value": "unknown",
+              "reported_count": 0,
+              "visibility": "partial",
+              "visible_subscope": "interior of ordered opening partially visible; left outer boundary cropped",
+              "exact_counterpart_visibility": "unknown",
+              "exact_counterpart_position": "unknown",
+              "source": "saved_render_partial_answer"
+            },
+            "result": {
+              "status": "candidate_structural_layout_mismatch",
+              "support": "conditional_geometry",
+              "reason": "Retain a coarse opening hypothesis under explicit simple-panel geometry assumptions; exact location and visual absence remain unknown",
+              "image_only_status": "unknown",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "V3",
+            "description": "第 3 个粗开口内存在将左右分开的内部隔板",
+            "reference": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "saved_reference_divider_prediction",
+              "segments": [
+                [
+                  735,
+                  495,
+                  735,
+                  710
+                ]
+              ],
+              "conflict": false
+            },
+            "render": {
+              "value": "unknown",
+              "reported_count": 0,
+              "visibility": "partial",
+              "visible_subscope": "interior of ordered opening partially visible; left outer boundary cropped",
+              "exact_counterpart_visibility": "unknown",
+              "exact_counterpart_position": "unknown",
+              "source": "saved_render_partial_answer"
+            },
+            "result": {
+              "status": "candidate_structural_layout_mismatch",
+              "support": "conditional_geometry",
+              "reason": "Retain a coarse opening hypothesis under explicit simple-panel geometry assumptions; exact location and visual absence remain unknown",
+              "image_only_status": "unknown",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "V2_review",
+            "description": "第二层疑似内部隔板：参考提取存在冲突",
+            "reference": {
+              "value": "unknown",
+              "visibility": "unknown",
+              "source": "raw zero-divider answer plus posthoc audit conflict",
+              "conflict": true,
+              "original_model_value": "absent",
+              "human_review": "unreviewed",
+              "audit": {
+                "reference_level": 2,
+                "audit_bbox": [
+                  893,
+                  227,
+                  1258,
+                  319
+                ],
+                "prior_reference_unit_ids": [
+                  "U3",
+                  "U4"
+                ],
+                "status": "possible_reference_divider_false_negative",
+                "source": "Coordinator post-hoc static audit after both model responses",
+                "observation": "Reference second display band shows a dark vertical structural seam near left quarter; model reported zero clear dividers. Needs independent human review.",
+                "original_response_changed": false,
+                "independent_gt": false,
+                "reviewed": false
+              }
+            },
+            "render": {
+              "value": "unknown",
+              "visibility": "partial",
+              "source": "saved_render_partial_answer",
+              "exact_counterpart_visibility": "unknown"
+            },
+            "result": {
+              "status": "unknown",
+              "support": "insufficient",
+              "reason": "Reference extraction conflicts with an unreviewed audit candidate; do not accept absent/absent agreement",
+              "image_only_status": "unknown",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "frame_left",
+            "description": "固定 R3 内的完整左外边框是否可比较",
+            "reference": {
+              "value": "present",
+              "visibility": "visible",
+              "source": "reference context candidate",
+              "conflict": false
+            },
+            "render": {
+              "value": "unknown",
+              "visibility": "cropped",
+              "source": "original Render unknown explanation; full image retained separately"
+            },
+            "result": {
+              "status": "unknown",
+              "support": "insufficient",
+              "reason": "Required local support is cropped; geometry cannot turn unobservability into a visual mismatch",
+              "image_only_status": "unknown",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          },
+          {
+            "id": "exact_counts",
+            "description": "整层完整独立柜格数量是否相同",
+            "reference": {
+              "value": "unknown",
+              "visibility": "unknown",
+              "source": "Reference second-level conflict prevents complete inventory",
+              "conflict": true
+            },
+            "render": {
+              "value": "unknown",
+              "visibility": "partial",
+              "source": "left boundary cropped; internal/outer scope incomplete"
+            },
+            "result": {
+              "status": "unknown",
+              "support": "insufficient",
+              "reason": "Reference extraction conflicts with an unreviewed audit candidate; do not accept absent/absent agreement",
+              "image_only_status": "unknown",
+              "reviewed": false,
+              "scorable": false,
+              "formal_energy": null
+            },
+            "reviewed": false,
+            "energy_contribution": false
+          }
+        ],
+        "reference_row2_review": {
+          "status": "unreviewed",
+          "row_crop_xyxy": [
+            893,
+            227,
+            1258,
+            319
+          ],
+          "zoom_crop_xyxy": [
+            952,
+            217,
+            1022,
+            329
+          ],
+          "crop_basis": "Post-hoc old U3/U4 boundary gap for audit only; not a new model prediction",
+          "possible_internal_divider": null,
+          "reviewed": false,
+          "original_model_answer_changed": false
+        },
+        "geometry": {
+          "status": "conditional_geometry_support",
+          "source": "../blender_scene_graph_audit_bw0074/scene_graph.json",
+          "shelves": [
+            {
+              "object_id": "record library continuous shelf z1.42",
+              "world_aabb": [
+                [
+                  3.7650001,
+                  -0.56,
+                  1.3924999
+                ],
+                [
+                  5.415,
+                  -0.038,
+                  1.4475
+                ]
+              ],
+              "dimensions": [
+                1.65,
+                0.522,
+                0.055
+              ],
+              "slab_geometry_supported": true,
+              "projection": {
+                "status": "geometric_bbox_only",
+                "xyxy_normalized": [
+                  0.6505892,
+                  0.5004516,
+                  0.9056658,
+                  0.5199418
+                ],
+                "xyxy_render_pixels": [
+                  1249.1313171,
+                  650.5871117,
+                  1738.8782501,
+                  675.9243101
+                ],
+                "intersects_frame": true,
+                "actual_visibility": "unknown; no occlusion test or historical Object-ID mask",
+                "includes_modifiers": false,
+                "reviewed": false
+              },
+              "reviewed": false
+            },
+            {
+              "object_id": "record library continuous shelf z1.87",
+              "world_aabb": [
+                [
+                  3.7650001,
+                  -0.56,
+                  1.8425
+                ],
+                [
+                  5.415,
+                  -0.038,
+                  1.8975
+                ]
+              ],
+              "dimensions": [
+                1.65,
+                0.522,
+                0.055
+              ],
+              "slab_geometry_supported": true,
+              "projection": {
+                "status": "geometric_bbox_only",
+                "xyxy_normalized": [
+                  0.6511885,
+                  0.408036,
+                  0.9073901,
+                  0.4240174
+                ],
+                "xyxy_render_pixels": [
+                  1250.2819061,
+                  530.4467916,
+                  1742.1890259,
+                  551.2226582
+                ],
+                "intersects_frame": true,
+                "actual_visibility": "unknown; no occlusion test or historical Object-ID mask",
+                "includes_modifiers": false,
+                "reviewed": false
+              },
+              "reviewed": false
+            },
+            {
+              "object_id": "record library continuous shelf z2.33",
+              "world_aabb": [
+                [
+                  3.7650001,
+                  -0.56,
+                  2.3025
+                ],
+                [
+                  5.415,
+                  -0.038,
+                  2.3574998
+                ]
+              ],
+              "dimensions": [
+                1.65,
+                0.522,
+                0.055
+              ],
+              "slab_geometry_supported": true,
+              "projection": {
+                "status": "geometric_bbox_only",
+                "xyxy_normalized": [
+                  0.6518061,
+                  0.3051335,
+                  0.909168,
+                  0.3343521
+                ],
+                "xyxy_render_pixels": [
+                  1251.4676285,
+                  396.673578,
+                  1745.6025696,
+                  434.6576989
+                ],
+                "intersects_frame": true,
+                "actual_visibility": "unknown; no occlusion test or historical Object-ID mask",
+                "includes_modifiers": false,
+                "reviewed": false
+              },
+              "reviewed": false
+            }
+          ],
+          "bay_bounds": {
+            "x": [
+              3.7650001,
+              5.415
+            ],
+            "y": [
+              -0.56,
+              -0.038
+            ],
+            "z": [
+              0.933,
+              2.5975001
+            ]
+          },
+          "openings_top_to_bottom_world_z": [
+            [
+              2.3574998,
+              2.5975001
+            ],
+            [
+              1.8975,
+              2.3025
+            ],
+            [
+              1.4475,
+              1.8425
+            ],
+            [
+              0.933,
+              1.3924999
+            ]
+          ],
+          "internal_vertical_slab_candidates": [],
+          "query": {
+            "thickness_tolerance_m": 0.055000099999999996,
+            "minimum_depth_fraction": 0.8,
+            "maximum_x_thickness_factor": 2,
+            "minimum_z_extent_factor": 2,
+            "scope": "All stored Mesh AABBs; internal x only, front-depth panel shapes; not name-only filtering"
+          },
+          "reason": "Three distinct broad, deep, thin horizontal cuboids; no full-depth internal vertical slab candidate under this explicit query",
+          "limitations": [
+            "Base AABBs cannot certify absence of shallow, oblique, combined-mesh or modifier-generated partitions.",
+            "Query is supplementary exploratory geometry evidence, not a general divider detector or semantic GT.",
+            "Stored bbox projection is not a visible mask; compatibility with historical PNG remains conditional."
+          ],
+          "reviewed": false
+        },
+        "original_raw_answers": {
+          "reference": "{\"top_to_bottom_complete\":\"yes\",\"horizontal_shelves\":[[25,243,995,243],[25,483,995,483],[25,720,995,720]],\"rows\":[{\"id\":\"r1\",\"y_range\":[15,235],\"vertical_dividers\":1,\"separate_compartments\":2,\"divider_segments\":[[505,15,505,230]],\"certainty\":\"clear\"},{\"id\":\"r2\",\"y_range\":[260,475],\"vertical_dividers\":0,\"separate_compartments\":1,\"divider_segments\":[],\"certainty\":\"clear\"},{\"id\":\"r3\",\"y_range\":[495,710],\"vertical_dividers\":1,\"separate_compartments\":2,\"divider_segments\":[[735,495,735,710]],\"certainty\":\"clear\"},{\"id\":\"r4\",\"y_range\":[730,985],\"vertical_dividers\":0,\"separate_compartments\":1,\"divider_segments\":[],\"certainty\":\"clear\"}],\"unknown\":[]}",
+          "render": "{\"top_to_bottom_complete\":\"yes\",\"horizontal_shelves\":[[0,350,690,350],[0,550,690,550],[0,740,690,740]],\"rows\":[{\"id\":\"row_1\",\"y_range\":[225,335],\"vertical_dividers\":0,\"separate_compartments\":1,\"divider_segments\":[],\"certainty\":\"partial\"},{\"id\":\"row_2\",\"y_range\":[365,535],\"vertical_dividers\":0,\"separate_compartments\":1,\"divider_segments\":[],\"certainty\":\"partial\"},{\"id\":\"row_3\",\"y_range\":[565,725],\"vertical_dividers\":0,\"separate_compartments\":1,\"divider_segments\":[],\"certainty\":\"partial\"},{\"id\":\"row_4\",\"y_range\":[760,950],\"vertical_dividers\":0,\"separate_compartments\":1,\"divider_segments\":[],\"certainty\":\"partial\"}],\"unknown\":[\"左侧边界超出目标裁剪图，无法确认各层开口向左延伸的范围。\"]}"
+        },
+        "evidence_origin": "post-hoc local decomposition of saved independent VLM extraction; not new Reference GT",
+        "conditional_geometry_is_not_visual_absence": true,
+        "reviewed": false,
+        "energy_contribution": false
+      },
+      "identity_caveat": {
+        "rows": [
+          {
+            "evidence_id": "bw_0074_identity_context",
+            "scene_id": "bw_0074",
+            "region_id": "R3",
+            "group_id": "bw_0074_R3_records",
+            "energy": "semantic / post-hoc identity",
+            "reference_evidence": "目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。",
+            "question": "目标柜格内主要可辨认的陈列内容是什么？",
+            "reference_answer": "vinyl_sleeves",
+            "render_answer": "ambiguous",
+            "status": "unknown",
+            "picture_support": {
+              "reference_context": {
+                "status": "target_visible",
+                "comparable": true,
+                "note": "既有R3完整范围，保留柜格、收录机、唱机。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              },
+              "reference_display": {
+                "status": "residual_context",
+                "comparable": true,
+                "note": "两层竖直封套陈列清晰保留；排除下方收录机、唱机，但右缘保留局部扬声器、左缘有植物。不构成纯集合无背景输入。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              },
+              "render_context": {
+                "status": "target_visible",
+                "comparable": true,
+                "note": "同坐标保留陈列与设备，也包含更多顶棚/墙面；没有移动ROI。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              },
+              "render_display": {
+                "status": "partial_target_visible",
+                "comparable": true,
+                "note": "同坐标因相机差异截取一整排及部分下一排，仍有可见陈列集合，未完全裁掉；含较多顶棚/墙面。仅能研究所保留子集的类别判断，不能比较完整Group的数量/密度。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              }
+            },
+            "uncertainty": "Post-hoc different question; do not rewrite old records presence answers; camera/crop subset differs",
+            "verifier_backend": "Historical Codex Subagent",
+            "human_review": "unreviewed",
+            "reviewed": false,
+            "value": null
+          },
+          {
+            "evidence_id": "bw_0074_identity_display",
+            "scene_id": "bw_0074",
+            "region_id": "R3",
+            "group_id": "bw_0074_R3_records",
+            "energy": "semantic / post-hoc identity",
+            "reference_evidence": "目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。",
+            "question": "目标柜格内主要可辨认的陈列内容是什么？",
+            "reference_answer": "vinyl_sleeves",
+            "render_answer": "ambiguous",
+            "status": "unknown",
+            "picture_support": {
+              "reference_context": {
+                "status": "target_visible",
+                "comparable": true,
+                "note": "既有R3完整范围，保留柜格、收录机、唱机。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              },
+              "reference_display": {
+                "status": "residual_context",
+                "comparable": true,
+                "note": "两层竖直封套陈列清晰保留；排除下方收录机、唱机，但右缘保留局部扬声器、左缘有植物。不构成纯集合无背景输入。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              },
+              "render_context": {
+                "status": "target_visible",
+                "comparable": true,
+                "note": "同坐标保留陈列与设备，也包含更多顶棚/墙面；没有移动ROI。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              },
+              "render_display": {
+                "status": "partial_target_visible",
+                "comparable": true,
+                "note": "同坐标因相机差异截取一整排及部分下一排，仍有可见陈列集合，未完全裁掉；含较多顶棚/墙面。仅能研究所保留子集的类别判断，不能比较完整Group的数量/密度。",
+                "reviewed": false,
+                "reviewer_type": "Codex static visibility candidate, not independent human",
+                "human_review": "unreviewed",
+                "class_ground_truth": null
+              }
+            },
+            "uncertainty": "Post-hoc different question; do not rewrite old records presence answers; camera/crop subset differs",
+            "verifier_backend": "Historical Codex Subagent",
+            "human_review": "unreviewed",
+            "reviewed": false,
+            "value": null
+          }
+        ],
+        "source": "results/group_identity_context_bw0074/verification_results.json",
+        "original_raw_answers": {
+          "render_context": "{\"category\":\"ambiguous\"}",
+          "reference_context": "{\"category\":\"vinyl_sleeves\"}",
+          "render_display": "{\"category\":\"ambiguous\"}",
+          "reference_display": "{\"category\":\"vinyl_sleeves\"}"
+        },
+        "reviewed": false
+      }
+    }
+  },
+  "audit_rows": [
+    {
+      "evidence_id": "bw_0073_q1",
+      "field": "q1",
+      "region_id": "R2",
+      "group_id": null,
+      "anchor_id": null,
+      "energy": "semantic",
+      "claim": null,
+      "question": "画面中是否存在中央厨房岛台？",
+      "provenance": {
+        "source": "../region_atomic_vlm_r2_bw0073/protocol.json",
+        "kind": "historical_frozen_question"
+      },
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0073",
+      "reference_evidence": "画面中是否存在中央厨房岛台？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "Ofox API",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0073_q2",
+      "field": "q2",
+      "region_id": "R2",
+      "group_id": null,
+      "anchor_id": null,
+      "energy": "statistical",
+      "claim": null,
+      "question": "岛台靠近相机的一侧，可见几把高脚椅？",
+      "provenance": {
+        "source": "../region_atomic_vlm_r2_bw0073/protocol.json",
+        "kind": "historical_frozen_question"
+      },
+      "reference_answer": 4,
+      "render_answer": 4,
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0073",
+      "reference_evidence": "岛台靠近相机的一侧，可见几把高脚椅？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "Ofox API",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0073_q3",
+      "field": "q3",
+      "region_id": "R2",
+      "group_id": null,
+      "anchor_id": null,
+      "energy": "spatial",
+      "claim": null,
+      "question": "如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？",
+      "provenance": {
+        "source": "../region_atomic_vlm_r2_bw0073/protocol.json",
+        "kind": "historical_frozen_question"
+      },
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0073",
+      "reference_evidence": "如果岛台和吊灯都可见，从当前图像视角看，吊灯是否位于岛台上方？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "Ofox API",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0073_K1",
+      "scene_id": "bw_0073",
+      "region_id": "R4",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "深色高柜正面可见并排大型门板或前面板，并由明确的竖向接合边界区分。",
+      "question": "目标区域内的高柜正面，是否可辨认出至少两块并排的大型门板或前面板，以及它们之间的竖向接合分界？",
+      "reference_answer": "present",
+      "render_answer": "present",
+      "status": "structure_consistent",
+      "picture_support": {
+        "reference": {
+          "id": "K1",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "高柜正面可见多块并排的深色大型门板，门板间有连续竖向接合缝。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              174,
+              294,
+              174,
+              746
+            ],
+            [
+              286,
+              263,
+              286,
+              786
+            ]
+          ]
+        },
+        "render": {
+          "id": "K1",
+          "answer": "present",
+          "visibility": "partial",
+          "visual_basis": "高柜正面可见相邻的大型灰色门板，其间有竖向接合缝。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              188,
+              426,
+              188,
+              672
+            ]
+          ]
+        }
+      },
+      "uncertainty": "Visible facade organization only; no hidden mechanism GT or 3D correspondence",
+      "verifier_backend": "Historical Codex Subagent",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0073_K2",
+      "scene_id": "bw_0073",
+      "region_id": "R4",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "高柜上方另有一排较矮前面板，与下方高门板形成上下两层。",
+      "question": "高柜上方是否另有一排较矮的门板或前面板，并由横向分界与下方较高门板区分？",
+      "reference_answer": "present",
+      "render_answer": "present",
+      "status": "structure_consistent",
+      "picture_support": {
+        "reference": {
+          "id": "K2",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "深色高门上方有一排较矮的浅色前面板，之间有清晰的横向分界。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              52,
+              305,
+              548,
+              211
+            ]
+          ]
+        },
+        "render": {
+          "id": "K2",
+          "answer": "present",
+          "visibility": "partial",
+          "visual_basis": "灰色高门板上方可见一排较矮的白色面板，中间有横向分界。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              0,
+              455,
+              403,
+              394
+            ]
+          ]
+        }
+      },
+      "uncertainty": "Visible facade organization only; no hidden mechanism GT or 3D correspondence",
+      "verifier_backend": "Historical Codex Subagent",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0073_K3",
+      "scene_id": "bw_0073",
+      "region_id": "R4",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "右侧台面以下可见至少两块上下叠置的抽屉样前面板，具有水平接合边界与拉手线索。",
+      "question": "目标区域右侧、台面以下的低柜正面，是否可辨认出至少两块上下叠置的抽屉样前面板，以及重复的水平分界？",
+      "reference_answer": "present",
+      "render_answer": "absent",
+      "status": "candidate_structural_layout_mismatch",
+      "picture_support": {
+        "reference": {
+          "id": "K3",
+          "answer": "present",
+          "visibility": "partial",
+          "visual_basis": "右侧低柜可见三块上下排列的抽屉样前面板及重复的水平接缝，右端被裁切。",
+          "boundary_type": "facade_joint",
+          "segments": [
+            [
+              589,
+              672,
+              1000,
+              741
+            ],
+            [
+              589,
+              775,
+              1000,
+              845
+            ]
+          ]
+        },
+        "render": {
+          "id": "K3",
+          "answer": "absent",
+          "visibility": "clear",
+          "visual_basis": "右侧低柜正面可见并排的竖向门板，未见上下叠置的抽屉面板或重复水平分界。",
+          "boundary_type": "facade_joint",
+          "segments": []
+        }
+      },
+      "uncertainty": "Visible facade organization only; no hidden mechanism GT or 3D correspondence",
+      "verifier_backend": "Historical Codex Subagent",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0073_K4",
+      "scene_id": "bw_0073",
+      "region_id": "R4",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "高柜与其右侧较低台面柜并置，形成可见的高低柜交接。",
+      "question": "是否可见较高柜体与其右侧较低的台面柜并置，并形成明显的高低柜交接边界？",
+      "reference_answer": "present",
+      "render_answer": "present",
+      "status": "structure_consistent",
+      "picture_support": {
+        "reference": {
+          "id": "K4",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "高柜右缘与较低台面柜相接，高柜侧边形成明显的竖向交接边界。",
+          "boundary_type": "group_transition",
+          "segments": [
+            [
+              549,
+              210,
+              549,
+              870
+            ]
+          ]
+        },
+        "render": {
+          "id": "K4",
+          "answer": "present",
+          "visibility": "clear",
+          "visual_basis": "高柜右缘与右侧较低台面柜并置，高低交接清楚可见。",
+          "boundary_type": "group_transition",
+          "segments": [
+            [
+              403,
+              394,
+              403,
+              650
+            ]
+          ]
+        }
+      },
+      "uncertainty": "Visible facade organization only; no hidden mechanism GT or 3D correspondence",
+      "verifier_backend": "Historical Codex Subagent",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0073_R2_chairs_frame",
+      "scene_id": "bw_0073",
+      "region_id": "R2",
+      "group_id": "bw_0073_R2_chairs",
+      "energy": "semantic",
+      "reference_evidence": "集合中座椅可见支撑框架主要由细长杆件构成。",
+      "question": "这些座椅的可见支撑框架是否主要由细长杆件构成？",
+      "reference_answer": null,
+      "render_answer": null,
+      "status": "unavailable",
+      "picture_support": "Frozen Reference-only candidate; no real answer for this question",
+      "uncertainty": "Missing verifier, not confirmed absence; expected seed is not GT",
+      "verifier_backend": "none",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_present",
+      "field": "present",
+      "region_id": "R2",
+      "group_id": "bw_0074_R2_books",
+      "anchor_id": null,
+      "energy": "semantic",
+      "claim": null,
+      "question": "该区域内是否有可辨认的书籍？",
+      "provenance": {
+        "source": "../group_vlm_verification_bw0074/protocol.json",
+        "kind": "historical_frozen_question"
+      },
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0074",
+      "reference_evidence": "该区域内是否有可辨认的书籍？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "Ofox API",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0074_shelf_sections",
+      "field": "shelf_sections",
+      "region_id": "R2",
+      "group_id": "bw_0074_R2_books",
+      "anchor_id": null,
+      "energy": "spatial",
+      "claim": null,
+      "question": "书籍占据多少个不同的书架分区？",
+      "provenance": {
+        "source": "../group_vlm_verification_bw0074/protocol.json",
+        "kind": "historical_frozen_question"
+      },
+      "reference_answer": "3+",
+      "render_answer": "3+",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0074",
+      "reference_evidence": "书籍占据多少个不同的书架分区？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "Ofox API",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0074_arrangement",
+      "field": "arrangement",
+      "region_id": "R2",
+      "group_id": "bw_0074_R2_books",
+      "anchor_id": null,
+      "energy": "statistical",
+      "claim": null,
+      "question": "书籍的主要摆放方向是什么？",
+      "provenance": {
+        "source": "../group_vlm_verification_bw0074/protocol.json",
+        "kind": "historical_frozen_question"
+      },
+      "reference_answer": "mixed",
+      "render_answer": "upright",
+      "status": "candidate_violated",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0074",
+      "reference_evidence": "书籍的主要摆放方向是什么？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "Ofox API",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0074_records_present",
+      "field": "present",
+      "region_id": "R3",
+      "group_id": "bw_0074_R3_records",
+      "anchor_id": null,
+      "energy": "semantic",
+      "claim": null,
+      "question": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+      "provenance": {
+        "source": "results/records_group_verification_bw0074/verification_results.json",
+        "kind": "historical_reference_frozen"
+      },
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0074",
+      "reference_evidence": "标记区域内是否存在可辨认的黑胶唱片封套集合？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "subagent_import",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0074_records_multiple_sections",
+      "field": "multiple_sections",
+      "region_id": "R3",
+      "group_id": "bw_0074_R3_records",
+      "anchor_id": null,
+      "energy": "spatial",
+      "claim": null,
+      "question": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+      "provenance": {
+        "source": "results/records_group_verification_bw0074/verification_results.json",
+        "kind": "historical_reference_frozen"
+      },
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0074",
+      "reference_evidence": "可辨认的唱片封套是否分布在至少两个清晰可辨的独立柜格中？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "subagent_import",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0074_records_upright_display",
+      "field": "upright_display",
+      "region_id": "R3",
+      "group_id": "bw_0074_R3_records",
+      "anchor_id": null,
+      "energy": "statistical",
+      "claim": null,
+      "question": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？",
+      "provenance": {
+        "source": "results/records_group_verification_bw0074/verification_results.json",
+        "kind": "historical_reference_frozen"
+      },
+      "reference_answer": "yes",
+      "render_answer": "yes",
+      "status": "satisfied",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "Historical camera differs; visibility and category confusion require review",
+      "scene_id": "bw_0074",
+      "reference_evidence": "可辨认的唱片封套是否主要呈竖直站立陈列（允许倾斜），而非水平平放叠放？",
+      "evidence_source": "Historical frozen question; Reference answer is not GT",
+      "verifier_backend": "subagent_import",
+      "picture_support": "Same-side full context plus historical fixed ROI; current source pixels/fit rechecked",
+      "human_review": "unreviewed"
+    },
+    {
+      "evidence_id": "bw_0074_H1",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "第 1 条内部水平层板在相邻开口间可见",
+      "question": "第 1 条内部水平层板在相邻开口间可见",
+      "reference_answer": "present",
+      "render_answer": "present",
+      "status": "structure_consistent",
+      "image_only_status": "structure_consistent",
+      "picture_support": {
+        "reference": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_predicted_internal_shelf_line",
+          "line": [
+            25,
+            243,
+            995,
+            243
+          ],
+          "conflict": false
+        },
+        "render": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_predicted_internal_shelf_line",
+          "line": [
+            0,
+            350,
+            690,
+            350
+          ],
+          "row_level_partial_does_not_negate_this_line": true
+        }
+      },
+      "uncertainty": "Compatible local proposition with visible support on both sides",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_H2",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "第 2 条内部水平层板在相邻开口间可见",
+      "question": "第 2 条内部水平层板在相邻开口间可见",
+      "reference_answer": "present",
+      "render_answer": "present",
+      "status": "structure_consistent",
+      "image_only_status": "structure_consistent",
+      "picture_support": {
+        "reference": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_predicted_internal_shelf_line",
+          "line": [
+            25,
+            483,
+            995,
+            483
+          ],
+          "conflict": false
+        },
+        "render": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_predicted_internal_shelf_line",
+          "line": [
+            0,
+            550,
+            690,
+            550
+          ],
+          "row_level_partial_does_not_negate_this_line": true
+        }
+      },
+      "uncertainty": "Compatible local proposition with visible support on both sides",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_H3",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "第 3 条内部水平层板在相邻开口间可见",
+      "question": "第 3 条内部水平层板在相邻开口间可见",
+      "reference_answer": "present",
+      "render_answer": "present",
+      "status": "structure_consistent",
+      "image_only_status": "structure_consistent",
+      "picture_support": {
+        "reference": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_predicted_internal_shelf_line",
+          "line": [
+            25,
+            720,
+            995,
+            720
+          ],
+          "conflict": false
+        },
+        "render": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_predicted_internal_shelf_line",
+          "line": [
+            0,
+            740,
+            690,
+            740
+          ],
+          "row_level_partial_does_not_negate_this_line": true
+        }
+      },
+      "uncertainty": "Compatible local proposition with visible support on both sides",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_V1",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "第 1 个粗开口内存在将左右分开的内部隔板",
+      "question": "第 1 个粗开口内存在将左右分开的内部隔板",
+      "reference_answer": "present",
+      "render_answer": "unknown",
+      "status": "candidate_structural_layout_mismatch",
+      "image_only_status": "unknown",
+      "picture_support": {
+        "reference": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_reference_divider_prediction",
+          "segments": [
+            [
+              505,
+              15,
+              505,
+              230
+            ]
+          ],
+          "conflict": false
+        },
+        "render": {
+          "value": "unknown",
+          "reported_count": 0,
+          "visibility": "partial",
+          "visible_subscope": "interior of ordered opening partially visible; left outer boundary cropped",
+          "exact_counterpart_visibility": "unknown",
+          "exact_counterpart_position": "unknown",
+          "source": "saved_render_partial_answer"
+        }
+      },
+      "uncertainty": "Retain a coarse opening hypothesis under explicit simple-panel geometry assumptions; exact location and visual absence remain unknown",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_V3",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "第 3 个粗开口内存在将左右分开的内部隔板",
+      "question": "第 3 个粗开口内存在将左右分开的内部隔板",
+      "reference_answer": "present",
+      "render_answer": "unknown",
+      "status": "candidate_structural_layout_mismatch",
+      "image_only_status": "unknown",
+      "picture_support": {
+        "reference": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "saved_reference_divider_prediction",
+          "segments": [
+            [
+              735,
+              495,
+              735,
+              710
+            ]
+          ],
+          "conflict": false
+        },
+        "render": {
+          "value": "unknown",
+          "reported_count": 0,
+          "visibility": "partial",
+          "visible_subscope": "interior of ordered opening partially visible; left outer boundary cropped",
+          "exact_counterpart_visibility": "unknown",
+          "exact_counterpart_position": "unknown",
+          "source": "saved_render_partial_answer"
+        }
+      },
+      "uncertainty": "Retain a coarse opening hypothesis under explicit simple-panel geometry assumptions; exact location and visual absence remain unknown",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_V2_review",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "第二层疑似内部隔板：参考提取存在冲突",
+      "question": "第二层疑似内部隔板：参考提取存在冲突",
+      "reference_answer": "unknown",
+      "render_answer": "unknown",
+      "status": "unknown",
+      "image_only_status": "unknown",
+      "picture_support": {
+        "reference": {
+          "value": "unknown",
+          "visibility": "unknown",
+          "source": "raw zero-divider answer plus posthoc audit conflict",
+          "conflict": true,
+          "original_model_value": "absent",
+          "human_review": "unreviewed",
+          "audit": {
+            "reference_level": 2,
+            "audit_bbox": [
+              893,
+              227,
+              1258,
+              319
+            ],
+            "prior_reference_unit_ids": [
+              "U3",
+              "U4"
+            ],
+            "status": "possible_reference_divider_false_negative",
+            "source": "Coordinator post-hoc static audit after both model responses",
+            "observation": "Reference second display band shows a dark vertical structural seam near left quarter; model reported zero clear dividers. Needs independent human review.",
+            "original_response_changed": false,
+            "independent_gt": false,
+            "reviewed": false
+          }
+        },
+        "render": {
+          "value": "unknown",
+          "visibility": "partial",
+          "source": "saved_render_partial_answer",
+          "exact_counterpart_visibility": "unknown"
+        }
+      },
+      "uncertainty": "Reference extraction conflicts with an unreviewed audit candidate; do not accept absent/absent agreement",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_frame_left",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "固定 R3 内的完整左外边框是否可比较",
+      "question": "固定 R3 内的完整左外边框是否可比较",
+      "reference_answer": "present",
+      "render_answer": "unknown",
+      "status": "unknown",
+      "image_only_status": "unknown",
+      "picture_support": {
+        "reference": {
+          "value": "present",
+          "visibility": "visible",
+          "source": "reference context candidate",
+          "conflict": false
+        },
+        "render": {
+          "value": "unknown",
+          "visibility": "cropped",
+          "source": "original Render unknown explanation; full image retained separately"
+        }
+      },
+      "uncertainty": "Required local support is cropped; geometry cannot turn unobservability into a visual mismatch",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_exact_counts",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": null,
+      "energy": "spatial / structural_layout",
+      "reference_evidence": "整层完整独立柜格数量是否相同",
+      "question": "整层完整独立柜格数量是否相同",
+      "reference_answer": "unknown",
+      "render_answer": "unknown",
+      "status": "unknown",
+      "image_only_status": "unknown",
+      "picture_support": {
+        "reference": {
+          "value": "unknown",
+          "visibility": "unknown",
+          "source": "Reference second-level conflict prevents complete inventory",
+          "conflict": true
+        },
+        "render": {
+          "value": "unknown",
+          "visibility": "partial",
+          "source": "left boundary cropped; internal/outer scope incomplete"
+        }
+      },
+      "uncertainty": "Reference extraction conflicts with an unreviewed audit candidate; do not accept absent/absent agreement",
+      "verifier_backend": "Historical local/post-hoc structural audit",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_R2_books_front_cover",
+      "scene_id": "bw_0074",
+      "region_id": "R2",
+      "group_id": "bw_0074_R2_books",
+      "energy": "spatial",
+      "reference_evidence": "区域左半部中层有封面朝向观察者的大开本书籍。",
+      "question": "该区域左半部中层是否存在封面朝向观察者的大开本书籍？",
+      "reference_answer": null,
+      "render_answer": null,
+      "status": "unavailable",
+      "picture_support": "Frozen Reference-only candidate; no real answer for this question",
+      "uncertainty": "Missing verifier, not confirmed absence; expected seed is not GT",
+      "verifier_backend": "none",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_identity_context",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": "bw_0074_R3_records",
+      "energy": "semantic / post-hoc identity",
+      "reference_evidence": "目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。",
+      "question": "目标柜格内主要可辨认的陈列内容是什么？",
+      "reference_answer": "vinyl_sleeves",
+      "render_answer": "ambiguous",
+      "status": "unknown",
+      "picture_support": {
+        "reference_context": {
+          "status": "target_visible",
+          "comparable": true,
+          "note": "既有R3完整范围，保留柜格、收录机、唱机。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        },
+        "reference_display": {
+          "status": "residual_context",
+          "comparable": true,
+          "note": "两层竖直封套陈列清晰保留；排除下方收录机、唱机，但右缘保留局部扬声器、左缘有植物。不构成纯集合无背景输入。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        },
+        "render_context": {
+          "status": "target_visible",
+          "comparable": true,
+          "note": "同坐标保留陈列与设备，也包含更多顶棚/墙面；没有移动ROI。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        },
+        "render_display": {
+          "status": "partial_target_visible",
+          "comparable": true,
+          "note": "同坐标因相机差异截取一整排及部分下一排，仍有可见陈列集合，未完全裁掉；含较多顶棚/墙面。仅能研究所保留子集的类别判断，不能比较完整Group的数量/密度。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        }
+      },
+      "uncertainty": "Post-hoc different question; do not rewrite old records presence answers; camera/crop subset differs",
+      "verifier_backend": "Historical Codex Subagent",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    },
+    {
+      "evidence_id": "bw_0074_identity_display",
+      "scene_id": "bw_0074",
+      "region_id": "R3",
+      "group_id": "bw_0074_R3_records",
+      "energy": "semantic / post-hoc identity",
+      "reference_evidence": "目标柜格内主要可辨认的陈列内容是什么？\n\n仅输出一个JSON对象，只有category字段，其值只能是以下一个字符串：\nvinyl_sleeves：陈列内容本身有足够视觉证据辨认为黑胶唱片封套。\nbooks：陈列内容本身有足够视觉证据辨认为装订书籍。\nother：有明确可辨认的陈列内容，但主要属于其他类别。\nambiguous：能看到内容，但类别、主要类别或可见性不足以可靠判断；柜格被裁掉或遮挡而无法判断时也使用此值。\nabsent：目标柜格清晰可见，能够确认没有上述待识别的陈列集合；不能把没看清或裁掉当作不存在。\n\n不根据附近设备作类别推断，不输出其他字段、解释或推理。",
+      "question": "目标柜格内主要可辨认的陈列内容是什么？",
+      "reference_answer": "vinyl_sleeves",
+      "render_answer": "ambiguous",
+      "status": "unknown",
+      "picture_support": {
+        "reference_context": {
+          "status": "target_visible",
+          "comparable": true,
+          "note": "既有R3完整范围，保留柜格、收录机、唱机。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        },
+        "reference_display": {
+          "status": "residual_context",
+          "comparable": true,
+          "note": "两层竖直封套陈列清晰保留；排除下方收录机、唱机，但右缘保留局部扬声器、左缘有植物。不构成纯集合无背景输入。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        },
+        "render_context": {
+          "status": "target_visible",
+          "comparable": true,
+          "note": "同坐标保留陈列与设备，也包含更多顶棚/墙面；没有移动ROI。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        },
+        "render_display": {
+          "status": "partial_target_visible",
+          "comparable": true,
+          "note": "同坐标因相机差异截取一整排及部分下一排，仍有可见陈列集合，未完全裁掉；含较多顶棚/墙面。仅能研究所保留子集的类别判断，不能比较完整Group的数量/密度。",
+          "reviewed": false,
+          "reviewer_type": "Codex static visibility candidate, not independent human",
+          "human_review": "unreviewed",
+          "class_ground_truth": null
+        }
+      },
+      "uncertainty": "Post-hoc different question; do not rewrite old records presence answers; camera/crop subset differs",
+      "verifier_backend": "Historical Codex Subagent",
+      "human_review": "unreviewed",
+      "reviewed": false,
+      "value": null
+    }
+  ],
+  "new_model_calls": 0,
+  "execution": "historical_real Replay only; not a new Codex CLI/Subagent experiment",
+  "reviewed": false,
+  "usage": "provisional/debug"
+}

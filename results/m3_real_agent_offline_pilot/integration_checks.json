@@ -1,0 +1,428 @@
+{
+  "cases": {
+    "bw_0073": {
+      "pair": {
+        "scene": "bw_0073",
+        "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+        "reference_rgb": "../region_first_real_render_bw0073/reference.png",
+        "render_rgb": "<withheld-BlenderWorld>/runs/bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg/artifacts/workspace/exports/final.png",
+        "native_reference": "<withheld-BlenderWorld>/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+        "native_reference_size": [
+          7952,
+          4333
+        ],
+        "common_size": [
+          1536,
+          837
+        ],
+        "transform": {
+          "original_size": [
+            1672,
+            941
+          ],
+          "common_size": [
+            1536,
+            837
+          ],
+          "nominal_scale": 0.8894792773645058,
+          "resized_size": [
+            1487,
+            837
+          ],
+          "offset_xy": [
+            24,
+            0
+          ],
+          "padding_is_not_observation": true,
+          "content_alignment": false,
+          "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+        },
+        "valid_pixels": 1244619,
+        "canvas_pixels": 1285632,
+        "audit_source": "../region_first_real_render_bw0073/pair_audit.json",
+        "task_mapping_rechecked": true,
+        "reference_bytes_equal_agent_input": true,
+        "cached_reference_pixels_verified": true,
+        "fitted_render_pixels_verified": true,
+        "content_alignment": false,
+        "input_mode": "rgb-only",
+        "reference_camera": "unknown",
+        "historical_camera": true,
+        "png_blend_sync": "unknown",
+        "reviewed": false,
+        "usage": "provisional/debug"
+      },
+      "camera": {
+        "status": "unverified",
+        "formal_eligible": false,
+        "camera_protocol": "historical_camera",
+        "pose_matches_T0": false,
+        "actual_poses": {
+          "T_c2w": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              -6.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "expected_T0": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "declared_fixed_extrinsics_enforced": null,
+        "reason": "Recorded actual pose differs from prescribed T0 or conflicts with another pose; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+        "reasons": [
+          "Recorded actual pose differs from prescribed T0 or conflicts with another pose",
+          "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+        ]
+      },
+      "transform": {
+        "convention": "reference_pixel_xyxy",
+        "render_mapping": "uniform_fit",
+        "basis": "Exact previously recorded full-frame size fit; frozen Reference ROI, no camera/alignment optimization",
+        "expected_transform": {
+          "original_size": [
+            1672,
+            941
+          ],
+          "common_size": [
+            1536,
+            837
+          ],
+          "nominal_scale": 0.8894792773645058,
+          "resized_size": [
+            1487,
+            837
+          ],
+          "offset_xy": [
+            24,
+            0
+          ],
+          "padding_is_not_observation": true,
+          "content_alignment": false,
+          "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+        },
+        "applied_transform": {
+          "original_size": [
+            1672,
+            941
+          ],
+          "common_size": [
+            1536,
+            837
+          ],
+          "nominal_scale": 0.8894792773645058,
+          "resized_size": [
+            1487,
+            837
+          ],
+          "offset_xy": [
+            24,
+            0
+          ],
+          "padding_is_not_observation": true,
+          "content_alignment": false,
+          "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+        },
+        "valid_pixels": 1244619,
+        "canvas_pixels": 1285632,
+        "valid_mask": "final_replay/bw_0073/evaluation/valid_pixels.png",
+        "measurement_pixels": 1243782,
+        "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+      },
+      "vlm_pair_binding": "matched_paths_unverified_content",
+      "overlap": {
+        "named_region_count": 2,
+        "overlap_pixels": 0,
+        "overlap_fraction_of_valid": 0.0,
+        "max_multiplicity": 1,
+        "unassigned_valid_pixels": 744785,
+        "local_aggregate": null,
+        "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+      },
+      "all_new_candidates_unreviewed": true,
+      "continuous_spatial": {
+        "value": null,
+        "status": "unavailable",
+        "reason": "No reliable RGB-only object localization/correspondence"
+      },
+      "new_model_calls": 0,
+      "new_agent_or_blender_runs": 0,
+      "formal_eligible": false
+    },
+    "bw_0074": {
+      "pair": {
+        "scene": "bw_0074",
+        "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+        "reference_rgb": "../group_vlm_verification_bw0074/reference.png",
+        "render_rgb": "<withheld-BlenderWorld>/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+        "native_reference": "<withheld-BlenderWorld>/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+        "native_reference_size": [
+          1258,
+          855
+        ],
+        "common_size": [
+          1258,
+          855
+        ],
+        "transform": {
+          "original_size": [
+            1920,
+            1300
+          ],
+          "common_size": [
+            1258,
+            855
+          ],
+          "nominal_scale": 0.6552083333333333,
+          "resized_size": [
+            1258,
+            852
+          ],
+          "offset_xy": [
+            0,
+            1
+          ],
+          "padding_is_not_observation": true,
+          "content_alignment": false,
+          "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+        },
+        "valid_pixels": 1071816,
+        "canvas_pixels": 1075590,
+        "audit_source": "../group_vlm_verification_bw0074/pair_audit.json",
+        "task_mapping_rechecked": true,
+        "reference_bytes_equal_agent_input": true,
+        "cached_reference_pixels_verified": true,
+        "fitted_render_pixels_verified": true,
+        "content_alignment": false,
+        "input_mode": "unknown; extra text not excluded",
+        "reference_camera": "unknown",
+        "historical_camera": true,
+        "png_blend_sync": "unknown",
+        "reviewed": false,
+        "usage": "provisional/debug"
+      },
+      "camera": {
+        "status": "unverified",
+        "formal_eligible": false,
+        "camera_protocol": "historical_camera",
+        "pose_matches_T0": false,
+        "actual_poses": {
+          "camera.matrix_world": [
+            [
+              0.9939315,
+              0.00518,
+              -0.1098784,
+              2.0699999
+            ],
+            [
+              -0.1100004,
+              0.0468048,
+              -0.9928289,
+              -5.2199998
+            ],
+            [
+              0.0,
+              0.9988906,
+              0.0470906,
+              1.71
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "expected_T0": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -6.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "declared_fixed_extrinsics_enforced": null,
+        "reason": "Recorded actual pose differs from prescribed T0 or conflicts with another pose; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+        "reasons": [
+          "Recorded actual pose differs from prescribed T0 or conflicts with another pose",
+          "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+        ]
+      },
+      "transform": {
+        "convention": "reference_pixel_xyxy",
+        "render_mapping": "uniform_fit",
+        "basis": "Exact previously recorded full-frame size fit; frozen Reference ROI, no camera/alignment optimization",
+        "expected_transform": {
+          "original_size": [
+            1920,
+            1300
+          ],
+          "common_size": [
+            1258,
+            855
+          ],
+          "nominal_scale": 0.6552083333333333,
+          "resized_size": [
+            1258,
+            852
+          ],
+          "offset_xy": [
+            0,
+            1
+          ],
+          "padding_is_not_observation": true,
+          "content_alignment": false,
+          "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+        },
+        "applied_transform": {
+          "original_size": [
+            1920,
+            1300
+          ],
+          "common_size": [
+            1258,
+            855
+          ],
+          "nominal_scale": 0.6552083333333333,
+          "resized_size": [
+            1258,
+            852
+          ],
+          "offset_xy": [
+            0,
+            1
+          ],
+          "padding_is_not_observation": true,
+          "content_alignment": false,
+          "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+        },
+        "valid_pixels": 1071816,
+        "canvas_pixels": 1075590,
+        "valid_mask": "final_replay/bw_0074/evaluation/valid_pixels.png",
+        "measurement_pixels": 1070558,
+        "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+      },
+      "vlm_pair_binding": "matched_paths_unverified_content",
+      "overlap": {
+        "named_region_count": 2,
+        "overlap_pixels": 0,
+        "overlap_fraction_of_valid": 0.0,
+        "max_multiplicity": 1,
+        "unassigned_valid_pixels": 613404,
+        "local_aggregate": null,
+        "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+      },
+      "all_new_candidates_unreviewed": true,
+      "continuous_spatial": {
+        "value": null,
+        "status": "unavailable",
+        "reason": "No reliable RGB-only object localization/correspondence"
+      },
+      "new_model_calls": 0,
+      "new_agent_or_blender_runs": 0,
+      "formal_eligible": false
+    }
+  },
+  "new_model_calls": 0,
+  "new_blender_runs": 0,
+  "formulas_weights_and_runtime_unchanged": true,
+  "third_party_visuals_public": false,
+  "reviewed": false,
+  "cpu_tests": {
+    "tests_run": 395,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "new_m3_tests": 9,
+    "success": true,
+    "elapsed_seconds": 7.557425915962085,
+    "network_and_subprocess_denied": true,
+    "new_model_or_blender_calls": 0,
+    "output": "...........................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 395 tests in 7.557s\n\nOK\n"
+  },
+  "retrospective_checks": {
+    "replay_energy_objects_unchanged": true,
+    "all_initial_historical_answers_unchanged": true,
+    "source_evidence_review_not_promoted": true,
+    "structural_source_pairs_and_transforms_rechecked": true,
+    "scene_graph_same_export_directory": true,
+    "cached_dino_not_in_energy": true
+  },
+  "first_integration_attempt": {
+    "status": "failed",
+    "reason": "Optional Anchor mask:null incompatible with core HxW mask input",
+    "fix": "Only omit absent optional mask in new derived candidate; preserve bbox/review/reliability/source",
+    "original_artifacts_preserved": "bw_0073/",
+    "new_offline_replay": "final_replay/",
+    "original_evidence_modified": false,
+    "new_model_calls": 0
+  },
+  "publication": {
+    "third_party_rgb_masks_comparisons": "withheld; image-specific redistribution permission unconfirmed",
+    "credentials_and_full_cli_sessions": "excluded",
+    "raw_historical_answers": "retained",
+    "metrics": "No formal aggregate or cross-scene detection rate"
+  }
+}
