@@ -1,0 +1,45 @@
+{
+  "selected_pairs": 13,
+  "evaluated_pairs": 13,
+  "completed": 9,
+  "incomplete_checkpoints": 4,
+  "unique_references": 10,
+  "first_two_actual_pilots_passed": true,
+  "real_cli_attempts": 33,
+  "real_cli_valid_responses": 33,
+  "automatic_retries": 0,
+  "raw_packets_reparsed_and_compared": true,
+  "reference_only_freezes_preserved": true,
+  "unique_atomic_types": {
+    "semantic": 44,
+    "spatial": 28,
+    "statistical": 8
+  },
+  "categorical_questions_with_absent_other": 16,
+  "actual_abstention_and_fallback_answers": {
+    "unknown": 3,
+    "absent": 1
+  },
+  "dino_real_cpu_forward_calls": 224,
+  "dino_real_cpu_image_inputs": 448,
+  "dino_model_seconds": 38.575687281321734,
+  "numerical_energy_pairs": {
+    "semantic": 0,
+    "spatial": 13,
+    "appearance": 13,
+    "statistical": 13,
+    "perceptual": 13,
+    "structural": 0
+  },
+  "official_scores": 0,
+  "camera_protocol": "historical_or_unverified",
+  "reference_camera": "unknown",
+  "continuous_rgb_spatial": "N/A: no independently reliable RGB localization/correspondence",
+  "geometry": "N/A: no reliable evaluated collision/support cache bound to these runs",
+  "no_new_agent_code_or_blender_execution": true,
+  "runtime_remains_blocked": true,
+  "energy_formulas_weights_unchanged": true,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "new_model_calls_during_checks": 0
+}

@@ -1,0 +1,811 @@
+{
+  "backend": "codex_cli",
+  "source_kind": "live_model",
+  "model_requested": "gpt-6-sol",
+  "model_observed": null,
+  "actual_input": {
+    "system": "你是 Project e 的单图像评价证据规划器。\n\n你的任务是仅依据当前 Reference RGB，提取适合评价三维场景重建质量的可观察证据。\n你看不到被评测 Agent 的 Render、Blender 场景、对象名称或任何预期错误。\n\n请按以下原则工作：\n- 首先识别约 1–5 个有评价意义的粗粒度 Region，简单场景允许只有一个。Region 是评价范围，不是精确物体 Mask。\n- 对重复或成组内容，例如书籍、唱片、柜体、桌椅组合等，必要时建立 Semantic Group。一个 Group 可以包含多个物体，无须枚举每个实例。\n- 对特别重要、且需要投影位置测量的对象，可以选择少量 Anchor。\n- 为主要 Region 或 Group 选择有区分力的原子证据，不要只集中于物体存在和数量。\n- 在确实可观察时，考虑对象类别、显著属性、离散空间关系、局部排列、结构分隔、相对布局及尺度特征。\n- 不强制每个 Region 具备所有类型的证据，也不强制图片一定包含 Group。\n- 每个问题仅检查一个明确事实；避免含糊的“是否合理”“是否相似”“是否重建正确”。\n- 只能根据可见信息提问。遮挡、类别混淆或细节不足时，必须允许 unknown。\n- left_of/right_of 等方向关系定义为当前输入相机视角下的投影关系。\n- 不得将不可见的内部构造、真实物理连接或三维深度推断当作直接观察。\n- 不得根据被测 Render 选择、更换或修改证据。\n- 输出符合 Schema 的 JSON，不输出期望的验证答案。\n\n根据图像复杂度，优先形成少量高质量的原子证据，而不是生成冗长问题清单。\n证据预算是上限，具体是否生成取决于可观察性。",
+    "user": "仅根据当前 Reference RGB 规划评价证据，最多 10 条原子命题；不要为填满预算生成问题。Region bbox 使用0–1000归一化xyxy粗范围；Anchor bbox仅表示其自身可见范围。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。groups和anchors允许为空。证据类型为semantic、spatial或statistical。answer_type为yes_no_unknown、count_unknown或categorical_unknown。类别型问题的categories必须在此Reference-only阶段给出1–12个互异、简短、中立的候选类别，不包括保留的unknown或ambiguous；其他答案类型的categories填空数组。类别集合不代表期望答案；不要输出expected、答案、置信度或推理。连续投影位置、相对面积和间距应由可靠RGB定位及确定性测量获得，不要求视觉验证器估算精确坐标。",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "description",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "groups": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "name",
+              "scope"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "anchors": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "category": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "category",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "group_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "anchor_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "semantic",
+                  "spatial",
+                  "statistical"
+                ]
+              },
+              "claim": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "answer_type": {
+                "type": "string",
+                "enum": [
+                  "yes_no_unknown",
+                  "count_unknown",
+                  "categorical_unknown"
+                ]
+              },
+              "categories": {
+                "type": "array",
+                "maxItems": 12,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 64
+                }
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "group_id",
+              "anchor_id",
+              "type",
+              "claim",
+              "question",
+              "answer_type",
+              "categories"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "regions",
+        "groups",
+        "anchors",
+        "evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "raw_answer": "{\n  \"regions\": [\n    {\n      \"id\": \"r_sky\",\n      \"name\": \"天空\",\n      \"description\": \"画面上半部的蓝色天空和浅色云层\",\n      \"bbox\": [0, 0, 1000, 500]\n    },\n    {\n      \"id\": \"r_ridges\",\n      \"name\": \"层叠山岭\",\n      \"description\": \"画面中部至下部相互重叠的山岭轮廓\",\n      \"bbox\": [0, 390, 1000, 910]\n    },\n    {\n      \"id\": \"r_foreground\",\n      \"name\": \"前景山脊\",\n      \"description\": \"画面底部的深蓝色山脊\",\n      \"bbox\": [0, 850, 1000, 1000]\n    }\n  ],\n  \"groups\": [\n    {\n      \"id\": \"g_clouds\",\n      \"region_id\": \"r_sky\",\n      \"name\": \"云层\",\n      \"scope\": \"天空中横向分布的浅色云形\"\n    },\n    {\n      \"id\": \"g_ridges\",\n      \"region_id\": \"r_ridges\",\n      \"name\": \"山岭轮廓\",\n      \"scope\": \"从远处浅色山岭到近处深色山岭的多层轮廓\"\n    }\n  ],\n  \"anchors\": [],\n  \"evidence\": [\n    {\n      \"id\": \"e1\",\n      \"region_id\": \"r_sky\",\n      \"group_id\": null,\n      \"anchor_id\": null,\n      \"type\": \"semantic\",\n      \"claim\": \"天空以蓝色为主。\",\n      \"question\": \"天空的主要颜色属于哪一类？\",\n      \"answer_type\": \"categorical_unknown\",\n      \"categories\": [\"蓝色\", \"灰色\", \"橙色\", \"绿色\", \"紫色\", \"黑色\", \"白色\"]\n    },\n    {\n      \"id\": \"e2\",\n      \"region_id\": \"r_sky\",\n      \"group_id\": \"g_clouds\",\n      \"anchor_id\": null,\n      \"type\": \"semantic\",\n      \"claim\": \"天空中有浅色云层。\",\n      \"question\": \"天空中是否可见浅色云层？\",\n      \"answer_type\": \"yes_no_unknown\",\n      \"categories\": []\n    },\n    {\n      \"id\": \"e3\",\n      \"region_id\": \"r_sky\",\n      \"group_id\": \"g_clouds\",\n      \"anchor_id\": null,\n      \"type\": \"spatial\",\n      \"claim\": \"浅色云层集中在天空的中下部。\",\n      \"question\": \"浅色云层是否主要分布在天空的中下部？\",\n      \"answer_type\": \"yes_no_unknown\",\n      \"categories\": []\n    },\n    {\n      \"id\": \"e4\",\n      \"region_id\": \"r_ridges\",\n      \"group_id\": \"g_ridges\",\n      \"anchor_id\": null,\n      \"type\": \"statistical\",\n      \"claim\": \"可见多条上下分布的山岭轮廓。\",\n      \"question\": \"画面中是否可见至少三层上下分布的山岭轮廓？\",\n      \"answer_type\": \"yes_no_unknown\",\n      \"categories\": []\n    },\n    {\n      \"id\": \"e5\",\n      \"region_id\": \"r_ridges\",\n      \"group_id\": \"g_ridges\",\n      \"anchor_id\": null,\n      \"type\": \"spatial\",\n      \"claim\": \"较浅的山岭位于较深的山岭上方。\",\n      \"question\": \"较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？\",\n      \"answer_type\": \"yes_no_unknown\",\n      \"categories\": []\n    },\n    {\n      \"id\": \"e6\",\n      \"region_id\": \"r_ridges\",\n      \"group_id\": \"g_ridges\",\n      \"anchor_id\": null,\n      \"type\": \"semantic\",\n      \"claim\": \"山岭轮廓呈起伏曲线。\",\n      \"question\": \"山岭顶部轮廓主要属于哪种形状？\",\n      \"answer_type\": \"categorical_unknown\",\n      \"categories\": [\"起伏曲线\", \"水平直线\", \"竖直直线\", \"规则锯齿\", \"圆形\"]\n    },\n    {\n      \"id\": \"e7\",\n      \"region_id\": \"r_foreground\",\n      \"group_id\": null,\n      \"anchor_id\": null,\n      \"type\": \"semantic\",\n      \"claim\": \"最下方山脊呈深蓝色。\",\n      \"question\": \"画面最下方山脊的主要颜色属于哪一类？\",\n      \"answer_type\": \"categorical_unknown\",\n      \"categories\": [\"深蓝色\", \"浅蓝色\", \"绿色\", \"棕色\", \"灰色\", \"白色\"]\n    }\n  ]\n}",
+  "parsed": {
+    "status": "valid",
+    "fields": {
+      "regions": {
+        "value": [
+          {
+            "id": "r_sky",
+            "name": "天空",
+            "description": "画面上半部的蓝色天空和浅色云层",
+            "bbox": [
+              0,
+              0,
+              1000,
+              500
+            ]
+          },
+          {
+            "id": "r_ridges",
+            "name": "层叠山岭",
+            "description": "画面中部至下部相互重叠的山岭轮廓",
+            "bbox": [
+              0,
+              390,
+              1000,
+              910
+            ]
+          },
+          {
+            "id": "r_foreground",
+            "name": "前景山脊",
+            "description": "画面底部的深蓝色山脊",
+            "bbox": [
+              0,
+              850,
+              1000,
+              1000
+            ]
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "r_sky",
+            "name": "天空",
+            "description": "画面上半部的蓝色天空和浅色云层",
+            "bbox": [
+              0,
+              0,
+              1000,
+              500
+            ]
+          },
+          {
+            "id": "r_ridges",
+            "name": "层叠山岭",
+            "description": "画面中部至下部相互重叠的山岭轮廓",
+            "bbox": [
+              0,
+              390,
+              1000,
+              910
+            ]
+          },
+          {
+            "id": "r_foreground",
+            "name": "前景山脊",
+            "description": "画面底部的深蓝色山脊",
+            "bbox": [
+              0,
+              850,
+              1000,
+              1000
+            ]
+          }
+        ],
+        "validation_status": "valid"
+      },
+      "groups": {
+        "value": [
+          {
+            "id": "g_clouds",
+            "region_id": "r_sky",
+            "name": "云层",
+            "scope": "天空中横向分布的浅色云形"
+          },
+          {
+            "id": "g_ridges",
+            "region_id": "r_ridges",
+            "name": "山岭轮廓",
+            "scope": "从远处浅色山岭到近处深色山岭的多层轮廓"
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "g_clouds",
+            "region_id": "r_sky",
+            "name": "云层",
+            "scope": "天空中横向分布的浅色云形"
+          },
+          {
+            "id": "g_ridges",
+            "region_id": "r_ridges",
+            "name": "山岭轮廓",
+            "scope": "从远处浅色山岭到近处深色山岭的多层轮廓"
+          }
+        ],
+        "validation_status": "valid"
+      },
+      "anchors": {
+        "value": [],
+        "raw_value": [],
+        "validation_status": "valid"
+      },
+      "evidence": {
+        "value": [
+          {
+            "id": "e1",
+            "region_id": "r_sky",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "天空以蓝色为主。",
+            "question": "天空的主要颜色属于哪一类？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "蓝色",
+              "灰色",
+              "橙色",
+              "绿色",
+              "紫色",
+              "黑色",
+              "白色"
+            ]
+          },
+          {
+            "id": "e2",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "天空中有浅色云层。",
+            "question": "天空中是否可见浅色云层？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e3",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "浅色云层集中在天空的中下部。",
+            "question": "浅色云层是否主要分布在天空的中下部？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e4",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "可见多条上下分布的山岭轮廓。",
+            "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e5",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "较浅的山岭位于较深的山岭上方。",
+            "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e6",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "山岭轮廓呈起伏曲线。",
+            "question": "山岭顶部轮廓主要属于哪种形状？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "起伏曲线",
+              "水平直线",
+              "竖直直线",
+              "规则锯齿",
+              "圆形"
+            ]
+          },
+          {
+            "id": "e7",
+            "region_id": "r_foreground",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "最下方山脊呈深蓝色。",
+            "question": "画面最下方山脊的主要颜色属于哪一类？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "深蓝色",
+              "浅蓝色",
+              "绿色",
+              "棕色",
+              "灰色",
+              "白色"
+            ]
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "e1",
+            "region_id": "r_sky",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "天空以蓝色为主。",
+            "question": "天空的主要颜色属于哪一类？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "蓝色",
+              "灰色",
+              "橙色",
+              "绿色",
+              "紫色",
+              "黑色",
+              "白色"
+            ]
+          },
+          {
+            "id": "e2",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "天空中有浅色云层。",
+            "question": "天空中是否可见浅色云层？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e3",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "浅色云层集中在天空的中下部。",
+            "question": "浅色云层是否主要分布在天空的中下部？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e4",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "可见多条上下分布的山岭轮廓。",
+            "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e5",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "较浅的山岭位于较深的山岭上方。",
+            "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e6",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "山岭轮廓呈起伏曲线。",
+            "question": "山岭顶部轮廓主要属于哪种形状？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "起伏曲线",
+              "水平直线",
+              "竖直直线",
+              "规则锯齿",
+              "圆形"
+            ]
+          },
+          {
+            "id": "e7",
+            "region_id": "r_foreground",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "最下方山脊呈深蓝色。",
+            "question": "画面最下方山脊的主要颜色属于哪一类？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "深蓝色",
+              "浅蓝色",
+              "绿色",
+              "棕色",
+              "灰色",
+              "白色"
+            ]
+          }
+        ],
+        "validation_status": "valid"
+      }
+    },
+    "schema_errors": [],
+    "document": {
+      "regions": [
+        {
+          "id": "r_sky",
+          "name": "天空",
+          "description": "画面上半部的蓝色天空和浅色云层",
+          "bbox": [
+            0,
+            0,
+            1000,
+            500
+          ]
+        },
+        {
+          "id": "r_ridges",
+          "name": "层叠山岭",
+          "description": "画面中部至下部相互重叠的山岭轮廓",
+          "bbox": [
+            0,
+            390,
+            1000,
+            910
+          ]
+        },
+        {
+          "id": "r_foreground",
+          "name": "前景山脊",
+          "description": "画面底部的深蓝色山脊",
+          "bbox": [
+            0,
+            850,
+            1000,
+            1000
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "id": "g_clouds",
+          "region_id": "r_sky",
+          "name": "云层",
+          "scope": "天空中横向分布的浅色云形"
+        },
+        {
+          "id": "g_ridges",
+          "region_id": "r_ridges",
+          "name": "山岭轮廓",
+          "scope": "从远处浅色山岭到近处深色山岭的多层轮廓"
+        }
+      ],
+      "anchors": [],
+      "evidence": [
+        {
+          "id": "e1",
+          "region_id": "r_sky",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "天空以蓝色为主。",
+          "question": "天空的主要颜色属于哪一类？",
+          "answer_type": "categorical_unknown",
+          "categories": [
+            "蓝色",
+            "灰色",
+            "橙色",
+            "绿色",
+            "紫色",
+            "黑色",
+            "白色"
+          ]
+        },
+        {
+          "id": "e2",
+          "region_id": "r_sky",
+          "group_id": "g_clouds",
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "天空中有浅色云层。",
+          "question": "天空中是否可见浅色云层？",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e3",
+          "region_id": "r_sky",
+          "group_id": "g_clouds",
+          "anchor_id": null,
+          "type": "spatial",
+          "claim": "浅色云层集中在天空的中下部。",
+          "question": "浅色云层是否主要分布在天空的中下部？",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e4",
+          "region_id": "r_ridges",
+          "group_id": "g_ridges",
+          "anchor_id": null,
+          "type": "statistical",
+          "claim": "可见多条上下分布的山岭轮廓。",
+          "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e5",
+          "region_id": "r_ridges",
+          "group_id": "g_ridges",
+          "anchor_id": null,
+          "type": "spatial",
+          "claim": "较浅的山岭位于较深的山岭上方。",
+          "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e6",
+          "region_id": "r_ridges",
+          "group_id": "g_ridges",
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "山岭轮廓呈起伏曲线。",
+          "question": "山岭顶部轮廓主要属于哪种形状？",
+          "answer_type": "categorical_unknown",
+          "categories": [
+            "起伏曲线",
+            "水平直线",
+            "竖直直线",
+            "规则锯齿",
+            "圆形"
+          ]
+        },
+        {
+          "id": "e7",
+          "region_id": "r_foreground",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "最下方山脊呈深蓝色。",
+          "question": "画面最下方山脊的主要颜色属于哪一类？",
+          "answer_type": "categorical_unknown",
+          "categories": [
+            "深蓝色",
+            "浅蓝色",
+            "绿色",
+            "棕色",
+            "灰色",
+            "白色"
+          ]
+        }
+      ]
+    }
+  },
+  "metadata": {},
+  "reviewed": false,
+  "energy_contribution": false,
+  "usage": "provisional/debug",
+  "status": "valid",
+  "request_submitted": true,
+  "elapsed_seconds": 41.003872090019286,
+  "token_usage": {
+    "input_tokens": 10958,
+    "output_tokens": 1144,
+    "total_tokens": null
+  },
+  "isolation": {
+    "strict_blind_test": false,
+    "filesystem_read_confined": false,
+    "tools_disabled": true,
+    "project_cwd": false,
+    "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+  },
+  "image_binding": {
+    "source_rgb": "./results/existing_scene_batch_20261025/references/bw_0075/reference.png",
+    "image_size": [
+      768,
+      512
+    ]
+  },
+  "invocation": {
+    "argv": [
+      "codex",
+      "--no-daemon",
+      "-a",
+      "never",
+      "-c",
+      "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+      "-c",
+      "model_provider=\"verification_openai\"",
+      "-c",
+      "sqlite_home=\"<temporary-cli-runtime>/state\"",
+      "-c",
+      "log_dir=\"<temporary-cli-runtime>/state\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_max_bytes=0",
+      "-c",
+      "features.shell_tool=false",
+      "-c",
+      "tools.view_image=false",
+      "-c",
+      "features.multi_agent=false",
+      "-c",
+      "features.hooks=false",
+      "-c",
+      "features.apps=false",
+      "-c",
+      "features.plugins=false",
+      "-c",
+      "features.memories=false",
+      "-c",
+      "features.goals=false",
+      "-c",
+      "features.shell_snapshot=false",
+      "-c",
+      "shell_environment_policy.inherit=\"none\"",
+      "-c",
+      "model_reasoning_effort=\"low\"",
+      "exec",
+      "--ignore-user-config",
+      "--model",
+      "gpt-6-sol",
+      "--sandbox",
+      "read-only",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--image",
+      "<temporary-cli-runtime>/input/89f04b80197244408a62a3f0245554e7.png",
+      "--output-schema",
+      "<temporary-cli-runtime>/input/schema.json",
+      "--output-last-message",
+      "<temporary-cli-runtime>/state/answer.json",
+      "--json",
+      "--",
+      "-"
+    ],
+    "stdin": "System:\n你是 Project e 的单图像评价证据规划器。\n\n你的任务是仅依据当前 Reference RGB，提取适合评价三维场景重建质量的可观察证据。\n你看不到被评测 Agent 的 Render、Blender 场景、对象名称或任何预期错误。\n\n请按以下原则工作：\n- 首先识别约 1–5 个有评价意义的粗粒度 Region，简单场景允许只有一个。Region 是评价范围，不是精确物体 Mask。\n- 对重复或成组内容，例如书籍、唱片、柜体、桌椅组合等，必要时建立 Semantic Group。一个 Group 可以包含多个物体，无须枚举每个实例。\n- 对特别重要、且需要投影位置测量的对象，可以选择少量 Anchor。\n- 为主要 Region 或 Group 选择有区分力的原子证据，不要只集中于物体存在和数量。\n- 在确实可观察时，考虑对象类别、显著属性、离散空间关系、局部排列、结构分隔、相对布局及尺度特征。\n- 不强制每个 Region 具备所有类型的证据，也不强制图片一定包含 Group。\n- 每个问题仅检查一个明确事实；避免含糊的“是否合理”“是否相似”“是否重建正确”。\n- 只能根据可见信息提问。遮挡、类别混淆或细节不足时，必须允许 unknown。\n- left_of/right_of 等方向关系定义为当前输入相机视角下的投影关系。\n- 不得将不可见的内部构造、真实物理连接或三维深度推断当作直接观察。\n- 不得根据被测 Render 选择、更换或修改证据。\n- 输出符合 Schema 的 JSON，不输出期望的验证答案。\n\n根据图像复杂度，优先形成少量高质量的原子证据，而不是生成冗长问题清单。\n证据预算是上限，具体是否生成取决于可观察性。\n\nUser:\n仅根据当前 Reference RGB 规划评价证据，最多 10 条原子命题；不要为填满预算生成问题。Region bbox 使用0–1000归一化xyxy粗范围；Anchor bbox仅表示其自身可见范围。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。groups和anchors允许为空。证据类型为semantic、spatial或statistical。answer_type为yes_no_unknown、count_unknown或categorical_unknown。类别型问题的categories必须在此Reference-only阶段给出1–12个互异、简短、中立的候选类别，不包括保留的unknown或ambiguous；其他答案类型的categories填空数组。类别集合不代表期望答案；不要输出expected、答案、置信度或推理。连续投影位置、相对面积和间距应由可靠RGB定位及确定性测量获得，不要求视觉验证器估算精确坐标。",
+    "staged_image": "89f04b80197244408a62a3f0245554e7.png",
+    "image_size": [
+      768,
+      512
+    ],
+    "shell": false,
+    "automatic_retries": 0,
+    "stdin_contains_expected_labels": false,
+    "necessary_input_files": [
+      "89f04b80197244408a62a3f0245554e7.png",
+      "question.txt",
+      "schema.json"
+    ]
+  },
+  "exit_code": 0,
+  "stderr": "2026-10-25T08:46:10.227226Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out\n2026-10-25T08:46:10.278324Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out\n",
+  "event_types": [
+    "thread.started",
+    "item.completed",
+    "item.completed",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "reported_usage": {
+    "input_tokens": 10958,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1144,
+    "reasoning_output_tokens": 49
+  },
+  "unexpected_tool_events": false,
+  "cli_errors": []
+}

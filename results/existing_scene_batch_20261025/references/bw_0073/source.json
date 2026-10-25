@@ -1,0 +1,14 @@
+{
+  "source_rgb": "../BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0073/task/environment/inputs/references/image_01.jpg",
+  "native_size": [
+    7952,
+    4333
+  ],
+  "common_size": [
+    768,
+    418
+  ],
+  "transform": "Aspect-preserving Reference thumbnail; no content search",
+  "model_input": "Reference RGB only; no task brief, Render, Geometry or object names",
+  "reviewed": false
+}

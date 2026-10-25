@@ -1,0 +1,380 @@
+{
+  "image_size": [
+    768,
+    418
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "Left window and counter",
+      "description": "Arched window, sink, countertop, shelves, and lower cabinets along the left wall.",
+      "bbox": [
+        0.0,
+        20.9,
+        284.16,
+        415.91
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        50,
+        370,
+        995
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Central island and seating",
+      "description": "Marble-topped island with stools in the foreground.",
+      "bbox": [
+        249.6,
+        190.19,
+        522.24,
+        376.2
+      ],
+      "raw_bbox_0_1000": [
+        325,
+        455,
+        680,
+        900
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Rear kitchen wall",
+      "description": "Dark cabinets, cooking area, backsplash, and glazed doorway at the back.",
+      "bbox": [
+        268.8,
+        110.77,
+        533.76,
+        244.53
+      ],
+      "raw_bbox_0_1000": [
+        350,
+        265,
+        695,
+        585
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "Right cabinet wall",
+      "description": "Tall dark cabinets framed by light wood cabinetry.",
+      "bbox": [
+        549.888,
+        0.0,
+        768.0,
+        353.21
+      ],
+      "raw_bbox_0_1000": [
+        716,
+        0,
+        1000,
+        845
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "Ceiling pendant",
+      "description": "Gold sculptural light above the island.",
+      "bbox": [
+        336.384,
+        41.8,
+        436.992,
+        150.48
+      ],
+      "raw_bbox_0_1000": [
+        438,
+        100,
+        569,
+        360
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a1",
+      "region_id": "r2",
+      "category": "kitchen island",
+      "bbox": [
+        258.048,
+        198.968,
+        516.864,
+        362.824
+      ],
+      "raw_bbox_0_1000": [
+        336,
+        476,
+        673,
+        868
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    },
+    {
+      "id": "a2",
+      "region_id": "r5",
+      "category": "pendant light",
+      "bbox": [
+        340.224,
+        45.144,
+        434.688,
+        147.972
+      ],
+      "raw_bbox_0_1000": [
+        443,
+        108,
+        566,
+        354
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "id": "g1",
+      "region_id": "r2",
+      "name": "Island stools",
+      "scope": "Visible stools lined up along the near side of the island.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "g2",
+      "region_id": "r4",
+      "name": "Tall cabinet arrangement",
+      "scope": "Dark full-height cabinet faces and surrounding light wood cabinets.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The left wall has a large arched-top window.",
+      "question": "Is a large arched-top window visible on the left wall?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "Two open shelves sit above the left countertop.",
+      "question": "Are open shelves positioned above the left countertop?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The left lower cabinet fronts are dark.",
+      "question": "What is the dominant color of the left lower cabinet fronts?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "dark gray",
+        "white",
+        "light wood",
+        "brown wood",
+        "blue",
+        "green",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "dark gray",
+        "white",
+        "light wood",
+        "brown wood",
+        "blue",
+        "green"
+      ]
+    },
+    {
+      "id": "e4",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "semantic",
+      "claim": "The central island has a white stone top with dark veining.",
+      "question": "Does the central island have a white stone top with dark veining?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e5",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "Four stools are visible along the near side of the island.",
+      "question": "How many stools are visible along the near side of the island?",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The stools form a horizontal row in front of the island.",
+      "question": "Do the stools form a horizontal row along the island's near side?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "A glazed doorway is to the right of the rear cooking area in the image.",
+      "question": "Is the glazed doorway to the right of the rear cooking area in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e8",
+      "region_id": "r4",
+      "group_id": "g2",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "Tall dark cabinet faces are bordered by light wood cabinetry.",
+      "question": "Are the tall dark cabinet faces bordered by light wood cabinetry?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e9",
+      "region_id": "r5",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "spatial",
+      "claim": "A gold sculptural pendant appears above the island.",
+      "question": "Is a gold sculptural pendant visible above the island?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

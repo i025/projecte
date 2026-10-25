@@ -1,0 +1,886 @@
+{
+  "backend": "codex_cli",
+  "source_kind": "live_model",
+  "model_requested": "gpt-6-sol",
+  "model_observed": null,
+  "actual_input": {
+    "system": "你是 Project e 的单图像评价证据规划器。\n\n你的任务是仅依据当前 Reference RGB，提取适合评价三维场景重建质量的可观察证据。\n你看不到被评测 Agent 的 Render、Blender 场景、对象名称或任何预期错误。\n\n请按以下原则工作：\n- 首先识别约 1–5 个有评价意义的粗粒度 Region，简单场景允许只有一个。Region 是评价范围，不是精确物体 Mask。\n- 对重复或成组内容，例如书籍、唱片、柜体、桌椅组合等，必要时建立 Semantic Group。一个 Group 可以包含多个物体，无须枚举每个实例。\n- 对特别重要、且需要投影位置测量的对象，可以选择少量 Anchor。\n- 为主要 Region 或 Group 选择有区分力的原子证据，不要只集中于物体存在和数量。\n- 在确实可观察时，考虑对象类别、显著属性、离散空间关系、局部排列、结构分隔、相对布局及尺度特征。\n- 不强制每个 Region 具备所有类型的证据，也不强制图片一定包含 Group。\n- 每个问题仅检查一个明确事实；避免含糊的“是否合理”“是否相似”“是否重建正确”。\n- 只能根据可见信息提问。遮挡、类别混淆或细节不足时，必须允许 unknown。\n- left_of/right_of 等方向关系定义为当前输入相机视角下的投影关系。\n- 不得将不可见的内部构造、真实物理连接或三维深度推断当作直接观察。\n- 不得根据被测 Render 选择、更换或修改证据。\n- 输出符合 Schema 的 JSON，不输出期望的验证答案。\n\n根据图像复杂度，优先形成少量高质量的原子证据，而不是生成冗长问题清单。\n证据预算是上限，具体是否生成取决于可观察性。",
+    "user": "仅根据当前 Reference RGB 规划评价证据，最多 10 条原子命题；不要为填满预算生成问题。Region bbox 使用0–1000归一化xyxy粗范围；Anchor bbox仅表示其自身可见范围。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。groups和anchors允许为空。证据类型为semantic、spatial或statistical。answer_type为yes_no_unknown、count_unknown或categorical_unknown。类别型问题的categories必须在此Reference-only阶段给出1–12个互异、简短、中立的候选类别，不包括保留的unknown或ambiguous；其他答案类型的categories填空数组。类别集合不代表期望答案；不要输出expected、答案、置信度或推理。连续投影位置、相对面积和间距应由可靠RGB定位及确定性测量获得，不要求视觉验证器估算精确坐标。",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "description",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "groups": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "name",
+              "scope"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "anchors": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "category": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "category",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "group_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "anchor_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "semantic",
+                  "spatial",
+                  "statistical"
+                ]
+              },
+              "claim": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "answer_type": {
+                "type": "string",
+                "enum": [
+                  "yes_no_unknown",
+                  "count_unknown",
+                  "categorical_unknown"
+                ]
+              },
+              "categories": {
+                "type": "array",
+                "maxItems": 12,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 64
+                }
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "group_id",
+              "anchor_id",
+              "type",
+              "claim",
+              "question",
+              "answer_type",
+              "categories"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "regions",
+        "groups",
+        "anchors",
+        "evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "raw_answer": "{\"regions\":[{\"id\":\"r1\",\"name\":\"Left red panel\",\"description\":\"Tall red vertical panel at the left edge with white graphics and partial text.\",\"bbox\":[0,31,166,848]},{\"id\":\"r2\",\"name\":\"Central display wall\",\"description\":\"Light gray wall section containing a dark rectangular screen and molded trim.\",\"bbox\":[143,129,651,866]},{\"id\":\"r3\",\"name\":\"Right hatch wall\",\"description\":\"Light gray wall section with a tall framed hatch and visible windows.\",\"bbox\":[642,68,1000,904]}],\"groups\":[{\"id\":\"g1\",\"region_id\":\"r3\",\"name\":\"Hatch windows\",\"scope\":\"The two vertically stacked dark window areas within the right hatch.\"}],\"anchors\":[{\"id\":\"a1\",\"region_id\":\"r2\",\"category\":\"display screen\",\"bbox\":[208,318,557,501]},{\"id\":\"a2\",\"region_id\":\"r3\",\"category\":\"framed hatch\",\"bbox\":[808,296,1000,743]}],\"evidence\":[{\"id\":\"e1\",\"region_id\":\"r1\",\"group_id\":null,\"anchor_id\":null,\"type\":\"semantic\",\"claim\":\"The left panel is predominantly red.\",\"question\":\"Is the tall left panel predominantly red?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]},{\"id\":\"e2\",\"region_id\":\"r1\",\"group_id\":null,\"anchor_id\":null,\"type\":\"semantic\",\"claim\":\"White star shaped graphics appear on the red panel.\",\"question\":\"Are white star shaped graphics visible on the red panel?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]},{\"id\":\"e3\",\"region_id\":\"r2\",\"group_id\":null,\"anchor_id\":\"a1\",\"type\":\"semantic\",\"claim\":\"A wide, dark rectangular electronic display is mounted on the central wall.\",\"question\":\"What type of feature occupies the central wall?\",\"answer_type\":\"categorical_unknown\",\"categories\":[\"electronic display\",\"window\",\"poster\",\"cabinet\",\"door\",\"mirror\"]},{\"id\":\"e4\",\"region_id\":\"r2\",\"group_id\":null,\"anchor_id\":\"a1\",\"type\":\"semantic\",\"claim\":\"A red maple leaf emblem is visible near the upper center of the display.\",\"question\":\"Is a red maple leaf emblem visible near the upper center of the display?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]},{\"id\":\"e5\",\"region_id\":\"r2\",\"group_id\":null,\"anchor_id\":\"a1\",\"type\":\"spatial\",\"claim\":\"The display sits above the lower horizontal wall trim.\",\"question\":\"Is the display above the lower horizontal wall trim?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]},{\"id\":\"e6\",\"region_id\":\"r3\",\"group_id\":null,\"anchor_id\":\"a2\",\"type\":\"semantic\",\"claim\":\"A tall, light colored polygonal frame surrounds the dark hatch openings.\",\"question\":\"Does a light colored polygonal frame surround the dark hatch openings?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]},{\"id\":\"e7\",\"region_id\":\"r3\",\"group_id\":\"g1\",\"anchor_id\":null,\"type\":\"statistical\",\"claim\":\"Two dark window areas are stacked vertically within the hatch.\",\"question\":\"How many dark window areas are visible within the hatch?\",\"answer_type\":\"count_unknown\",\"categories\":[]},{\"id\":\"e8\",\"region_id\":\"r3\",\"group_id\":\"g1\",\"anchor_id\":null,\"type\":\"spatial\",\"claim\":\"The upper hatch window is above the lower hatch window.\",\"question\":\"Are the hatch windows arranged one above the other?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]},{\"id\":\"e9\",\"region_id\":\"r3\",\"group_id\":null,\"anchor_id\":\"a2\",\"type\":\"spatial\",\"claim\":\"The hatch is to the right of the central display in the image.\",\"question\":\"Is the hatch to the right of the central display?\",\"answer_type\":\"yes_no_unknown\",\"categories\":[]}]}",
+  "parsed": {
+    "status": "valid",
+    "fields": {
+      "regions": {
+        "value": [
+          {
+            "id": "r1",
+            "name": "Left red panel",
+            "description": "Tall red vertical panel at the left edge with white graphics and partial text.",
+            "bbox": [
+              0,
+              31,
+              166,
+              848
+            ]
+          },
+          {
+            "id": "r2",
+            "name": "Central display wall",
+            "description": "Light gray wall section containing a dark rectangular screen and molded trim.",
+            "bbox": [
+              143,
+              129,
+              651,
+              866
+            ]
+          },
+          {
+            "id": "r3",
+            "name": "Right hatch wall",
+            "description": "Light gray wall section with a tall framed hatch and visible windows.",
+            "bbox": [
+              642,
+              68,
+              1000,
+              904
+            ]
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "r1",
+            "name": "Left red panel",
+            "description": "Tall red vertical panel at the left edge with white graphics and partial text.",
+            "bbox": [
+              0,
+              31,
+              166,
+              848
+            ]
+          },
+          {
+            "id": "r2",
+            "name": "Central display wall",
+            "description": "Light gray wall section containing a dark rectangular screen and molded trim.",
+            "bbox": [
+              143,
+              129,
+              651,
+              866
+            ]
+          },
+          {
+            "id": "r3",
+            "name": "Right hatch wall",
+            "description": "Light gray wall section with a tall framed hatch and visible windows.",
+            "bbox": [
+              642,
+              68,
+              1000,
+              904
+            ]
+          }
+        ],
+        "validation_status": "valid"
+      },
+      "groups": {
+        "value": [
+          {
+            "id": "g1",
+            "region_id": "r3",
+            "name": "Hatch windows",
+            "scope": "The two vertically stacked dark window areas within the right hatch."
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "g1",
+            "region_id": "r3",
+            "name": "Hatch windows",
+            "scope": "The two vertically stacked dark window areas within the right hatch."
+          }
+        ],
+        "validation_status": "valid"
+      },
+      "anchors": {
+        "value": [
+          {
+            "id": "a1",
+            "region_id": "r2",
+            "category": "display screen",
+            "bbox": [
+              208,
+              318,
+              557,
+              501
+            ]
+          },
+          {
+            "id": "a2",
+            "region_id": "r3",
+            "category": "framed hatch",
+            "bbox": [
+              808,
+              296,
+              1000,
+              743
+            ]
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "a1",
+            "region_id": "r2",
+            "category": "display screen",
+            "bbox": [
+              208,
+              318,
+              557,
+              501
+            ]
+          },
+          {
+            "id": "a2",
+            "region_id": "r3",
+            "category": "framed hatch",
+            "bbox": [
+              808,
+              296,
+              1000,
+              743
+            ]
+          }
+        ],
+        "validation_status": "valid"
+      },
+      "evidence": {
+        "value": [
+          {
+            "id": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "The left panel is predominantly red.",
+            "question": "Is the tall left panel predominantly red?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e2",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "White star shaped graphics appear on the red panel.",
+            "question": "Are white star shaped graphics visible on the red panel?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e3",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "semantic",
+            "claim": "A wide, dark rectangular electronic display is mounted on the central wall.",
+            "question": "What type of feature occupies the central wall?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "electronic display",
+              "window",
+              "poster",
+              "cabinet",
+              "door",
+              "mirror"
+            ]
+          },
+          {
+            "id": "e4",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "semantic",
+            "claim": "A red maple leaf emblem is visible near the upper center of the display.",
+            "question": "Is a red maple leaf emblem visible near the upper center of the display?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e5",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "spatial",
+            "claim": "The display sits above the lower horizontal wall trim.",
+            "question": "Is the display above the lower horizontal wall trim?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e6",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": "a2",
+            "type": "semantic",
+            "claim": "A tall, light colored polygonal frame surrounds the dark hatch openings.",
+            "question": "Does a light colored polygonal frame surround the dark hatch openings?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e7",
+            "region_id": "r3",
+            "group_id": "g1",
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "Two dark window areas are stacked vertically within the hatch.",
+            "question": "How many dark window areas are visible within the hatch?",
+            "answer_type": "count_unknown",
+            "categories": []
+          },
+          {
+            "id": "e8",
+            "region_id": "r3",
+            "group_id": "g1",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "The upper hatch window is above the lower hatch window.",
+            "question": "Are the hatch windows arranged one above the other?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e9",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": "a2",
+            "type": "spatial",
+            "claim": "The hatch is to the right of the central display in the image.",
+            "question": "Is the hatch to the right of the central display?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          }
+        ],
+        "raw_value": [
+          {
+            "id": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "The left panel is predominantly red.",
+            "question": "Is the tall left panel predominantly red?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e2",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "White star shaped graphics appear on the red panel.",
+            "question": "Are white star shaped graphics visible on the red panel?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e3",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "semantic",
+            "claim": "A wide, dark rectangular electronic display is mounted on the central wall.",
+            "question": "What type of feature occupies the central wall?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "electronic display",
+              "window",
+              "poster",
+              "cabinet",
+              "door",
+              "mirror"
+            ]
+          },
+          {
+            "id": "e4",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "semantic",
+            "claim": "A red maple leaf emblem is visible near the upper center of the display.",
+            "question": "Is a red maple leaf emblem visible near the upper center of the display?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e5",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "spatial",
+            "claim": "The display sits above the lower horizontal wall trim.",
+            "question": "Is the display above the lower horizontal wall trim?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e6",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": "a2",
+            "type": "semantic",
+            "claim": "A tall, light colored polygonal frame surrounds the dark hatch openings.",
+            "question": "Does a light colored polygonal frame surround the dark hatch openings?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e7",
+            "region_id": "r3",
+            "group_id": "g1",
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "Two dark window areas are stacked vertically within the hatch.",
+            "question": "How many dark window areas are visible within the hatch?",
+            "answer_type": "count_unknown",
+            "categories": []
+          },
+          {
+            "id": "e8",
+            "region_id": "r3",
+            "group_id": "g1",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "The upper hatch window is above the lower hatch window.",
+            "question": "Are the hatch windows arranged one above the other?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          },
+          {
+            "id": "e9",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": "a2",
+            "type": "spatial",
+            "claim": "The hatch is to the right of the central display in the image.",
+            "question": "Is the hatch to the right of the central display?",
+            "answer_type": "yes_no_unknown",
+            "categories": []
+          }
+        ],
+        "validation_status": "valid"
+      }
+    },
+    "schema_errors": [],
+    "document": {
+      "regions": [
+        {
+          "id": "r1",
+          "name": "Left red panel",
+          "description": "Tall red vertical panel at the left edge with white graphics and partial text.",
+          "bbox": [
+            0,
+            31,
+            166,
+            848
+          ]
+        },
+        {
+          "id": "r2",
+          "name": "Central display wall",
+          "description": "Light gray wall section containing a dark rectangular screen and molded trim.",
+          "bbox": [
+            143,
+            129,
+            651,
+            866
+          ]
+        },
+        {
+          "id": "r3",
+          "name": "Right hatch wall",
+          "description": "Light gray wall section with a tall framed hatch and visible windows.",
+          "bbox": [
+            642,
+            68,
+            1000,
+            904
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "id": "g1",
+          "region_id": "r3",
+          "name": "Hatch windows",
+          "scope": "The two vertically stacked dark window areas within the right hatch."
+        }
+      ],
+      "anchors": [
+        {
+          "id": "a1",
+          "region_id": "r2",
+          "category": "display screen",
+          "bbox": [
+            208,
+            318,
+            557,
+            501
+          ]
+        },
+        {
+          "id": "a2",
+          "region_id": "r3",
+          "category": "framed hatch",
+          "bbox": [
+            808,
+            296,
+            1000,
+            743
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "id": "e1",
+          "region_id": "r1",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "The left panel is predominantly red.",
+          "question": "Is the tall left panel predominantly red?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e2",
+          "region_id": "r1",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "White star shaped graphics appear on the red panel.",
+          "question": "Are white star shaped graphics visible on the red panel?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e3",
+          "region_id": "r2",
+          "group_id": null,
+          "anchor_id": "a1",
+          "type": "semantic",
+          "claim": "A wide, dark rectangular electronic display is mounted on the central wall.",
+          "question": "What type of feature occupies the central wall?",
+          "answer_type": "categorical_unknown",
+          "categories": [
+            "electronic display",
+            "window",
+            "poster",
+            "cabinet",
+            "door",
+            "mirror"
+          ]
+        },
+        {
+          "id": "e4",
+          "region_id": "r2",
+          "group_id": null,
+          "anchor_id": "a1",
+          "type": "semantic",
+          "claim": "A red maple leaf emblem is visible near the upper center of the display.",
+          "question": "Is a red maple leaf emblem visible near the upper center of the display?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e5",
+          "region_id": "r2",
+          "group_id": null,
+          "anchor_id": "a1",
+          "type": "spatial",
+          "claim": "The display sits above the lower horizontal wall trim.",
+          "question": "Is the display above the lower horizontal wall trim?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e6",
+          "region_id": "r3",
+          "group_id": null,
+          "anchor_id": "a2",
+          "type": "semantic",
+          "claim": "A tall, light colored polygonal frame surrounds the dark hatch openings.",
+          "question": "Does a light colored polygonal frame surround the dark hatch openings?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e7",
+          "region_id": "r3",
+          "group_id": "g1",
+          "anchor_id": null,
+          "type": "statistical",
+          "claim": "Two dark window areas are stacked vertically within the hatch.",
+          "question": "How many dark window areas are visible within the hatch?",
+          "answer_type": "count_unknown",
+          "categories": []
+        },
+        {
+          "id": "e8",
+          "region_id": "r3",
+          "group_id": "g1",
+          "anchor_id": null,
+          "type": "spatial",
+          "claim": "The upper hatch window is above the lower hatch window.",
+          "question": "Are the hatch windows arranged one above the other?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        },
+        {
+          "id": "e9",
+          "region_id": "r3",
+          "group_id": null,
+          "anchor_id": "a2",
+          "type": "spatial",
+          "claim": "The hatch is to the right of the central display in the image.",
+          "question": "Is the hatch to the right of the central display?",
+          "answer_type": "yes_no_unknown",
+          "categories": []
+        }
+      ]
+    }
+  },
+  "metadata": {},
+  "reviewed": false,
+  "energy_contribution": false,
+  "usage": "provisional/debug",
+  "status": "valid",
+  "request_submitted": true,
+  "elapsed_seconds": 33.43179607205093,
+  "token_usage": {
+    "input_tokens": 11030,
+    "output_tokens": 844,
+    "total_tokens": null
+  },
+  "isolation": {
+    "strict_blind_test": false,
+    "filesystem_read_confined": false,
+    "tools_disabled": true,
+    "project_cwd": false,
+    "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+  },
+  "image_binding": {
+    "source_rgb": "./results/existing_scene_batch_20261025/references/bw_0006/reference.png",
+    "image_size": [
+      630,
+      768
+    ]
+  },
+  "invocation": {
+    "argv": [
+      "codex",
+      "--no-daemon",
+      "-a",
+      "never",
+      "-c",
+      "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+      "-c",
+      "model_provider=\"verification_openai\"",
+      "-c",
+      "sqlite_home=\"<temporary-cli-runtime>/state\"",
+      "-c",
+      "log_dir=\"<temporary-cli-runtime>/state\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_max_bytes=0",
+      "-c",
+      "features.shell_tool=false",
+      "-c",
+      "tools.view_image=false",
+      "-c",
+      "features.multi_agent=false",
+      "-c",
+      "features.hooks=false",
+      "-c",
+      "features.apps=false",
+      "-c",
+      "features.plugins=false",
+      "-c",
+      "features.memories=false",
+      "-c",
+      "features.goals=false",
+      "-c",
+      "features.shell_snapshot=false",
+      "-c",
+      "shell_environment_policy.inherit=\"none\"",
+      "-c",
+      "model_reasoning_effort=\"low\"",
+      "exec",
+      "--ignore-user-config",
+      "--model",
+      "gpt-6-sol",
+      "--sandbox",
+      "read-only",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--image",
+      "<temporary-cli-runtime>/input/97373f3a69624d29b4801a8d2113d7ea.png",
+      "--output-schema",
+      "<temporary-cli-runtime>/input/schema.json",
+      "--output-last-message",
+      "<temporary-cli-runtime>/state/answer.json",
+      "--json",
+      "--",
+      "-"
+    ],
+    "stdin": "System:\n你是 Project e 的单图像评价证据规划器。\n\n你的任务是仅依据当前 Reference RGB，提取适合评价三维场景重建质量的可观察证据。\n你看不到被评测 Agent 的 Render、Blender 场景、对象名称或任何预期错误。\n\n请按以下原则工作：\n- 首先识别约 1–5 个有评价意义的粗粒度 Region，简单场景允许只有一个。Region 是评价范围，不是精确物体 Mask。\n- 对重复或成组内容，例如书籍、唱片、柜体、桌椅组合等，必要时建立 Semantic Group。一个 Group 可以包含多个物体，无须枚举每个实例。\n- 对特别重要、且需要投影位置测量的对象，可以选择少量 Anchor。\n- 为主要 Region 或 Group 选择有区分力的原子证据，不要只集中于物体存在和数量。\n- 在确实可观察时，考虑对象类别、显著属性、离散空间关系、局部排列、结构分隔、相对布局及尺度特征。\n- 不强制每个 Region 具备所有类型的证据，也不强制图片一定包含 Group。\n- 每个问题仅检查一个明确事实；避免含糊的“是否合理”“是否相似”“是否重建正确”。\n- 只能根据可见信息提问。遮挡、类别混淆或细节不足时，必须允许 unknown。\n- left_of/right_of 等方向关系定义为当前输入相机视角下的投影关系。\n- 不得将不可见的内部构造、真实物理连接或三维深度推断当作直接观察。\n- 不得根据被测 Render 选择、更换或修改证据。\n- 输出符合 Schema 的 JSON，不输出期望的验证答案。\n\n根据图像复杂度，优先形成少量高质量的原子证据，而不是生成冗长问题清单。\n证据预算是上限，具体是否生成取决于可观察性。\n\nUser:\n仅根据当前 Reference RGB 规划评价证据，最多 10 条原子命题；不要为填满预算生成问题。Region bbox 使用0–1000归一化xyxy粗范围；Anchor bbox仅表示其自身可见范围。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。groups和anchors允许为空。证据类型为semantic、spatial或statistical。answer_type为yes_no_unknown、count_unknown或categorical_unknown。类别型问题的categories必须在此Reference-only阶段给出1–12个互异、简短、中立的候选类别，不包括保留的unknown或ambiguous；其他答案类型的categories填空数组。类别集合不代表期望答案；不要输出expected、答案、置信度或推理。连续投影位置、相对面积和间距应由可靠RGB定位及确定性测量获得，不要求视觉验证器估算精确坐标。",
+    "staged_image": "97373f3a69624d29b4801a8d2113d7ea.png",
+    "image_size": [
+      630,
+      768
+    ],
+    "shell": false,
+    "automatic_retries": 0,
+    "stdin_contains_expected_labels": false,
+    "necessary_input_files": [
+      "97373f3a69624d29b4801a8d2113d7ea.png",
+      "question.txt",
+      "schema.json"
+    ]
+  },
+  "exit_code": 0,
+  "stderr": "",
+  "event_types": [
+    "thread.started",
+    "item.completed",
+    "item.completed",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "reported_usage": {
+    "input_tokens": 11030,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 844,
+    "reasoning_output_tokens": 25
+  },
+  "unexpected_tool_events": false,
+  "cli_errors": []
+}

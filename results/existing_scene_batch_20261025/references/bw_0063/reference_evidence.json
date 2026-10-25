@@ -1,0 +1,354 @@
+{
+  "image_size": [
+    768,
+    429
+  ],
+  "regions": [
+    {
+      "id": "r_living",
+      "name": "Living area",
+      "description": "Sofa, coffee tables, plants, and wall art on the left and center",
+      "bbox": [
+        42.24,
+        87.945,
+        405.504,
+        369.369
+      ],
+      "raw_bbox_0_1000": [
+        55,
+        205,
+        528,
+        861
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_dining",
+      "name": "Dining area",
+      "description": "Dining table and upholstered chairs in the right foreground",
+      "bbox": [
+        509.184,
+        217.074,
+        768.0,
+        429.0
+      ],
+      "raw_bbox_0_1000": [
+        663,
+        506,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_background",
+      "name": "Rear wall and passage",
+      "description": "Double doors, console table, and central hallway",
+      "bbox": [
+        416.256,
+        3.003,
+        768.0,
+        296.01
+      ],
+      "raw_bbox_0_1000": [
+        542,
+        7,
+        1000,
+        690
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a_sofa",
+      "region_id": "r_living",
+      "category": "sofa",
+      "bbox": [
+        92.16,
+        183.183,
+        407.04,
+        311.883
+      ],
+      "raw_bbox_0_1000": [
+        120,
+        427,
+        530,
+        727
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    },
+    {
+      "id": "a_dining_table",
+      "region_id": "r_dining",
+      "category": "dining table",
+      "bbox": [
+        592.128,
+        250.107,
+        768.0,
+        429.0
+      ],
+      "raw_bbox_0_1000": [
+        771,
+        583,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "id": "g_coffee_tables",
+      "region_id": "r_living",
+      "name": "Coffee tables",
+      "scope": "The low tables positioned in front of the sofa",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "g_dining_chairs",
+      "region_id": "r_dining",
+      "name": "Dining chairs",
+      "scope": "The upholstered chairs visible around the dining table",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r_living",
+      "group_id": null,
+      "anchor_id": "a_sofa",
+      "type": "semantic",
+      "claim": "The living area contains a light-colored upholstered sofa.",
+      "question": "Is a light-colored upholstered sofa visible in the living area?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r_living",
+      "group_id": "g_coffee_tables",
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "Three low tables are visible in front of or beside the sofa.",
+      "question": "How many low tables are visible in front of or beside the sofa?",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r_living",
+      "group_id": "g_coffee_tables",
+      "anchor_id": "a_sofa",
+      "type": "spatial",
+      "claim": "The round wooden coffee table projects below the sofa.",
+      "question": "Does the round wooden coffee table project below the sofa in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r_living",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "A rectangular blue-and-orange artwork hangs on the wall above the sofa.",
+      "question": "What type of wall decoration is visible above the sofa?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "framed artwork",
+        "mirror",
+        "wall clock",
+        "shelf",
+        "none",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "framed artwork",
+        "mirror",
+        "wall clock",
+        "shelf",
+        "none"
+      ]
+    },
+    {
+      "id": "e5",
+      "region_id": "r_living",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "A tall leafy plant projects to the left of the wall artwork.",
+      "question": "Does a tall leafy plant project to the left of the wall artwork?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r_dining",
+      "group_id": "g_dining_chairs",
+      "anchor_id": "a_dining_table",
+      "type": "semantic",
+      "claim": "The visible dining chairs have rounded, light-colored upholstered backs.",
+      "question": "What kind of backrest do the visible dining chairs have?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "rounded upholstered",
+        "straight upholstered",
+        "wooden slat",
+        "metal frame",
+        "backless",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "rounded upholstered",
+        "straight upholstered",
+        "wooden slat",
+        "metal frame",
+        "backless"
+      ]
+    },
+    {
+      "id": "e7",
+      "region_id": "r_dining",
+      "group_id": null,
+      "anchor_id": "a_dining_table",
+      "type": "semantic",
+      "claim": "White plates and bowls are arranged on the dining table.",
+      "question": "Are white plates and bowls visible on the dining table?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e8",
+      "region_id": "r_background",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The rear wall contains a pair of wooden doors with horizontal glass panels.",
+      "question": "What panel pattern is visible on the wooden doors?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "horizontal glass panels",
+        "vertical glass panels",
+        "solid wood panels",
+        "full-height glass",
+        "no doors visible",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "horizontal glass panels",
+        "vertical glass panels",
+        "solid wood panels",
+        "full-height glass",
+        "no doors visible"
+      ]
+    },
+    {
+      "id": "e9",
+      "region_id": "r_background",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "A narrow console table projects to the left of the double doors.",
+      "question": "Does a narrow console table project to the left of the double doors?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

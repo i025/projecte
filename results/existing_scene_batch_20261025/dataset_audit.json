@@ -1,0 +1,444 @@
+{
+  "counts": {
+    "run_root_directories": 16,
+    "inventory_rows": 29,
+    "native_trials": 25,
+    "unlisted_native_trials": 0,
+    "included_pairs": 13,
+    "completed_reconstruction_pairs": 9,
+    "incomplete_reconstruction_pairs": 4,
+    "unique_reference_tasks": 10,
+    "secondary_unproven_agent_provenance": 2,
+    "excluded_rows": 14,
+    "reliable_numeric_structural_geometry_pairs": 0,
+    "scene_graph_diagnostic_pairs": 1
+  },
+  "limitations": [
+    "Single-reference means one declared image file, not guaranteed absence of text hints or multi-view montage within it.",
+    "Original task text may differ from pure reconstruction for excluded modified/free-design tasks; exclusions are retained.",
+    "Incomplete outputs remain incomplete diagnostics; existence of final.blend does not prove completion.",
+    "Continued bw0073 is same Agent lineage as earlier incomplete trial; separate checkpoints, not independent agents.",
+    "All cameras historical/non-T0 or unknown; no formal scores.",
+    "No reliable evaluated collision/support Geometry for any included pair; bw0074 Scene Graph/AABB/Group-ID are auxiliary diagnostics only.",
+    "Third party images/derivatives remain private, redistribution unconfirmed.",
+    "Raw exceptions omitted from this inventory because native result logs may contain unrelated commands/session data."
+  ],
+  "pairs": [
+    {
+      "pair_id": "bw_0073__task__bA358eg",
+      "task_id": "bw_0073",
+      "run_id": "bw_0073-codex-fixed-camera-v1-rgb-only-key2-generation/bw_0073/task__bA358eg",
+      "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+      "completion": "completed",
+      "input_mode": "rgb_only_with_generic_protocol",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0074__bw_0074__KcPDLD8",
+      "task_id": "bw_0074",
+      "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0006__bw_0006__gfHGhky",
+      "task_id": "bw_0006",
+      "run_id": "official-showcase-10-images-v2/bw_0006/bw_0006__gfHGhky",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0009__bw_0009__X9GcF9r",
+      "task_id": "bw_0009",
+      "run_id": "official-showcase-10-images-v2/bw_0009/bw_0009__X9GcF9r",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "incomplete_AgentSafetyRefusalError",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_incomplete_reconstruction_diagnostic",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0043__bw_0043__p7isE6U",
+      "task_id": "bw_0043",
+      "run_id": "official-showcase-10-images-v2/bw_0043/bw_0043__p7isE6U",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0063__bw_0063__Lj7uE6T",
+      "task_id": "bw_0063",
+      "run_id": "official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0070__bw_0070__ofnJd6D",
+      "task_id": "bw_0070",
+      "run_id": "official-showcase-10-images-v2/bw_0070/bw_0070__ofnJd6D",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "incomplete_AgentSafetyRefusalError",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_incomplete_reconstruction_diagnostic",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0073__task__Dpf9tyA",
+      "task_id": "bw_0073",
+      "run_id": "bw_0073-codex-fixed-camera-v1-official-query-generation/bw_0073/task__Dpf9tyA",
+      "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0073__task__qtzUWks",
+      "task_id": "bw_0073",
+      "run_id": "bw_0073-official-harbor-continued/bw_0073/task__qtzUWks",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": false,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0073__task__PiTqWFN",
+      "task_id": "bw_0073",
+      "run_id": "bw_0073-official-harbor/bw_0073/task__PiTqWFN",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "incomplete_AgentTimeoutError",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_incomplete_reconstruction_diagnostic",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0075__bw_0075__nVjEut5",
+      "task_id": "bw_0075",
+      "run_id": "official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "image+scene_specific_text",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_0094__task__Uwpj6BC",
+      "task_id": "bw_0094",
+      "run_id": "bw_0094-codex-fixed-camera-v1-rgb-only-generation/bw_0094/task__Uwpj6BC",
+      "agent": "codex 0.147.0 / gpt-6-sol (openai)",
+      "completion": "incomplete_NonZeroAgentExitCodeError",
+      "input_mode": "rgb_only_with_generic_protocol",
+      "decision": "included_incomplete_reconstruction_diagnostic",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    },
+    {
+      "pair_id": "bw_9064__task__LY4dtPw",
+      "task_id": "bw_9064",
+      "run_id": "scene_064-harbor-generation/scene_064/task__LY4dtPw",
+      "agent": "claude-code 2.1.220 / gpt-6-sol (anthropic)",
+      "completion": "completed",
+      "input_mode": "rgb_with_generic_reconstruction_instructions",
+      "decision": "included_completed_reconstruction",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "source_checks": {
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "hash_checks_performed": false
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "pair_id": "bw_0073__task__oYZ64xB",
+      "task_id": "bw_0073",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "Missing or inconsistent pair provenance: 此尝试没有可访问的实际 .blend；不能借用同任务其他尝试的成功产物。"
+    },
+    {
+      "pair_id": "bw_0073__task__23ZnCR7",
+      "task_id": "bw_0073",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "续接 session 失败；保存的是继承的原始场景，不能作为独立成功重建。"
+    },
+    {
+      "pair_id": "bw_0008__bw_0008__bMh96wX",
+      "task_id": "bw_0008",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "重建后指定改造输送带、过渡料斗和控制柜材质，目标不等于原图。"
+    },
+    {
+      "pair_id": "bw_0037__bw_0037__euoKweR",
+      "task_id": "bw_0037",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "明确禁止复制原图构图；仅借用风格自由设计连续室内空间。"
+    },
+    {
+      "pair_id": "bw_0064__bw_0064__6jJPogR",
+      "task_id": "bw_0064",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "Missing or inconsistent pair provenance: 明确要求由正午改成金色日落；且原始尝试和两次续跑均未完成。"
+    },
+    {
+      "pair_id": "bw_0065__bw_0065__ahYmWAi",
+      "task_id": "bw_0065",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "单文件含浣熊多视图；要求重新摆姿并新建夜间后巷，非单图场景还原。"
+    },
+    {
+      "pair_id": "bw_0071__bw_0071__QtP3wre",
+      "task_id": "bw_0071",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "要求额外增加一排树冠阵列，目标元素分布已改变。"
+    },
+    {
+      "pair_id": "bw_0099__bw_0099__Wvpy28t",
+      "task_id": "bw_0099",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "同一工程包含毛坯 before 与精装 after；整体任务是改造，未来仅 before 状态可经人工确认后另作候选。"
+    },
+    {
+      "pair_id": "bw_0064__bw_0064__zdENoaW",
+      "task_id": "bw_0064",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "Missing or inconsistent pair provenance: 明确要求由正午改成金色日落；且原始尝试和两次续跑均未完成。"
+    },
+    {
+      "pair_id": "bw_0064__bw_0064__uT6rkCq",
+      "task_id": "bw_0064",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "Missing or inconsistent pair provenance: 明确要求由正午改成金色日落；且原始尝试和两次续跑均未完成。"
+    },
+    {
+      "pair_id": "bw_0006__bw_0006__F9MkLeM",
+      "task_id": "bw_0006",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "Missing or inconsistent pair provenance: 此尝试没有可访问的实际 .blend；不能借用同任务其他尝试的成功产物。"
+    },
+    {
+      "pair_id": "bw_9064__task__4HCwsib",
+      "task_id": "bw_9064",
+      "record_type": "generation_attempt",
+      "decision": "excluded",
+      "exclusion_reason": "Missing or inconsistent pair provenance: 此尝试没有可访问的实际 .blend；不能借用同任务其他尝试的成功产物。"
+    },
+    {
+      "pair_id": "bw_0006__bw_0006-evaluation",
+      "task_id": "bw_0006",
+      "record_type": "evaluation_plan_only",
+      "decision": "excluded_non_native_generation",
+      "exclusion_reason": "只有评测 plan.json，没有 task result 或提交副本；不是一次生成，也没有该 Run 的可用评测结果。"
+    },
+    {
+      "pair_id": "bw_9064__scene_064-harbor-evaluation",
+      "task_id": "bw_9064",
+      "record_type": "evaluation_record",
+      "decision": "excluded_non_native_generation",
+      "exclusion_reason": "成功 Harbor 生成样本的重复评测副本；关联来源但不重复推荐或计作独立 Agent。"
+    }
+  ],
+  "secondary_unproven_agent_provenance": [
+    {
+      "pair_id": "bw_0006__bw_0006-ofox-evaluation",
+      "task_id": "bw_0006",
+      "decision": "secondary_unproven_agent_provenance",
+      "exclusion_reason": "评测提交副本存在且与任务可追溯；只有 Codex-authored 脚本说明，无独立自主 Agent 生成轨迹和生成模型证明。"
+    },
+    {
+      "pair_id": "bw_9064__scene_064-blenderworld-custom",
+      "task_id": "bw_9064",
+      "decision": "secondary_unproven_agent_provenance",
+      "exclusion_reason": "本地 bw_9064 适配的旧场景；provenance.json 明确原图/原工程，复制品存在，但原 e-harness 运行路径不可访问，完整生成轨迹和输入隔离 unknown。"
+    }
+  ],
+  "raw_inventory": "Private server-only input_audit.private.json; third-party task briefs and directory details withheld",
+  "reviewed": false,
+  "usage": "provisional/debug"
+}

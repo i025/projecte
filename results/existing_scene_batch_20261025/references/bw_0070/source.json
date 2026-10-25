@@ -1,0 +1,14 @@
+{
+  "source_rgb": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0070/environment/inputs/references/image_01.jpg",
+  "native_size": [
+    914,
+    1087
+  ],
+  "common_size": [
+    646,
+    768
+  ],
+  "transform": "Aspect-preserving Reference thumbnail; no content search",
+  "model_input": "Reference RGB only; no task brief, Render, Geometry or object names",
+  "reviewed": false
+}

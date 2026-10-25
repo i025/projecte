@@ -1,0 +1,3518 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "historical_camera",
+    "pose_matches_T0": false,
+    "actual_poses": {
+      "T_c2w": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": null,
+    "reason": "Recorded actual pose differs from prescribed T0 or conflicts with another pose; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Recorded actual pose differs from prescribed T0 or conflicts with another pose",
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 2,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "unavailable_metrics": [
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": 0.0486396256648755,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 9,
+      "eligible_count": 4,
+      "coverage": 0.4444444444444444,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r1",
+        "region:r2",
+        "region:r3",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1",
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "unavailable_metrics": [
+        "region:r1",
+        "region:r2",
+        "region:r3",
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "appearance": {
+      "value": 0.2509141395360949,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 10,
+      "eligible_count": 5,
+      "coverage": 0.5,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r1",
+        "region:r2",
+        "region:r3",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1",
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "unavailable_metrics": [
+        "region:r1",
+        "region:r2",
+        "region:r3",
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "statistical": {
+      "value": 0.09722884969033904,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 8,
+      "applicable_count": 14,
+      "eligible_count": 8,
+      "coverage": 0.5714285714285714,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r1:texture",
+        "region:r1:distribution",
+        "region:r2:texture",
+        "region:r2:distribution",
+        "region:r3:texture",
+        "region:r3:distribution",
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "unavailable_metrics": [
+        "region:r1:texture",
+        "region:r1:distribution",
+        "region:r2:texture",
+        "region:r2:distribution",
+        "region:r3:texture",
+        "region:r3:distribution"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "perceptual": {
+      "value": 0.3067740192214719,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 10,
+      "eligible_count": 5,
+      "coverage": 0.5,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r1",
+        "region:r2",
+        "region:r3",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1",
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "unavailable_metrics": [
+        "region:r1",
+        "region:r2",
+        "region:r3",
+        "anchor:a1",
+        "anchor:a2"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    }
+  },
+  "observation_energy": 0.17588915852819534,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": null,
+    "checks": {
+      "penetration": [],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [
+      {
+        "kind": "structural_evidence_unavailable",
+        "reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed"
+      }
+    ],
+    "raw_geometry": {
+      "status": "unavailable",
+      "reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed"
+    },
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.4888888888888889,
+  "observation_status": "partial",
+  "evidence_counts": {
+    "expected": 45,
+    "eligible": 22,
+    "valid": 22
+  },
+  "eligible_evidence_coverage": 1.0,
+  "uncertainty": {
+    "region_coverage": 0.5714285714285714,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": 0.0,
+    "structural_check_coverage": null,
+    "unknown_evidence": [
+      {
+        "id": "r1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r2:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r2:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r2",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r3",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r3",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r3:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r3:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r3",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "a1",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a1",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a1",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "a1",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "a2",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a2",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a2",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "a2",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Recorded actual pose differs from prescribed T0 or conflicts with another pose; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 2
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 331008.0,
+        "color_l1": 0.25082375040438964,
+        "coarse_boundary_error": 0.194558502659502,
+        "grayscale_wasserstein": 0.1839789370649652,
+        "edge_coverage_error": 0.19626715970610983,
+        "gradient_mean_error": 0.04130024778343923,
+        "texture_statistics_proxy": 0.14051544818483808,
+        "edge_distribution_proxy": 0.19725989112810974,
+        "edge_distribution_per_scale": {
+          "4": 0.19420542376587238,
+          "8": 0.194558502659502,
+          "16": 0.2030157469589548
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 82944.0,
+        "color_l1": 0.18030199444747033,
+        "coarse_boundary_error": 0.035865726327537595,
+        "grayscale_wasserstein": 0.07555474175347224,
+        "edge_coverage_error": 0.14437451774691357,
+        "gradient_mean_error": 0.028174076343500352,
+        "texture_statistics_proxy": 0.08270111194796205,
+        "edge_distribution_proxy": 0.03672829577596148,
+        "edge_distribution_per_scale": {
+          "4": 0.03547203793102213,
+          "8": 0.035865726327537595,
+          "16": 0.03884712306932471
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 82944.0,
+        "color_l1": 0.20474352646151053,
+        "coarse_boundary_error": 0.021420123033183046,
+        "grayscale_wasserstein": 0.14310408227237656,
+        "edge_coverage_error": 0.08429783950617284,
+        "gradient_mean_error": 0.021331519683490677,
+        "texture_statistics_proxy": 0.08291114715401336,
+        "edge_distribution_proxy": 0.022232811611578696,
+        "edge_distribution_per_scale": {
+          "4": 0.021494723200733163,
+          "8": 0.021420123033183046,
+          "16": 0.023783588600819878
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 82560.0,
+        "color_l1": 0.3566882156609414,
+        "coarse_boundary_error": 0.0609049363884689,
+        "grayscale_wasserstein": 0.3418407824612403,
+        "edge_coverage_error": 0.24878875968992248,
+        "gradient_mean_error": 0.05212608299133607,
+        "texture_statistics_proxy": 0.21425187504749957,
+        "edge_distribution_proxy": 0.061883648242815024,
+        "edge_distribution_per_scale": {
+          "4": 0.06068221213632946,
+          "8": 0.0609049363884689,
+          "16": 0.06406379620364669
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 82560.0,
+        "color_l1": 0.26210359983786796,
+        "coarse_boundary_error": 0.07636771691031247,
+        "grayscale_wasserstein": 0.2300274043120155,
+        "edge_coverage_error": 0.30836967054263564,
+        "gradient_mean_error": 0.06372324188073163,
+        "texture_statistics_proxy": 0.2007067722451276,
+        "edge_distribution_proxy": 0.07641513549775454,
+        "edge_distribution_per_scale": {
+          "4": 0.07655645049778761,
+          "8": 0.07636771691031247,
+          "16": 0.07632123908516353
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "reference_complete": false,
+      "unknown_candidates": 0,
+      "unknown_extras": [],
+      "unknown_rendered_candidates": [],
+      "extra_records": [],
+      "verdict_records": [],
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "valid_pixels": 331776,
+    "measurement_pixels": 331008,
+    "overlap_aggregation_withheld": []
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.25082375040438964,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": 0.2865517499428266,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r1:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r1:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r2:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r2:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r3:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r3:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r3",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.18030199444747033,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.035865726327537595,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:texture",
+      "value": 0.08270111194796205,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:distribution",
+      "value": 0.03672829577596148,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.03547203793102213,
+        "8": 0.035865726327537595,
+        "16": 0.03884712306932471
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.28303068580235446,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.20474352646151053,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.021420123033183046,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:texture",
+      "value": 0.08291114715401336,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:distribution",
+      "value": 0.022232811611578696,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.021494723200733163,
+        "8": 0.021420123033183046,
+        "16": 0.023783588600819878
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.28772003357330467,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.3566882156609414,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.0609049363884689,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:texture",
+      "value": 0.21425187504749957,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:distribution",
+      "value": 0.061883648242815024,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.06068221213632946,
+        "8": 0.0609049363884689,
+        "16": 0.06406379620364669
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.3629336782197558,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.26210359983786796,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.07636771691031247,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:texture",
+      "value": 0.2007067722451276,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:distribution",
+      "value": 0.07641513549775454,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.07655645049778761,
+        "8": 0.07636771691031247,
+        "16": 0.07632123908516353
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.3338562178477631,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "semantic",
+      "level": "anchor",
+      "id": "a1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "anchor",
+      "id": "a1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "anchor",
+      "id": "a1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "anchor",
+      "id": "a1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "semantic",
+      "level": "anchor",
+      "id": "a2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "anchor",
+      "id": "a2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "anchor",
+      "id": "a2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "anchor",
+      "id": "a2",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      768,
+      452
+    ],
+    "regions": [
+      {
+        "id": "r1",
+        "name": "Left building",
+        "description": "Brick building with a large landscape mural on its visible facade.",
+        "bbox": [
+          0.0,
+          88.14,
+          317.952,
+          334.932
+        ],
+        "raw_bbox_0_1000": [
+          0,
+          195,
+          414,
+          741
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "r2",
+        "name": "Central walkway",
+        "description": "Paved approach with low walls, planters, flags, and pedestrians.",
+        "bbox": [
+          321.792,
+          279.788,
+          658.944,
+          452.0
+        ],
+        "raw_bbox_0_1000": [
+          419,
+          619,
+          858,
+          1000
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "r3",
+        "name": "Rear plaza",
+        "description": "Fountain area framed by flowering trees and campus buildings.",
+        "bbox": [
+          311.04,
+          144.188,
+          754.944,
+          318.208
+        ],
+        "raw_bbox_0_1000": [
+          405,
+          319,
+          983,
+          704
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          384,
+          226
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          384,
+          0,
+          768,
+          226
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          226,
+          384,
+          452
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          384,
+          226,
+          768,
+          452
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "anchors": [
+      {
+        "id": "a1",
+        "region_id": "r3",
+        "category": "fountain",
+        "bbox": [
+          522.24,
+          227.808,
+          552.96,
+          291.088
+        ],
+        "raw_bbox_0_1000": [
+          680,
+          504,
+          720,
+          644
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "importance": 1.0,
+        "position": [
+          537.6,
+          259.448
+        ]
+      },
+      {
+        "id": "a2",
+        "region_id": "r1",
+        "category": "mural",
+        "bbox": [
+          80.64,
+          122.04,
+          231.936,
+          281.144
+        ],
+        "raw_bbox_0_1000": [
+          105,
+          270,
+          302,
+          622
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "importance": 1.0,
+        "position": [
+          156.288,
+          201.592
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "id": "g1",
+        "region_id": "r2",
+        "name": "Walkway banners",
+        "scope": "Red vertical banners along both sides of the central walkway.",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "g2",
+        "region_id": "r3",
+        "name": "Flowering trees",
+        "scope": "Pink flowering trees spread across the rear plaza.",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      }
+    ],
+    "atomic_evidence": [
+      {
+        "id": "e1",
+        "region_id": "r1",
+        "group_id": null,
+        "anchor_id": "a2",
+        "type": "semantic",
+        "claim": "The large mural depicts a landscape and contains prominent white text.",
+        "question": "Does the mural show a landscape with prominent white text?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e2",
+        "region_id": "r1",
+        "group_id": null,
+        "anchor_id": "a2",
+        "type": "spatial",
+        "claim": "The mural is left of the building's visible window pair.",
+        "question": "Is the mural left of the visible pair of windows on the brick building?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e3",
+        "region_id": "r2",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "The walkway narrows in the image toward the rear plaza.",
+        "question": "Do the walkway's side boundaries converge toward the rear plaza in the image?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e4",
+        "region_id": "r2",
+        "group_id": "g1",
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "The walkway banners are predominantly red.",
+        "question": "What is the predominant color of the vertical walkway banners?",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "red",
+          "blue",
+          "green",
+          "yellow",
+          "white",
+          "black",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "red",
+          "blue",
+          "green",
+          "yellow",
+          "white",
+          "black"
+        ]
+      },
+      {
+        "id": "e5",
+        "region_id": "r2",
+        "group_id": "g1",
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "Banners appear on both sides of the walkway.",
+        "question": "Are vertical banners visible on both sides of the central walkway?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e6",
+        "region_id": "r3",
+        "group_id": null,
+        "anchor_id": "a1",
+        "type": "semantic",
+        "claim": "A water jet rises from the fountain.",
+        "question": "Is an upward water jet visible at the fountain?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e7",
+        "region_id": "r3",
+        "group_id": "g2",
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "The flowering trees have pink blossoms.",
+        "question": "What color are the blossoms on the trees around the rear plaza?",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "pink",
+          "white",
+          "yellow",
+          "red",
+          "purple",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "pink",
+          "white",
+          "yellow",
+          "red",
+          "purple"
+        ]
+      },
+      {
+        "id": "e8",
+        "region_id": "r3",
+        "group_id": "g2",
+        "anchor_id": "a1",
+        "type": "spatial",
+        "claim": "Flowering trees flank the fountain in the image.",
+        "question": "Are flowering trees visible to both the left and right of the fountain?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      }
+    ],
+    "inventory_complete": false,
+    "reviewed": false,
+    "usage": "provisional/debug",
+    "source": "reference RGB and independently supplied annotations only",
+    "provenance": {
+      "backend": "codex_cli",
+      "planning_response": "planning_response.json",
+      "input_side": "reference_only",
+      "expected_answers_supplied": false
+    },
+    "evidence_protocol": {
+      "version": "existing_scene_v1",
+      "evidence_budget": 10
+    },
+    "category_policy": "reference_only_missing_other_v1",
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights"
+  },
+  "render_metadata": {
+    "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+    "T_c2w": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -6
+      ],
+      [
+        0,
+        1,
+        0,
+        1.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+    "resolution": [
+      768,
+      452
+    ],
+    "camera_object": "HarnessCamera",
+    "lens_mm": 27.0,
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "sensor_fit": "HORIZONTAL",
+    "shift_x": 0.0,
+    "shift_y": -0.13500000536441803,
+    "historical_native_metadata": {
+      "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+      "T_c2w": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -6
+        ],
+        [
+          0,
+          1,
+          0,
+          1.5
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "K": [
+        [
+          627.0,
+          0,
+          418.0
+        ],
+        [
+          0,
+          627.0,
+          122.13999551534653
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+      "resolution": [
+        836,
+        470
+      ],
+      "camera_object": "HarnessCamera",
+      "lens_mm": 27.0,
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "sensor_fit": "HORIZONTAL",
+      "shift_x": 0.0,
+      "shift_y": -0.13500000536441803
+    },
+    "resolution_scope": "Prepared RGB common grid; native camera metadata retained separately",
+    "historical_native_K": [
+      [
+        627.0,
+        0,
+        418.0
+      ],
+      [
+        0,
+        627.0,
+        122.13999551534653
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "formal_eligible": false,
+  "evidence_category": "historical_diagnostic",
+  "diagnostics": {
+    "groups": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/references/bw_0094/reference_evidence.json",
+      "reviewed": false,
+      "evidence": {
+        "image_size": [
+          768,
+          452
+        ],
+        "regions": [
+          {
+            "id": "r1",
+            "name": "Left building",
+            "description": "Brick building with a large landscape mural on its visible facade.",
+            "bbox": [
+              0.0,
+              88.14,
+              317.952,
+              334.932
+            ],
+            "raw_bbox_0_1000": [
+              0,
+              195,
+              414,
+              741
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          },
+          {
+            "id": "r2",
+            "name": "Central walkway",
+            "description": "Paved approach with low walls, planters, flags, and pedestrians.",
+            "bbox": [
+              321.792,
+              279.788,
+              658.944,
+              452.0
+            ],
+            "raw_bbox_0_1000": [
+              419,
+              619,
+              858,
+              1000
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          },
+          {
+            "id": "r3",
+            "name": "Rear plaza",
+            "description": "Fountain area framed by flowering trees and campus buildings.",
+            "bbox": [
+              311.04,
+              144.188,
+              754.944,
+              318.208
+            ],
+            "raw_bbox_0_1000": [
+              405,
+              319,
+              983,
+              704
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          }
+        ],
+        "anchors": [
+          {
+            "id": "a1",
+            "region_id": "r3",
+            "category": "fountain",
+            "bbox": [
+              522.24,
+              227.808,
+              552.96,
+              291.088
+            ],
+            "raw_bbox_0_1000": [
+              680,
+              504,
+              720,
+              644
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "importance": 1.0
+          },
+          {
+            "id": "a2",
+            "region_id": "r1",
+            "category": "mural",
+            "bbox": [
+              80.64,
+              122.04,
+              231.936,
+              281.144
+            ],
+            "raw_bbox_0_1000": [
+              105,
+              270,
+              302,
+              622
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "importance": 1.0
+          }
+        ],
+        "groups": [
+          {
+            "id": "g1",
+            "region_id": "r2",
+            "name": "Walkway banners",
+            "scope": "Red vertical banners along both sides of the central walkway.",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "g2",
+            "region_id": "r3",
+            "name": "Flowering trees",
+            "scope": "Pink flowering trees spread across the rear plaza.",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          }
+        ],
+        "atomic_evidence": [
+          {
+            "id": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": "a2",
+            "type": "semantic",
+            "claim": "The large mural depicts a landscape and contains prominent white text.",
+            "question": "Does the mural show a landscape with prominent white text?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e2",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": "a2",
+            "type": "spatial",
+            "claim": "The mural is left of the building's visible window pair.",
+            "question": "Is the mural left of the visible pair of windows on the brick building?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e3",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "The walkway narrows in the image toward the rear plaza.",
+            "question": "Do the walkway's side boundaries converge toward the rear plaza in the image?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e4",
+            "region_id": "r2",
+            "group_id": "g1",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "The walkway banners are predominantly red.",
+            "question": "What is the predominant color of the vertical walkway banners?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "red",
+              "blue",
+              "green",
+              "yellow",
+              "white",
+              "black",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "red",
+              "blue",
+              "green",
+              "yellow",
+              "white",
+              "black"
+            ]
+          },
+          {
+            "id": "e5",
+            "region_id": "r2",
+            "group_id": "g1",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "Banners appear on both sides of the walkway.",
+            "question": "Are vertical banners visible on both sides of the central walkway?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e6",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": "a1",
+            "type": "semantic",
+            "claim": "A water jet rises from the fountain.",
+            "question": "Is an upward water jet visible at the fountain?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e7",
+            "region_id": "r3",
+            "group_id": "g2",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "The flowering trees have pink blossoms.",
+            "question": "What color are the blossoms on the trees around the rear plaza?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "pink",
+              "white",
+              "yellow",
+              "red",
+              "purple",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "pink",
+              "white",
+              "yellow",
+              "red",
+              "purple"
+            ]
+          },
+          {
+            "id": "e8",
+            "region_id": "r3",
+            "group_id": "g2",
+            "anchor_id": "a1",
+            "type": "spatial",
+            "claim": "Flowering trees flank the fountain in the image.",
+            "question": "Are flowering trees visible to both the left and right of the fountain?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          }
+        ],
+        "inventory_complete": false,
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "source": "Reference-only Codex CLI planning; not GT",
+        "provenance": {
+          "backend": "codex_cli",
+          "planning_response": "planning_response.json",
+          "input_side": "reference_only",
+          "expected_answers_supplied": false
+        },
+        "evidence_protocol": {
+          "version": "existing_scene_v1",
+          "evidence_budget": 10
+        },
+        "category_policy": "reference_only_missing_other_v1"
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "structural_layout": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/structural_diagnostics.json",
+      "reviewed": false,
+      "evidence": {
+        "scene_graph": null,
+        "visibility": null,
+        "reviewed": false,
+        "energy_contribution": false,
+        "interpretation": "Cached generated-side evidence only; names/bounds are not category or visibility GT"
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "vlm_verification": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/verification_results.json",
+      "reviewed": false,
+      "pair_binding": "matched_paths_unverified_content",
+      "evidence": {
+        "reference": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+            "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r1\", \"name\": \"Left building\", \"bbox\": [0.0, 88.14, 317.952, 334.932]}, {\"id\": \"r2\", \"name\": \"Central walkway\", \"bbox\": [321.792, 279.788, 658.944, 452.0]}, {\"id\": \"r3\", \"name\": \"Rear plaza\", \"bbox\": [311.04, 144.188, 754.944, 318.208]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Does the mural show a landscape with prominent white text?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Is the mural left of the visible pair of windows on the brick building?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r2\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Do the walkway's side boundaries converge toward the rear plaza in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"What is the predominant color of the vertical walkway banners?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"red\", \"blue\", \"green\", \"yellow\", \"white\", \"black\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"Are vertical banners visible on both sides of the central walkway?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r3\", \"group_id\": null, \"anchor_id\": \"a1\", \"question\": \"Is an upward water jet visible at the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e7\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": null, \"question\": \"What color are the blossoms on the trees around the rear plaza?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"pink\", \"white\", \"yellow\", \"red\", \"purple\", \"absent\", \"other\"]}, {\"id\": \"e8\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": \"a1\", \"question\": \"Are flowering trees visible to both the left and right of the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e2": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e3": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e4": {
+                  "type": "string",
+                  "enum": [
+                    "red",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "white",
+                    "black",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e5": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e6": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e7": {
+                  "type": "string",
+                  "enum": [
+                    "pink",
+                    "white",
+                    "yellow",
+                    "red",
+                    "purple",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e8": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2",
+                "e3",
+                "e4",
+                "e5",
+                "e6",
+                "e7",
+                "e8"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e3": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e4": {
+                "value": "red",
+                "raw_value": "red",
+                "validation_status": "valid"
+              },
+              "e5": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e6": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e7": {
+                "value": "pink",
+                "raw_value": "pink",
+                "validation_status": "valid"
+              },
+              "e8": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": "yes",
+              "e2": "yes",
+              "e3": "yes",
+              "e4": "red",
+              "e5": "yes",
+              "e6": "yes",
+              "e7": "pink",
+              "e8": "yes"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 23.71538195805624,
+          "token_usage": {
+            "input_tokens": 11156,
+            "output_tokens": 51,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "./results/existing_scene_batch_20261025/references/bw_0094/reference.png",
+            "image_size": [
+              768,
+              452
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-runtime>/input/e0245a7ad1d14db9ae1135f2be67fbe3.png",
+              "--output-schema",
+              "<temporary-cli-runtime>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-runtime>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。\n\nUser:\n独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r1\", \"name\": \"Left building\", \"bbox\": [0.0, 88.14, 317.952, 334.932]}, {\"id\": \"r2\", \"name\": \"Central walkway\", \"bbox\": [321.792, 279.788, 658.944, 452.0]}, {\"id\": \"r3\", \"name\": \"Rear plaza\", \"bbox\": [311.04, 144.188, 754.944, 318.208]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Does the mural show a landscape with prominent white text?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Is the mural left of the visible pair of windows on the brick building?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r2\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Do the walkway's side boundaries converge toward the rear plaza in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"What is the predominant color of the vertical walkway banners?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"red\", \"blue\", \"green\", \"yellow\", \"white\", \"black\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"Are vertical banners visible on both sides of the central walkway?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r3\", \"group_id\": null, \"anchor_id\": \"a1\", \"question\": \"Is an upward water jet visible at the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e7\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": null, \"question\": \"What color are the blossoms on the trees around the rear plaza?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"pink\", \"white\", \"yellow\", \"red\", \"purple\", \"absent\", \"other\"]}, {\"id\": \"e8\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": \"a1\", \"question\": \"Are flowering trees visible to both the left and right of the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "staged_image": "e0245a7ad1d14db9ae1135f2be67fbe3.png",
+            "image_size": [
+              768,
+              452
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "e0245a7ad1d14db9ae1135f2be67fbe3.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 11156,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 51,
+            "reasoning_output_tokens": 0
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "render": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+            "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r1\", \"name\": \"Left building\", \"bbox\": [0.0, 88.14, 317.952, 334.932]}, {\"id\": \"r2\", \"name\": \"Central walkway\", \"bbox\": [321.792, 279.788, 658.944, 452.0]}, {\"id\": \"r3\", \"name\": \"Rear plaza\", \"bbox\": [311.04, 144.188, 754.944, 318.208]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Does the mural show a landscape with prominent white text?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Is the mural left of the visible pair of windows on the brick building?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r2\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Do the walkway's side boundaries converge toward the rear plaza in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"What is the predominant color of the vertical walkway banners?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"red\", \"blue\", \"green\", \"yellow\", \"white\", \"black\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"Are vertical banners visible on both sides of the central walkway?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r3\", \"group_id\": null, \"anchor_id\": \"a1\", \"question\": \"Is an upward water jet visible at the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e7\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": null, \"question\": \"What color are the blossoms on the trees around the rear plaza?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"pink\", \"white\", \"yellow\", \"red\", \"purple\", \"absent\", \"other\"]}, {\"id\": \"e8\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": \"a1\", \"question\": \"Are flowering trees visible to both the left and right of the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e2": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e3": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e4": {
+                  "type": "string",
+                  "enum": [
+                    "red",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "white",
+                    "black",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e5": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e6": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e7": {
+                  "type": "string",
+                  "enum": [
+                    "pink",
+                    "white",
+                    "yellow",
+                    "red",
+                    "purple",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e8": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2",
+                "e3",
+                "e4",
+                "e5",
+                "e6",
+                "e7",
+                "e8"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e3": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e4": {
+                "value": "absent",
+                "raw_value": "absent",
+                "validation_status": "valid"
+              },
+              "e5": {
+                "value": "no",
+                "raw_value": "no",
+                "validation_status": "valid"
+              },
+              "e6": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e7": {
+                "value": "pink",
+                "raw_value": "pink",
+                "validation_status": "valid"
+              },
+              "e8": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": "yes",
+              "e2": "yes",
+              "e3": "yes",
+              "e4": "absent",
+              "e5": "no",
+              "e6": "yes",
+              "e7": "pink",
+              "e8": "yes"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 23.08215014403686,
+          "token_usage": {
+            "input_tokens": 11156,
+            "output_tokens": 231,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/render.png",
+            "image_size": [
+              768,
+              452
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-runtime>/input/2976dab147ef4c37bc6e75025febcd2b.png",
+              "--output-schema",
+              "<temporary-cli-runtime>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-runtime>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。\n\nUser:\n独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r1\", \"name\": \"Left building\", \"bbox\": [0.0, 88.14, 317.952, 334.932]}, {\"id\": \"r2\", \"name\": \"Central walkway\", \"bbox\": [321.792, 279.788, 658.944, 452.0]}, {\"id\": \"r3\", \"name\": \"Rear plaza\", \"bbox\": [311.04, 144.188, 754.944, 318.208]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Does the mural show a landscape with prominent white text?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r1\", \"group_id\": null, \"anchor_id\": \"a2\", \"question\": \"Is the mural left of the visible pair of windows on the brick building?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r2\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Do the walkway's side boundaries converge toward the rear plaza in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"What is the predominant color of the vertical walkway banners?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"red\", \"blue\", \"green\", \"yellow\", \"white\", \"black\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r2\", \"group_id\": \"g1\", \"anchor_id\": null, \"question\": \"Are vertical banners visible on both sides of the central walkway?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r3\", \"group_id\": null, \"anchor_id\": \"a1\", \"question\": \"Is an upward water jet visible at the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e7\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": null, \"question\": \"What color are the blossoms on the trees around the rear plaza?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"pink\", \"white\", \"yellow\", \"red\", \"purple\", \"absent\", \"other\"]}, {\"id\": \"e8\", \"region_id\": \"r3\", \"group_id\": \"g2\", \"anchor_id\": \"a1\", \"question\": \"Are flowering trees visible to both the left and right of the fountain?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "staged_image": "2976dab147ef4c37bc6e75025febcd2b.png",
+            "image_size": [
+              768,
+              452
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "2976dab147ef4c37bc6e75025febcd2b.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 11156,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 231,
+            "reasoning_output_tokens": 177
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "results": [
+          {
+            "evidence_id": "e1",
+            "field": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": "a2",
+            "energy": "semantic",
+            "claim": "The large mural depicts a landscape and contains prominent white text.",
+            "question": "Does the mural show a landscape with prominent white text?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e2",
+            "field": "e2",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": "a2",
+            "energy": "spatial",
+            "claim": "The mural is left of the building's visible window pair.",
+            "question": "Is the mural left of the visible pair of windows on the brick building?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e3",
+            "field": "e3",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "The walkway narrows in the image toward the rear plaza.",
+            "question": "Do the walkway's side boundaries converge toward the rear plaza in the image?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e4",
+            "field": "e4",
+            "region_id": "r2",
+            "group_id": "g1",
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "The walkway banners are predominantly red.",
+            "question": "What is the predominant color of the vertical walkway banners?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "red",
+            "render_answer": "absent",
+            "status": "candidate_violated",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "red",
+              "blue",
+              "green",
+              "yellow",
+              "white",
+              "black",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "red",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "absent",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e5",
+            "field": "e5",
+            "region_id": "r2",
+            "group_id": "g1",
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "Banners appear on both sides of the walkway.",
+            "question": "Are vertical banners visible on both sides of the central walkway?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "no",
+            "status": "candidate_violated",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "no",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e6",
+            "field": "e6",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": "a1",
+            "energy": "semantic",
+            "claim": "A water jet rises from the fountain.",
+            "question": "Is an upward water jet visible at the fountain?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e7",
+            "field": "e7",
+            "region_id": "r3",
+            "group_id": "g2",
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "The flowering trees have pink blossoms.",
+            "question": "What color are the blossoms on the trees around the rear plaza?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "pink",
+            "render_answer": "pink",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "pink",
+              "white",
+              "yellow",
+              "red",
+              "purple",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "pink",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "pink",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e8",
+            "field": "e8",
+            "region_id": "r3",
+            "group_id": "g2",
+            "anchor_id": "a1",
+            "energy": "spatial",
+            "claim": "Flowering trees flank the fountain in the image.",
+            "question": "Are flowering trees visible to both the left and right of the fountain?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"red\",\"e5\":\"yes\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"absent\",\"e5\":\"no\",\"e6\":\"yes\",\"e7\":\"pink\",\"e8\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          }
+        ],
+        "image_pair": {
+          "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0094/reference.png",
+          "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/render.png"
+        },
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "formal_eligible": false
+      },
+      "unmatched_evidence": null,
+      "applicable_to_current_pair": true,
+      "energy_contribution": false,
+      "interpretation": "Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping"
+    },
+    "fixed_region_measurements": [
+      {
+        "id": "r1",
+        "description": "Brick building with a large landscape mural on its visible facade.",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 78546.0,
+        "valid_pixel_weight": 78546.0,
+        "measurement_pixel_weight": 78546.0,
+        "appearance": 0.2561614700115781,
+        "perceptual": 0.3751775243365218,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.0807839210887749,
+          "statistical": 0.12314279229853514
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "r2",
+        "description": "Paved approach with low walls, planters, flags, and pedestrians.",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 58474.0,
+        "valid_pixel_weight": 55094.0,
+        "measurement_pixel_weight": 54756.0,
+        "appearance": 0.24883554707586886,
+        "perceptual": 0.25348591174112733,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.06376401125418313,
+          "statistical": 0.13328034888981344
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "r3",
+        "description": "Fountain area framed by flowering trees and campus buildings.",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 77700.0,
+        "valid_pixel_weight": 77700.0,
+        "measurement_pixel_weight": 77700.0,
+        "appearance": 0.26090717608364666,
+        "perceptual": 0.27524725191345284,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.08104822007833912,
+          "statistical": 0.13268010591382678
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    "region_overlap": {
+      "named_region_count": 3,
+      "overlap_pixels": 14745,
+      "overlap_fraction_of_valid": 0.04444263599537037,
+      "max_multiplicity": 2,
+      "unassigned_valid_pixels": 135181,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Reference thumbnail; saved Render uniformly fit once with centered invalid padding, no crop/registration",
+    "applied_transform": {
+      "original_size": [
+        768,
+        452
+      ],
+      "common_size": [
+        768,
+        452
+      ],
+      "resized_size": [
+        768,
+        452
+      ],
+      "offset_xy": [
+        0,
+        0
+      ],
+      "nominal_scale": 1.0,
+      "content_alignment": false,
+      "padding_is_not_observation": true,
+      "transform": "identity"
+    },
+    "valid_pixels": 331776,
+    "canvas_pixels": 347136,
+    "valid_mask": "valid_pixels.png",
+    "measurement_pixels": 331008,
+    "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+  },
+  "provenance": {
+    "manifest": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/manifest.json",
+    "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0094/reference.png",
+    "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/render.png",
+    "reference_evidence": "./results/existing_scene_batch_20261025/references/bw_0094/reference_evidence.json",
+    "optional_inputs": {
+      "render_evidence": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "geometry": {
+        "status": "available",
+        "source": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/geometry.json",
+        "reviewed": null
+      },
+      "triage": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "rules": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "render_metadata": {
+        "status": "available",
+        "source": "./results/existing_scene_batch_20261025/pairs/bw_0094__task__Uwpj6BC/camera.json",
+        "reviewed": null
+      }
+    },
+    "supplied_provenance": {
+      "pair_id": "bw_0094__task__Uwpj6BC",
+      "task_id": "bw_0094",
+      "run_id": "bw_0094-codex-fixed-camera-v1-rgb-only-generation/bw_0094/task__Uwpj6BC",
+      "native_reference": "../BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0094/task/environment/inputs/references/image_01.jpg",
+      "native_render": "../BlenderWorld/runs/bw_0094-codex-fixed-camera-v1-rgb-only-generation/bw_0094/task__Uwpj6BC/artifacts/workspace/exports/preview_01.png",
+      "native_render_transform": {
+        "original_size": [
+          836,
+          470
+        ],
+        "common_size": [
+          768,
+          452
+        ],
+        "nominal_scale": 0.9186602870813397,
+        "resized_size": [
+          768,
+          432
+        ],
+        "offset_xy": [
+          0,
+          10
+        ],
+        "padding_is_not_observation": true,
+        "content_alignment": false,
+        "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+      },
+      "source_checks": {
+        "run_config": "../BlenderWorld/runs/bw_0094-codex-fixed-camera-v1-rgb-only-generation/bw_0094/task__Uwpj6BC/config.json",
+        "native_result": "../BlenderWorld/runs/bw_0094-codex-fixed-camera-v1-rgb-only-generation/bw_0094/task__Uwpj6BC/result.json",
+        "input_manifest": "../BlenderWorld/work/codex-fixed-camera-v1-reference-pair/bw_0094/task/environment/inputs/input.json",
+        "task_metadata": "../BlenderWorld/data/hf-snapshot/bw_0094/tests/dataset/tasks/bw_0094/task.json",
+        "artifact_manifest": "../BlenderWorld/runs/bw_0094-codex-fixed-camera-v1-rgb-only-generation/bw_0094/task__Uwpj6BC/artifacts/manifest.json",
+        "native_task_name": "LocalRGBOnly/bw_0094",
+        "native_trial_name": "task__Uwpj6BC",
+        "input_task_id": "bw_0094",
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "historical_png_blend_sync": "unknown; same artifact export lineage only; no re-render",
+        "hash_checks_performed": false
+      },
+      "completion": "incomplete_NonZeroAgentExitCodeError",
+      "new_agent_executions": 0,
+      "new_blender_executions": 0,
+      "alignment_search": false
+    },
+    "api_calls": 0,
+    "model_inferences": null,
+    "dino": {
+      "backend": "local_DINOv2",
+      "model": "<local-models>/dinov2",
+      "device": "cpu",
+      "threads": 2,
+      "local_files_only": true,
+      "real_inference": true,
+      "downloaded": false
+    },
+    "blender_executions": 0,
+    "agent_code_executed": false
+  },
+  "measurement_interpretation": {
+    "appearance": "Actual RGB L1; affected by camera, lighting and visibility",
+    "spatial": "Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness",
+    "statistical": "Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density",
+    "semantic": "Reviewed evidence only; attached Group/Structural answers never become scores",
+    "perceptual": "Existing local DINO metric; crop/black-fill/aspect-ratio confounds remain; not semantic correctness",
+    "observation": "Conditional debug aggregate of core eligible records; not a formal Benchmark result"
+  },
+  "elapsed_seconds": 3.272158222971484
+}

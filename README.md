@@ -6,6 +6,8 @@ Project e studies evaluation of Agentic Image-to-3D reconstruction without refer
 
 The [Offline Evaluation MVP](OFFLINE_EVALUATION.md) provides one manifest-based entry for existing Reference/Render images, fixed ROI, optional evidence and camera checks. It emits auditable JSON, PNG and Markdown; external camera declarations and unreviewed Group/Structural answers do not create formal scores.
 
+The independent [Existing-Scene Batch Runner](EXISTING_SCENE_BENCHMARK.md) evaluates saved Agent renders without generating or executing a scene. It uses Reference-only `existing_scene_v1` planning, independently frozen VQA, local CPU DINOv2 and the same Offline Evaluator, with diagnostic/measurement/formal coverage reported separately.
+
 The [real-RGB batch v0.1](BENCHMARK_V01.md) freezes inputs and budgets, runs bounded Codex CLI planning/code generation/VQA, and retains failures across resume. Its actual run is **partial**: untrusted Blender execution remains blocked by missing qualified isolation, so no new Render or formal Benchmark score is claimed.
 
 ## Current findings
@@ -23,6 +25,7 @@ The [real-RGB batch v0.1](BENCHMARK_V01.md) freezes inputs and budgets, runs bou
 | `e_harness/benchmark_evidence.py` | Reference candidates, review/reliability handling and shared evidence interfaces |
 | `e_harness/benchmark_metrics.py` | Semantic, Spatial, Appearance, Statistical and Perceptual diagnostics and aggregation |
 | `e_harness/benchmark_structure.py` | Independent 3D structural checks and unavailable/coverage handling |
+| `e_harness/benchmark_existing.py` | Existing saved-image batch, bounded real VQA, local DINO and audit summaries |
 | `e_harness/benchmark_config.py` | Existing fixed camera, provisional policies and weights |
 | `scripts/` | Bounded experiments, parsers, offline replays and visualizations |
 | `tests/` | Metric/verification contracts and orchestration checks; some older suites require Blender or local caches |

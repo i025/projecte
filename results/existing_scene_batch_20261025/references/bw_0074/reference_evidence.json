@@ -1,0 +1,328 @@
+{
+  "image_size": [
+    768,
+    522
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "Wall shelving and cabinets",
+      "description": "Dark blue built-in shelving with books, records, display objects, and lower cabinet doors.",
+      "bbox": [
+        70.656,
+        51.156,
+        768.0,
+        392.022
+      ],
+      "raw_bbox_0_1000": [
+        92,
+        98,
+        1000,
+        751
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Desk area",
+      "description": "Workspace with a monitor, lamp, desk surface, and transparent chair.",
+      "bbox": [
+        47.616,
+        224.982,
+        311.04,
+        520.956
+      ],
+      "raw_bbox_0_1000": [
+        62,
+        431,
+        405,
+        998
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Foreground sofa",
+      "description": "Blue sofa back and cushions occupying the lower foreground.",
+      "bbox": [
+        235.776,
+        335.124,
+        768.0,
+        522.0
+      ],
+      "raw_bbox_0_1000": [
+        307,
+        642,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a1",
+      "region_id": "r2",
+      "category": "monitor",
+      "bbox": [
+        129.792,
+        232.29,
+        235.776,
+        297.54
+      ],
+      "raw_bbox_0_1000": [
+        169,
+        445,
+        307,
+        570
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    },
+    {
+      "id": "a2",
+      "region_id": "r1",
+      "category": "turntable",
+      "bbox": [
+        639.744,
+        280.836,
+        761.088,
+        326.772
+      ],
+      "raw_bbox_0_1000": [
+        833,
+        538,
+        991,
+        626
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "id": "g1",
+      "region_id": "r1",
+      "name": "Vinyl records",
+      "scope": "Rows of records across the upper-right shelves.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "g2",
+      "region_id": "r1",
+      "name": "Shelving compartments",
+      "scope": "Rectangular open compartments across the wall unit.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The record rows occupy the upper-right portion of the wall shelving.",
+      "question": "Are the record rows in the upper-right portion of the wall shelving?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": "g2",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The wall unit has open rectangular compartments above closed lower cabinets.",
+      "question": "Are open rectangular compartments positioned above closed lower cabinets?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "A silver boombox is on a shelf below the record rows.",
+      "question": "Is a silver boombox on a shelf below the record rows?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "semantic",
+      "claim": "A turntable is visible on the lower-right shelf.",
+      "question": "What type of audio equipment is visible on the lower-right shelf?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "turntable",
+        "boombox",
+        "speaker",
+        "amplifier",
+        "radio",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "turntable",
+        "boombox",
+        "speaker",
+        "amplifier",
+        "radio"
+      ]
+    },
+    {
+      "id": "e5",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "spatial",
+      "claim": "The monitor is positioned above the desk surface.",
+      "question": "Is the monitor positioned above the desk surface?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The chair at the desk is transparent.",
+      "question": "Is the chair at the desk transparent?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The foreground sofa has blue upholstery.",
+      "question": "What is the dominant color of the foreground sofa upholstery?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "blue",
+        "gray",
+        "green",
+        "brown",
+        "white",
+        "black",
+        "red",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "blue",
+        "gray",
+        "green",
+        "brown",
+        "white",
+        "black",
+        "red"
+      ]
+    },
+    {
+      "id": "e8",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The sofa overlaps the lower portion of the wall unit in the image.",
+      "question": "Does the sofa overlap the lower portion of the wall unit in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

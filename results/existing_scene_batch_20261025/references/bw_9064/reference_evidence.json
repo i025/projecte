@@ -1,0 +1,252 @@
+{
+  "image_size": [
+    768,
+    432
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "Room shell",
+      "description": "Visible walls, ceiling, baseboards, and floor",
+      "bbox": [
+        0.0,
+        0.0,
+        768.0,
+        432.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Dining area",
+      "description": "Small table, two chairs, and tabletop plant on the left",
+      "bbox": [
+        89.856,
+        231.12,
+        323.328,
+        393.984
+      ],
+      "raw_bbox_0_1000": [
+        117,
+        535,
+        421,
+        912
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Refrigerator area",
+      "description": "Freestanding refrigerator on the right",
+      "bbox": [
+        523.008,
+        142.128,
+        645.12,
+        365.904
+      ],
+      "raw_bbox_0_1000": [
+        681,
+        329,
+        840,
+        847
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [
+    {
+      "id": "g1",
+      "region_id": "r2",
+      "name": "Dining furniture",
+      "scope": "Table and chairs",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The visible floor has a wood plank appearance.",
+      "question": "Does the floor have a wood plank appearance?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "White baseboards separate the walls from the floor.",
+      "question": "Are white baseboards visible along the wall-floor boundary?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "The dining furniture includes two chairs.",
+      "question": "How many chairs are visible in the dining area?",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The table is positioned between the two chairs in the image.",
+      "question": "Is the table positioned between the two chairs in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e5",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The table has a round tabletop supported by a central pedestal.",
+      "question": "Which visible support structure does the table have?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "central pedestal",
+        "multiple legs",
+        "wall-mounted",
+        "other visible support",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "central pedestal",
+        "multiple legs",
+        "wall-mounted",
+        "other visible support"
+      ]
+    },
+    {
+      "id": "e6",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "A small potted plant sits on the tabletop.",
+      "question": "Is a small potted plant visible on the tabletop?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The refrigerator has two vertically stacked door sections.",
+      "question": "How many vertically stacked door sections are visible on the refrigerator?",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e8",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The refrigerator is to the right of the dining furniture in the image.",
+      "question": "Is the refrigerator to the right of the dining furniture in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

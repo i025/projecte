@@ -1,0 +1,316 @@
+{
+  "image_size": [
+    630,
+    768
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "Left red panel",
+      "description": "Tall red vertical panel at the left edge with white graphics and partial text.",
+      "bbox": [
+        0.0,
+        23.808,
+        104.58,
+        651.264
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        31,
+        166,
+        848
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Central display wall",
+      "description": "Light gray wall section containing a dark rectangular screen and molded trim.",
+      "bbox": [
+        90.09,
+        99.072,
+        410.13,
+        665.088
+      ],
+      "raw_bbox_0_1000": [
+        143,
+        129,
+        651,
+        866
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Right hatch wall",
+      "description": "Light gray wall section with a tall framed hatch and visible windows.",
+      "bbox": [
+        404.46,
+        52.224,
+        630.0,
+        694.272
+      ],
+      "raw_bbox_0_1000": [
+        642,
+        68,
+        1000,
+        904
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a1",
+      "region_id": "r2",
+      "category": "display screen",
+      "bbox": [
+        131.04,
+        244.224,
+        350.91,
+        384.768
+      ],
+      "raw_bbox_0_1000": [
+        208,
+        318,
+        557,
+        501
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    },
+    {
+      "id": "a2",
+      "region_id": "r3",
+      "category": "framed hatch",
+      "bbox": [
+        509.04,
+        227.328,
+        630.0,
+        570.624
+      ],
+      "raw_bbox_0_1000": [
+        808,
+        296,
+        1000,
+        743
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "id": "g1",
+      "region_id": "r3",
+      "name": "Hatch windows",
+      "scope": "The two vertically stacked dark window areas within the right hatch.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The left panel is predominantly red.",
+      "question": "Is the tall left panel predominantly red?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "White star shaped graphics appear on the red panel.",
+      "question": "Are white star shaped graphics visible on the red panel?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "semantic",
+      "claim": "A wide, dark rectangular electronic display is mounted on the central wall.",
+      "question": "What type of feature occupies the central wall?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "electronic display",
+        "window",
+        "poster",
+        "cabinet",
+        "door",
+        "mirror",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "electronic display",
+        "window",
+        "poster",
+        "cabinet",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "id": "e4",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "semantic",
+      "claim": "A red maple leaf emblem is visible near the upper center of the display.",
+      "question": "Is a red maple leaf emblem visible near the upper center of the display?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e5",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "spatial",
+      "claim": "The display sits above the lower horizontal wall trim.",
+      "question": "Is the display above the lower horizontal wall trim?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "semantic",
+      "claim": "A tall, light colored polygonal frame surrounds the dark hatch openings.",
+      "question": "Does a light colored polygonal frame surround the dark hatch openings?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r3",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "Two dark window areas are stacked vertically within the hatch.",
+      "question": "How many dark window areas are visible within the hatch?",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e8",
+      "region_id": "r3",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The upper hatch window is above the lower hatch window.",
+      "question": "Are the hatch windows arranged one above the other?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e9",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "spatial",
+      "claim": "The hatch is to the right of the central display in the image.",
+      "question": "Is the hatch to the right of the central display?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

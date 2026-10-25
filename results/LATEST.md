@@ -5,6 +5,10 @@
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
 
+## Existing-Scene 真实批量评价（2026-10-25；审核分支）
+
+[实际发现与限制](existing_scene_batch_20261025/findings.md) · [汇总](existing_scene_batch_20261025/summary.md) · [逐配对CSV](existing_scene_batch_20261025/per_pair_results.csv) · [完整JSON](existing_scene_batch_20261025/report.json) · [人工审核表](existing_scene_batch_20261025/evidence_audit.md) · [来源筛选](existing_scene_batch_20261025/dataset_audit.json) · [执行检查](existing_scene_batch_20261025/integration_checks.json) · [运行说明](../EXISTING_SCENE_BENCHMARK.md)。13/13组已有配对、10张Reference完成实际评价（9完整、4不完整检查点）。33次真实CLI调用无重试；DINOv2真实CPU224次前向/448图输入。107条配对判断：91一致、13候选差异、3Unknown。Spatial/Appearance/Statistical/Perceptual均有13/13条件数值，但Spatial/Statistical仍是图像代理；Semantic/Structural均N/A，正式成绩0。452项CPU测试通过，新增16项；全部新语义证据未审核、历史相机provisional。未运行Agent/Blender、不改Energy/权重/Runtime。所有第三方PNG/Mask仅留私有服务器，公开JSON仅路径脱敏和无关主机元数据投影；原始回答不改。
+
 ## Existing-Scene VLM 证据协议修订（2026-10-25；离线）
 
 [说明与复现](../EVIDENCE_PROTOCOL.md) · [修订报告](existing_scene_protocol_v1/report.md) · [实际规划契约](existing_scene_protocol_v1/planning_protocol.json) · [CPU 检查](existing_scene_protocol_v1/checks.json)。新协议 `existing_scene_v1` 支持1–5粗Region、最多10条可配置证据及类别型答案空间；类别在Reference-only阶段冻结，unknown/ambiguous弃权，每条保留原始JSON、来源和未审核字段。436项CPU测试通过，新增24项；本轮0次模型调用，不声称视觉能力提升。历史M2/v0.1 Prompt、问题及回答不改写；旧配置仍用legacy，新Batch必须显式选择新协议。所有候选reviewed=false，仅诊断，不改Energy/权重/Runtime blocked。

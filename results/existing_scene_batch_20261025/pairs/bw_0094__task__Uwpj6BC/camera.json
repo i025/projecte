@@ -1,0 +1,117 @@
+{
+  "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+  "T_c2w": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      -6
+    ],
+    [
+      0,
+      1,
+      0,
+      1.5
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+  "resolution": [
+    768,
+    452
+  ],
+  "camera_object": "HarnessCamera",
+  "lens_mm": 27.0,
+  "sensor_width_mm": 36.0,
+  "sensor_height_mm": 24.0,
+  "sensor_fit": "HORIZONTAL",
+  "shift_x": 0.0,
+  "shift_y": -0.13500000536441803,
+  "historical_native_metadata": {
+    "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+    "T_c2w": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -6
+      ],
+      [
+        0,
+        1,
+        0,
+        1.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "K": [
+      [
+        627.0,
+        0,
+        418.0
+      ],
+      [
+        0,
+        627.0,
+        122.13999551534653
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+    "resolution": [
+      836,
+      470
+    ],
+    "camera_object": "HarnessCamera",
+    "lens_mm": 27.0,
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "sensor_fit": "HORIZONTAL",
+    "shift_x": 0.0,
+    "shift_y": -0.13500000536441803
+  },
+  "resolution_scope": "Prepared RGB common grid; native camera metadata retained separately",
+  "historical_native_K": [
+    [
+      627.0,
+      0,
+      418.0
+    ],
+    [
+      0,
+      627.0,
+      122.13999551534653
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ]
+}

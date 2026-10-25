@@ -1,0 +1,117 @@
+{
+  "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+  "T_c2w": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      -6
+    ],
+    [
+      0,
+      1,
+      0,
+      1.5
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+  "resolution": [
+    768,
+    418
+  ],
+  "camera_object": "Camera",
+  "lens_mm": 22.5,
+  "sensor_width_mm": 36.0,
+  "sensor_height_mm": 24.0,
+  "sensor_fit": "HORIZONTAL",
+  "shift_x": 0.0,
+  "shift_y": 0.0,
+  "historical_native_metadata": {
+    "convention": "Blender camera-to-world; column vectors; camera looks along local -Z, local +Y is up; world +Z is up; metres",
+    "T_c2w": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -6
+      ],
+      [
+        0,
+        1,
+        0,
+        1.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "K": [
+      [
+        1045.0,
+        0,
+        836.0
+      ],
+      [
+        0,
+        1045.0,
+        470.5
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "image_coordinates": "top-left image edge is (0,0); x right, y down; pixel centres at half integers",
+    "resolution": [
+      1672,
+      941
+    ],
+    "camera_object": "Camera",
+    "lens_mm": 22.5,
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "sensor_fit": "HORIZONTAL",
+    "shift_x": 0.0,
+    "shift_y": 0.0
+  },
+  "resolution_scope": "Prepared RGB common grid; native camera metadata retained separately",
+  "historical_native_K": [
+    [
+      1045.0,
+      0,
+      836.0
+    ],
+    [
+      0,
+      1045.0,
+      470.5
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ]
+}

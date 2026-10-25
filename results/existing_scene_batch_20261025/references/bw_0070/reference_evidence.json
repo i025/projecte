@@ -1,0 +1,251 @@
+{
+  "image_size": [
+    646,
+    768
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "Vehicle body",
+      "description": "Yellow industrial vehicle, including its frame and lower chassis.",
+      "bbox": [
+        1.938,
+        39.168,
+        642.77,
+        724.224
+      ],
+      "raw_bbox_0_1000": [
+        3,
+        51,
+        995,
+        943
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Operator area",
+      "description": "Central gray compartment and the glazed cabin on its right.",
+      "bbox": [
+        217.702,
+        131.328,
+        607.24,
+        524.544
+      ],
+      "raw_bbox_0_1000": [
+        337,
+        171,
+        940,
+        683
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Upper equipment",
+      "description": "Red articulated equipment visible behind the upper yellow frame.",
+      "bbox": [
+        192.508,
+        109.824,
+        419.254,
+        308.736
+      ],
+      "raw_bbox_0_1000": [
+        298,
+        143,
+        649,
+        402
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [
+    {
+      "id": "g1",
+      "region_id": "r1",
+      "name": "Visible tires",
+      "scope": "The two large dark tires beneath the vehicle.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "g2",
+      "region_id": "r1",
+      "name": "Front light pairs",
+      "scope": "The pairs of square lights on the left and right yellow front panels.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The main vehicle body is predominantly yellow.",
+      "question": "Is the main vehicle body predominantly yellow?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "Two large tires are visible beneath the chassis.",
+      "question": "How many large tires are visible beneath the chassis?",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r1",
+      "group_id": "g2",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "A pair of square lights appears on each side of the central gray compartment.",
+      "question": "Is there a pair of square lights on each side of the central gray compartment?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The glazed cabin is to the right of the central gray compartment.",
+      "question": "Is the glazed cabin to the right of the central gray compartment in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e5",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The central gray compartment has a large rectangular door panel.",
+      "question": "Does the central gray compartment have a large rectangular door panel?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "Red articulated equipment is visible above the central gray compartment.",
+      "question": "What is the predominant color of the articulated equipment above the central gray compartment?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "red",
+        "yellow",
+        "blue",
+        "gray",
+        "black",
+        "white",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "red",
+        "yellow",
+        "blue",
+        "gray",
+        "black",
+        "white"
+      ]
+    },
+    {
+      "id": "e7",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "A tall yellow frame runs across the top and down both sides of the central compartment.",
+      "question": "Does a yellow frame extend across the top and down both sides of the central compartment?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

@@ -47,9 +47,12 @@ def answer_schema(answer_type, categories=None):
     if not isinstance(categories, list):
         raise ValueError('categories must be a frozen list')
     if answer_type == 'categorical_unknown':
-        if (not 1 <= len(categories) <= 12 or any(not isinstance(c, str) or not c.strip()
+        # A controller may freeze explicit absence/other fallbacks on the Reference
+        # side in addition to the planner's at most twelve substantive categories.
+        if (not 1 <= len(categories) <= 14 or any(not isinstance(c, str) or not c.strip()
                 or len(c) > 64 or c != c.strip() or c in ('unknown', 'ambiguous') for c in categories)
-                or len(set(categories)) != len(categories)):
+                or len(set(categories)) != len(categories) or
+                sum(c not in ('absent', 'other') for c in categories) > 12):
             raise ValueError('Categorical questions require 1..12 unique nonempty categories; unknown/ambiguous are reserved')
         return dict(type='string', enum=[*categories, 'unknown', 'ambiguous'])
     if categories:

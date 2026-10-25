@@ -1,0 +1,255 @@
+{
+  "image_size": [
+    768,
+    463
+  ],
+  "regions": [
+    {
+      "id": "r_flower",
+      "name": "中央花朵",
+      "description": "画面中央占据较大范围的白色花朵",
+      "bbox": [
+        126.72,
+        11.575,
+        552.96,
+        453.74
+      ],
+      "raw_bbox_0_1000": [
+        165,
+        25,
+        720,
+        980
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_background",
+      "name": "周围植被与地面",
+      "description": "花朵周围可见的绿色狭长叶片和褐色落叶",
+      "bbox": [
+        0.0,
+        0.0,
+        768.0,
+        463.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a_flower",
+      "region_id": "r_flower",
+      "category": "flower",
+      "bbox": [
+        126.72,
+        11.575,
+        552.96,
+        453.74
+      ],
+      "raw_bbox_0_1000": [
+        165,
+        25,
+        720,
+        980
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r_flower",
+      "group_id": null,
+      "anchor_id": "a_flower",
+      "type": "semantic",
+      "claim": "中央主体是一朵开放的花。",
+      "question": "中央主体是否为一朵开放的花？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r_flower",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "花朵具有六片显眼的白色花被片。",
+      "question": "这朵花可见多少片主要的白色花被片？",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r_flower",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "花被片的主要颜色为白色。",
+      "question": "花被片的主要颜色是什么？",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "白色",
+        "黄色",
+        "粉色",
+        "红色",
+        "紫色",
+        "蓝色",
+        "橙色",
+        "绿色",
+        "褐色",
+        "混合色",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "白色",
+        "黄色",
+        "粉色",
+        "红色",
+        "紫色",
+        "蓝色",
+        "橙色",
+        "绿色",
+        "褐色",
+        "混合色"
+      ]
+    },
+    {
+      "id": "e4",
+      "region_id": "r_flower",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "花朵中心呈绿色。",
+      "question": "花朵中心的主要颜色是什么？",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "绿色",
+        "黄色",
+        "白色",
+        "粉色",
+        "红色",
+        "紫色",
+        "褐色",
+        "黑色",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "绿色",
+        "黄色",
+        "白色",
+        "粉色",
+        "红色",
+        "紫色",
+        "褐色",
+        "黑色"
+      ]
+    },
+    {
+      "id": "e5",
+      "region_id": "r_flower",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "花朵中心可见细长的黄色花药。",
+      "question": "花朵中心是否可见黄色花药？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r_background",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "花朵周围可见绿色狭长叶片。",
+      "question": "花朵周围是否可见绿色狭长叶片？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r_background",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "花朵后方可见褐色落叶和枯枝。",
+      "question": "花朵周围的地面是否可见褐色落叶或枯枝？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

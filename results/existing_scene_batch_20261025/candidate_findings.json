@@ -1,0 +1,134 @@
+{
+  "findings": [
+    {
+      "pair_id": "bw_0073__task__bA358eg",
+      "evidence_id": "e1",
+      "question": "Is a large arched-top window visible on the left wall?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0073__task__bA358eg",
+      "evidence_id": "e4",
+      "question": "Does the central island have a white stone top with dark veining?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0074__bw_0074__KcPDLD8",
+      "evidence_id": "e6",
+      "question": "Is the chair at the desk transparent?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0006__bw_0006__gfHGhky",
+      "evidence_id": "e7",
+      "question": "How many dark window areas are visible within the hatch?",
+      "reference": 2,
+      "render": 1,
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0006__bw_0006__gfHGhky",
+      "evidence_id": "e8",
+      "question": "Are the hatch windows arranged one above the other?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0009__bw_0009__X9GcF9r",
+      "evidence_id": "e6",
+      "question": "泳池上缘附近可见几个人？",
+      "reference": 2,
+      "render": 0,
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0009__bw_0009__X9GcF9r",
+      "evidence_id": "e7",
+      "question": "从当前视角看，深色上衣的人是否位于浅色上衣的人的左侧？",
+      "reference": "yes",
+      "render": "unknown",
+      "status": "unknown"
+    },
+    {
+      "pair_id": "bw_0063__bw_0063__Lj7uE6T",
+      "evidence_id": "e2",
+      "question": "How many low tables are visible in front of or beside the sofa?",
+      "reference": 3,
+      "render": 2,
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0070__bw_0070__ofnJd6D",
+      "evidence_id": "e2",
+      "question": "How many large tires are visible beneath the chassis?",
+      "reference": 2,
+      "render": 0,
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0070__bw_0070__ofnJd6D",
+      "evidence_id": "e3",
+      "question": "Is there a pair of square lights on each side of the central gray compartment?",
+      "reference": "yes",
+      "render": "unknown",
+      "status": "unknown"
+    },
+    {
+      "pair_id": "bw_0070__bw_0070__ofnJd6D",
+      "evidence_id": "e4",
+      "question": "Is the glazed cabin to the right of the central gray compartment in the image?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0073__task__Dpf9tyA",
+      "evidence_id": "e4",
+      "question": "Does the central island have a white stone top with dark veining?",
+      "reference": "yes",
+      "render": "unknown",
+      "status": "unknown"
+    },
+    {
+      "pair_id": "bw_0073__task__Dpf9tyA",
+      "evidence_id": "e8",
+      "question": "Are the tall dark cabinet faces bordered by light wood cabinetry?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0075__bw_0075__nVjEut5",
+      "evidence_id": "e3",
+      "question": "浅色云层是否主要分布在天空的中下部？",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0094__task__Uwpj6BC",
+      "evidence_id": "e4",
+      "question": "What is the predominant color of the vertical walkway banners?",
+      "reference": "red",
+      "render": "absent",
+      "status": "candidate_violated"
+    },
+    {
+      "pair_id": "bw_0094__task__Uwpj6BC",
+      "evidence_id": "e5",
+      "question": "Are vertical banners visible on both sides of the central walkway?",
+      "reference": "yes",
+      "render": "no",
+      "status": "candidate_violated"
+    }
+  ],
+  "reviewed": false,
+  "interpretation": "Automatic candidates, not independent human review or reconstruction-error GT"
+}

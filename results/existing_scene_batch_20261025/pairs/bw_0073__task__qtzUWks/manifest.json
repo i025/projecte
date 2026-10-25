@@ -1,0 +1,74 @@
+{
+  "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0073/reference.png",
+  "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0073__task__qtzUWks/render.png",
+  "valid_pixels": "valid_pixels.png",
+  "geometry": "geometry.json",
+  "render_metadata": "camera.json",
+  "evidence_category": "historical_diagnostic",
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Reference thumbnail; saved Render uniformly fit once with centered invalid padding, no crop/registration"
+  },
+  "camera_comparability": "historical_camera; actual input camera unknown; no trusted execution binding",
+  "diagnostics": {
+    "structural_layout": "structural_diagnostics.json",
+    "groups": "./results/existing_scene_batch_20261025/references/bw_0073/reference_evidence.json"
+  },
+  "provenance": {
+    "pair_id": "bw_0073__task__qtzUWks",
+    "task_id": "bw_0073",
+    "run_id": "bw_0073-official-harbor-continued/bw_0073/task__qtzUWks",
+    "native_reference": "../BlenderWorld/work/bw_0073-official-harbor/task/environment/inputs/references/image_01.jpg",
+    "native_render": "../BlenderWorld/runs/bw_0073-official-harbor-continued/bw_0073/task__qtzUWks/artifacts/workspace/exports/render.png",
+    "native_render_transform": {
+      "original_size": [
+        1800,
+        1012
+      ],
+      "common_size": [
+        768,
+        418
+      ],
+      "nominal_scale": 0.41304347826086957,
+      "resized_size": [
+        743,
+        418
+      ],
+      "offset_xy": [
+        12,
+        0
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "source_checks": {
+      "run_config": "../BlenderWorld/runs/bw_0073-official-harbor-continued/bw_0073/task__qtzUWks/config.json",
+      "native_result": "../BlenderWorld/runs/bw_0073-official-harbor-continued/bw_0073/task__qtzUWks/result.json",
+      "input_manifest": "../BlenderWorld/work/bw_0073-official-harbor/task/environment/inputs/input.json",
+      "task_metadata": "../BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/task.json",
+      "artifact_manifest": "../BlenderWorld/runs/bw_0073-official-harbor-continued/bw_0073/task__qtzUWks/artifacts/manifest.json",
+      "native_task_name": "Qwen/BlenderWorld-bw_0073",
+      "native_trial_name": "task__qtzUWks",
+      "input_task_id": "bw_0073",
+      "input_reference_count": 1,
+      "task_reference_count": 1,
+      "reference_listed_in_input": true,
+      "reference_matches_task_metadata_path": true,
+      "reference_bytes_equal_original": true,
+      "render_within_same_run_exports": true,
+      "blend_within_same_run_exports": true,
+      "artifact_manifest_maps_exports": true,
+      "trajectory_exists": false,
+      "historical_png_blend_sync": "unknown; same artifact export lineage only; no re-render",
+      "hash_checks_performed": false
+    },
+    "completion": "completed",
+    "new_agent_executions": 0,
+    "new_blender_executions": 0,
+    "alignment_search": false
+  },
+  "reference_evidence": "./results/existing_scene_batch_20261025/references/bw_0073/reference_evidence.json",
+  "vlm_verification": "verification_results.json"
+}

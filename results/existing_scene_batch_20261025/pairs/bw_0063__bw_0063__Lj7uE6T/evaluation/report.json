@@ -1,0 +1,3551 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "unknown",
+    "pose_matches_T0": false,
+    "actual_poses": {},
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": null,
+    "reason": "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient",
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 2,
+      "eligible_count": 0,
+      "coverage": 0.0,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "unavailable_metrics": [
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": 0.024595236524327085,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 9,
+      "eligible_count": 4,
+      "coverage": 0.4444444444444444,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r_living",
+        "region:r_dining",
+        "region:r_background",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1",
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "unavailable_metrics": [
+        "region:r_living",
+        "region:r_dining",
+        "region:r_background",
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "appearance": {
+      "value": 0.15189414105517932,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 10,
+      "eligible_count": 5,
+      "coverage": 0.5,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r_living",
+        "region:r_dining",
+        "region:r_background",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1",
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "unavailable_metrics": [
+        "region:r_living",
+        "region:r_dining",
+        "region:r_background",
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "statistical": {
+      "value": 0.041149836667273496,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 8,
+      "applicable_count": 14,
+      "eligible_count": 8,
+      "coverage": 0.5714285714285714,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r_living:texture",
+        "region:r_living:distribution",
+        "region:r_dining:texture",
+        "region:r_dining:distribution",
+        "region:r_background:texture",
+        "region:r_background:distribution",
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "unavailable_metrics": [
+        "region:r_living:texture",
+        "region:r_living:distribution",
+        "region:r_dining:texture",
+        "region:r_dining:distribution",
+        "region:r_background:texture",
+        "region:r_background:distribution"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "perceptual": {
+      "value": 0.16069510072011017,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 10,
+      "eligible_count": 5,
+      "coverage": 0.5,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r_living",
+        "region:r_dining",
+        "region:r_background",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1",
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "unavailable_metrics": [
+        "region:r_living",
+        "region:r_dining",
+        "region:r_background",
+        "anchor:a_sofa",
+        "anchor:a_dining_table"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    }
+  },
+  "observation_energy": 0.09458357874172252,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": null,
+    "checks": {
+      "penetration": [],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [
+      {
+        "kind": "structural_evidence_unavailable",
+        "reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed"
+      }
+    ],
+    "raw_geometry": {
+      "status": "unavailable",
+      "reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed"
+    },
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.4888888888888889,
+  "observation_status": "partial",
+  "evidence_counts": {
+    "expected": 45,
+    "eligible": 22,
+    "valid": 22
+  },
+  "eligible_evidence_coverage": 1.0,
+  "uncertainty": {
+    "region_coverage": 0.5714285714285714,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": 0.0,
+    "structural_check_coverage": null,
+    "unknown_evidence": [
+      {
+        "id": "r_living",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_living",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_living:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_living:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_living",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_dining",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_dining",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_dining:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_dining:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_dining",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_background",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_background",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_background:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_background:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_background",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "a_sofa",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a_sofa",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a_sofa",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "a_sofa",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "a_dining_table",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a_dining_table",
+        "reason": "Partial valid image support; semantic/relational verdict not revalidated"
+      },
+      {
+        "id": "a_dining_table",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "a_dining_table",
+        "reason": "Unreviewed or unknown Anchor evidence"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 2
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 326898.0,
+        "color_l1": 0.1518689425899554,
+        "coarse_boundary_error": 0.09838094609730832,
+        "grayscale_wasserstein": 0.04546582573157381,
+        "edge_coverage_error": 0.09229178520517103,
+        "gradient_mean_error": 0.018688502183947606,
+        "texture_statistics_proxy": 0.05214870437356415,
+        "edge_distribution_proxy": 0.10233033670206244,
+        "edge_distribution_per_scale": {
+          "4": 0.09773675652806477,
+          "8": 0.09838094609730832,
+          "16": 0.11087330748081428
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 81748.0,
+        "color_l1": 0.16184205182129938,
+        "coarse_boundary_error": 0.030703204907652114,
+        "grayscale_wasserstein": 0.06105501052013504,
+        "edge_coverage_error": 0.12298771835396585,
+        "gradient_mean_error": 0.027035084066736575,
+        "texture_statistics_proxy": 0.07035927098027915,
+        "edge_distribution_proxy": 0.031553314495034145,
+        "edge_distribution_per_scale": {
+          "4": 0.030733361770372194,
+          "8": 0.030703204907652114,
+          "16": 0.03322337680707812
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 81320.0,
+        "color_l1": 0.16167981572035275,
+        "coarse_boundary_error": 0.025720079716949482,
+        "grayscale_wasserstein": 0.09286460895228726,
+        "edge_coverage_error": 0.10119281849483522,
+        "gradient_mean_error": 0.019734221939308596,
+        "texture_statistics_proxy": 0.07126388312881037,
+        "edge_distribution_proxy": 0.0266392354475999,
+        "edge_distribution_per_scale": {
+          "4": 0.02542752038178564,
+          "8": 0.025720079716949482,
+          "16": 0.028770106244064578
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 82130.0,
+        "color_l1": 0.13069948885435095,
+        "coarse_boundary_error": 0.019608539236622213,
+        "grayscale_wasserstein": 0.046970504078899286,
+        "edge_coverage_error": 0.057177645196639475,
+        "gradient_mean_error": 0.011773634816157072,
+        "texture_statistics_proxy": 0.038640594697231946,
+        "edge_distribution_proxy": 0.02099192737458208,
+        "edge_distribution_per_scale": {
+          "4": 0.019460972524430995,
+          "8": 0.019608539236622213,
+          "16": 0.02390627036269303
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 81700.0,
+        "color_l1": 0.15340560475516196,
+        "coarse_boundary_error": 0.022349122236084526,
+        "grayscale_wasserstein": 0.03554926560587516,
+        "edge_coverage_error": 0.0880171358629131,
+        "gradient_mean_error": 0.016247422020623833,
+        "texture_statistics_proxy": 0.04660460782980402,
+        "edge_distribution_proxy": 0.02314585938484634,
+        "edge_distribution_per_scale": {
+          "4": 0.022114901851475945,
+          "8": 0.022349122236084526,
+          "16": 0.02497355406697855
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "reference_complete": false,
+      "unknown_candidates": 0,
+      "unknown_extras": [],
+      "unknown_rendered_candidates": [],
+      "extra_records": [],
+      "verdict_records": [],
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "valid_pixels": 327327,
+    "measurement_pixels": 326898,
+    "overlap_aggregation_withheld": []
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.1518689425899554,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": 0.17490353925761892,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r_living",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r_living",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_living:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_living:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r_living",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r_dining",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r_dining",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_dining:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_dining:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r_dining",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r_background",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r_background",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_background:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_background:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r_background",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.16184205182129938,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.030703204907652114,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:texture",
+      "value": 0.07035927098027915,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:distribution",
+      "value": 0.031553314495034145,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.030733361770372194,
+        "8": 0.030703204907652114,
+        "16": 0.03322337680707812
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.14500024670709222,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.16167981572035275,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.025720079716949482,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:texture",
+      "value": 0.07126388312881037,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:distribution",
+      "value": 0.0266392354475999,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.02542752038178564,
+        "8": 0.025720079716949482,
+        "16": 0.028770106244064578
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.2064230031436989,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.13069948885435095,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.019608539236622213,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:texture",
+      "value": 0.038640594697231946,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:distribution",
+      "value": 0.02099192737458208,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.019460972524430995,
+        "8": 0.019608539236622213,
+        "16": 0.02390627036269303
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.11458321798916568,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.15340560475516196,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.022349122236084526,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:texture",
+      "value": 0.04660460782980402,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:distribution",
+      "value": 0.02314585938484634,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.022114901851475945,
+        "8": 0.022349122236084526,
+        "16": 0.02497355406697855
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.14835705796546642,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "semantic",
+      "level": "anchor",
+      "id": "a_sofa",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "anchor",
+      "id": "a_sofa",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "anchor",
+      "id": "a_sofa",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "anchor",
+      "id": "a_sofa",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "semantic",
+      "level": "anchor",
+      "id": "a_dining_table",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "anchor",
+      "id": "a_dining_table",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Partial valid image support; semantic/relational verdict not revalidated",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "anchor",
+      "id": "a_dining_table",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "anchor",
+      "id": "a_dining_table",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed or unknown Anchor evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      768,
+      429
+    ],
+    "regions": [
+      {
+        "id": "r_living",
+        "name": "Living area",
+        "description": "Sofa, coffee tables, plants, and wall art on the left and center",
+        "bbox": [
+          42.24,
+          87.945,
+          405.504,
+          369.369
+        ],
+        "raw_bbox_0_1000": [
+          55,
+          205,
+          528,
+          861
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "r_dining",
+        "name": "Dining area",
+        "description": "Dining table and upholstered chairs in the right foreground",
+        "bbox": [
+          509.184,
+          217.074,
+          768.0,
+          429.0
+        ],
+        "raw_bbox_0_1000": [
+          663,
+          506,
+          1000,
+          1000
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "r_background",
+        "name": "Rear wall and passage",
+        "description": "Double doors, console table, and central hallway",
+        "bbox": [
+          416.256,
+          3.003,
+          768.0,
+          296.01
+        ],
+        "raw_bbox_0_1000": [
+          542,
+          7,
+          1000,
+          690
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          384,
+          214
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          384,
+          0,
+          768,
+          214
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          214,
+          384,
+          429
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          384,
+          214,
+          768,
+          429
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "anchors": [
+      {
+        "id": "a_sofa",
+        "region_id": "r_living",
+        "category": "sofa",
+        "bbox": [
+          92.16,
+          183.183,
+          407.04,
+          311.883
+        ],
+        "raw_bbox_0_1000": [
+          120,
+          427,
+          530,
+          727
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "importance": 1.0,
+        "position": [
+          249.60000000000002,
+          247.533
+        ]
+      },
+      {
+        "id": "a_dining_table",
+        "region_id": "r_dining",
+        "category": "dining table",
+        "bbox": [
+          592.128,
+          250.107,
+          768.0,
+          429.0
+        ],
+        "raw_bbox_0_1000": [
+          771,
+          583,
+          1000,
+          1000
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "importance": 1.0,
+        "position": [
+          680.0640000000001,
+          339.5535
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "id": "g_coffee_tables",
+        "region_id": "r_living",
+        "name": "Coffee tables",
+        "scope": "The low tables positioned in front of the sofa",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "g_dining_chairs",
+        "region_id": "r_dining",
+        "name": "Dining chairs",
+        "scope": "The upholstered chairs visible around the dining table",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      }
+    ],
+    "atomic_evidence": [
+      {
+        "id": "e1",
+        "region_id": "r_living",
+        "group_id": null,
+        "anchor_id": "a_sofa",
+        "type": "semantic",
+        "claim": "The living area contains a light-colored upholstered sofa.",
+        "question": "Is a light-colored upholstered sofa visible in the living area?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e2",
+        "region_id": "r_living",
+        "group_id": "g_coffee_tables",
+        "anchor_id": null,
+        "type": "statistical",
+        "claim": "Three low tables are visible in front of or beside the sofa.",
+        "question": "How many low tables are visible in front of or beside the sofa?",
+        "answer_type": "count_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e3",
+        "region_id": "r_living",
+        "group_id": "g_coffee_tables",
+        "anchor_id": "a_sofa",
+        "type": "spatial",
+        "claim": "The round wooden coffee table projects below the sofa.",
+        "question": "Does the round wooden coffee table project below the sofa in the image?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e4",
+        "region_id": "r_living",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "A rectangular blue-and-orange artwork hangs on the wall above the sofa.",
+        "question": "What type of wall decoration is visible above the sofa?",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "framed artwork",
+          "mirror",
+          "wall clock",
+          "shelf",
+          "none",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "framed artwork",
+          "mirror",
+          "wall clock",
+          "shelf",
+          "none"
+        ]
+      },
+      {
+        "id": "e5",
+        "region_id": "r_living",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "A tall leafy plant projects to the left of the wall artwork.",
+        "question": "Does a tall leafy plant project to the left of the wall artwork?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e6",
+        "region_id": "r_dining",
+        "group_id": "g_dining_chairs",
+        "anchor_id": "a_dining_table",
+        "type": "semantic",
+        "claim": "The visible dining chairs have rounded, light-colored upholstered backs.",
+        "question": "What kind of backrest do the visible dining chairs have?",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "rounded upholstered",
+          "straight upholstered",
+          "wooden slat",
+          "metal frame",
+          "backless",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "rounded upholstered",
+          "straight upholstered",
+          "wooden slat",
+          "metal frame",
+          "backless"
+        ]
+      },
+      {
+        "id": "e7",
+        "region_id": "r_dining",
+        "group_id": null,
+        "anchor_id": "a_dining_table",
+        "type": "semantic",
+        "claim": "White plates and bowls are arranged on the dining table.",
+        "question": "Are white plates and bowls visible on the dining table?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e8",
+        "region_id": "r_background",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "The rear wall contains a pair of wooden doors with horizontal glass panels.",
+        "question": "What panel pattern is visible on the wooden doors?",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "horizontal glass panels",
+          "vertical glass panels",
+          "solid wood panels",
+          "full-height glass",
+          "no doors visible",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "horizontal glass panels",
+          "vertical glass panels",
+          "solid wood panels",
+          "full-height glass",
+          "no doors visible"
+        ]
+      },
+      {
+        "id": "e9",
+        "region_id": "r_background",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "A narrow console table projects to the left of the double doors.",
+        "question": "Does a narrow console table project to the left of the double doors?",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      }
+    ],
+    "inventory_complete": false,
+    "reviewed": false,
+    "usage": "provisional/debug",
+    "source": "reference RGB and independently supplied annotations only",
+    "provenance": {
+      "backend": "codex_cli",
+      "planning_response": "planning_response.json",
+      "input_side": "reference_only",
+      "expected_answers_supplied": false
+    },
+    "evidence_protocol": {
+      "version": "existing_scene_v1",
+      "evidence_budget": 10
+    },
+    "category_policy": "reference_only_missing_other_v1",
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights"
+  },
+  "render_metadata": {
+    "historical_native_metadata": {},
+    "resolution": [
+      768,
+      429
+    ],
+    "resolution_scope": "Prepared RGB common grid; native camera metadata retained separately"
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "formal_eligible": false,
+  "evidence_category": "historical_diagnostic",
+  "diagnostics": {
+    "groups": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/references/bw_0063/reference_evidence.json",
+      "reviewed": false,
+      "evidence": {
+        "image_size": [
+          768,
+          429
+        ],
+        "regions": [
+          {
+            "id": "r_living",
+            "name": "Living area",
+            "description": "Sofa, coffee tables, plants, and wall art on the left and center",
+            "bbox": [
+              42.24,
+              87.945,
+              405.504,
+              369.369
+            ],
+            "raw_bbox_0_1000": [
+              55,
+              205,
+              528,
+              861
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          },
+          {
+            "id": "r_dining",
+            "name": "Dining area",
+            "description": "Dining table and upholstered chairs in the right foreground",
+            "bbox": [
+              509.184,
+              217.074,
+              768.0,
+              429.0
+            ],
+            "raw_bbox_0_1000": [
+              663,
+              506,
+              1000,
+              1000
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          },
+          {
+            "id": "r_background",
+            "name": "Rear wall and passage",
+            "description": "Double doors, console table, and central hallway",
+            "bbox": [
+              416.256,
+              3.003,
+              768.0,
+              296.01
+            ],
+            "raw_bbox_0_1000": [
+              542,
+              7,
+              1000,
+              690
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          }
+        ],
+        "anchors": [
+          {
+            "id": "a_sofa",
+            "region_id": "r_living",
+            "category": "sofa",
+            "bbox": [
+              92.16,
+              183.183,
+              407.04,
+              311.883
+            ],
+            "raw_bbox_0_1000": [
+              120,
+              427,
+              530,
+              727
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "importance": 1.0
+          },
+          {
+            "id": "a_dining_table",
+            "region_id": "r_dining",
+            "category": "dining table",
+            "bbox": [
+              592.128,
+              250.107,
+              768.0,
+              429.0
+            ],
+            "raw_bbox_0_1000": [
+              771,
+              583,
+              1000,
+              1000
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "importance": 1.0
+          }
+        ],
+        "groups": [
+          {
+            "id": "g_coffee_tables",
+            "region_id": "r_living",
+            "name": "Coffee tables",
+            "scope": "The low tables positioned in front of the sofa",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "g_dining_chairs",
+            "region_id": "r_dining",
+            "name": "Dining chairs",
+            "scope": "The upholstered chairs visible around the dining table",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          }
+        ],
+        "atomic_evidence": [
+          {
+            "id": "e1",
+            "region_id": "r_living",
+            "group_id": null,
+            "anchor_id": "a_sofa",
+            "type": "semantic",
+            "claim": "The living area contains a light-colored upholstered sofa.",
+            "question": "Is a light-colored upholstered sofa visible in the living area?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e2",
+            "region_id": "r_living",
+            "group_id": "g_coffee_tables",
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "Three low tables are visible in front of or beside the sofa.",
+            "question": "How many low tables are visible in front of or beside the sofa?",
+            "answer_type": "count_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e3",
+            "region_id": "r_living",
+            "group_id": "g_coffee_tables",
+            "anchor_id": "a_sofa",
+            "type": "spatial",
+            "claim": "The round wooden coffee table projects below the sofa.",
+            "question": "Does the round wooden coffee table project below the sofa in the image?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e4",
+            "region_id": "r_living",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "A rectangular blue-and-orange artwork hangs on the wall above the sofa.",
+            "question": "What type of wall decoration is visible above the sofa?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "framed artwork",
+              "mirror",
+              "wall clock",
+              "shelf",
+              "none",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "framed artwork",
+              "mirror",
+              "wall clock",
+              "shelf",
+              "none"
+            ]
+          },
+          {
+            "id": "e5",
+            "region_id": "r_living",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "A tall leafy plant projects to the left of the wall artwork.",
+            "question": "Does a tall leafy plant project to the left of the wall artwork?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e6",
+            "region_id": "r_dining",
+            "group_id": "g_dining_chairs",
+            "anchor_id": "a_dining_table",
+            "type": "semantic",
+            "claim": "The visible dining chairs have rounded, light-colored upholstered backs.",
+            "question": "What kind of backrest do the visible dining chairs have?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "rounded upholstered",
+              "straight upholstered",
+              "wooden slat",
+              "metal frame",
+              "backless",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "rounded upholstered",
+              "straight upholstered",
+              "wooden slat",
+              "metal frame",
+              "backless"
+            ]
+          },
+          {
+            "id": "e7",
+            "region_id": "r_dining",
+            "group_id": null,
+            "anchor_id": "a_dining_table",
+            "type": "semantic",
+            "claim": "White plates and bowls are arranged on the dining table.",
+            "question": "Are white plates and bowls visible on the dining table?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e8",
+            "region_id": "r_background",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "The rear wall contains a pair of wooden doors with horizontal glass panels.",
+            "question": "What panel pattern is visible on the wooden doors?",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "horizontal glass panels",
+              "vertical glass panels",
+              "solid wood panels",
+              "full-height glass",
+              "no doors visible",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "horizontal glass panels",
+              "vertical glass panels",
+              "solid wood panels",
+              "full-height glass",
+              "no doors visible"
+            ]
+          },
+          {
+            "id": "e9",
+            "region_id": "r_background",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "A narrow console table projects to the left of the double doors.",
+            "question": "Does a narrow console table project to the left of the double doors?",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          }
+        ],
+        "inventory_complete": false,
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "source": "Reference-only Codex CLI planning; not GT",
+        "provenance": {
+          "backend": "codex_cli",
+          "planning_response": "planning_response.json",
+          "input_side": "reference_only",
+          "expected_answers_supplied": false
+        },
+        "evidence_protocol": {
+          "version": "existing_scene_v1",
+          "evidence_budget": 10
+        },
+        "category_policy": "reference_only_missing_other_v1"
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "structural_layout": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/structural_diagnostics.json",
+      "reviewed": false,
+      "evidence": {
+        "scene_graph": null,
+        "visibility": null,
+        "reviewed": false,
+        "energy_contribution": false,
+        "interpretation": "Cached generated-side evidence only; names/bounds are not category or visibility GT"
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "vlm_verification": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/verification_results.json",
+      "reviewed": false,
+      "pair_binding": "matched_paths_unverified_content",
+      "evidence": {
+        "reference": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+            "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_living\", \"name\": \"Living area\", \"bbox\": [42.24, 87.945, 405.504, 369.369]}, {\"id\": \"r_dining\", \"name\": \"Dining area\", \"bbox\": [509.184, 217.074, 768.0, 429.0]}, {\"id\": \"r_background\", \"name\": \"Rear wall and passage\", \"bbox\": [416.256, 3.003, 768.0, 296.01]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": \"a_sofa\", \"question\": \"Is a light-colored upholstered sofa visible in the living area?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": null, \"question\": \"How many low tables are visible in front of or beside the sofa?\", \"answer_type\": \"count_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": \"a_sofa\", \"question\": \"Does the round wooden coffee table project below the sofa in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What type of wall decoration is visible above the sofa?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"framed artwork\", \"mirror\", \"wall clock\", \"shelf\", \"none\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a tall leafy plant project to the left of the wall artwork?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_dining\", \"group_id\": \"g_dining_chairs\", \"anchor_id\": \"a_dining_table\", \"question\": \"What kind of backrest do the visible dining chairs have?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"rounded upholstered\", \"straight upholstered\", \"wooden slat\", \"metal frame\", \"backless\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_dining\", \"group_id\": null, \"anchor_id\": \"a_dining_table\", \"question\": \"Are white plates and bowls visible on the dining table?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e8\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What panel pattern is visible on the wooden doors?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"horizontal glass panels\", \"vertical glass panels\", \"solid wood panels\", \"full-height glass\", \"no doors visible\", \"absent\", \"other\"]}, {\"id\": \"e9\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a narrow console table project to the left of the double doors?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e2": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "unknown"
+                      ]
+                    }
+                  ]
+                },
+                "e3": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e4": {
+                  "type": "string",
+                  "enum": [
+                    "framed artwork",
+                    "mirror",
+                    "wall clock",
+                    "shelf",
+                    "none",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e5": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e6": {
+                  "type": "string",
+                  "enum": [
+                    "rounded upholstered",
+                    "straight upholstered",
+                    "wooden slat",
+                    "metal frame",
+                    "backless",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e7": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e8": {
+                  "type": "string",
+                  "enum": [
+                    "horizontal glass panels",
+                    "vertical glass panels",
+                    "solid wood panels",
+                    "full-height glass",
+                    "no doors visible",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e9": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2",
+                "e3",
+                "e4",
+                "e5",
+                "e6",
+                "e7",
+                "e8",
+                "e9"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": 3,
+                "raw_value": 3,
+                "validation_status": "valid"
+              },
+              "e3": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e4": {
+                "value": "framed artwork",
+                "raw_value": "framed artwork",
+                "validation_status": "valid"
+              },
+              "e5": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e6": {
+                "value": "rounded upholstered",
+                "raw_value": "rounded upholstered",
+                "validation_status": "valid"
+              },
+              "e7": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e8": {
+                "value": "horizontal glass panels",
+                "raw_value": "horizontal glass panels",
+                "validation_status": "valid"
+              },
+              "e9": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": "yes",
+              "e2": 3,
+              "e3": "yes",
+              "e4": "framed artwork",
+              "e5": "yes",
+              "e6": "rounded upholstered",
+              "e7": "yes",
+              "e8": "horizontal glass panels",
+              "e9": "yes"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 33.81317121908069,
+          "token_usage": {
+            "input_tokens": 11304,
+            "output_tokens": 119,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "./results/existing_scene_batch_20261025/references/bw_0063/reference.png",
+            "image_size": [
+              768,
+              429
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-runtime>/input/4af1d68bad974433b7bb559325a434d1.png",
+              "--output-schema",
+              "<temporary-cli-runtime>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-runtime>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。\n\nUser:\n独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_living\", \"name\": \"Living area\", \"bbox\": [42.24, 87.945, 405.504, 369.369]}, {\"id\": \"r_dining\", \"name\": \"Dining area\", \"bbox\": [509.184, 217.074, 768.0, 429.0]}, {\"id\": \"r_background\", \"name\": \"Rear wall and passage\", \"bbox\": [416.256, 3.003, 768.0, 296.01]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": \"a_sofa\", \"question\": \"Is a light-colored upholstered sofa visible in the living area?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": null, \"question\": \"How many low tables are visible in front of or beside the sofa?\", \"answer_type\": \"count_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": \"a_sofa\", \"question\": \"Does the round wooden coffee table project below the sofa in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What type of wall decoration is visible above the sofa?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"framed artwork\", \"mirror\", \"wall clock\", \"shelf\", \"none\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a tall leafy plant project to the left of the wall artwork?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_dining\", \"group_id\": \"g_dining_chairs\", \"anchor_id\": \"a_dining_table\", \"question\": \"What kind of backrest do the visible dining chairs have?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"rounded upholstered\", \"straight upholstered\", \"wooden slat\", \"metal frame\", \"backless\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_dining\", \"group_id\": null, \"anchor_id\": \"a_dining_table\", \"question\": \"Are white plates and bowls visible on the dining table?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e8\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What panel pattern is visible on the wooden doors?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"horizontal glass panels\", \"vertical glass panels\", \"solid wood panels\", \"full-height glass\", \"no doors visible\", \"absent\", \"other\"]}, {\"id\": \"e9\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a narrow console table project to the left of the double doors?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "staged_image": "4af1d68bad974433b7bb559325a434d1.png",
+            "image_size": [
+              768,
+              429
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "4af1d68bad974433b7bb559325a434d1.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 11304,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 119,
+            "reasoning_output_tokens": 56
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "render": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+            "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_living\", \"name\": \"Living area\", \"bbox\": [42.24, 87.945, 405.504, 369.369]}, {\"id\": \"r_dining\", \"name\": \"Dining area\", \"bbox\": [509.184, 217.074, 768.0, 429.0]}, {\"id\": \"r_background\", \"name\": \"Rear wall and passage\", \"bbox\": [416.256, 3.003, 768.0, 296.01]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": \"a_sofa\", \"question\": \"Is a light-colored upholstered sofa visible in the living area?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": null, \"question\": \"How many low tables are visible in front of or beside the sofa?\", \"answer_type\": \"count_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": \"a_sofa\", \"question\": \"Does the round wooden coffee table project below the sofa in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What type of wall decoration is visible above the sofa?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"framed artwork\", \"mirror\", \"wall clock\", \"shelf\", \"none\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a tall leafy plant project to the left of the wall artwork?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_dining\", \"group_id\": \"g_dining_chairs\", \"anchor_id\": \"a_dining_table\", \"question\": \"What kind of backrest do the visible dining chairs have?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"rounded upholstered\", \"straight upholstered\", \"wooden slat\", \"metal frame\", \"backless\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_dining\", \"group_id\": null, \"anchor_id\": \"a_dining_table\", \"question\": \"Are white plates and bowls visible on the dining table?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e8\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What panel pattern is visible on the wooden doors?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"horizontal glass panels\", \"vertical glass panels\", \"solid wood panels\", \"full-height glass\", \"no doors visible\", \"absent\", \"other\"]}, {\"id\": \"e9\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a narrow console table project to the left of the double doors?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e2": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "unknown"
+                      ]
+                    }
+                  ]
+                },
+                "e3": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e4": {
+                  "type": "string",
+                  "enum": [
+                    "framed artwork",
+                    "mirror",
+                    "wall clock",
+                    "shelf",
+                    "none",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e5": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e6": {
+                  "type": "string",
+                  "enum": [
+                    "rounded upholstered",
+                    "straight upholstered",
+                    "wooden slat",
+                    "metal frame",
+                    "backless",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e7": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e8": {
+                  "type": "string",
+                  "enum": [
+                    "horizontal glass panels",
+                    "vertical glass panels",
+                    "solid wood panels",
+                    "full-height glass",
+                    "no doors visible",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e9": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2",
+                "e3",
+                "e4",
+                "e5",
+                "e6",
+                "e7",
+                "e8",
+                "e9"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": 2,
+                "raw_value": 2,
+                "validation_status": "valid"
+              },
+              "e3": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e4": {
+                "value": "framed artwork",
+                "raw_value": "framed artwork",
+                "validation_status": "valid"
+              },
+              "e5": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e6": {
+                "value": "rounded upholstered",
+                "raw_value": "rounded upholstered",
+                "validation_status": "valid"
+              },
+              "e7": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e8": {
+                "value": "horizontal glass panels",
+                "raw_value": "horizontal glass panels",
+                "validation_status": "valid"
+              },
+              "e9": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": "yes",
+              "e2": 2,
+              "e3": "yes",
+              "e4": "framed artwork",
+              "e5": "yes",
+              "e6": "rounded upholstered",
+              "e7": "yes",
+              "e8": "horizontal glass panels",
+              "e9": "yes"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 46.69358257600106,
+          "token_usage": {
+            "input_tokens": 11302,
+            "output_tokens": 116,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/render.png",
+            "image_size": [
+              768,
+              429
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-runtime>/input/2819576c87934588a86d6a82cdd8de60.png",
+              "--output-schema",
+              "<temporary-cli-runtime>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-runtime>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。\n\nUser:\n独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_living\", \"name\": \"Living area\", \"bbox\": [42.24, 87.945, 405.504, 369.369]}, {\"id\": \"r_dining\", \"name\": \"Dining area\", \"bbox\": [509.184, 217.074, 768.0, 429.0]}, {\"id\": \"r_background\", \"name\": \"Rear wall and passage\", \"bbox\": [416.256, 3.003, 768.0, 296.01]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": \"a_sofa\", \"question\": \"Is a light-colored upholstered sofa visible in the living area?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e2\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": null, \"question\": \"How many low tables are visible in front of or beside the sofa?\", \"answer_type\": \"count_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_living\", \"group_id\": \"g_coffee_tables\", \"anchor_id\": \"a_sofa\", \"question\": \"Does the round wooden coffee table project below the sofa in the image?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What type of wall decoration is visible above the sofa?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"framed artwork\", \"mirror\", \"wall clock\", \"shelf\", \"none\", \"absent\", \"other\"]}, {\"id\": \"e5\", \"region_id\": \"r_living\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a tall leafy plant project to the left of the wall artwork?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_dining\", \"group_id\": \"g_dining_chairs\", \"anchor_id\": \"a_dining_table\", \"question\": \"What kind of backrest do the visible dining chairs have?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"rounded upholstered\", \"straight upholstered\", \"wooden slat\", \"metal frame\", \"backless\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_dining\", \"group_id\": null, \"anchor_id\": \"a_dining_table\", \"question\": \"Are white plates and bowls visible on the dining table?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e8\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"What panel pattern is visible on the wooden doors?\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"horizontal glass panels\", \"vertical glass panels\", \"solid wood panels\", \"full-height glass\", \"no doors visible\", \"absent\", \"other\"]}, {\"id\": \"e9\", \"region_id\": \"r_background\", \"group_id\": null, \"anchor_id\": null, \"question\": \"Does a narrow console table project to the left of the double doors?\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "staged_image": "2819576c87934588a86d6a82cdd8de60.png",
+            "image_size": [
+              768,
+              429
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "2819576c87934588a86d6a82cdd8de60.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 11302,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 116,
+            "reasoning_output_tokens": 53
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "results": [
+          {
+            "evidence_id": "e1",
+            "field": "e1",
+            "region_id": "r_living",
+            "group_id": null,
+            "anchor_id": "a_sofa",
+            "energy": "semantic",
+            "claim": "The living area contains a light-colored upholstered sofa.",
+            "question": "Is a light-colored upholstered sofa visible in the living area?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e2",
+            "field": "e2",
+            "region_id": "r_living",
+            "group_id": "g_coffee_tables",
+            "anchor_id": null,
+            "energy": "statistical",
+            "claim": "Three low tables are visible in front of or beside the sofa.",
+            "question": "How many low tables are visible in front of or beside the sofa?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": 3,
+            "render_answer": 2,
+            "status": "candidate_violated",
+            "reviewed": false,
+            "answer_type": "count_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": 3,
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": 2,
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e3",
+            "field": "e3",
+            "region_id": "r_living",
+            "group_id": "g_coffee_tables",
+            "anchor_id": "a_sofa",
+            "energy": "spatial",
+            "claim": "The round wooden coffee table projects below the sofa.",
+            "question": "Does the round wooden coffee table project below the sofa in the image?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e4",
+            "field": "e4",
+            "region_id": "r_living",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "A rectangular blue-and-orange artwork hangs on the wall above the sofa.",
+            "question": "What type of wall decoration is visible above the sofa?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "framed artwork",
+            "render_answer": "framed artwork",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "framed artwork",
+              "mirror",
+              "wall clock",
+              "shelf",
+              "none",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "framed artwork",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "framed artwork",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e5",
+            "field": "e5",
+            "region_id": "r_living",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "A tall leafy plant projects to the left of the wall artwork.",
+            "question": "Does a tall leafy plant project to the left of the wall artwork?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e6",
+            "field": "e6",
+            "region_id": "r_dining",
+            "group_id": "g_dining_chairs",
+            "anchor_id": "a_dining_table",
+            "energy": "semantic",
+            "claim": "The visible dining chairs have rounded, light-colored upholstered backs.",
+            "question": "What kind of backrest do the visible dining chairs have?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "rounded upholstered",
+            "render_answer": "rounded upholstered",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "rounded upholstered",
+              "straight upholstered",
+              "wooden slat",
+              "metal frame",
+              "backless",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "rounded upholstered",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "rounded upholstered",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e7",
+            "field": "e7",
+            "region_id": "r_dining",
+            "group_id": null,
+            "anchor_id": "a_dining_table",
+            "energy": "semantic",
+            "claim": "White plates and bowls are arranged on the dining table.",
+            "question": "Are white plates and bowls visible on the dining table?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e8",
+            "field": "e8",
+            "region_id": "r_background",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "The rear wall contains a pair of wooden doors with horizontal glass panels.",
+            "question": "What panel pattern is visible on the wooden doors?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "horizontal glass panels",
+            "render_answer": "horizontal glass panels",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "horizontal glass panels",
+              "vertical glass panels",
+              "solid wood panels",
+              "full-height glass",
+              "no doors visible",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "horizontal glass panels",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "horizontal glass panels",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e9",
+            "field": "e9",
+            "region_id": "r_background",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "A narrow console table projects to the left of the double doors.",
+            "question": "Does a narrow console table project to the left of the double doors?",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":3,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"yes\",\"e2\":2,\"e3\":\"yes\",\"e4\":\"framed artwork\",\"e5\":\"yes\",\"e6\":\"rounded upholstered\",\"e7\":\"yes\",\"e8\":\"horizontal glass panels\",\"e9\":\"yes\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          }
+        ],
+        "image_pair": {
+          "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0063/reference.png",
+          "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/render.png"
+        },
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "formal_eligible": false
+      },
+      "unmatched_evidence": null,
+      "applicable_to_current_pair": true,
+      "energy_contribution": false,
+      "interpretation": "Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping"
+    },
+    "fixed_region_measurements": [
+      {
+        "id": "r_living",
+        "description": "Sofa, coffee tables, plants, and wall art on the left and center",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 103012.0,
+        "valid_pixel_weight": 103012.0,
+        "measurement_pixel_weight": 103012.0,
+        "appearance": 0.18731470843297904,
+        "perceptual": 0.10076835735330958,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.05538259534018014,
+          "statistical": 0.05796319320393643
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "r_dining",
+        "description": "Dining table and upholstered chairs in the right foreground",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 54908.0,
+        "valid_pixel_weight": 54272.0,
+        "measurement_pixel_weight": 54060.0,
+        "appearance": 0.17063671688924675,
+        "perceptual": 0.21061694180552606,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.022115379356510582,
+          "statistical": 0.04190124735892563
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "r_background",
+        "description": "Double doors, console table, and central hallway",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 103488.0,
+        "valid_pixel_weight": 102606.0,
+        "measurement_pixel_weight": 102312.0,
+        "appearance": 0.15986016373343717,
+        "perceptual": 0.20978354245790512,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.045534201084061726,
+          "statistical": 0.06327477463403511
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    "region_overlap": {
+      "named_region_count": 3,
+      "overlap_pixels": 20480,
+      "overlap_fraction_of_valid": 0.0625674020169433,
+      "max_multiplicity": 2,
+      "unassigned_valid_pixels": 87917,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Reference thumbnail; saved Render uniformly fit once with centered invalid padding, no crop/registration",
+    "applied_transform": {
+      "original_size": [
+        768,
+        429
+      ],
+      "common_size": [
+        768,
+        429
+      ],
+      "resized_size": [
+        768,
+        429
+      ],
+      "offset_xy": [
+        0,
+        0
+      ],
+      "nominal_scale": 1.0,
+      "content_alignment": false,
+      "padding_is_not_observation": true,
+      "transform": "identity"
+    },
+    "valid_pixels": 327327,
+    "canvas_pixels": 329472,
+    "valid_mask": "valid_pixels.png",
+    "measurement_pixels": 326898,
+    "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+  },
+  "provenance": {
+    "manifest": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/manifest.json",
+    "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0063/reference.png",
+    "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/render.png",
+    "reference_evidence": "./results/existing_scene_batch_20261025/references/bw_0063/reference_evidence.json",
+    "optional_inputs": {
+      "render_evidence": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "geometry": {
+        "status": "available",
+        "source": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/geometry.json",
+        "reviewed": null
+      },
+      "triage": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "rules": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "render_metadata": {
+        "status": "available",
+        "source": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/camera.json",
+        "reviewed": null
+      }
+    },
+    "supplied_provenance": {
+      "pair_id": "bw_0063__bw_0063__Lj7uE6T",
+      "task_id": "bw_0063",
+      "run_id": "official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T",
+      "native_reference": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0063/environment/inputs/references/image_01.jpg",
+      "native_render": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/artifacts/workspace/exports/coastal_living_dining.png",
+      "native_render_transform": {
+        "original_size": [
+          1920,
+          1080
+        ],
+        "common_size": [
+          768,
+          429
+        ],
+        "nominal_scale": 0.3972222222222222,
+        "resized_size": [
+          763,
+          429
+        ],
+        "offset_xy": [
+          2,
+          0
+        ],
+        "padding_is_not_observation": true,
+        "content_alignment": false,
+        "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+      },
+      "source_checks": {
+        "run_config": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/config.json",
+        "native_result": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/result.json",
+        "input_manifest": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0063/environment/inputs/input.json",
+        "task_metadata": "../BlenderWorld/data/hf-snapshot/bw_0063/tests/dataset/tasks/bw_0063/task.json",
+        "artifact_manifest": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/artifacts/manifest.json",
+        "native_task_name": "Qwen/BlenderWorld-bw_0063",
+        "native_trial_name": "bw_0063__Lj7uE6T",
+        "input_task_id": "bw_0063",
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "historical_png_blend_sync": "unknown; same artifact export lineage only; no re-render",
+        "hash_checks_performed": false
+      },
+      "completion": "completed",
+      "new_agent_executions": 0,
+      "new_blender_executions": 0,
+      "alignment_search": false
+    },
+    "api_calls": 0,
+    "model_inferences": null,
+    "dino": {
+      "backend": "local_DINOv2",
+      "model": "<local-models>/dinov2",
+      "device": "cpu",
+      "threads": 2,
+      "local_files_only": true,
+      "real_inference": true,
+      "downloaded": false
+    },
+    "blender_executions": 0,
+    "agent_code_executed": false
+  },
+  "measurement_interpretation": {
+    "appearance": "Actual RGB L1; affected by camera, lighting and visibility",
+    "spatial": "Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness",
+    "statistical": "Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density",
+    "semantic": "Reviewed evidence only; attached Group/Structural answers never become scores",
+    "perceptual": "Existing local DINO metric; crop/black-fill/aspect-ratio confounds remain; not semantic correctness",
+    "observation": "Conditional debug aggregate of core eligible records; not a formal Benchmark result"
+  },
+  "elapsed_seconds": 3.2094852819573134
+}

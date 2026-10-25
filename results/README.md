@@ -4,6 +4,8 @@
 
 最近的重要实验见 [LATEST.md](LATEST.md)，缺失图像、历史链接和精简说明见 [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md)。
 
+最新真实批次：[Existing-Scene Batch](existing_scene_batch_20261025/findings.md)（2026-10-25），[汇总](existing_scene_batch_20261025/summary.md)、[13组逐配对CSV](existing_scene_batch_20261025/per_pair_results.csv)、[真实VQA和指标汇总](existing_scene_batch_20261025/report.json)、[人工审核](existing_scene_batch_20261025/evidence_audit.md)、[检查](existing_scene_batch_20261025/integration_checks.json)。33次实际Codex CLI调用、224次CPU DINO前向，13/13已有配对完成；9完整+4不完整分别保留。107条判断中13候选差异、3Unknown；不当作检出准确率。四类图像条件测量有值，Semantic/Structural N/A，正式成绩0。452项CPU回归通过。第三方所有RGB/PNG/Mask不公开；未审核证据和历史相机均provisional，不改Energy/权重/Runtime blocked、不运行新Agent或Blender。
+
 最新协议修订：[Existing-Scene VLM evidence v1](existing_scene_protocol_v1/report.md)（2026-10-25），[协议文档](../EVIDENCE_PROTOCOL.md)、[规划契约](existing_scene_protocol_v1/planning_protocol.json)、[CPU检查](existing_scene_protocol_v1/checks.json)。436项CPU测试通过、24项新协议测试；0次模型调用。新版本支持可配置证据预算和类别题，明确未知/弃权及逐回答审计；历史契约和原始回答保留，新Batch显式选择版本。未审核VLM仅诊断，不改五类Energy或Runtime blocked，不宣称模型效果提升。
 
 审核分支最新：[Benchmark v0.1 实际部分批次](benchmark_v01/benchmark_report.md)（2026-10-25），[8张固定输入](benchmark_v01/dataset_manifest.json)、[逐样本结果](benchmark_v01/per_scene_results.csv)、[真实调用与状态](benchmark_v01/run_manifest.json)、[汇总](benchmark_v01/aggregate_results.json)、[批量人工审核](benchmark_v01/audit_packet.md)、[实际环境/安全检查](benchmark_v01/execution_checks.json)、[批次验证及412项CPU测试](benchmark_v01/batch_validation.json)。24次真实Codex CLI调用，无重试；8份新代码语法有效但未执行。缺少合格的隔离执行后端，0次Blender渲染，5类Energy及Structural全部N/A，未完成正式Benchmark。19个Region、0个Group、3个Anchor、24条未审核原子候选；Group-aware尚未覆盖。混合来源RGB的图片权利清理未完成，所有真实图、衍生PNG、场景资产和代码型回答不公开；不改Energy/权重/Runtime blocked、不合并main。

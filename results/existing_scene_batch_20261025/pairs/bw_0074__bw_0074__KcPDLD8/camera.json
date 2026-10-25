@@ -1,0 +1,105 @@
+{
+  "camera": {
+    "object_id": "CAMERA - front left photographic angle",
+    "data_id": "Architectural wide angle 30mm",
+    "active": true,
+    "matrix_world": [
+      [
+        0.9939315,
+        0.00518,
+        -0.1098784,
+        2.0699999
+      ],
+      [
+        -0.1100004,
+        0.0468048,
+        -0.9928289,
+        -5.2199998
+      ],
+      [
+        0.0,
+        0.9988906,
+        0.0470906,
+        1.71
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "type": "PERSP",
+    "lens_mm": 26.0,
+    "sensor_fit": "AUTO",
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0,
+    "shift_xy": [
+      0.0,
+      0.0
+    ],
+    "clip_start": 0.10000000149011612,
+    "clip_end": 1000.0,
+    "ortho_scale": 6.0,
+    "dof_enabled": false
+  },
+  "resolution": [
+    768,
+    522
+  ],
+  "metadata_scope": "Saved scene snapshot camera, exact historical PNG synchronization unknown",
+  "source": "results/blender_scene_graph_audit_bw0074/scene_graph.json",
+  "historical_native_metadata": {
+    "camera": {
+      "object_id": "CAMERA - front left photographic angle",
+      "data_id": "Architectural wide angle 30mm",
+      "active": true,
+      "matrix_world": [
+        [
+          0.9939315,
+          0.00518,
+          -0.1098784,
+          2.0699999
+        ],
+        [
+          -0.1100004,
+          0.0468048,
+          -0.9928289,
+          -5.2199998
+        ],
+        [
+          0.0,
+          0.9988906,
+          0.0470906,
+          1.71
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "PERSP",
+      "lens_mm": 26.0,
+      "sensor_fit": "AUTO",
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "shift_xy": [
+        0.0,
+        0.0
+      ],
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "ortho_scale": 6.0,
+      "dof_enabled": false
+    },
+    "resolution": [
+      1920,
+      1300
+    ],
+    "metadata_scope": "Saved scene snapshot camera, exact historical PNG synchronization unknown",
+    "source": "results/blender_scene_graph_audit_bw0074/scene_graph.json"
+  },
+  "resolution_scope": "Prepared RGB common grid; native camera metadata retained separately"
+}

@@ -1,0 +1,12 @@
+{
+  "tests": 452,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_existing_scene_tests": 16,
+  "passed": true,
+  "elapsed_seconds": 15.483,
+  "network_subprocess_denied": true,
+  "model_calls": 0,
+  "usage": "CPU regression only; real batch has separate live call records"
+}

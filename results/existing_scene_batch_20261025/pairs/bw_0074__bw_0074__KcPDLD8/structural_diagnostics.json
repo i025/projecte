@@ -1,0 +1,2156 @@
+{
+  "scene_graph": {
+    "source": "./results/blender_scene_graph_audit_bw0074/scene_graph.json",
+    "source_blend_matches": true,
+    "status": "metadata_extracted",
+    "object_count": 900,
+    "geometry_scope": "Stored base-mesh bounds/transforms; modifiers, occlusion and actual visible surface not evaluated",
+    "numeric_structural_energy_eligible": false
+  },
+  "visibility": {
+    "source": "./results/blender_group_visibility_bw0074/visibility.json",
+    "scope": "low resolution cached Group-ID diagnostic; not collision/support Geometry"
+  },
+  "reviewed": false,
+  "energy_contribution": false,
+  "interpretation": "Cached generated-side evidence only; names/bounds are not category or visibility GT",
+  "visibility_statistics": {
+    "status": "pass_support_available",
+    "protocol": {
+      "work": "./runs/group_visibility_1792769066374241102",
+      "source": "./results/blender_scene_graph_audit_bw0074",
+      "provenance": {
+        "run_id": "official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8",
+        "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+        "reference_cached": "./results/vlm_direct_grounding_cross_scene/bw_0074/reference.png",
+        "render_rgb": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/modern_living_room.png",
+        "blend": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/final.blend",
+        "run_config": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/config.json",
+        "manifest": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/manifest.json",
+        "input_metadata": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0074/environment/inputs/input.json",
+        "same_run_verified": true,
+        "pixel_synchronization_reverified": false,
+        "roi": "./results/coarse_evaluation_roi_bw0074/B2_edge_polygons/R3.png",
+        "reference_group_id": "bw_0074_R3_records",
+        "group_source": "./results/records_group_verification_bw0074/verification_results.json",
+        "work": "./runs/scene_graph_audit_1792767018825950306",
+        "reviewed": false,
+        "usage": "provisional/debug"
+      },
+      "correspondence": {
+        "status": "documentary_correspondence_verified",
+        "final_trajectory_step": 15,
+        "final_script_text_matches_export": true,
+        "no_later_scene_mutations_found": true,
+        "saved_camera_matches_final_script": true,
+        "png_camera_scene_frame_and_resolution_match": true,
+        "saved_before_final_render": true,
+        "pixel_exact_scene_image_equivalence_proven": false,
+        "basis": "Final executed source, delivery observation, unchanged audited blend and PNG metadata; source never executed in this experiment",
+        "reviewed": false
+      },
+      "render_budget": 1,
+      "maximum_long_edge": 512,
+      "samples": 1,
+      "cpu_threads": 2,
+      "wall_seconds": 90,
+      "cpu_seconds": 60,
+      "rss_stop_bytes": 1073741824,
+      "host_uid": 1005,
+      "title_parts_excluded": [
+        "LP colored paper narrow title",
+        "LP colored paper narrow title.001",
+        "LP colored paper narrow title.002",
+        "LP colored paper narrow title.003",
+        "LP colored paper narrow title.004",
+        "LP colored paper narrow title.005",
+        "LP colored paper narrow title.006",
+        "LP colored paper narrow title.007",
+        "LP colored paper narrow title.008",
+        "LP colored paper narrow title.009",
+        "LP colored paper narrow title.010",
+        "LP colored paper narrow title.011",
+        "LP colored paper narrow title.012",
+        "LP colored paper narrow title.013",
+        "LP colored paper narrow title.014",
+        "LP colored paper narrow title.015",
+        "LP colored paper narrow title.016",
+        "LP colored paper narrow title.017",
+        "LP colored paper narrow title.018",
+        "LP colored paper narrow title.019",
+        "LP colored paper narrow title.020",
+        "LP colored paper narrow title.021",
+        "LP colored paper narrow title.022",
+        "LP colored paper narrow title.023",
+        "LP colored paper narrow title.024",
+        "LP colored paper narrow title.025",
+        "LP colored paper narrow title.026",
+        "LP colored paper narrow title.027"
+      ],
+      "title_reason": "No explicit reviewed per-sleeve ownership; all title parts remain normal occluders with ID zero",
+      "scene_name_identity_is_gt": false,
+      "reviewed": false,
+      "usage": "provisional/debug"
+    },
+    "pass_settings": {
+      "pass_type": "Cycles IndexOB",
+      "resolution": [
+        512,
+        347
+      ],
+      "original_resolution": [
+        1920,
+        1300
+      ],
+      "original_pixel_aspect": [
+        1.0,
+        1.0
+      ],
+      "pixel_aspect": [
+        1.0009615421295166,
+        1.0
+      ],
+      "saved_camera_frame_preserved": true,
+      "alpha_threshold": 0.5,
+      "samples": 1,
+      "threads": 2,
+      "device": "CPU",
+      "denoising": false,
+      "camera_unchanged": true,
+      "materials_lights_and_occluders_preserved": true,
+      "title_parts_included": false,
+      "index_zero_includes_all_nonbody_objects": true,
+      "autoexec": false,
+      "source_saved": false,
+      "reviewed": false
+    },
+    "measurements": {
+      "native_resolution": [
+        512,
+        347
+      ],
+      "group_pixels": 6437,
+      "r3_pixels": 26316,
+      "group_inside_r3_pixels": 5632,
+      "group_outside_r3_pixels": 805,
+      "r3_group_pixel_fraction": 0.2140142878856969,
+      "group_outside_r3_fraction": 0.12505825695199627,
+      "sampled_support_bbox_xyxy": [
+        347,
+        89,
+        458,
+        176
+      ],
+      "candidate_body_objects": 241,
+      "bodies_with_sampled_id_pixels": 228,
+      "historical_full_resolution_visible_object_count": null,
+      "actual_semantic_record_count": null,
+      "bbox_proxy_pixels": 8048,
+      "bbox_proxy_without_group_id_pixels": 1611,
+      "group_id_outside_bbox_proxy_pixels": 0,
+      "pixel_difference_interpretation": "Proxy minus ID includes empty box interior, occluders, excluded labels, undersampling and boundary effects; not a pure occlusion ratio",
+      "members": [
+        {
+          "index": 1,
+          "object_id": "VINYL archival sleeve row 1.45 000",
+          "row_hint": "1.45",
+          "id_pixels": 49,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 2,
+          "object_id": "VINYL archival sleeve row 1.45 000.001",
+          "row_hint": "1.45",
+          "id_pixels": 252,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 3,
+          "object_id": "VINYL archival sleeve row 1.45 001",
+          "row_hint": "1.45",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 4,
+          "object_id": "VINYL archival sleeve row 1.45 001.001",
+          "row_hint": "1.45",
+          "id_pixels": 50,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 5,
+          "object_id": "VINYL archival sleeve row 1.45 002",
+          "row_hint": "1.45",
+          "id_pixels": 30,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 6,
+          "object_id": "VINYL archival sleeve row 1.45 002.001",
+          "row_hint": "1.45",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 7,
+          "object_id": "VINYL archival sleeve row 1.45 003",
+          "row_hint": "1.45",
+          "id_pixels": 37,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 8,
+          "object_id": "VINYL archival sleeve row 1.45 003.001",
+          "row_hint": "1.45",
+          "id_pixels": 34,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 9,
+          "object_id": "VINYL archival sleeve row 1.45 004",
+          "row_hint": "1.45",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 10,
+          "object_id": "VINYL archival sleeve row 1.45 004.001",
+          "row_hint": "1.45",
+          "id_pixels": 43,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 11,
+          "object_id": "VINYL archival sleeve row 1.45 005",
+          "row_hint": "1.45",
+          "id_pixels": 26,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 12,
+          "object_id": "VINYL archival sleeve row 1.45 005.001",
+          "row_hint": "1.45",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 13,
+          "object_id": "VINYL archival sleeve row 1.45 006",
+          "row_hint": "1.45",
+          "id_pixels": 56,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 14,
+          "object_id": "VINYL archival sleeve row 1.45 006.001",
+          "row_hint": "1.45",
+          "id_pixels": 38,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 15,
+          "object_id": "VINYL archival sleeve row 1.45 007",
+          "row_hint": "1.45",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 16,
+          "object_id": "VINYL archival sleeve row 1.45 007.001",
+          "row_hint": "1.45",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 17,
+          "object_id": "VINYL archival sleeve row 1.45 008",
+          "row_hint": "1.45",
+          "id_pixels": 36,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 18,
+          "object_id": "VINYL archival sleeve row 1.45 008.001",
+          "row_hint": "1.45",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 19,
+          "object_id": "VINYL archival sleeve row 1.45 009",
+          "row_hint": "1.45",
+          "id_pixels": 43,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 20,
+          "object_id": "VINYL archival sleeve row 1.45 009.001",
+          "row_hint": "1.45",
+          "id_pixels": 31,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 21,
+          "object_id": "VINYL archival sleeve row 1.45 010",
+          "row_hint": "1.45",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 22,
+          "object_id": "VINYL archival sleeve row 1.45 010.001",
+          "row_hint": "1.45",
+          "id_pixels": 46,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 23,
+          "object_id": "VINYL archival sleeve row 1.45 011",
+          "row_hint": "1.45",
+          "id_pixels": 45,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 24,
+          "object_id": "VINYL archival sleeve row 1.45 011.001",
+          "row_hint": "1.45",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 25,
+          "object_id": "VINYL archival sleeve row 1.45 012",
+          "row_hint": "1.45",
+          "id_pixels": 5,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 26,
+          "object_id": "VINYL archival sleeve row 1.45 012.001",
+          "row_hint": "1.45",
+          "id_pixels": 55,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 27,
+          "object_id": "VINYL archival sleeve row 1.45 013",
+          "row_hint": "1.45",
+          "id_pixels": 34,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 28,
+          "object_id": "VINYL archival sleeve row 1.45 013.001",
+          "row_hint": "1.45",
+          "id_pixels": 13,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 29,
+          "object_id": "VINYL archival sleeve row 1.45 014",
+          "row_hint": "1.45",
+          "id_pixels": 76,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 30,
+          "object_id": "VINYL archival sleeve row 1.45 014.001",
+          "row_hint": "1.45",
+          "id_pixels": 46,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 31,
+          "object_id": "VINYL archival sleeve row 1.45 015",
+          "row_hint": "1.45",
+          "id_pixels": 7,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 32,
+          "object_id": "VINYL archival sleeve row 1.45 015.001",
+          "row_hint": "1.45",
+          "id_pixels": 42,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 33,
+          "object_id": "VINYL archival sleeve row 1.45 016",
+          "row_hint": "1.45",
+          "id_pixels": 24,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 34,
+          "object_id": "VINYL archival sleeve row 1.45 016.001",
+          "row_hint": "1.45",
+          "id_pixels": 2,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 35,
+          "object_id": "VINYL archival sleeve row 1.45 017",
+          "row_hint": "1.45",
+          "id_pixels": 52,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 36,
+          "object_id": "VINYL archival sleeve row 1.45 017.001",
+          "row_hint": "1.45",
+          "id_pixels": 42,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 37,
+          "object_id": "VINYL archival sleeve row 1.45 018",
+          "row_hint": "1.45",
+          "id_pixels": 1,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 38,
+          "object_id": "VINYL archival sleeve row 1.45 018.001",
+          "row_hint": "1.45",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 39,
+          "object_id": "VINYL archival sleeve row 1.45 019",
+          "row_hint": "1.45",
+          "id_pixels": 46,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 40,
+          "object_id": "VINYL archival sleeve row 1.45 019.001",
+          "row_hint": "1.45",
+          "id_pixels": 34,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 41,
+          "object_id": "VINYL archival sleeve row 1.45 020",
+          "row_hint": "1.45",
+          "id_pixels": 24,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 42,
+          "object_id": "VINYL archival sleeve row 1.45 020.001",
+          "row_hint": "1.45",
+          "id_pixels": 26,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 43,
+          "object_id": "VINYL archival sleeve row 1.45 021",
+          "row_hint": "1.45",
+          "id_pixels": 41,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 44,
+          "object_id": "VINYL archival sleeve row 1.90 000",
+          "row_hint": "1.90",
+          "id_pixels": 43,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 45,
+          "object_id": "VINYL archival sleeve row 1.90 001",
+          "row_hint": "1.90",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 46,
+          "object_id": "VINYL archival sleeve row 1.90 002",
+          "row_hint": "1.90",
+          "id_pixels": 78,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 47,
+          "object_id": "VINYL archival sleeve row 1.90 003",
+          "row_hint": "1.90",
+          "id_pixels": 19,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 48,
+          "object_id": "VINYL archival sleeve row 1.90 004",
+          "row_hint": "1.90",
+          "id_pixels": 20,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 49,
+          "object_id": "VINYL archival sleeve row 1.90 005",
+          "row_hint": "1.90",
+          "id_pixels": 42,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 50,
+          "object_id": "VINYL archival sleeve row 1.90 006",
+          "row_hint": "1.90",
+          "id_pixels": 48,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 51,
+          "object_id": "VINYL archival sleeve row 1.90 007",
+          "row_hint": "1.90",
+          "id_pixels": 45,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 52,
+          "object_id": "VINYL archival sleeve row 1.90 008",
+          "row_hint": "1.90",
+          "id_pixels": 33,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 53,
+          "object_id": "VINYL archival sleeve row 1.90 009",
+          "row_hint": "1.90",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 54,
+          "object_id": "VINYL archival sleeve row 1.90 010",
+          "row_hint": "1.90",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 55,
+          "object_id": "VINYL archival sleeve row 1.90 011",
+          "row_hint": "1.90",
+          "id_pixels": 62,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 56,
+          "object_id": "VINYL archival sleeve row 1.90 012",
+          "row_hint": "1.90",
+          "id_pixels": 9,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 57,
+          "object_id": "VINYL archival sleeve row 1.90 013",
+          "row_hint": "1.90",
+          "id_pixels": 38,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 58,
+          "object_id": "VINYL archival sleeve row 1.90 014",
+          "row_hint": "1.90",
+          "id_pixels": 58,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 59,
+          "object_id": "VINYL archival sleeve row 1.90 015",
+          "row_hint": "1.90",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 60,
+          "object_id": "VINYL archival sleeve row 1.90 016",
+          "row_hint": "1.90",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 61,
+          "object_id": "VINYL archival sleeve row 1.90 017",
+          "row_hint": "1.90",
+          "id_pixels": 54,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 62,
+          "object_id": "VINYL archival sleeve row 1.90 018",
+          "row_hint": "1.90",
+          "id_pixels": 27,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 63,
+          "object_id": "VINYL archival sleeve row 1.90 019",
+          "row_hint": "1.90",
+          "id_pixels": 57,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 64,
+          "object_id": "VINYL archival sleeve row 1.90 020",
+          "row_hint": "1.90",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 65,
+          "object_id": "VINYL archival sleeve row 1.90 021",
+          "row_hint": "1.90",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 66,
+          "object_id": "VINYL archival sleeve row 1.90 022",
+          "row_hint": "1.90",
+          "id_pixels": 50,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 67,
+          "object_id": "VINYL archival sleeve row 1.90 023",
+          "row_hint": "1.90",
+          "id_pixels": 35,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 68,
+          "object_id": "VINYL archival sleeve row 1.90 024",
+          "row_hint": "1.90",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 69,
+          "object_id": "VINYL archival sleeve row 1.90 025",
+          "row_hint": "1.90",
+          "id_pixels": 46,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 70,
+          "object_id": "VINYL archival sleeve row 1.90 026",
+          "row_hint": "1.90",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 71,
+          "object_id": "VINYL archival sleeve row 1.90 027",
+          "row_hint": "1.90",
+          "id_pixels": 57,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 72,
+          "object_id": "VINYL archival sleeve row 1.90 028",
+          "row_hint": "1.90",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 73,
+          "object_id": "VINYL archival sleeve row 1.90 029",
+          "row_hint": "1.90",
+          "id_pixels": 56,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 74,
+          "object_id": "VINYL archival sleeve row 1.90 030",
+          "row_hint": "1.90",
+          "id_pixels": 26,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 75,
+          "object_id": "VINYL archival sleeve row 1.90 031",
+          "row_hint": "1.90",
+          "id_pixels": 49,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 76,
+          "object_id": "VINYL archival sleeve row 1.90 032",
+          "row_hint": "1.90",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 77,
+          "object_id": "VINYL archival sleeve row 1.90 033",
+          "row_hint": "1.90",
+          "id_pixels": 44,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 78,
+          "object_id": "VINYL archival sleeve row 1.90 034",
+          "row_hint": "1.90",
+          "id_pixels": 53,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 79,
+          "object_id": "VINYL archival sleeve row 1.90 035",
+          "row_hint": "1.90",
+          "id_pixels": 37,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 80,
+          "object_id": "VINYL archival sleeve row 1.90 036",
+          "row_hint": "1.90",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 81,
+          "object_id": "VINYL archival sleeve row 1.90 037",
+          "row_hint": "1.90",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 82,
+          "object_id": "VINYL archival sleeve row 1.90 038",
+          "row_hint": "1.90",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 83,
+          "object_id": "VINYL archival sleeve row 1.90 039",
+          "row_hint": "1.90",
+          "id_pixels": 10,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 84,
+          "object_id": "VINYL archival sleeve row 1.90 040",
+          "row_hint": "1.90",
+          "id_pixels": 24,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 85,
+          "object_id": "VINYL archival sleeve row 1.90 041",
+          "row_hint": "1.90",
+          "id_pixels": 51,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 86,
+          "object_id": "VINYL archival sleeve row 1.90 042",
+          "row_hint": "1.90",
+          "id_pixels": 34,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 87,
+          "object_id": "VINYL archival sleeve row 1.90 043",
+          "row_hint": "1.90",
+          "id_pixels": 8,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 88,
+          "object_id": "VINYL archival sleeve row 1.90 044",
+          "row_hint": "1.90",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 89,
+          "object_id": "VINYL archival sleeve row 1.90 045",
+          "row_hint": "1.90",
+          "id_pixels": 46,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 90,
+          "object_id": "VINYL archival sleeve row 1.90 046",
+          "row_hint": "1.90",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 91,
+          "object_id": "VINYL archival sleeve row 1.90 047",
+          "row_hint": "1.90",
+          "id_pixels": 33,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 92,
+          "object_id": "VINYL archival sleeve row 1.90 048",
+          "row_hint": "1.90",
+          "id_pixels": 55,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 93,
+          "object_id": "VINYL archival sleeve row 1.90 049",
+          "row_hint": "1.90",
+          "id_pixels": 3,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 94,
+          "object_id": "VINYL archival sleeve row 1.90 050",
+          "row_hint": "1.90",
+          "id_pixels": 20,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 95,
+          "object_id": "VINYL archival sleeve row 1.90 051",
+          "row_hint": "1.90",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 96,
+          "object_id": "VINYL archival sleeve row 1.90 052",
+          "row_hint": "1.90",
+          "id_pixels": 74,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 97,
+          "object_id": "VINYL archival sleeve row 1.90 053",
+          "row_hint": "1.90",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 98,
+          "object_id": "VINYL archival sleeve row 1.90 054",
+          "row_hint": "1.90",
+          "id_pixels": 24,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 99,
+          "object_id": "VINYL archival sleeve row 1.90 055",
+          "row_hint": "1.90",
+          "id_pixels": 5,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 100,
+          "object_id": "VINYL archival sleeve row 1.90 056",
+          "row_hint": "1.90",
+          "id_pixels": 24,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 101,
+          "object_id": "VINYL archival sleeve row 1.90 057",
+          "row_hint": "1.90",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 102,
+          "object_id": "VINYL archival sleeve row 1.90 058",
+          "row_hint": "1.90",
+          "id_pixels": 19,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 103,
+          "object_id": "VINYL archival sleeve row 1.90 059",
+          "row_hint": "1.90",
+          "id_pixels": 46,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 104,
+          "object_id": "VINYL archival sleeve row 1.90 060",
+          "row_hint": "1.90",
+          "id_pixels": 39,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 105,
+          "object_id": "VINYL archival sleeve row 1.90 061",
+          "row_hint": "1.90",
+          "id_pixels": 44,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 106,
+          "object_id": "VINYL archival sleeve row 1.90 062",
+          "row_hint": "1.90",
+          "id_pixels": 31,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 107,
+          "object_id": "VINYL archival sleeve row 1.90 063",
+          "row_hint": "1.90",
+          "id_pixels": 30,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 108,
+          "object_id": "VINYL archival sleeve row 1.90 064",
+          "row_hint": "1.90",
+          "id_pixels": 34,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 109,
+          "object_id": "VINYL archival sleeve row 1.90 065",
+          "row_hint": "1.90",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 110,
+          "object_id": "VINYL archival sleeve row 1.90 066",
+          "row_hint": "1.90",
+          "id_pixels": 57,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 111,
+          "object_id": "VINYL archival sleeve row 1.90 067",
+          "row_hint": "1.90",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 112,
+          "object_id": "VINYL archival sleeve row 1.90 068",
+          "row_hint": "1.90",
+          "id_pixels": 8,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 113,
+          "object_id": "VINYL archival sleeve row 1.90 069",
+          "row_hint": "1.90",
+          "id_pixels": 65,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 114,
+          "object_id": "VINYL archival sleeve row 1.90 070",
+          "row_hint": "1.90",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 115,
+          "object_id": "VINYL archival sleeve row 1.90 071",
+          "row_hint": "1.90",
+          "id_pixels": 50,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 116,
+          "object_id": "VINYL archival sleeve row 1.90 072",
+          "row_hint": "1.90",
+          "id_pixels": 30,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 117,
+          "object_id": "VINYL archival sleeve row 1.90 073",
+          "row_hint": "1.90",
+          "id_pixels": 52,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 118,
+          "object_id": "VINYL archival sleeve row 1.90 074",
+          "row_hint": "1.90",
+          "id_pixels": 21,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 119,
+          "object_id": "VINYL archival sleeve row 1.90 075",
+          "row_hint": "1.90",
+          "id_pixels": 44,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 120,
+          "object_id": "VINYL archival sleeve row 1.90 076",
+          "row_hint": "1.90",
+          "id_pixels": 43,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 121,
+          "object_id": "VINYL archival sleeve row 1.90 077",
+          "row_hint": "1.90",
+          "id_pixels": 4,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 122,
+          "object_id": "VINYL archival sleeve row 1.90 078",
+          "row_hint": "1.90",
+          "id_pixels": 65,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 123,
+          "object_id": "VINYL archival sleeve row 1.90 079",
+          "row_hint": "1.90",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 124,
+          "object_id": "VINYL archival sleeve row 1.90 080",
+          "row_hint": "1.90",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 125,
+          "object_id": "VINYL archival sleeve row 1.90 081",
+          "row_hint": "1.90",
+          "id_pixels": 67,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 126,
+          "object_id": "VINYL archival sleeve row 1.90 082",
+          "row_hint": "1.90",
+          "id_pixels": 20,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 127,
+          "object_id": "VINYL archival sleeve row 1.90 083",
+          "row_hint": "1.90",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 128,
+          "object_id": "VINYL archival sleeve row 1.90 084",
+          "row_hint": "1.90",
+          "id_pixels": 5,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 129,
+          "object_id": "VINYL archival sleeve row 1.90 085",
+          "row_hint": "1.90",
+          "id_pixels": 66,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 130,
+          "object_id": "VINYL archival sleeve row 1.90 086",
+          "row_hint": "1.90",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 131,
+          "object_id": "VINYL archival sleeve row 1.90 087",
+          "row_hint": "1.90",
+          "id_pixels": 59,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 132,
+          "object_id": "VINYL archival sleeve row 1.90 088",
+          "row_hint": "1.90",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 133,
+          "object_id": "VINYL archival sleeve row 1.90 089",
+          "row_hint": "1.90",
+          "id_pixels": 43,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 134,
+          "object_id": "VINYL archival sleeve row 1.90 090",
+          "row_hint": "1.90",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 135,
+          "object_id": "VINYL archival sleeve row 1.90 091",
+          "row_hint": "1.90",
+          "id_pixels": 33,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 136,
+          "object_id": "VINYL archival sleeve row 1.90 092",
+          "row_hint": "1.90",
+          "id_pixels": 35,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 137,
+          "object_id": "VINYL archival sleeve row 1.90 093",
+          "row_hint": "1.90",
+          "id_pixels": 47,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 138,
+          "object_id": "VINYL archival sleeve row 1.90 094",
+          "row_hint": "1.90",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 139,
+          "object_id": "VINYL archival sleeve row 1.90 095",
+          "row_hint": "1.90",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 140,
+          "object_id": "VINYL archival sleeve row 1.90 096",
+          "row_hint": "1.90",
+          "id_pixels": 48,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 141,
+          "object_id": "VINYL archival sleeve row 1.90 097",
+          "row_hint": "1.90",
+          "id_pixels": 8,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 142,
+          "object_id": "VINYL archival sleeve row 1.90 098",
+          "row_hint": "1.90",
+          "id_pixels": 44,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 143,
+          "object_id": "VINYL archival sleeve row 2.36 000",
+          "row_hint": "2.36",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 144,
+          "object_id": "VINYL archival sleeve row 2.36 001",
+          "row_hint": "2.36",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 145,
+          "object_id": "VINYL archival sleeve row 2.36 002",
+          "row_hint": "2.36",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 146,
+          "object_id": "VINYL archival sleeve row 2.36 003",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 147,
+          "object_id": "VINYL archival sleeve row 2.36 004",
+          "row_hint": "2.36",
+          "id_pixels": 27,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 148,
+          "object_id": "VINYL archival sleeve row 2.36 005",
+          "row_hint": "2.36",
+          "id_pixels": 3,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 149,
+          "object_id": "VINYL archival sleeve row 2.36 006",
+          "row_hint": "2.36",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 150,
+          "object_id": "VINYL archival sleeve row 2.36 007",
+          "row_hint": "2.36",
+          "id_pixels": 19,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 151,
+          "object_id": "VINYL archival sleeve row 2.36 008",
+          "row_hint": "2.36",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 152,
+          "object_id": "VINYL archival sleeve row 2.36 009",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 153,
+          "object_id": "VINYL archival sleeve row 2.36 010",
+          "row_hint": "2.36",
+          "id_pixels": 24,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 154,
+          "object_id": "VINYL archival sleeve row 2.36 011",
+          "row_hint": "2.36",
+          "id_pixels": 9,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 155,
+          "object_id": "VINYL archival sleeve row 2.36 012",
+          "row_hint": "2.36",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 156,
+          "object_id": "VINYL archival sleeve row 2.36 013",
+          "row_hint": "2.36",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 157,
+          "object_id": "VINYL archival sleeve row 2.36 014",
+          "row_hint": "2.36",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 158,
+          "object_id": "VINYL archival sleeve row 2.36 015",
+          "row_hint": "2.36",
+          "id_pixels": 22,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 159,
+          "object_id": "VINYL archival sleeve row 2.36 016",
+          "row_hint": "2.36",
+          "id_pixels": 30,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 160,
+          "object_id": "VINYL archival sleeve row 2.36 017",
+          "row_hint": "2.36",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 161,
+          "object_id": "VINYL archival sleeve row 2.36 018",
+          "row_hint": "2.36",
+          "id_pixels": 20,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 162,
+          "object_id": "VINYL archival sleeve row 2.36 019",
+          "row_hint": "2.36",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 163,
+          "object_id": "VINYL archival sleeve row 2.36 020",
+          "row_hint": "2.36",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 164,
+          "object_id": "VINYL archival sleeve row 2.36 021",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 165,
+          "object_id": "VINYL archival sleeve row 2.36 022",
+          "row_hint": "2.36",
+          "id_pixels": 18,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 166,
+          "object_id": "VINYL archival sleeve row 2.36 023",
+          "row_hint": "2.36",
+          "id_pixels": 30,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 167,
+          "object_id": "VINYL archival sleeve row 2.36 024",
+          "row_hint": "2.36",
+          "id_pixels": 2,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 168,
+          "object_id": "VINYL archival sleeve row 2.36 025",
+          "row_hint": "2.36",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 169,
+          "object_id": "VINYL archival sleeve row 2.36 026",
+          "row_hint": "2.36",
+          "id_pixels": 18,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 170,
+          "object_id": "VINYL archival sleeve row 2.36 027",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 171,
+          "object_id": "VINYL archival sleeve row 2.36 028",
+          "row_hint": "2.36",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 172,
+          "object_id": "VINYL archival sleeve row 2.36 029",
+          "row_hint": "2.36",
+          "id_pixels": 20,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 173,
+          "object_id": "VINYL archival sleeve row 2.36 030",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 174,
+          "object_id": "VINYL archival sleeve row 2.36 031",
+          "row_hint": "2.36",
+          "id_pixels": 27,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 175,
+          "object_id": "VINYL archival sleeve row 2.36 032",
+          "row_hint": "2.36",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 176,
+          "object_id": "VINYL archival sleeve row 2.36 033",
+          "row_hint": "2.36",
+          "id_pixels": 25,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 177,
+          "object_id": "VINYL archival sleeve row 2.36 034",
+          "row_hint": "2.36",
+          "id_pixels": 9,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 178,
+          "object_id": "VINYL archival sleeve row 2.36 035",
+          "row_hint": "2.36",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 179,
+          "object_id": "VINYL archival sleeve row 2.36 036",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 180,
+          "object_id": "VINYL archival sleeve row 2.36 037",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 181,
+          "object_id": "VINYL archival sleeve row 2.36 038",
+          "row_hint": "2.36",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 182,
+          "object_id": "VINYL archival sleeve row 2.36 039",
+          "row_hint": "2.36",
+          "id_pixels": 18,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 183,
+          "object_id": "VINYL archival sleeve row 2.36 040",
+          "row_hint": "2.36",
+          "id_pixels": 21,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 184,
+          "object_id": "VINYL archival sleeve row 2.36 041",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 185,
+          "object_id": "VINYL archival sleeve row 2.36 042",
+          "row_hint": "2.36",
+          "id_pixels": 10,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 186,
+          "object_id": "VINYL archival sleeve row 2.36 043",
+          "row_hint": "2.36",
+          "id_pixels": 43,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 187,
+          "object_id": "VINYL archival sleeve row 2.36 044",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 188,
+          "object_id": "VINYL archival sleeve row 2.36 045",
+          "row_hint": "2.36",
+          "id_pixels": 29,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 189,
+          "object_id": "VINYL archival sleeve row 2.36 046",
+          "row_hint": "2.36",
+          "id_pixels": 19,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 190,
+          "object_id": "VINYL archival sleeve row 2.36 047",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 191,
+          "object_id": "VINYL archival sleeve row 2.36 048",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 192,
+          "object_id": "VINYL archival sleeve row 2.36 049",
+          "row_hint": "2.36",
+          "id_pixels": 30,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 193,
+          "object_id": "VINYL archival sleeve row 2.36 050",
+          "row_hint": "2.36",
+          "id_pixels": 15,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 194,
+          "object_id": "VINYL archival sleeve row 2.36 051",
+          "row_hint": "2.36",
+          "id_pixels": 5,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 195,
+          "object_id": "VINYL archival sleeve row 2.36 052",
+          "row_hint": "2.36",
+          "id_pixels": 9,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 196,
+          "object_id": "VINYL archival sleeve row 2.36 053",
+          "row_hint": "2.36",
+          "id_pixels": 38,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 197,
+          "object_id": "VINYL archival sleeve row 2.36 054",
+          "row_hint": "2.36",
+          "id_pixels": 21,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 198,
+          "object_id": "VINYL archival sleeve row 2.36 055",
+          "row_hint": "2.36",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 199,
+          "object_id": "VINYL archival sleeve row 2.36 056",
+          "row_hint": "2.36",
+          "id_pixels": 18,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 200,
+          "object_id": "VINYL archival sleeve row 2.36 057",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 201,
+          "object_id": "VINYL archival sleeve row 2.36 058",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 202,
+          "object_id": "VINYL archival sleeve row 2.36 059",
+          "row_hint": "2.36",
+          "id_pixels": 3,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 203,
+          "object_id": "VINYL archival sleeve row 2.36 060",
+          "row_hint": "2.36",
+          "id_pixels": 14,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 204,
+          "object_id": "VINYL archival sleeve row 2.36 061",
+          "row_hint": "2.36",
+          "id_pixels": 44,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 205,
+          "object_id": "VINYL archival sleeve row 2.36 062",
+          "row_hint": "2.36",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 206,
+          "object_id": "VINYL archival sleeve row 2.36 063",
+          "row_hint": "2.36",
+          "id_pixels": 13,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 207,
+          "object_id": "VINYL archival sleeve row 2.36 064",
+          "row_hint": "2.36",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 208,
+          "object_id": "VINYL archival sleeve row 2.36 065",
+          "row_hint": "2.36",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 209,
+          "object_id": "VINYL archival sleeve row 2.36 066",
+          "row_hint": "2.36",
+          "id_pixels": 20,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 210,
+          "object_id": "VINYL archival sleeve row 2.36 067",
+          "row_hint": "2.36",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 211,
+          "object_id": "VINYL archival sleeve row 2.36 068",
+          "row_hint": "2.36",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 212,
+          "object_id": "VINYL archival sleeve row 2.36 069",
+          "row_hint": "2.36",
+          "id_pixels": 27,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 213,
+          "object_id": "VINYL archival sleeve row 2.36 070",
+          "row_hint": "2.36",
+          "id_pixels": 2,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 214,
+          "object_id": "VINYL archival sleeve row 2.36 071",
+          "row_hint": "2.36",
+          "id_pixels": 33,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 215,
+          "object_id": "VINYL archival sleeve row 2.36 072",
+          "row_hint": "2.36",
+          "id_pixels": 13,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 216,
+          "object_id": "VINYL archival sleeve row 2.36 073",
+          "row_hint": "2.36",
+          "id_pixels": 25,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 217,
+          "object_id": "VINYL archival sleeve row 2.36 074",
+          "row_hint": "2.36",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 218,
+          "object_id": "VINYL archival sleeve row 2.36 075",
+          "row_hint": "2.36",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 219,
+          "object_id": "VINYL archival sleeve row 2.36 076",
+          "row_hint": "2.36",
+          "id_pixels": 35,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 220,
+          "object_id": "VINYL archival sleeve row 2.36 077",
+          "row_hint": "2.36",
+          "id_pixels": 6,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 221,
+          "object_id": "VINYL archival sleeve row 2.36 078",
+          "row_hint": "2.36",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 222,
+          "object_id": "VINYL archival sleeve row 2.36 079",
+          "row_hint": "2.36",
+          "id_pixels": 38,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 223,
+          "object_id": "VINYL archival sleeve row 2.36 080",
+          "row_hint": "2.36",
+          "id_pixels": 0,
+          "sampled_visible": false,
+          "reviewed": false
+        },
+        {
+          "index": 224,
+          "object_id": "VINYL archival sleeve row 2.36 081",
+          "row_hint": "2.36",
+          "id_pixels": 12,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 225,
+          "object_id": "VINYL archival sleeve row 2.36 082",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 226,
+          "object_id": "VINYL archival sleeve row 2.36 083",
+          "row_hint": "2.36",
+          "id_pixels": 18,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 227,
+          "object_id": "VINYL archival sleeve row 2.36 084",
+          "row_hint": "2.36",
+          "id_pixels": 21,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 228,
+          "object_id": "VINYL archival sleeve row 2.36 085",
+          "row_hint": "2.36",
+          "id_pixels": 26,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 229,
+          "object_id": "VINYL archival sleeve row 2.36 086",
+          "row_hint": "2.36",
+          "id_pixels": 28,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 230,
+          "object_id": "VINYL archival sleeve row 2.36 087",
+          "row_hint": "2.36",
+          "id_pixels": 17,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 231,
+          "object_id": "VINYL archival sleeve row 2.36 088",
+          "row_hint": "2.36",
+          "id_pixels": 23,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 232,
+          "object_id": "VINYL archival sleeve row 2.36 089",
+          "row_hint": "2.36",
+          "id_pixels": 11,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 233,
+          "object_id": "VINYL archival sleeve row 2.36 090",
+          "row_hint": "2.36",
+          "id_pixels": 5,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 234,
+          "object_id": "VINYL archival sleeve row 2.36 091",
+          "row_hint": "2.36",
+          "id_pixels": 22,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 235,
+          "object_id": "VINYL archival sleeve row 2.36 092",
+          "row_hint": "2.36",
+          "id_pixels": 32,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 236,
+          "object_id": "VINYL archival sleeve row 2.36 093",
+          "row_hint": "2.36",
+          "id_pixels": 13,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 237,
+          "object_id": "VINYL archival sleeve row 2.36 094",
+          "row_hint": "2.36",
+          "id_pixels": 3,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 238,
+          "object_id": "VINYL archival sleeve row 2.36 095",
+          "row_hint": "2.36",
+          "id_pixels": 16,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 239,
+          "object_id": "VINYL archival sleeve row 2.36 096",
+          "row_hint": "2.36",
+          "id_pixels": 21,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 240,
+          "object_id": "VINYL archival sleeve row 2.36 097",
+          "row_hint": "2.36",
+          "id_pixels": 7,
+          "sampled_visible": true,
+          "reviewed": false
+        },
+        {
+          "index": 241,
+          "object_id": "VINYL archival sleeve row 2.36 098",
+          "row_hint": "2.36",
+          "id_pixels": 25,
+          "sampled_visible": true,
+          "reviewed": false
+        }
+      ],
+      "rows": [
+        {
+          "row_hint": "1.45",
+          "candidate_bodies": 43,
+          "bodies_with_sampled_id_pixels": 41,
+          "mask_pixels": 1519,
+          "inside_r3_pixels": 1218,
+          "outside_r3_pixels": 301,
+          "reviewed": false
+        },
+        {
+          "row_hint": "1.90",
+          "candidate_bodies": 99,
+          "bodies_with_sampled_id_pixels": 94,
+          "mask_pixels": 3165,
+          "inside_r3_pixels": 2834,
+          "outside_r3_pixels": 331,
+          "reviewed": false
+        },
+        {
+          "row_hint": "2.36",
+          "candidate_bodies": 99,
+          "bodies_with_sampled_id_pixels": 93,
+          "mask_pixels": 1753,
+          "inside_r3_pixels": 1580,
+          "outside_r3_pixels": 173,
+          "reviewed": false
+        }
+      ],
+      "reviewed": false
+    },
+    "render_calls": 1,
+    "render_seconds": 1.0425638959277421,
+    "mask_definition": "Body-mesh pixels selected by unique IndexOB IDs, with original occluders; titles excluded",
+    "technical_warnings": [
+      {
+        "kind": "newer_file_version",
+        "messages": [
+          "Warning: File written by newer Blender binary (402.67), expect loss of data!"
+        ],
+        "consequence": "Installed reader may lose unsupported state; exact original-renderer equivalence is not certified"
+      },
+      {
+        "kind": "cycles_unregister_cleanup",
+        "message": "ValueError: list.remove(x): x not in list during cycles.unregister / version_update callback removal",
+        "consequence": "ID output completed and process exited 0; factory callback clearing caused a teardown exception; preserve full log"
+      }
+    ],
+    "reader_version": "4.2.0",
+    "historical_render_pixel_mask_equivalence_certified": false,
+    "limitations": [
+      "Low-resolution single-sample hard IndexOB support, not pixel GT",
+      "Transparency follows alpha threshold; IndexOB does not provide antialiased fractional edge coverage",
+      "Subpixel/marginal/occluded bodies may produce no ID pixel",
+      "Excluded unowned title geometry can occlude body pixels",
+      "No Reference Group mask GT; no IoU, semantic category confirmation or formal score"
+    ],
+    "reviewed": false,
+    "scorable": false,
+    "usage": "provisional/debug",
+    "formal_energy": null,
+    "publication_projection": "Scientific fields only; historical host/process/resource details omitted; server original unchanged"
+  },
+  "scene_graph_statistics": {
+    "object_count": 900,
+    "types": {
+      "CAMERA": 1,
+      "MESH": 720,
+      "CURVE": 175,
+      "LIGHT": 4
+    },
+    "source_blend": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0074/bw_0074__KcPDLD8/artifacts/workspace/exports/final.blend",
+    "evaluated_collision_support_geometry": false
+  }
+}

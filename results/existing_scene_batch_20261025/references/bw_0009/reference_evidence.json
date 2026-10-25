@@ -1,0 +1,266 @@
+{
+  "image_size": [
+    768,
+    384
+  ],
+  "regions": [
+    {
+      "id": "r_pool",
+      "name": "游泳池及池边",
+      "description": "画面下方的矩形泳池、水面与浅色池缘",
+      "bbox": [
+        0.0,
+        78.72,
+        669.696,
+        384.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        205,
+        872,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_lawn",
+      "name": "草坪休闲区",
+      "description": "画面右上方草坪及其户外躺卧家具",
+      "bbox": [
+        361.728,
+        0.0,
+        768.0,
+        307.968
+      ],
+      "raw_bbox_0_1000": [
+        471,
+        0,
+        1000,
+        802
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_patio",
+      "name": "左侧露台",
+      "description": "泳池左上方的铺装地面、座椅和火盆",
+      "bbox": [
+        0.0,
+        0.0,
+        406.272,
+        228.48
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        0,
+        529,
+        595
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_people",
+      "name": "池边人物",
+      "description": "泳池上缘附近的两个人",
+      "bbox": [
+        354.816,
+        94.08,
+        483.84,
+        206.976
+      ],
+      "raw_bbox_0_1000": [
+        462,
+        245,
+        630,
+        539
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [
+    {
+      "id": "g_loungers",
+      "region_id": "r_lawn",
+      "name": "草坪躺椅",
+      "scope": "草坪右侧可见的户外躺椅",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r_pool",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "泳池呈长方形，水面为浅蓝色。",
+      "question": "泳池是否呈长方形且水面为浅蓝色？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r_lawn",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "草坪上方有带弧形遮篷的圆形休闲床。",
+      "question": "草坪上方是否有带弧形遮篷的圆形休闲床？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r_lawn",
+      "group_id": "g_loungers",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "右侧躺椅之一铺有橙白条纹织物。",
+      "question": "右侧躺椅之一是否铺有橙白条纹织物？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r_patio",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "左侧露台设有白色圆形火盆，中央为深色填料。",
+      "question": "左侧露台的圆形火盆中央是否为深色填料？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e5",
+      "region_id": "r_patio",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "白色圆形火盆位于两张浅色座椅之间。",
+      "question": "从当前视角看，白色圆形火盆是否位于两张浅色座椅之间？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r_people",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "泳池上缘附近可见两个人。",
+      "question": "泳池上缘附近可见几个人？",
+      "answer_type": "count_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r_people",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "深色上衣的人位于浅色上衣的人的左侧。",
+      "question": "从当前视角看，深色上衣的人是否位于浅色上衣的人的左侧？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e8",
+      "region_id": "r_pool",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "泳池右上侧池缘有一段凸出的浅色平台，其外侧为贴石材的矮墙。",
+      "question": "泳池右上侧池缘是否有一段凸出的浅色平台？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

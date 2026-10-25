@@ -1,0 +1,3088 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "unknown",
+    "pose_matches_T0": false,
+    "actual_poses": {},
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": null,
+    "reason": "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient",
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": 0.01076189676920573,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 7,
+      "eligible_count": 4,
+      "coverage": 0.5714285714285714,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r_sky",
+        "region:r_ridges",
+        "region:r_foreground",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:r_sky",
+        "region:r_ridges",
+        "region:r_foreground"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.0625
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "appearance": {
+      "value": 0.08924824500655297,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 8,
+      "eligible_count": 5,
+      "coverage": 0.625,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r_sky",
+        "region:r_ridges",
+        "region:r_foreground",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:r_sky",
+        "region:r_ridges",
+        "region:r_foreground"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "statistical": {
+      "value": 0.0225171117567895,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 8,
+      "applicable_count": 14,
+      "eligible_count": 8,
+      "coverage": 0.5714285714285714,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r_sky:texture",
+        "region:r_sky:distribution",
+        "region:r_ridges:texture",
+        "region:r_ridges:distribution",
+        "region:r_foreground:texture",
+        "region:r_foreground:distribution",
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "unavailable_metrics": [
+        "region:r_sky:texture",
+        "region:r_sky:distribution",
+        "region:r_ridges:texture",
+        "region:r_ridges:distribution",
+        "region:r_foreground:texture",
+        "region:r_foreground:distribution"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_0_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        },
+        {
+          "id": "patch_1_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.03125
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    },
+    "perceptual": {
+      "value": 0.2131454311355958,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 8,
+      "eligible_count": 5,
+      "coverage": 0.625,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r_sky",
+        "region:r_ridges",
+        "region:r_foreground",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:r_sky",
+        "region:r_ridges",
+        "region:r_foreground"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.25
+    }
+  },
+  "observation_energy": 0.083918171167036,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": null,
+    "checks": {
+      "penetration": [],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [
+      {
+        "kind": "structural_evidence_unavailable",
+        "reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed"
+      }
+    ],
+    "raw_geometry": {
+      "status": "unavailable",
+      "reason": "No existing evaluated collision/support Geometry bound to this run; no new extraction executed"
+    },
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.5945945945945946,
+  "observation_status": "partial",
+  "evidence_counts": {
+    "expected": 37,
+    "eligible": 22,
+    "valid": 22
+  },
+  "eligible_evidence_coverage": 1.0,
+  "uncertainty": {
+    "region_coverage": 0.5714285714285714,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": null,
+    "structural_check_coverage": null,
+    "unknown_evidence": [
+      {
+        "id": "r_sky",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_sky",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_sky:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_sky:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_sky",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_ridges",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_ridges",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_ridges:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_ridges:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_ridges",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_foreground",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_foreground",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_foreground:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_foreground:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r_foreground",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Actual camera pose unavailable; fixed_T0/boolean declarations are insufficient; Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 0
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 393216.0,
+        "color_l1": 0.08924824500655297,
+        "coarse_boundary_error": 0.04304758707682292,
+        "grayscale_wasserstein": 0.02740796407063801,
+        "edge_coverage_error": 0.043047587076822914,
+        "gradient_mean_error": 0.024377903491583263,
+        "texture_statistics_proxy": 0.03161115154634806,
+        "edge_distribution_proxy": 0.043047587076822914,
+        "edge_distribution_per_scale": {
+          "4": 0.043047587076822914,
+          "8": 0.04304758707682292,
+          "16": 0.04304758707682292
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 98304.0,
+        "color_l1": 0.09658669864430147,
+        "coarse_boundary_error": 0.014475504557291666,
+        "grayscale_wasserstein": 0.05071067810058595,
+        "edge_coverage_error": 0.057902018229166664,
+        "gradient_mean_error": 0.03021633837997004,
+        "texture_statistics_proxy": 0.04627634490324089,
+        "edge_distribution_proxy": 0.014475504557291666,
+        "edge_distribution_per_scale": {
+          "4": 0.014475504557291666,
+          "8": 0.014475504557291666,
+          "16": 0.014475504557291664
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 98304.0,
+        "color_l1": 0.08965367668334695,
+        "coarse_boundary_error": 0.009358723958333334,
+        "grayscale_wasserstein": 0.02878252665201826,
+        "edge_coverage_error": 0.037434895833333336,
+        "gradient_mean_error": 0.02638228007131672,
+        "texture_statistics_proxy": 0.03086656751888944,
+        "edge_distribution_proxy": 0.009358723958333334,
+        "edge_distribution_per_scale": {
+          "4": 0.009358723958333334,
+          "8": 0.009358723958333334,
+          "16": 0.009358723958333332
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 98304.0,
+        "color_l1": 0.07896010454963236,
+        "coarse_boundary_error": 0.00994873046875,
+        "grayscale_wasserstein": 0.03443463643391943,
+        "edge_coverage_error": 0.039794921875,
+        "gradient_mean_error": 0.020987769565291397,
+        "texture_statistics_proxy": 0.03173910929140361,
+        "edge_distribution_proxy": 0.00994873046875,
+        "edge_distribution_per_scale": {
+          "4": 0.00994873046875,
+          "8": 0.00994873046875,
+          "16": 0.00994873046875
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 98304.0,
+        "color_l1": 0.0917925001489311,
+        "coarse_boundary_error": 0.009264628092447918,
+        "grayscale_wasserstein": 0.027638117472330786,
+        "edge_coverage_error": 0.037058512369791664,
+        "gradient_mean_error": 0.0199252259497549,
+        "texture_statistics_proxy": 0.028207285263959117,
+        "edge_distribution_proxy": 0.009264628092447918,
+        "edge_distribution_per_scale": {
+          "4": 0.009264628092447918,
+          "8": 0.009264628092447918,
+          "16": 0.009264628092447918
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "reference_complete": false,
+      "unknown_candidates": 0,
+      "unknown_extras": [],
+      "unknown_rendered_candidates": [],
+      "extra_records": [],
+      "verdict_records": [],
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "valid_pixels": 393216,
+    "measurement_pixels": 393216,
+    "overlap_aggregation_withheld": []
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.08924824500655297,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": 0.19863386642145886,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r_sky",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r_sky",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_sky:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_sky:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r_sky",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r_ridges",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r_ridges",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_ridges:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_ridges:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r_ridges",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r_foreground",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r_foreground",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_foreground:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r_foreground:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r_foreground",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.09658669864430147,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.014475504557291666,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:texture",
+      "value": 0.04627634490324089,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:distribution",
+      "value": 0.014475504557291666,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.014475504557291666,
+        "8": 0.014475504557291666,
+        "16": 0.014475504557291664
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.20454703722324125,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.08965367668334695,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.009358723958333334,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:texture",
+      "value": 0.03086656751888944,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:distribution",
+      "value": 0.009358723958333334,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.009358723958333334,
+        "8": 0.009358723958333334,
+        "16": 0.009358723958333332
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.25022805019789324,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.07896010454963236,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.00994873046875,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:texture",
+      "value": 0.03173910929140361,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:distribution",
+      "value": 0.00994873046875,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.00994873046875,
+        "8": 0.00994873046875,
+        "16": 0.00994873046875
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.21650302884442277,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.0917925001489311,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.009264628092447918,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:texture",
+      "value": 0.028207285263959117,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:distribution",
+      "value": 0.009264628092447918,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.009264628092447918,
+        "8": 0.009264628092447918,
+        "16": 0.009264628092447918
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.2103267377050999,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      768,
+      512
+    ],
+    "regions": [
+      {
+        "id": "r_sky",
+        "name": "天空",
+        "description": "画面上半部的蓝色天空和浅色云层",
+        "bbox": [
+          0.0,
+          0.0,
+          768.0,
+          256.0
+        ],
+        "raw_bbox_0_1000": [
+          0,
+          0,
+          1000,
+          500
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "r_ridges",
+        "name": "层叠山岭",
+        "description": "画面中部至下部相互重叠的山岭轮廓",
+        "bbox": [
+          0.0,
+          199.68,
+          768.0,
+          465.92
+        ],
+        "raw_bbox_0_1000": [
+          0,
+          390,
+          1000,
+          910
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "r_foreground",
+        "name": "前景山脊",
+        "description": "画面底部的深蓝色山脊",
+        "bbox": [
+          0.0,
+          435.2,
+          768.0,
+          512.0
+        ],
+        "raw_bbox_0_1000": [
+          0,
+          850,
+          1000,
+          1000
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          384,
+          256
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          384,
+          0,
+          768,
+          256
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          256,
+          384,
+          512
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          384,
+          256,
+          768,
+          512
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "anchors": [],
+    "groups": [
+      {
+        "id": "g_clouds",
+        "region_id": "r_sky",
+        "name": "云层",
+        "scope": "天空中横向分布的浅色云形",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "g_ridges",
+        "region_id": "r_ridges",
+        "name": "山岭轮廓",
+        "scope": "从远处浅色山岭到近处深色山岭的多层轮廓",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      }
+    ],
+    "atomic_evidence": [
+      {
+        "id": "e1",
+        "region_id": "r_sky",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "天空以蓝色为主。",
+        "question": "天空的主要颜色属于哪一类？",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "蓝色",
+          "灰色",
+          "橙色",
+          "绿色",
+          "紫色",
+          "黑色",
+          "白色",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "蓝色",
+          "灰色",
+          "橙色",
+          "绿色",
+          "紫色",
+          "黑色",
+          "白色"
+        ]
+      },
+      {
+        "id": "e2",
+        "region_id": "r_sky",
+        "group_id": "g_clouds",
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "天空中有浅色云层。",
+        "question": "天空中是否可见浅色云层？",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e3",
+        "region_id": "r_sky",
+        "group_id": "g_clouds",
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "浅色云层集中在天空的中下部。",
+        "question": "浅色云层是否主要分布在天空的中下部？",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e4",
+        "region_id": "r_ridges",
+        "group_id": "g_ridges",
+        "anchor_id": null,
+        "type": "statistical",
+        "claim": "可见多条上下分布的山岭轮廓。",
+        "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e5",
+        "region_id": "r_ridges",
+        "group_id": "g_ridges",
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "较浅的山岭位于较深的山岭上方。",
+        "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+        "answer_type": "yes_no_unknown",
+        "categories": [],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e6",
+        "region_id": "r_ridges",
+        "group_id": "g_ridges",
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "山岭轮廓呈起伏曲线。",
+        "question": "山岭顶部轮廓主要属于哪种形状？",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "起伏曲线",
+          "水平直线",
+          "竖直直线",
+          "规则锯齿",
+          "圆形",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "起伏曲线",
+          "水平直线",
+          "竖直直线",
+          "规则锯齿",
+          "圆形"
+        ]
+      },
+      {
+        "id": "e7",
+        "region_id": "r_foreground",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "semantic",
+        "claim": "最下方山脊呈深蓝色。",
+        "question": "画面最下方山脊的主要颜色属于哪一类？",
+        "answer_type": "categorical_unknown",
+        "categories": [
+          "深蓝色",
+          "浅蓝色",
+          "绿色",
+          "棕色",
+          "灰色",
+          "白色",
+          "absent",
+          "other"
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "raw_categories": [
+          "深蓝色",
+          "浅蓝色",
+          "绿色",
+          "棕色",
+          "灰色",
+          "白色"
+        ]
+      }
+    ],
+    "inventory_complete": false,
+    "reviewed": false,
+    "usage": "provisional/debug",
+    "source": "reference RGB and independently supplied annotations only",
+    "provenance": {
+      "backend": "codex_cli",
+      "planning_response": "planning_response.json",
+      "input_side": "reference_only",
+      "expected_answers_supplied": false
+    },
+    "evidence_protocol": {
+      "version": "existing_scene_v1",
+      "evidence_budget": 10
+    },
+    "category_policy": "reference_only_missing_other_v1",
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights"
+  },
+  "render_metadata": {
+    "historical_native_metadata": {},
+    "resolution": [
+      768,
+      512
+    ],
+    "resolution_scope": "Prepared RGB common grid; native camera metadata retained separately"
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "formal_eligible": false,
+  "evidence_category": "historical_diagnostic",
+  "diagnostics": {
+    "groups": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/references/bw_0075/reference_evidence.json",
+      "reviewed": false,
+      "evidence": {
+        "image_size": [
+          768,
+          512
+        ],
+        "regions": [
+          {
+            "id": "r_sky",
+            "name": "天空",
+            "description": "画面上半部的蓝色天空和浅色云层",
+            "bbox": [
+              0.0,
+              0.0,
+              768.0,
+              256.0
+            ],
+            "raw_bbox_0_1000": [
+              0,
+              0,
+              1000,
+              500
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          },
+          {
+            "id": "r_ridges",
+            "name": "层叠山岭",
+            "description": "画面中部至下部相互重叠的山岭轮廓",
+            "bbox": [
+              0.0,
+              199.68,
+              768.0,
+              465.92
+            ],
+            "raw_bbox_0_1000": [
+              0,
+              390,
+              1000,
+              910
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          },
+          {
+            "id": "r_foreground",
+            "name": "前景山脊",
+            "description": "画面底部的深蓝色山脊",
+            "bbox": [
+              0.0,
+              435.2,
+              768.0,
+              512.0
+            ],
+            "raw_bbox_0_1000": [
+              0,
+              850,
+              1000,
+              1000
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          }
+        ],
+        "anchors": [],
+        "groups": [
+          {
+            "id": "g_clouds",
+            "region_id": "r_sky",
+            "name": "云层",
+            "scope": "天空中横向分布的浅色云形",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "g_ridges",
+            "region_id": "r_ridges",
+            "name": "山岭轮廓",
+            "scope": "从远处浅色山岭到近处深色山岭的多层轮廓",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          }
+        ],
+        "atomic_evidence": [
+          {
+            "id": "e1",
+            "region_id": "r_sky",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "天空以蓝色为主。",
+            "question": "天空的主要颜色属于哪一类？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "蓝色",
+              "灰色",
+              "橙色",
+              "绿色",
+              "紫色",
+              "黑色",
+              "白色",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "蓝色",
+              "灰色",
+              "橙色",
+              "绿色",
+              "紫色",
+              "黑色",
+              "白色"
+            ]
+          },
+          {
+            "id": "e2",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "天空中有浅色云层。",
+            "question": "天空中是否可见浅色云层？",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e3",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "浅色云层集中在天空的中下部。",
+            "question": "浅色云层是否主要分布在天空的中下部？",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e4",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "可见多条上下分布的山岭轮廓。",
+            "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e5",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "较浅的山岭位于较深的山岭上方。",
+            "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e6",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "山岭轮廓呈起伏曲线。",
+            "question": "山岭顶部轮廓主要属于哪种形状？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "起伏曲线",
+              "水平直线",
+              "竖直直线",
+              "规则锯齿",
+              "圆形",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "起伏曲线",
+              "水平直线",
+              "竖直直线",
+              "规则锯齿",
+              "圆形"
+            ]
+          },
+          {
+            "id": "e7",
+            "region_id": "r_foreground",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "最下方山脊呈深蓝色。",
+            "question": "画面最下方山脊的主要颜色属于哪一类？",
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "深蓝色",
+              "浅蓝色",
+              "绿色",
+              "棕色",
+              "灰色",
+              "白色",
+              "absent",
+              "other"
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "raw_categories": [
+              "深蓝色",
+              "浅蓝色",
+              "绿色",
+              "棕色",
+              "灰色",
+              "白色"
+            ]
+          }
+        ],
+        "inventory_complete": false,
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "source": "Reference-only Codex CLI planning; not GT",
+        "provenance": {
+          "backend": "codex_cli",
+          "planning_response": "planning_response.json",
+          "input_side": "reference_only",
+          "expected_answers_supplied": false
+        },
+        "evidence_protocol": {
+          "version": "existing_scene_v1",
+          "evidence_budget": 10
+        },
+        "category_policy": "reference_only_missing_other_v1"
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "structural_layout": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/structural_diagnostics.json",
+      "reviewed": false,
+      "evidence": {
+        "scene_graph": null,
+        "visibility": null,
+        "reviewed": false,
+        "energy_contribution": false,
+        "interpretation": "Cached generated-side evidence only; names/bounds are not category or visibility GT"
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "vlm_verification": {
+      "status": "available",
+      "source": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/verification_results.json",
+      "reviewed": false,
+      "pair_binding": "matched_paths_unverified_content",
+      "evidence": {
+        "reference": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+            "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_sky\", \"name\": \"天空\", \"bbox\": [0.0, 0.0, 768.0, 256.0]}, {\"id\": \"r_ridges\", \"name\": \"层叠山岭\", \"bbox\": [0.0, 199.68, 768.0, 465.92]}, {\"id\": \"r_foreground\", \"name\": \"前景山脊\", \"bbox\": [0.0, 435.2, 768.0, 512.0]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_sky\", \"group_id\": null, \"anchor_id\": null, \"question\": \"天空的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"蓝色\", \"灰色\", \"橙色\", \"绿色\", \"紫色\", \"黑色\", \"白色\", \"absent\", \"other\"]}, {\"id\": \"e2\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"天空中是否可见浅色云层？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"浅色云层是否主要分布在天空的中下部？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"画面中是否可见至少三层上下分布的山岭轮廓？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e5\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"山岭顶部轮廓主要属于哪种形状？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"起伏曲线\", \"水平直线\", \"竖直直线\", \"规则锯齿\", \"圆形\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_foreground\", \"group_id\": null, \"anchor_id\": null, \"question\": \"画面最下方山脊的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"深蓝色\", \"浅蓝色\", \"绿色\", \"棕色\", \"灰色\", \"白色\", \"absent\", \"other\"]}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "type": "string",
+                  "enum": [
+                    "蓝色",
+                    "灰色",
+                    "橙色",
+                    "绿色",
+                    "紫色",
+                    "黑色",
+                    "白色",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e2": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e3": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e4": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e5": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e6": {
+                  "type": "string",
+                  "enum": [
+                    "起伏曲线",
+                    "水平直线",
+                    "竖直直线",
+                    "规则锯齿",
+                    "圆形",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e7": {
+                  "type": "string",
+                  "enum": [
+                    "深蓝色",
+                    "浅蓝色",
+                    "绿色",
+                    "棕色",
+                    "灰色",
+                    "白色",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2",
+                "e3",
+                "e4",
+                "e5",
+                "e6",
+                "e7"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": "蓝色",
+                "raw_value": "蓝色",
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e3": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e4": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e5": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e6": {
+                "value": "起伏曲线",
+                "raw_value": "起伏曲线",
+                "validation_status": "valid"
+              },
+              "e7": {
+                "value": "深蓝色",
+                "raw_value": "深蓝色",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": "蓝色",
+              "e2": "yes",
+              "e3": "yes",
+              "e4": "yes",
+              "e5": "yes",
+              "e6": "起伏曲线",
+              "e7": "深蓝色"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 31.893780054990202,
+          "token_usage": {
+            "input_tokens": 11369,
+            "output_tokens": 52,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "./results/existing_scene_batch_20261025/references/bw_0075/reference.png",
+            "image_size": [
+              768,
+              512
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-runtime>/input/d340c237512f4db4943c85563be5660c.png",
+              "--output-schema",
+              "<temporary-cli-runtime>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-runtime>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。\n\nUser:\n独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_sky\", \"name\": \"天空\", \"bbox\": [0.0, 0.0, 768.0, 256.0]}, {\"id\": \"r_ridges\", \"name\": \"层叠山岭\", \"bbox\": [0.0, 199.68, 768.0, 465.92]}, {\"id\": \"r_foreground\", \"name\": \"前景山脊\", \"bbox\": [0.0, 435.2, 768.0, 512.0]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_sky\", \"group_id\": null, \"anchor_id\": null, \"question\": \"天空的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"蓝色\", \"灰色\", \"橙色\", \"绿色\", \"紫色\", \"黑色\", \"白色\", \"absent\", \"other\"]}, {\"id\": \"e2\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"天空中是否可见浅色云层？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"浅色云层是否主要分布在天空的中下部？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"画面中是否可见至少三层上下分布的山岭轮廓？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e5\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"山岭顶部轮廓主要属于哪种形状？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"起伏曲线\", \"水平直线\", \"竖直直线\", \"规则锯齿\", \"圆形\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_foreground\", \"group_id\": null, \"anchor_id\": null, \"question\": \"画面最下方山脊的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"深蓝色\", \"浅蓝色\", \"绿色\", \"棕色\", \"灰色\", \"白色\", \"absent\", \"other\"]}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "staged_image": "d340c237512f4db4943c85563be5660c.png",
+            "image_size": [
+              768,
+              512
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "d340c237512f4db4943c85563be5660c.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 11369,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 52,
+            "reasoning_output_tokens": 0
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "render": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+            "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_sky\", \"name\": \"天空\", \"bbox\": [0.0, 0.0, 768.0, 256.0]}, {\"id\": \"r_ridges\", \"name\": \"层叠山岭\", \"bbox\": [0.0, 199.68, 768.0, 465.92]}, {\"id\": \"r_foreground\", \"name\": \"前景山脊\", \"bbox\": [0.0, 435.2, 768.0, 512.0]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_sky\", \"group_id\": null, \"anchor_id\": null, \"question\": \"天空的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"蓝色\", \"灰色\", \"橙色\", \"绿色\", \"紫色\", \"黑色\", \"白色\", \"absent\", \"other\"]}, {\"id\": \"e2\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"天空中是否可见浅色云层？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"浅色云层是否主要分布在天空的中下部？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"画面中是否可见至少三层上下分布的山岭轮廓？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e5\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"山岭顶部轮廓主要属于哪种形状？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"起伏曲线\", \"水平直线\", \"竖直直线\", \"规则锯齿\", \"圆形\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_foreground\", \"group_id\": null, \"anchor_id\": null, \"question\": \"画面最下方山脊的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"深蓝色\", \"浅蓝色\", \"绿色\", \"棕色\", \"灰色\", \"白色\", \"absent\", \"other\"]}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "type": "string",
+                  "enum": [
+                    "蓝色",
+                    "灰色",
+                    "橙色",
+                    "绿色",
+                    "紫色",
+                    "黑色",
+                    "白色",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e2": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e3": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e4": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e5": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "e6": {
+                  "type": "string",
+                  "enum": [
+                    "起伏曲线",
+                    "水平直线",
+                    "竖直直线",
+                    "规则锯齿",
+                    "圆形",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                },
+                "e7": {
+                  "type": "string",
+                  "enum": [
+                    "深蓝色",
+                    "浅蓝色",
+                    "绿色",
+                    "棕色",
+                    "灰色",
+                    "白色",
+                    "absent",
+                    "other",
+                    "unknown",
+                    "ambiguous"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2",
+                "e3",
+                "e4",
+                "e5",
+                "e6",
+                "e7"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": "蓝色",
+                "raw_value": "蓝色",
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e3": {
+                "value": "no",
+                "raw_value": "no",
+                "validation_status": "valid"
+              },
+              "e4": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e5": {
+                "value": "yes",
+                "raw_value": "yes",
+                "validation_status": "valid"
+              },
+              "e6": {
+                "value": "起伏曲线",
+                "raw_value": "起伏曲线",
+                "validation_status": "valid"
+              },
+              "e7": {
+                "value": "深蓝色",
+                "raw_value": "深蓝色",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": "蓝色",
+              "e2": "yes",
+              "e3": "no",
+              "e4": "yes",
+              "e5": "yes",
+              "e6": "起伏曲线",
+              "e7": "深蓝色"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 20.45534562296234,
+          "token_usage": {
+            "input_tokens": 11376,
+            "output_tokens": 52,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/render.png",
+            "image_size": [
+              768,
+              512
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-runtime>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-runtime>/input/d705561c95094def8a06b2aae32b33a4.png",
+              "--output-schema",
+              "<temporary-cli-runtime>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-runtime>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。\n\nUser:\n独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"r_sky\", \"name\": \"天空\", \"bbox\": [0.0, 0.0, 768.0, 256.0]}, {\"id\": \"r_ridges\", \"name\": \"层叠山岭\", \"bbox\": [0.0, 199.68, 768.0, 465.92]}, {\"id\": \"r_foreground\", \"name\": \"前景山脊\", \"bbox\": [0.0, 435.2, 768.0, 512.0]}]\n问题与答案空间：[{\"id\": \"e1\", \"region_id\": \"r_sky\", \"group_id\": null, \"anchor_id\": null, \"question\": \"天空的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"蓝色\", \"灰色\", \"橙色\", \"绿色\", \"紫色\", \"黑色\", \"白色\", \"absent\", \"other\"]}, {\"id\": \"e2\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"天空中是否可见浅色云层？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e3\", \"region_id\": \"r_sky\", \"group_id\": \"g_clouds\", \"anchor_id\": null, \"question\": \"浅色云层是否主要分布在天空的中下部？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e4\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"画面中是否可见至少三层上下分布的山岭轮廓？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e5\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？\", \"answer_type\": \"yes_no_unknown\", \"categories\": []}, {\"id\": \"e6\", \"region_id\": \"r_ridges\", \"group_id\": \"g_ridges\", \"anchor_id\": null, \"question\": \"山岭顶部轮廓主要属于哪种形状？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"起伏曲线\", \"水平直线\", \"竖直直线\", \"规则锯齿\", \"圆形\", \"absent\", \"other\"]}, {\"id\": \"e7\", \"region_id\": \"r_foreground\", \"group_id\": null, \"anchor_id\": null, \"question\": \"画面最下方山脊的主要颜色属于哪一类？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"深蓝色\", \"浅蓝色\", \"绿色\", \"棕色\", \"灰色\", \"白色\", \"absent\", \"other\"]}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。\n类别题中的absent仅用于当前图像足够清楚、能确认所问目标不存在；other仅用于清楚可辨、但属于所列类别之外的内容。遮挡、身份不明或证据不足用unknown或ambiguous，不得将未检出当作absent。关系题必要对象不可见时仍用unknown。",
+            "staged_image": "d705561c95094def8a06b2aae32b33a4.png",
+            "image_size": [
+              768,
+              512
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "d705561c95094def8a06b2aae32b33a4.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 11376,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 52,
+            "reasoning_output_tokens": 0
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "results": [
+          {
+            "evidence_id": "e1",
+            "field": "e1",
+            "region_id": "r_sky",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "天空以蓝色为主。",
+            "question": "天空的主要颜色属于哪一类？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "蓝色",
+            "render_answer": "蓝色",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "蓝色",
+              "灰色",
+              "橙色",
+              "绿色",
+              "紫色",
+              "黑色",
+              "白色",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "蓝色",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "蓝色",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e2",
+            "field": "e2",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "天空中有浅色云层。",
+            "question": "天空中是否可见浅色云层？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e3",
+            "field": "e3",
+            "region_id": "r_sky",
+            "group_id": "g_clouds",
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "浅色云层集中在天空的中下部。",
+            "question": "浅色云层是否主要分布在天空的中下部？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "no",
+            "status": "candidate_violated",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "no",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e4",
+            "field": "e4",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "energy": "statistical",
+            "claim": "可见多条上下分布的山岭轮廓。",
+            "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e5",
+            "field": "e5",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "较浅的山岭位于较深的山岭上方。",
+            "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "yes_no_unknown",
+            "categories": [],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "yes",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e6",
+            "field": "e6",
+            "region_id": "r_ridges",
+            "group_id": "g_ridges",
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "山岭轮廓呈起伏曲线。",
+            "question": "山岭顶部轮廓主要属于哪种形状？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "起伏曲线",
+            "render_answer": "起伏曲线",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "起伏曲线",
+              "水平直线",
+              "竖直直线",
+              "规则锯齿",
+              "圆形",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "起伏曲线",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "起伏曲线",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e7",
+            "field": "e7",
+            "region_id": "r_foreground",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "semantic",
+            "claim": "最下方山脊呈深蓝色。",
+            "question": "画面最下方山脊的主要颜色属于哪一类？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "深蓝色",
+            "render_answer": "深蓝色",
+            "status": "satisfied",
+            "reviewed": false,
+            "answer_type": "categorical_unknown",
+            "categories": [
+              "深蓝色",
+              "浅蓝色",
+              "绿色",
+              "棕色",
+              "灰色",
+              "白色",
+              "absent",
+              "other"
+            ],
+            "protocol_version": "existing_scene_v1",
+            "reference_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"yes\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "深蓝色",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "render_verification": {
+              "raw_json": "{\"e1\":\"蓝色\",\"e2\":\"yes\",\"e3\":\"no\",\"e4\":\"yes\",\"e5\":\"yes\",\"e6\":\"起伏曲线\",\"e7\":\"深蓝色\"}",
+              "raw_value": "深蓝色",
+              "validation_status": "valid",
+              "source": {
+                "backend": "codex_cli",
+                "source_kind": "live_model",
+                "model_requested": "gpt-6-sol",
+                "model_observed": null
+              },
+              "human_review": {
+                "status": "unreviewed",
+                "reviewed": false,
+                "notes": null
+              }
+            },
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          }
+        ],
+        "image_pair": {
+          "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0075/reference.png",
+          "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/render.png"
+        },
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "formal_eligible": false
+      },
+      "unmatched_evidence": null,
+      "applicable_to_current_pair": true,
+      "energy_contribution": false,
+      "interpretation": "Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping"
+    },
+    "fixed_region_measurements": [
+      {
+        "id": "r_sky",
+        "description": "画面上半部的蓝色天空和浅色云层",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 196608.0,
+        "valid_pixel_weight": 196608.0,
+        "measurement_pixel_weight": 196608.0,
+        "appearance": 0.09312018766382422,
+        "perceptual": 0.1604473878567421,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.023834228515625,
+          "statistical": 0.030603193145951415
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "r_ridges",
+        "description": "画面中部至下部相互重叠的山岭轮廓",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 205056.0,
+        "valid_pixel_weight": 205056.0,
+        "measurement_pixel_weight": 205056.0,
+        "appearance": 0.0901251397354614,
+        "perceptual": 0.23376540232854043,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.029901709008170383,
+          "statistical": 0.030066453565477835
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      },
+      {
+        "id": "r_foreground",
+        "description": "画面底部的深蓝色山脊",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 59136.0,
+        "valid_pixel_weight": 59136.0,
+        "measurement_pixel_weight": 59136.0,
+        "appearance": 0.07732478408029879,
+        "perceptual": 0.12468253568870363,
+        "perceptual_reason": null,
+        "numerical_proxies": {
+          "spatial": 0.013157771183894232,
+          "statistical": 0.027232722342130852
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    "region_overlap": {
+      "named_region_count": 3,
+      "overlap_pixels": 67584,
+      "overlap_fraction_of_valid": 0.171875,
+      "max_multiplicity": 2,
+      "unassigned_valid_pixels": 0,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Reference thumbnail; saved Render uniformly fit once with centered invalid padding, no crop/registration",
+    "applied_transform": {
+      "original_size": [
+        768,
+        512
+      ],
+      "common_size": [
+        768,
+        512
+      ],
+      "resized_size": [
+        768,
+        512
+      ],
+      "offset_xy": [
+        0,
+        0
+      ],
+      "nominal_scale": 1.0,
+      "content_alignment": false,
+      "padding_is_not_observation": true,
+      "transform": "identity"
+    },
+    "valid_pixels": 393216,
+    "canvas_pixels": 393216,
+    "valid_mask": "valid_pixels.png",
+    "measurement_pixels": 393216,
+    "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+  },
+  "provenance": {
+    "manifest": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/manifest.json",
+    "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0075/reference.png",
+    "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/render.png",
+    "reference_evidence": "./results/existing_scene_batch_20261025/references/bw_0075/reference_evidence.json",
+    "optional_inputs": {
+      "render_evidence": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "geometry": {
+        "status": "available",
+        "source": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/geometry.json",
+        "reviewed": null
+      },
+      "triage": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "rules": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "render_metadata": {
+        "status": "available",
+        "source": "./results/existing_scene_batch_20261025/pairs/bw_0075__bw_0075__nVjEut5/camera.json",
+        "reviewed": null
+      }
+    },
+    "supplied_provenance": {
+      "pair_id": "bw_0075__bw_0075__nVjEut5",
+      "task_id": "bw_0075",
+      "run_id": "official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5",
+      "native_reference": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0075/environment/inputs/references/image_01.jpg",
+      "native_render": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5/artifacts/workspace/exports/mountain_blue_oil_painting.png",
+      "native_render_transform": {
+        "original_size": [
+          2700,
+          1800
+        ],
+        "common_size": [
+          768,
+          512
+        ],
+        "nominal_scale": 0.28444444444444444,
+        "resized_size": [
+          768,
+          512
+        ],
+        "offset_xy": [
+          0,
+          0
+        ],
+        "padding_is_not_observation": true,
+        "content_alignment": false,
+        "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+      },
+      "source_checks": {
+        "run_config": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5/config.json",
+        "native_result": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5/result.json",
+        "input_manifest": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0075/environment/inputs/input.json",
+        "task_metadata": "../BlenderWorld/data/hf-snapshot/bw_0075/tests/dataset/tasks/bw_0075/task.json",
+        "artifact_manifest": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0075/bw_0075__nVjEut5/artifacts/manifest.json",
+        "native_task_name": "Qwen/BlenderWorld-bw_0075",
+        "native_trial_name": "bw_0075__nVjEut5",
+        "input_task_id": "bw_0075",
+        "input_reference_count": 1,
+        "task_reference_count": 1,
+        "reference_listed_in_input": true,
+        "reference_matches_task_metadata_path": true,
+        "reference_bytes_equal_original": true,
+        "render_within_same_run_exports": true,
+        "blend_within_same_run_exports": true,
+        "artifact_manifest_maps_exports": true,
+        "trajectory_exists": true,
+        "historical_png_blend_sync": "unknown; same artifact export lineage only; no re-render",
+        "hash_checks_performed": false
+      },
+      "completion": "completed",
+      "new_agent_executions": 0,
+      "new_blender_executions": 0,
+      "alignment_search": false
+    },
+    "api_calls": 0,
+    "model_inferences": null,
+    "dino": {
+      "backend": "local_DINOv2",
+      "model": "<local-models>/dinov2",
+      "device": "cpu",
+      "threads": 2,
+      "local_files_only": true,
+      "real_inference": true,
+      "downloaded": false
+    },
+    "blender_executions": 0,
+    "agent_code_executed": false
+  },
+  "measurement_interpretation": {
+    "appearance": "Actual RGB L1; affected by camera, lighting and visibility",
+    "spatial": "Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness",
+    "statistical": "Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density",
+    "semantic": "Reviewed evidence only; attached Group/Structural answers never become scores",
+    "perceptual": "Existing local DINO metric; crop/black-fill/aspect-ratio confounds remain; not semantic correctness",
+    "observation": "Conditional debug aggregate of core eligible records; not a formal Benchmark result"
+  },
+  "elapsed_seconds": 3.2980174170807004
+}

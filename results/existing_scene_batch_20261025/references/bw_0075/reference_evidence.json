@@ -1,0 +1,285 @@
+{
+  "image_size": [
+    768,
+    512
+  ],
+  "regions": [
+    {
+      "id": "r_sky",
+      "name": "天空",
+      "description": "画面上半部的蓝色天空和浅色云层",
+      "bbox": [
+        0.0,
+        0.0,
+        768.0,
+        256.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        0,
+        1000,
+        500
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_ridges",
+      "name": "层叠山岭",
+      "description": "画面中部至下部相互重叠的山岭轮廓",
+      "bbox": [
+        0.0,
+        199.68,
+        768.0,
+        465.92
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        390,
+        1000,
+        910
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r_foreground",
+      "name": "前景山脊",
+      "description": "画面底部的深蓝色山脊",
+      "bbox": [
+        0.0,
+        435.2,
+        768.0,
+        512.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        850,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [
+    {
+      "id": "g_clouds",
+      "region_id": "r_sky",
+      "name": "云层",
+      "scope": "天空中横向分布的浅色云形",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "g_ridges",
+      "region_id": "r_ridges",
+      "name": "山岭轮廓",
+      "scope": "从远处浅色山岭到近处深色山岭的多层轮廓",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r_sky",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "天空以蓝色为主。",
+      "question": "天空的主要颜色属于哪一类？",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "蓝色",
+        "灰色",
+        "橙色",
+        "绿色",
+        "紫色",
+        "黑色",
+        "白色",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "蓝色",
+        "灰色",
+        "橙色",
+        "绿色",
+        "紫色",
+        "黑色",
+        "白色"
+      ]
+    },
+    {
+      "id": "e2",
+      "region_id": "r_sky",
+      "group_id": "g_clouds",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "天空中有浅色云层。",
+      "question": "天空中是否可见浅色云层？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r_sky",
+      "group_id": "g_clouds",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "浅色云层集中在天空的中下部。",
+      "question": "浅色云层是否主要分布在天空的中下部？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r_ridges",
+      "group_id": "g_ridges",
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "可见多条上下分布的山岭轮廓。",
+      "question": "画面中是否可见至少三层上下分布的山岭轮廓？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e5",
+      "region_id": "r_ridges",
+      "group_id": "g_ridges",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "较浅的山岭位于较深的山岭上方。",
+      "question": "较浅色的山岭轮廓是否位于较深色的山岭轮廓上方？",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r_ridges",
+      "group_id": "g_ridges",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "山岭轮廓呈起伏曲线。",
+      "question": "山岭顶部轮廓主要属于哪种形状？",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "起伏曲线",
+        "水平直线",
+        "竖直直线",
+        "规则锯齿",
+        "圆形",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "起伏曲线",
+        "水平直线",
+        "竖直直线",
+        "规则锯齿",
+        "圆形"
+      ]
+    },
+    {
+      "id": "e7",
+      "region_id": "r_foreground",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "最下方山脊呈深蓝色。",
+      "question": "画面最下方山脊的主要颜色属于哪一类？",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "深蓝色",
+        "浅蓝色",
+        "绿色",
+        "棕色",
+        "灰色",
+        "白色",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "深蓝色",
+        "浅蓝色",
+        "绿色",
+        "棕色",
+        "灰色",
+        "白色"
+      ]
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

@@ -1,0 +1,326 @@
+{
+  "image_size": [
+    768,
+    452
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "Left building",
+      "description": "Brick building with a large landscape mural on its visible facade.",
+      "bbox": [
+        0.0,
+        88.14,
+        317.952,
+        334.932
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        195,
+        414,
+        741
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Central walkway",
+      "description": "Paved approach with low walls, planters, flags, and pedestrians.",
+      "bbox": [
+        321.792,
+        279.788,
+        658.944,
+        452.0
+      ],
+      "raw_bbox_0_1000": [
+        419,
+        619,
+        858,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Rear plaza",
+      "description": "Fountain area framed by flowering trees and campus buildings.",
+      "bbox": [
+        311.04,
+        144.188,
+        754.944,
+        318.208
+      ],
+      "raw_bbox_0_1000": [
+        405,
+        319,
+        983,
+        704
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a1",
+      "region_id": "r3",
+      "category": "fountain",
+      "bbox": [
+        522.24,
+        227.808,
+        552.96,
+        291.088
+      ],
+      "raw_bbox_0_1000": [
+        680,
+        504,
+        720,
+        644
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    },
+    {
+      "id": "a2",
+      "region_id": "r1",
+      "category": "mural",
+      "bbox": [
+        80.64,
+        122.04,
+        231.936,
+        281.144
+      ],
+      "raw_bbox_0_1000": [
+        105,
+        270,
+        302,
+        622
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "id": "g1",
+      "region_id": "r2",
+      "name": "Walkway banners",
+      "scope": "Red vertical banners along both sides of the central walkway.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "g2",
+      "region_id": "r3",
+      "name": "Flowering trees",
+      "scope": "Pink flowering trees spread across the rear plaza.",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "semantic",
+      "claim": "The large mural depicts a landscape and contains prominent white text.",
+      "question": "Does the mural show a landscape with prominent white text?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "spatial",
+      "claim": "The mural is left of the building's visible window pair.",
+      "question": "Is the mural left of the visible pair of windows on the brick building?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "The walkway narrows in the image toward the rear plaza.",
+      "question": "Do the walkway's side boundaries converge toward the rear plaza in the image?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e4",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The walkway banners are predominantly red.",
+      "question": "What is the predominant color of the vertical walkway banners?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "white",
+        "black",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "white",
+        "black"
+      ]
+    },
+    {
+      "id": "e5",
+      "region_id": "r2",
+      "group_id": "g1",
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "Banners appear on both sides of the walkway.",
+      "question": "Are vertical banners visible on both sides of the central walkway?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e6",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "semantic",
+      "claim": "A water jet rises from the fountain.",
+      "question": "Is an upward water jet visible at the fountain?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e7",
+      "region_id": "r3",
+      "group_id": "g2",
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "The flowering trees have pink blossoms.",
+      "question": "What color are the blossoms on the trees around the rear plaza?",
+      "answer_type": "categorical_unknown",
+      "categories": [
+        "pink",
+        "white",
+        "yellow",
+        "red",
+        "purple",
+        "absent",
+        "other"
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "raw_categories": [
+        "pink",
+        "white",
+        "yellow",
+        "red",
+        "purple"
+      ]
+    },
+    {
+      "id": "e8",
+      "region_id": "r3",
+      "group_id": "g2",
+      "anchor_id": "a1",
+      "type": "spatial",
+      "claim": "Flowering trees flank the fountain in the image.",
+      "question": "Are flowering trees visible to both the left and right of the fountain?",
+      "answer_type": "yes_no_unknown",
+      "categories": [],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  },
+  "evidence_protocol": {
+    "version": "existing_scene_v1",
+    "evidence_budget": 10
+  },
+  "category_policy": "reference_only_missing_other_v1"
+}

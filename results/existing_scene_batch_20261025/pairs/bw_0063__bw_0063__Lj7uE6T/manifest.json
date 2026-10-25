@@ -1,0 +1,74 @@
+{
+  "reference_rgb": "./results/existing_scene_batch_20261025/references/bw_0063/reference.png",
+  "render_rgb": "./results/existing_scene_batch_20261025/pairs/bw_0063__bw_0063__Lj7uE6T/render.png",
+  "valid_pixels": "valid_pixels.png",
+  "geometry": "geometry.json",
+  "render_metadata": "camera.json",
+  "evidence_category": "historical_diagnostic",
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Reference thumbnail; saved Render uniformly fit once with centered invalid padding, no crop/registration"
+  },
+  "camera_comparability": "historical_camera; actual input camera unknown; no trusted execution binding",
+  "diagnostics": {
+    "structural_layout": "structural_diagnostics.json",
+    "groups": "./results/existing_scene_batch_20261025/references/bw_0063/reference_evidence.json"
+  },
+  "provenance": {
+    "pair_id": "bw_0063__bw_0063__Lj7uE6T",
+    "task_id": "bw_0063",
+    "run_id": "official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T",
+    "native_reference": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0063/environment/inputs/references/image_01.jpg",
+    "native_render": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/artifacts/workspace/exports/coastal_living_dining.png",
+    "native_render_transform": {
+      "original_size": [
+        1920,
+        1080
+      ],
+      "common_size": [
+        768,
+        429
+      ],
+      "nominal_scale": 0.3972222222222222,
+      "resized_size": [
+        763,
+        429
+      ],
+      "offset_xy": [
+        2,
+        0
+      ],
+      "padding_is_not_observation": true,
+      "content_alignment": false,
+      "transform": "uniform full-frame fit with integer rounding, centered letterbox; no crop/search/warp"
+    },
+    "source_checks": {
+      "run_config": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/config.json",
+      "native_result": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/result.json",
+      "input_manifest": "../BlenderWorld/work/official-showcase-10-images-v2/tasks/bw_0063/environment/inputs/input.json",
+      "task_metadata": "../BlenderWorld/data/hf-snapshot/bw_0063/tests/dataset/tasks/bw_0063/task.json",
+      "artifact_manifest": "../BlenderWorld/runs/official-showcase-10-images-v2/bw_0063/bw_0063__Lj7uE6T/artifacts/manifest.json",
+      "native_task_name": "Qwen/BlenderWorld-bw_0063",
+      "native_trial_name": "bw_0063__Lj7uE6T",
+      "input_task_id": "bw_0063",
+      "input_reference_count": 1,
+      "task_reference_count": 1,
+      "reference_listed_in_input": true,
+      "reference_matches_task_metadata_path": true,
+      "reference_bytes_equal_original": true,
+      "render_within_same_run_exports": true,
+      "blend_within_same_run_exports": true,
+      "artifact_manifest_maps_exports": true,
+      "trajectory_exists": true,
+      "historical_png_blend_sync": "unknown; same artifact export lineage only; no re-render",
+      "hash_checks_performed": false
+    },
+    "completion": "completed",
+    "new_agent_executions": 0,
+    "new_blender_executions": 0,
+    "alignment_search": false
+  },
+  "reference_evidence": "./results/existing_scene_batch_20261025/references/bw_0063/reference_evidence.json",
+  "vlm_verification": "verification_results.json"
+}
