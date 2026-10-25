@@ -1,0 +1,141 @@
+{
+  "image_size": [
+    512,
+    309
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "中央花朵",
+      "description": "画面中央的一朵白色花，包含花瓣和花心。",
+      "bbox": [
+        81.92,
+        8.034,
+        373.76,
+        299.73
+      ],
+      "raw_bbox_0_1000": [
+        160,
+        26,
+        730,
+        970
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "周围植被与地面",
+      "description": "花朵周围可见的绿色叶片、枯叶和泥土。",
+      "bbox": [
+        0.0,
+        0.0,
+        512.0,
+        309.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a1",
+      "region_id": "r1",
+      "category": "花心",
+      "bbox": [
+        205.312,
+        135.033,
+        273.408,
+        212.283
+      ],
+      "raw_bbox_0_1000": [
+        401,
+        437,
+        534,
+        687
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "画面中央可见一朵白色花。",
+      "question": "画面中央是否有一朵白色花？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "semantic",
+      "claim": "花心呈绿色，周围可见黄色花药。",
+      "question": "花心周围是否可见黄色花药？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "花朵周围可见枯叶。",
+      "question": "花朵周围是否可见枯叶？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "image_size": [
+    512,
+    256
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "前景工作台",
+      "description": "画面中央偏前的双层金属工作台",
+      "bbox": [
+        153.6,
+        99.84,
+        422.4,
+        247.04
+      ],
+      "raw_bbox_0_1000": [
+        300,
+        390,
+        825,
+        965
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "左侧推车区",
+      "description": "画面左侧的金属推车和置物架",
+      "bbox": [
+        0.0,
+        48.64,
+        156.16,
+        194.56
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        190,
+        305,
+        760
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "后方设备区",
+      "description": "画面中后方的工业设备与操作台",
+      "bbox": [
+        261.12,
+        14.08,
+        427.52,
+        134.4
+      ],
+      "raw_bbox_0_1000": [
+        510,
+        55,
+        835,
+        525
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "前景工作台有上下两层金属台面。",
+      "question": "前景工作台是否有上下两层台面？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "前景工作台的支腿底部装有轮子。",
+      "question": "前景工作台的支腿底部是否装有轮子？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "左侧金属推车上放有一叠白色托盘。",
+      "question": "左侧金属推车上是否放有一叠白色托盘？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

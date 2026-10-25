@@ -1,0 +1,118 @@
+{
+  "image_size": [
+    512,
+    288
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "用餐区域",
+      "description": "左侧靠墙的圆桌和座椅",
+      "bbox": [
+        58.88,
+        161.28,
+        217.6,
+        252.0
+      ],
+      "raw_bbox_0_1000": [
+        115,
+        560,
+        425,
+        875
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "冰箱区域",
+      "description": "右侧靠墙的冰箱",
+      "bbox": [
+        348.16,
+        95.04,
+        430.08,
+        243.36
+      ],
+      "raw_bbox_0_1000": [
+        680,
+        330,
+        840,
+        845
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "圆桌旁可见两把椅子。",
+      "question": "圆桌旁可见几把椅子？",
+      "answer_type": "count_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "圆桌上放着一盆植物。",
+      "question": "圆桌上是否放着一盆植物？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "冰箱有上下两扇门。",
+      "question": "冰箱是否有上下两扇门？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

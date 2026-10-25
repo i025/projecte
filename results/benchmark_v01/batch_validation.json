@@ -1,0 +1,60 @@
+{
+  "offline_finalization_new_model_calls": 0,
+  "offline_finalization_new_dino_calls": 0,
+  "selected_inputs": 8,
+  "reference_only_before_agent": [
+    "bw_9064",
+    "bw_0043",
+    "bw_0006",
+    "bw_0063",
+    "bw_0073",
+    "bw_0074",
+    "bw_0075",
+    "bw_0022"
+  ],
+  "all_review_flags_false": true,
+  "maximum_per_scene": 4,
+  "cpu_tests": {
+    "tests_run": 412,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "elapsed_seconds": 9.537624733988196,
+    "network_and_subprocess_denied": true,
+    "new_batch_tests": 17
+  },
+  "reference_evidence_types": {
+    "statistical": 2,
+    "spatial": 3,
+    "semantic": 19
+  },
+  "regions": 19,
+  "groups": 0,
+  "anchors": 3,
+  "qualified_executor": false,
+  "blender_executions": 0,
+  "public_third_party_assets": 0,
+  "publication_checks": {
+    "cpu_tests": {
+      "tests": 412,
+      "passed": true,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 9.602282437961549,
+      "network_and_subprocess_denied": true,
+      "extra_check": "Tiny ROI DINO diagnostic respects unchanged min_pixels=16"
+    },
+    "remote_alternatives_probe": {
+      "modal_cli_available": false,
+      "harbor_cli_available": false,
+      "modal_module_available": false,
+      "user_modal_config_exists": false,
+      "modal_auth_env_present": false,
+      "remote_executor_endpoint_env_present": false
+    },
+    "raw_model_answers_unchanged": true,
+    "energy_policy_runtime_sources_unchanged": true,
+    "public_image_assets": 0
+  }
+}

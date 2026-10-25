@@ -1,0 +1,145 @@
+{
+  "image_size": [
+    512,
+    279
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "左侧水槽与台面区",
+      "description": "窗下水槽、台面及下方橱柜",
+      "bbox": [
+        0.0,
+        36.27,
+        184.32,
+        279.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        130,
+        360,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "中央岛台与座椅区",
+      "description": "中央岛台及前方吧椅",
+      "bbox": [
+        171.52,
+        117.18,
+        348.16,
+        238.266
+      ],
+      "raw_bbox_0_1000": [
+        335,
+        420,
+        680,
+        854
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "右侧高柜区",
+      "description": "冰箱及周围高柜",
+      "bbox": [
+        367.616,
+        0.0,
+        512.0,
+        236.313
+      ],
+      "raw_bbox_0_1000": [
+        718,
+        0,
+        1000,
+        847
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "窗下台面上可见水槽水龙头。",
+      "question": "窗下台面上是否可见水槽水龙头？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "岛台前方可见四把吧椅。",
+      "question": "岛台前方可见多少把吧椅？",
+      "answer_type": "count_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "右侧高柜中嵌有一台深色双门冰箱。",
+      "question": "右侧高柜中是否可见深色双门冰箱？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

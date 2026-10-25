@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from .benchmark_config import POLICY, write_json
 from .benchmark_evidence import area_mask, load_document, reliability
-from .benchmark_metrics import numerical_errors
+from .benchmark_metrics import numerical_errors, perceptual_error
 
 
 def fit_render(image, size):
@@ -72,7 +72,7 @@ def prepare_images(reference, rendered, coordinates):
     return a, b, valid, transform, native_size
 
 
-def region_diagnostics(a, b, evidence, valid):
+def region_diagnostics(a, b, evidence, valid, extract=None):
     """Fixed-domain numerical diagnostics do not approve semantic candidates."""
     safe = valid.copy()
     safe[:, :-1] &= valid[:, 1:]
@@ -87,12 +87,14 @@ def region_diagnostics(a, b, evidence, valid):
         count += (mask > 0) & valid
         observed = mask * safe
         values, detail = numerical_errors(a, b, observed) if observed.sum() >= POLICY['min_pixels'] else ({}, {})
+        perceptual, perceptual_reason = (perceptual_error(a,b,observed,extract)
+            if observed.sum() >= POLICY['min_pixels'] else (None,'Insufficient valid Region pixels'))
         rows.append(dict(id=row['id'], description=row.get('description', row.get('name')),
             reviewed=row.get('reviewed', False), evidence_reliability=reliability(row),
             reference_pixels=float(mask.sum()), valid_pixel_weight=float((mask*valid).sum()),
             measurement_pixel_weight=float(observed.sum()),
-            appearance=values.get('appearance'), perceptual=None,
-            perceptual_reason='Extractor disabled: this entry never runs DINO',
+            appearance=values.get('appearance'), perceptual=perceptual,
+            perceptual_reason=perceptual_reason,
             numerical_proxies=dict(spatial=values.get('spatial'), statistical=values.get('statistical')),
             measurement_scope=detail.get('scope'), semantic=None,
             semantic_reason='No new semantic validator; candidate ROI is not reviewed category evidence',
@@ -143,7 +145,14 @@ def comparison_png(path, a, b, masks, diagnostics, report):
     canvas.save(path)
 
 
-def run_manifest(manifest_path, output):
+def run_manifest(manifest_path, output, *, extract=None, extract_provenance=None):
+    """Default remains pure offline. An explicit local extractor permits existing DINO metrics.
+
+    No manifest boolean/path can start inference. The calling controller must load
+    the extractor itself and supply its provenance; formulas/weights are unchanged.
+    """
+    if extract is not None and not extract_provenance:
+        raise ValueError('Explicit extractor provenance is required')
     from .benchmark import evaluate  # keep the legacy CLI import acyclic
     manifest_path, output = Path(manifest_path).resolve(), Path(output).resolve()
     if output.exists():
@@ -188,7 +197,8 @@ def run_manifest(manifest_path, output):
         inputs.update(geometry=dict(status='unavailable', reason=states['structural_inputs']['reason']), triage=None, rules=None)
     report, evidence = evaluate(a, b, reference, inputs['render_evidence'],
         geometry=inputs['geometry'], triage=inputs['triage'], rules=inputs['rules'],
-        render_metadata=inputs['render_metadata'], valid_mask=valid, withhold_region_overlaps=True)
+        render_metadata=inputs['render_metadata'], valid_mask=valid, withhold_region_overlaps=True,
+        extract=extract)
     diagnostics = {}
     for key in ('groups', 'structural_layout'):
         payload, state = optional_document(source(manifest.get('diagnostics', {}).get(key)))
@@ -221,7 +231,7 @@ def run_manifest(manifest_path, output):
     diagnostics['vlm_verification'] = dict(**state, evidence=verification,
         unmatched_evidence=unmatched_verification, applicable_to_current_pair=verification is not None,
         energy_contribution=False, interpretation='Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping')
-    regions, masks, overlaps = region_diagnostics(a, b, evidence, valid)
+    regions, masks, overlaps = region_diagnostics(a, b, evidence, valid, extract)
     camera = report['scene_validity']
     metadata = inputs['render_metadata'] or {}
     declared_resolution = metadata.get('resolution')
@@ -251,13 +261,15 @@ def run_manifest(manifest_path, output):
             support_rule='Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved'),
         provenance=dict(manifest=str(manifest_path), reference_rgb=str(ref_path), render_rgb=str(render_path),
             reference_evidence=str(ref_source) if ref_source else None, optional_inputs=states,
-            supplied_provenance=manifest.get('provenance', {}), api_calls=0, model_inferences=0,
+            supplied_provenance=manifest.get('provenance', {}), api_calls=0,
+            model_inferences=0 if extract is None else None, dino=extract_provenance,
             blender_executions=0, agent_code_executed=False),
         measurement_interpretation=dict(appearance='Actual RGB L1; affected by camera, lighting and visibility',
             spatial='Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness',
             statistical='Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density',
             semantic='Reviewed evidence only; attached Group/Structural answers never become scores',
-            perceptual='N/A: no DINO inference in this entry',
+            perceptual=('N/A: no DINO inference in this entry' if extract is None else
+                'Existing local DINO metric; crop/black-fill/aspect-ratio confounds remain; not semantic correctness'),
             observation='Conditional debug aggregate of core eligible records; not a formal Benchmark result'),
         elapsed_seconds=time.monotonic()-tick)
     checks = dict(camera=camera, metadata_resolution_matches_native_rgb=resolution_match,
@@ -269,7 +281,8 @@ def run_manifest(manifest_path, output):
         numerical_records=[dict(id=r['id'], energy=r['energy'], level=r['level'], q=r['q'],
             aggregation_weight=r['aggregation_weight']) for r in report['metric_records']
             if r['q']>0 and r['value'] is not None and r.get('aggregation_eligible',True)],
-        no_model_api_agent_or_blender_execution=True, formal_eligible=False)
+        no_model_api_agent_or_blender_execution=extract is None,
+        explicit_local_extractor=extract_provenance,formal_eligible=False)
     output.mkdir(parents=True, exist_ok=False)
     write_json(output/'report.json', report)
     write_json(output/'integration_checks.json', checks)
@@ -279,7 +292,9 @@ def run_manifest(manifest_path, output):
         return 'N/A' if value is None else f'{value:.6f}'
     lines = ['# Offline Evaluation Integration', '',
         '**provisional/debug — no formal Benchmark score.**', '',
-        'The entry reuses build_reference → compare → aggregate and independent structural_report. No model, API, Agent or Blender is executed.', '',
+        'The entry reuses build_reference → compare → aggregate and independent structural_report. '
+        +('No model, API, Agent or Blender is executed.' if extract is None else
+          'An explicitly supplied local DINO extractor runs; no API, Agent or Blender is executed.'), '',
         '| Energy | Conditional value | Coverage | Interpretation |', '| --- | --- | --- | --- |']
     for key, value in report['energies'].items():
         lines.append(f"| {key} | {fmt(value['value'])} | {fmt(value['coverage'])} | {report['measurement_interpretation'][key]} |")
@@ -287,7 +302,7 @@ def run_manifest(manifest_path, output):
         '', 'Camera: '+camera['camera_protocol']+'. '+camera['reason'], '',
         f"Valid pixels: {valid.sum()}/{valid.size}; gradient-safe measurement pixels: {checks['measurement_pixels']}. Explicit mapping: {manifest['coordinates']['render_mapping']}; no alignment search.", '',
         '## Fixed Region diagnostics', '', '| Region | Appearance | Perceptual | Reviewed |', '| --- | --- | --- | --- |']
-    lines += [f"| {r['id']} | {fmt(r['appearance'])} | N/A | {r['reviewed']} |" for r in regions]
+    lines += [f"| {r['id']} | {fmt(r['appearance'])} | {fmt(r['perceptual'])} | {r['reviewed']} |" for r in regions]
     lines += ['', f"Named overlap pixels: {overlaps['overlap_pixels']}. {overlaps['reason']}",
         '', 'Group and Structural Layout evidence are attached verbatim in report.json → diagnostics, without Energy contribution. Missing/invalid optional files remain unavailable. Unknown is never replaced by zero.',
         '', 'Required manual work: camera/provenance audit, Reference evidence review and reliable cross-image verification. External JSON cannot certify trusted execution; even a matching pose remains unverified.',

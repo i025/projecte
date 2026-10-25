@@ -1,0 +1,489 @@
+{
+  "backend": "codex_cli",
+  "source_kind": "live_model",
+  "model_requested": "gpt-6-sol",
+  "model_observed": null,
+  "actual_input": {
+    "system": "你是参考图像证据规划器。只根据当前RGB图像提取少量可见、可验证的评价证据。不要猜测不可见内容。只输出JSON。",
+    "user": "提出1–4个粗粒度功能评价区域，可包含多个物体，背景无需强制覆盖。bbox为0–1000归一化xyxy粗范围。仅在有必要时提出少量集合Group或显著Anchor，允许groups和anchors为空；Anchor框必须是其自身可见范围。最多3条原子命题，每条只表达一个明确可见事实，附一个中立、独立看图即可回答的问题。问题不能透露预期答案，不要求比较图像或总体评分。答案类型为yes_no_unknown或count_unknown（非负整数或unknown）。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。不要枚举全部物体，不输出答案、置信度或推理。",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "description",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "groups": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "name",
+              "scope"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "anchors": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "category": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "category",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "group_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "anchor_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "semantic",
+                  "spatial",
+                  "statistical"
+                ]
+              },
+              "claim": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "answer_type": {
+                "type": "string",
+                "enum": [
+                  "yes_no_unknown",
+                  "count_unknown"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "group_id",
+              "anchor_id",
+              "type",
+              "claim",
+              "question",
+              "answer_type"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "regions",
+        "groups",
+        "anchors",
+        "evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "raw_answer": "{\"regions\":[{\"id\":\"r1\",\"name\":\"墙面收纳区\",\"description\":\"占据画面上部和右侧的深色开放式书架，摆放书籍、唱片及音响设备。\",\"bbox\":[95,98,998,746]},{\"id\":\"r2\",\"name\":\"左侧工作区\",\"description\":\"书架下方的桌面、显示器和座椅。\",\"bbox\":[72,414,409,997]},{\"id\":\"r3\",\"name\":\"前景休息区\",\"description\":\"画面下部的蓝色沙发及靠垫。\",\"bbox\":[294,635,1000,1000]}],\"groups\":[],\"anchors\":[],\"evidence\":[{\"id\":\"e1\",\"region_id\":\"r1\",\"group_id\":null,\"anchor_id\":null,\"type\":\"semantic\",\"claim\":\"书架右侧格架中摆放着多排唱片。\",\"question\":\"书架右侧格架中是否摆放着唱片？\",\"answer_type\":\"yes_no_unknown\"},{\"id\":\"e2\",\"region_id\":\"r2\",\"group_id\":null,\"anchor_id\":null,\"type\":\"semantic\",\"claim\":\"桌面上有一台显示器。\",\"question\":\"桌面上是否有显示器？\",\"answer_type\":\"yes_no_unknown\"},{\"id\":\"e3\",\"region_id\":\"r3\",\"group_id\":null,\"anchor_id\":null,\"type\":\"semantic\",\"claim\":\"前景沙发是蓝色的。\",\"question\":\"前景沙发是否为蓝色？\",\"answer_type\":\"yes_no_unknown\"}]}",
+  "parsed": {
+    "status": "valid",
+    "fields": {
+      "regions": {
+        "value": [
+          {
+            "id": "r1",
+            "name": "墙面收纳区",
+            "description": "占据画面上部和右侧的深色开放式书架，摆放书籍、唱片及音响设备。",
+            "bbox": [
+              95,
+              98,
+              998,
+              746
+            ]
+          },
+          {
+            "id": "r2",
+            "name": "左侧工作区",
+            "description": "书架下方的桌面、显示器和座椅。",
+            "bbox": [
+              72,
+              414,
+              409,
+              997
+            ]
+          },
+          {
+            "id": "r3",
+            "name": "前景休息区",
+            "description": "画面下部的蓝色沙发及靠垫。",
+            "bbox": [
+              294,
+              635,
+              1000,
+              1000
+            ]
+          }
+        ],
+        "validation_status": "valid"
+      },
+      "groups": {
+        "value": [],
+        "validation_status": "valid"
+      },
+      "anchors": {
+        "value": [],
+        "validation_status": "valid"
+      },
+      "evidence": {
+        "value": [
+          {
+            "id": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "书架右侧格架中摆放着多排唱片。",
+            "question": "书架右侧格架中是否摆放着唱片？",
+            "answer_type": "yes_no_unknown"
+          },
+          {
+            "id": "e2",
+            "region_id": "r2",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "桌面上有一台显示器。",
+            "question": "桌面上是否有显示器？",
+            "answer_type": "yes_no_unknown"
+          },
+          {
+            "id": "e3",
+            "region_id": "r3",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "semantic",
+            "claim": "前景沙发是蓝色的。",
+            "question": "前景沙发是否为蓝色？",
+            "answer_type": "yes_no_unknown"
+          }
+        ],
+        "validation_status": "valid"
+      }
+    },
+    "schema_errors": [],
+    "document": {
+      "regions": [
+        {
+          "id": "r1",
+          "name": "墙面收纳区",
+          "description": "占据画面上部和右侧的深色开放式书架，摆放书籍、唱片及音响设备。",
+          "bbox": [
+            95,
+            98,
+            998,
+            746
+          ]
+        },
+        {
+          "id": "r2",
+          "name": "左侧工作区",
+          "description": "书架下方的桌面、显示器和座椅。",
+          "bbox": [
+            72,
+            414,
+            409,
+            997
+          ]
+        },
+        {
+          "id": "r3",
+          "name": "前景休息区",
+          "description": "画面下部的蓝色沙发及靠垫。",
+          "bbox": [
+            294,
+            635,
+            1000,
+            1000
+          ]
+        }
+      ],
+      "groups": [],
+      "anchors": [],
+      "evidence": [
+        {
+          "id": "e1",
+          "region_id": "r1",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "书架右侧格架中摆放着多排唱片。",
+          "question": "书架右侧格架中是否摆放着唱片？",
+          "answer_type": "yes_no_unknown"
+        },
+        {
+          "id": "e2",
+          "region_id": "r2",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "桌面上有一台显示器。",
+          "question": "桌面上是否有显示器？",
+          "answer_type": "yes_no_unknown"
+        },
+        {
+          "id": "e3",
+          "region_id": "r3",
+          "group_id": null,
+          "anchor_id": null,
+          "type": "semantic",
+          "claim": "前景沙发是蓝色的。",
+          "question": "前景沙发是否为蓝色？",
+          "answer_type": "yes_no_unknown"
+        }
+      ]
+    }
+  },
+  "metadata": {},
+  "reviewed": false,
+  "energy_contribution": false,
+  "usage": "provisional/debug",
+  "status": "valid",
+  "request_submitted": true,
+  "elapsed_seconds": 21.779831363121048,
+  "token_usage": {
+    "input_tokens": 10201,
+    "output_tokens": 371,
+    "total_tokens": null
+  },
+  "isolation": {
+    "strict_blind_test": false,
+    "filesystem_read_confined": false,
+    "tools_disabled": true,
+    "project_cwd": false,
+    "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+  },
+  "image_binding": {
+    "source_rgb": "results/benchmark_v01/bw_0074/reference.png",
+    "image_size": [
+      512,
+      348
+    ]
+  },
+  "invocation": {
+    "argv": [
+      "codex",
+      "--no-daemon",
+      "-a",
+      "never",
+      "-c",
+      "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+      "-c",
+      "model_provider=\"verification_openai\"",
+      "-c",
+      "sqlite_home=\"<ephemeral-run>/state\"",
+      "-c",
+      "log_dir=\"<ephemeral-run>/state\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_max_bytes=0",
+      "-c",
+      "features.shell_tool=false",
+      "-c",
+      "tools.view_image=false",
+      "-c",
+      "features.multi_agent=false",
+      "-c",
+      "features.hooks=false",
+      "-c",
+      "features.apps=false",
+      "-c",
+      "features.plugins=false",
+      "-c",
+      "features.memories=false",
+      "-c",
+      "features.goals=false",
+      "-c",
+      "features.shell_snapshot=false",
+      "-c",
+      "shell_environment_policy.inherit=\"none\"",
+      "-c",
+      "model_reasoning_effort=\"low\"",
+      "exec",
+      "--ignore-user-config",
+      "--model",
+      "gpt-6-sol",
+      "--sandbox",
+      "read-only",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--image",
+      "<ephemeral-run>/input/c40b3a84cad4433ba48522c4d9b304a6.png",
+      "--output-schema",
+      "<ephemeral-run>/input/schema.json",
+      "--output-last-message",
+      "<ephemeral-run>/state/answer.json",
+      "--json",
+      "--",
+      "-"
+    ],
+    "stdin": "System:\n你是参考图像证据规划器。只根据当前RGB图像提取少量可见、可验证的评价证据。不要猜测不可见内容。只输出JSON。\n\nUser:\n提出1–4个粗粒度功能评价区域，可包含多个物体，背景无需强制覆盖。bbox为0–1000归一化xyxy粗范围。仅在有必要时提出少量集合Group或显著Anchor，允许groups和anchors为空；Anchor框必须是其自身可见范围。最多3条原子命题，每条只表达一个明确可见事实，附一个中立、独立看图即可回答的问题。问题不能透露预期答案，不要求比较图像或总体评分。答案类型为yes_no_unknown或count_unknown（非负整数或unknown）。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。不要枚举全部物体，不输出答案、置信度或推理。",
+    "staged_image": "c40b3a84cad4433ba48522c4d9b304a6.png",
+    "image_size": [
+      512,
+      348
+    ],
+    "shell": false,
+    "automatic_retries": 0,
+    "stdin_contains_expected_labels": false,
+    "necessary_input_files": [
+      "c40b3a84cad4433ba48522c4d9b304a6.png",
+      "question.txt",
+      "schema.json"
+    ]
+  },
+  "exit_code": 0,
+  "stderr": "",
+  "event_types": [
+    "thread.started",
+    "item.completed",
+    "item.completed",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "reported_usage": {
+    "input_tokens": 10201,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 371,
+    "reasoning_output_tokens": 26
+  },
+  "unexpected_tool_events": false,
+  "cli_errors": []
+}

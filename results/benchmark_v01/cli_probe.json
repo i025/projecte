@@ -1,0 +1,10 @@
+{
+  "model_calls": 0,
+  "strict_blind_test": false,
+  "filesystem_read_confined": false,
+  "cli_version": "codex-cli 0.163.0",
+  "logged_in": true,
+  "auth_method": "ChatGPT",
+  "status": "unavailable",
+  "error": "ValueError: Local input check failed: WARNING: proceeding, even though we could not create PATH aliases: Read-only file system (os error 30)\nError: Read-only file system (os error 30)\n"
+}

@@ -1,0 +1,118 @@
+{
+  "image_size": [
+    512,
+    341
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "天空与云层",
+      "description": "画面上部的蓝色天空和浅色云层",
+      "bbox": [
+        0.0,
+        0.0,
+        512.0,
+        184.14
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        0,
+        1000,
+        540
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "层叠山峦",
+      "description": "画面中下部多层起伏的山脉",
+      "bbox": [
+        0.0,
+        132.99,
+        512.0,
+        341.0
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        390,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "天空中可见浅色云层。",
+      "question": "天空中是否可见浅色云层？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "山脉以多层横向起伏的轮廓分布。",
+      "question": "画面中下部是否可见多层横向起伏的山脉轮廓？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "最前方的山脉呈深蓝色。",
+      "question": "最前方的山脉是否呈深蓝色？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

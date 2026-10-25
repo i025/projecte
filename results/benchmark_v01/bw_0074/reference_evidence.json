@@ -1,0 +1,145 @@
+{
+  "image_size": [
+    512,
+    348
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "墙面收纳区",
+      "description": "占据画面上部和右侧的深色开放式书架，摆放书籍、唱片及音响设备。",
+      "bbox": [
+        48.64,
+        34.104,
+        510.976,
+        259.608
+      ],
+      "raw_bbox_0_1000": [
+        95,
+        98,
+        998,
+        746
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "左侧工作区",
+      "description": "书架下方的桌面、显示器和座椅。",
+      "bbox": [
+        36.864,
+        144.072,
+        209.408,
+        346.956
+      ],
+      "raw_bbox_0_1000": [
+        72,
+        414,
+        409,
+        997
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "前景休息区",
+      "description": "画面下部的蓝色沙发及靠垫。",
+      "bbox": [
+        150.528,
+        220.98,
+        512.0,
+        348.0
+      ],
+      "raw_bbox_0_1000": [
+        294,
+        635,
+        1000,
+        1000
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "书架右侧格架中摆放着多排唱片。",
+      "question": "书架右侧格架中是否摆放着唱片？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "桌面上有一台显示器。",
+      "question": "桌面上是否有显示器？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r3",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "前景沙发是蓝色的。",
+      "question": "前景沙发是否为蓝色？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

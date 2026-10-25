@@ -1,0 +1,10 @@
+{
+  "tests_run": 412,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 9.537624733988196,
+  "network_and_subprocess_denied": true,
+  "new_batch_tests": 17
+}

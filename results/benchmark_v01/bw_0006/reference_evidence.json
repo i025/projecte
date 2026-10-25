@@ -1,0 +1,163 @@
+{
+  "image_size": [
+    420,
+    512
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "左侧展示墙",
+      "description": "红色竖向展板及相邻的灰色墙面",
+      "bbox": [
+        0.0,
+        17.92,
+        269.64,
+        436.224
+      ],
+      "raw_bbox_0_1000": [
+        0,
+        35,
+        642,
+        852
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "右侧舱门展示区",
+      "description": "右侧灰色墙面与嵌入式舱门结构",
+      "bbox": [
+        266.7,
+        36.864,
+        420.0,
+        456.704
+      ],
+      "raw_bbox_0_1000": [
+        635,
+        72,
+        1000,
+        892
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "a1",
+      "region_id": "r1",
+      "category": "显示屏",
+      "bbox": [
+        86.94,
+        162.304,
+        237.3,
+        260.608
+      ],
+      "raw_bbox_0_1000": [
+        207,
+        317,
+        565,
+        509
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    },
+    {
+      "id": "a2",
+      "region_id": "r2",
+      "category": "舱门",
+      "bbox": [
+        347.34,
+        153.6,
+        420.0,
+        387.072
+      ],
+      "raw_bbox_0_1000": [
+        827,
+        300,
+        1000,
+        756
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "importance": 1.0
+    }
+  ],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": "a1",
+      "type": "semantic",
+      "claim": "灰色展示墙上安装着一块显示屏。",
+      "question": "灰色展示墙上是否有显示屏？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "semantic",
+      "claim": "左侧红色展板上有白色枫叶图案。",
+      "question": "左侧红色展板上是否有白色枫叶图案？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": "a2",
+      "type": "spatial",
+      "claim": "舱门结构嵌在右侧灰色墙面中。",
+      "question": "舱门结构是否嵌在右侧灰色墙面中？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "total_samples": 8,
+  "generation_valid_python": 8,
+  "generation_rate": 1.0,
+  "generation_rate_definition": "Syntax-valid code / selected inputs, NOT successfully constructed scenes",
+  "scene_generation_success_rate": null,
+  "execution_attempts": 0,
+  "blender_successes": 0,
+  "protocol_compliant_executions": 0,
+  "protocol_compliance_fraction": 0.0,
+  "conditional_executed_protocol_compliance": null,
+  "energies": {
+    "semantic": {
+      "valid_samples": 0,
+      "total_samples": 8,
+      "availability_fraction": 0.0,
+      "conditional_mean": null,
+      "conditional_min": null,
+      "conditional_max": null,
+      "values": [],
+      "interpretation": "Available-only conditional distribution; failures retained in total, not scored zero"
+    },
+    "spatial": {
+      "valid_samples": 0,
+      "total_samples": 8,
+      "availability_fraction": 0.0,
+      "conditional_mean": null,
+      "conditional_min": null,
+      "conditional_max": null,
+      "values": [],
+      "interpretation": "Available-only conditional distribution; failures retained in total, not scored zero"
+    },
+    "appearance": {
+      "valid_samples": 0,
+      "total_samples": 8,
+      "availability_fraction": 0.0,
+      "conditional_mean": null,
+      "conditional_min": null,
+      "conditional_max": null,
+      "values": [],
+      "interpretation": "Available-only conditional distribution; failures retained in total, not scored zero"
+    },
+    "statistical": {
+      "valid_samples": 0,
+      "total_samples": 8,
+      "availability_fraction": 0.0,
+      "conditional_mean": null,
+      "conditional_min": null,
+      "conditional_max": null,
+      "values": [],
+      "interpretation": "Available-only conditional distribution; failures retained in total, not scored zero"
+    },
+    "perceptual": {
+      "valid_samples": 0,
+      "total_samples": 8,
+      "availability_fraction": 0.0,
+      "conditional_mean": null,
+      "conditional_min": null,
+      "conditional_max": null,
+      "values": [],
+      "interpretation": "Available-only conditional distribution; failures retained in total, not scored zero"
+    }
+  },
+  "structural": {
+    "valid_samples": 0,
+    "total_samples": 8,
+    "value": null,
+    "coverage": 0.0
+  },
+  "unreviewed_evidence_fraction": 1.0,
+  "formal_release_eligible": false,
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "completion": "partial_real_model_execution_blocked_at_untrusted_Blender",
+  "not_a_complete_end_to_end_benchmark": true,
+  "reference_planning": {
+    "node_counts": {
+      "regions": 19,
+      "groups": 0,
+      "anchors": 3
+    },
+    "atomic_types": {
+      "statistical": 2,
+      "spatial": 3,
+      "semantic": 19
+    },
+    "reviewed": false,
+    "group_aware_path_exercised": false,
+    "interpretation": "Candidate allocation, not correctness or full metric applicability"
+  },
+  "model_cost": {
+    "attempts": 24,
+    "agent_attempts": 8,
+    "token_usage": {
+      "input_tokens": 242672,
+      "output_tokens": 30040
+    },
+    "seconds": 841.4010571963154,
+    "currency_cost": null,
+    "usage_reported_calls": 24,
+    "missing_usage_calls": 0,
+    "note": "Token sums are reported-only lower bounds if any usage is missing; CLI usage includes platform context, not API price/billing"
+  }
+}

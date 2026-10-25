@@ -1,0 +1,182 @@
+{
+  "output": "results/benchmark_v01",
+  "base_commit": "1330a19896628af1d6b297f89c4fac0e7a7566b1",
+  "camera_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      -6.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "max_edge": 512,
+  "max_calls_per_scene": 4,
+  "agent": {
+    "backend": "codex_cli",
+    "model": "gpt-6-sol",
+    "generations": 1,
+    "repairs": 0,
+    "feedback": "none",
+    "timeout_seconds": 300
+  },
+  "dino_model": "../../models/dinov2",
+  "execution_limits": {
+    "threads": 2,
+    "cpu_cores": 2,
+    "memory_bytes": 2147483648,
+    "pids": 64,
+    "disk_bytes": 536870912,
+    "wall_seconds": 180,
+    "cpu_seconds": 120,
+    "network": false
+  },
+  "samples": [
+    {
+      "id": "bw_9064",
+      "reference_rgb": "../BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/references/image_01.png",
+      "task_document": "../BlenderWorld/work/scene_064-blenderworld-custom/dataset/tasks/bw_9064/task.json",
+      "difficulty": "simple",
+      "difficulty_basis": "Few large dining/appliance objects and continuous surfaces",
+      "source": "Existing user-supplied BlenderWorld custom task",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0043",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0043/tests/dataset/tasks/bw_0043/references/image_01.jpg",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0043/tests/dataset/tasks/bw_0043/task.json",
+      "difficulty": "simple",
+      "difficulty_basis": "One salient flower; thin/curved fine geometry",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0006",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0006/tests/dataset/tasks/bw_0006/references/image_01.png",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0006/tests/dataset/tasks/bw_0006/task.json",
+      "difficulty": "medium",
+      "difficulty_basis": "Exhibition booth with large grouped structures",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0063",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0063/tests/dataset/tasks/bw_0063/references/image_01.jpg",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0063/tests/dataset/tasks/bw_0063/task.json",
+      "difficulty": "complex",
+      "difficulty_basis": "Open-plan multi-object interior with occlusion",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0073",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/references/image_01.jpg",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0073/tests/dataset/tasks/bw_0073/task.json",
+      "difficulty": "complex",
+      "difficulty_basis": "Kitchen cabinet/island spatial and structural organization",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0074",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/references/image_01.jpg",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0074/tests/dataset/tasks/bw_0074/task.json",
+      "difficulty": "complex",
+      "difficulty_basis": "Dense shelving and mixed repeated groups",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0075",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0075/tests/dataset/tasks/bw_0075/references/image_01.jpg",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0075/tests/dataset/tasks/bw_0075/task.json",
+      "difficulty": "medium",
+      "difficulty_basis": "Layered landscape with continuous texture",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    },
+    {
+      "id": "bw_0022",
+      "reference_rgb": "../BlenderWorld/data/hf-snapshot/bw_0022/tests/dataset/tasks/bw_0022/references/image_01.png",
+      "task_document": "../BlenderWorld/data/hf-snapshot/bw_0022/tests/dataset/tasks/bw_0022/task.json",
+      "difficulty": "complex",
+      "difficulty_basis": "Dense laboratory interior; many repetitions and occlusion",
+      "source": "Already distributed Qwen/BlenderWorld input",
+      "local_evaluation_basis": "Explicit user authorization for local research using existing data; dataset intended for image-to-3D evaluation; image-specific copyright terms not independently established",
+      "rights_status": "local_research_authorized_image_rights_pending",
+      "redistribution": "withheld"
+    }
+  ]
+}

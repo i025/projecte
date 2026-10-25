@@ -1,0 +1,315 @@
+{
+  "reference": {
+    "backend": "codex_cli",
+    "source_kind": "live_model",
+    "model_requested": "gpt-6-sol",
+    "model_observed": null,
+    "actual_input": {
+      "system": "你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。",
+      "user": "独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"中央花朵\", \"bbox\": [81.92, 8.034, 373.76, 299.73]}, {\"id\": \"r2\", \"name\": \"周围植被与地面\", \"bbox\": [0.0, 0.0, 512.0, 309.0]}]\ne1：画面中央是否有一朵白色花？ 答案类型：yes_no_unknown\ne2：花心周围是否可见黄色花药？ 答案类型：yes_no_unknown\ne3：花朵周围是否可见枯叶？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "e1": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "e2": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "e3": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "e1",
+          "e2",
+          "e3"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "raw_answer": "{\"e1\":\"yes\",\"e2\":\"yes\",\"e3\":\"yes\"}",
+    "parsed": {
+      "status": "valid",
+      "fields": {
+        "e1": {
+          "value": "yes",
+          "validation_status": "valid"
+        },
+        "e2": {
+          "value": "yes",
+          "validation_status": "valid"
+        },
+        "e3": {
+          "value": "yes",
+          "validation_status": "valid"
+        }
+      },
+      "schema_errors": [],
+      "document": {
+        "e1": "yes",
+        "e2": "yes",
+        "e3": "yes"
+      }
+    },
+    "metadata": {},
+    "reviewed": false,
+    "energy_contribution": false,
+    "usage": "provisional/debug",
+    "status": "valid",
+    "request_submitted": true,
+    "elapsed_seconds": 15.886481718858704,
+    "token_usage": {
+      "input_tokens": 10058,
+      "output_tokens": 26,
+      "total_tokens": null
+    },
+    "isolation": {
+      "strict_blind_test": false,
+      "filesystem_read_confined": false,
+      "tools_disabled": true,
+      "project_cwd": false,
+      "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+    },
+    "image_binding": {
+      "source_rgb": "results/benchmark_v01/bw_0043/reference.png",
+      "image_size": [
+        512,
+        309
+      ]
+    },
+    "invocation": {
+      "argv": [
+        "codex",
+        "--no-daemon",
+        "-a",
+        "never",
+        "-c",
+        "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+        "-c",
+        "model_provider=\"verification_openai\"",
+        "-c",
+        "sqlite_home=\"<ephemeral-run>/state\"",
+        "-c",
+        "log_dir=\"<ephemeral-run>/state\"",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "project_doc_max_bytes=0",
+        "-c",
+        "features.shell_tool=false",
+        "-c",
+        "tools.view_image=false",
+        "-c",
+        "features.multi_agent=false",
+        "-c",
+        "features.hooks=false",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.goals=false",
+        "-c",
+        "features.shell_snapshot=false",
+        "-c",
+        "shell_environment_policy.inherit=\"none\"",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "exec",
+        "--ignore-user-config",
+        "--model",
+        "gpt-6-sol",
+        "--sandbox",
+        "read-only",
+        "--skip-git-repo-check",
+        "--ephemeral",
+        "--image",
+        "<ephemeral-run>/input/f65ffdf717a34f9195a2d88048fe0637.png",
+        "--output-schema",
+        "<ephemeral-run>/input/schema.json",
+        "--output-last-message",
+        "<ephemeral-run>/state/answer.json",
+        "--json",
+        "--",
+        "-"
+      ],
+      "stdin": "System:\n你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。\n\nUser:\n独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"中央花朵\", \"bbox\": [81.92, 8.034, 373.76, 299.73]}, {\"id\": \"r2\", \"name\": \"周围植被与地面\", \"bbox\": [0.0, 0.0, 512.0, 309.0]}]\ne1：画面中央是否有一朵白色花？ 答案类型：yes_no_unknown\ne2：花心周围是否可见黄色花药？ 答案类型：yes_no_unknown\ne3：花朵周围是否可见枯叶？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+      "staged_image": "f65ffdf717a34f9195a2d88048fe0637.png",
+      "image_size": [
+        512,
+        309
+      ],
+      "shell": false,
+      "automatic_retries": 0,
+      "stdin_contains_expected_labels": false,
+      "necessary_input_files": [
+        "f65ffdf717a34f9195a2d88048fe0637.png",
+        "question.txt",
+        "schema.json"
+      ]
+    },
+    "exit_code": 0,
+    "stderr": "",
+    "event_types": [
+      "thread.started",
+      "item.completed",
+      "item.completed",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "reported_usage": {
+      "input_tokens": 10058,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 26,
+      "reasoning_output_tokens": 0
+    },
+    "unexpected_tool_events": false,
+    "cli_errors": []
+  },
+  "render": {
+    "backend": "not_executed",
+    "source_kind": "unavailable",
+    "model_requested": null,
+    "model_observed": null,
+    "actual_input": {
+      "system": "你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。",
+      "user": "独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"中央花朵\", \"bbox\": [81.92, 8.034, 373.76, 299.73]}, {\"id\": \"r2\", \"name\": \"周围植被与地面\", \"bbox\": [0.0, 0.0, 512.0, 309.0]}]\ne1：画面中央是否有一朵白色花？ 答案类型：yes_no_unknown\ne2：花心周围是否可见黄色花药？ 答案类型：yes_no_unknown\ne3：花朵周围是否可见枯叶？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "e1": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "e2": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "e3": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "e1",
+          "e2",
+          "e3"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "raw_answer": null,
+    "parsed": {
+      "status": "unavailable",
+      "fields": {},
+      "schema_errors": [
+        "the JSON object must be str, bytes or bytearray, not NoneType"
+      ]
+    },
+    "metadata": {
+      "reason": "No qualified new Blender execution / Render",
+      "new_model_calls": 0
+    },
+    "reviewed": false,
+    "energy_contribution": false,
+    "usage": "provisional/debug",
+    "status": "unavailable"
+  },
+  "results": [
+    {
+      "evidence_id": "e1",
+      "field": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "energy": "semantic",
+      "claim": "画面中央可见一朵白色花。",
+      "question": "画面中央是否有一朵白色花？",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "reference_answer": "yes",
+      "render_answer": null,
+      "status": "unavailable",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "VLM answer is not GT; mismatches require independent review"
+    },
+    {
+      "evidence_id": "e2",
+      "field": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": "a1",
+      "energy": "semantic",
+      "claim": "花心呈绿色，周围可见黄色花药。",
+      "question": "花心周围是否可见黄色花药？",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "reference_answer": "yes",
+      "render_answer": null,
+      "status": "unavailable",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "VLM answer is not GT; mismatches require independent review"
+    },
+    {
+      "evidence_id": "e3",
+      "field": "e3",
+      "region_id": "r2",
+      "group_id": null,
+      "anchor_id": null,
+      "energy": "semantic",
+      "claim": "花朵周围可见枯叶。",
+      "question": "花朵周围是否可见枯叶？",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed",
+      "reference_answer": "yes",
+      "render_answer": null,
+      "status": "unavailable",
+      "reviewed": false,
+      "value": null,
+      "scorable": false,
+      "energy_contribution": false,
+      "uncertainty": "VLM answer is not GT; mismatches require independent review"
+    }
+  ],
+  "image_pair": null,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "energy_contribution": false,
+  "formal_eligible": false,
+  "binding_status": "unavailable_no_render_pair"
+}

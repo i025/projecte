@@ -1,0 +1,226 @@
+{
+  "planning": {
+    "system": "你是参考图像证据规划器。只根据当前RGB图像提取少量可见、可验证的评价证据。不要猜测不可见内容。只输出JSON。",
+    "user": "提出1–4个粗粒度功能评价区域，可包含多个物体，背景无需强制覆盖。bbox为0–1000归一化xyxy粗范围。仅在有必要时提出少量集合Group或显著Anchor，允许groups和anchors为空；Anchor框必须是其自身可见范围。最多3条原子命题，每条只表达一个明确可见事实，附一个中立、独立看图即可回答的问题。问题不能透露预期答案，不要求比较图像或总体评分。答案类型为yes_no_unknown或count_unknown（非负整数或unknown）。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。不要枚举全部物体，不输出答案、置信度或推理。",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "description",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "groups": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "name",
+              "scope"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "anchors": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "category": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "bbox": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "category",
+              "bbox"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+              },
+              "group_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "anchor_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "semantic",
+                  "spatial",
+                  "statistical"
+                ]
+              },
+              "claim": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "answer_type": {
+                "type": "string",
+                "enum": [
+                  "yes_no_unknown",
+                  "count_unknown"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "region_id",
+              "group_id",
+              "anchor_id",
+              "type",
+              "claim",
+              "question",
+              "answer_type"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "regions",
+        "groups",
+        "anchors",
+        "evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "agent": {
+    "system": "You reconstruct an editable 3D Blender scene from one RGB image. Return JSON only.",
+    "user": "Create self-contained Blender 4.2 Python using bpy, math and mathutils only. Build actual 3D geometry, materials, lights and an active camera to reproduce the visible scene. No external assets, downloads, textures from the input image, filesystem/network access, subprocesses, handlers, rendering or saving files. The harness performs rendering and export. Start with an empty scene. Use distinct queryable objects and meaningful names; do not enumerate invisible objects. Choose world geometry to fit this prescribed camera-to-world T0 (Z-up; camera local -Z forward, +Y up): [[1.0, 0.0, 0.0, 0.0], [0.0, 0.0, -1.0, -6.0], [0.0, 1.0, 0.0, 2.0], [0.0, 0.0, 0.0, 1.0]]. The harness will enforce exactly this T0 after construction; do not move the camera to fit the scene. You may choose perspective or orthographic intrinsics: lens 1..300 mm for PERSP, positive ortho_scale for ORTHO, positive sensor dimensions, abs(shift_x/y)<=2, 0<clip_start<clip_end. Render resolution follows the input aspect ratio with longest edge 512 pixels, CPU Cycles 8 samples, 2 threads. One generation, no repair or render feedback. Return only {\"blender_python\":\"complete Python source\"}, without Markdown or explanation.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "blender_python": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 100000
+        }
+      },
+      "required": [
+        "blender_python"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

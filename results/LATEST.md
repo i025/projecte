@@ -4,6 +4,13 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+
+## Benchmark v0.1 实际批次：部分完成（2026-10-25；审核分支）
+
+| 实验 | 实际运行与发现 | 报告与数据 | 审核状态及阻塞 |
+| --- | --- | --- | --- |
+| 8张既有外部RGB → Reference规划 → 新Agent代码 → Reference VQA | 24次真实Codex CLI调用，gpt-6-sol请求名：规划8、代码生成8、Reference VQA8，无重试。8份代码语法有效，尚未执行。DINOv2本地CPU真实推理可用。412项CPU测试通过，新增17项。 | [完整批次报告](benchmark_v01/benchmark_report.md) · [全样本CSV](benchmark_v01/per_scene_results.csv) · [汇总](benchmark_v01/aggregate_results.json) · [全部调用状态](benchmark_v01/run_manifest.json) · [冻结数据集](benchmark_v01/dataset_manifest.json) · [人工审核材料](benchmark_v01/audit_packet.md) · [执行检查](benchmark_v01/execution_checks.json) · [批次验证](benchmark_v01/batch_validation.json) · [运行说明](../BENCHMARK_V01.md) | **不是完整端到端Benchmark，也没有正式成绩。** 无已验证的隔离执行器，0次新Blender执行，5类Energy及Structural均N/A、有效样本0/8。19条Semantic、3条Spatial、2条Statistical候选，但Group为0，Group-aware路径未获验证。全部reviewed=false；CLI隔离/模型快照、参考相机和图片许可仍有限制。照片、艺术图及可能渲染图混合，不称8张已确认实拍。第三方图像、衍生PNG、场景代码资产及代码型原始回答仅留服务器。 |
+
 ## M3.0 Real-Agent Offline Pilot（2026-10-25；审核分支，未合并 main）
 
 | 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |

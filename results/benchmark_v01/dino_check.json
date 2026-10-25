@@ -1,0 +1,15 @@
+{
+  "status": "valid",
+  "feature_shape": [
+    1,
+    384
+  ],
+  "model": "../../models/dinov2",
+  "source_image": "bw_9064",
+  "device": "cpu",
+  "actual_inference": true,
+  "download": false,
+  "energy_value": null,
+  "reason": "Real Reference-only availability inference, not a pairwise Perceptual score",
+  "elapsed_seconds": 5.1895938229281455
+}

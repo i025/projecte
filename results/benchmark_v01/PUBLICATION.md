@@ -1,0 +1,11 @@
+# Publication scope for the actual partial v0.1 run
+
+This is a real 8-input, 24-task Codex CLI run, not Mock/fixture/replay model output. It is **not a completed end-to-end Benchmark**: generated scene source is unexecuted, no qualified isolated executor is available, no new Render exists, and all pairwise Energies/Structural are N/A. All automatic evidence is unreviewed.
+
+Public: source/configuration, selected annotation/answer/status JSON, CSV, CPU-check summaries and Markdown. Actual input prompts and raw planning/Reference-VQA answers are retained. Public copies normalize private input paths to a sibling BlenderWorld layout and redact ephemeral CLI paths. The original frozen server files remain intact; path-normalized public copies are not claimed to be byte-identical private records.
+
+Withheld on the server: all third-party Reference RGB, contact sheets, Region overlays, other image derivatives, generated Blender scene source and its code-bearing raw Agent replies, pending-job files referring to those assets, model weights, raw CLI sessions and credentials. No historical Render is substituted. The MIT code license does not clear each input image; local research was authorized by the user, while image-specific rights clearance remains pending. These are existing external RGB inputs including artwork/possible rendered references, not eight independently licensed photographs.
+
+Original response/state files are not rewritten. Public CPU-check files omit captured test stdout (original logs remain local). CLI input probes are offline checks with model_calls=0, including the initial restricted-filesystem failure and successful authorized-host-channel probe. CLI read-only cwd/tools-disabled configuration does not establish strict filesystem confinement or an exact remote model snapshot.
+
+To inspect, read the report and one batch audit packet. To run a fresh experiment, obtain authorized input data, local models, dependencies and CLI authentication, choose a new output in the configuration, and freeze the new run. A public checkout lacks withheld frozen RGB and code replies and cannot resume the private batch. Resume rejects missing frozen images before model calls. Do not execute generated code on the existing supervised host launcher.

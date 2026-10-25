@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-25T07:00:43.223405+00:00",
+  "tools": {
+    "podman": null,
+    "docker": null,
+    "bwrap": null,
+    "runc": null,
+    "crun": null,
+    "apptainer": null,
+    "singularity": null,
+    "qemu-system-x86_64": null,
+    "virsh": null
+  },
+  "namespace_smoke": {
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "cgroup_delegation_writable": false,
+  "kvm_available": false,
+  "remote_executor_configured": false,
+  "qualified_untrusted_executor": false,
+  "runtime_status": "blocked",
+  "blender_executions": 0,
+  "reasons": [
+    "No qualified, adversarially checked untrusted-code executor is installed/configured.",
+    "Existing CPU launcher has no filesystem confinement or per-job storage/process quota.",
+    "No configured remote container/VM executor; no new cloud service/account is assumed.",
+    "Namespace smoke success and resource monitoring alone do not meet the execution contract."
+  ],
+  "required": [
+    "host-secret isolation",
+    "network disabled",
+    "CPU/memory/PID/disk/time hard limits",
+    "unprivileged execution",
+    "complete process-tree cleanup",
+    "same-execution camera/artifact binding"
+  ],
+  "dino": {
+    "status": "valid",
+    "feature_shape": [
+      1,
+      384
+    ],
+    "model": "../../models/dinov2",
+    "source_image": "bw_9064",
+    "device": "cpu",
+    "actual_inference": true,
+    "download": false,
+    "energy_value": null,
+    "reason": "Real Reference-only availability inference, not a pairwise Perceptual score",
+    "elapsed_seconds": 5.1895938229281455
+  },
+  "remote_alternatives_probe": {
+    "modal_cli_available": false,
+    "harbor_cli_available": false,
+    "modal_module_available": false,
+    "user_modal_config_exists": false,
+    "modal_auth_env_present": false,
+    "remote_executor_endpoint_env_present": false
+  }
+}

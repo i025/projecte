@@ -167,6 +167,8 @@ def gpu_available(uuid):
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     sub=p.add_subparsers(dest='action',required=True)
+    batch=sub.add_parser('batch',help='Frozen real-RGB batch; bounded CLI calls, resumable blocked stages')
+    batch.add_argument('--config',type=Path,required=True)
     off=sub.add_parser('offline',help='Auditable manifest replay; no models, APIs or Blender')
     off.add_argument('--manifest',type=Path,required=True)
     off.add_argument('--output',type=Path,required=True)
@@ -189,6 +191,11 @@ def main(argv=None):
     pilot.add_argument('--scene',choices=['C1_02_A','R1_05','C1_01_B'],required=True)
     pilot.add_argument('--output',type=Path,required=True)
     args=p.parse_args(argv)
+    if args.action=='batch':
+        from .benchmark_batch import run_batch
+        result=run_batch(args.config)
+        print(json.dumps(result,ensure_ascii=False,indent=2))
+        return 0
     if args.output.exists():
         p.error('Output already exists; choose a new result directory')
     if args.action=='offline':

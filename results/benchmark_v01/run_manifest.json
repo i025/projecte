@@ -1,0 +1,1339 @@
+{
+  "config": "config.frozen.json",
+  "samples": [
+    {
+      "id": "bw_9064",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0043",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0006",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0063",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0073",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0074",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0075",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    },
+    {
+      "id": "bw_0022",
+      "reviewed": false,
+      "usage": "provisional/debug",
+      "formal_eligible": false,
+      "input_status": "available",
+      "planning": "valid",
+      "agent": "valid_python_unexecuted",
+      "generation_rounds": 1,
+      "reference_verification": "valid",
+      "evidence_count": 3,
+      "execution": "blocked_unqualified_isolation",
+      "camera": "not_executed",
+      "render_verification": "unavailable_no_new_render",
+      "blender_success": false,
+      "energies": {
+        "semantic": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "spatial": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "appearance": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "statistical": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        },
+        "perceptual": {
+          "value": null,
+          "coverage": 0.0,
+          "status": "unavailable",
+          "reason": "No safe execution / no current Agent Render"
+        }
+      },
+      "structural": {
+        "value": null,
+        "coverage": 0.0,
+        "status": "unavailable",
+        "reason": "No executed geometry"
+      },
+      "observation_energy": null,
+      "reason": "Untrusted generated code retained; no host fallback",
+      "verification_states": {
+        "unavailable": 3
+      },
+      "structural_details": {
+        "energy": null,
+        "energies": {
+          "penetration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "support": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          },
+          "degeneration": {
+            "value": null,
+            "status": "unavailable",
+            "valid_count": 0,
+            "check_count": 0,
+            "coverage": null,
+            "reason": "No reliable reviewed structural checks"
+          }
+        },
+        "check_coverage": null,
+        "checks": {
+          "penetration": [],
+          "support": [],
+          "degeneration": []
+        },
+        "diagnostics": [
+          {
+            "kind": "structural_evidence_unavailable",
+            "reason": "No executed geometry"
+          }
+        ],
+        "raw_geometry": {
+          "status": "unavailable",
+          "reason": "No executed geometry"
+        },
+        "existing_triage": {},
+        "rules": {},
+        "weight_status": "provisional",
+        "limitations": [
+          "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+          "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+          "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+        ]
+      }
+    }
+  ],
+  "calls": [
+    {
+      "sample_id": "bw_9064",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 25.958881465019658,
+      "token_usage": {
+        "input_tokens": 10162,
+        "output_tokens": 358,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_9064",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 57.78623463306576,
+      "token_usage": {
+        "input_tokens": 10042,
+        "output_tokens": 3012,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_9064",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 28.096284806961194,
+      "token_usage": {
+        "input_tokens": 10033,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0043",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 21.793049487052485,
+      "token_usage": {
+        "input_tokens": 10186,
+        "output_tokens": 331,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0043",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 54.65038844803348,
+      "token_usage": {
+        "input_tokens": 10062,
+        "output_tokens": 3170,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0043",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 15.886481718858704,
+      "token_usage": {
+        "input_tokens": 10058,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0006",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 22.90884729917161,
+      "token_usage": {
+        "input_tokens": 10263,
+        "output_tokens": 373,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0006",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 68.88546795211732,
+      "token_usage": {
+        "input_tokens": 10139,
+        "output_tokens": 4440,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0006",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 26.522782102925703,
+      "token_usage": {
+        "input_tokens": 10145,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0063",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 24.550380130996928,
+      "token_usage": {
+        "input_tokens": 10170,
+        "output_tokens": 382,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0063",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 65.11022341391072,
+      "token_usage": {
+        "input_tokens": 10038,
+        "output_tokens": 3466,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0063",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 16.813054479192942,
+      "token_usage": {
+        "input_tokens": 10035,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0073",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 21.27068578801118,
+      "token_usage": {
+        "input_tokens": 10164,
+        "output_tokens": 376,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0073",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 52.54786395793781,
+      "token_usage": {
+        "input_tokens": 10045,
+        "output_tokens": 2866,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0073",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 19.4727261220105,
+      "token_usage": {
+        "input_tokens": 10105,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0074",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 21.779831363121048,
+      "token_usage": {
+        "input_tokens": 10201,
+        "output_tokens": 371,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0074",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 62.0365574171301,
+      "token_usage": {
+        "input_tokens": 10089,
+        "output_tokens": 3529,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0074",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 22.97346917493269,
+      "token_usage": {
+        "input_tokens": 10108,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0075",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 20.722596066072583,
+      "token_usage": {
+        "input_tokens": 10199,
+        "output_tokens": 329,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0075",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 65.17368519795127,
+      "token_usage": {
+        "input_tokens": 10098,
+        "output_tokens": 3665,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0075",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 19.58262039301917,
+      "token_usage": {
+        "input_tokens": 10086,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0022",
+      "stage": "planning_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 26.38297235989012,
+      "token_usage": {
+        "input_tokens": 10143,
+        "output_tokens": 427,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0022",
+      "stage": "agent_response",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 55.90233996603638,
+      "token_usage": {
+        "input_tokens": 10029,
+        "output_tokens": 2737,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    },
+    {
+      "sample_id": "bw_0022",
+      "stage": "reference_answers",
+      "status": "valid",
+      "model_requested": "gpt-6-sol",
+      "model_observed": null,
+      "elapsed_seconds": 24.59363345289603,
+      "token_usage": {
+        "input_tokens": 10072,
+        "output_tokens": 26,
+        "total_tokens": null
+      },
+      "request_submitted": true,
+      "attempts": 1,
+      "retries": 0,
+      "cli_subprocess_started": true,
+      "error": null
+    }
+  ],
+  "max_calls": 32,
+  "automatic_retries": 0,
+  "actual_blender_executions": 0,
+  "safety_boundary": "Runtime remains blocked; generated source parsed, never imported/executed"
+}

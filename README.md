@@ -6,6 +6,8 @@ Project e studies evaluation of Agentic Image-to-3D reconstruction without refer
 
 The [Offline Evaluation MVP](OFFLINE_EVALUATION.md) provides one manifest-based entry for existing Reference/Render images, fixed ROI, optional evidence and camera checks. It emits auditable JSON, PNG and Markdown; external camera declarations and unreviewed Group/Structural answers do not create formal scores.
 
+The [real-RGB batch v0.1](BENCHMARK_V01.md) freezes inputs and budgets, runs bounded Codex CLI planning/code generation/VQA, and retains failures across resume. Its actual run is **partial**: untrusted Blender execution remains blocked by missing qualified isolation, so no new Render or formal Benchmark score is claimed.
+
 ## Current findings
 
 - Direct coarse Reference ROI is the experimental baseline. SAM/SLIC have not demonstrated consistent improvements in functional-region completeness.
