@@ -1,0 +1,1124 @@
+{
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "formal_eligible": false,
+  "score": null,
+  "participates_in_energy": false,
+  "provenance": {
+    "m1_directory": "../trusted_blender_e2e_pilot",
+    "m2_directory": "../m2_reference_vlm_e2e",
+    "prior_execution_chain": "../trusted_blender_e2e_pilot/execution_chain.json",
+    "fixture_source": "e_harness/runtime/benchmark_blender.py::fixture (read only)",
+    "fixture_units": {
+      "anchor": "red body, 1 x 1 x 1.5 cuboid",
+      "other": "blue body, unit cube"
+    },
+    "localization_source": "saved first-party Blender Object-ID, synthetic Oracle only",
+    "new_blender_executions": 0,
+    "new_model_calls": 0,
+    "prior_receipt_not_new_execution": true
+  },
+  "source_checks": {
+    "same_camera": true,
+    "same_intrinsics": true,
+    "same_render_settings": true,
+    "same_grid": true,
+    "pose_matches_T0": true,
+    "m2_rgb_pair_matches_m1_pixels": true,
+    "mask_checks": {
+      "reference": {
+        "anchor": {
+          "object_id": 9,
+          "mask": "render_masks/anchor.png",
+          "png_matches_local_id_array": true,
+          "interpretation": "Fixture identity, not an RGB detector or semantic GT"
+        },
+        "other": {
+          "object_id": 2,
+          "mask": "render_masks/other.png",
+          "png_matches_local_id_array": true,
+          "interpretation": "Fixture identity, not an RGB detector or semantic GT"
+        }
+      },
+      "changed": {
+        "anchor": {
+          "object_id": 9,
+          "mask": "render_masks/anchor.png",
+          "png_matches_local_id_array": true,
+          "interpretation": "Fixture identity, not an RGB detector or semantic GT"
+        },
+        "other": {
+          "object_id": 2,
+          "mask": "render_masks/other.png",
+          "png_matches_local_id_array": true,
+          "interpretation": "Fixture identity, not an RGB detector or semantic GT"
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "vlm_discrete_relation": {
+      "source": "../m2_reference_vlm_e2e/verification_results.json",
+      "original_record": {
+        "evidence_id": "e2",
+        "field": "e2",
+        "region_id": "r1",
+        "group_id": null,
+        "anchor_id": null,
+        "energy": "spatial",
+        "claim": "红色立方体位于蓝色立方体左侧。",
+        "question": "红色立方体是否位于蓝色立方体左侧？",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed",
+        "reference_answer": "yes",
+        "render_answer": "yes",
+        "status": "satisfied",
+        "reviewed": false,
+        "value": null,
+        "scorable": false,
+        "energy_contribution": false,
+        "uncertainty": "VLM answer is not GT; mismatches require independent review"
+      },
+      "modified": false,
+      "energy_contribution": false
+    },
+    "continuous_spatial": {
+      "reference": {
+        "image_size": [
+          256,
+          256
+        ],
+        "center_method": "bbox_center",
+        "extent_definition": {
+          "anchor": "bbox of binary visible Object-ID pixels, xyxy pixel edges",
+          "other": "bbox of binary visible Object-ID pixels, xyxy pixel edges"
+        },
+        "delta_x": 0.408203125,
+        "delta_y": 0.044921875,
+        "bbox_area_ratio_proxy": 0.7451884522854851,
+        "visible_mask_area_ratio": null,
+        "normalized_centers": {
+          "anchor": [
+            0.24609375,
+            0.7578125
+          ],
+          "other": [
+            0.654296875,
+            0.802734375
+          ]
+        },
+        "status": "conditional_debug",
+        "reason": "Visible-object masks unavailable/unreviewed; bbox area remains a separate proxy",
+        "score": null,
+        "participates_in_energy": false,
+        "allow_provisional": true,
+        "object_order": [
+          "anchor",
+          "other"
+        ],
+        "localizations": {
+          "anchor": {
+            "status": "synthetic_oracle_visible",
+            "bbox": [
+              34,
+              151,
+              92,
+              237
+            ],
+            "visible_pixels": 4930,
+            "reviewed": false,
+            "source": "supplied binary visible support"
+          },
+          "other": {
+            "status": "synthetic_oracle_visible",
+            "bbox": [
+              138,
+              174,
+              197,
+              237
+            ],
+            "visible_pixels": 3621,
+            "reviewed": false,
+            "source": "supplied binary visible support"
+          }
+        },
+        "left_of": true,
+        "relative_distance": 0.408203125,
+        "boundary_gap": 0.18415178571428573,
+        "boundary_gap_pixels": 47.142857142857146,
+        "boundary_rows": [
+          {
+            "y": 174,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 175,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 176,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 177,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 178,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 179,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 180,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 181,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 182,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 183,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 184,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 185,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 186,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 187,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 188,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 189,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 190,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 191,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 192,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 193,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 194,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 195,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 196,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 197,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 198,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 199,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 200,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 201,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 202,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 203,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 204,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 205,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 206,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 207,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 208,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 209,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 210,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 211,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 212,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 213,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 214,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 215,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 216,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 217,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 218,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 219,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 220,
+            "first_right_edge": 92,
+            "second_left_edge": 138,
+            "gap_pixels": 46
+          },
+          {
+            "y": 221,
+            "first_right_edge": 92,
+            "second_left_edge": 139,
+            "gap_pixels": 47
+          },
+          {
+            "y": 222,
+            "first_right_edge": 92,
+            "second_left_edge": 139,
+            "gap_pixels": 47
+          },
+          {
+            "y": 223,
+            "first_right_edge": 91,
+            "second_left_edge": 139,
+            "gap_pixels": 48
+          },
+          {
+            "y": 224,
+            "first_right_edge": 91,
+            "second_left_edge": 139,
+            "gap_pixels": 48
+          },
+          {
+            "y": 225,
+            "first_right_edge": 91,
+            "second_left_edge": 140,
+            "gap_pixels": 49
+          },
+          {
+            "y": 226,
+            "first_right_edge": 91,
+            "second_left_edge": 140,
+            "gap_pixels": 49
+          },
+          {
+            "y": 227,
+            "first_right_edge": 90,
+            "second_left_edge": 140,
+            "gap_pixels": 50
+          },
+          {
+            "y": 228,
+            "first_right_edge": 90,
+            "second_left_edge": 140,
+            "gap_pixels": 50
+          },
+          {
+            "y": 229,
+            "first_right_edge": 90,
+            "second_left_edge": 141,
+            "gap_pixels": 51
+          },
+          {
+            "y": 230,
+            "first_right_edge": 90,
+            "second_left_edge": 141,
+            "gap_pixels": 51
+          },
+          {
+            "y": 231,
+            "first_right_edge": 89,
+            "second_left_edge": 141,
+            "gap_pixels": 52
+          },
+          {
+            "y": 232,
+            "first_right_edge": 89,
+            "second_left_edge": 141,
+            "gap_pixels": 52
+          },
+          {
+            "y": 233,
+            "first_right_edge": 89,
+            "second_left_edge": 142,
+            "gap_pixels": 53
+          },
+          {
+            "y": 234,
+            "first_right_edge": 89,
+            "second_left_edge": 142,
+            "gap_pixels": 53
+          },
+          {
+            "y": 235,
+            "first_right_edge": 88,
+            "second_left_edge": 142,
+            "gap_pixels": 54
+          },
+          {
+            "y": 236,
+            "first_right_edge": 88,
+            "second_left_edge": 142,
+            "gap_pixels": 54
+          }
+        ],
+        "boundary_status": "conditional_debug",
+        "boundary_reason": null,
+        "localization_source": "synthetic_oracle",
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "definitions": {
+          "left_of": "First visible-bbox centre is left of second; discrete image-plane order",
+          "relative_distance": "Absolute horizontal separation of visible-bbox centres divided by image width",
+          "boundary_gap": "Mean [second left edge - first right edge] on shared rows, divided by width; signed",
+          "delta_y": "Second minus first visible-bbox centre y divided by image height; down is positive"
+        },
+        "boundary_gap_pixels_min": 46,
+        "boundary_gap_pixels_max": 54
+      },
+      "changed": {
+        "image_size": [
+          256,
+          256
+        ],
+        "center_method": "bbox_center",
+        "extent_definition": {
+          "anchor": "bbox of binary visible Object-ID pixels, xyxy pixel edges",
+          "other": "bbox of binary visible Object-ID pixels, xyxy pixel edges"
+        },
+        "delta_x": 0.224609375,
+        "delta_y": 0.044921875,
+        "bbox_area_ratio_proxy": 0.8003875968992248,
+        "visible_mask_area_ratio": null,
+        "normalized_centers": {
+          "anchor": [
+            0.4296875,
+            0.7578125
+          ],
+          "other": [
+            0.654296875,
+            0.802734375
+          ]
+        },
+        "status": "conditional_debug",
+        "reason": "Visible-object masks unavailable/unreviewed; bbox area remains a separate proxy",
+        "score": null,
+        "participates_in_energy": false,
+        "allow_provisional": true,
+        "object_order": [
+          "anchor",
+          "other"
+        ],
+        "localizations": {
+          "anchor": {
+            "status": "synthetic_oracle_visible",
+            "bbox": [
+              83,
+              151,
+              137,
+              237
+            ],
+            "visible_pixels": 4628,
+            "reviewed": false,
+            "source": "supplied binary visible support"
+          },
+          "other": {
+            "status": "synthetic_oracle_visible",
+            "bbox": [
+              138,
+              174,
+              197,
+              237
+            ],
+            "visible_pixels": 3621,
+            "reviewed": false,
+            "source": "supplied binary visible support"
+          }
+        },
+        "left_of": true,
+        "relative_distance": 0.224609375,
+        "boundary_gap": 0.00638640873015873,
+        "boundary_gap_pixels": 1.6349206349206349,
+        "boundary_rows": [
+          {
+            "y": 174,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 175,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 176,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 177,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 178,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 179,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 180,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 181,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 182,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 183,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 184,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 185,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 186,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 187,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 188,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 189,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 190,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 191,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 192,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 193,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 194,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 195,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 196,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 197,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 198,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 199,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 200,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 201,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 202,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 203,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 204,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 205,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 206,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 207,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 208,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 209,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 210,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 211,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 212,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 213,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 214,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 215,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 216,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 217,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 218,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 219,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 220,
+            "first_right_edge": 137,
+            "second_left_edge": 138,
+            "gap_pixels": 1
+          },
+          {
+            "y": 221,
+            "first_right_edge": 137,
+            "second_left_edge": 139,
+            "gap_pixels": 2
+          },
+          {
+            "y": 222,
+            "first_right_edge": 137,
+            "second_left_edge": 139,
+            "gap_pixels": 2
+          },
+          {
+            "y": 223,
+            "first_right_edge": 137,
+            "second_left_edge": 139,
+            "gap_pixels": 2
+          },
+          {
+            "y": 224,
+            "first_right_edge": 137,
+            "second_left_edge": 139,
+            "gap_pixels": 2
+          },
+          {
+            "y": 225,
+            "first_right_edge": 137,
+            "second_left_edge": 140,
+            "gap_pixels": 3
+          },
+          {
+            "y": 226,
+            "first_right_edge": 137,
+            "second_left_edge": 140,
+            "gap_pixels": 3
+          },
+          {
+            "y": 227,
+            "first_right_edge": 137,
+            "second_left_edge": 140,
+            "gap_pixels": 3
+          },
+          {
+            "y": 228,
+            "first_right_edge": 137,
+            "second_left_edge": 140,
+            "gap_pixels": 3
+          },
+          {
+            "y": 229,
+            "first_right_edge": 137,
+            "second_left_edge": 141,
+            "gap_pixels": 4
+          },
+          {
+            "y": 230,
+            "first_right_edge": 137,
+            "second_left_edge": 141,
+            "gap_pixels": 4
+          },
+          {
+            "y": 231,
+            "first_right_edge": 137,
+            "second_left_edge": 141,
+            "gap_pixels": 4
+          },
+          {
+            "y": 232,
+            "first_right_edge": 137,
+            "second_left_edge": 141,
+            "gap_pixels": 4
+          },
+          {
+            "y": 233,
+            "first_right_edge": 137,
+            "second_left_edge": 142,
+            "gap_pixels": 5
+          },
+          {
+            "y": 234,
+            "first_right_edge": 137,
+            "second_left_edge": 142,
+            "gap_pixels": 5
+          },
+          {
+            "y": 235,
+            "first_right_edge": 137,
+            "second_left_edge": 142,
+            "gap_pixels": 5
+          },
+          {
+            "y": 236,
+            "first_right_edge": 137,
+            "second_left_edge": 142,
+            "gap_pixels": 5
+          }
+        ],
+        "boundary_status": "conditional_debug",
+        "boundary_reason": null,
+        "localization_source": "synthetic_oracle",
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "definitions": {
+          "left_of": "First visible-bbox centre is left of second; discrete image-plane order",
+          "relative_distance": "Absolute horizontal separation of visible-bbox centres divided by image width",
+          "boundary_gap": "Mean [second left edge - first right edge] on shared rows, divided by width; signed",
+          "delta_y": "Second minus first visible-bbox centre y divided by image height; down is positive"
+        },
+        "boundary_gap_pixels_min": 1,
+        "boundary_gap_pixels_max": 5
+      },
+      "change": {
+        "direction": "render_minus_reference",
+        "score": null,
+        "participates_in_energy": false,
+        "delta_x_change": -0.18359375,
+        "delta_y_change": 0.0,
+        "bbox_area_ratio_proxy_change": 0.05519914461373965,
+        "visible_mask_area_ratio_change": null,
+        "relative_distance_change": -0.18359375,
+        "boundary_gap_change": -0.177765376984127,
+        "boundary_gap_pixels_change": -45.50793650793651
+      }
+    },
+    "cached_appearance": {
+      "source": "../m2_reference_vlm_e2e/report.json",
+      "global_value": 0.03928318397671569,
+      "fixed_region_measurements": [
+        {
+          "id": "r1",
+          "description": "绿色地面上的红色和蓝色立方体",
+          "reviewed": false,
+          "evidence_reliability": 0.0,
+          "reference_pixels": 16461.0,
+          "valid_pixel_weight": 16461.0,
+          "measurement_pixel_weight": 16461.0,
+          "appearance": 0.151559181475883,
+          "perceptual": null,
+          "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+          "numerical_proxies": {
+            "spatial": 0.015280330882352942,
+            "statistical": 0.007604085620227052
+          },
+          "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+          "semantic": null,
+          "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+          "energy_contribution": false,
+          "usage": "provisional/debug fixed-domain diagnostic"
+        }
+      ],
+      "recomputed": false
+    }
+  },
+  "existing_evaluation": {
+    "source": "../m2_reference_vlm_e2e/report.json",
+    "conditional_values": {
+      "semantic": null,
+      "spatial": 0.002285003662109375,
+      "appearance": 0.03928318397671568,
+      "statistical": 0.003341700152893731,
+      "perceptual": null
+    },
+    "formulas_weights_and_aggregation_unchanged": true
+  },
+  "controls": {
+    "source": "synthetic_oracle_logic; no new RGB or Blender scene",
+    "unchanged": {
+      "changes": {
+        "direction": "render_minus_reference",
+        "score": null,
+        "participates_in_energy": false,
+        "delta_x_change": 0.0,
+        "delta_y_change": 0.0,
+        "bbox_area_ratio_proxy_change": 0.0,
+        "visible_mask_area_ratio_change": null
+      },
+      "expected": "zero offset changes"
+    },
+    "common_translation": {
+      "dx_pixels": 5,
+      "dy_pixels": 3,
+      "clipping": false,
+      "changes": {
+        "relative_distance": 0.0,
+        "delta_y": 0.0,
+        "boundary_gap": 0.0
+      },
+      "passed": true
+    },
+    "unavailable": {
+      "reason": "First object localization withheld, not confirmed missing",
+      "values": {
+        "left_of": null,
+        "relative_distance": null,
+        "delta_y": null,
+        "boundary_gap": null
+      },
+      "passed": true
+    },
+    "reviewed": false,
+    "participates_in_energy": false
+  },
+  "limitations": [
+    "Not RGB-only localization or a new Spatial Energy score",
+    "Visible bbox centres can change with occlusion; not whole-object or 3D centres",
+    "Boundary gap uses shared scanlines and may contain other objects; not 3D free space",
+    "Low-resolution ID pass, aliasing, transparency and visibility affect pixel extents",
+    "Translation invariance applies only to unclipped equal 2D shifts, not arbitrary camera motion",
+    "M2 questions correctly preserve count/order but do not measure continuous separation"
+  ],
+  "tests": {
+    "tests_run": 386,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "new_m21_tests": 13,
+    "spatial_focused_tests": 32,
+    "success": true,
+    "elapsed_seconds": 8.424695383990183,
+    "network_and_subprocess_denied": true,
+    "model_and_blender_calls": 0,
+    "output": "..................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 386 tests in 8.425s\n\nOK\n",
+    "command": "python3 -B -m unittest discover -s tests -p 'test_*.py'"
+  },
+  "publication_checks": {
+    "all_images_first_party": true,
+    "png_metadata_absent": true,
+    "no_credentials_or_sensitive_absolute_paths_found": true,
+    "only_three_result_files": true,
+    "public_png_only_replay_passed": true,
+    "continuous_measurements_identical": true,
+    "original_vlm_verdict_unchanged": true,
+    "unpublished_arrays_not_required": true,
+    "new_model_or_blender_calls": 0,
+    "reviewed": false
+  }
+}

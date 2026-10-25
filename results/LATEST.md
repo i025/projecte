@@ -4,6 +4,12 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+## M2.1 Continuous Spatial Evidence（2026-10-25；审核分支，未合并 main）
+
+| 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
+| --- | --- | --- | --- | --- |
+| 保存的 M1 Object-ID → 连续投影空间诊断 | 旧 left_of / VLM satisfied 均保留；中心间距104.5→57.5px，63个共享行的平均边界间隙47.143→1.635px。共同二维平移不变，定位不可用为N/A。386项CPU测试通过，新增13项。 | [自制 comparison.png](m21_continuous_spatial_validation/comparison.png) | [总结与复现](m21_continuous_spatial_validation/summary.md) · [测量、来源及测试](m21_continuous_spatial_validation/spatial_diagnostics.json) | reviewed=false、provisional/debug；只验证Synthetic Object-ID Oracle定位下的二维测量，不证明RGB自动定位或三维距离准确。0次新VLM/Blender/GPU执行；不改正式Energy/权重，不将离散satisfied改为violated，Runtime仍blocked。 |
+
 ## M2 Reference Evidence + Real VLM End-to-End（2026-10-25；审核分支，未合并 main）
 
 | 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |

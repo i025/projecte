@@ -4,7 +4,9 @@
 
 最近的重要实验见 [LATEST.md](LATEST.md)，缺失图像、历史链接和精简说明见 [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md)。
 
-审核分支最新：[M2 Reference Evidence + Real VLM End-to-End](m2_reference_vlm_e2e/summary.md)（2026-10-25），[comparison.png](m2_reference_vlm_e2e/comparison.png)、[冻结参考证据](m2_reference_vlm_e2e/reference_evidence.json)、[真实回答](m2_reference_vlm_e2e/verification_results.json)、[完整报告](m2_reference_vlm_e2e/report.json)、[检查](m2_reference_vlm_e2e/validation_checks.json)。复用M1图片，三次真实CLI调用无重试；数量2/左右关系yes两侧相同，原子证据漏检已知位移，图像指标仍响应。373项CPU测试通过，新增20项；没有新的Blender执行。全部未审核/debug，VLM只作诊断，Group/Anchor为空；模型快照、强隔离、证据区分能力仍有限，不改变Energy或Runtime blocked，不合并main。
+审核分支最新：[M2.1 Continuous Spatial Evidence](m21_continuous_spatial_validation/summary.md)（2026-10-25），[comparison.png](m21_continuous_spatial_validation/comparison.png)、[测量、来源与CPU测试](m21_continuous_spatial_validation/spatial_diagnostics.json)。复用M1的可见Object-ID支持：中心间距104.5→57.5px、平均可见边界间隙47.143→1.635px；旧M2 left_of仍satisfied。386项CPU测试通过，新增13项，空间专用32项。无新VLM/Blender/GPU执行；Oracle不是RGB自动提取，全部未审核/debug，不新增Spatial分数、不改Energy或Runtime blocked，不合并main。
+
+审核分支 M2：[M2 Reference Evidence + Real VLM End-to-End](m2_reference_vlm_e2e/summary.md)（2026-10-25），[comparison.png](m2_reference_vlm_e2e/comparison.png)、[冻结参考证据](m2_reference_vlm_e2e/reference_evidence.json)、[真实回答](m2_reference_vlm_e2e/verification_results.json)、[完整报告](m2_reference_vlm_e2e/report.json)、[检查](m2_reference_vlm_e2e/validation_checks.json)。复用M1图片，三次真实CLI调用无重试；数量2/左右关系yes两侧相同，原子证据漏检已知位移，图像指标仍响应。373项CPU测试通过，新增20项；没有新的Blender执行。全部未审核/debug，VLM只作诊断，Group/Anchor为空；模型快照、强隔离、证据区分能力仍有限，不改变Energy或Runtime blocked，不合并main。
 
 审核分支 M1：[Trusted Blender End-to-End Pilot](trusted_blender_e2e_pilot/summary.md)（2026-10-25），[comparison.png](trusted_blender_e2e_pilot/comparison.png)、[report.json](trusted_blender_e2e_pilot/report.json)、[integration_checks.json](trusted_blender_e2e_pilot/integration_checks.json)。两次实际受限CPU Blender生成RGB/Depth/Object-ID/Geometry，进入固定ROI离线评测；353项CPU测试通过。仅可信自制Fixture，全部debug/未审核，不改变Energy、不解除Runtime blocked、不合并main。
 
