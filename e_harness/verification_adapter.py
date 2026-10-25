@@ -21,6 +21,46 @@ from jsonschema import Draft202012Validator, SchemaError
 from .model_client import token_counts
 
 
+LEGACY_PROTOCOL = 'm2_legacy'
+EXISTING_SCENE_PROTOCOL = 'existing_scene_v1'
+
+VERIFICATION_SYSTEM = '''你是独立的视觉证据验证器。
+
+你只能根据当前提供的一张图像以及被冻结的中立问题作答。
+你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。
+
+对于每个问题：
+- 能够明确确认事实成立时，回答 yes。
+- 能够根据可见内容明确确认事实不成立时，回答 no。
+- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。
+- 不得把未检测到物体直接等同于确认不存在。
+- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。
+- 对数量问题，仅在可可靠计数时给出整数。
+- 关系问题以当前图片视角为准。
+- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。
+- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。'''
+
+
+def answer_schema(answer_type, categories=None):
+    """Freeze an answer space, never an expected answer. Ambiguity is abstention."""
+    categories = [] if categories is None else categories
+    if not isinstance(categories, list):
+        raise ValueError('categories must be a frozen list')
+    if answer_type == 'categorical_unknown':
+        if (not 1 <= len(categories) <= 12 or any(not isinstance(c, str) or not c.strip()
+                or len(c) > 64 or c != c.strip() or c in ('unknown', 'ambiguous') for c in categories)
+                or len(set(categories)) != len(categories)):
+            raise ValueError('Categorical questions require 1..12 unique nonempty categories; unknown/ambiguous are reserved')
+        return dict(type='string', enum=[*categories, 'unknown', 'ambiguous'])
+    if categories:
+        raise ValueError('Only categorical_unknown accepts categories')
+    if answer_type == 'yes_no_unknown':
+        return dict(type='string', enum=['yes', 'no', 'unknown'])
+    if answer_type == 'count_unknown':
+        return dict(anyOf=[dict(type='integer', minimum=0), dict(type='string', enum=['unknown'])])
+    raise ValueError('Unsupported answer_type: '+str(answer_type))
+
+
 def contract(document):
     """Allowlist the model input: coordinator labels/metadata must stay outside it."""
     if not isinstance(document, dict) or set(document) != {'system', 'user', 'schema'}:
@@ -72,7 +112,7 @@ def parse_answer(raw, schema=None):
         fields = {}
         for field, definition in schema['properties'].items():
             valid = field in document and Draft202012Validator(definition).is_valid(document[field])
-            fields[field] = dict(value=document.get(field) if valid else None,
+            fields[field] = dict(value=document.get(field) if valid else None, raw_value=document.get(field),
                                  validation_status='valid' if valid else 'unavailable')
         return dict(status='valid' if not errors else 'partial' if any(
             f['validation_status']=='valid' for f in fields.values()) else 'unavailable',
@@ -128,6 +168,17 @@ def compare_answers(reference, rendered, questions, *, image_pair=None):
     protocol = contract(reference['actual_input'])
     if protocol != contract(rendered['actual_input']):
         raise ValueError('Both sides must use exactly the same frozen contract')
+    parsed = [parse_answer(p.get('raw_answer'), protocol['schema']) for p in (reference, rendered)]
+
+    def audit(packet, parsed_answer, field):
+        item = parsed_answer.get('fields', {}).get(field, {})
+        return dict(raw_json=packet.get('raw_answer'), raw_value=item.get('raw_value', item.get('value')),
+            validation_status=item.get('validation_status', 'unavailable')
+                if packet.get('status') in ('valid', 'partial') else 'unavailable',
+            source={k:deepcopy(packet.get(k)) for k in
+                    ('backend', 'source_kind', 'model_requested', 'model_observed')},
+            human_review=dict(status='unreviewed', reviewed=False, notes=None))
+
     rows, ids, fields = [], set(), set()
     for question in questions:
         eid, field = question['evidence_id'], question['field']
@@ -136,15 +187,27 @@ def compare_answers(reference, rendered, questions, *, image_pair=None):
         definition = protocol['schema']['properties'][field]
         if not ('enum' in definition or 'anyOf' in definition):
             raise ValueError('Comparison requires atomic categorical/count answers, not planning objects')
+        if protocol['system'] == VERIFICATION_SYSTEM:
+            if (question.get('protocol_version') != EXISTING_SCENE_PROTOCOL or
+                    not isinstance(question.get('categories'), list) or
+                    answer_schema(question.get('answer_type'), question['categories']) != definition):
+                raise ValueError('Answer metadata differs from the frozen protocol/schema')
         ids.add(eid); fields.add(field)
         # Process failure invalidates its output; missing fields alone preserve valid siblings.
-        values = [answer_value(p['parsed'], field) if p['status'] in ('valid', 'partial') else None
-                  for p in (reference, rendered)]
+        values = [answer_value(parsed_side, field) if p['status'] in ('valid', 'partial') else None
+                  for p, parsed_side in zip((reference, rendered), parsed)]
+        status = compare_values(*values)
+        if status != 'unavailable' and 'ambiguous' in values:
+            status = 'unknown'
         rows.append(dict(evidence_id=eid, field=field, region_id=question.get('region_id'),
             group_id=question.get('group_id'), anchor_id=question.get('anchor_id'), energy=question.get('energy'),
             claim=question.get('claim'), question=question['question'],
             provenance=deepcopy(question.get('provenance')), reference_answer=values[0],
-            render_answer=values[1], status=compare_values(*values), reviewed=False,
+            render_answer=values[1], status=status, reviewed=False,
+            answer_type=question.get('answer_type'), categories=deepcopy(question.get('categories')),
+            protocol_version=question.get('protocol_version'),
+            reference_verification=audit(reference, parsed[0], field),
+            render_verification=audit(rendered, parsed[1], field),
             value=None, scorable=False, energy_contribution=False,
             uncertainty='VLM answer is not GT; mismatches require independent review'))
     if image_pair is None and all(p.get('image_binding') for p in (reference, rendered)):

@@ -1,0 +1,216 @@
+{
+  "system": "你是 Project e 的单图像评价证据规划器。\n\n你的任务是仅依据当前 Reference RGB，提取适合评价三维场景重建质量的可观察证据。\n你看不到被评测 Agent 的 Render、Blender 场景、对象名称或任何预期错误。\n\n请按以下原则工作：\n- 首先识别约 1–5 个有评价意义的粗粒度 Region，简单场景允许只有一个。Region 是评价范围，不是精确物体 Mask。\n- 对重复或成组内容，例如书籍、唱片、柜体、桌椅组合等，必要时建立 Semantic Group。一个 Group 可以包含多个物体，无须枚举每个实例。\n- 对特别重要、且需要投影位置测量的对象，可以选择少量 Anchor。\n- 为主要 Region 或 Group 选择有区分力的原子证据，不要只集中于物体存在和数量。\n- 在确实可观察时，考虑对象类别、显著属性、离散空间关系、局部排列、结构分隔、相对布局及尺度特征。\n- 不强制每个 Region 具备所有类型的证据，也不强制图片一定包含 Group。\n- 每个问题仅检查一个明确事实；避免含糊的“是否合理”“是否相似”“是否重建正确”。\n- 只能根据可见信息提问。遮挡、类别混淆或细节不足时，必须允许 unknown。\n- left_of/right_of 等方向关系定义为当前输入相机视角下的投影关系。\n- 不得将不可见的内部构造、真实物理连接或三维深度推断当作直接观察。\n- 不得根据被测 Render 选择、更换或修改证据。\n- 输出符合 Schema 的 JSON，不输出期望的验证答案。\n\n根据图像复杂度，优先形成少量高质量的原子证据，而不是生成冗长问题清单。\n证据预算是上限，具体是否生成取决于可观察性。",
+  "user": "仅根据当前 Reference RGB 规划评价证据，最多 10 条原子命题；不要为填满预算生成问题。Region bbox 使用0–1000归一化xyxy粗范围；Anchor bbox仅表示其自身可见范围。使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。groups和anchors允许为空。证据类型为semantic、spatial或statistical。answer_type为yes_no_unknown、count_unknown或categorical_unknown。类别型问题的categories必须在此Reference-only阶段给出1–12个互异、简短、中立的候选类别，不包括保留的unknown或ambiguous；其他答案类型的categories填空数组。类别集合不代表期望答案；不要输出expected、答案、置信度或推理。连续投影位置、相对面积和间距应由可靠RGB定位及确定性测量获得，不要求视觉验证器估算精确坐标。",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "regions": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            },
+            "bbox": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "minItems": 4,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "description",
+            "bbox"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "groups": {
+        "type": "array",
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "region_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            }
+          },
+          "required": [
+            "id",
+            "region_id",
+            "name",
+            "scope"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "anchors": {
+        "type": "array",
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "region_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "category": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            },
+            "bbox": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "minItems": 4,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "id",
+            "region_id",
+            "category",
+            "bbox"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "evidence": {
+        "type": "array",
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "region_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+            },
+            "group_id": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "anchor_id": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_]{0,31}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "semantic",
+                "spatial",
+                "statistical"
+              ]
+            },
+            "claim": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300
+            },
+            "answer_type": {
+              "type": "string",
+              "enum": [
+                "yes_no_unknown",
+                "count_unknown",
+                "categorical_unknown"
+              ]
+            },
+            "categories": {
+              "type": "array",
+              "maxItems": 12,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              }
+            }
+          },
+          "required": [
+            "id",
+            "region_id",
+            "group_id",
+            "anchor_id",
+            "type",
+            "claim",
+            "question",
+            "answer_type",
+            "categories"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "regions",
+      "groups",
+      "anchors",
+      "evidence"
+    ],
+    "additionalProperties": false
+  }
+}

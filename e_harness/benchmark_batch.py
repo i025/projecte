@@ -27,7 +27,7 @@ from .benchmark_evidence import build_reference, local_dino_extractor
 from .benchmark_structure import structural_report
 from .verification_adapter import answer_packet, codex_answer, compare_answers, contract, parse_answer
 from scripts.reference_vlm_pilot import (evidence_from_plan, obj, planning_protocol,
-                                        verification_protocol)
+                                        verification_protocol, LEGACY_PROTOCOL)
 
 
 def save(path, value, *, exclusive=False):
@@ -68,9 +68,19 @@ def agent_protocol(config):
         schema=obj(dict(blender_python=dict(type='string',minLength=20,maxLength=100000)))))
 
 
+def planning_options(config):
+    """Explicit opt-in for new runs; missing config preserves frozen v0.1 replay."""
+    settings=config.get('planning',dict(protocol_version=LEGACY_PROTOCOL))
+    if not isinstance(settings,dict) or not set(settings) <= {'protocol_version','evidence_budget'} or 'protocol_version' not in settings:
+        raise ValueError('planning requires protocol_version and optional evidence_budget only')
+    planning_protocol(**settings)  # reject typos/bad budgets before any call or output
+    return deepcopy(settings)
+
+
 def load_config(path):
     # JSON is a YAML subset: no extra YAML parser or executable configuration.
     config=read(path)
+    planning_options(config)
     if config['camera_matrix']!=FIXED_T0 or config['policy']!=json.loads(json.dumps(POLICY)):
         raise ValueError('Batch must preserve the existing T0 and Energy policy')
     agent=config['agent']
@@ -122,7 +132,7 @@ def execution_preflight():
 
 def prepare(config, output):
     frozen=output/'config.frozen.json'
-    protocols=dict(planning=planning_protocol(),agent=agent_protocol(config))
+    protocols=dict(planning=planning_protocol(**planning_options(config)),agent=agent_protocol(config))
     if frozen.exists():
         if read(frozen)!=config or read(output/'protocols.json')!=protocols:
             raise ValueError('Frozen config/prompts changed; choose a new experiment, never resume with new rules')
@@ -196,9 +206,10 @@ def generate_scene(sample, output, config):
         return dict(status,planning='unavailable',agent='unavailable',execution='not_attempted_input_unavailable',
             reason=sample.get('error','Reference input unavailable'))
     image=folder/'reference.png'
-    planning=call_once(folder,'planning_response',image,planning_protocol(),config)
+    settings=planning_options(config)
+    planning=call_once(folder,'planning_response',image,planning_protocol(**settings),config)
     try:
-        evidence=evidence_from_plan(planning,sample['evaluation_size'])
+        evidence=evidence_from_plan(planning,sample['evaluation_size'],**settings)
         if (folder/'reference_evidence.json').exists():
             if read(folder/'reference_evidence.json')!=evidence:
                 raise ValueError('Frozen Reference Evidence changed')
@@ -223,7 +234,7 @@ def generate_scene(sample, output, config):
         status.update(agent='valid_python_unexecuted',generation_rounds=1)
     except (ValueError,KeyError,TypeError,SyntaxError) as exc:
         status.update(agent='unavailable',agent_error=str(exc),generation_rounds=1)
-    if evidence is not None:
+    if evidence is not None and evidence['atomic_evidence']:
         protocol,questions=verification_protocol(evidence)
         save(folder/'verification_questions.json',dict(protocol=protocol,questions=questions))
         answers=call_once(folder,'reference_answers',image,protocol,config)
@@ -331,6 +342,7 @@ def write_outputs(config, output, dataset, rows, checks, dino):
         evidence=read(f)
         with Image.open(folder/'reference.png') as image:
             build_reference(np.asarray(image.convert('RGB')),evidence)  # compatibility validation, no review promotion
+        if not evidence['atomic_evidence']:continue  # no fabricated questions or extra VQA call
         protocol,questions=verification_protocol(evidence)
         ref=folder/'reference_answers.json'
         if not ref.exists():continue

@@ -1,0 +1,23 @@
+{
+  "system": "你是独立的视觉证据验证器。\n\n你只能根据当前提供的一张图像以及被冻结的中立问题作答。\n你不知道另一张图片的内容，不知道 Reference 的预期答案，也不知道哪些差异被认为是重建错误。\n\n对于每个问题：\n- 能够明确确认事实成立时，回答 yes。\n- 能够根据可见内容明确确认事实不成立时，回答 no。\n- 遮挡、分辨率不足、类别身份不明确或证据不足时，回答 unknown。\n- 不得把未检测到物体直接等同于确认不存在。\n- 类别型问题必须从指定类别中选择；不能可靠区分时回答 ambiguous 或 unknown。\n- 对数量问题，仅在可可靠计数时给出整数。\n- 关系问题以当前图片视角为准。\n- Region BBox 是固定评价范围，而不是目标物体的检测框；需要时结合全图上下文。\n- 只能输出符合给定 JSON Schema 的答案，不进行主观整体评分。",
+  "user": "独立观察当前提供的一张图像，回答以下冻结的中立问题。区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：[{\"id\": \"R1\", \"name\": \"陈列区域\", \"bbox\": [0, 0, 640, 480]}]\n问题与答案空间：[{\"id\": \"E1\", \"region_id\": \"R1\", \"group_id\": null, \"anchor_id\": null, \"question\": \"指定区域内可辨认的书籍主要采用哪种排列方式？\", \"answer_type\": \"categorical_unknown\", \"categories\": [\"upright\", \"horizontal\", \"mixed\"]}]\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；categorical_unknown仅从冻结categories或ambiguous/unknown中选择。不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "E1": {
+        "type": "string",
+        "enum": [
+          "upright",
+          "horizontal",
+          "mixed",
+          "unknown",
+          "ambiguous"
+        ]
+      }
+    },
+    "required": [
+      "E1"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -4,6 +4,8 @@
 
 最近的重要实验见 [LATEST.md](LATEST.md)，缺失图像、历史链接和精简说明见 [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md)。
 
+最新协议修订：[Existing-Scene VLM evidence v1](existing_scene_protocol_v1/report.md)（2026-10-25），[协议文档](../EVIDENCE_PROTOCOL.md)、[规划契约](existing_scene_protocol_v1/planning_protocol.json)、[CPU检查](existing_scene_protocol_v1/checks.json)。436项CPU测试通过、24项新协议测试；0次模型调用。新版本支持可配置证据预算和类别题，明确未知/弃权及逐回答审计；历史契约和原始回答保留，新Batch显式选择版本。未审核VLM仅诊断，不改五类Energy或Runtime blocked，不宣称模型效果提升。
+
 审核分支最新：[Benchmark v0.1 实际部分批次](benchmark_v01/benchmark_report.md)（2026-10-25），[8张固定输入](benchmark_v01/dataset_manifest.json)、[逐样本结果](benchmark_v01/per_scene_results.csv)、[真实调用与状态](benchmark_v01/run_manifest.json)、[汇总](benchmark_v01/aggregate_results.json)、[批量人工审核](benchmark_v01/audit_packet.md)、[实际环境/安全检查](benchmark_v01/execution_checks.json)、[批次验证及412项CPU测试](benchmark_v01/batch_validation.json)。24次真实Codex CLI调用，无重试；8份新代码语法有效但未执行。缺少合格的隔离执行后端，0次Blender渲染，5类Energy及Structural全部N/A，未完成正式Benchmark。19个Region、0个Group、3个Anchor、24条未审核原子候选；Group-aware尚未覆盖。混合来源RGB的图片权利清理未完成，所有真实图、衍生PNG、场景资产和代码型回答不公开；不改Energy/权重/Runtime blocked、不合并main。
 
 审核分支 M3.0：[M3.0 Real-Agent Offline Pilot](m3_real_agent_offline_pilot/summary.md)（2026-10-25），[Evidence Audit](m3_real_agent_offline_pilot/evidence_audit.md)、[真实回答Replay](m3_real_agent_offline_pilot/verification_results.json)、[完整报告](m3_real_agent_offline_pilot/report.json)、[接口/测试](m3_real_agent_offline_pilot/integration_checks.json)。两组历史真实配对完成来源、固定ROI和相机诊断；保留厨房K3及书籍排列候选、唱片类别Unknown和条件几何局限。395项CPU测试通过，新增9项；0次新模型/Agent/Blender。真实图片与衍生PNG/Mask因再分发许可未确认仅留服务器；所有语义/结构结果未审核，仅debug，不合并main、不改Energy或Runtime blocked。

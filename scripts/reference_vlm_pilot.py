@@ -17,7 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from e_harness.benchmark_offline import run_manifest
 from e_harness.verification_adapter import (codex_answer, compare_answers, contract,
-    parse_answer, probe_cli, validate_diagnostics)
+    parse_answer, probe_cli, validate_diagnostics, answer_schema,
+    LEGACY_PROTOCOL, EXISTING_SCENE_PROTOCOL, VERIFICATION_SYSTEM)
 
 
 def save(path, document):
@@ -40,8 +41,59 @@ OPTIONAL_ID = dict(anyOf=[ID, dict(type='null')])
 BOX = dict(type='array', items=dict(type='number', minimum=0, maximum=1000), minItems=4, maxItems=4)
 
 
-def planning_protocol():
+PLANNING_SYSTEM = '''你是 Project e 的单图像评价证据规划器。
+
+你的任务是仅依据当前 Reference RGB，提取适合评价三维场景重建质量的可观察证据。
+你看不到被评测 Agent 的 Render、Blender 场景、对象名称或任何预期错误。
+
+请按以下原则工作：
+- 首先识别约 1–5 个有评价意义的粗粒度 Region，简单场景允许只有一个。Region 是评价范围，不是精确物体 Mask。
+- 对重复或成组内容，例如书籍、唱片、柜体、桌椅组合等，必要时建立 Semantic Group。一个 Group 可以包含多个物体，无须枚举每个实例。
+- 对特别重要、且需要投影位置测量的对象，可以选择少量 Anchor。
+- 为主要 Region 或 Group 选择有区分力的原子证据，不要只集中于物体存在和数量。
+- 在确实可观察时，考虑对象类别、显著属性、离散空间关系、局部排列、结构分隔、相对布局及尺度特征。
+- 不强制每个 Region 具备所有类型的证据，也不强制图片一定包含 Group。
+- 每个问题仅检查一个明确事实；避免含糊的“是否合理”“是否相似”“是否重建正确”。
+- 只能根据可见信息提问。遮挡、类别混淆或细节不足时，必须允许 unknown。
+- left_of/right_of 等方向关系定义为当前输入相机视角下的投影关系。
+- 不得将不可见的内部构造、真实物理连接或三维深度推断当作直接观察。
+- 不得根据被测 Render 选择、更换或修改证据。
+- 输出符合 Schema 的 JSON，不输出期望的验证答案。
+
+根据图像复杂度，优先形成少量高质量的原子证据，而不是生成冗长问题清单。
+证据预算是上限，具体是否生成取决于可观察性。'''
+
+
+def planning_protocol(protocol_version=LEGACY_PROTOCOL, *, evidence_budget=None):
     """No scene vocabulary, fixture labels, object names or expected change in this input."""
+    if protocol_version == EXISTING_SCENE_PROTOCOL:
+        budget = 10 if evidence_budget is None else evidence_budget
+        if type(budget) is not int or not 1 <= budget <= 10:
+            raise ValueError('Evidence budget must be an integer in 1..10')
+        schema = obj(dict(
+            regions=dict(type='array', minItems=1, maxItems=5, items=obj(dict(
+                id=ID, name=TEXT, description=TEXT, bbox=BOX))),
+            groups=dict(type='array', maxItems=5, items=obj(dict(id=ID, region_id=ID, name=TEXT, scope=TEXT))),
+            anchors=dict(type='array', maxItems=3, items=obj(dict(id=ID, region_id=ID, category=TEXT, bbox=BOX))),
+            evidence=dict(type='array', maxItems=budget, items=obj(dict(
+                id=ID, region_id=ID, group_id=OPTIONAL_ID, anchor_id=OPTIONAL_ID,
+                type=dict(type='string', enum=['semantic', 'spatial', 'statistical']),
+                claim=TEXT, question=TEXT,
+                answer_type=dict(type='string', enum=['yes_no_unknown', 'count_unknown', 'categorical_unknown']),
+                categories=dict(type='array', maxItems=12,
+                    items=dict(type='string', minLength=1, maxLength=64)))))))
+        return contract(dict(system=PLANNING_SYSTEM,
+            user='仅根据当前 Reference RGB 规划评价证据，最多 '+str(budget)+' 条原子命题；不要为填满预算生成问题。'
+            'Region bbox 使用0–1000归一化xyxy粗范围；Anchor bbox仅表示其自身可见范围。'
+            '使用唯一ASCII ID并正确引用region_id，未用group_id或anchor_id填null。groups和anchors允许为空。'
+            '证据类型为semantic、spatial或statistical。answer_type为yes_no_unknown、count_unknown或categorical_unknown。'
+            '类别型问题的categories必须在此Reference-only阶段给出1–12个互异、简短、中立的候选类别，'
+            '不包括保留的unknown或ambiguous；其他答案类型的categories填空数组。'
+            '类别集合不代表期望答案；不要输出expected、答案、置信度或推理。'
+            '连续投影位置、相对面积和间距应由可靠RGB定位及确定性测量获得，不要求视觉验证器估算精确坐标。',
+            schema=schema))
+    if protocol_version != LEGACY_PROTOCOL or evidence_budget not in (None, 3):
+        raise ValueError('Unknown protocol or attempted change to the frozen legacy budget')
     schema = obj(dict(
         regions=dict(type='array', minItems=1, maxItems=4, items=obj(dict(
             id=ID, name=TEXT, description=TEXT, bbox=BOX))),
@@ -61,11 +113,12 @@ def planning_protocol():
         schema=schema))
 
 
-def evidence_from_plan(packet, size):
+def evidence_from_plan(packet, size, *, protocol_version=LEGACY_PROTOCOL, evidence_budget=None):
     """Validate full plan and references before freezing; never repair model coordinates."""
-    if packet.get('actual_input') != planning_protocol():
+    protocol = planning_protocol(protocol_version, evidence_budget=evidence_budget)
+    if packet.get('actual_input') != protocol:
         raise ValueError('Planning input differs from the frozen Reference-only contract')
-    parsed = parse_answer(packet.get('raw_answer'), planning_protocol()['schema'])
+    parsed = parse_answer(packet.get('raw_answer'), protocol['schema'])
     if packet.get('status') != 'valid' or parsed['status'] != 'valid':
         raise ValueError('Planning unavailable/invalid: '+str(parsed.get('schema_errors')))
     plan = parsed['document']
@@ -80,6 +133,7 @@ def evidence_from_plan(packet, size):
         if row['region_id'] not in regions:
             raise ValueError('Unknown Region endpoint')
     for row in plan['evidence']:
+        answer_schema(row['answer_type'], row.get('categories'))
         for key, lookup in (('group_id', groups), ('anchor_id', anchors)):
             if row[key] is not None and (row[key] not in lookup or
                     lookup[row[key]]['region_id'] != row['region_id']):
@@ -89,6 +143,9 @@ def evidence_from_plan(packet, size):
         usage='provisional/debug', source='Reference-only Codex CLI planning; not GT',
         provenance=dict(backend='codex_cli', planning_response='planning_response.json',
                         input_side='reference_only', expected_answers_supplied=False))
+    if protocol_version != LEGACY_PROTOCOL:
+        result['evidence_protocol'] = dict(version=protocol_version,
+            evidence_budget=protocol['schema']['properties']['evidence']['maxItems'])
     for kind in ('regions', 'anchors'):
         for row in plan[kind]:
             x1,y1,x2,y2 = row['bbox']
@@ -113,15 +170,35 @@ def evidence_from_plan(packet, size):
 
 def verification_protocol(evidence):
     """Claims/answers are excluded. Both sides receive identical neutral questions."""
+    settings = evidence.get('evidence_protocol', dict(version=LEGACY_PROTOCOL))
+    version = settings['version']
+    planning_protocol(version, evidence_budget=settings.get('evidence_budget'))
     fields, questions = {}, []
     for row in evidence['atomic_evidence']:
         field = row['id']
-        fields[field] = (dict(type='string', enum=['yes','no','unknown'])
-            if row['answer_type']=='yes_no_unknown' else
-            dict(anyOf=[dict(type='integer', minimum=0), dict(type='string', enum=['unknown'])]))
+        if field in fields:
+            raise ValueError('Duplicate evidence ID')
+        if version == LEGACY_PROTOCOL and row['answer_type'] not in ('yes_no_unknown', 'count_unknown'):
+            raise ValueError('Legacy protocol does not support this answer_type')
+        fields[field] = answer_schema(row['answer_type'], row.get('categories'))
         questions.append(dict(evidence_id=field, field=field, region_id=row['region_id'],
             group_id=row['group_id'], anchor_id=row['anchor_id'], energy=row['type'],
             claim=row['claim'], question=row['question'], provenance=row['provenance'], reviewed=False))
+        if version == EXISTING_SCENE_PROTOCOL:
+            questions[-1].update(answer_type=row['answer_type'], categories=deepcopy(row['categories']),
+                                 protocol_version=version)
+    if version == EXISTING_SCENE_PROTOCOL:
+        # Deliberate allowlist: no claim, Reference answer, expected value or reviewer labels.
+        neutral = [{k:row[k] for k in ('id','region_id','group_id','anchor_id','question','answer_type','categories')}
+                   for row in evidence['atomic_evidence']]
+        regions = [{k:row[k] for k in ('id','name','bbox')} for row in evidence['regions']]
+        user = ('独立观察当前提供的一张图像，回答以下冻结的中立问题。'
+            '区域框为原图像素xyxy固定评价范围，两侧使用相同坐标及完整图像上下文。\n区域定义：'+
+            json.dumps(regions, ensure_ascii=False)+'\n问题与答案空间：'+json.dumps(neutral, ensure_ascii=False)+
+            '\nyes_no_unknown仅用yes/no/unknown；count_unknown仅用非负整数或unknown；'
+            'categorical_unknown仅从冻结categories或ambiguous/unknown中选择。'
+            '不要估算连续投影距离或面积，不输出总体评分。只输出以问题ID为字段的JSON。')
+        return contract(dict(system=VERIFICATION_SYSTEM, user=user, schema=obj(fields))), questions
     prompt = '\n'.join(row['id']+'：'+row['question']+' 答案类型：'+row['answer_type']
                        for row in evidence['atomic_evidence'])
     regions = [{k:row[k] for k in ('id','name','bbox')} for row in evidence['regions']]
@@ -248,36 +325,43 @@ def write_summary(output, report, comparison):
     (output/'summary.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
 
 
-def planning_failure(m1, output, reference, detail):
+def planning_failure(m1, output, reference, detail, *, evidence=None):
     """Keep RGB/Geometry evaluation available without manufacturing a plan or VQA."""
     rendered='images/'+uuid.uuid4().hex+'.png'
     with Image.open(m1/'changed/render.png') as image:
         image.convert('RGB').save(output/rendered)
-    save(output/'failure.json',dict(error=detail,reviewed=False,usage='provisional/debug'))
+    save(output/('failure.json' if evidence is None else 'verification_unavailable.json'),
+         dict(reason=detail,reviewed=False,usage='provisional/debug'))
     save(output/'verification_results.json',dict(status='unavailable',results=[],reason=detail,
         reviewed=False,energy_contribution=False,usage='provisional/debug'))
     manifest=dict(reference_rgb=reference,render_rgb=rendered,
         geometry=str(m1/'changed/geometry.json'),render_metadata=str(m1/'changed/export_metadata.json'),
         coordinates=dict(convention='reference_pixel_xyxy',render_mapping='identity',basis='Saved paired M1 RGB'),
         provenance=dict(new_blender_executions=0,planning_failure=detail))
+    if evidence is not None:
+        manifest['reference_evidence']='reference_evidence.json'
+        del manifest['provenance']['planning_failure']
+        manifest['provenance'].update(planning_status='valid', verification_status='unavailable_no_questions')
     save(output/'offline_manifest.json',manifest)
     report=run_manifest(output/'offline_manifest.json',output/'offline_evaluation')
     report['coordinates']['valid_mask']='offline_evaluation/valid_pixels.png'
     save(output/'report.json',report)
-    overview(output/'comparison.png',[output/reference,output/rendered],{}, {})
-    (output/'summary.md').write_text('# M2 planning unavailable\n\nreviewed:false; provisional/debug.\n\n'+
+    overview(output/'comparison.png',[output/reference,output/rendered],evidence or {}, {})
+    title = '# Planning valid; no observable atomic questions' if evidence is not None else '# M2 planning unavailable'
+    (output/'summary.md').write_text(title+'\n\nreviewed:false; provisional/debug.\n\n'+
         detail+'\n\nNo VQA attempted. RGB/Geometry evaluation retained; no plan or answers invented. '
         'No new Blender execution or formal qualification.\n')
 
 
-def run(m1, output, *, model='gpt-6-sol', timeout=180):
+def run(m1, output, *, model='gpt-6-sol', timeout=180,
+        protocol_version=LEGACY_PROTOCOL, evidence_budget=None):
+    protocol=planning_protocol(protocol_version, evidence_budget=evidence_budget)
     m1,output=Path(m1).resolve(),Path(output).resolve()
     output.mkdir(parents=True, exist_ok=False)
     (output/'images').mkdir()
     reference='images/'+uuid.uuid4().hex+'.png'
     with Image.open(m1/'baseline/render.png') as image:
         size=image.size; image.convert('RGB').save(output/reference)
-    protocol=planning_protocol()
     save(output/'planning_protocol.json',protocol)
     probe=probe_cli(output/reference,protocol)
     save(output/'cli_preflight.json',probe)
@@ -295,13 +379,16 @@ def run(m1, output, *, model='gpt-6-sol', timeout=180):
         return packet
     planning=call(output/reference,protocol,'planning_response')
     try:
-        evidence=evidence_from_plan(planning,size)
+        evidence=evidence_from_plan(planning,size,protocol_version=protocol_version,evidence_budget=evidence_budget)
     except ValueError as exc:
         planning_failure(m1,output,reference,str(exc))
         return
     save(output/'reference_evidence.json',evidence)
     frozen=(output/'reference_evidence.json').read_bytes()
     (output/'reference_evidence.json').chmod(0o444)
+    if not evidence['atomic_evidence']:
+        planning_failure(m1,output,reference,'No observable atomic questions; no VQA attempts',evidence=evidence)
+        return
     protocol,questions=verification_protocol(evidence)
     save(output/'verification_protocol.json',protocol)
     save(output/'verification_questions.json',questions)
@@ -336,8 +423,13 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--model', default='gpt-6-sol')
     parser.add_argument('--timeout', type=float, default=180)
+    parser.add_argument('--protocol-version', choices=[LEGACY_PROTOCOL, EXISTING_SCENE_PROTOCOL],
+                        default=EXISTING_SCENE_PROTOCOL)
+    parser.add_argument('--evidence-budget', type=int, default=None,
+                        help='New protocol: maximum 1..10 questions, not a quota (default 10)')
     args=parser.parse_args()
-    run(args.m1,args.output,model=args.model,timeout=args.timeout)
+    run(args.m1,args.output,model=args.model,timeout=args.timeout,
+        protocol_version=args.protocol_version,evidence_budget=args.evidence_budget)
 
 
 if __name__=='__main__':

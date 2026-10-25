@@ -1,0 +1,19 @@
+{
+  "protocol_version": "existing_scene_v1",
+  "evidence_budget": 10,
+  "tests": 436,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_protocol_tests": 24,
+  "elapsed_seconds": 13.87,
+  "passed": true,
+  "model_requests": 0,
+  "real_subprocesses": 0,
+  "network_connections": 0,
+  "execution": "CPU unittest with socket.connect and subprocess.Popen denied; transport boundaries mocked",
+  "historical_contracts_unchanged": true,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "formal_energy_contribution": false
+}

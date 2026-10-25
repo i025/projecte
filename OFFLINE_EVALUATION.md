@@ -163,6 +163,10 @@ nonfinite numbers. Valid sibling answers survive a missing/invalid field.
 Planning can return nested data, but deterministic answer comparison accepts
 atomic categorical/count fields, not nested planning objects. This transport
 does not establish the semantic correctness of a question or answer.
+New experiments can opt into the separately frozen
+[Existing-Scene evidence protocol](EVIDENCE_PROTOCOL.md): configurable evidence
+budget, categorical answer spaces, explicit ambiguity abstention and per-answer
+audit records. Existing M2/v0.1 contracts remain available without migration.
 The contract allowlist is `system`, `user`, `schema`; expectations and other-side
 answers belong to the coordinator and must never be added to that contract.
 No `ModelClient` provider API route is changed. Existing book parsing/comparison
