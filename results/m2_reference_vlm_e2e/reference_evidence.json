@@ -1,0 +1,77 @@
+{
+  "image_size": [
+    256,
+    256
+  ],
+  "regions": [
+    {
+      "id": "r1",
+      "name": "前景方块",
+      "description": "绿色地面上的红色和蓝色立方体",
+      "bbox": [
+        26.88,
+        148.48,
+        202.24,
+        240.64
+      ],
+      "raw_bbox_0_1000": [
+        105,
+        580,
+        790,
+        940
+      ],
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI output; no object-name or geometry input",
+      "metrics": [
+        "appearance",
+        "spatial",
+        "statistical",
+        "perceptual"
+      ]
+    }
+  ],
+  "anchors": [],
+  "groups": [],
+  "atomic_evidence": [
+    {
+      "id": "e1",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "statistical",
+      "claim": "前景有两个显著的彩色立方体。",
+      "question": "前景有几个显著的彩色立方体？",
+      "answer_type": "count_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    },
+    {
+      "id": "e2",
+      "region_id": "r1",
+      "group_id": null,
+      "anchor_id": null,
+      "type": "spatial",
+      "claim": "红色立方体位于蓝色立方体左侧。",
+      "question": "红色立方体是否位于蓝色立方体左侧？",
+      "answer_type": "yes_no_unknown",
+      "reviewed": false,
+      "reliability": 0.0,
+      "status": "candidate",
+      "provenance": "Reference-only CLI planning; automatic, unreviewed"
+    }
+  ],
+  "inventory_complete": false,
+  "reviewed": false,
+  "usage": "provisional/debug",
+  "source": "Reference-only Codex CLI planning; not GT",
+  "provenance": {
+    "backend": "codex_cli",
+    "planning_response": "planning_response.json",
+    "input_side": "reference_only",
+    "expected_answers_supplied": false
+  }
+}

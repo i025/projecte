@@ -1,0 +1,36 @@
+{
+  "system": "你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。",
+  "user": "独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"前景方块\", \"bbox\": [26.88, 148.48, 202.24, 240.64]}]\ne1：前景有几个显著的彩色立方体？ 答案类型：count_unknown\ne2：红色立方体是否位于蓝色立方体左侧？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "e1": {
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": 0
+          },
+          {
+            "type": "string",
+            "enum": [
+              "unknown"
+            ]
+          }
+        ]
+      },
+      "e2": {
+        "type": "string",
+        "enum": [
+          "yes",
+          "no",
+          "unknown"
+        ]
+      }
+    },
+    "required": [
+      "e1",
+      "e2"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -4,6 +4,12 @@
 
 日期按原报告的文件时间（mtime，Asia/Shanghai）分组，不冒充无法核实的实际推理日期。完整历史见 [实验索引](README.md)；缺图和历史链接说明见 [公开内容说明](PUBLICATION_NOTES.md)。
 
+## M2 Reference Evidence + Real VLM End-to-End（2026-10-25；审核分支，未合并 main）
+
+| 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |
+| --- | --- | --- | --- | --- |
+| 保存的 M1 RGB → Reference-only 规划 → 真实 VQA → Offline | 三次真实 Codex CLI 调用无重试；自动规划 1 区、2 条命题，两侧均回答数量2、左右关系yes，均satisfied；已知位移被粗命题漏检，图像Appearance仍响应。373项CPU测试通过，新增20项。 | [自制 comparison.png](m2_reference_vlm_e2e/comparison.png) | [总结与复现](m2_reference_vlm_e2e/summary.md) · [冻结证据](m2_reference_vlm_e2e/reference_evidence.json) · [真实回答](m2_reference_vlm_e2e/verification_results.json) · [完整报告](m2_reference_vlm_e2e/report.json) · [检查](m2_reference_vlm_e2e/validation_checks.json) | reviewed=false、provisional/debug；VLM仅诊断，条件Energy与M1一致。Group/Anchor为空，相关接口仅CPU测试。0次新Blender执行，不将回放升级可信执行；模型快照和强文件隔离未核实。Semantic/Perceptual/Structural N/A，Runtime仍blocked。 |
+
 ## Trusted Blender End-to-End Pilot（2026-10-25；审核分支，未合并 main）
 
 | 实验 | 已获得的结论 | 图像 | 报告与数据 | 审核状态及局限 |

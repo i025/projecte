@@ -1,0 +1,39 @@
+{
+  "actual_model_attempts": 3,
+  "ledger": [
+    {
+      "image": "images/83e78a05d77e44f99484f456000273fe.png",
+      "request_id": "planning_response",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 15.967060456983745
+    },
+    {
+      "image": "images/83e78a05d77e44f99484f456000273fe.png",
+      "request_id": "reference_answers",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 15.442218411015347
+    },
+    {
+      "image": "images/a3a2f890e3614650bba9f32963abe88a.png",
+      "request_id": "render_answers",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 12.993526036152616
+    }
+  ],
+  "automatic_retries": 0,
+  "reference_frozen_before_changed_read": true,
+  "frozen_bytes_unchanged": true,
+  "identical_verification_contract": true,
+  "strict_filesystem_isolation": false,
+  "vlm_pair_status": "available",
+  "questions_linked_to_existing_regions": true,
+  "groups_optional": true,
+  "new_blender_executions": 0,
+  "prior_execution_not_recertified": true,
+  "all_vlm_results_unreviewed": true,
+  "vlm_energy_contribution": false,
+  "formal_eligible": false
+}

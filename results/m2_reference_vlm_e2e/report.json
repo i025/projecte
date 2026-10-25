@@ -1,0 +1,3722 @@
+{
+  "scene_validity": {
+    "status": "unverified",
+    "formal_eligible": false,
+    "camera_protocol": "pose_consistent_unverified",
+    "pose_matches_T0": true,
+    "actual_poses": {
+      "camera.matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "expected_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declared_fixed_extrinsics_enforced": true,
+    "reason": "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding",
+    "reasons": [
+      "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+    ]
+  },
+  "energies": {
+    "semantic": {
+      "value": null,
+      "status": "unavailable",
+      "m": 0,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 0,
+      "eligible_count": 0,
+      "coverage": null,
+      "eligible_coverage": null,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [],
+      "unavailable_metrics": [],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    },
+    "spatial": {
+      "value": 0.002285003662109375,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 4,
+      "applicable_count": 5,
+      "eligible_count": 4,
+      "coverage": 0.8,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r1",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:r1"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.25,
+          "observation_weight": 0.08333333333333333
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "appearance": {
+      "value": 0.03928318397671568,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 5,
+      "applicable_count": 6,
+      "eligible_count": 5,
+      "coverage": 0.8333333333333334,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "global:global",
+        "region:r1",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "region:r1"
+      ],
+      "participating_metrics": [
+        "global:global",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_records": [
+        {
+          "id": "global",
+          "level": "global",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.3333333333333333,
+          "observation_weight": 0.1111111111111111
+        },
+        {
+          "id": "patch_0_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_0_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_1_0",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        },
+        {
+          "id": "patch_1_1",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 1.0,
+          "effective_weight": 1.0,
+          "within_energy_weight": 0.16666666666666666,
+          "observation_weight": 0.05555555555555555
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "statistical": {
+      "value": 0.003341700152893731,
+      "status": "partial",
+      "m": 1,
+      "q": 1.0,
+      "evidence_reliability": 1.0,
+      "base_weight": 1.0,
+      "aggregation_weight": 1.0,
+      "valid_count": 8,
+      "applicable_count": 10,
+      "eligible_count": 8,
+      "coverage": 0.8,
+      "eligible_coverage": 1.0,
+      "reason": null,
+      "expected_metrics": [
+        "region:r1:texture",
+        "region:r1:distribution",
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "unavailable_metrics": [
+        "region:r1:texture",
+        "region:r1:distribution"
+      ],
+      "participating_metrics": [
+        "region:patch_0_0:texture",
+        "region:patch_0_0:distribution",
+        "region:patch_0_1:texture",
+        "region:patch_0_1:distribution",
+        "region:patch_1_0:texture",
+        "region:patch_1_0:distribution",
+        "region:patch_1_1:texture",
+        "region:patch_1_1:distribution"
+      ],
+      "participating_records": [
+        {
+          "id": "patch_0_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_0_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_0:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1:texture",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        },
+        {
+          "id": "patch_1_1:distribution",
+          "level": "region",
+          "q": 1.0,
+          "aggregation_weight": 0.5,
+          "effective_weight": 0.5,
+          "within_energy_weight": 0.125,
+          "observation_weight": 0.041666666666666664
+        }
+      ],
+      "normalized_aggregation_weight": 0.3333333333333333
+    },
+    "perceptual": {
+      "value": null,
+      "status": "unavailable",
+      "m": 1,
+      "q": null,
+      "evidence_reliability": null,
+      "base_weight": 1.0,
+      "aggregation_weight": 0.0,
+      "valid_count": 0,
+      "applicable_count": 6,
+      "eligible_count": 5,
+      "coverage": 0.0,
+      "eligible_coverage": 0.0,
+      "reason": "No usable evidence or required extractor unavailable",
+      "expected_metrics": [
+        "global:global",
+        "region:r1",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "unavailable_metrics": [
+        "global:global",
+        "region:r1",
+        "region:patch_0_0",
+        "region:patch_0_1",
+        "region:patch_1_0",
+        "region:patch_1_1"
+      ],
+      "participating_metrics": [],
+      "participating_records": [],
+      "normalized_aggregation_weight": 0.0
+    }
+  },
+  "observation_energy": 0.014969962597239594,
+  "structural_energy": null,
+  "structure": {
+    "energy": null,
+    "energies": {
+      "penetration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 36,
+        "coverage": 0.0,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "support": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      },
+      "degeneration": {
+        "value": null,
+        "status": "unavailable",
+        "valid_count": 0,
+        "check_count": 0,
+        "coverage": null,
+        "reason": "No reliable reviewed structural checks"
+      }
+    },
+    "check_coverage": 0.0,
+    "checks": {
+      "penetration": [
+        {
+          "unit_ids": [
+            "floor",
+            "other"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_0"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_1"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_0"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_1"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "other",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_1"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_2"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_3"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_4"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "repeat_5"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        },
+        {
+          "unit_ids": [
+            "repeat_5",
+            "anchor"
+          ],
+          "value": null,
+          "reason": "Candidate only: semantic triage unavailable or unreviewed",
+          "classification": null,
+          "reviewed": false
+        }
+      ],
+      "support": [],
+      "degeneration": []
+    },
+    "diagnostics": [],
+    "raw_geometry": {
+      "collisions": [
+        {
+          "unit_ids": [
+            "floor",
+            "other"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "other"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_0"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "repeat_0"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_1"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 1.6858739115832577e-07,
+              "components": [
+                "floor",
+                "repeat_1"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_2"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 5.960464477539063e-08,
+              "components": [
+                "floor",
+                "repeat_2"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_3"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 1.4901161193847656e-07,
+              "components": [
+                "floor",
+                "repeat_3"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_4"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 1.1920928955078125e-07,
+              "components": [
+                "floor",
+                "repeat_4"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "repeat_5"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 0.0,
+              "components": [
+                "floor",
+                "repeat_5"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "floor",
+            "anchor"
+          ],
+          "status": "contact",
+          "value": 1.0,
+          "narrow_phase": [
+            {
+              "status": "contact",
+              "value": 1.0,
+              "nearest_probe_distance": 8.940696716308594e-08,
+              "components": [
+                "floor",
+                "anchor"
+              ]
+            }
+          ]
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_0"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_1"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_2"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "other",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_1"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_2"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_0",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_2"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_1",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_3"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_2",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_4"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_3",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "repeat_5"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_4",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        },
+        {
+          "unit_ids": [
+            "repeat_5",
+            "anchor"
+          ],
+          "status": "separate",
+          "value": 1.0,
+          "broad_phase": "disjoint"
+        }
+      ],
+      "objects": [
+        {
+          "unit_id": "floor",
+          "bounds": [
+            [
+              -3.5,
+              -2.5,
+              -0.30000001192092896
+            ],
+            [
+              3.5,
+              2.5,
+              0.0
+            ]
+          ],
+          "support": {
+            "status": "not_evaluable",
+            "value": null,
+            "supports": [],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": null,
+            "reason": "No sufficiently distributed upward-facing contact; attachment or missed support cannot be excluded",
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": null,
+            "status": "not_evaluable",
+            "reason": "No verified support; possible attachment or incomplete evidence. Unsupported candidate only."
+          },
+          "component_names": [
+            "floor"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "other",
+          "bounds": [
+            [
+              0.5,
+              -0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              1.0
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5,
+                      -0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5,
+                      0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.5,
+                      -0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.5,
+                      0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "other"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_0",
+          "bounds": [
+            [
+              -2.125,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.875,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -2.125,
+                      1.1749999523162842,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -2.125,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.875,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.875,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_0"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_1",
+          "bounds": [
+            [
+              -1.3250000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.0750000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.3250000476837158,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.3250000476837158,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.0750000476837158,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -1.0750000476837158,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_1"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_2",
+          "bounds": [
+            [
+              -0.5249999761581421,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -0.2750000059604645,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.5249999761581421,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.5249999761581421,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.2750000059604645,
+                      1.1749999523162842,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.2750000059604645,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_2"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_3",
+          "bounds": [
+            [
+              0.2750000059604645,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              0.5249999761581421,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.2750000059604645,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.2750000059604645,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5249999761581421,
+                      1.1749999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.5249999761581421,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -2.2351741811588166e-10,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_3"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_4",
+          "bounds": [
+            [
+              1.0750000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              1.3250000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.0750000476837158,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.0750000476837158,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.3250000476837158,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.3250000476837158,
+                      1.4249999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_4"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "repeat_5",
+          "bounds": [
+            [
+              1.875,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              2.125,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.875,
+                      1.1749999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      1.875,
+                      1.4249999523162842,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      2.125,
+                      1.1749999523162842,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      2.125,
+                      1.4249999523162842,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "repeat_5"
+          ],
+          "affine_rank": 3
+        },
+        {
+          "unit_id": "anchor",
+          "bounds": [
+            [
+              -0.6000000238418579,
+              -0.5,
+              0.0
+            ],
+            [
+              0.4000000059604645,
+              0.5,
+              1.5
+            ]
+          ],
+          "support": {
+            "status": "supported",
+            "value": 1.0,
+            "supports": [
+              {
+                "receiver": "floor",
+                "value": 1.0,
+                "contact_count": 4,
+                "base_sample_count": 4,
+                "contact_fraction": 1.0,
+                "contact_xy_rank": 2,
+                "points": [
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.6000000238418579,
+                      -0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      -0.6000000238418579,
+                      0.5,
+                      -9.313225746154785e-10
+                    ],
+                    "gap": 7.078051564995969e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.4000000059604645,
+                      -0.5,
+                      0.0
+                    ],
+                    "gap": -2.2351741811588166e-10
+                  },
+                  {
+                    "receiver": "floor",
+                    "point": [
+                      0.4000000059604645,
+                      0.5,
+                      9.313225746154785e-10
+                    ],
+                    "gap": -1.1548399927313602e-09
+                  }
+                ],
+                "reason": null
+              }
+            ],
+            "base_sample_count": 4,
+            "minimum_observed_downward_gap": -1.1548399927313602e-09,
+            "reason": null,
+            "scope": "Static geometric support; not center of mass, friction, load-bearing strength or dynamic stability"
+          },
+          "floating": {
+            "value": 1.0,
+            "status": "no_floating_detected",
+            "reason": null
+          },
+          "component_names": [
+            "anchor"
+          ],
+          "affine_rank": 3
+        }
+      ],
+      "semantic_grouping_reviewed": false,
+      "support_receivers_complete": false,
+      "components": [
+        {
+          "name": "floor",
+          "closed": true,
+          "bounds": [
+            [
+              -3.5,
+              -2.5,
+              -0.30000001192092896
+            ],
+            [
+              3.5,
+              2.5,
+              0.0
+            ]
+          ],
+          "volume_estimate": 10.500000417232513,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "anchor",
+          "closed": true,
+          "bounds": [
+            [
+              -0.6000000238418579,
+              -0.5,
+              0.0
+            ],
+            [
+              0.4000000059604645,
+              0.5,
+              1.5
+            ]
+          ],
+          "volume_estimate": 1.5000000447034836,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "other",
+          "closed": true,
+          "bounds": [
+            [
+              0.5,
+              -0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              1.0
+            ]
+          ],
+          "volume_estimate": 1.0,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_0",
+          "closed": true,
+          "bounds": [
+            [
+              -2.125,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.875,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_1",
+          "closed": true,
+          "bounds": [
+            [
+              -1.3250000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -1.0750000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_2",
+          "closed": true,
+          "bounds": [
+            [
+              -0.5249999761581421,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              -0.2750000059604645,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.01499999787658457,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_3",
+          "closed": true,
+          "bounds": [
+            [
+              0.2750000059604645,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              0.5249999761581421,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.01499999787658457,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_4",
+          "closed": true,
+          "bounds": [
+            [
+              1.0750000476837158,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              1.3250000476837158,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        },
+        {
+          "name": "repeat_5",
+          "closed": true,
+          "bounds": [
+            [
+              1.875,
+              1.1749999523162842,
+              0.0
+            ],
+            [
+              2.125,
+              1.4249999523162842,
+              0.23999999463558197
+            ]
+          ],
+          "volume_estimate": 0.014999999664723873,
+          "affine_rank": 3,
+          "vertex_count": 8,
+          "triangle_count": 12
+        }
+      ],
+      "scope": "Evaluated scene coordinates; +Z up; geometry-only candidates, semantic triage required"
+    },
+    "existing_triage": {},
+    "rules": {},
+    "weight_status": "provisional",
+    "limitations": [
+      "E_3D is conditional on available reviewed checks, not a completeness certificate.",
+      "BVH witnesses are sampled candidates; normal assemblies are not penalized.",
+      "Support is static Z-up geometry, not physical stability; thinness alone is not degeneration."
+    ]
+  },
+  "evidence_coverage": 0.6296296296296297,
+  "observation_status": "partial",
+  "evidence_counts": {
+    "expected": 27,
+    "eligible": 22,
+    "valid": 17
+  },
+  "eligible_evidence_coverage": 0.7727272727272727,
+  "uncertainty": {
+    "region_coverage": 0.64,
+    "region_pixel_coverage": 1.0,
+    "anchor_coverage": null,
+    "anchor_evidence_review_coverage": null,
+    "structural_check_coverage": 0.0,
+    "unknown_evidence": [
+      {
+        "id": "global",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "r1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1:texture",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1:distribution",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "r1",
+        "reason": "Unreviewed/unknown evidence"
+      },
+      {
+        "id": "patch_0_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_0_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_0",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "patch_1_1",
+        "reason": "Local DINO extractor unavailable; no substitute feature score"
+      },
+      {
+        "id": "fixed_camera_contract",
+        "reason": "Static RGB and external JSON do not attest trusted renderer execution or RGB/metadata binding"
+      }
+    ],
+    "conflicting_evidence": [],
+    "unreviewed_anchor_count": 0
+  },
+  "error_diagnostics": {
+    "regions": [
+      {
+        "id": "global",
+        "level": "global",
+        "reference_pixel_weight": 65536.0,
+        "color_l1": 0.03928318397671569,
+        "coarse_boundary_error": 0.0091400146484375,
+        "grayscale_wasserstein": 0.002902984619140625,
+        "edge_coverage_error": 0.0004425048828125,
+        "gradient_mean_error": 0.00012659808389501584,
+        "texture_statistics_proxy": 0.0011573625286160469,
+        "edge_distribution_proxy": 0.0085906982421875,
+        "edge_distribution_per_scale": {
+          "4": 0.0059661865234375,
+          "8": 0.0091400146484375,
+          "16": 0.0106658935546875
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_0",
+        "level": "region",
+        "reference_pixel_weight": 16384.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "texture_statistics_proxy": 0.0,
+        "edge_distribution_proxy": 0.0,
+        "edge_distribution_per_scale": {
+          "4": 0.0,
+          "8": 0.0,
+          "16": 0.0
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_0_1",
+        "level": "region",
+        "reference_pixel_weight": 16384.0,
+        "color_l1": 0.0,
+        "coarse_boundary_error": 0.0,
+        "grayscale_wasserstein": 0.0,
+        "edge_coverage_error": 0.0,
+        "gradient_mean_error": 0.0,
+        "texture_statistics_proxy": 0.0,
+        "edge_distribution_proxy": 0.0,
+        "edge_distribution_per_scale": {
+          "4": 0.0,
+          "8": 0.0,
+          "16": 0.0
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_0",
+        "level": "region",
+        "reference_pixel_weight": 16384.0,
+        "color_l1": 0.13906840405433005,
+        "coarse_boundary_error": 0.00634765625,
+        "grayscale_wasserstein": 0.0156402587890625,
+        "edge_coverage_error": 0.0128173828125,
+        "gradient_mean_error": 0.0028436797896241803,
+        "texture_statistics_proxy": 0.010433773797062227,
+        "edge_distribution_proxy": 0.005808512369791667,
+        "edge_distribution_per_scale": {
+          "4": 0.003204345703125,
+          "8": 0.00634765625,
+          "16": 0.00787353515625
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      },
+      {
+        "id": "patch_1_1",
+        "level": "region",
+        "reference_pixel_weight": 16384.0,
+        "color_l1": 0.018064331852532683,
+        "coarse_boundary_error": 0.0027923583984375,
+        "grayscale_wasserstein": 0.00974273681640625,
+        "edge_coverage_error": 0.01104736328125,
+        "gradient_mean_error": 0.002337287454044117,
+        "texture_statistics_proxy": 0.007709129183900122,
+        "edge_distribution_proxy": 0.0027821858723958335,
+        "edge_distribution_per_scale": {
+          "4": 0.0027618408203125,
+          "8": 0.0027923583984375,
+          "16": 0.0027923583984375
+        },
+        "scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts"
+      }
+    ],
+    "anchor_matching": [],
+    "extra_anchors": [],
+    "inventory": {
+      "complete": false,
+      "supplied": false,
+      "reference_complete": false,
+      "unknown_candidates": 0,
+      "unknown_extras": [],
+      "unknown_rendered_candidates": [],
+      "extra_records": [],
+      "verdict_records": [],
+      "tp": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "valid_pixels": 65536,
+    "measurement_pixels": 65536,
+    "overlap_aggregation_withheld": []
+  },
+  "metric_records": [
+    {
+      "energy": "appearance",
+      "level": "global",
+      "id": "global",
+      "value": 0.03928318397671569,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "global",
+      "id": "global",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "r1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "r1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r1:texture",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "r1:distribution",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 0.5,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "r1",
+      "value": null,
+      "q": 0.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Unreviewed/unknown evidence",
+      "evidence_category": "unreviewed_candidate",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:texture",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_0:distribution",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_0",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:texture",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_0_1:distribution",
+      "value": 0.0,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_0_1",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.13906840405433005,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": 0.00634765625,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:texture",
+      "value": 0.010433773797062227,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_0:distribution",
+      "value": 0.005808512369791667,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.003204345703125,
+        "8": 0.00634765625,
+        "16": 0.00787353515625
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_0",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    },
+    {
+      "energy": "appearance",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.018064331852532683,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "spatial",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": 0.0027923583984375,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "valid",
+      "reason": null,
+      "method": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:texture",
+      "value": 0.007709129183900122,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Texture statistics proxy",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "statistical",
+      "level": "region",
+      "id": "patch_1_1:distribution",
+      "value": 0.0027821858723958335,
+      "q": 1.0,
+      "aggregation_weight": 0.5,
+      "status": "valid",
+      "reason": null,
+      "method": "Multiscale edge distribution proxy",
+      "per_scale": {
+        "4": 0.0027618408203125,
+        "8": 0.0027923583984375,
+        "16": 0.0027923583984375
+      },
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": true
+    },
+    {
+      "energy": "perceptual",
+      "level": "region",
+      "id": "patch_1_1",
+      "value": null,
+      "q": 1.0,
+      "aggregation_weight": 1.0,
+      "status": "unavailable",
+      "reason": "Local DINO extractor unavailable; no substitute feature score",
+      "method": "DINO multiscale perceptual features",
+      "evidence_category": "conditional_core_measurement",
+      "measurement_available": false
+    }
+  ],
+  "reference_evidence": {
+    "image_size": [
+      256,
+      256
+    ],
+    "regions": [
+      {
+        "id": "r1",
+        "name": "前景方块",
+        "description": "绿色地面上的红色和蓝色立方体",
+        "bbox": [
+          26.88,
+          148.48,
+          202.24,
+          240.64
+        ],
+        "raw_bbox_0_1000": [
+          105,
+          580,
+          790,
+          940
+        ],
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI output; no object-name or geometry input",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ]
+      },
+      {
+        "id": "patch_0_0",
+        "bbox": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_0_1",
+        "bbox": [
+          128,
+          0,
+          256,
+          128
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_0",
+        "bbox": [
+          0,
+          128,
+          128,
+          256
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      },
+      {
+        "id": "patch_1_1",
+        "bbox": [
+          128,
+          128,
+          256,
+          256
+        ],
+        "description": "Reference-coordinate fallback patch; no semantic category claimed",
+        "metrics": [
+          "appearance",
+          "spatial",
+          "statistical",
+          "perceptual"
+        ],
+        "reviewed": true,
+        "reliability": 1.0,
+        "source": "deterministic RGB grid",
+        "status": "observable"
+      }
+    ],
+    "anchors": [],
+    "groups": [],
+    "atomic_evidence": [
+      {
+        "id": "e1",
+        "region_id": "r1",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "statistical",
+        "claim": "前景有两个显著的彩色立方体。",
+        "question": "前景有几个显著的彩色立方体？",
+        "answer_type": "count_unknown",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      },
+      {
+        "id": "e2",
+        "region_id": "r1",
+        "group_id": null,
+        "anchor_id": null,
+        "type": "spatial",
+        "claim": "红色立方体位于蓝色立方体左侧。",
+        "question": "红色立方体是否位于蓝色立方体左侧？",
+        "answer_type": "yes_no_unknown",
+        "reviewed": false,
+        "reliability": 0.0,
+        "status": "candidate",
+        "provenance": "Reference-only CLI planning; automatic, unreviewed"
+      }
+    ],
+    "inventory_complete": false,
+    "reviewed": false,
+    "usage": "provisional/debug",
+    "source": "reference RGB and independently supplied annotations only",
+    "provenance": {
+      "backend": "codex_cli",
+      "planning_response": "planning_response.json",
+      "input_side": "reference_only",
+      "expected_answers_supplied": false
+    },
+    "global_evidence": {
+      "description": "Complete reference RGB",
+      "reviewed": true,
+      "reliability": 1.0
+    },
+    "overlap_policy": "Exclude reviewed Anchor mask or conservative bbox from all Region statistics; Global retained; fixed level weights"
+  },
+  "render_metadata": {
+    "render_seconds": 0.22210434498265386,
+    "image_size": [
+      256,
+      256
+    ],
+    "samples": 8,
+    "threads": 2,
+    "device": "CPU",
+    "camera_unchanged": true,
+    "camera": {
+      "name": "BenchmarkCamera",
+      "type": "PERSP",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        0.0,
+        -6.0,
+        2.0
+      ],
+      "rotation_euler_world": [
+        1.570796251296997,
+        -0.0,
+        0.0
+      ],
+      "rotation_units": "radians",
+      "lens_mm": 42.0,
+      "sensor_fit": "HORIZONTAL",
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "shift_x": 0.05000000074505806,
+      "shift_y": 0.0,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "dof_enabled": false
+    },
+    "intrinsics_pixels": [
+      [
+        298.6666564941406,
+        0.0,
+        115.19999694824219
+      ],
+      [
+        0.0,
+        298.6666564941406,
+        128.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "projection_matrix_blender": [
+      [
+        2.3333332538604736,
+        0.0,
+        0.10000002384185791,
+        0.0
+      ],
+      [
+        0.0,
+        2.3333332538604736,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0001999139785767,
+        -0.20002000033855438
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "camera_coordinate_convention": "OpenCV: x right, y down, z forward; pixel centers at (u+0.5,v+0.5).",
+    "depth_convention": "camera_z",
+    "depth_computation": "negative Blender-camera z of same-render world Position pass",
+    "depth_units": "scene coordinate units; no metric ground truth asserted",
+    "valid_depth_pixel_count": 18635,
+    "raw_z_vs_world_distance_max_error": 1.018374415369431,
+    "raw_z_vs_world_distance_mean_error": 0.40698718205267737,
+    "position_reprojection_mean_error_pixels": 0.000753374019635863,
+    "position_reprojection_max_error_pixels": 0.0008403768042448752,
+    "semantic_ids": {
+      "1": "floor",
+      "2": "other",
+      "3": "repeat_0",
+      "4": "repeat_1",
+      "5": "repeat_2",
+      "6": "repeat_3",
+      "7": "repeat_4",
+      "8": "repeat_5",
+      "9": "anchor"
+    },
+    "visible_pixel_counts_by_type": {
+      "floor": {
+        "CURVE": 0,
+        "MESH": 10015
+      },
+      "other": {
+        "CURVE": 0,
+        "MESH": 3621
+      },
+      "repeat_0": {
+        "CURVE": 0,
+        "MESH": 150
+      },
+      "repeat_1": {
+        "CURVE": 0,
+        "MESH": 140
+      },
+      "repeat_2": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_3": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_4": {
+        "CURVE": 0,
+        "MESH": 0
+      },
+      "repeat_5": {
+        "CURVE": 0,
+        "MESH": 81
+      },
+      "anchor": {
+        "CURVE": 0,
+        "MESH": 4628
+      }
+    },
+    "components": [
+      {
+        "component_id": 1,
+        "name": "anchor",
+        "type": "MESH",
+        "semantic_id": 9,
+        "visible_pixel_count": 4628
+      },
+      {
+        "component_id": 2,
+        "name": "floor",
+        "type": "MESH",
+        "semantic_id": 1,
+        "visible_pixel_count": 10015
+      },
+      {
+        "component_id": 3,
+        "name": "other",
+        "type": "MESH",
+        "semantic_id": 2,
+        "visible_pixel_count": 3621
+      },
+      {
+        "component_id": 4,
+        "name": "repeat_0",
+        "type": "MESH",
+        "semantic_id": 3,
+        "visible_pixel_count": 150
+      },
+      {
+        "component_id": 5,
+        "name": "repeat_1",
+        "type": "MESH",
+        "semantic_id": 4,
+        "visible_pixel_count": 140
+      },
+      {
+        "component_id": 6,
+        "name": "repeat_2",
+        "type": "MESH",
+        "semantic_id": 5,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 7,
+        "name": "repeat_3",
+        "type": "MESH",
+        "semantic_id": 6,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 8,
+        "name": "repeat_4",
+        "type": "MESH",
+        "semantic_id": 7,
+        "visible_pixel_count": 0
+      },
+      {
+        "component_id": 9,
+        "name": "repeat_5",
+        "type": "MESH",
+        "semantic_id": 8,
+        "visible_pixel_count": 81
+      }
+    ],
+    "background_objects": [],
+    "segmentation": "unfiltered Object Index pass; alpha threshold 0.5; same render as RGB/Position/Z",
+    "input_alignment_accuracy_verified": false,
+    "input_masks_reviewed": false,
+    "source_saved": false,
+    "fixed_T0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        -6.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ortho_scale": 6.0,
+    "fixed_extrinsics_enforced": true,
+    "color_management": {
+      "display_device": "sRGB",
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "component_identity_is_semantics": false
+  },
+  "policy": {
+    "weight_status": "provisional",
+    "weights": {
+      "semantic": 1.0,
+      "spatial": 1.0,
+      "appearance": 1.0,
+      "statistical": 1.0,
+      "perceptual": 1.0
+    },
+    "levels": {
+      "global": 0.25,
+      "region": 0.5,
+      "anchor": 0.25
+    },
+    "structure_weights": {
+      "penetration": 1.0,
+      "support": 1.0,
+      "degeneration": 1.0
+    },
+    "grid": 2,
+    "min_pixels": 16,
+    "edge_threshold": 0.08,
+    "match_max_cost": 0.85,
+    "relation_margin": 0.01,
+    "multiscale": [
+      1.0,
+      0.5
+    ],
+    "dino_size": 224,
+    "max_anchors": 12,
+    "distribution_grids": {
+      "4": 1.0,
+      "8": 1.0,
+      "16": 1.0
+    },
+    "statistical_components": {
+      "texture": 0.5,
+      "distribution": 0.5
+    },
+    "misplaced_center_fraction": 0.05
+  },
+  "interpretation": "Errors in [0,1], lower is better. Observation and 3D energies are conditional on available evidence. No ranking/total/confidence calibration.",
+  "human_annotation": null,
+  "calibration_status": "not_calibrated",
+  "usage": "provisional/debug",
+  "reviewed": false,
+  "formal_eligible": false,
+  "evidence_category": "unreviewed_candidate",
+  "diagnostics": {
+    "groups": {
+      "status": "available",
+      "source": "reference_evidence.json",
+      "reviewed": false,
+      "evidence": {
+        "image_size": [
+          256,
+          256
+        ],
+        "regions": [
+          {
+            "id": "r1",
+            "name": "前景方块",
+            "description": "绿色地面上的红色和蓝色立方体",
+            "bbox": [
+              26.88,
+              148.48,
+              202.24,
+              240.64
+            ],
+            "raw_bbox_0_1000": [
+              105,
+              580,
+              790,
+              940
+            ],
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI output; no object-name or geometry input",
+            "metrics": [
+              "appearance",
+              "spatial",
+              "statistical",
+              "perceptual"
+            ]
+          }
+        ],
+        "anchors": [],
+        "groups": [],
+        "atomic_evidence": [
+          {
+            "id": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "statistical",
+            "claim": "前景有两个显著的彩色立方体。",
+            "question": "前景有几个显著的彩色立方体？",
+            "answer_type": "count_unknown",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          },
+          {
+            "id": "e2",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "type": "spatial",
+            "claim": "红色立方体位于蓝色立方体左侧。",
+            "question": "红色立方体是否位于蓝色立方体左侧？",
+            "answer_type": "yes_no_unknown",
+            "reviewed": false,
+            "reliability": 0.0,
+            "status": "candidate",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed"
+          }
+        ],
+        "inventory_complete": false,
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "source": "Reference-only Codex CLI planning; not GT",
+        "provenance": {
+          "backend": "codex_cli",
+          "planning_response": "planning_response.json",
+          "input_side": "reference_only",
+          "expected_answers_supplied": false
+        }
+      },
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "structural_layout": {
+      "status": "unavailable",
+      "reason": "Optional input not supplied",
+      "source": null,
+      "evidence": null,
+      "energy_contribution": false,
+      "interpretation": "Attached verbatim for audit; review, applicability and calibrated comparison are not inferred"
+    },
+    "vlm_verification": {
+      "status": "available",
+      "source": "verification_results.json",
+      "reviewed": false,
+      "pair_binding": "matched_paths_unverified_content",
+      "evidence": {
+        "reference": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。",
+            "user": "独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"前景方块\", \"bbox\": [26.88, 148.48, 202.24, 240.64]}]\ne1：前景有几个显著的彩色立方体？ 答案类型：count_unknown\ne2：红色立方体是否位于蓝色立方体左侧？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "unknown"
+                      ]
+                    }
+                  ]
+                },
+                "e2": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":2,\"e2\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": 2,
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": 2,
+              "e2": "yes"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 15.442218411015347,
+          "token_usage": {
+            "input_tokens": 9878,
+            "output_tokens": 21,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "images/83e78a05d77e44f99484f456000273fe.png",
+            "image_size": [
+              256,
+              256
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-root>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-root>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-root>/input/8a5bcb16579c4ea796038e282454ce3f.png",
+              "--output-schema",
+              "<temporary-cli-root>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-root>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。\n\nUser:\n独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"前景方块\", \"bbox\": [26.88, 148.48, 202.24, 240.64]}]\ne1：前景有几个显著的彩色立方体？ 答案类型：count_unknown\ne2：红色立方体是否位于蓝色立方体左侧？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+            "staged_image": "8a5bcb16579c4ea796038e282454ce3f.png",
+            "image_size": [
+              256,
+              256
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "8a5bcb16579c4ea796038e282454ce3f.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 9878,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 21,
+            "reasoning_output_tokens": 0
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "render": {
+          "backend": "codex_cli",
+          "source_kind": "live_model",
+          "model_requested": "gpt-6-sol",
+          "model_observed": null,
+          "actual_input": {
+            "system": "你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。",
+            "user": "独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"前景方块\", \"bbox\": [26.88, 148.48, 202.24, 240.64]}]\ne1：前景有几个显著的彩色立方体？ 答案类型：count_unknown\ne2：红色立方体是否位于蓝色立方体左侧？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "e1": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "unknown"
+                      ]
+                    }
+                  ]
+                },
+                "e2": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "e1",
+                "e2"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_answer": "{\"e1\":2,\"e2\":\"yes\"}",
+          "parsed": {
+            "status": "valid",
+            "fields": {
+              "e1": {
+                "value": 2,
+                "validation_status": "valid"
+              },
+              "e2": {
+                "value": "yes",
+                "validation_status": "valid"
+              }
+            },
+            "schema_errors": [],
+            "document": {
+              "e1": 2,
+              "e2": "yes"
+            }
+          },
+          "metadata": {},
+          "reviewed": false,
+          "energy_contribution": false,
+          "usage": "provisional/debug",
+          "status": "valid",
+          "request_submitted": true,
+          "elapsed_seconds": 12.993526036152616,
+          "token_usage": {
+            "input_tokens": 9876,
+            "output_tokens": 21,
+            "total_tokens": null
+          },
+          "isolation": {
+            "strict_blind_test": false,
+            "filesystem_read_confined": false,
+            "tools_disabled": true,
+            "project_cwd": false,
+            "reason": "Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists"
+          },
+          "image_binding": {
+            "source_rgb": "images/a3a2f890e3614650bba9f32963abe88a.png",
+            "image_size": [
+              256,
+              256
+            ]
+          },
+          "invocation": {
+            "argv": [
+              "codex",
+              "--no-daemon",
+              "-a",
+              "never",
+              "-c",
+              "model_providers.verification_openai={name=\"OpenAI verification\",wire_api=\"responses\",base_url=\"https://chatgpt.com/backend-api/codex\",requires_openai_auth=true,request_max_retries=0,stream_max_retries=0,supports_websockets=false}",
+              "-c",
+              "model_provider=\"verification_openai\"",
+              "-c",
+              "sqlite_home=\"<temporary-cli-root>/state\"",
+              "-c",
+              "log_dir=\"<temporary-cli-root>/state\"",
+              "-c",
+              "web_search=\"disabled\"",
+              "-c",
+              "project_doc_max_bytes=0",
+              "-c",
+              "features.shell_tool=false",
+              "-c",
+              "tools.view_image=false",
+              "-c",
+              "features.multi_agent=false",
+              "-c",
+              "features.hooks=false",
+              "-c",
+              "features.apps=false",
+              "-c",
+              "features.plugins=false",
+              "-c",
+              "features.memories=false",
+              "-c",
+              "features.goals=false",
+              "-c",
+              "features.shell_snapshot=false",
+              "-c",
+              "shell_environment_policy.inherit=\"none\"",
+              "-c",
+              "model_reasoning_effort=\"low\"",
+              "exec",
+              "--ignore-user-config",
+              "--model",
+              "gpt-6-sol",
+              "--sandbox",
+              "read-only",
+              "--skip-git-repo-check",
+              "--ephemeral",
+              "--image",
+              "<temporary-cli-root>/input/18fdf1dbc5c3467caf4f55b252d6b885.png",
+              "--output-schema",
+              "<temporary-cli-root>/input/schema.json",
+              "--output-last-message",
+              "<temporary-cli-root>/state/answer.json",
+              "--json",
+              "--",
+              "-"
+            ],
+            "stdin": "System:\n你是视觉证据验证器。只根据当前图片回答问题，不猜测不可见内容。yes表示有充分证据，no表示能够确认不存在或关系不成立，证据不足时用unknown。只输出JSON。\n\nUser:\n独立观察当前图片并回答以下中立问题。区域框仅表示固定评价范围（当前图片像素xyxy），不是其中对象的检测框；必要时可参考完整图像，移出区域不等于不存在。\n区域：[{\"id\": \"r1\", \"name\": \"前景方块\", \"bbox\": [26.88, 148.48, 202.24, 240.64]}]\ne1：前景有几个显著的彩色立方体？ 答案类型：count_unknown\ne2：红色立方体是否位于蓝色立方体左侧？ 答案类型：yes_no_unknown\nyes_no_unknown只用yes/no/unknown；count_unknown只用非负整数或unknown。无法可靠判断时用unknown。只输出以问题ID为字段的JSON，不解释。",
+            "staged_image": "18fdf1dbc5c3467caf4f55b252d6b885.png",
+            "image_size": [
+              256,
+              256
+            ],
+            "shell": false,
+            "automatic_retries": 0,
+            "stdin_contains_expected_labels": false,
+            "necessary_input_files": [
+              "18fdf1dbc5c3467caf4f55b252d6b885.png",
+              "question.txt",
+              "schema.json"
+            ]
+          },
+          "exit_code": 0,
+          "stderr": "",
+          "event_types": [
+            "thread.started",
+            "item.completed",
+            "item.completed",
+            "turn.started",
+            "item.completed",
+            "turn.completed"
+          ],
+          "reported_usage": {
+            "input_tokens": 9876,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 21,
+            "reasoning_output_tokens": 0
+          },
+          "unexpected_tool_events": false,
+          "cli_errors": []
+        },
+        "results": [
+          {
+            "evidence_id": "e1",
+            "field": "e1",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "statistical",
+            "claim": "前景有两个显著的彩色立方体。",
+            "question": "前景有几个显著的彩色立方体？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": 2,
+            "render_answer": 2,
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          },
+          {
+            "evidence_id": "e2",
+            "field": "e2",
+            "region_id": "r1",
+            "group_id": null,
+            "anchor_id": null,
+            "energy": "spatial",
+            "claim": "红色立方体位于蓝色立方体左侧。",
+            "question": "红色立方体是否位于蓝色立方体左侧？",
+            "provenance": "Reference-only CLI planning; automatic, unreviewed",
+            "reference_answer": "yes",
+            "render_answer": "yes",
+            "status": "satisfied",
+            "reviewed": false,
+            "value": null,
+            "scorable": false,
+            "energy_contribution": false,
+            "uncertainty": "VLM answer is not GT; mismatches require independent review"
+          }
+        ],
+        "image_pair": {
+          "reference_rgb": "images/83e78a05d77e44f99484f456000273fe.png",
+          "render_rgb": "images/a3a2f890e3614650bba9f32963abe88a.png"
+        },
+        "reviewed": false,
+        "usage": "provisional/debug",
+        "energy_contribution": false,
+        "formal_eligible": false
+      },
+      "unmatched_evidence": null,
+      "applicable_to_current_pair": true,
+      "energy_contribution": false,
+      "interpretation": "Diagnostic-only imported answers; no model invocation, review promotion or numeric Energy mapping"
+    },
+    "fixed_region_measurements": [
+      {
+        "id": "r1",
+        "description": "绿色地面上的红色和蓝色立方体",
+        "reviewed": false,
+        "evidence_reliability": 0.0,
+        "reference_pixels": 16461.0,
+        "valid_pixel_weight": 16461.0,
+        "measurement_pixel_weight": 16461.0,
+        "appearance": 0.151559181475883,
+        "perceptual": null,
+        "perceptual_reason": "Extractor disabled: this entry never runs DINO",
+        "numerical_proxies": {
+          "spatial": 0.015280330882352942,
+          "statistical": 0.007604085620227052
+        },
+        "measurement_scope": "RGB appearance, coarse edges and texture distribution proxies; not semantic segmentation or element counts",
+        "semantic": null,
+        "semantic_reason": "No new semantic validator; candidate ROI is not reviewed category evidence",
+        "energy_contribution": false,
+        "usage": "provisional/debug fixed-domain diagnostic"
+      }
+    ],
+    "region_overlap": {
+      "named_region_count": 1,
+      "overlap_pixels": 0,
+      "overlap_fraction_of_valid": 0.0,
+      "max_multiplicity": 1,
+      "unassigned_valid_pixels": 49075,
+      "local_aggregate": null,
+      "reason": "Per-ROI losses are not summed. Overlapping named scopes are withheld from energy aggregation; Global/Dense remain available."
+    }
+  },
+  "coordinates": {
+    "convention": "reference_pixel_xyxy",
+    "render_mapping": "identity",
+    "basis": "Saved paired M1 RGB, same exported camera/K/grid; no alignment or ROI movement",
+    "applied_transform": {
+      "original_size": [
+        256,
+        256
+      ],
+      "common_size": [
+        256,
+        256
+      ],
+      "resized_size": [
+        256,
+        256
+      ],
+      "offset_xy": [
+        0,
+        0
+      ],
+      "nominal_scale": 1.0,
+      "content_alignment": false,
+      "padding_is_not_observation": true,
+      "transform": "identity"
+    },
+    "valid_pixels": 65536,
+    "canvas_pixels": 65536,
+    "valid_mask": "offline_evaluation/valid_pixels.png",
+    "measurement_pixels": 65536,
+    "support_rule": "Joint opaque pixels; RGB/edge metrics also require valid right/down gradient neighbours; fixed ROI never moved"
+  },
+  "provenance": {
+    "manifest": "offline_manifest.json",
+    "reference_rgb": "images/83e78a05d77e44f99484f456000273fe.png",
+    "render_rgb": "images/a3a2f890e3614650bba9f32963abe88a.png",
+    "reference_evidence": "reference_evidence.json",
+    "optional_inputs": {
+      "render_evidence": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "geometry": {
+        "status": "available",
+        "source": "../trusted_blender_e2e_pilot/changed/geometry.json",
+        "reviewed": null
+      },
+      "triage": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "rules": {
+        "status": "unavailable",
+        "reason": "Optional input not supplied",
+        "source": null
+      },
+      "render_metadata": {
+        "status": "available",
+        "source": "../trusted_blender_e2e_pilot/changed/export_metadata.json",
+        "reviewed": null
+      }
+    },
+    "supplied_provenance": {
+      "previous_execution_chain": "../trusted_blender_e2e_pilot/execution_chain.json",
+      "new_blender_executions": 0,
+      "trust_note": "Prior M1 execution retained; replay is not a new trusted execution"
+    },
+    "api_calls": 0,
+    "model_inferences": 0,
+    "blender_executions": 0,
+    "agent_code_executed": false
+  },
+  "measurement_interpretation": {
+    "appearance": "Actual RGB L1; affected by camera, lighting and visibility",
+    "spatial": "Core image-edge proxy unless independently reviewed Anchor/occupancy evidence exists; not 3D layout correctness",
+    "statistical": "Existing texture/multiscale edge-distribution proxies unless reviewed occupancy exists; not object density",
+    "semantic": "Reviewed evidence only; attached Group/Structural answers never become scores",
+    "perceptual": "N/A: no DINO inference in this entry",
+    "observation": "Conditional debug aggregate of core eligible records; not a formal Benchmark result"
+  },
+  "elapsed_seconds": 0.09138187789358199
+}

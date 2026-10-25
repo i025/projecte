@@ -1,0 +1,23 @@
+{
+  "model_calls": 0,
+  "strict_blind_test": false,
+  "filesystem_read_confined": false,
+  "cli_version": "codex-cli 0.163.0",
+  "logged_in": true,
+  "auth_method": "ChatGPT",
+  "image_attachments": 1,
+  "decoded_pixels_equal": true,
+  "frozen_prompt_present": true,
+  "forbidden_context_terms": [],
+  "message_roles": [
+    "developer",
+    "developer",
+    "developer",
+    "user",
+    "user"
+  ],
+  "global_cli_context_present": true,
+  "input_text_characters": 6996,
+  "model_input_saved_without_base64": true,
+  "status": "available"
+}

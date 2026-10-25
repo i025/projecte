@@ -1,6 +1,6 @@
 """Small, diagnostic-only visual answer transport; never produces Energy values.
 
-Book answer parsing/comparison stays in the existing controlled experiment.
+Legacy book parsing stays compatible; other frozen JSON contracts use JSON Schema.
 No provider API key is read and no model command is executed through a shell.
 """
 from copy import deepcopy
@@ -16,6 +16,7 @@ import time
 import uuid
 
 from PIL import Image
+from jsonschema import Draft202012Validator, SchemaError
 
 from .model_client import token_counts
 
@@ -26,16 +27,56 @@ def contract(document):
         raise ValueError('Only system, user and schema may enter the model contract; labels are forbidden')
     if not all(isinstance(document[k], str) and document[k].strip() for k in ('system', 'user')):
         raise ValueError('Nonempty frozen system/user text required')
-    from scripts.group_statistical_controls import SCHEMA
-    if document['schema'] != SCHEMA:
-        raise ValueError('This minimal pilot supports the existing two-question book schema only')
+    schema = document['schema']
+    # No reference resolution, external resources or executable schema extensions.
+    def local(node):
+        if isinstance(node, dict):
+            if any(k in node for k in ('$ref', '$dynamicRef', '$id')):
+                raise ValueError('External/referenced schemas are not supported')
+            for value in node.values():
+                local(value)
+        elif isinstance(node, list):
+            for value in node:
+                local(value)
+    local(schema)
+    try:
+        Draft202012Validator.check_schema(schema)
+    except SchemaError as exc:
+        raise ValueError('Invalid JSON Schema: '+exc.message) from exc
+    if (not isinstance(schema, dict) or schema.get('type') != 'object'
+            or not schema.get('properties') or schema.get('additionalProperties') is not False
+            or set(schema.get('required', [])) != set(schema['properties'])):
+        raise ValueError('A closed object schema with all answer fields required is necessary')
     return deepcopy(document)
 
 
-def parse_answer(raw):
-    from scripts.group_statistical_controls import parse_prediction
+def parse_answer(raw, schema=None):
+    from scripts.group_statistical_controls import SCHEMA, parse_prediction
     try:
-        return parse_prediction(raw)
+        if schema is None or schema == SCHEMA:
+            return parse_prediction(raw)
+        def unique(pairs):
+            answer = {}
+            for key, value in pairs:
+                if key in answer:
+                    raise ValueError('Duplicate JSON key: '+key)
+                answer[key] = value
+            return answer
+        def nonfinite(value):
+            raise ValueError('Nonfinite JSON number: '+value)
+        document = json.loads(raw, object_pairs_hook=unique, parse_constant=nonfinite)
+        if not isinstance(document, dict):
+            raise ValueError('Expected an answer object')
+        errors = [f'{list(e.absolute_path)}: {e.message}'
+                  for e in Draft202012Validator(schema).iter_errors(document)]
+        fields = {}
+        for field, definition in schema['properties'].items():
+            valid = field in document and Draft202012Validator(definition).is_valid(document[field])
+            fields[field] = dict(value=document.get(field) if valid else None,
+                                 validation_status='valid' if valid else 'unavailable')
+        return dict(status='valid' if not errors else 'partial' if any(
+            f['validation_status']=='valid' for f in fields.values()) else 'unavailable',
+            fields=fields, schema_errors=errors, document=document)
     except (ValueError, TypeError) as exc:
         return dict(status='unavailable', fields={}, schema_errors=[str(exc)])
 
@@ -51,7 +92,7 @@ def scrub_error(text):
 def answer_packet(raw, *, backend, source_kind, protocol, model=None, metadata=None):
     packet = dict(backend=backend, source_kind=source_kind, model_requested=model,
         model_observed=None, actual_input=contract(protocol), raw_answer=raw,
-        parsed=parse_answer(raw), metadata=deepcopy(metadata or {}), reviewed=False,
+        parsed=parse_answer(raw, protocol['schema']), metadata=deepcopy(metadata or {}), reviewed=False,
         energy_contribution=False, usage='provisional/debug')
     packet['status'] = packet['parsed']['status']
     return packet
@@ -84,17 +125,23 @@ def import_subagent(document, protocol):
 
 def compare_answers(reference, rendered, questions, *, image_pair=None):
     from scripts.group_statistical_controls import answer_value, compare_values
+    protocol = contract(reference['actual_input'])
+    if protocol != contract(rendered['actual_input']):
+        raise ValueError('Both sides must use exactly the same frozen contract')
     rows, ids, fields = [], set(), set()
     for question in questions:
         eid, field = question['evidence_id'], question['field']
-        if eid in ids or field in fields or field not in ('horizontal_stack', 'upright_books'):
+        if eid in ids or field in fields or field not in protocol['schema']['properties']:
             raise ValueError('Evidence IDs and answer fields must be unique and supported')
+        definition = protocol['schema']['properties'][field]
+        if not ('enum' in definition or 'anyOf' in definition):
+            raise ValueError('Comparison requires atomic categorical/count answers, not planning objects')
         ids.add(eid); fields.add(field)
         # Process failure invalidates its output; missing fields alone preserve valid siblings.
         values = [answer_value(p['parsed'], field) if p['status'] in ('valid', 'partial') else None
                   for p in (reference, rendered)]
         rows.append(dict(evidence_id=eid, field=field, region_id=question.get('region_id'),
-            group_id=question.get('group_id'), energy=question.get('energy'),
+            group_id=question.get('group_id'), anchor_id=question.get('anchor_id'), energy=question.get('energy'),
             claim=question.get('claim'), question=question['question'],
             provenance=deepcopy(question.get('provenance')), reference_answer=values[0],
             render_answer=values[1], status=compare_values(*values), reviewed=False,
@@ -119,7 +166,8 @@ def validate_diagnostics(document):
         if old.get('source_kind') not in ('mock', 'historical_real', 'live_model'):
             raise ValueError('Explicit answer provenance required')
         packet = deepcopy(old)
-        packet['parsed'] = parse_answer(old.get('raw_answer'))
+        protocol = contract(old['actual_input'])
+        packet['parsed'] = parse_answer(old.get('raw_answer'), protocol['schema'])
         if old.get('status') in ('valid', 'partial'):
             packet['status'] = packet['parsed']['status']
         packet.update(reviewed=False, energy_contribution=False)
@@ -222,8 +270,8 @@ def probe_cli(image, protocol, *, executable='codex', timeout=35):
 
 
 def codex_answer(image, protocol, *, ledger, model='gpt-6-sol', timeout=180,
-                 executable='codex'):
-    """Maximum two attempts per caller ledger, even after failure. No tool execution."""
+                 executable='codex', max_requests=2, request_id=None):
+    """Bounded attempts including failures; explicit IDs allow planning then VQA on one RGB."""
     protocol = contract(protocol)
     packet = answer_packet(None, backend='codex_cli', source_kind='live_model',
         protocol=protocol, model=model)
@@ -232,9 +280,12 @@ def codex_answer(image, protocol, *, ledger, model='gpt-6-sol', timeout=180,
             tools_disabled=True, project_cwd=False,
             reason='Temporary cwd and disabled tools reduce exposure; read-only sandbox can read beyond cwd; CLI global context/auth still exists'))
     image = Path(image).resolve()
+    request_id = request_id or str(image)
     try:
-        if len(ledger) >= 2 or any(r['image']==str(image) for r in ledger):
-            raise ValueError('Two-request budget exhausted or image already attempted; no retry')
+        if not isinstance(max_requests, int) or not 1 <= max_requests <= 3:
+            raise ValueError('Request budget must be between one and three')
+        if len(ledger) >= max_requests or any(r.get('request_id', r['image'])==request_id for r in ledger):
+            raise ValueError('Request budget exhausted or task already attempted; no retry')
         if not 0 < timeout <= 300:
             raise ValueError('Timeout must be in (0, 300] seconds')
         with Image.open(image) as im:
@@ -245,7 +296,7 @@ def codex_answer(image, protocol, *, ledger, model='gpt-6-sol', timeout=180,
     except (OSError, ValueError) as exc:
         packet.update(status='unavailable', request_submitted=False, error=scrub_error(str(exc)))
         return packet
-    attempt = dict(image=str(image), status='reserved', model=model)
+    attempt = dict(image=str(image), request_id=request_id, status='reserved', model=model)
     ledger.append(attempt)  # Reserve before launch, including failures/timeouts.
     tick = time.monotonic()
     try:
@@ -289,8 +340,8 @@ def codex_answer(image, protocol, *, ledger, model='gpt-6-sol', timeout=180,
             tool_events = [e for e in events if e.get('item', {}).get('type') in
                 ('command_execution', 'mcp_tool_call', 'web_search', 'file_change')]
             raw = (runtime/'answer.json').read_text() if (runtime/'answer.json').is_file() else None
-            packet.update(raw_answer=raw, parsed=parse_answer(raw),
-                status='unavailable' if code or tool_events else parse_answer(raw)['status'],
+            packet.update(raw_answer=raw, parsed=parse_answer(raw, protocol['schema']),
+                status='unavailable' if code or tool_events else parse_answer(raw, protocol['schema'])['status'],
                 unexpected_tool_events=bool(tool_events),
                 cli_errors=[scrub_error(json.dumps(e,ensure_ascii=False)) for e in events
                             if e.get('type') in ('error', 'turn.failed')])

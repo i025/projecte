@@ -1,0 +1,16 @@
+{
+  "security_issues": [],
+  "raw_answers_and_frozen_evidence_preserved": true,
+  "all_images_first_party": true,
+  "png_metadata_absent": true,
+  "source_files_unchanged_during_curation": true,
+  "old_raw_results_not_staged": true,
+  "public_manifest_replay_passed": true,
+  "public_replay_energy_identical": true,
+  "public_replay_vlm_binding": "matched_paths_unverified_content",
+  "new_result_markdown_links_exist": true,
+  "public_replay_new_model_and_blender_calls": 0,
+  "reviewed_payload_file_count": 25,
+  "reviewed_payload_bytes": 571596,
+  "release_receipt_separate_from_payload_totals": true
+}

@@ -146,16 +146,23 @@ The small Python adapter in `e_harness.verification_adapter` supports:
 - `codex_answer(image, contract, ledger=..., model='gpt-6-sol')`: one independent
   `codex exec --image` invocation with JSON Schema, a temporary input directory,
   read-only sandbox, disabled execution/image-reader/MCP/plugin/memory tools,
-  timeout and no HTTP/stream retries. Share one ledger across a pair; at most
-  two attempts, no repeated image. It uses existing ChatGPT CLI login, not API keys.
+  timeout and no HTTP/stream retries. Share one ledger across a pair; defaults to
+  two attempts, no repeated image. Explicit `max_requests=3` and unique `request_id`
+  support one planning call followed by two VQA calls, including a second task on
+  the same Reference image. Attempts reserve budget even on failure; a task is
+  never retried. It uses existing ChatGPT CLI login, not API keys.
 - `import_subagent(record, contract)`: imports an existing Desktop subagent's
   exact raw answer and recorded prompt/model/usage. This launches no subagent.
 - `replay(raw, contract, source_kind='historical_real' or 'mock')`: no model or
   network. Mock provenance remains explicit.
 
-The present pilot intentionally supports the existing two-field book answer
-schema only; this is not a general object verifier. The transport can later be
-reused with an explicitly validated schema for another frozen question set.
+The legacy two-field book parser is retained. Additional frozen contracts use
+the project's declared `jsonschema` dependency (4.26.0); closed object schemas
+require every field, reject external references, duplicate JSON keys and
+nonfinite numbers. Valid sibling answers survive a missing/invalid field.
+Planning can return nested data, but deterministic answer comparison accepts
+atomic categorical/count fields, not nested planning objects. This transport
+does not establish the semantic correctness of a question or answer.
 The contract allowlist is `system`, `user`, `schema`; expectations and other-side
 answers belong to the coordinator and must never be added to that contract.
 No `ModelClient` provider API route is changed. Existing book parsing/comparison
@@ -225,6 +232,46 @@ No HTML, VLM, GPU, SAM/SLIC/DINO or Agent execution is involved. See the
 [actual synthetic pilot](results/trusted_blender_e2e_pilot/summary.md). Formal
 Runtime stays blocked. The sibling evaluator/Blender dependencies and real
 Reference evidence/verification limitations still apply.
+
+## M2 Reference-only planning and real VQA
+
+The small [M2 driver](scripts/reference_vlm_pilot.py) consumes the two **saved**
+first-party M1 renders. It never runs Blender or certifies a receipt as a new
+trusted execution. Only an explicit live invocation starts up to three serial
+Codex CLI visual tasks (no retry): Reference planning, Reference VQA, Render VQA.
+Planning receives only the Reference RGB plus a scene-independent prompt/schema.
+Its coarse boxes, optional Groups/Anchors and up to three atomic questions are
+validated and frozen before Changed pixels are read. The independent VQA input
+contains the same neutral questions and Reference-coordinate ROI on both sides;
+it excludes Reference claims, expected answers, Geometry and the other image.
+
+```bash
+# LIVE operation: requires explicit authorization for up to three model calls.
+python3 -B scripts/reference_vlm_pilot.py run \
+  --m1 results/trusted_blender_e2e_pilot --output /tmp/projecte-m2-new
+
+# STATIC replay of the published run: no model, API or Blender execution.
+python3 -B -m e_harness.benchmark offline \
+  --manifest results/m2_reference_vlm_e2e/offline_manifest.json \
+  --output /tmp/projecte-m2-static-new
+python3 -B -m unittest discover -s tests -p 'test_reference_vlm_pilot.py'
+```
+
+Use an environment with the declared requirements installed. Missing
+`jsonschema` may be installed into an isolated temporary target and added to the
+coordinator's `PYTHONPATH`; no shared environment/model installation is required.
+The verifier subprocess does not inherit that project path.
+
+The result imports into the existing Offline Manifest diagnostic field, with
+Evidence/Region/Group/Anchor IDs and exact image-pair path checks. All VLM
+candidates remain `reviewed:false`, reliability zero and excluded from Energy;
+Global/Dense RGB measurements and existing Structural diagnostics continue.
+All answers may legitimately be `satisfied` even after a visible change: a
+coarse existence/count/order question does not measure metric displacement.
+The temporary read-only/tool-disabled CLI still lacks strong filesystem
+isolation and may not return a verifiable remote model snapshot. See
+[the actual M2 summary](results/m2_reference_vlm_e2e/summary.md) for limitations,
+real answers, call counts and reproduction details.
 
 ## Outputs and tests
 

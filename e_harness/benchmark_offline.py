@@ -198,8 +198,8 @@ def run_manifest(manifest_path, output):
     verification, state = optional_document(source(manifest.get('vlm_verification')))
     unmatched_verification = verification
     if verification is not None:
-        from .verification_adapter import validate_diagnostics
         try:
+            from .verification_adapter import validate_diagnostics
             verification = validate_diagnostics(verification)
             pair = verification.get('image_pair')
             if not isinstance(pair, dict) or set(pair) != {'reference_rgb', 'render_rgb'}:
@@ -215,7 +215,7 @@ def run_manifest(manifest_path, output):
                     raise ValueError('Recorded model image source conflicts with image_pair: '+side)
             state['pair_binding'] = 'matched_paths_unverified_content'
             unmatched_verification = None
-        except (ValueError, KeyError, TypeError, AttributeError) as exc:
+        except (ValueError, KeyError, TypeError, AttributeError, ImportError) as exc:
             verification = None
             state.update(status='unavailable', reason=f'{type(exc).__name__}: {exc}')
     diagnostics['vlm_verification'] = dict(**state, evidence=verification,

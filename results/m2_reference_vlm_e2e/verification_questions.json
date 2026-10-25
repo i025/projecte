@@ -1,0 +1,26 @@
+[
+  {
+    "evidence_id": "e1",
+    "field": "e1",
+    "region_id": "r1",
+    "group_id": null,
+    "anchor_id": null,
+    "energy": "statistical",
+    "claim": "前景有两个显著的彩色立方体。",
+    "question": "前景有几个显著的彩色立方体？",
+    "provenance": "Reference-only CLI planning; automatic, unreviewed",
+    "reviewed": false
+  },
+  {
+    "evidence_id": "e2",
+    "field": "e2",
+    "region_id": "r1",
+    "group_id": null,
+    "anchor_id": null,
+    "energy": "spatial",
+    "claim": "红色立方体位于蓝色立方体左侧。",
+    "question": "红色立方体是否位于蓝色立方体左侧？",
+    "provenance": "Reference-only CLI planning; automatic, unreviewed",
+    "reviewed": false
+  }
+]

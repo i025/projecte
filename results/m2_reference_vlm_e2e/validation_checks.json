@@ -1,0 +1,61 @@
+{
+  "actual_model_attempts": 3,
+  "ledger": [
+    {
+      "image": "images/83e78a05d77e44f99484f456000273fe.png",
+      "request_id": "planning_response",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 15.967060456983745
+    },
+    {
+      "image": "images/83e78a05d77e44f99484f456000273fe.png",
+      "request_id": "reference_answers",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 15.442218411015347
+    },
+    {
+      "image": "images/a3a2f890e3614650bba9f32963abe88a.png",
+      "request_id": "render_answers",
+      "status": "valid",
+      "model": "gpt-6-sol",
+      "elapsed_seconds": 12.993526036152616
+    }
+  ],
+  "automatic_retries": 0,
+  "reference_frozen_before_changed_read": true,
+  "frozen_bytes_unchanged": true,
+  "identical_verification_contract": true,
+  "strict_filesystem_isolation": false,
+  "vlm_pair_status": "available",
+  "questions_linked_to_existing_regions": true,
+  "groups_optional": true,
+  "new_blender_executions": 0,
+  "prior_execution_not_recertified": true,
+  "all_vlm_results_unreviewed": true,
+  "vlm_energy_contribution": false,
+  "formal_eligible": false,
+  "decoded_rgb_identical_to_saved_m1": {
+    "baseline": true,
+    "changed": true
+  },
+  "conditional_energy_values_equal_m1": {
+    "semantic": true,
+    "spatial": true,
+    "appearance": true,
+    "statistical": true,
+    "perceptual": true
+  },
+  "without_vlm_energy_objects_identical": true,
+  "geometry_available": true,
+  "structural_check_count": 36,
+  "group_count": 0,
+  "anchor_count": 0,
+  "actual_vlm_comparison_statuses": [
+    "satisfied",
+    "satisfied"
+  ],
+  "camera_replay_status": "pose_consistent_unverified",
+  "no_model_or_blender_in_offline_replay": true
+}
